@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+EXTRA_MODULES_PATH ?= ../addons
+
+%:
+	dh  ${@}
+
+override_dh_installchangelogs:
+	dh_installchangelogs doc/Changelog
+
+override_dh_installinit:
+	dh_installinit --update-rcd-params='defaults 21'

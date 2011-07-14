@@ -1,0 +1,17 @@
+About OpenERP
+---------------
+
+OpenERP is a free Enterprise Resource Planning and Customer Relationship 
+Management software. It is mainly developed to meet changing needs.
+
+The main functional features are: CRM & SRM, analytic and financial accounting,
+double-entry stock management, sales and purchases management, tasks automation,
+help desk, marketing campaign, ... and vertical modules for very specific 
+businesses.
+
+Technical features include a distributed server, flexible workflows, an object 
+database, dynamic GUIs, customizable reports, NET-RPC and XML-RPC interfaces, ...
+
+For more information, please visit: 
+http://www.openerp.com
+
