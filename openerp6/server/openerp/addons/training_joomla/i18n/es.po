@@ -6,16 +6,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenERP Server 5.0.11\n"
 "Report-Msgid-Bugs-To: support@openerp.com\n"
-"POT-Creation-Date: 2011-01-28 14:43+0000\n"
-"PO-Revision-Date: 2011-02-15 18:40+0000\n"
-"Last-Translator: Raimon Esteve (www.zikzakmedia.com) "
-"<resteve@zikzakmedia.com>\n"
+"POT-Creation-Date: 2011-01-28 14:43:49+0000\n"
+"PO-Revision-Date: 2011-04-07 17:00+0100\n"
+"Last-Translator: Raimon Esteve <resteve@zikzakmedia.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-06-18 05:14+0000\n"
-"X-Generator: Launchpad (build 13168)\n"
 "X-Poedit-Language: Spanish\n"
 
 #. module: training_joomla
@@ -176,12 +173,8 @@ msgstr "Desde"
 
 #. module: training_joomla
 #: help:training.joomla,duplicate_subscription:0
-msgid ""
-"If active, cancel other subscriptions with same edition and create new "
-"subscription"
-msgstr ""
-"If active, cancel other subscriptions with same edition and create new "
-"subscription"
+msgid "If active, cancel other subscriptions with same edition and create new subscription"
+msgstr "If active, cancel other subscriptions with same edition and create new subscription"
 
 #. module: training_joomla
 #: help:training.joomla,password:0
@@ -276,7 +269,7 @@ msgstr "Pricelist"
 #. module: training_joomla
 #: model:ir.ui.menu,name:training_joomla.training_wizard_joomla_session
 msgid "Export Sessions to Joomla!"
-msgstr "Exporta ediciones a Joomla!"
+msgstr "Exportar ediciones a Joomla!"
 
 #. module: training_joomla
 #: view:training.course:0
@@ -372,7 +365,7 @@ msgstr "Primero"
 #. module: training_joomla
 #: model:ir.ui.menu,name:training_joomla.training_wizard_joomla_course
 msgid "Export Courses to Joomla!"
-msgstr "Exporta asignaturas a Joomla!"
+msgstr "Exportar asignaturas a Joomla!"
 
 #. module: training_joomla
 #: field:training.joomla.configuration.wizard,format_new:0
@@ -672,7 +665,7 @@ msgstr "Clave acceso"
 #. module: training_joomla
 #: model:ir.ui.menu,name:training_joomla.training_wizard_joomla_images
 msgid "Export Images to Joomla!"
-msgstr "Exporta imágenes a Joomla!"
+msgstr "Exportar imágenes a Joomla!"
 
 #. module: training_joomla
 #: model:ir.module.module,description:training_joomla.module_meta_information
@@ -692,7 +685,7 @@ msgstr "Joomla! Imágenes exportadas"
 #. module: training_joomla
 #: model:ir.actions.act_window,name:training_joomla.action_training_joomla_images_wizard
 msgid "Export Images"
-msgstr "Exporta imágenes"
+msgstr "Exportar imágenes"
 
 #. module: training_joomla
 #: sql_constraint:training.subscription:0
@@ -733,7 +726,7 @@ msgstr "Exportar asignaturas"
 #. module: training_joomla
 #: model:ir.ui.menu,name:training_joomla.training_wizard_joomla_configuration
 msgid "Export Configuration to Joomla!"
-msgstr "Exporta configuraciones a Joomla!"
+msgstr "Exportar configuraciones a Joomla!"
 
 #. module: training_joomla
 #: help:training.offer,frontpage:0
@@ -773,15 +766,13 @@ msgstr "Lenguas actualizadas"
 
 #~ msgid "Invalid model name in the action definition."
 #~ msgstr "Nombre del modelo no válido en la definición de la acción."
-
 #~ msgid "Invalid XML for View Architecture!"
 #~ msgstr "XML no válido para la estructura de la vista!"
-
 #~ msgid "Error ! You can not create recursive Menu."
 #~ msgstr "Error ! You can not create recursive Menu."
-
 #~ msgid ""
 #~ "The Object name must start with x_ and not contain any special character !"
 #~ msgstr ""
-#~ "El nombre del objeto tiene que empezar con x_ y no contener ningún carácter "
-#~ "especial!"
+#~ "El nombre del objeto tiene que empezar con x_ y no contener ningún "
+#~ "carácter especial!"
+

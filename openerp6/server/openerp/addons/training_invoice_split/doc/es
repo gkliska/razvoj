@@ -1,0 +1,32 @@
+======Facturación parcial de los cursos======
+Los cursos se pueden facturar de dos formas:
+- Facturación total según producto de la línea de subscripción
+- Diseñar el tipo de pago desglosado para efectuar la facturación parcialmente (creación de varias facturas). Por ejemplo, cada cierto tiempo, se crea una factura de una cantidad determinada.
+
+=====Configuración de pagos del curso=====
+Si en un curso se quiere acotar el tipo de pago en desglose, deberemos añadir por curso, el tipo de pago que diseñemos y su desglose a realizar.
+
+La realización del tipo de pago del curso lo añadimos a la pestaña pagos del curso:
+- Nombre: Por ejemplo, Financiación 2+4
+- Lineas de pago: El desglose de pagos tendrá este curso
+> -Fecha de referencia: Por fecha inscripción o por fecha del curso. A partir de que día se incrementará el cálculo de días
+> -Días: El intervalo de días
+> -Precio: El precio que se añadirá al producto (sin impuestos)
+> -Secuencia: El orden de las líneas del pago
+> -Compañía: A que compañía se factura (campo obligado)
+
+=====Como aplicar el desglose de pagos=====
+Cuando la línea de subscripción esté en estado confirmado, en la pestaña "facturas" tendremos el botón "Crear facturas". Escogemos el tipo de pago diseñado por nosotros por el curso o Pago por defecto (se calcula 100% el precio del producto del curso).
+Según si el pago sea por defecto o diseñado por nosotros, se nos creará más o menos líneas de factura para facturar. Estas lineas, si no nos gustan la plantilla o queremos editar, siempre que estén en estado "esperando" se puede modificar a su gusto. Una vez estén ya facturadas, estas lineas ya no se pueden modificar.
+Cuando todas las lineas estén facturadas automáticamente la línea de subscripción será confirmada y ya no se podrá facturar más.
+Cuando todas las lineas de subscripción estén facturadas de una subscripción, la subscripción cambiará de estado a realizado.
+
+=====Facturar a varias compañías=====
+-Deberá configurar una compañía padre y dos de hijas ya que para poder realizar facturación deberá tener acceso a las dos compañías.
+-El usuario deberá utilizar la compañía padre de las dos.
+-También si este usuario de esta compañía crea inscripciones, la secuencia de subscripción y línea de subscripción deberá cambiar-se por la nueva compañía.
+
+=====TODO=====
+wizard/create_invoice
+#TODO: Search account ID same code property partner. Redesign
+#TODO: Search account ID same code property product/category. Redesign

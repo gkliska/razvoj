@@ -1,0 +1,3 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_training_hr_subscription","training.hr.subscription","model_training_hr_subscription","training.group_course_user",1,1,1,1
+"access_training_hr_subscription_line","training.hr.subscription.line","model_training_hr_subscription_line","training.group_course_user",1,1,1,1

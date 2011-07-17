@@ -1,0 +1,265 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* training_hr
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-04-15 13:47+0000\n"
+"PO-Revision-Date: 2011-04-15 13:47+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: training_hr
+#: view:training.hr.subscription.line:0
+#: selection:training.hr.subscription.line,state:0
+msgid "Confirmed"
+msgstr "Confirmed"
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+#: view:training.hr.subscription.line:0
+msgid "Confirm"
+msgstr "Confirm"
+
+#. module: training_hr
+#: constraint:training.hr.subscription.line:0
+msgid "\n"
+"The subscription lines must be uniques for each employee!\n"
+"Has the employee another subscription with this subscription line?"
+msgstr "\n"
+"The subscription lines must be uniques for each employee!\n"
+"Has the employee another subscription with this subscription line?"
+
+#. module: training_hr
+#: help:training.hr.subscription,state:0
+msgid "The state of the subscription."
+msgstr "The state of the subscription."
+
+#. module: training_hr
+#: view:training.hr.subscription.line:0
+msgid "Search Subscription Line"
+msgstr "Search Subscription Line"
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+msgid "My Subscriptions"
+msgstr "My Subscriptions"
+
+#. module: training_hr
+#: field:training.hr.subscription,state:0
+#: field:training.hr.subscription.line,state:0
+msgid "State"
+msgstr "State"
+
+#. module: training_hr
+#: selection:training.hr.subscription,state:0
+#: view:training.hr.subscription.line:0
+#: selection:training.hr.subscription.line,state:0
+msgid "Draft"
+msgstr "Draft"
+
+#. module: training_hr
+#: help:training.hr.subscription.line,session_id:0
+msgid "Select the session."
+msgstr "Select the session."
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+msgid "Do you want to cancel this subscription?"
+msgstr "Do you want to cancel this subscription?"
+
+#. module: training_hr
+#: model:ir.model,name:training_hr.model_hr_employee
+#: view:training.hr.subscription:0
+#: field:training.hr.subscription,employee_id:0
+msgid "Employee"
+msgstr "Employee"
+
+#. module: training_hr
+#: view:hr.employee:0
+msgid "Personal Subscriptions"
+msgstr "Personal Subscriptions"
+
+#. module: training_hr
+#: help:training.hr.subscription.line,subscription_id:0
+msgid "Select the subscription."
+msgstr "Select the subscription."
+
+#. module: training_hr
+#: model:ir.actions.act_window,name:training_hr.training_hr_subscription_line_all_act
+#: model:ir.ui.menu,name:training_hr.training_hr_subscription_line
+msgid "Subscription Lines Human Resource"
+msgstr "Subscription Lines Human Resource"
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+msgid "Subscriptions"
+msgstr "Subscriptions"
+
+#. module: training_hr
+#: field:training.hr.subscription,create_date:0
+msgid "Creation Date"
+msgstr "Creation Date"
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+msgid "To Invoice"
+msgstr "To Invoice"
+
+#. module: training_hr
+#: model:ir.actions.act_window,name:training_hr.act_window_subscription_line_related
+msgid "All Subscription Lines"
+msgstr "All Subscription Lines"
+
+#. module: training_hr
+#: model:ir.actions.act_window,name:training_hr.training_hr_subscription_act
+#: model:ir.ui.menu,name:training_hr.training_hr_subscription
+msgid "Subscriptions Human Resource"
+msgstr "Subscriptions Human Resource"
+
+#. module: training_hr
+#: view:training.hr.subscription.line:0
+msgid "Extended Filters..."
+msgstr "Extended Filters..."
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+msgid "To Validate"
+msgstr "To Validate"
+
+#. module: training_hr
+#: constraint:hr.employee:0
+msgid "Error ! You cannot create recursive Hierarchy of Employees."
+msgstr "Error ! You cannot create recursive Hierarchy of Employees."
+
+#. module: training_hr
+#: field:hr.employee,subscription_ids:0
+#: model:ir.model,name:training_hr.model_training_hr_subscription
+#: view:training.hr.subscription:0
+#: field:training.hr.subscription.line,subscription_id:0
+msgid "Subscription"
+msgstr "Subscription"
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+#: field:training.hr.subscription,subscription_line_ids:0
+#: view:training.hr.subscription.line:0
+msgid "Subscription Lines"
+msgstr "Subscription Lines"
+
+#. module: training_hr
+#: selection:training.hr.subscription,state:0
+msgid "Request Sent"
+msgstr "Request Sent"
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+msgid "Search Subscription"
+msgstr "Search Subscription"
+
+#. module: training_hr
+#: view:training.hr.subscription.line:0
+msgid "Do you want to confirm this subscription line?"
+msgstr "Do you want to confirm this subscription line?"
+
+#. module: training_hr
+#: constraint:hr.employee:0
+msgid "Error ! You cannot select a department for which the employee is the manager."
+msgstr "Error ! You cannot select a department for which the employee is the manager."
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+msgid "Subscription Description"
+msgstr "Subscription Description"
+
+#. module: training_hr
+#: sql_constraint:training.hr.subscription:0
+msgid "The name of the subscription must be unique !"
+msgstr "The name of the subscription must be unique !"
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+#: selection:training.hr.subscription,state:0
+#: view:training.hr.subscription.line:0
+#: selection:training.hr.subscription.line,state:0
+msgid "Cancelled"
+msgstr "Cancelled"
+
+#. module: training_hr
+#: model:ir.model,name:training_hr.model_training_hr_subscription_line
+#: view:training.hr.subscription:0
+#: view:training.hr.subscription.line:0
+msgid "Subscription Line"
+msgstr "Subscription Line"
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+msgid "Do you want to confirm the request for this subscription?"
+msgstr "Do you want to confirm the request for this subscription?"
+
+#. module: training_hr
+#: help:training.hr.subscription,name:0
+msgid "The unique identifier is generated by the system (customizable)."
+msgstr "The unique identifier is generated by the system (customizable)."
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+msgid "subscription"
+msgstr "subscription"
+
+#. module: training_hr
+#: help:training.hr.subscription,employee_id:0
+msgid "The subscription name."
+msgstr "The subscription name."
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+#: field:training.hr.subscription,name:0
+#: view:training.hr.subscription.line:0
+#: field:training.hr.subscription.line,name:0
+msgid "Reference"
+msgstr "Reference"
+
+#. module: training_hr
+#: view:training.hr.subscription.line:0
+msgid "Do you want to cancel this subscription line?"
+msgstr "Do you want to cancel this subscription line?"
+
+#. module: training_hr
+#: help:training.hr.subscription.line,state:0
+msgid "The state of participant."
+msgstr "The state of participant."
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+#: view:training.hr.subscription.line:0
+msgid "General"
+msgstr "General"
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+#: view:training.hr.subscription.line:0
+#: field:training.hr.subscription.line,session_id:0
+msgid "Session"
+msgstr "Session"
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+#: selection:training.hr.subscription,state:0
+#: view:training.hr.subscription.line:0
+#: selection:training.hr.subscription.line,state:0
+msgid "Done"
+msgstr "Done"
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+#: view:training.hr.subscription.line:0
+msgid "Cancel"
+msgstr "Cancel"
+

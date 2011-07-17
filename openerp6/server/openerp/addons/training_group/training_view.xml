@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+<!-- training.group -->
+        <record model="ir.ui.view" id="group_tree">
+            <field name="name">training.group.tree</field>
+            <field name="model">training.group</field>
+            <field name="type">tree</field>
+            <field name="inherit_id" ref="training.group_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="/tree/field[@name='name']" position="after">
+                    <field name="parent_id"/>
+                </xpath>
+                <xpath expr="/tree/field[@name='session_id']" position="after">
+                    <field name="generate_seances"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="group_form">
+            <field name="name">training.group.form</field>
+            <field name="model">training.group</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="training.group_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/field[@name='name']" position="after">
+                    <field name="parent_id"/>
+                </xpath>
+                <xpath expr="/form/field[@name='session_id']" position="after">
+                    <field name="generate_seances"/>
+                </xpath>
+            </field>
+        </record>
+
+<!-- res.partner.contact -->
+        <record model="ir.ui.view" id="partner_contact_search_view_inherited">
+            <field name="name">Contact search view inherited</field>
+            <field name="model">res.partner.contact</field>
+		    <field name="inherit_id" ref="base_contact.view_partner_contact_search"/>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <xpath expr="/search/field[@name='partner_id']" position="after">
+                    <field name="group_id"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="res_partner_contact_form_view_inherited">
+            <field name="name">Contact form view inherited</field>
+            <field name="model">res.partner.contact</field>
+		    <field name="inherit_id" ref="base_contact.view_partner_contact_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form/notebook/page[@string='Extra Information']/field[@name='birthdate']" position="after">
+                    <field name="group_id" string="Training Group"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="res_partner_contact_tree_view_inherited">
+            <field name="name">Contact tree view inherited</field>
+            <field name="model">res.partner.contact</field>
+		    <field name="inherit_id" ref="base_contact.view_partner_contact_tree"/>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree/field[@name='function']" position="after">
+                    <field name="group_id"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</openerp>

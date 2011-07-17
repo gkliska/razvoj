@@ -22,12 +22,14 @@
 #
 ############################################################################################
 
-from cStringIO import StringIO
 from osv import osv, fields
-import decimal_precision as dp
-from tools import config
 from tools.translate import _
+
+from cStringIO import StringIO
+from tools import config
 from zipfile import PyZipFile, ZIP_DEFLATED
+
+import decimal_precision as dp
 import base64
 import mx.DateTime
 import netsvc
@@ -37,7 +39,6 @@ import time
 import datetime
 import tools
 import re
-import mx
 
 
 WRITABLE_ONLY_IN_DRAFT = dict(readonly=True, states={'draft': [('readonly', False)]})
@@ -123,22 +124,20 @@ class training_course_type(osv.osv):
     _description = "The Course's Type"
 
     _columns = {
-        'name' : fields.char('Course Type', size=32, required=True, select=1, help="The course type's name"),
+        'name' : fields.char('Course Type', size=32, required=True, help="The course type's name."),
         'objective' : fields.text('Objective',
-                                  help="Allows to the user to write the objectives of the course type",
+                                  help="Allows to the user to write the objectives of the course type.",
                                   translate=True,
                                  ),
         'description' : fields.text('Description',
                                     translate=True,
-                                    help="Allows to the user to write the description of the course type"),
+                                    help="Allows to the user to write the description of the course type."),
         'min_limit' : fields.integer('Minimum Threshold',
                                      required=True,
-                                     select=2,
-                                     help="The minimum threshold is the minimum for this type of course"),
+                                     help="The minimum threshold is the minimum for this type of course."),
         'max_limit' : fields.integer('Maximum Threshold',
                                      required=True,
-                                     select=2,
-                                     help="The maximum threshold is the maximum for this type of course"),
+                                     help="The maximum threshold is the maximum for this type of course."),
         'product_id' : fields.many2one('product.product', 'Lecturer'),
     }
 
@@ -164,15 +163,15 @@ class training_course_purchase_line(osv.osv):
     _rec_name = 'course_id'
     _columns = {
         'course_id' : fields.many2one('training.course', 'Course', required=True,
-                                      help="The course attached to this purchase line",
+                                      help="The course attached to this purchase line.",
                                       domain="[('state_course', '=', 'validated')]",
                                       ondelete='cascade'),
         'product_id' : fields.many2one('product.product', 'Product', required=True,
-                                       help="The product for this purchase line"),
+                                       help="The product for this purchase line."),
         'product_qty' : fields.integer('Quantity', required=True,
-                                       help="The quantity of this product"),
+                                       help="The quantity of this product."),
         'product_uom' : fields.many2one('product.uom', 'Product UoM', required=True,
-                                        help="The unit of mesure for this product"),
+                                        help="The unit of mesure for this product."),
         'product_price' : fields.related('product_id', 'standard_price', type='float', digits_compute=dp.get_precision('Account'), string='Cost Price'),
         'attachment_id' : fields.many2one('ir.attachment', 'Attachment'),
         'attachment_price' : fields.related('attachment_id', 'price', type='float', digits_compute=dp.get_precision('Account'), string='Attachment Price', readonly=True),
@@ -224,7 +223,7 @@ class training_course_theme(osv.osv):
         'parent_id': fields.many2one('training.course.theme', 'Parent', select=1),
         'priority': fields.integer('Priority'),
         'description' : fields.text('Description',
-                                    help="Allows to write the description of the theme"),
+                                    help="Allows to write the description of the theme."),
     }
 
     _defaults = {
@@ -268,8 +267,8 @@ class training_course_offer_rel(osv.osv):
 
     _columns = {
         'sequence' : fields.integer('Sequence'),
-        'course_id' : fields.many2one('training.course', 'Course', required=True, select=1, ondelete='cascade'),
-        'offer_id' : fields.many2one('training.offer', 'Offer', required=True, select=1, ondelete='cascade'),
+        'course_id' : fields.many2one('training.course', 'Course', required=True, ondelete='cascade'),
+        'offer_id' : fields.many2one('training.offer', 'Offer', required=True, ondelete='cascade'),
         'category_id' : fields.related('course_id', 'category_id', type='many2one', relation='training.course_category',  string='Product Line', readonly=True),
         'course_type_id' : fields.related('course_id', 'course_type_id', type='many2one', relation='training.course_type', string='Course Type', readonly=True),
         'lang_id' : fields.related('course_id', 'lang_id', type='many2one', relation='res.lang', string='Language', readonly=True),
@@ -405,95 +404,74 @@ class training_course(osv.osv):
         return list(res)
 
     _columns = {
-        'splitted_by' : fields.selection([('2', '2 Hours'),
-                                          ('4', '4 Hours'),
-                                          ('8', '8 Hours')
-                                         ],
-                                         'Splitted By',
-                                         required=True),
-        'price' : fields.function(_price_compute,
+        'splitted_by': fields.float('Splitted By', required=True),
+        'price': fields.function(_price_compute,
                                   method=True,
                                   string='Price',
                                   type='float',
                                   digits_compute=dp.get_precision('Account'),
-                                  #store = {
-                                  #    'ir.attachment' : (_get_support, None, 10),
-                                  #},
-                                  help='The price of the support of the courses'),
-        'theme_ids' : fields.many2many('training.course.theme', 'training_course_theme_rel', 'course_id',
+                                  help='The price of the support of the courses.'),
+        'theme_ids': fields.many2many('training.course.theme', 'training_course_theme_rel', 'course_id',
                                       'theme_id', 'Theme'),
-
-        'duration' : fields.function(_duration_compute,
+        'duration': fields.function(_duration_compute,
                                      method=True,
                                      string='Duration',
                                      type='float',
                                      store=True,
-                                     help='The duration of the course'),
-
-        'duration_with_children':fields.function(_total_duration_compute,
+                                     help='The duration of the course.'),
+        'duration_with_children': fields.function(_total_duration_compute,
                                                  method=True,
                                                  string='Duration',
                                                  type='float',
                                                  store=True,
-                                                 help='The duration of the course'),
-
-        'duration_without_children':fields.float('Duration',
-                                                 help="The duration of the course"),
-
+                                                 help='The duration of the course.'),
+        'duration_without_children': fields.float('Duration',
+                                                 help="The duration of the course."),
         'with_children': fields.function(_with_children_compute,
                                          method=True,
                                          string='With Children',
                                          store=True,
                                          type='boolean',
-                                         help='Allows to know if the course contains some subcourses or not'),
-
-        'p_id' : fields.many2one('training.course',
+                                         help='Allows to know if the course contains some subcourses or not.'),
+        'p_id': fields.many2one('training.course',
                                  'Parent Course',
-                                 help="The parent course",
+                                 help="The parent course.",
                                  readonly=True,
                                  domain="[('state_course', '=', 'validated')]"),
-
-        'course_ids' : fields.one2many('training.course',
+        'course_ids': fields.one2many('training.course',
                                        'p_id',
                                        "Sub Courses",
-                                       help="A course can be completed with some subcourses"),
-
-        'sequence' : fields.integer('Sequence',
-                                    help="The sequence can help the user to reorganize the order of the courses"),
-
-        'reference_id' : fields.many2one('training.course',
+                                       help="A course can be completed with some subcourses."),
+        'sequence': fields.integer('Sequence',
+                                    help="The sequence can help the user to reorganize the order of the courses."),
+        'reference_id': fields.many2one('training.course',
                                          'Master Course',
-                                         help="The master course is necessary if the user wants to link certain courses together to easy the managment",
+                                         help="The master course is necessary if the user wants to link certain courses together to easy the managment.",
                                         ),
-        'child_reference_id' : fields.one2many('training.course', 'reference_id', 'Children'),
-
-        'reference_lang_id' : fields.related('reference_id', 'lang_id', type='many2one', relation='res.lang', string="Master Course's Language", readonly=True),
-        'reference_type' : fields.related('reference_id', 'course_type_id', type='many2one', relation='training.course_type', string="Master Course's Type", readonly=True),
-        'analytic_account_id' : fields.many2one('account.analytic.account', 'Account'),
-        'course_type_id' : fields.many2one('training.course_type', 'Type', select=1),
+        'child_reference_id': fields.one2many('training.course', 'reference_id', 'Children'),
+        'reference_lang_id': fields.related('reference_id', 'lang_id', type='many2one', relation='res.lang', string="Master Course's Language", readonly=True),
+        'reference_type': fields.related('reference_id', 'course_type_id', type='many2one', relation='training.course_type', string="Master Course's Type", readonly=True),
+        'analytic_account_id': fields.many2one('account.analytic.account', 'Account'),
+        'course_type_id': fields.many2one('training.course_type', 'Type', select=1),
         'category_id': fields.many2one('training.course_category', 'Product Line', select=1),
-
-        'lecturer_ids' : fields.many2many('res.partner.job', 'training_course_job_rel', 'course_id', 'job_id', 'Lecturers',
+        'lecturer_ids': fields.many2many('res.partner.job', 'training_course_job_rel', 'course_id', 'job_id', 'Lecturers',
                                           select=1,
-                                          help="The lecturers who give the course"),
-
-        'internal_note' : fields.text('Note',
+                                          help="The lecturers who give the course."),
+        'internal_note': fields.text('Note',
                                       translate=True,
-                                      help="The user can write some internal note for this course"),
-
-        'lang_id' : fields.many2one('res.lang',
+                                      help="The user can write some internal note for this course."),
+        'lang_id': fields.many2one('res.lang',
                                     'Language',
                                     required=True,
                                     select=1,
                                     domain=[('active', '=', True), ('translatable', '=', True)],
-                                    help="The language of the course"),
+                                    help="The language of the course."),
         'kind': fields.selection(training_course_kind_compute,
                                  'Kind',
                                  required=True,
                                  select=2,
-                                 help="The kind of course"),
-
-        'state_course' : fields.selection([('draft', 'Draft'),
+                                 help="The kind of course."),
+        'state_course': fields.selection([('draft', 'Draft'),
                                            ('pending', 'Ask Review'),
                                            ('deprecated', 'Deprecated'),
                                            ('validated', 'Validated'),
@@ -502,15 +480,12 @@ class training_course(osv.osv):
                                           required=True,
                                           readonly=True,
                                           select=1,
-                                          help="The state of the course"
+                                          help="The state of the course."
                                          ),
-
-        'purchase_line_ids' : fields.one2many('training.course.purchase_line', 'course_id',
+        'purchase_line_ids': fields.one2many('training.course.purchase_line', 'course_id',
                                               'Supplier Commands',
-                                              help="The purchase line helps to create a purchase order for the seance"),
-
-
-        'has_support' : fields.function(_has_support,
+                                              help="The purchase line helps to create a purchase order for the seance."),
+        'has_support': fields.function(_has_support,
                                         method=True,
                                         type="boolean",
                                         store={
@@ -518,26 +493,24 @@ class training_course(osv.osv):
                                         },
                                         select=2,
                                         string="Has Support"),
-
-        'long_name' : fields.char('Long Name',
+        'long_name': fields.char('Long Name',
                                      size=256,
                                      select=1,
-                                     help='Allows to show the long name of the course for the external view'),
-
+                                     help='Allows to show the long name of the course for the external view.'),
         'attachment_ids' : fields.function(_attachment_compute,
                                            method=True,
                                            string='Supports of Course',
                                            type='one2many',
                                            relation='ir.attachment'),
-        'pending_ids' : fields.one2many('training.course.pending', 'course_id', 'Pendings'),
-
+        'pending_ids': fields.one2many('training.course.pending', 'course_id', 'Pendings'),
+        'offer_ids': fields.one2many('training.course.offer.rel', 'course_id', 'Offers', help='A course could be used by several offers.'),
     }
 
     _defaults = {
         'state_course' : lambda *a: 'draft',
         'duration' : lambda *a: 1.0,
         'duration_without_children' : lambda *a: 1.0,
-        'splitted_by' : lambda *a: '8',
+        'splitted_by' : lambda *a: 1.0,
         'kind': lambda *a: 'standard',
     }
 
@@ -638,7 +611,7 @@ class training_offer_public_target(osv.osv):
                            translate=True,
                            size=256,
                            select=1,
-                           help="Allows to the participants to select a course whose can participate"),
+                           help="Allows to the participants to select a course whose can participate."),
         'note' : fields.text('Target Audience', translate=True),
     }
 
@@ -667,7 +640,7 @@ class training_offer_format(osv.osv):
     _description = "The delivery format of the offer or session"
 
     _columns = {
-        'name' : fields.char('Name', size=32, required=True, select=1, help="The format's name of the offer or session"),
+        'name' : fields.char('Name', size=32, required=True, help="The format's name of the offer or session."),
         'active' : fields.boolean('Active'),
     }
 
@@ -677,36 +650,6 @@ class training_offer_format(osv.osv):
 
 training_offer_format()
 
-class training_offer_purchase_line_update_wizard(osv.osv_memory):
-    _name = 'training.offer.purchase.line.update.wizard'
-    _columns = {
-        'name': fields.char('Summary', size=256),
-        'log': fields.text('Log Text'),
-        'date': fields.datetime('Date'),
-        'state': fields.selection([('confirm','Confirm'),('update','Update')]),
-    }
-
-    _defaults = {
-        'state': lambda *a: 'confirm',
-    }
-
-    def action_cancel(self, cr, uid, ids, context=None):
-        return {'type': 'ir.actions.act_window_close' }
-
-    def action_close(self, cr, uid, ids, context=None):
-        return {'type': 'ir.actions.act_window_close' }
-
-    def action_confirm(self, cr, uid, ids, context=None):
-        offer_proxy = self.pool.get('training.offer')
-        offer_id = context.get('active_id', False)
-        val = offer_proxy.action_update_seance_procurements(cr, uid, offer_id, context=context)
-        if val:
-            val['state'] = 'update'
-        else:
-            val = { 'name': _('FAILED')}
-        return self.write(cr, uid, ids, val, context=context)
-
-training_offer_purchase_line_update_wizard()
 
 class training_offer_purchase_line_log(osv.osv):
     _name = 'training.offer.purchase.line.log'
@@ -725,12 +668,12 @@ class training_offer_purchase_line(osv.osv):
         'offer_id' : fields.many2one('training.offer', 'Offer', required=True,
                                       domain="[('state_course', '=', 'validated')]", ondelete='cascade'),
         'product_id' : fields.many2one('product.product', 'Product', required=True,
-                                       help="The product for this purchase line"),
+                                       help="The product for this purchase line."),
         'description' : fields.char('Description', size=128),
         'product_qty' : fields.integer('Quantity', required=True,
-                                       help="The quantity of this product"),
+                                       help="The quantity of this product."),
         'product_uom' : fields.many2one('product.uom', 'Product UoM', required=True,
-                                        help="The unit of mesure for this product"),
+                                        help="The unit of mesure for this product."),
         'product_price' : fields.related('product_id', 'standard_price', type='float',
                                          digits_compute=dp.get_precision('Account'),
                                          string='Cost Price'),
@@ -806,24 +749,6 @@ def training_offer_kind_compute(obj, cr, uid, context=None):
 class training_offer(osv.osv):
     _name = 'training.offer'
     _description = 'Offer'
-
-    def on_change_course_ids(self, cr, uid, ids, course_ids, context=None):
-        values = {
-            'type_id' : 0,
-            'product_line_id' : 0,
-        }
-
-        if len(course_ids) == 1:
-            course = self.pool.get('training.course').browse(cr, uid, course_ids[0][2]['course_id'])
-
-            values.update({
-                'name' : course.name,
-                'type_id' : course.course_type_id.id,
-                'product_line_id' : course.category_id.id,
-            })
-
-        # Creer un bouton 'draft' qui rebalance en draft quand une offre est deja deprecated
-        return {'value' : values}
 
     def _is_standalone_compute(self, cr, uid, ids, fieldnames, args, context=None):
         res = dict.fromkeys(ids, 0)
@@ -1026,36 +951,35 @@ class training_offer(osv.osv):
         return [('id', 'in', res)]
 
     _columns = {
-        'product_line_id' : fields.many2one('training.course_category', 'Product Line', select=1, required=True),
-
+        'product_line_id' : fields.many2one('training.course_category', 'Product Line', required=True),
         'type_id' : fields.many2one('training.course_type', 'Type'),
         'name' : fields.char('Name',
                              size=64,
                              required=True,
                              select=1,
-                             help="The name's offer"),
+                             help="The name's offer."),
         'product_id' : fields.many2one('product.product',
                                        'Product',
-                                       help="An offer can be a product for invoicing",
+                                       help="An offer can be a product for invoicing.",
                                       ),
-        'course_ids' : fields.one2many('training.course.offer.rel', 'offer_id', 'Courses', help='An offer can contain some courses'),
+        'course_ids' : fields.one2many('training.course.offer.rel', 'offer_id', 'Courses', help='An offer can contain some courses.'),
         'duration' : fields.function(_duration_compute,
                                      method=True,
                                      string='Duration',
                                      type='float',
                                     ),
         'objective' : fields.text('Objective',
-                                  help='The objective of the course will be used by the internet web site'
+                                  help='The objective of the course will be used by the internet web site.'
                                  ),
         'description' : fields.text('Description',
-                                    help="Allows to write the description of the course"),
+                                    help="Allows to write the description of the course."),
         'requeriments' : fields.text('Requeriments',
-                                    help="Allows to write the requeriments of the course"),
+                                    help="Allows to write the requeriments of the course."),
         'management' : fields.text('Management',
-                                    help="Allows to write the management of the course"),
-        'sequence' : fields.integer('Sequence', help="Allows to order the offers by its importance"),
+                                    help="Allows to write the management of the course."),
+        'sequence' : fields.integer('Sequence', help="Allows to order the offers by its importance."),
         'format_id' : fields.many2one('training.offer.format', 'Format', required=True, select=1,
-                                    help="Delivery format of the course"),
+                                    help="Delivery format of the course."),
         'state' : fields.selection([('draft', 'Draft'),
                                     ('validated', 'Validated'),
                                     ('deprecated', 'Deprecated')
@@ -1064,7 +988,7 @@ class training_offer(osv.osv):
                                    required=True,
                                    readonly=True,
                                    select=1,
-                                   help="The status of the course",
+                                   help="The status of the course.",
                                   ),
         'kind' : fields.selection(training_offer_kind_compute,
                                   'Kind',
@@ -1072,37 +996,32 @@ class training_offer(osv.osv):
                                   select=1),
         'target_public_id' : fields.many2one('training.offer.public.target',
                                           'Target Audience', select=1,
-                                          help="Set the target audience"),
+                                          help="Set the target audience."),
         'lang_id' : fields.many2one('res.lang', 'Language'),
         'create_date' : fields.datetime('Create Date', readonly=True),
-
         'preliminary_offer_ids' : fields.many2many('training.offer',
                                                    'training_offer_pre_offer_rel',
                                                    'offer_id',
                                                    'prel_offer_id',
                                                    'Preliminary Offers',
                                                    domain="[('state', '=', 'validated')]"),
-
         'complementary_offer_ids' : fields.many2many('training.offer',
                                                      'training_offer_cpl_offer_rel',
                                                      'offer_id',
                                                      'cpl_offer_id',
                                                      'Complementary Offers',
                                                      domain="[('state', '=', 'validated')]"),
-
         'included_offer_ids' : fields.many2many('training.offer',
                                                      'training_offer_incl_offer_rel',
                                                      'offer_id',
                                                      'incl_offer_id',
                                                      'Included Offers',
                                                      domain="[('state', '=', 'validated')]"),
-
         'is_standalone' : fields.function(_is_standalone_compute,
                                           method=True,
                                           string='Is Standalone',
                                           type="boolean",
-                                          help="Allows to know if an offer is standalone or a block of courses"),
-
+                                          help="Allows to know if an offer is standalone or a block of courses."),
         'purchase_line_ids' : fields.one2many('training.offer.purchase.line',
                                               'offer_id',
                                               'Procurements'),
@@ -1111,14 +1030,12 @@ class training_offer(osv.osv):
                                               'Procurements Logs'),
         'theme_ids' : fields.many2many('training.course.theme', 'training_offer_them_rel', 'offer_id',
                                       'theme_id', 'Theme'),
-        'notification_note': fields.text('Notification Note', help='This note will be show on notification emails'),
-        'is_certification': fields.boolean('Is a certification?', help='Indicate is this Offer is a Certification Offer'),
-
+        'notification_note': fields.text('Notification Note', help='This note will be show on notification emails.'),
+        'is_certification': fields.boolean('Is a certification?', help='Indicate is this Offer is a Certification Offer.'),
         'can_be_planned' : fields.function(_can_be_planned_compute, method=True,
                                            fnct_search=_can_be_planned_search,
                                            type='boolean',
                                            string='Can Be Planned'),
-
         'is_planned': fields.function(is_planned_compute, method=True,
                                       fnct_search=is_planned_search,
                                       type='boolean',
@@ -1165,15 +1082,15 @@ class training_catalog(osv.osv):
                                 size=4,
                                 required=True,
                                 select=1,
-                                help="The year when the catalog has been published",
+                                help="The year when the catalog has been published.",
                                ),
         'session_ids' : fields.one2many('training.session',
                                         'catalog_id',
                                         'Sessions',
-                                        help="The sessions in the catalog"),
+                                        help="The sessions in the catalog."),
         'note' : fields.text('Note',
                              translate=True,
-                             help="Allows to write a note for the catalog"),
+                             help="Allows to write a note for the catalog."),
         'state' : fields.selection([('draft','Draft'),
                                     ('validated', 'Validated'),
                                     ('inprogress', 'In Progress'),
@@ -1184,7 +1101,7 @@ class training_catalog(osv.osv):
                                    required=True,
                                    readonly=True,
                                    select=1,
-                                   help="The status of the catalog",
+                                   help="The status of the catalog.",
                                   ),
     }
 
@@ -1195,121 +1112,6 @@ class training_catalog(osv.osv):
 
 training_catalog()
 
-def get_zip_from_directory(directory, b64enc=True):
-    RE_exclude = re.compile('(?:^\..+\.swp$)|(?:\.py[oc]$)|(?:\.bak$)|(?:\.~.~$)', re.I)
-
-    def _zippy(archive, path):
-        path = os.path.abspath(path)
-        base = os.path.basename(path)
-        for f in tools.osutil.listdir(path, True):
-            bf = os.path.basename(f)
-            if not RE_exclude.search(bf):
-                archive.write(os.path.join(path, f), os.path.join(base, f))
-
-    archname = StringIO()
-    archive = PyZipFile(archname, "w", ZIP_DEFLATED)
-    archive.writepy(directory)
-    _zippy(archive, directory)
-    archive.close()
-    val = archname.getvalue()
-    archname.close()
-
-    if b64enc:
-        val = base64.encodestring(val)
-
-    return val
-
-class training_seance_generate_pdf_wizard(osv.osv_memory):
-    _name = 'training.seance.generate.zip.wizard'
-
-    _columns = {
-        'presence_list_report' : fields.boolean('Presence List Report',
-                                                help="If you select this option you will print the report for the presence list. " \
-                                                "The file format is Presence_List_DATEOFSEANCE_SEANCEID.pdf"),
-        'remuneration_form_report' : fields.boolean('Remuneration Form',
-                                                    help="If you select this option, you will print the report for the remuneration " \
-                                                    "forms of all contacts. The file format is Request_REQUESTNAME_Invoice_INVOICEID.pdf"),
-        'zip_file' : fields.binary('Zip File', readonly=True),
-        'zip_file_name' : fields.char('File name', readonly=True, size=64),
-        'state' : fields.selection( [ ('selection', 'Selection'), ('result', 'Result') ], 'State', readonly=True, required=True),
-    }
-
-    _defaults = {
-        'presence_list_report' : lambda *a: 0,
-        'remuneration_form_report' : lambda *a: 0,
-        'state' : lambda *a: 'selection',
-    }
-
-    def action_close(self, cr, uid, ids, context=None):
-        return { 'type' : 'ir.actions.act_window.close' }
-
-    def action_generate_zip(self, cr, uid, ids, context=None):
-        try:
-            import tempfile
-            parent_directory = tempfile.mkdtemp(prefix='openerp_', suffix='_reports')
-            directory = os.path.join(parent_directory, 'Reports')
-            os.mkdir(directory)
-            self.add_selections(cr, uid, ids, directory, context=context)
-            result = get_zip_from_directory(directory, True)
-            fp = file(os.path.join(parent_directory, 'output.zip'), 'w')
-            fp.write(result)
-            fp.close()
-
-            active_id = context and context.get('active_id')
-            seance = self.pool.get('training.seance').browse(cr, uid, active_id, context=context)
-            ts = time.strptime(seance.date, '%Y-%m-%d %H:%M:%S')
-            date = time.strftime('%Y%m%d', ts)
-
-            values = {
-                'state' : 'result',
-                'zip_file' : result,
-                'zip_file_name' : 'Seance_Reports_%s_%06d.zip' % (date, seance.id),
-            }
-        finally:
-            import shutil
-            shutil.rmtree(parent_directory)
-        return self.write(cr, uid, ids, values, context=context)
-
-    def _get_report(self, cr, uid, oid, reportname, context=None):
-        srv = netsvc.LocalService(reportname)
-        pdf, _ = srv.create(cr, uid, [oid], {}, context=context)
-        return pdf
-
-    def add_selections(self, cr, uid, ids, directory, context=None):
-        active_id = context and context.get('active_id')
-        seance = self.pool.get('training.seance').browse(cr, uid, active_id, context=context)
-        ts = time.strptime(seance.date, '%Y-%m-%d %H:%M:%S')
-        date = time.strftime('%Y%m%d', ts)
-        for obj in self.browse(cr, uid, ids, context=context):
-            if obj.presence_list_report:
-                res = self._get_report(cr, uid, active_id, 'report.training.seance.presence.report', context=context)
-                filename = os.path.join(directory, 'Presence_List_%s_%06d.pdf' % (date, seance.id,))
-                fp = file(filename, 'w')
-                fp.write(res)
-                fp.close()
-
-            if obj.remuneration_form_report:
-                for contact in seance.contact_ids:
-                    if not contact.request_id:
-                        raise osv.except_osv(_('Error'),
-                                             _('The stakeholder %s %s has not a request') % (contact.job_id.fist_name, contact.job_id.name) )
-
-                    if not contact.request_id.purchase_order_id:
-                        raise osv.except_osv(_('Error'),
-                                             _('There is no Purchase Order for a request'))
-
-                    if not contact.request_id.purchase_order_id.invoice_id:
-                        raise osv.except_osv(_('Error'),
-                                             _('There is no Invoice for the Purchase Order for this request'))
-
-                    res = self._get_report(cr, uid, contact.request_id.purchase_order_id.invoice_id.id, 'report.account.invoice', context=context)
-                    filename = os.path.join(directory, 'Request_%s_Invoice_%06d.pdf' % (re.sub('/|-', '_', contact.request_id.reference),
-                                                                                        contact.request_id.purchase_order_id.invoice_id.id))
-                    fp = file(filename, 'w')
-                    fp.write(res)
-                    fp.close()
-
-training_seance_generate_pdf_wizard()
 
 class training_seance(osv.osv):
     _name = 'training.seance'
@@ -1320,8 +1122,8 @@ class training_group(osv.osv):
     _name = 'training.group'
     _description = 'Group'
     _columns = {
-        'name': fields.char('Name', size=64, required=True, select=True, help="The group's name",),
-        'session_id' : fields.many2one('training.session', 'Session', select=1, required=True, ondelete='cascade'),
+        'name': fields.char('Name', size=64, required=True, select=True, help="The group's name.",),
+        'session_id' : fields.many2one('training.session', 'Session', required=True, select=True, ondelete='cascade'),
         'seance_ids' : fields.one2many('training.seance', 'group_id', 'Seances', readonly=True),
     }
 
@@ -1336,24 +1138,54 @@ class training_session(osv.osv):
     _description = 'Session'
     _order = 'date desc, name'
 
+    def _name_session(self, cr, uid, user, obj):
+        name_session = []
+        if user.company_id.training_name:
+            name_session.append(obj.name)
+        if user.company_id.training_date:
+            name_session.append(obj.date[:10])
+        if user.company_id.training_address_street and obj.address_id.street:
+            name_session.append(obj.address_id.street)
+        if user.company_id.training_address_zip and obj.address_id.zip:
+            name_session.append(obj.address_id.zip)
+        if user.company_id.training_address_city and obj.address_id.city:
+            name_session.append(obj.address_id.city)
+
+        if len(name_session)>0:
+            name = "/".join(name_session) #ej: edition/date/place
+        else:
+            name = obj.name
+
+        return name
+
+    def _name_get(self, cr, uid, ids, name, args, context=None):
+        res = dict.fromkeys(ids, '')
+        user = self.pool.get('res.users').browse(cr, uid, uid)
+
+        for obj in self.browse(cr, uid, ids):
+            name = self._name_session(cr, uid, user, obj)
+            res[obj.id] = "%s" % (name)
+
+        return res
+
+    def name_get(self, cr, uid, ids, context=None):
+        res = []
+        if not len(ids):
+            return []
+
+        user = self.pool.get('res.users').browse(cr, uid, uid)
+        for obj in self.browse(cr, uid, ids):
+            name = self._name_session(cr, uid, user, obj)
+            res.append((obj['id'], name))
+
+        return res
+
     def _has_shared_seances_compute(self, cr, uid, ids, fieldnames, args, context=None):
         res = dict.fromkeys(ids, False)
         for session in self.browse(cr, uid, ids, context=context):
             res[session.id] = any(seance.shared for seance in session.seance_ids)
 
         return res
-
-    # training.session
-    #def _name_compute(self, cr, uid, ids, name, args, context=None):
-    #    res = dict.fromkeys(ids, '')
-
-    #    for obj in self.browse(cr, uid, ids):
-    #        date = time.strftime('%Y-%m-%d', time.strptime(obj.date, '%Y-%m-%d %H:%M:%S'))
-    #        res[obj.id] = "[%s] %s (%s)" % (obj.kind[0].upper(),
-    #                                        obj.offer_id.name,
-    #                                        date,)
-
-    #    return res
 
     # training.session
     def _store_get_participation(self, cr, uid, ids, context=None):
@@ -1472,17 +1304,10 @@ class training_session(osv.osv):
                                                method=True,
                                                type='boolean',
                                                string="Has Shared Seances",
-                                               help="Allows to know if the session has a shared seance"
+                                               help="Allows to know if the session has a shared seance."
                                               ),
-        'name' : fields.char('Name', size=64, required=True, select=1),
-        #'name' : fields.function(_name_compute,
-        #                         method=True,
-        #                         type="char",
-        #                         size=64,
-        #                         select=1,
-        #                         store=True,
-        #                         string='Name',
-        #                         help="The session's name"),
+        'name' : fields.char('Name', size=64, required=True),
+        'name_session': fields.function(_name_get, method=True, string='Name Session', type='char', size=128),
         'state' : fields.selection([('draft', 'Draft'),
                                     ('opened', 'Opened'),
                                     ('opened_confirmed', 'Confirmed'),
@@ -1493,56 +1318,40 @@ class training_session(osv.osv):
                                    'State',
                                    required=True,
                                    readonly=True,
-                               select=1,
-                               help="The status of the session",
+                               help="The status of the session.",
                                   ),
         'group_ids' : fields.one2many('training.group', 'session_id', 'Group', readonly=True),
         'done' : fields.boolean('Done'),
         'offer_id' : fields.many2one('training.offer',
                                      'Offer',
-                                     select=1,
                                      required=True,
-                                     help="Allows to select a validated offer for the session",
+                                     help="Allows to select a validated offer for the session.",
                                      domain="[('state', '=', 'validated')]"
                                     ),
-        'offer_product_line_id' : fields.related('offer_id', 'product_line_id', type='many2one', relation='training.course_category', select=1, string='Product Line'),
+        'offer_product_line_id' : fields.related('offer_id', 'product_line_id', type='many2one', relation='training.course_category', string='Product Line'),
         'kind' : fields.related('offer_id',
                                 'kind',
                                 type='selection',
                                 selection=training_offer_kind_compute,
                                 string='Kind',
                                 readonly=True),
-        'catalog_id' : fields.many2one('training.catalog', 'Catalog',
-                                       select=1,
-                                       help="Allows to select a published catalog"
-                                      ),
+        'catalog_id' : fields.many2one('training.catalog', 'Catalog', help="Allows to select a published catalog."),
         'seance_ids' : fields.many2many('training.seance',
                                         'training_session_seance_rel',
                                         'session_id',
                                         'seance_id',
                                         'Seances',
                                         ondelete='cascade',
-                                        help='List of the events in the session'),
-        'date' : fields.datetime('Date',
-                                 required=True,
-                                 select=1,
-                                 help="The date of the planned session"
-                                ),
-        'date_end' : fields.datetime('End Date',
-                                 help="The end date of the planned session"
-                                ),
-        'address_id' : fields.many2one('res.partner.address', 'Training place',
-                                    help='Address where the training is planned'),
-        'format_id' : fields.many2one('training.offer.format', 'Format', required=True, select=2,
-                                    help="Delivery format of the planned session"),
-        'user_id' : fields.many2one('res.users',
-                                    'Responsible',
-                                    select=1,
-                                    required=True),
+                                        help='List of the events in the session.'),
+        'date' : fields.datetime('Date', required=True, help="The date of the planned session."),
+        'date_end' : fields.datetime('End Date', help="The end date of the planned session."),
+        'address_id' : fields.many2one('res.partner.address', 'Training place', help='Address where the training is planned.'),
+        'format_id' : fields.many2one('training.offer.format', 'Format', required=True, help="Delivery format of the planned session."),
+        'user_id' : fields.many2one('res.users', 'Responsible', required=True),
         'available_seats' : fields.function(_available_seats_compute,
                                             method=True,
                                             string="Available Seats",
-                                            help="Available Seats = Maximum Threshold - Total Confirmed Seats",
+                                            help="Available Seats = Maximum Threshold - Total Confirmed Seats.",
                                             type='integer'),
 
         'participant_count' : fields.function(_participant_count,
@@ -1563,7 +1372,7 @@ class training_session(osv.osv):
                                                 method=True,
                                                 string="Draft Subscriptions",
                                                 type="integer",
-                                                help="Draft Subscriptions for this session",
+                                                help="Draft Subscriptions for this session.",
                                                ),
 
         'subscription_line_ids': fields.one2many('training.subscription.line',
@@ -1572,8 +1381,8 @@ class training_session(osv.osv):
                                                  readonly=True),
 
         'participant_count_manual' : fields.integer('Manual Confirmed Seats',
-                                                    help="The quantity of supports, catering, ... relative to the number of participants coming from the confirmed seats"),
-        'manual' : fields.boolean('Manual', help="Allows to the user to specify the number of participants"),
+                                                    help="The quantity of supports, catering, ... relative to the number of participants coming from the confirmed seats."),
+        'manual' : fields.boolean('Manual', help="Allows to the user to specify the number of participants."),
         'min_limit' : fields.function(_limit_all,
                                       method=True,
                                       string='Mininum Threshold',
@@ -1582,7 +1391,7 @@ class training_session(osv.osv):
                                       #},
                                       type='integer',
                                       multi='limit',
-                                      help="The minimum threshold is the minimum of the minimum threshold of each seance",
+                                      help="The minimum threshold is the minimum of the minimum threshold of each seance.",
                                       readonly=True),
         'max_limit' : fields.function(_limit_all,
                                       method=True,
@@ -1592,7 +1401,7 @@ class training_session(osv.osv):
                                       #},
                                       type='integer',
                                       multi='limit',
-                                      help="The maximum threshold is the minimum of the maximum threshold of each seance",
+                                      help="The maximum threshold is the minimum of the maximum threshold of each seance.",
                                       readonly=True),
         'min_limit_reached': fields.function(_min_limit_reached,
                                              method=True,
@@ -1606,7 +1415,6 @@ class training_session(osv.osv):
                                              ),
 
         'request_ids': fields.one2many('training.participation.stakeholder.request', 'session_id', 'Requests'),
-        'stylegroup_id': fields.many2one('training.email.stylegroup', 'Style Group'),
     }
 
     _order = "date asc"
@@ -1628,14 +1436,20 @@ class training_session(osv.osv):
             for seance in session.seance_ids:
                 if seance.date < session.date:
                     return False
+        return True
 
+    def _check_date_end_of_seances(self, cr, uid, ids, context=None):
+        for session in self.browse(cr, uid, ids, context=context):
+            for seance in session.seance_ids:
+                if session.date_end and seance.date > session.date_end:
+                    return False
         return True
 
     _constraints = [
         #(_check_date_before_now, "You cannot create a date before now", ['date']),
         #(_check_date_holiday, "You cannot assign a date in a public holiday", ['date']),
-
-        (_check_date_of_seances, "You have a seance with a date inferior to the session's date", ['date']),
+        (_check_date_of_seances, "You have a seance with a date inferior to the session's date.", ['date']),
+        (_check_date_end_of_seances, "You have a seance with a later date to the session's end date.", ['date_end']),
     ]
 
     def _find_catalog_id(self, cr, uid, context=None):
@@ -1721,8 +1535,7 @@ class training_session(osv.osv):
                 continue
             tmp_lst = []
             get_list_of_courses(tmp_lst, course.course_id)
-
-            splitted_by = int(course.course_id.splitted_by) or 8
+            splitted_by =  course.course_id.splitted_by
             for item in tmp_lst:
                 duration = item.duration
                 while duration > 0:
@@ -1798,8 +1611,7 @@ class training_session(osv.osv):
         first_seance_id = None
         for item in lst:
             duration = item.duration
-            splitted_by = int(item.splitted_by) or 8
-
+            splitted_by = item.splitted_by
             master_seance_id = None
             counter_part = 0
             while duration > 0:
@@ -1922,7 +1734,6 @@ class training_session(osv.osv):
             }
         return {}
 
-
     # training.session
     def _create_participation(self, cr, uid, ids, subscription_line, context=None):
         proxy = self.pool.get('training.participation')
@@ -1970,21 +1781,6 @@ class training_session(osv.osv):
 
     # training.session
     def action_workflow_open_confirm(self, cr, uid, ids, context=None):
-
-        proxy = self.pool.get('training.subscription.line')
-        subscription_line_ids = proxy.search(cr, uid, [('session_id', 'in', ids), ('state', '=', 'confirmed')], context=context)
-        proxy.send_email(cr, uid, subscription_line_ids, 'session_open_confirmed', context)
-
-        proxy = self.pool.get('training.participation.stakeholder')
-        for session in self.browse(cr, uid, ids, context=context):
-            objs = {}
-            for seance in session.seance_ids:
-                for contact in seance.contact_ids:
-                    if contact.state == 'accepted':
-                        objs.setdefault(contact.id, {}).setdefault('seances', []).append(seance)
-
-            proxy.send_email(cr, uid, objs.keys(), 'session_open_confirmed', session, context, objs)
-
         return self.write(cr, uid, ids, {'state' : 'opened_confirmed'}, context=context)
 
     # training.session
@@ -1992,7 +1788,6 @@ class training_session(osv.osv):
         return True
 
         # Disabled code
-
         for obj in self.browse(cr, uid, ids, context=context):
             # Check the minimum for this session
             number_of_participants = proxy.search_count(cr, uid, [('session_id', '=', obj.id)], context=context)
@@ -2012,16 +1807,6 @@ class training_session(osv.osv):
 
     # training.session
     def action_workflow_close_confirm(self, cr, uid, ids, context=None):
-        #proxy = self.pool.get('training.participation.stakeholder')
-        #for session in self.browse(cr, uid, ids, context):
-        #    objs = {}
-        #    for seance in session.seance_ids:
-        #        for contact in seance.contact_ids:
-        #            if contact.state == 'confirmed':
-        #                objs.setdefault(contact.id, {}).setdefault('seances', []).append(seance)
-
-        #    proxy.send_email(cr, uid, objs.keys(), '???', session, context, objs)
-
         return self.write(cr, uid, ids, {'state' : 'closed_confirmed'}, context=context)
 
     # training.session
@@ -2056,22 +1841,7 @@ class training_session(osv.osv):
 
     # training.session
     def action_cancellation_session(self, cr, uid, ids, context=None):
-
-        # just send emails...
-
-        proxy = self.pool.get('training.subscription.line')
-        subscription_line_ids = proxy.search(cr, uid, [('session_id', 'in', ids), ('state', '=', 'confirmed')], context=context)
-        proxy.send_email(cr, uid, subscription_line_ids, 'session_confirm_cancelled', context)
-
-        proxy = self.pool.get('training.participation.stakeholder')
-        for session in self.browse(cr, uid, ids, context=context):
-            objs = {}
-            for seance in session.seance_ids:
-                for contact in seance.contact_ids:
-                    if contact.state == 'accepted':
-                        objs.setdefault(contact.id, {}).setdefault('seances', []).append(seance)
-
-            proxy.send_email(cr, uid, objs.keys(), 'session_confirm_cancelled', session, context, objs)
+        return True
 
     # training.session
     def action_workflow_cancel(self, cr, uid, ids, context=None):
@@ -2113,126 +1883,6 @@ class training_session(osv.osv):
 
 training_session()
 
-class training_subscription_mass_wizard(osv.osv_memory):
-    _name = 'training.subscription.mass.wizard'
-    _description = 'Mass Subscription Wizard'
-
-    def action_cancel(self, cr, uid, ids, context=None):
-        return {'type':'ir.actions.act_window_close'}
-
-    def action_apply(self, cr, uid, ids, context=None):
-        subscription_form_view = context and context.get('subscription_form_view', False) or False
-        record_id = context and context.get('record_id', False) or False
-
-        this = self.browse(cr, uid, ids)[0]
-
-        subscription_proxy = self.pool.get('training.subscription')
-        subscription_line_proxy = self.pool.get('training.subscription.line')
-        subscription_line_second_proxy = self.pool.get('training.subscription.line.second')
-
-        subscriptions = {}
-
-        if record_id:
-            for job in this.job_ids:
-                for subscription_mass_line in this.session_ids:
-                    sl_id = subscription_line_proxy._create_from_wizard(cr, uid, this, record_id, job, subscription_mass_line, context=context)
-
-            return {
-                'type' : 'ir.actions.act_window_close',
-            }
-
-        for job in this.job_ids:
-            # if the job hasn't a partner, we put this subscription in waiting mode
-            if not job.name:
-                for subscription_mass_line in this.session_ids:
-                    subscription_line_second_proxy._create_from_wizard(cr, uid, this, job, subscription_mass_line, context=context)
-
-            else:
-                for subscription_mass_line in this.session_ids:
-                    subscriptions.setdefault(job.name.id, []).append((job, subscription_mass_line,))
-
-        subscription_ids = []
-
-        # We create all subscription where there is a partner associated to the job
-        for partner_id, lines in subscriptions.iteritems():
-            values = subscription_proxy.on_change_partner(cr, uid, [], partner_id)['value']
-            values.update({
-                'partner_id' : partner_id,
-            })
-
-            subscription_id = subscription_proxy.create(cr, uid, values, context=context)
-
-            for job, subscription_mass_line in lines:
-                subscription_line_proxy._create_from_wizard(cr, uid, this, subscription_id, job, subscription_mass_line, context=context)
-
-            subscription_ids.append(subscription_id)
-
-        return {'type' : 'ir.actions.act_window_close'}
-
-    _columns = {
-        'partner_id' : fields.many2one('res.partner', 'Partner'),
-        'job_ids' : fields.many2many('res.partner.job',
-                                     'tms_contact_job_rel',
-                                     'ms_id',
-                                     'job_id',
-                                     'Contacts',
-                                    ),
-        'session_ids' : fields.one2many('training.subscription.mass.line', 'wizard_id', 'Sessions'),
-    }
-
-    def default_get(self, cr, uid, fields, context=None):
-        record_id = context and context.get('record_id', False) or False
-
-        res = super(training_mass_subscription_wizard, self).default_get(cr, uid, fields, context=context)
-
-        if record_id:
-            partner_id = self.pool.get('training.subscription').browse(cr, uid, record_id, context=context).partner_id.id
-            res['partner_id'] = partner_id
-
-        return res
-
-    def fields_view_get(self, cr, uid, view_id=None, view_type='form', context=None, toolbar=False, submenu=False):
-        record_id = context and context.get('record_id', False) or False
-
-        res = super(training_mass_subscription_wizard, self).fields_view_get(cr, uid, view_id=view_id, view_type=view_type, context=context, toolbar=toolbar, submenu=submenu)
-        if record_id:
-            if 'fields' in res and 'partner_id' in res['fields']:
-                res['fields']['partner_id']['readonly'] = True
-
-        return res
-
-training_subscription_mass_wizard()
-
-class mass_subscription_line(osv.osv_memory):
-    _name = 'training.subscription.mass.line'
-
-    _columns = {
-        'wizard_id' : fields.many2one('training.subscription.mass.wizard', 'Wizard'),
-        'session_id' : fields.many2one('training.session', 'Session',
-                                       domain="[('state', 'in', ('opened','opened_confirmed', 'closed_confirmed', 'inprogress'))]", required=True),
-        'allow_closed_session': fields.boolean('Allow Closed Session'),
-        'kind' : fields.related('session_id','offer_id', 'kind',
-                                type='selection',
-                                selection=training_offer_kind_compute,
-                                string='Kind',
-                                readonly=True),
-    }
-
-    def on_change_allow_closed_session(self, cr, uid, ids, new_allow, context=None):
-        if new_allow:
-            return {
-                'domain': {'session_id': []}
-            }
-        else:
-            return {
-                'domain': {'session_id': [('state', 'in', ('opened','opened_confirmed', 'closed_confirmed', 'inprogress'))]}
-            }
-
-
-    def on_change_session(self, cr, uid, ids, context=None):
-        return {}
-
-mass_subscription_line()
 
 class training_subscription_line_second(osv.osv):
     _name = 'training.subscription.line.second'
@@ -2253,7 +1903,6 @@ class training_subscription_line_second(osv.osv):
             'job_id' : job.id,
             'session_id' : subscription_mass_line.session_id.id,
         }
-
         return proxy.create(cr, uid, values, context=context)
 
 training_subscription_line_second()
@@ -2264,10 +1913,12 @@ class training_subscription(osv.osv):
 
 training_subscription()
 
+
 class training_subscription_line(osv.osv):
     _name = 'training.subscription.line'
 
 training_subscription_line()
+
 
 class training_participation(osv.osv):
     _name = 'training.participation'
@@ -2284,53 +1935,47 @@ class training_participation(osv.osv):
 
     _columns = {
         'id' : fields.integer('Database ID', readonly=True),
-        'seance_id' : fields.many2one('training.seance', 'Seance', select=True, required=True, readonly=True, ondelete='cascade'),
-        'seance_date' : fields.related('seance_id', 'date', type='datetime', store=True, select=1, string="Seance Date"),
-        'group_id' : fields.related('seance_id', 'group_id', string='Group', type='many2one', relation='training.group', select=1, store=True, readonly=True),
-        'subscription_line_id' : fields.many2one('training.subscription.line', 'Subscription Line', select=True, required=True, readonly=True, ondelete='cascade'),
-        'session_id' : fields.related('subscription_line_id', 'session_id', type='many2one', relation='training.session', select=True, store=True),
-        'course_id' : fields.related('seance_id', 'course_id', 'name', type='char', size=64, readonly=True,
-                                     string="Course", select=2),
+        'seance_id' : fields.many2one('training.seance', 'Seance', required=True, readonly=True, ondelete='cascade'),
+        'seance_date' : fields.related('seance_id', 'date', type='datetime', store=True, string="Seance Date"),
+        'group_id' : fields.related('seance_id', 'group_id', string='Group', type='many2one', relation='training.group', store=True, readonly=True),
+        'subscription_line_id' : fields.many2one('training.subscription.line', 'Subscription Line', required=True, readonly=True, ondelete='cascade'),
+        'session_id' : fields.related('subscription_line_id', 'session_id', type='many2one', relation='training.session', store=True),
+        'course_id' : fields.related('seance_id', 'course_id', type='many2one', relation='training.course', readonly=True, string="Course"),
         'duration' : fields.related('seance_id', 'duration', string='Duration', type='float', readonly=True, store=True),
-        'kind' : fields.related('seance_id', 'kind', type='selection', selection=[('standard', 'Course')], string='Kind', select=1),
-
-        'present' : fields.boolean('Present', help="Allows to know if a participant was present or not", select=1),
-
+        'kind' : fields.related('seance_id', 'kind', type='selection', selection=[('standard', 'Course')], string='Kind'),
+        'present' : fields.boolean('Present', help="Allows to know if a participant was present or not."),
         'subscription_id' : fields.related('subscription_line_id', 'subscription_id',
                                            type='many2one',
                                            relation='training.subscription',
                                            string='Subscription', readonly=True),
         'job_id' : fields.related('subscription_line_id', 'job_id',
                                   type='many2one', relation='res.partner.job',
-                                  string='Participant', select=1, readonly=True,
+                                  string='Participant', readonly=True,
                                   store={
                                       'training.subscription.line' : (_store_get_sublines, None, 9),
                                   }
                                  ),
         'contact_id' : fields.related('subscription_line_id', 'job_id', 'contact_id',
                                       type='many2one', relation='res.partner.contact',
-                                      string='Contact', select=1, readonly=True,
+                                      string='Contact', readonly=True,
                                       store={
                                           'training.subscription.line': (_store_get_sublines, None, 10),
                                       }
                                       ),
-        'contact_lastname': fields.related('contact_id', 'name', readonly=True, type='char', size=64, string='Contact Last Name',
+        'contact_lastname': fields.related('subscription_line_id', 'job_id', 'contact_id', 'name', readonly=True, type='char', size=64, string='Contact Last Name',
                                             store={
                                                 'training.subscription.line': (_store_get_sublines, None, 11),
                                             }
                                             ),
-
-        'contact_firstname': fields.related('contact_id', 'first_name', readonly=True, type='char', size=64, string='Contact First Name',
+        'contact_firstname': fields.related('subscription_line_id', 'job_id', 'contact_id', 'first_name', readonly=True, type='char', size=64, string='Contact First Name',
                                             store={
                                                 'training.subscription.line': (_store_get_sublines, None, 11),
                                             }
                                             ),
-
         'partner_id' : fields.related('subscription_line_id', 'partner_id',
                                       type='many2one', relation='res.partner',
-                                      string='Partner', select=2, readonly=True),
-        'date' : fields.related('seance_id', 'date', type='datetime', string='Date', select=1,
-                                readonly=True, store=True),
+                                      string='Partner', readonly=True),
+        'date' : fields.related('seance_id', 'date', type='datetime', string='Date', readonly=True, store=True),
         'purchase_ids': fields.many2many('purchase.order.line',
                                          'training_participation_purchase_rel',
                                          'participation_id',
@@ -2340,7 +1985,6 @@ class training_participation(osv.osv):
                                             ('done', 'Done'),
                                             ('cancelled', 'Cancelled')
                                            ], 'Purchase State', required=True, readonly=True),
-
         'summary': fields.text('Summary'),
     }
 
@@ -2551,14 +2195,13 @@ class training_seance(osv.osv):
 
     _columns = {
         'id' : fields.integer('Database ID', readonly=True),
-        'is_first_seance' : fields.boolean('First Seance', select=1),
-        'name' : fields.char('Name', size=64, required=True, select=1),
+        'is_first_seance' : fields.boolean('First Seance'),
+        'name' : fields.char('Name', size=64, required=True),
         'session_ids' : fields.many2many('training.session',
                                          'training_session_seance_rel',
                                          'seance_id',
                                          'session_id',
                                          'Sessions',
-                                         select=1,
                                          ondelete='cascade'),
         'sessions_type': fields.function(_get_sessions_type,
                                          method=True,
@@ -2569,7 +2212,6 @@ class training_seance(osv.osv):
         'forced_lecturer' : fields.boolean('Forced Lecturer(s)'),
         'confirmed_lecturer' : fields.function(_confirmed_lecturer_compute,
                                                method=True,
-                                               select=1,
                                                store={
                                                    'training.participation.stakeholder' : (_get_stakeholders, None, 10),
                                                },
@@ -2578,12 +2220,12 @@ class training_seance(osv.osv):
                                                selection=[('no', 'No'),('yes','Yes')],
                                               ),
         'original_session_id' : fields.many2one('training.session', 'Original Session', ondelete='cascade'),
-        'original_offer_id': fields.related('original_session_id', 'offer_id', string="Original Offer", type='many2one', relation='training.offer', select=1),
+        'original_offer_id': fields.related('original_session_id', 'offer_id', string="Original Offer", type='many2one', relation='training.offer'),
         'original_offer_kind': fields.related('original_offer_id', 'kind', type='selection', selection=training_offer_kind_compute, string='Original Offer Kind', readonly=True),
         'duplicata' : fields.boolean('Duplicata', required=True),
         'duplicated' : fields.boolean('Duplicated', required=True),
-        'date' : fields.datetime('Date', required=True, select=1, help="The create date of seance"),
-        'duration' : fields.float('Duration', select=1, help="The duration of the seance"),
+        'date' : fields.datetime('Date', required=True, help="The create date of seance."),
+        'duration' : fields.float('Duration', help="The duration of the seance."),
         'participant_ids' : fields.one2many('training.participation',
                                             'seance_id',
                                             'Participants',
@@ -2591,7 +2233,7 @@ class training_seance(osv.osv):
                                             ),
         'group_id' : fields.many2one('training.group', 'Group',
                                      #required=True,
-                                     help='The group of participants',
+                                     help='The group of participants.',
                                     ),
         'state' : fields.selection([('opened', 'Opened'),
                                     ('confirmed', 'Confirmed'),
@@ -2602,8 +2244,7 @@ class training_seance(osv.osv):
                                    'State',
                                    required=True,
                                    readonly=True,
-                                   select=1,
-                                   help="The status of the Seance",
+                                   help="The status of the Seance.",
                                   ),
         'contact_ids' : fields.one2many('training.participation.stakeholder', 'seance_id', 'Lecturers', readonly=True),
         'contact_names' : fields.function(_contact_names_compute, method=True,
@@ -2611,7 +2252,6 @@ class training_seance(osv.osv):
                                           string='Lecturers'),
         'course_id' : fields.many2one('training.course',
                                       'Course',
-                                      select=1,
                                       domain="[('state_course', '=', 'validated')]"),
         'state_course' : fields.related('course_id', 'state_course',
                                         string="Course's State",
@@ -2622,45 +2262,45 @@ class training_seance(osv.osv):
                                                    ('validated', 'Validated')],
                                         readonly=True),
         'purchase_line_ids' : fields.one2many('training.seance.purchase_line', 'seance_id', 'Supplier Commands'),
-        'min_limit' : fields.integer("Minimum Threshold", help='The Minimum of Participants in Seance'),
-        'max_limit' : fields.integer("Maximum Threshold", help='The Maximum of Participants in Seance'),
-        'user_id' : fields.many2one('res.users', 'Responsible', required=True, select=1),
+        'min_limit' : fields.integer("Minimum Threshold", help='The Minimum of Participants in Seance.'),
+        'max_limit' : fields.integer("Maximum Threshold", help='The Maximum of Participants in Seance.'),
+        'user_id' : fields.many2one('res.users', 'Responsible', required=True),
 
         'available_seats' : fields.function(_available_seats_compute,
                                             method=True,
                                             string='Available Seats',
                                             type='integer',
-                                            help='Available seats in Seance'
+                                            help='Available seats in Seance.'
                                            ),
         'draft_seats' : fields.function(_draft_seats_compute,
                                         method=True,
                                         string='Draft Subscriptions',
                                         type='integer',
-                                        help='Draft Subscriptions',
+                                        help='Draft Subscriptions.',
                                        ),
 
         'presence_form' : fields.selection([('yes', 'Yes'),
                                             ('no', 'No')],
                                            'Presence Form Received',
-                                           help='The training center has received the presence list from the lecturer'),
+                                           help='The training center has received the presence list from the lecturer.'),
         'shared' : fields.function(_shared_compute,
                                    method=True,
                                    string='Shared',
                                    type='boolean',
-                                   help="Allows to know if the seance is linked with a lot of sessions"),
+                                   help="Allows to know if the seance is linked with a lot of sessions."),
 
-        'kind': fields.selection(training_course_kind_compute, 'Kind', required=True, select=1),
+        'kind': fields.selection(training_course_kind_compute, 'Kind', required=True),
         'master_id' : fields.many2one('training.seance', 'Master Seance'),
 
         'participant_count' : fields.function(_participant_count,
                                               method=True,
                                               type="integer",
                                               string="Confirmed Seats",
-                                              help="Confirmed Subscriptions for this seance",
+                                              help="Confirmed Subscriptions for this seance.",
                                              ),
         'participant_count_manual' : fields.integer('Manual Confirmed Seats',
-                                                    help="The quantity of supports, catering, ... relative to the number of participants coming from the confirmed seats"),
-        'manual' : fields.boolean('Manual', help="Allows to the user to specify the number of participants"),
+                                                    help="The quantity of supports, catering, ... relative to the number of participants coming from the confirmed seats."),
+        'manual' : fields.boolean('Manual', help="Allows to the user to specify the number of participants."),
     }
 
     def _check_limits(self, cr, uid, ids, context=None):
@@ -2724,45 +2364,15 @@ class training_seance(osv.osv):
     # training.seance
     def action_workflow_confirm(self, cr, uid, ids, context=None):
         proxy = self.pool.get('training.participation')
-        emails = self.pool.get('training.email')
         report = netsvc.LocalService('report.training.seance.support.delivery.report')
-
         if not context:
             context = {}
         report_ctx = context.copy()
-
         for seance in self.browse(cr, uid, ids, context=context):
             if not seance.manual:
                 proxy.create_procurements(cr, uid, [x.id for x in seance.participant_ids], context=context)
             else:
                 self.create_procurements(cr, uid, [seance.id], context=context)
-
-            # send email to suppliers
-            partners = set()
-            for po_line in seance.purchase_line_ids:
-                for seller in po_line.product_id.seller_ids:
-                    partners.add(seller.name)
-
-
-            for partner in partners:
-                to = None
-                for address in partner.address:
-                    if not address.email:
-                        continue
-                    if address.type == 'delivery':
-                        to = address.email
-                        break
-                    elif address.type == 'default':
-                        to = address.email
-
-                if to is None:
-                    continue
-
-                report_ctx['partner'] = partner
-                pdf, _ = report.create(cr, uid, [seance.id], {}, context=report_ctx)
-                filename = seance.name.replace('/', ' ') + '.pdf'
-                emails.send_email(cr, uid, 'procurements', 's', to=to, attachments=[(filename, pdf),], context=context, seance=seance, partner=partner)
-
         return self.write(cr, uid, ids, {'state' : 'confirmed'}, context=context)
 
     # training.seance
@@ -2964,7 +2574,7 @@ class training_seance_purchase_line(osv.osv):
 
     _columns = {
         'seance_id' : fields.many2one('training.seance', 'Seance', required=True, ondelete="cascade"),
-        'seance_date': fields.related('seance_id', 'date', string="Sceance Date", type="datetime"),
+        'seance_date': fields.related('seance_id', 'date', string="Seance Date", type="datetime"),
         'course_id': fields.many2one('training.course', 'For Course'),
         'product_id' : fields.many2one('product.product', 'Product', required=True),
         'product_qty' : fields.integer('Quantity', required=True),
@@ -3036,13 +2646,6 @@ class training_subscription(osv.osv):
     _name = 'training.subscription'
     _description = 'Subscription'
 
-    def check_notification_mode(self, cr, uid, ids, context=None):
-        for subr in self.browse(cr, uid, ids, context=context):
-            if not subr.partner_id.notif_contact_id \
-                and not subr.partner_id.notif_participant:
-                raise osv.except_osv(_('Error'),
-                        _('No notification mode (HR and/or Participant) for this partner "%s", please choose at least one') % (subr.partner_id.name))
-
     def _notification_text_compute(self, cr, uid, ids, name, args, context=None):
         res = dict.fromkeys(ids, '')
 
@@ -3060,24 +2663,17 @@ class training_subscription(osv.osv):
         return self.pool.get('training.subscription').search(cr, uid, [('partner_id', 'in', ids),('state', '=', 'draft')], context=context)
 
     _columns = {
-        'name' : fields.char('Reference', size=32, required=True, select=1, readonly=True, help='The unique identifier is generated by the system (customizable)'),
+        'name' : fields.char('Reference', size=32, required=True, readonly=True, help='The unique identifier is generated by the system (customizable).'),
         'create_date' : fields.datetime('Creation Date', select=True, readonly=True),
-        'state' : fields.selection([('draft', 'Draft'), ('confirmed','Request Sent'), ('cancelled','Cancelled'), ('done', 'Done') ], 'State', readonly=True, required=True, select=1, help='The state of the Subscription'),
-
-        'partner_id' : fields.many2one('res.partner', 'Partner', select=1, required=True, help='The Subscription name', **WRITABLE_ONLY_IN_DRAFT),
+        'state' : fields.selection([('draft', 'Draft'), ('confirmed','Request Sent'), ('cancelled','Cancelled'), ('done', 'Done') ], 'State', readonly=True, required=True, help='The state of the Subscription.'),
+        'partner_id' : fields.many2one('res.partner', 'Partner', required=True, help='The Subscription name.'),
         'partner_rh_email' : fields.char('Subscription Contact', size=64),
-        'address_id' : fields.many2one('res.partner.address', 'Invoice Address', select=1, required=True, help='The Subscription invoice address', **WRITABLE_ONLY_IN_DRAFT),
-        'subscription_line_ids' : fields.one2many('training.subscription.line', 'subscription_id',
-                                                  'Subscription Lines', select=1, **WRITABLE_ONLY_IN_DRAFT),
-
+        'address_id' : fields.many2one('res.partner.address', 'Invoice Address', required=True, help='The Subscription invoice address.'),
+        'subscription_line_ids' : fields.one2many('training.subscription.line', 'subscription_id', 'Subscription Lines'),
         'pricelist_id' : fields.related('partner_id', 'property_product_pricelist', string='Pricelist', type='many2one', relation='product.pricelist', readonly=True),
-        'payment_term_id' : fields.many2one('account.payment.term', 'Payment Term', **WRITABLE_ONLY_IN_DRAFT),
-
-        'responsible_id' : fields.many2one('res.users', 'Creator', required=True, readonly=True, select=1),
-
-        'origin' : fields.char('Origin', size=64, **WRITABLE_ONLY_IN_DRAFT),
-
-        'notification_active' : fields.boolean('Notification Active', **WRITABLE_ONLY_IN_DRAFT),
+        'payment_term_id' : fields.many2one('account.payment.term', 'Payment Term'),
+        'responsible_id' : fields.many2one('res.users', 'Creator', required=True, readonly=True),
+        'origin' : fields.char('Origin', size=64),
         'notification_text' : fields.function(_notification_text_compute, method=True,
                                               string='Kind', type='char',
                                               store={
@@ -3085,7 +2681,7 @@ class training_subscription(osv.osv):
                                                   'training.subscription' : (lambda self, cr, uid, ids, context=None: ids, None, 10),
                                               },
                                               size=64),
-        'is_from_web': fields.boolean('Is from Web?', help='Is this subscription come from an online order', readonly=True),
+        'comment': fields.text('Additional Information'),
     }
 
     def create(self, cr, uid, vals, context):
@@ -3107,7 +2703,6 @@ class training_subscription(osv.osv):
         'state' : lambda *a: 'draft',
         'name' : lambda *args: '/',
         'responsible_id' : lambda obj, cr, uid, context: uid,
-        'notification_active' : lambda *a: 1,
     }
 
     def copy(self, cr, uid, subscription_id, default_values, context=None):
@@ -3193,11 +2788,9 @@ class training_subscription(osv.osv):
                         for contact in seance.contact_ids:
                             if contact.state == 'confirmed':
                                 objs.setdefault(contact.id, {}).setdefault('seances', []).append(seance)
-
-                    sh.send_email(cr, uid, objs.keys(), 'sub_cancelled', sl.session_id, context, objs)
                     sl_ids.append(sl.id)
 
-        sl_proxy.action_workflow_invoice_and_send_emails(cr, uid, sl_ids, context)
+        sl_proxy.action_workflow_invoice(cr, uid, sl_ids, context)
         workflow = netsvc.LocalService('workflow')
         for oid in sl_ids:
             workflow.trg_validate(uid, 'training.subscription.line', oid, 'signal_cancel', cr)
@@ -3206,7 +2799,6 @@ class training_subscription(osv.osv):
 
     # training.subscription
     def action_workflow_confirm(self, cr, uid, ids, context=None):
-        self.check_notification_mode(cr, uid, ids, context=context)
         return self.write(cr, uid, ids, {'state' : 'confirmed'}, context=context)
 
     # training.subscription
@@ -3239,159 +2831,113 @@ class training_subscription_line(osv.osv):
     def on_change_job(self, cr, uid, ids, job_id, context=None):
         if not job_id:
             return False
-
         return {'value' : {'job_email' : self.pool.get('res.partner.job').browse(cr, uid, job_id, context=context).email}}
 
     def on_change_subscription(self, cr, uid, ids, subscription_id, context=None):
         if not subscription_id:
             return False
-
         return {'value' : {'partner_id' : self.pool.get('training.subscription').browse(cr, uid, subscription_id, context=context).partner_id.id}}
 
 
     def _paid_compute(self, cr, uid, ids, fieldnames, args, context=None):
         res = dict.fromkeys(ids, 0)
-
         for obj in self.browse(cr, uid, ids, context=context):
             if obj.invoice_line_id:
                 res[obj.id] = obj.invoice_line_id.invoice_id.state == 'paid'
-
         return res
 
     def _theoritical_disponibility_compute(self, cr, uid, ids, fieldnames, args, context=None):
         res = dict.fromkeys(ids, 0)
-
         for obj in self.browse(cr, uid, ids, context=context):
             res[obj.id] = int(obj.session_id.available_seats) - int(obj.session_id.draft_subscriptions)
-
         return res
 
     def _was_present_compute(self, cr, uid, ids, fieldnames, args, context=None):
         res = dict.fromkeys(ids, False)
-
         for sl in self.browse(cr, uid, ids, context=context):
             res[sl.id] = any(part.present for part in sl.participation_ids)
-
         return res
 
     _columns = {
-        'name' : fields.char('Reference', size=64, required=True, readonly=True, select=1),
-
-        'create_uid': fields.many2one('res.users', 'Created by', readonly=True, select=1),
+        'name': fields.char('Reference', size=64, required=True, readonly=True),
+        'create_uid': fields.many2one('res.users', 'Created by', readonly=True),
         'create_date': fields.datetime('Created at', readonly=True),
-        'validation_uid': fields.many2one('res.users', 'Validated by', readonly=True, select=2),
+        'validation_uid': fields.many2one('res.users', 'Validated by', readonly=True),
         'validation_date': fields.datetime('Validated at', readonly=True),
-        'cancellation_uid': fields.many2one('res.users', 'Cancelled by', readonly=True, select=2),
+        'cancellation_uid': fields.many2one('res.users', 'Cancelled by', readonly=True),
         'cancellation_date': fields.datetime('Cancelled at', readonly=True),
-
-        'subscription_id' : fields.many2one('training.subscription', 'Subscription',
-                                            required=True,
-                                            ondelete='cascade',
-                                            select=1, help='Select the subscription', **WRITABLE_ONLY_IN_DRAFT),
-        'subscription_state' : fields.related('subscription_id', 'state',
-                                              type='selection',
-                                              selection=[
-                                                  ('draft', 'Draft'),
-                                                  ('confirmed','Confirmed'),
-                                                  ('cancelled','Cancelled'),
-                                                  ('done', 'Done'),
-                                              ],
-                                              string='State',
-                                              readonly=True,
-                                              required=True,
-                                              select=1,
-                                              help='The state of the Subscription'),
-        'price_list_id' : fields.many2one('product.pricelist', 'Pricelist', required=True, domain="[('type', '=', 'sale')]", **WRITABLE_ONLY_IN_DRAFT),
-        'partner_hr_email' : fields.related('subscription_id', 'partner_rh_email', type='char', size=64, string='HR Email', readonly=True),
-        'notification_text' : fields.related('subscription_id', 'notification_text', type='char', size=64, store=True, string='Notification (Kind)', readonly=True),
-        'session_id' : fields.many2one('training.session', 'Session', select=1, required=True,
-                                       domain="[('state', 'in', ('opened','opened_confirmed', 'closed_confirmed', 'inprogress'))]",
-                                       help='Select the session', **WRITABLE_ONLY_IN_DRAFT),
+        'subscription_id': fields.many2one('training.subscription', 'Subscription', required=True, ondelete='cascade', help='Select the subscription.'),
+        'subscription_state': fields.related('subscription_id', 'state', type='selection',
+            selection=[
+              ('draft', 'Draft'),
+              ('confirmed','Confirmed'),
+              ('cancelled','Cancelled'),
+              ('done', 'Done'),
+            ],
+            string='State', readonly=True, required=True, help='The state of the Subscription.'),
+        'price_list_id': fields.many2one('product.pricelist', 'Pricelist', required=True, domain="[('type', '=', 'sale')]"),
+        'partner_hr_email': fields.related('subscription_id', 'partner_rh_email', type='char', size=64, string='HR Email', readonly=True),
+        'notification_text': fields.related('subscription_id', 'notification_text', type='char', size=64, store=True, string='Notification (Kind)', readonly=True),
+        'session_id' : fields.many2one('training.session', 'Session', required=True, domain="[('state', 'in', ('opened','opened_confirmed', 'closed_confirmed', 'inprogress'))]", help='Select the session.'),
         'session_state': fields.related('session_id', 'state', readonly=True,
-                                        type='selection',
-                                        selection= [
-                                            ('draft', 'Draft'),
-                                            ('opened', 'Opened'),
-                                            ('opened_confirmed', 'Confirmed'),
-                                            ('closed_confirmed', 'Closed Subscriptions'),
-                                            ('inprogress', 'In Progress'),
-                                            ('closed', 'Closed'),
-                                            ('cancelled', 'Cancelled'),
-                                        ],
-                                        string='Session State', select=2),
-        'session_date': fields.related('session_id', 'date', readonly=True, type="datetime", string="Session Date", select=2),
-        'offer_id' : fields.related('session_id', 'offer_id', type='many2one', relation='training.offer', string='Offer', select=1, store=True, readonly=True),
-        'offer_product_line_id' : fields.related('session_id', 'offer_id', 'product_line_id', type='many2one', relation='training.course_category', select=1, string='Product Line'),
-
-        'price' : fields.float('Sales Price', digits_compute=dp.get_precision('Sale Price'), required=True, write=['base.group_user'], **WRITABLE_ONLY_IN_DRAFT),
-        'partner_id' : fields.related('subscription_id', 'partner_id', type='many2one', store=True,
-                                      relation='res.partner', string="Partner", select=1, readonly=True),
-        'job_id' : fields.many2one('res.partner.job', 'Participant', select=1, required=True,
-                                   domain="[('name', '=', parent.partner_id),('state', '=', 'current')]",
-                                   help='Select the Participant', **WRITABLE_ONLY_IN_DRAFT),
-        'job_email' : fields.char('Participant Email', size=64, help='Participant Email Address'), #**WRITABLE_ONLY_IN_DRAFT),
-        'contact_id' : fields.related('job_id', 'contact_id', type='many2one', relation='res.partner.contact', string='Contact', select=1, readonly=True, store=True),
-        'contact_firstname' : fields.related('contact_id', 'first_name', string='Contact Firstname',
-                                             type='char', size=64, readonly=True),
-        'contact_lastname' : fields.related('contact_id', 'name', string='Contact Lastname',
-                                             type='char', size=64, readonly=True),
-
-        'partner_rh' : fields.related('partner_id', 'notif_contact_id', type='many2one', relation='res.partner.job', readonly=True, string='Subscription Contact', store=True),
-
-        'invoice_line_id' : fields.many2one('account.invoice.line', 'Invoice Line', readonly=True),
-        'invoice_id' : fields.related('invoice_line_id', 'invoice_id', type='many2one', relation='account.invoice', string="Invoice", readonly=True, store=True),
-        'paid' : fields.function(_paid_compute,
+            type='selection',
+            selection= [
+                ('draft', 'Draft'),
+                ('opened', 'Opened'),
+                ('opened_confirmed', 'Confirmed'),
+                ('closed_confirmed', 'Closed Subscriptions'),
+                ('inprogress', 'In Progress'),
+                ('closed', 'Closed'),
+                ('cancelled', 'Cancelled'),
+            ],
+            string='Session State'),
+        'session_date': fields.related('session_id', 'date', readonly=True, type="datetime", string="Session Date"),
+        'offer_id': fields.related('session_id', 'offer_id', type='many2one', relation='training.offer', string='Offer', store=True, readonly=True),
+        'offer_product_line_id': fields.related('session_id', 'offer_id', 'product_line_id', type='many2one', relation='training.course_category', string='Product Line'),
+        'price': fields.float('Sales Price', digits_compute=dp.get_precision('Sale Price'), required=True, write=['base.group_user']),
+        'partner_id': fields.related('subscription_id', 'partner_id', type='many2one', store=True, relation='res.partner', string="Partner", readonly=True),
+        'job_id': fields.many2one('res.partner.job', 'Participant', required=True, domain="[('name', '=', parent.partner_id),('state', '=', 'current')]", help='Select the Participant.'),
+        'job_email': fields.char('Participant Email', size=64, help='Participant Email Address.'),
+        'contact_id': fields.related('job_id', 'contact_id', type='many2one', relation='res.partner.contact', string='Contact', readonly=True, store=True),
+        'contact_firstname': fields.related('contact_id', 'first_name', string='Contact Firstname', type='char', size=64, readonly=True),
+        'contact_lastname': fields.related('contact_id', 'name', string='Contact Lastname', type='char', size=64, readonly=True),
+        'partner_rh': fields.related('partner_id', 'notif_contact_id', type='many2one', relation='res.partner.job', readonly=True, string='Subscription Contact', store=True),
+        'invoice_line_id': fields.many2one('account.invoice.line', 'Invoice Line', readonly=True),
+        'invoice_id': fields.related('invoice_line_id', 'invoice_id', type='many2one', relation='account.invoice', string="Invoice", readonly=True, store=True),
+        'paid': fields.function(_paid_compute,
                                  method=True,
                                  string='Paid',
                                  type='boolean',
                                  readonly=True),
-        'kind' : fields.related('session_id', 'kind',
+        'kind': fields.related('session_id', 'kind',
                                 string="Kind",
                                 type="selection",
                                 selection=training_offer_kind_compute,
-                                select=1,
                                 readonly=True),
-        'state' : fields.selection([('draft', 'Draft'),
+        'state': fields.selection([('draft', 'Draft'),
                                     ('confirmed','Confirmed'),
                                     ('cancelled','Cancelled'),
                                     ('done', 'Done') ],
                                    'State',
-                                   required=True,
-                                   readonly=True,
-                                   select=1, help='The state of participant'),
-        'date' : fields.related('session_id', 'date', type='datetime', string='Date',
-                                readonly=True),
-        'available_seats' : fields.related('session_id', 'available_seats',
-                                           type='integer',
-                                           readonly=True,
-                                           string='Available Seats'),
-        'draft_subscriptions' : fields.related('session_id', 'draft_subscriptions',
-                                       type='integer',
-                                       readonly=True,
-                                       string='Draft Subscriptions'),
-        'has_certificate' : fields.boolean('Has Certificate', readonly=True, select=2),
-        'reason_cancellation' : fields.text('Reason of Cancellation', readonly=True),
-        'theoritical_disponibility' : fields.function(_theoritical_disponibility_compute,
-                                      method=True,
-                                      string='Theoritical Disponibility',
-                                      type='integer'),
-        'max_limit' : fields.related('session_id', 'max_limit', string='Maximum Threshold', type='integer', store=True, readonly=True),
-        'confirmed_subscriptions' : fields.related('session_id', 'confirmed_subscriptions',
-                                                   string='Confirmed Subscriptions',
-                                                   type='integer', readonly=True,
-                                                  ),
-
-        'participation_ids' : fields.one2many('training.participation', 'subscription_line_id', 'Participations', readonly=True),
-        'internal_note' : fields.text("Internal Note"),
+                                   required=True, readonly=True, help='The state of participant.'),
+        'date': fields.related('session_id', 'date', type='datetime', string='Date', readonly=True),
+        'available_seats': fields.related('session_id', 'available_seats', type='integer', readonly=True, string='Available Seats'),
+        'draft_subscriptions': fields.related('session_id', 'draft_subscriptions', type='integer', readonly=True, string='Draft Subscriptions'),
+        'has_certificate': fields.boolean('Has Certificate', readonly=True),
+        'reason_cancellation': fields.text('Reason of Cancellation', readonly=True),
+        'theoritical_disponibility': fields.function(_theoritical_disponibility_compute, method=True, string='Theoritical Disponibility', type='integer'),
+        'max_limit': fields.related('session_id', 'max_limit', string='Maximum Threshold', type='integer', store=True, readonly=True),
+        'confirmed_subscriptions': fields.related('session_id', 'confirmed_subscriptions', string='Confirmed Subscriptions', type='integer', readonly=True),
+        'participation_ids': fields.one2many('training.participation', 'subscription_line_id', 'Participations', readonly=True),
+        'internal_note': fields.text("Internal Note"),
         'email_note': fields.text("Email Note"),
-
-        'was_present' : fields.function(_was_present_compute, method=True,
-                                        type='boolean',
-                                        string='Was Present'),
+        'was_present': fields.function(_was_present_compute, method=True, type='boolean', string='Was Present'),
     }
 
-    def _default_name(self, cr, uid, context=None):
-        return self.pool.get('ir.sequence').get(cr, uid, 'training.subscription.line')
+    def create(self, cr, uid, vals, context):
+        if vals.get('name', '/')=='/':
+            vals['name'] = self.pool.get('ir.sequence').get(cr, uid, 'training.subscription.line')
+        return super(training_subscription_line, self).create(cr, uid, vals, context)
 
     def unlink(self, cr, uid, vals, context):
         subscription_lines = self.read(cr, uid, vals, ['state'])
@@ -3405,25 +2951,21 @@ class training_subscription_line(osv.osv):
 
     _defaults = {
         'state' : lambda *a: 'draft',
-        'name' : _default_name,
-        #lambda obj, cr, uid, context: obj.pool.get('ir.sequence').get(cr, uid, 'training.subscription.line'),
+        'name' : lambda *args: '/',
         'has_certificate' : lambda *a: 0,
     }
 
-    _order = 'name desc'
+    _order = 'id desc'
 
     def copy(self, cr, uid, object_id, values, context=None):
         if 'name' not in values:
-            values['name'] = self._default_name(cr, uid, context=context)
-
+            values['name'] = '/'
         if 'participation_ids' not in values:
             values['participation_ids'] = []
-
         if 'session_id' in values:
             session = self.pool.get('training.session').browse(cr, uid, values['session_id'], context=context)
             values['session_state'] = session.state
             values['session_date'] = session.date
-
         return super(training_subscription_line, self).copy(cr, uid, object_id, values, context=context)
 
     # training.subscription.line
@@ -3432,13 +2974,10 @@ class training_subscription_line(osv.osv):
             session = sl.session_id
             contact = sl.job_id.contact_id
             name = "%s %s" % (contact.first_name, contact.name)
-
             same_contact_same_session = ['&', '&', '&', ('contact_id', '=', contact.id), ('session_id', '=', session.id), ('id', '!=', sl.id), ('state', '!=', 'cancelled')]
-
             sl_ids = self.search(cr, 1, same_contact_same_session, context=context)
             if sl_ids:
                 raise osv.except_osv(_('Error'), _('%(participant)s is already following the session "%(session)s"') % {'participant': name, 'session': session.name})
-
         return True
 
     _constraints = [
@@ -3450,7 +2989,6 @@ class training_subscription_line(osv.osv):
         if session.offer_id.product_line_id and session.offer_id.product_line_id.price_list_id:
             if any(partner.id == partner_id for partner in session.offer_id.product_line_id.partner_ids):
                 pl = session.offer_id.product_line_id.price_list_id.id
-
         if not pl:
             raise osv.except_osv(_('Warning'),
                                  _("Please, Can you check the price list of the partner ?"))
@@ -3460,12 +2998,10 @@ class training_subscription_line(osv.osv):
     def on_change_session(self, cr, uid, ids, session_id, price_list_id, partner_id, context=None):
         if not session_id:
             return False
-
         session = self.pool.get('training.session').browse(cr, uid, session_id, context=context)
         if (not price_list_id) and partner_id:
             part = self.pool.get('res.partner').browse(cr, uid, partner_id)
             price_list_id = part.property_product_pricelist and part.property_product_pricelist.id or False
-
         if not session.offer_id.product_id:
             if session.kind == 'intra':
                 return {
@@ -3478,11 +3014,8 @@ class training_subscription_line(osv.osv):
                 }
             else:
                 return False
-
         price_list = self._get_price_list_from_product_line(session, partner_id, price_list_id)
-
         price = self.pool.get('product.pricelist').price_get(cr, uid, [price_list], session.offer_id.product_id.id, 1.0)[price_list]
-
         values = {
             'value' : {
                 'price' : price,
@@ -3491,19 +3024,15 @@ class training_subscription_line(osv.osv):
                 'session_date' : session.date,
             }
         }
-
         return values
 
     def on_change_price_list(self, cr, uid, ids, session_id, price_list_id, context=None):
         if not price_list_id or not session_id:
             return False
-
         pricelist_proxy = self.pool.get('product.pricelist')
         session = self.pool.get('training.session').browse(cr, uid, session_id, context=context)
-
         if not session.offer_id.product_id:
             return False
-
         return {
             'value' : {
                 'price' : pricelist_proxy.price_get(cr, uid, [price_list_id], session.offer_id.product_id.id, 1.0)[price_list_id]
@@ -3515,9 +3044,7 @@ class training_subscription_line(osv.osv):
         # this method can easily surcharged by inherited modules
         subscription = self.pool.get('training.subscription').browse(cr, uid, subscription_id, context=context)
         session = subscription_mass_line.session_id
-
         def_pricelist_id = job.name.property_product_pricelist.id
-
         values = {
             'subscription_id' : subscription_id,
             'job_id' : job.id,
@@ -3533,7 +3060,6 @@ class training_subscription_line(osv.osv):
         ocv = self.on_change_price_list(cr, uid, [], values['session_id'], values.get('price_list_id', False), context=context)
         if ocv and 'value' in ocv:
             values.update(ocv['value'])
-
         return values
 
     # training.subscription.line
@@ -3556,7 +3082,6 @@ class training_subscription_line(osv.osv):
         for subl in self.read(cr, uid, ids, ['subscription_id'], context=context):
                 if subl['subscription_id']:
                     subs.add(subl['subscription_id'][0])
-        self.pool.get('training.subscription').check_notification_mode(cr, uid, list(subs), context=context)
         return True
 
     # training.subscription.line
@@ -3564,38 +3089,20 @@ class training_subscription_line(osv.osv):
         for sl in self.browse(cr, uid, ids, context=context):
             sl.session_id._create_participation(sl, context=context)
             sl.write({'state' : sl.state})
-
         return True
 
     # training.subscription.line
-    def action_workflow_send_confirm_emails(self, cr, uid, ids, context=None):
-        # the confirm function will send an email to the participant and/or the HR Manager
-
+    def action_workflow_send_confirm(self, cr, uid, ids, context=None):
         lines = {}
-
         for sl in self.browse(cr, uid, ids, context=context):
             sl.session_id._create_participation(sl, context=context)
-
-            # opened -> opened; opened_confirmed and closed_confirmed -> confirmed
-            state = sl.session_id.state.rsplit('_', 1)[-1]
-
-            if state in ('opened', 'confirmed', 'inprogress'):
-                lines.setdefault(state, []).append(sl.id)
-
-        if 'opened' in lines:
-            self.send_email(cr, uid, lines['opened'], 'sub_confirm_open', context)
-        if 'confirmed' in lines:
-            # TODO: change signal name (as closed confirmed sessions are also possible)
-            self.send_email(cr, uid, lines['confirmed'], 'sub_confirm_openconf', context)
-        if 'inprogress' in lines:
-            self.send_email(cr, uid, lines['inprogress'], 'sub_confirm_openconf', context)
-
         return True
 
     # training.subscription.line
     def action_workflow_confirm(self, cr, uid, ids, context=None):
-        self.write(cr, uid, ids, {'state': 'confirmed', 'validation_date': time.strftime('%Y-%m-%d %H:%M:%S'), 'validation_uid': uid}, context=context)
-        return True
+        if context is None:
+            context = {}
+        return self.write(cr, uid, ids, {'state': 'confirmed', 'validation_date': time.strftime('%Y-%m-%d %H:%M:%S'), 'validation_uid': uid}, context=context)
 
     def action_create_refund(self, cr, uid, ids, context=None):
         if not context:
@@ -3603,15 +3110,12 @@ class training_subscription_line(osv.osv):
         invoice_proxy = self.pool.get('account.invoice')
         invoice_line_proxy = self.pool.get('account.invoice.line')
         seance_proxy = self.pool.get('training.seance')
-
         invoices = {}
-
         for sl in self.browse(cr, uid, ids, context=context):
             if sl.price >= -0.00001 and sl.price <= 0.00001:
                 # sale price is ZERO, nothing to refund
                 continue
             invoices.setdefault(sl.invoice_id, []).append( sl )
-
         for invoice, subscription_lines in invoices.iteritems():
             invoice_values = {
                 'name' : "[REFUND] %s - %s" % (invoice.name, _('Cancellation')),
@@ -3630,7 +3134,6 @@ class training_subscription_line(osv.osv):
                 'date_invoice' : time.strftime('%Y-%m-%d'),
             }
             invoice_id = invoice_proxy.create(cr, uid, invoice_values, context=context)
-
             fpos_proxy = self.pool.get('account.fiscal.position')
             fpos = invoice_values['fiscal_position'] and fpos_proxy.browse(cr, uid, [invoice_values['fiscal_position']])[0] or False
 
@@ -3677,9 +3180,9 @@ class training_subscription_line(osv.osv):
 
 
     # training.subscription.line
-    def action_workflow_invoice_and_send_emails(self, cr, uid, ids, context=None):
+    def action_workflow_invoice(self, cr, uid, ids, context=None):
         self.action_create_invoice_and_refund(cr, uid, ids, context)
-        self.send_email(cr, uid, ids, 'sub_cancelled', context)
+        return True
 
     # training.subscription.line
     def _delete_participations(self, cr, uid, ids, context=None):
@@ -3739,7 +3242,7 @@ class training_subscription_line(osv.osv):
         # Selection de toutes les lignes d'inscriptions
         for sl in self.browse(cr, uid, ids, context=context):
             today = mx.DateTime.today()
-            session_date_minus_x = mx.DateTime.strptime(sl.session_id.date[:10], '%Y-%m-%d') - mx.DateTime.RelativeDateTime(days=DISCOUNT_DAYS)
+            session_date_minus_x = mx.DateTime.strptime(sl.session_id.date[:20], '%Y-%m-%d %H:%M:%S') - mx.DateTime.RelativeDateTime(days=DISCOUNT_DAYS)
             before_x_days = today < session_date_minus_x
             if sl.price >= -0.00001 and sl.price <= 0.00001:
                 # Ignore subscription line with a sale price of ZERO
@@ -3983,30 +3486,6 @@ class training_subscription_line(osv.osv):
             workflow.trg_validate(uid, 'training.subscription', line.subscription_id.id, 'signal_done_cancel', cr)
         return True
 
-
-    def send_email(self, cr, uid, ids, trigger, context=None, **objects):
-        """Send email to participant and to HR (grouped by session)"""
-        email_proxy = self.pool.get('training.email')
-        groups = {}
-        email_to_subs = {}
-        for sl in self.browse(cr, uid, ids, context=context):
-            if sl.subscription_id.notification_active:
-                partner = sl.job_id.name
-                if partner.notif_participant:
-                    email_proxy.send_email(cr, uid, trigger, 'p', sl.job_email, session=sl.session_id, stylegroup=sl.session_id.stylegroup_id, context=context, partner=partner, subline=sl, **objects)
-
-                hremail = sl.partner_hr_email
-                # do not group HR emails...
-                email_proxy.send_email(cr, uid, trigger, 'hr', hremail, session=sl.session_id, stylegroup=sl.session_id.stylegroup_id, context=context, subline=sl, **objects)
-
-#                key = hremail, sl.session_id
-#                email_to_subs.setdefault(hremail, set()).add(sl.subscription_id)
-#                groups.setdefault(key, []).append(sl)
-#
-#        for (hremail, session), sublines in groups.iteritems():
-#            subs = list(email_to_subs[hremail])
-#            email_proxy.send_email(cr, uid, trigger, 'hr', hremail, session=session, context=context, sublines=sublines, **objects)
-
 training_subscription_line()
 
 class training_participation_stakeholder(osv.osv):
@@ -4061,24 +3540,22 @@ class training_participation_stakeholder_request(osv.osv):
 
     _columns = {
         'reference': fields.char('Reference', size=16, readonly=True, required=True),
-        'session_id': fields.many2one('training.session', 'Session', select=1, required=True, readonly=True),
+        'session_id': fields.many2one('training.session', 'Session', required=True, readonly=True),
         'date': fields.function(_date_compute, method=True,
                                 string='First Seance Date',
                                 type='datetime',
                                 store={
                                     'training.participation.stakeholder': (_store_get_requests, None, 25),
                                 },
-                                select=1,
                                 ),
-        'kind' : fields.related('session_id', 'offer_id', 'kind', type='char', readonly=True, select=1, string="Offer's Kind"),
-        'job_id': fields.many2one('res.partner.job', 'Contact', required=True, select=1, **WRITABLE_ONLY_IN_DRAFT),
-        'email' : fields.char('Email', size=128, select=1, **WRITABLE_ONLY_IN_DRAFT),
+        'kind' : fields.related('session_id', 'offer_id', 'kind', type='char', readonly=True, string="Offer's Kind"),
+        'job_id': fields.many2one('res.partner.job', 'Contact', required=True),
+        'email' : fields.char('Email', size=128),
         'payment_mode' : fields.selection([('contract', 'Contract'),
                                            ('invoice', 'Invoice')
                                           ],
-                                          'Payment Mode',
-                                          select=1),
-        'participation_ids': fields.one2many('training.participation.stakeholder', 'request_id', 'Participations', **WRITABLE_ONLY_IN_DRAFT),
+                                          'Payment Mode'),
+        'participation_ids': fields.one2many('training.participation.stakeholder', 'request_id', 'Participations'),
         'notes' : fields.text('Notes'),
         'state': fields.selection([('draft', 'Draft'),
                                    ('valid', 'Validated'),
@@ -4090,8 +3567,6 @@ class training_participation_stakeholder_request(osv.osv):
                                   ],
                                   'State',
                                   readonly=True,
-                                  required=True,
-                                  select=1,
                                  ),
         'purchase_order_id': fields.many2one('purchase.order', 'Purchase Order', readonly=True),
         'amount_to_pay': fields.function(_amount_to_pay, string='Amount to pay', type='char', size='20', readonly=True, method=True),
@@ -4233,45 +3708,18 @@ class training_participation_stakeholder_request(osv.osv):
         self.write(cr, uid, ids, {'state': 'accepted'}, context=context)
         self._approve_PO(cr, uid, ids, context=context)
         self._spread_wkf_signal(cr, uid, ids, 'signal_accept', context)
-
-        email_proxy = self.pool.get('training.email')
-        for this in self.browse(cr, uid, ids, context=context):
-            seances = list(sh.seance_id for sh in this.participation_ids)
-            seances.sort(cmp=self.sh_sort_by_date)
-            email_proxy.send_email(cr, uid, 'sh_accept', 'sh', this.email, session=this.session_id, context=context, seances=seances, request=this)
-
         return True
 
-    def action_wkf_send_request_email(self, cr, uid, ids, context=None):
-        email_proxy = self.pool.get('training.email')
-        for this in self.browse(cr, uid, ids, context=context):
-            seances = list(sh.seance_id for sh in this.participation_ids)
-            seances.sort(cmp=self.sh_sort_by_date)
-            email_proxy.send_email(cr, uid, 'sh_request', 'sh', this.email, session=this.session_id, context=context, seances=seances, request=this)
-
+    def action_wkf_send_request(self, cr, uid, ids, context=None):
         return True
 
-    def action_wkf_send_cancellation_email(self, cr, uid, ids, context=None):
-        email_proxy = self.pool.get('training.email')
-        for this in self.browse(cr, uid, ids, context=context):
-            seances = list(sh.seance_id for sh in this.participation_ids)
-            seances.sort(cmp=self.sh_sort_by_date)
-            email_proxy.send_email(cr, uid, 'sh_cancel', 'sh', this.email, session=this.session_id, context=context, seances=seances, request=this)
-
+    def action_wkf_send_cancellation(self, cr, uid, ids, context=None):
         return True
 
     def action_wkf_refuse(self, cr, uid, ids, context=None):
         self.write(cr, uid, ids, {'state': 'refused'}, context=context)
         self._cancel_PO(cr, uid, ids, context)
         self._spread_wkf_signal(cr, uid, ids, 'signal_refuse', context)
-
-        email_proxy = self.pool.get('training.email')
-
-        for this in self.browse(cr, uid, ids, context=context):
-            seances = list(sh.seance_id for sh in this.participation_ids)
-            seances.sort(cmp=self.sh_sort_by_date)
-            email_proxy.send_email(cr, uid, 'sh_refuse', 'sh', this.email, session=this.session_id, context=context, seances=seances, request=this)
-
         return True
 
     def test_wkf_done(self, cr, uid, ids, context=None):
@@ -4324,14 +3772,11 @@ class training_participation_stakeholder(osv.osv):
     def _default_price_compute(self, cr, uid, job, seance, product_id=None, context=None):
         if not job or not seance:
             return False
-
         if isinstance(seance, (int, long)):
             seance = self.pool.get('training.seance').browse(cr, uid, seance, context=context)
-
         course = seance.course_id
         if not course:
             return False
-
         if product_id and isinstance(product_id, (int,long)):
             product = self.pool.get('product.product').browse(cr, uid, product_id)
         else:
@@ -4339,10 +3784,8 @@ class training_participation_stakeholder(osv.osv):
         if not product:
             raise osv.except_osv(_('Error'),
                                  _("The type of the course (%s) of this seance has no product defined") % course.name)
-
         if isinstance(job, (int, long)):
             job = self.pool.get('res.partner.job').browse(cr, uid, job, context=context)
-
         pricelist = job.name.property_product_pricelist_purchase
         if not pricelist:
             # no pricelist available: use the product cost price
@@ -4369,29 +3812,25 @@ class training_participation_stakeholder(osv.osv):
         'seance_id' : fields.many2one('training.seance',
                                       'Seance',
                                       required=True,
-                                      select=1,
-                                      help='Select the Seance',
+                                      help='Select the Seance.',
                                       ondelete='cascade',
                                       domain="[('date', '>=', time.strftime('%Y-%m-%d'))]"
                                      ),
-        'group_id' : fields.related('seance_id', 'group_id', type='many2one', relation='training.group', readonly=True, select=1, store=True, string='Group'),
+        'group_id' : fields.related('seance_id', 'group_id', type='many2one', relation='training.group', readonly=True, store=True, string='Group'),
         'job_id': fields.related('request_id', 'job_id', string="Contact", type='many2one', relation='res.partner.job', readonly=True),
-        'contact_id' : fields.related('job_id', 'contact_id', type='many2one', relation='res.partner.contact', readonly=True, store=True, select=2),
-        'partner_id' : fields.related('job_id', 'name', type='many2one', relation='res.partner', readonly=True, store=True, string="Partner", select=2),
-        'date' : fields.related('seance_id', 'date', type='datetime', string='Date', readonly=True, select=1, store=True),
+        'contact_id' : fields.related('job_id', 'contact_id', type='many2one', relation='res.partner.contact', readonly=True, store=True),
+        'partner_id' : fields.related('job_id', 'name', type='many2one', relation='res.partner', readonly=True, store=True, string="Partner"),
+        'date' : fields.related('seance_id', 'date', type='datetime', string='Date', readonly=True, store=True),
         'kind' : fields.related('seance_id', 'kind',
                                 type='selection',
                                 selection=[('standard', 'Course')],
                                 string='Kind',
-                                readonly=True,
-                                select=1),
+                                readonly=True),
         'course_id' : fields.related('seance_id', 'course_id',
                                      type='many2one',
                                      relation='training.course',
                                      string='Course',
-                                     readonly=True,
-                                     select=1),
-
+                                     readonly=True),
         'state' : fields.selection([('draft', 'Draft'),
                                     ('accepted', 'Accepted'),
                                     ('refused', 'Refused'),
@@ -4400,10 +3839,8 @@ class training_participation_stakeholder(osv.osv):
                                    ],
                                    'State',
                                    required=True,
-                                   readonly=True,
-                                   select=1,),
+                                   readonly=True,),
         'duration' : fields.related('seance_id', 'duration', type='float', string='Duration', readonly=True, store=True),
-
         'state_seance' : fields.related('seance_id', 'state', type='selection',
                                         selection=[('opened', 'Opened'),
                                                    ('confirmed', 'Confirmed'),
@@ -4415,7 +3852,6 @@ class training_participation_stakeholder(osv.osv):
                                         string='State of Seance',
                                         readonly=True,
                                        ),
-
         'purchase_order_line_id' : fields.many2one('purchase.order.line',
                                                    'Purchase Order Line',
                                                    readonly=True),
@@ -4424,9 +3860,7 @@ class training_participation_stakeholder(osv.osv):
                                              type='many2one',
                                              relation='purchase.order',
                                              readonly=True),
-
-        'paid' : fields.related('purchase_order_id', 'invoiced', type='boolean', string='Invoiced & Paid', readonly=True, select=1),
-
+        'paid' : fields.related('purchase_order_id', 'invoiced', type='boolean', string='Invoiced & Paid', readonly=True),
         'manual_price': fields.boolean('Manual Price'),
         'forced_price': fields.float('Renumeration', required=True, digits_compute=dp.get_precision('Account'),),
         'price' : fields.function(_get_price, method=True,
@@ -4435,7 +3869,7 @@ class training_participation_stakeholder(osv.osv):
                                   digits_compute=dp.get_precision('Account'),
                                   store=True,
                                  ),
-        'product_id' : fields.many2one('product.product', 'Product', select=2),
+        'product_id' : fields.many2one('product.product', 'Product'),
     }
 
     _defaults = {
@@ -4446,17 +3880,14 @@ class training_participation_stakeholder(osv.osv):
         po_proxy = self.pool.get('purchase.order')
         pol_proxy = self.pool.get('purchase.order.line')
         workflow = netsvc.LocalService('workflow')
-
         for obj in self.browse(cr, uid, ids, context=context):
             #product = obj.seance_id.course_id.course_type_id.product_id
             product = obj.seance_id._get_product()
             if not product:
                 raise osv.except_osv(_('Error'),
                                      _("The type of the course (%s) of this seance hasn't a product") % obj.seance_id.course_id.name)
-
             price = obj.price
             qty = obj.seance_id.duration * 1.0
-
             values = {
                 'name' : 'Seance %s - %s' % (obj.seance_id.name, obj.seance_id.date),
                 'date_planned' : obj.seance_id.date,
@@ -4468,7 +3899,6 @@ class training_participation_stakeholder(osv.osv):
                 'taxes_id': [(6, 0, [ tax.id for tax in product.supplier_taxes_id if product.supplier_taxes_id ])],
                 'account_analytic_id': obj.seance_id.course_id.analytic_account_id and obj.seance_id.course_id.analytic_account_id.id or '',
             }
-
             pol_id = pol_proxy.create(cr, uid, values, context=context)
             obj.write({'purchase_order_line_id' : pol_id})
             #workflow.trg_validate(uid, 'purchase.order', po_id, 'purchase_confirm', cr)
@@ -4492,18 +3922,8 @@ class training_participation_stakeholder(osv.osv):
             if res:
                 name = '%s %s' % (contact.first_name, contact.name)
                 other_seance = self.pool.get('training.seance').browse(cr, uid, res[0], context)
-
                 raise osv.except_osv(_('Error'), _('%(stakeholder)s is not available for seance "%(this_seance)s" because (s)he is already requested or confirmed for the seance "%(other_seance)s"') % {'stakeholder':name, 'this_seance': this.seance_id.name, 'other_seance': other_seance.name})
-
         return True
-
-    def send_email(self, cr, uid, ids, trigger, session, context=None, objects_by_ids=None):
-        if objects_by_ids is None:
-            objects_by_ids = {}
-        email_proxy = self.pool.get('training.email')
-        for sh in self.browse(cr, uid, ids, context=context):
-            if sh.request_id and sh.request_id.email:
-                email_proxy.send_email(cr, uid, trigger, 'sh', sh.request_id.email, session=session, context=context, sh=sh, **objects_by_ids.get(sh.id, {}))
 
     def _test_wkf(self, cr, uid, ids, state, context=None):
         for this in self.browse(cr, uid, ids, context):
@@ -4518,7 +3938,6 @@ class training_participation_stakeholder(osv.osv):
         for this in self.browse(cr, uid, ids, context):
             if this.purchase_order_line_id:
                 wkf.trg_validate(uid, 'purchase.order.line', this.purchase_order_line_id.id, purchase_order_signal, cr)
-
         # Second, change the participation state
         self.write(cr, uid, ids, {'state': state}, context=context)
         return True
@@ -4543,12 +3962,10 @@ class training_participation_stakeholder(osv.osv):
 
     def action_wkf_done(self, cr, uid, ids, context=None):
         self.write(cr, uid, ids, {'state': 'done'}, context=context)
-
         # spread the signal to the request
         wkf = netsvc.LocalService('workflow')
         for this in self.browse(cr, uid, ids, context):
             wkf.trg_validate(uid, 'training.participation.stakeholder.request', this.request_id.id, 'signal_done', cr)
-
         return True
 
     def _check_request(self, cr, uid, ids, context=None):
@@ -4620,7 +4037,7 @@ class training_course_pending(osv.osv):
 
     _columns = {
         'followup_by' : fields.many2one('res.users', 'Followup By', required=True, select=1),
-        'course_id' : fields.many2one('training.course', 'Course', select=1, required=True),
+        'course_id' : fields.many2one('training.course', 'Course', required=True),
         'type_id' : fields.related('course_id', 'course_type_id', type='many2one', relation='training.course_type',  string='Type'),
         'category_id' : fields.related('course_id', 'category_id', type='many2one', relation='training.course_category',  string='Category'),
         'lang_id' : fields.related('course_id', 'lang_id', type='many2one', relation='res.lang', string='Language'),
@@ -4632,7 +4049,6 @@ class training_course_pending(osv.osv):
                                             ('deprecated', 'Deprecated'),
                                             ('validated', 'Validated'),
                                            ],
-                                 select=1,
                                  string='State',
                                 ),
         'type' : fields.selection(training_course_pending_reason_compute,
@@ -4643,7 +4059,7 @@ class training_course_pending(osv.osv):
         'reason' : fields.text('Note'),
         'purchase_order_id' : fields.many2one('purchase.order', 'Purchase Order'),
         'create_date' : fields.datetime('Create Date', readonly=True),
-        'job_id' : fields.many2one('res.partner.job', 'Contact', required=True),
+        'job_id' : fields.many2one('res.partner.job', 'Contact', required=True, select=1),
         'job_email' : fields.char('Email', size=64),
         'seance_next_date' : fields.function(_seance_next_date_compute,
                                              method=True,
@@ -4690,57 +4106,6 @@ class training_course_pending(osv.osv):
 
 training_course_pending()
 
-class training_course_pending_wizard(osv.osv_memory):
-    _name = 'training.course.pending.wizard'
-
-    _columns = {
-        'course_id' : fields.many2one('training.course', 'Course'),
-        'type' : fields.selection(training_course_pending_reason_compute,
-                                    'Type',
-                                    size=32,
-                                    required=True),
-        'date' : fields.date('Planned Date'),
-        'reason' : fields.text('Reason'),
-        'job_id' : fields.many2one('res.partner.job', 'Contact', required=True),
-        'state' : fields.selection([('first_screen', 'First Screen'),
-                                    ('second_screen', 'Second Screen')],
-                                   'State')
-    }
-
-    _defaults = {
-        'type' : lambda *a: 'update_support',
-        'state' : lambda *a: 'first_screen',
-        'course_id' : lambda obj, cr, uid, context: context.get('active_id', 0)
-    }
-
-    def action_cancel(self, cr, uid, ids, context=None):
-        return {'type' : 'ir.actions.act_window_close'}
-
-    def action_apply(self, cr, uid, ids, context=None):
-        course_id = context and context.get('active_id', False) or False
-
-        if not course_id:
-            return False
-
-        this = self.browse(cr, uid, ids)[0]
-
-        workflow = netsvc.LocalService('workflow')
-        workflow.trg_validate(uid, 'training.course', course_id, 'signal_pending', cr)
-
-        values = {
-            'course_id' : course_id,
-            'type' : this.type,
-            'date' : this.date,
-            'reason' : this.reason,
-            'job_id' : this.job_id and this.job_id.id,
-        }
-
-        self.pool.get('training.course.pending').create(cr, uid, values, context=context)
-
-        return {'res_id' : course_id}
-
-training_course_pending_wizard()
-
 
 class training_contact_course(osv.osv):
     _name = 'training.contact.course'
@@ -4770,118 +4135,6 @@ class res_partner_contact(osv.osv):
 
 res_partner_contact()
 
-class training_session_duplicate_wizard(osv.osv_memory):
-    _name = 'training.session.duplicate.wizard'
-
-    _columns = {
-        'session_id': fields.many2one('training.session', 'Session',
-                                      required=True,
-                                      readonly=True,
-                                      domain=[('state', 'in', ['opened', 'opened_confirmed'])]),
-        'group_id' : fields.many2one('training.group', 'Group',
-                                     domain="[('session_id', '=', session_id)]"),
-        'subscription_line_ids' : fields.many2many('training.subscription.line',
-                                                   'training_sdw_participation_rel',
-                                                   'wizard_id',
-                                                   'participation_id',
-                                                   'Participations',
-                                                   domain="[('session_id', '=', session_id),('state', '=', 'confirmed')]"),
-    }
-
-    def action_cancel(self, cr, uid, ids, context=None):
-        return {'type' : 'ir.actions.act_window_close'}
-
-    def action_apply(self, cr, uid, ids, context=None):
-        this = self.browse(cr, uid, ids[0], context=context)
-
-        if len(this.subscription_line_ids) == 0:
-            raise osv.except_osv(_('Error'),
-                                 _('You have not selected a participant of this session'))
-
-        seances = []
-
-        if any(len(seance.session_ids) > 1 for seance in this.session_id.seance_ids):
-            raise osv.except_osv(_('Error'),
-                                 _('You have selected a session with a shared seance'))
-
-        #if not all(seance.state == 'opened' for seance in this.session_id.seance_ids):
-        #    raise osv.except_osv(_('Error'),
-        #                         _('You have to open all seances in this session'))
-
-        lengths = [len(group.seance_ids)
-                   for group in this.session_id.group_ids
-                   if group != this.group_id]
-
-        if len(lengths) == 0:
-            raise osv.except_osv(_('Error'),
-                                 _('There is no group in this session !'))
-
-        minimum, maximum = min(lengths), max(lengths)
-
-        if minimum != maximum:
-            raise osv.except_osv(_('Error'),
-                                 _('The defined groups for this session does not have the same number of seances !'))
-
-        group_id = this.session_id.group_ids[0]
-
-        seance_sisters = {}
-        for group in this.session_id.group_ids:
-            for seance in group.seance_ids:
-                seance_sisters.setdefault((seance.date, seance.duration, seance.course_id, seance.kind,), {})[seance.id] = None
-
-        seance_ids = []
-
-        if len(this.group_id.seance_ids) == 0:
-            proxy_seance = self.pool.get('training.seance')
-
-            for seance in group_id.seance_ids:
-                values = {
-                    'group_id' : this.group_id.id,
-                    'presence_form' : 'no',
-                    'manual' : 0,
-                    'participant_count_manual' : 0,
-                    'contact_ids' : [(6, 0, [])],
-                    'participant_ids' : [],
-                    'duplicata' : 1,
-                    'duplicated' : 1,
-                    'is_first_seance' : seance.is_first_seance,
-                }
-
-                seance_ids.append( proxy_seance.copy(cr, uid, seance.id, values, context=context) )
-        else:
-            # If the there are some seances in this group
-            seance_ids = [seance.id for seance in this.group_id.seance_ids]
-
-        for seance in self.pool.get('training.seance').browse(cr, uid, seance_ids, context=context):
-            key = (seance.date, seance.duration, seance.course_id, seance.kind,)
-            if key in seance_sisters:
-                for k, v in seance_sisters[key].items():
-                    seance_sisters[key][k] = seance.id
-            else:
-                seance_sisters[key][seance.id] = seance.id
-
-        final_mapping = {}
-        for key, values in seance_sisters.iteritems():
-            for old_seance_id, new_seance_id in values.iteritems():
-                final_mapping[old_seance_id] = new_seance_id
-
-        for sl in this.subscription_line_ids:
-            for part in sl.participation_ids:
-                part.write({'seance_id' : final_mapping[part.seance_id.id]})
-
-        return {'type' : 'ir.actions.act_window_close'}
-
-    def default_get(self, cr, uid, fields, context=None):
-        record_id = context and context.get('record_id', False) or False
-
-        res = super(training_session_duplicate_wizard, self).default_get(cr, uid, fields, context=context)
-
-        if record_id:
-            res['session_id'] = record_id
-
-        return res
-
-training_session_duplicate_wizard()
 
 class purchase_order(osv.osv):
     _inherit = 'purchase.order'
@@ -5088,255 +4341,6 @@ class res_lang(osv.osv):
 
 res_lang()
 
-class training_subscription_cancellation_wizard(osv.osv_memory):
-    _name = 'training.subscription.cancellation.wizard'
-
-    _description = 'Training Subscription Cancellation Wizard'
-
-    _columns = {
-        'subscription_line_id' : fields.many2one('training.subscription.line', 'Subscription Line',
-                                                 domain="[('state', 'in', ['draft', 'confirmed']),('session_id.state', 'in', ('opened', 'opened_confirmed', 'closed_confirmed'))]",
-                                                 required=True
-                                                ),
-        'subscription_id' : fields.related('subscription_line_id', 'subscription_id',
-                                           type='many2one',
-                                           relation='training.subscription',
-                                           string='Subscription',
-                                           readonly=True),
-
-        'partner_id' : fields.related('subscription_line_id', 'subscription_id', 'partner_id',
-                                      type='many2one',
-                                      relation='res.partner',
-                                      string='Partner',
-                                      readonly=True),
-
-        'participant_id' : fields.related('subscription_line_id', 'job_id',
-                                          type='many2one',
-                                          relation='res.partner.job',
-                                          string='Participant',
-                                          readonly=True),
-
-        'session_id' : fields.related('subscription_line_id', 'session_id',
-                                      type='many2one',
-                                      relation='training.session',
-                                      string='Session',
-                                      readonly=True),
-
-        'session_offer_id' : fields.related('subscription_line_id', 'session_id', 'offer_id',
-                                            type='many2one',
-                                            relation='training.session',
-                                            string='Session Offer',
-                                            readonly=True),
-
-        'session_date' : fields.related('subscription_line_id', 'session_id', 'date',
-                                        type='datetime',
-                                        string='Session Date',
-                                        readonly=True),
-
-        'session_state' : fields.related('subscription_line_id', 'session_id', 'state',
-                                         type='selection',
-                                         selection=[
-                                             ('draft', 'Draft'),
-                                             ('opened', 'Opened'),
-                                             ('opened_confirmed', 'Confirmed'),
-                                             ('closed_confirmed', 'Closed Subscriptions'),
-                                             ('inprogress', 'In Progress'),
-                                             ('closed', 'Closed'),
-                                             ('cancelled', 'Cancelled')
-                                         ],
-                                         string='Session State',
-                                         readonly=True),
-
-        'new_participant_id' : fields.many2one('res.partner.job', 'Participant',
-                                               domain="[('name', '=', partner_id),('id', '!=', participant_id),('state', '=', 'current')]"),
-
-        'new_participant_email' : fields.char('Email', size=128),
-
-        'new_session_id' : fields.many2one('training.session', 'Session',
-                                           domain="[('state', 'in', ('opened', 'opened_confirmed')),('date', '>', time.strftime('%Y-%m-%d')),('date', '>', session_date),('offer_id', '=', session_offer_id)]"
-                                          ),
-
-        'new_session_date' : fields.related('new_session_id', 'date', type='datetime', string='Session Date', readonly=True),
-
-        'cancellation_reason' : fields.text('Reason'),
-        'cancellation_medical_certificate_toggle' : fields.boolean('Has Justification'),
-        'cancellation_medical_certificate_name' : fields.char('Filename', size=128),
-        'cancellation_medical_certificate' : fields.binary('Justification'),
-
-        'state' : fields.selection([('init', 'Init'),
-                                    ('replacement', 'Replacement'),
-                                    ('postponement', 'Postponement'),
-                                    ('cancellation', 'Cancellation'),
-                                    ('end', 'End')],
-                                   'State',
-                                   required=True,
-                                   readonly=True
-                                  ),
-
-
-
-    }
-
-    _defaults = {
-        'subscription_line_id' : lambda obj, cr, uid, context: context['active_id'],
-        'state' : lambda *a: 'init',
-    }
-
-    def on_change_subscription_line(self, cr, uid, ids, subscription_line_id, context=None):
-        if not subscription_line_id:
-            return {}
-
-        subscription_line = self.pool.get('training.subscription.line').browse(cr, uid, subscription_line_id, context=context)
-        return {
-            'value' : {
-                'subscription_id' : subscription_line.subscription_id.id,
-                'subscription_line_id' : subscription_line.id,
-                'session_id' : subscription_line.session_id.id,
-                'session_date' : subscription_line.session_id.date,
-                'session_state' : subscription_line.session_id.state,
-                'partner_id' : subscription_line.subscription_id.partner_id.id,
-                'participant_id' : subscription_line.job_id.id,
-                'session_offer_id' : subscription_line.session_id.offer_id.id,
-            }
-        }
-
-    def on_change_new_participant(self, cr, uid, ids, new_participant_id, context=None):
-        if not new_participant_id:
-            return {}
-
-        job = self.pool.get('res.partner.job').browse(cr, uid, new_participant_id, context=context)
-        return {'value' : {'new_participant_email' : job.email }}
-
-    def on_change_new_session(self, cr, uid, ids, new_session_id, context=None):
-        if not new_session_id:
-            return {}
-
-        session = self.pool.get('training.session').browse(cr, uid, new_session_id, context=context)
-
-        return {
-            'value' : {
-                'new_session_date' : session.date,
-            }
-        }
-
-
-    def action_cancel(self, cr, uid, ids, context=None):
-        return {'type':'ir.actions.act_window_close'}
-
-    def action_cancellation(self, cr, uid, ids, context=None):
-        return self.write(cr, uid, ids, {'state' : 'cancellation'}, context=context)
-
-    def action_replacement(self, cr, uid, ids, context=None):
-        return self.write(cr, uid, ids, {'state' : 'replacement'}, context=context)
-
-    def action_postponement(self, cr, uid, ids, context=None):
-        # Assign a new session to the subscription line
-        return self.write(cr, uid, ids, {'state' : 'postponement'}, context=context)
-
-    def action_apply(self, cr, uid, ids, context=None):
-        if not ids:
-            return False
-
-        this = self.browse(cr, uid, ids[0], context=context)
-
-        old_participant_id = this.participant_id
-
-        workflow = netsvc.LocalService('workflow')
-
-        context2 = context.copy()
-        if 'default_state' in context2:
-            del context2['default_state']
-
-        if this.state == 'cancellation':
-            if this.cancellation_medical_certificate:
-                values = {
-                    'name' : 'Medical Certificate',
-                    'datas' : this.cancellation_medical_certificate,
-                    'datas_fname' : this.cancellation_medical_certificate_name,
-                    'description' : 'Medical Certificate',
-                    'res_model' : 'training.subscription.line',
-                    'res_id' : this.subscription_line_id.id,
-                }
-
-                self.pool.get('ir.attachment').create(cr, uid, values, context=context2)
-
-            this.subscription_line_id.write(
-                {
-                    'has_certificate' : this.cancellation_medical_certificate_toggle,
-                    'reason_cancellation' : this.cancellation_reason,
-                },
-                context=context2
-            )
-
-            workflow.trg_validate(uid, 'training.subscription.line', this.subscription_line_id.id, 'signal_cancel', cr)
-            sl_proxy = self.pool.get('training.subscription.line')
-            sl_proxy.send_email(cr, uid, [ this.subscription_line_id.id ], 'sub_cancelled', context=context)
-
-
-        elif this.state == 'replacement':
-            email_proxy = self.pool.get('training.email')
-
-            objects = {
-                'new_participant_id' : this.new_participant_id,
-                'old_participant_id' : old_participant_id,
-            }
-
-            this.subscription_line_id.write( { 'job_id' : this.new_participant_id.id, 'job_email' : this.new_participant_email, })
-
-            internal_note = []
-
-            if this.subscription_line_id.internal_note:
-                internal_note.append(this.subscription_line_id.internal_note)
-
-            internal_note.append(_("Replacement: %s %s -> %s %s") % (old_participant_id.contact_id.first_name,
-                                                                     old_participant_id.contact_id.name,
-                                                                     this.new_participant_id.contact_id.first_name,
-                                                                     this.new_participant_id.contact_id.name))
-
-            this.subscription_line_id.write({'internal_note' : "\n----\n".join(internal_note)})
-
-            email_proxy.send_email(cr, uid,
-                             'sub_replacement',
-                             'hr',
-                             this.subscription_line_id.partner_hr_email,
-                             session=this.subscription_line_id.session_id,
-                             context=context2,
-                             subline=this.subscription_line_id,
-                             **objects)
-
-            #if this.subscription_line_id.job_id.name.notif_participant and this.new_participant_email:
-            #    email_proxy.send(cr, uid,
-            #                     'sub_replacement',
-            #                     'p',
-            #                     this.new_participant_email,
-            #                     session=sl.session_id,
-            #                     context=context,
-            #                     subline=this.subscription_line_id,
-            #                     **objects)
-
-
-
-        elif this.state == 'postponement':
-            values = {
-                'session_id' : this.new_session_id.id,
-            }
-            sl_proxy = self.pool.get('training.subscription.line')
-
-            new_sl_id = sl_proxy.copy(cr, uid, this.subscription_line_id.id, values, context = context2 or {})
-
-            new_sl = sl_proxy.browse(cr, uid, new_sl_id, context=context2)
-            new_sl.write({'internal_note' : _("Created by Postponement of %s") % this.subscription_line_id.name})
-            this.subscription_line_id.write({'reason_cancellation' : _("Cancelled by Postponement: %s") % new_sl.name })
-
-            if this.subscription_line_id.state == 'confirmed':
-                workflow.trg_validate(uid, 'training.subscription.line', new_sl_id, 'signal_confirm', cr)
-            workflow.trg_validate(uid, 'training.subscription.line', this.subscription_line_id.id, 'signal_cancel', cr)
-        return self.write(cr, uid, ids, {'state' : 'end'}, context=context)
-
-    def action_done(self, cr, uid, ids, context=None):
-        return {'type' : 'ir.actions.act_window_close'}
-
-training_subscription_cancellation_wizard()
 
 class training_config_penality(osv.osv):
     _name = 'training.config.penality'
@@ -5395,70 +4399,3 @@ class training_config_invoice(osv.osv):
     ]
 
 training_config_invoice()
-
-class training_participation_reassign_wizard(osv.osv_memory):
-    _name = 'training.participation.reassign.wizard'
-
-    _columns = {
-        'participation_id' : fields.many2one('training.participation', 'Participation', required=True),
-        'participation_seance_id' : fields.related('participation_id', 'seance_id', type='many2one', relation='training.seance', readonly=True, string='Seance'),
-        'participation_seance_date' : fields.related('participation_id', 'seance_id', 'date', type='datetime', readonly=True, string='Date'),
-        'participation_sl' : fields.related('participation_id', 'subscription_line_id', type='many2one', relation='training.subscription.line', readonly=True, string='Subscription Line'),
-        'participation_session_id' : fields.related('participation_id', 'subscription_line_id', 'session_id', type='many2one', relation='training.session',
-                                                    readonly=True,
-                                                    string='Session'),
-        'seance_id' : fields.many2one('training.seance', 'Seance',
-                                      #domain="[('session_ids', 'in', [participation_session_id])]",
-                                      required=True),
-    }
-
-    def on_change_seance(self, cr, uid, ids, seance_id, context=None):
-        values = {
-            'domain' : {
-                'participation_id' : not seance_id and [] or [('seance_id', '=', seance_id)],
-            }
-        }
-
-        return values
-
-    def on_change_participation(self, cr, uid, ids, participation_id, context=None):
-        if not participation_id:
-            return {
-                'value' : {
-                    'seance_id' : 0,
-                },
-                'domain' : {
-                    'seance_id' : [],
-                },
-            }
-
-        p = self.pool.get('training.participation').browse(cr, uid, participation_id, context=context)
-        return {
-            'value' : {
-                'participation_seance_id' : p.seance_id.id,
-                'participation_seance_date' : p.seance_id.date,
-                'participation_sl' : p.subscription_line_id.id,
-                'participation_session_id' : p.subscription_line_id.session_id.id,
-            },
-            'domain' : {
-                'seance_id' : [('id', 'in', [seance.id for seance in p.subscription_line_id.session_id.seance_ids])],
-            }
-        }
-
-    def close_cb(self, cr, uid, ids, context=None):
-        return {'type' : 'ir.actions.act_window_close'}
-
-    def apply_cb(self, cr, uid, ids, context=None):
-        this = self.browse(cr, uid, ids[0], context=context)
-
-        if this.participation_id.seance_id == this.seance_id:
-            raise osv.except_osv(_('Warning'),
-                                 _('You have selected the same seance'))
-
-        this.participation_id.write({'seance_id' : this.seance_id.id})
-
-        return {'type' : 'ir.actions.act_window_close'}
-
-training_participation_reassign_wizard()
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

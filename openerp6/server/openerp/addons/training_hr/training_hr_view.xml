@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+<!-- hr.employee -->
+        <record id="view_employee_form" model="ir.ui.view">
+            <field name="name">hr.employee.form</field>
+            <field name="model">hr.employee</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="hr.view_employee_form" />
+            <field name="arch" type="xml">
+                <xpath expr="/form/notebook/page[@string='Notes']" position="after">
+                    <page string="Personal Subscriptions">
+                        <field name="subscription_ids" nolabel="1" colspan="4"/>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <act_window
+            id="act_window_subscription_line_related"
+            name="All Subscription Lines"
+            groups='base.group_user'
+            src_model="hr.employee"
+            res_model="training.hr.subscription.line"
+            domain="[('subscription_id', '=', active_id)]"/>
+
+<!-- training.hr.subscription -->
+       <record id="training_hr_subscription_filter" model="ir.ui.view">
+            <field name="name">training.hr.subscription.search</field>
+            <field name="model">training.hr.subscription</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Search Subscription">
+                   <group col='15' colspan='4'>
+                        <filter icon="terp-document-new" string="To Validate" domain="[('state','=','draft')]" help="Subscription State Draft."/>
+                        <filter icon="terp-camera_test" string="To Invoice" domain="[('state','=','confirmed')]" help="Subscription State Confirmed."/>
+                        <filter icon="terp-check" string="Done" domain="[('state','=','done')]" help="Subscription State Done."/>
+                        <filter icon="terp-gtk-stop" string="Cancelled" domain="[('state','=','cancelled')]" help="Subscription State Cancelled."/>
+                        <separator orientation="vertical"/>
+                        <filter icon="terp-personal+" string="My Subscriptions" domain="['|',('create_uid', '=', uid)]" help="Suscriptions in which I create." default="1"/>
+                        <separator orientation="vertical"/>
+                        <field name="name" string="Reference"/>
+                        <field name="employee_id" string="Employee"/>
+                   </group>
+               </search>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="training_hr_subscription_form">
+            <field name="name">training.hr.subscription.form</field>
+            <field name="model">training.hr.subscription</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="subscription">
+                    <separator string="Subscription Description" colspan="4"/>
+                    <field name="name"/>
+                    <field name="create_date"/>
+                    <notebook colspan="4">
+                        <page string="Subscription">
+                            <field name="employee_id" attrs="{'readonly' : [('state', '!=', 'draft')]}" groups="base.group_user"/>
+                            <field name="subscription_line_ids" colspan="4" nolabel="1"
+                                attrs="{'readonly' : [('state', '!=', 'draft')]}">
+                                <form string="Subscription Line">
+                                    <separator string="General" colspan="4"/>
+                                    <field name="name"/>
+                                    <separator string="Session" colspan="4"/>
+                                    <field name="session_id"/>
+                                    <separator colspan="4"/>
+                                    <field name="state" colspan="4"/>
+                                </form>
+                                <tree string="Subscription Lines">
+                                    <field name="name"/>
+                                    <field name="session_id"/>
+                                    <field name="state"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                    <group colspan="4" col="6">
+                        <field name="state"/>
+                        <button string="Confirm" name="signal_confirm" states="draft" type="workflow" icon="terp-document-new" confirm="Do you want to confirm the request for this subscription?"/>
+                        <button string="Cancel" name="signal_cancel" states="draft,confirmed" type="workflow" icon="gtk-cancel" confirm="Do you want to cancel this subscription?"/>
+                        <button string="Done" name="signal_done" states="confirmed" type="workflow" icon="terp-check"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="training_hr_subscription_tree">
+            <field name="name">training.hr.subscription.tree</field>
+            <field name="model">training.hr.subscription</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Subscriptions" colors="black:state == 'done';red:state=='draft';darkgreen:state=='confirmed';gray:state=='cancelled'">
+                    <field name="name"/>
+                    <field name="state"/>
+                    <field name="create_date"/>
+                    <field name="employee_id" groups="base.group_user"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="training_hr_subscription_act">
+            <field name="name">Subscriptions Human Resource</field>
+            <field name="res_model">training.hr.subscription</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+<!-- training.hr.subscription.line -->
+       <record id="training_hr_subscription_line_search" model="ir.ui.view">
+            <field name="name">training.hr.subscription.line.search</field>
+            <field name="model">training.hr.subscription.line</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Search Subscription Line">
+                   <group col='15' colspan='4'>
+                        <filter icon="terp-document-new" string="Draft" domain="[('state', '=', 'draft')]" help="Subscription lines in draft state."/>
+                        <filter icon="terp-camera_test" string="Confirmed" domain="[('state', '=', 'confirmed')]" help="Subscription lines in confirmed state."/>
+                        <filter icon="terp-gtk-stop" string="Cancelled" domain="[('state', '=', 'cancelled')]" help="Subscription lines in cancelled state."/>
+                        <filter icon="terp-check" string="Done" domain="[('state', '=', 'done')]" help="Subscription lines in done state."/>
+                        <separator orientation="vertical"/>
+                        <field name="name" string="Reference"/>
+                   </group>
+                   <newline/>
+                   <group expand="0" string="Extended Filters...">
+                        <field name="session_id" string="Session"/>
+                   </group>
+               </search>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="training_hr_subscription_line_form">
+            <field name="name">training.hr.subscription.line.form</field>
+            <field name="model">training.hr.subscription.line</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Subscription Line">
+                    <field name="name"/>
+                    <field name="subscription_id" on_change="on_change_subscription(subscription_id)" attrs="{'readonly':[('state', '!=', 'draft')]}"/>
+                    <notebook colspan="4">
+                        <page string="General">
+                            <separator string="Session" colspan="4"/>
+                            <field name="session_id" attrs="{'readonly':[('state', '!=', 'draft')]}"/>
+                        </page>
+                    </notebook>
+                    <separator colspan="4"/>
+                    <group col="9" colspan="4">
+                        <field name="state"/>
+                        <button name="signal_confirm" string="Confirm" type="workflow" states="draft" confirm="Do you want to confirm this subscription line?" icon="terp-camera_test"/>
+                        <button name="signal_cancel" string="Cancel" type="workflow" states="draft,confirmed" confirm="Do you want to cancel this subscription line?" icon="gtk-cancel"/>
+                        <button name="signal_done" string="Done" type="workflow" states="confirmed" icon="terp-camera_test"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="training_hr_subscription_line_tree">
+            <field name="name">training.hr.subscription.line.tree</field>
+            <field name="model">training.hr.subscription.line</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Subscription Lines" colors="black:state == 'done';red:state=='draft';darkgreen:state=='confirmed';gray:state=='cancelled'">
+                    <field name="name"/>
+                    <field name="state"/>
+                    <field name="session_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="training_hr_subscription_line_all_act">
+            <field name="name">Subscription Lines Human Resource</field>
+            <field name="res_model">training.hr.subscription.line</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="training_hr_subscription_line_tree"/>
+        </record>
+
+
+        <!--Subscription-->
+        <menuitem id="training_hr_subscription" parent="training.training_subscription_management_mi" action="training_hr_subscription_act" sequence="60"/>
+        <menuitem id="training_hr_subscription_line" parent="training.training_subscription_management_mi" action="training_hr_subscription_line_all_act" sequence="60"/>
+
+</data>
+</openerp>

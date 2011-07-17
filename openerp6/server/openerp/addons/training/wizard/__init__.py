@@ -3,6 +3,8 @@
 #
 #    OpenERP, Open Source Management Solution
 #    Copyright (C) 2004-2009 Tiny SPRL (<http://tiny.be>). All Rights Reserved
+#    Copyright (c) 2011 Zikzakmedia S.L. (http://zikzakmedia.com) All Rights Reserved.
+#                       Jesús Martín <jmartin@zikzakmedia.com>
 #    $Id$
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -20,16 +22,21 @@
 #
 ##############################################################################
 
-import wizard_not_implemented
-import wizard_subscription_line_invoice
-import wizard_subscription_line_confirm
-import wizard_subscription_line_change_participant
-import wizard_create_session
-import wizard_subscription_second_line
-import wizard_create_offer
-import wizard_create_block_offer
-import wizard_validate_course
-import wizard_spam
-import wizard_subscription_session
+import course_pending
+import create_block_offer
+import create_holiday_year
+import create_offer
+import create_session
+import offer_purchase_line_update
+import participation_reassign
+import seance_generate_pdf
+import session_duplicate
+import subscription_cancelation
+import subscription_line_change_participant
+import subscription_line_confirm
+import subscription_mass
+import subscription_second_line
+import subscription_session
+import validate_course
+import create_sessions_seances
 
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

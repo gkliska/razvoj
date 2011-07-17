@@ -26,10 +26,11 @@ import partner
 import res_groups
 import invoice
 import product
-import training_email
+#import training_email
 import training
 import training_holiday
 import report
 import wizard
+import company
 
 import document_price

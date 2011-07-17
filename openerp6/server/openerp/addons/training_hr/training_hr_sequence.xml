@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<openerp>
+    <data noupdate="1">
+        <record model="ir.sequence.type" id="seq_training_hr_subscription_type">
+            <field name="name">Training Human Resource Subscription Sequence Type</field>
+            <field name="code">training.hr.subscription</field>
+        </record>
+
+        <record model="ir.sequence" id="seq_training_hr_subscription">
+            <field name="name">Training Human Resource Subscription</field>
+            <field name="code">training.hr.subscription</field>
+            <field name="prefix">HRS/</field>
+            <field name="padding">4</field>
+        </record>
+
+        <record model="ir.sequence.type" id="seq_training_hr_subscription_line_type">
+            <field name="name">Training Human Resource Subscription Line Sequence Type</field>
+            <field name="code">training.hr.subscription.line</field>
+        </record>
+
+        <record model="ir.sequence" id="seq_training_hr_subscription_line">
+            <field name="name">Training Human Resource Subscription Line</field>
+            <field name="code">training.hr.subscription.line</field>
+            <field name="prefix">HRSL/</field>
+            <field name="padding">6</field>
+        </record>
+    </data>
+</openerp>

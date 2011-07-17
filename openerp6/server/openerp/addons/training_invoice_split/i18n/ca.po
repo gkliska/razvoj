@@ -1,0 +1,353 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* training_invoice_split
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-05-19 15:13+0000\n"
+"PO-Revision-Date: 2011-05-19 17:14+0100\n"
+"Last-Translator: Raimon Esteve <resteve@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. module: training_invoice_split
+#: code:addons/training_invoice_split/wizard/create_invoicing.py:137
+#, python-format
+msgid "Training Offer Invoicing"
+msgstr "Facturació dels cursos de formació"
+
+#. module: training_invoice_split
+#: field:training.offer.invoice.line,payment_type:0
+#: field:training.offer.invoicing,payment_type:0
+msgid "Payment Type"
+msgstr "Tipus de pagament"
+
+#. module: training_invoice_split
+#: field:training.offer.invoice,amount_total:0
+msgid "Total Amount"
+msgstr "Import total"
+
+#. module: training_invoice_split
+#: code:addons/training_invoice_split/wizard/create_invoice.py:117
+#, python-format
+msgid "Income Account in this company is not avaible"
+msgstr "No existeix cap compte d'ingressos en aquesta companyia."
+
+#. module: training_invoice_split
+#: field:training.offer.invoicing,state:0
+msgid "State"
+msgstr "Estat"
+
+#. module: training_invoice_split
+#: model:ir.actions.act_window,name:training_invoice_split.action_create_invoice
+#: view:training.create.invoice.wizard:0
+#: view:training.offer.invoicing:0
+msgid "Create Invoice"
+msgstr "Crea factura"
+
+#. module: training_invoice_split
+#: view:training.offer.invoice:0
+msgid "Offer Invoice"
+msgstr "Factura del curs"
+
+#. module: training_invoice_split
+#: selection:training.offer.invoice.line,reference_date:0
+msgid "Session Date"
+msgstr "Data de l'edició"
+
+#. module: training_invoice_split
+#: code:addons/training_invoice_split/wizard/create_invoicing.py:35
+#, python-format
+msgid "Default Payment"
+msgstr "Pagament per defecte"
+
+#. module: training_invoice_split
+#: model:ir.actions.act_window,name:training_invoice_split.act_window_offer_invoicing_line_related
+msgid "All Invoicing Lines"
+msgstr "Totes les línies a facturar"
+
+#. module: training_invoice_split
+#: selection:training.offer.invoicing,state:0
+msgid "Ready to be invoiced"
+msgstr "Per facturar"
+
+#. module: training_invoice_split
+#: constraint:training.subscription.line:0
+msgid "Invalid Subscription"
+msgstr "Subscripció no vàlida"
+
+#. module: training_invoice_split
+#: model:ir.actions.act_window,name:training_invoice_split.action_training_offer_invoicing_action
+#: model:ir.ui.menu,name:training_invoice_split.training_invoicing
+#: view:training.offer:0
+#: view:training.offer.invoicing:0
+#: view:training.subscription.line:0
+#: field:training.subscription.line,invoicing_ids:0
+msgid "Invoicing"
+msgstr "Facturació de subscripcions"
+
+#. module: training_invoice_split
+#: code:addons/training_invoice_split/wizard/create_invoice.py:111
+#, python-format
+msgid "Not account available for product or category product"
+msgstr "No existeix cap compte disponible per aquest producte o categoria de producte."
+
+#. module: training_invoice_split
+#: field:training.offer.invoice,offer_id:0
+msgid "Offer"
+msgstr "Curs"
+
+#. module: training_invoice_split
+#: field:training.offer.invoice.line,company_id:0
+#: field:training.offer.invoicing,company_id:0
+msgid "Company"
+msgstr "Companyia"
+
+#. module: training_invoice_split
+#: model:ir.model,name:training_invoice_split.model_training_offer_invoice_line
+msgid "Training Offer Invoice Line"
+msgstr "Línia de factura del curs"
+
+#. module: training_invoice_split
+#: view:training.offer.invoice:0
+msgid "Invoicing Line"
+msgstr "Totes les línies a facturar"
+
+#. module: training_invoice_split
+#: code:addons/training_invoice_split/training.py:114
+#, python-format
+msgid "Invalid action !"
+msgstr "Acció no vàlida!"
+
+#. module: training_invoice_split
+#: code:addons/training_invoice_split/training.py:114
+#, python-format
+msgid "Only wait invoicing could be deleted !"
+msgstr "Només les línies en estat \"En espera\" es poden eliminar!"
+
+#. module: training_invoice_split
+#: code:addons/training_invoice_split/wizard/create_invoice.py:63
+#, python-format
+msgid "Account Receivable Partner not avaible. Edit Partner and select an account receivable"
+msgstr "No existeix cap compte a cobrar de l'empresa. Editeu l'empresa i seleccioneu un compte a cobrar."
+
+#. module: training_invoice_split
+#: field:training.offer.invoice.line,invoice_id:0
+msgid "Payment"
+msgstr "Pagament"
+
+#. module: training_invoice_split
+#: view:training.offer.invoicing:0
+msgid "Wait"
+msgstr "En espera"
+
+#. module: training_invoice_split
+#: field:training.offer.invoice,name:0
+msgid "Name"
+msgstr "Nom"
+
+#. module: training_invoice_split
+#: model:ir.model,name:training_invoice_split.model_training_subscription_line
+msgid "training.subscription.line"
+msgstr "formació.subscripció.línia"
+
+#. module: training_invoice_split
+#: view:training.offer.invoicing:0
+msgid "Search Offer"
+msgstr "Busca curs"
+
+#. module: training_invoice_split
+#: model:ir.model,name:training_invoice_split.model_training_create_invoice_wizard
+msgid "training.create.invoice.wizard"
+msgstr "formació.crea.factura.assitent"
+
+#. module: training_invoice_split
+#: code:addons/training_invoice_split/wizard/create_invoice.py:56
+#: code:addons/training_invoice_split/wizard/create_invoicing.py:82
+#, python-format
+msgid "Company are not avaible"
+msgstr "No s'ha definit la companyia."
+
+#. module: training_invoice_split
+#: field:training.offer.invoice.line,days:0
+msgid "Days"
+msgstr "Dies"
+
+#. module: training_invoice_split
+#: field:training.offer.invoicing,date:0
+msgid "Date"
+msgstr "Data"
+
+#. module: training_invoice_split
+#: view:training.create.invoice.wizard:0
+msgid "Are you sure to create an invoice?"
+msgstr "Voleu crear una factura?"
+
+#. module: training_invoice_split
+#: code:addons/training_invoice_split/wizard/create_invoice.py:68
+#, python-format
+msgid "Account Receivable in this company is not avaible"
+msgstr "No existeix cap compte d'ingressos per aquesta companyia."
+
+#. module: training_invoice_split
+#: code:addons/training_invoice_split/wizard/create_invoice.py:56
+#: code:addons/training_invoice_split/wizard/create_invoice.py:63
+#: code:addons/training_invoice_split/wizard/create_invoice.py:68
+#: code:addons/training_invoice_split/wizard/create_invoice.py:111
+#: code:addons/training_invoice_split/wizard/create_invoice.py:117
+#: code:addons/training_invoice_split/wizard/create_invoicing.py:82
+#: code:addons/training_invoice_split/wizard/create_invoicing.py:115
+#: selection:training.offer.invoicing,state:0
+#, python-format
+msgid "Error"
+msgstr "Error"
+
+#. module: training_invoice_split
+#: field:training.offer.invoicing,subscription_line_id:0
+msgid "Subscription Line"
+msgstr "Línia de subscripció"
+
+#. module: training_invoice_split
+#: field:training.offer.invoice.line,reference_date:0
+msgid "Reference Date"
+msgstr "Data de referencia"
+
+#. module: training_invoice_split
+#: model:ir.model,name:training_invoice_split.model_training_offer
+msgid "training.offer"
+msgstr "formació.curs"
+
+#. module: training_invoice_split
+#: selection:training.offer.invoicing,state:0
+msgid "Invoiced"
+msgstr "Facturat"
+
+#. module: training_invoice_split
+#: model:ir.actions.act_window,name:training_invoice_split.action_create_invoicing
+#: view:training.create.invoicing.wizard:0
+#: view:training.subscription.line:0
+msgid "Create Invoicing"
+msgstr "Crea facturació"
+
+#. module: training_invoice_split
+#: view:training.create.invoicing.wizard:0
+msgid "Select Invoicing"
+msgstr "Seleccioneu el tipus de facturació a crear"
+
+#. module: training_invoice_split
+#: field:training.create.invoicing.wizard,invoice:0
+msgid "Invoicing Type"
+msgstr "Tipus de facturació"
+
+#. module: training_invoice_split
+#: selection:training.offer.invoice.line,reference_date:0
+msgid "Subscription Date"
+msgstr "Data de subscripció"
+
+#. module: training_invoice_split
+#: field:training.offer.invoice.line,sequence:0
+#: field:training.offer.invoicing,seq:0
+msgid "Sequence"
+msgstr "Seqüència"
+
+#. module: training_invoice_split
+#: code:addons/training_invoice_split/wizard/create_invoice.py:161
+#, python-format
+msgid "Invoices"
+msgstr "Factures"
+
+#. module: training_invoice_split
+#: model:ir.actions.act_window,name:training_invoice_split.action_training_offer_invoice_action
+#: view:training.offer.invoice:0
+#: view:training.offer.invoicing:0
+#: field:training.offer.invoicing,invoice_type:0
+msgid "Offer Invoicing"
+msgstr "Facturació del curs"
+
+#. module: training_invoice_split
+#: selection:training.offer.invoicing,state:0
+msgid "Waiting"
+msgstr "En espera"
+
+#. module: training_invoice_split
+#: model:ir.model,name:training_invoice_split.model_training_create_invoicing_wizard
+msgid "training.create.invoicing.wizard"
+msgstr "formació.crea.facturació.assistent"
+
+#. module: training_invoice_split
+#: model:ir.model,name:training_invoice_split.model_training_offer_invoicing
+msgid "Training Offer Invoicing History"
+msgstr "Historial de facturació de cursos"
+
+#. module: training_invoice_split
+#: help:training.offer.invoice.line,sequence:0
+msgid "Gives the sequence order when create Account Invoice."
+msgstr "Indica l'ordre en que es crearan les factures."
+
+#. module: training_invoice_split
+#: model:ir.model,name:training_invoice_split.model_training_offer_invoice
+msgid "Training Offer Invoice"
+msgstr "Facturació de cursos"
+
+#. module: training_invoice_split
+#: view:training.offer.invoicing:0
+msgid "Done"
+msgstr "Realitzat"
+
+#. module: training_invoice_split
+#: field:training.offer.invoice,invoice_line_ids:0
+#: field:training.offer.invoicing,invoice_id:0
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: training_invoice_split
+#: view:training.create.invoice.wizard:0
+#: view:training.create.invoicing.wizard:0
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#. module: training_invoice_split
+#: field:training.offer.invoicing,partner:0
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: training_invoice_split
+#: field:training.offer,invoice_ids:0
+msgid "Payments"
+msgstr "Pagaments"
+
+#. module: training_invoice_split
+#: code:addons/training_invoice_split/wizard/create_invoicing.py:115
+#, python-format
+msgid "Company not available. Configure Parent Company"
+msgstr "No es troba la companyia. Configureu una companyia pare."
+
+#. module: training_invoice_split
+#: field:training.offer.invoice.line,price:0
+#: field:training.offer.invoicing,price:0
+msgid "Price"
+msgstr "Preu"
+
+#. module: training_invoice_split
+#: field:training.offer.invoice,active:0
+msgid "Active"
+msgstr "Actiu"
+
+#~ msgid "Payment Line"
+#~ msgstr "Línia de pagament"
+#~ msgid "Payment Code"
+#~ msgstr "Codi de pagament"
+#~ msgid "Offer Payment"
+#~ msgstr "Pagament de cursos"
+#~ msgid "Training Offer Invoicing history"
+#~ msgstr "Historial de facturació"
+#~ msgid "training.subscription"
+#~ msgstr "training.subscription"
+#~ msgid "The name of the subscription must be unique !"
+#~ msgstr "El nom de la subscripció  ha de ser únic!"
+
