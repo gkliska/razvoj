@@ -1,0 +1,51 @@
+field,"account.invoice,amount_ecotaxe",0,Eco Part.,Eco Part.
+field,"account.invoice.line,ecotaxe_invoice",0,Eco Part,Eco Part.
+field,"product.product,ecotaxe",0,Eco participation,Eco participation
+field,"sale.order,amount_ecotaxe",0,Ecotaxe,Ecotaxe
+field,"sale.order.line,ecotaxe_order",0,Eco part,Eco Part.
+rml,account.invoice.ecotaxe,0,Tel. :,Tel. :
+rml,account.invoice.ecotaxe,0,Fax :,Fax :
+rml,account.invoice.ecotaxe,0,VAT :,TVA :
+rml,account.invoice.ecotaxe,0,Invoice,Facture
+rml,account.invoice.ecotaxe,0,Refund,Remboursement
+rml,account.invoice.ecotaxe,0,Supplier Refund,Remboursement Fournisseur
+rml,account.invoice.ecotaxe,0,Supplier Invoice,Facture Fournisseur
+rml,account.invoice.ecotaxe,0,Document,Document
+rml,account.invoice.ecotaxe,0,:,
+rml,account.invoice.ecotaxe,0,Invoice Date:,Date Facture
+rml,account.invoice.ecotaxe,0,Customer Ref:,Client Ref
+rml,account.invoice.ecotaxe,0,Description,Description
+rml,account.invoice.ecotaxe,0,Taxes,Taxes
+rml,account.invoice.ecotaxe,0,Quantity,Quantités
+rml,account.invoice.ecotaxe,0,Unit Price,Prix Unitaire
+rml,account.invoice.ecotaxe,0,Disc. (%),Esc. (%)
+rml,account.invoice.ecotaxe,0,Price,Prix
+rml,account.invoice.ecotaxe,0,Tax,Taxe
+rml,account.invoice.ecotaxe,0,Base,Base
+rml,account.invoice.ecotaxe,0,Amount,Montant
+rml,account.invoice.ecotaxe,0,Total (excl. taxes):,Total HT:
+rml,account.invoice.ecotaxe,0,Taxes:,Taxes:
+rml,account.invoice.ecotaxe,0,Eco Part.:,Eco Part.:
+rml,account.invoice.ecotaxe,0,Total,Total
+rml,account.invoice.ecotaxe,0,(incl. taxes):,(incl. taxes):
+rml,sale.order.ecotaxe,0,Shipping address :,adresse livraison
+rml,sale.order.ecotaxe,0,Invoice address :,adresse facturation
+rml,sale.order.ecotaxe,0,Tel. :,Tel. :
+rml,sale.order.ecotaxe,0,Fax :,Fax :
+rml,sale.order.ecotaxe,0,VAT :,TVA :
+rml,sale.order.ecotaxe,0,Quotation N° :,Devis N° :
+rml,sale.order.ecotaxe,0,Order N° :,Commande N° :
+rml,sale.order.ecotaxe,0,Your order reference :,Votre référence commande :
+rml,sale.order.ecotaxe,0,Date ordered :, Date commande :
+rml,sale.order.ecotaxe,0,Our salesman :,votre vendeur :
+rml,sale.order.ecotaxe,0,Product Description,Description du produit
+rml,sale.order.ecotaxe,0,Applicable Taxes,Taxes applicables
+rml,sale.order.ecotaxe,0,Qty,Qté
+rml,sale.order.ecotaxe,0,Disc.,Esc.
+rml,sale.order.ecotaxe,0,Unit Price,Prix Unitaire
+rml,sale.order.ecotaxe,0,Net Price,Prix Net
+rml,sale.order.ecotaxe,0,Net Total :,Total Net :
+rml,sale.order.ecotaxe,0,Taxes :,Taxes :
+rml,sale.order.ecotaxe,0,Eco Part. :,Eco Part. :
+rml,sale.order.ecotaxe,0,TOTAL :,TOTAL :
+

@@ -1,0 +1,24 @@
+Explication sur l'ecotaxe appelée aussi ecoparticipation:
+---------------------------------------------------------
+
+	L'état français a mis cette taxe en application pour le recyclage de produits nécessitant un coût élevé. Cette taxe est payée au final par le client pour financer le recyclage du produit qu'il achète lorsque celui-ci sera en panne.
+Le fabricant fixe le montant de l'ecotaxe; pour ce faire, il choisit l'organisme de recyclage du produit (DEEE). Le prix de l'ecotaxe pour un même produit peut varier en fonction de l'organisme de recyclage. Chaques acteurs situés entre le fabricant et le client final payent donc l'ecotaxe dans le prix d'achat du produit : le prix HT + le montant de l'ecotaxe auquel s'applique la TVA.
+
+	Dans la chaîne de distribution on distingue 2 acteurs : les fournisseurs et les distributeurs. Le cas des fournisseurs est un peu spécifique. Un fournisseur qui est importateur de produits en France devient alors pour la loi de l'ecotaxe un producteur. Dans ce cas présent, c'est le fournisseur qui choisit l'organisme de collecte et donc le prix de l'ecotaxe.
+	Le distributeur achète son produit chez le fournisseur, il paye son produit et l'ecotaxe de celui-ci. D'un point de vue comptable, l'ecotaxe n'est pas considérée comme une taxe mais une participation pour le recyclage, il n'y a donc pas de compte spécifique pour enregistrer des écritures de l'ecotaxe lors d'une vente. On considère que l'ecotaxe est incluse dans le prix de vente du produit. Un distributeur pour un même produit peut avoir plusieurs fournisseurs, le prix du produit peut donc varier par le prix HT unitaire du produit mais aussi par le montant de l'ecotaxe. 
+
+	Le distributeur vend ensuite le produit au client final. Le client final va payer l'ecotaxe sur le produit comme les autres acteurs de la chaîne de distribution. L'obligation des textes de loi est de faire apparaître sur la facture une ligne indiquant l'ecotaxe. Cette ligne + le montant HT nous donne associé à la TVA le montant TTC.
+
+	Obligation des distributeurs sur la reprise des produits ; lorsqu'une vente est faite, le distributeur est obligé de reprendre un produit équivalent usagé. Le distributeur contactera alors l'organisme chargé de la collecte pour prendre ces produits.
+
+	Donc pour résumer : le fournisseur choisit son organisme, fixe l'ecotaxe et la reverse à l'organisme choisi. Tous les acteurs de la chaîne de distribution payent cette ecotaxe et la répercutent sur la vente de leurs produits. C'est donc le client final qui paye celle-ci. 
+
+
+Installation:
+-------------
+
+	Le module Ecotaxe s'intalle par le menu d'administration des modules. Après installation il faut renseigner dans les fiches produits les listes de prix des fournisseurs. Ces listes de prix contiennent un champs supplémentaire dénommé 'eco participation', c'est le champs qui correspond à l'écotaxe du produit.
+	
+	Lors d'une remise (discount), le montant soumis à la déduction est le prix unitaire x quantité . On ajoute l'eco participation x quantité après la déduction.
+
+	Pour imprimer une commande, un devis, une facture, veuillez utiliser le bouton 'imprimer' ayant ma mention '(ECOT)', il vous permettra d'imprimer vos documents avec les eco participations.

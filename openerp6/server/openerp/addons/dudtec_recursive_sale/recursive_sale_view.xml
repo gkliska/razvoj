@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="sale_order_planned_form_view" model="ir.ui.view">
+			<field name="name">sale.order.planned.form</field>
+			<field name="model">sale.order</field>
+			<field name="type">form</field>
+			<field name="priority">17</field>
+			<field name="arch" type="xml">
+				<form string="Sales order">
+					<group col="6" colspan="4">
+						<field name="name" select="1" />
+						<field name="client_order_ref" select="2" />
+						<field name="shipped" select="2" />
+						<field name="shop_id" on_change="onchange_shop_id(shop_id)"
+							select="2" />
+						<field name="date_order" select="1" />
+						<field name="invoiced" select="2" />
+					</group>
+	
+	
+	
+	</data>
+</openerp>

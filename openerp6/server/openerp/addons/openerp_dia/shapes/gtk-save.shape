@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
+    <name>shape - gtk-save</name>
+    <icon>gtk-save.png</icon>
+    <connections/>
+    <aspectratio type="free"/>
+    <svg:svg>
+        <svg:image x="0" y="0" width="8" height="8" href="gtk-save.png"/>
+    </svg:svg>
+</shape>

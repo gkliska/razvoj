@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
+        <name>shape - process_view_node_subflow_gray</name>
+        <icon>process_view_node_subflow_gray.png</icon>
+        <connections>
+        <point x="0" y="5"/>
+       <point x="20" y="5"/>
+       </connections>
+        <aspectratio type="fixed"/>
+         <textbox x1="16" y1="0" x2="8.79" y2="1.47"/> 
+        <svg:svg>
+            <svg:image x="0" y="0" width="20" height="10" href="process_view_node_subflow_gray.png"/>
+            <svg:image x="3" y="7.5" width="2" height="2" href="process_view_node_icon.png"/>
+            <svg:image x="17" y="7.5" width="2" height="2" href="url_real.png"/>
+        </svg:svg>
+    </shape>

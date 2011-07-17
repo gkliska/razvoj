@@ -1,0 +1,109 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* base_vat
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-01-11 11:14+0000\n"
+"PO-Revision-Date: 2010-12-05 07:36+0000\n"
+"Last-Translator: Chertykov Denis <chertykov@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-04-29 05:02+0000\n"
+"X-Generator: Launchpad (build 12758)\n"
+
+#. module: base_vat
+#: code:addons/base_vat/base_vat.py:87
+#, python-format
+msgid ""
+"The Vat does not seems to be correct. You should have entered something like "
+"this %s"
+msgstr "Похоже, НДС указан неверно. Вы должны ввести что-то вроде %s"
+
+#. module: base_vat
+#: model:ir.module.module,description:base_vat.module_meta_information
+msgid ""
+"\n"
+"    Enable the VAT Number for the partner. Check the validity of that VAT "
+"Number.\n"
+"\n"
+"    This module follows the methods stated at http://sima-pc.com/nif.php "
+"for\n"
+"    checking the validity of VAT Number assigned to partners in European "
+"countries.\n"
+"    "
+msgstr ""
+"\n"
+"    Включить номер НДС для контрагента. Проверить правильность этого номера "
+"НДС.\n"
+"\n"
+"    Этот модуль использует метод, описанный на http://sima-pc.com/nif.php "
+"для\n"
+"    проверки корректности номера НДС, назначенного контрагентам в "
+"европейских странах.\n"
+"    "
+
+#. module: base_vat
+#: model:ir.module.module,shortdesc:base_vat.module_meta_information
+msgid "Base VAT - To check VAT number validity"
+msgstr "Базовый НДС. Проверка правильности номера НДС."
+
+#. module: base_vat
+#: constraint:res.partner:0
+msgid "Error ! You can not create recursive associated members."
+msgstr "Ошибка! Вы не можете создать рекурсивно связанных участников."
+
+#. module: base_vat
+#: code:addons/base_vat/base_vat.py:88
+#, python-format
+msgid "The VAT is invalid, It should begin with the country code"
+msgstr "НДС неверен, он должен начинаться с кода страны"
+
+#. module: base_vat
+#: help:res.partner,vat_subjected:0
+msgid ""
+"Check this box if the partner is subjected to the VAT. It will be used for "
+"the VAT legal statement."
+msgstr ""
+"Отметьте, если контрагент — плательщик НДС. Используется для заявления НДС."
+
+#. module: base_vat
+#: model:ir.model,name:base_vat.model_res_partner
+msgid "Partner"
+msgstr "Контрагент"
+
+#. module: base_vat
+#: field:res.partner,vat_subjected:0
+msgid "VAT Legal Statement"
+msgstr "Заявление НДС"
+
+#~ msgid "VAT"
+#~ msgstr "Код налога"
+
+#~ msgid "Invalid XML for View Architecture!"
+#~ msgstr "Некорректный формат XML структуры для просмотра."
+
+#~ msgid ""
+#~ "Enable the VAT Number for the partner. Check the validity of that VAT Number."
+#~ msgstr ""
+#~ "Разрешить использование кода налога для партнера. Проверьте правильность "
+#~ "кода налога."
+
+#~ msgid ""
+#~ "The Object name must start with x_ and not contain any special character !"
+#~ msgstr ""
+#~ "Название объекта должно начинаться с x_  и не должно содержать специальных "
+#~ "символов !"
+
+#~ msgid "Size of the field can never be less than 1 !"
+#~ msgstr "Размер поля никогда не может быть меньше 1 !"
+
+#~ msgid "The name of the module must be unique !"
+#~ msgstr "Название модуля должно быть уникальным !"
+
+#~ msgid "The certificate ID of the module must be unique !"
+#~ msgstr "Идентификатор сертификата модуля должен быть уникальным !"
