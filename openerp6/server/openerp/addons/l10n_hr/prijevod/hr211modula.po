@@ -218,7 +218,7 @@ msgstr ""
 "Project-Id-Version: OpenERP Server 6.1-dev\n"
 "Report-Msgid-Bugs-To: support@openerp.com\n"
 "POT-Creation-Date: 2011-07-17 23:47+0000\n"
-"PO-Revision-Date: 2011-07-18 10:30+0200\n"
+"PO-Revision-Date: 2011-07-19 15:21+0200\n"
 "Last-Translator: \n"
 "Language-Team: Croatian <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -268,7 +268,7 @@ msgstr ""
 #: view:report.auction:0
 #: field:report.auction,seller:0
 msgid "Seller"
-msgstr "Vendeur"
+msgstr "Prodavač"
 
 #. module: training_doc
 #: field:training.course,course_wiki_pages_ids:0
@@ -308,18 +308,18 @@ msgstr "Zatvaranje stavke dnevnika"
 #: view:crm.lead2opportunity.partner:0
 #: view:crm.merge.opportunity:0
 msgid "Select Opportunities"
-msgstr "Select Opportunities"
+msgstr "Odaberite prilike"
 
 #. module: base
 #: field:ir.ui.view,arch:0
 #: field:ir.ui.view.custom,arch:0
 msgid "View Architecture"
-msgstr "Arhitektura za pregledne ekrane"
+msgstr "Definicija pogleda"
 
 #. module: project
 #: model:process.node,name:project.process_node_taskbydelegate0
 msgid "Task by delegate"
-msgstr "Zadatak po nostelju"
+msgstr "Zadatak po nositelju"
 
 #. module: membership
 #: model:process.node,note:membership.process_node_setassociation0
@@ -329,7 +329,7 @@ msgstr "Set an associate member of partner."
 #. module: account
 #: view:account.invoice:0
 msgid "Proforma/Open/Paid Invoices"
-msgstr "Proforma/Open/Paid Invoices"
+msgstr "Proforma/Otvoreni/Plaćeni računi"
 
 #. module: crm
 #: code:addons/crm/wizard/crm_add_note.py:26
@@ -343,28 +343,28 @@ msgid ""
 "The 'Minimum stock rule' allows the system to create procurement orders "
 "automatically as soon as the minimum stock is reached."
 msgstr ""
-"The 'Minimum stock rule' allows the system to create procurement orders "
-"automatically as soon as the minimum stock is reached."
+"'Pravilo minimalne zalihe' omogućuje automatsko kreiranje naloga nabave kada "
+"nivo zalihe dostigne definirani minimum."
 
 #. module: account_voucher
 #: model:ir.actions.act_window,name:account_voucher.action_view_account_voucher_unreconcile
 msgid "Unreconcile entries"
-msgstr "Unreconcile entries"
+msgstr "Otvori stavke"
 
 #. module: project_mrp
 #: model:process.transition,name:project_mrp.process_transition_ordertask0
 msgid "Order Task"
-msgstr "Zadatak narudžbe"
+msgstr "Zadatak naloga"
 
 #. module: hr_holidays
 #: selection:hr.holidays.status,color_name:0
 msgid "Light Green"
-msgstr "Light Green"
+msgstr "Svijetlo zelena"
 
 #. module: crm_helpdesk
 #: view:crm.helpdesk.report:0
 msgid "Helpdesk requests occurred in current month"
-msgstr "Helpdesk requests occurred in current month"
+msgstr "Zahtjevi korisničke podrške u trenutnom mjesecu"
 
 #. module: account
 #: field:account.analytic.line,currency_id:0
@@ -376,12 +376,12 @@ msgstr "Valuta konta"
 #: code:addons/training_django/wizard/wizard_reset_user.py:67
 #, python-format
 msgid "Error: Multi School not active"
-msgstr "Error: Multi School not active"
+msgstr "Greška: Multi School nije aktivan"
 
 #. module: purchase
 #: view:purchase.report:0
 msgid "Reference UOM"
-msgstr "Reference UOM"
+msgstr "Referentna JM"
 
 #. module: account
 #: view:account.pl.report:0
@@ -408,7 +408,7 @@ msgstr ""
 #. module: procurement
 #: help:procurement.order,message:0
 msgid "Exception occurred while computing procurement orders."
-msgstr "Exception occurred while computing procurement orders."
+msgstr "Dogodila se iznimka prilikom izračuna naloga nabave."
 
 #. module: account
 #: view:account.unreconcile:0
@@ -416,23 +416,23 @@ msgid ""
 "If you unreconciliate transactions, you must also verify all the actions that "
 "are linked to those transactions because they will not be disabled"
 msgstr ""
-"If you unreconciliate transactions, you must also verify all the actions that "
-"are linked to those transactions because they will not be disabled"
+"Ako otvarate stavke, morate provjeriti/provesti i sve ostale vezane akcije i "
+"stanja."
 
 #. module: event
 #: view:report.event.registration:0
 msgid "Invoiced Registrations only"
-msgstr "Invoiced Registrations only"
+msgstr "Samo fakturirane prijave"
 
 #. module: account_report
 #: view:account.report.print.indicators.with.pdf:0
 msgid "Select the PDF file on which Indicators will be printed."
-msgstr "Select the PDF file on which Indicators will be printed."
+msgstr "Odaberite PDF datoteku za ispis indikatora."
 
 #. module: letter_mgmt_v6
 #: view:res.letter:0
 msgid "Letteres"
-msgstr "Letteres"
+msgstr "Pisma"
 
 #. module: base
 #: code:addons/base/ir/ir_model.py:515
@@ -445,12 +445,12 @@ msgstr "Ne možete mjenjati ovaj dokument (%s) ! Članovi ovih grupa mogu: %s"
 #. module: survey
 #: field:survey,date_open:0
 msgid "Survey Open Date"
-msgstr "Datum otvaranja Upitnika"
+msgstr "Datum otvaranja upitnika"
 
 #. module: stock
 #: help:stock.tracking,serial:0
 msgid "Other reference or serial number"
-msgstr "Other reference or serial number"
+msgstr "Druga oznaka ili serijski broj"
 
 #. module: event_project
 #: model:ir.module.module,description:event_project.module_meta_information
@@ -462,10 +462,10 @@ msgid ""
 "This module allows you to create retro planning for managing your events.\n"
 msgstr ""
 "\n"
-"Organization and management of events.\n"
+"Organizacija i upravljanje eventima.\n"
 "======================================\n"
 "\n"
-"This module allows you to create retro planning for managing your events.\n"
+"Ovaj modul omogućuje planiranje evenata.\n"
 
 #. modules: account, account_reverse
 #: view:account.account:0
@@ -492,7 +492,7 @@ msgstr "Coda File"
 #. module: membership
 #: view:res.partner:0
 msgid "End Membership Date"
-msgstr "End Membership Date"
+msgstr "Datum završetka članstva"
 
 #. module: account
 #: help:account.payment.term,active:0
@@ -505,29 +505,29 @@ msgstr "Omogućuje skrivanje neaktivnih uvjeta plaćanja."
 #: view:board.board:0
 #: model:ir.actions.act_window,name:sale.action_sales_by_salesman
 msgid "Sales by Salesman in last 90 days"
-msgstr "Sales by Salesman in last 90 days"
+msgstr "Prodaja po prodavaču u zadnjih 90 dana"
 
 #. module: stock
 #: code:addons/stock/wizard/stock_invoice_onshipping.py:101
 #, python-format
 msgid "No Invoices were created"
-msgstr "No Invoices were created"
+msgstr "Računi nisu kreirani"
 
 #. module: training_dining_hall
 #: model:ir.actions.act_window,name:training_dining_hall.training_participation_generator_act
 msgid "Participation Generator"
-msgstr "Participation Generator"
+msgstr "Generator participacija"
 
 #. module: account
 #: code:addons/account/account.py:2919
 #, python-format
 msgid "Miscellaneous Journal"
-msgstr "Miscellaneous Journal"
+msgstr "Dnevnik za razno"
 
 #. module: account_voucher
 #: view:account.voucher:0
 msgid "Paid Amount"
-msgstr "Paid Amount"
+msgstr "Plaćeni iznos"
 
 #. modules: process, marketing_campaign, base
 #: model:ir.actions.act_window,name:base.action_workflow_transition_form
@@ -537,7 +537,7 @@ msgstr "Paid Amount"
 #: view:process.node:0
 #: view:process.process:0
 msgid "Transitions"
-msgstr "Poveznice"
+msgstr "Tranzicije"
 
 #. module: document
 #: field:process.node,directory_id:0
@@ -547,7 +547,7 @@ msgstr "Mapa dokumenta"
 #. module: hr
 #: model:ir.actions.act_window,name:hr.open_view_employee_tree
 msgid "Employees Structure"
-msgstr "Struktura djelatnika"
+msgstr "Struktura radnika"
 
 #. modules: project_issue, hr_recruitment, mgmtsystem_action, crm_claim, crm_helpdesk, crm_fundraising, event, project_mailgate, crm
 #: view:crm.lead:0
@@ -560,13 +560,13 @@ msgstr "Struktura djelatnika"
 #: view:project.issue:0
 #: view:project.task:0
 msgid "History Information"
-msgstr "History Information"
+msgstr "Povijesne informacije"
 
 #. module: stock
 #: selection:report.stock.inventory,location_type:0
 #: selection:stock.location,usage:0
 msgid "Transit Location for Inter-Companies Transfers"
-msgstr "Transit Location for Inter-Companies Transfers"
+msgstr "Tranzitna lokacija za transfere između organizacija"
 
 #. modules: purchase, mrp
 #: model:process.node,name:mrp.process_node_orderrfq0
@@ -574,7 +574,7 @@ msgstr "Transit Location for Inter-Companies Transfers"
 #: model:process.node,name:purchase.process_node_draftpurchaseorder0
 #: model:process.node,name:purchase.process_node_draftpurchaseorder1
 msgid "RFQ"
-msgstr "RFQ"
+msgstr "ZZP (RFQ)"
 
 #. module: share
 #: code:addons/share/wizard/share_wizard.py:720
@@ -583,7 +583,7 @@ msgid ""
 "The documents have been automatically added to your current OpenERP documents."
 "\n"
 msgstr ""
-"The documents have been automatically added to your current OpenERP documents."
+"Dokumenti su automatski dodani trenutnim dokumentima OpenERP-a."
 "\n"
 
 #. module: project
@@ -603,13 +603,13 @@ msgid ""
 "This account will be used to value stock moves that have this location as "
 "source, instead of the stock input account from the product."
 msgstr ""
-"This account will be used to value stock moves that have this location as "
-"source, instead of the stock input account from the product."
+"Ovaj konto će se koristiti za skladišne prijenose sa ove lokacije umjesto "
+"konta ulaza definiranog po proizvodu."
 
 #. module: marketing_campaign_crm_demo
 #: model:email.template,def_subject:marketing_campaign_crm_demo.email_template_1
 msgid "Thanks for showing interest in OpenERP"
-msgstr "Thanks for showing interest in OpenERP"
+msgstr "Hvala Vam na pokazanom interesu za OpenERP"
 
 #. module: hr_holidays
 #: selection:hr.holidays.status,color_name:0
@@ -620,13 +620,13 @@ msgstr "Light Salmon"
 #: code:addons/purchase/purchase.py:373
 #, python-format
 msgid "There is no purchase journal defined for this company: \"%s\" (id:%d)"
-msgstr "There is no purchase journal defined for this company: \"%s\" (id:%d)"
+msgstr "Nije definiran dnevnik nabave za ovu organizaciju: \"%s\" (id:%d)"
 
 #. module: project_scrum
 #: code:addons/project_scrum/project_scrum.py:83
 #, python-format
 msgid "The sprint '%s' has been opened."
-msgstr "The sprint '%s' has been opened."
+msgstr "Sprint '%s' je otvoren."
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_tax_template_form
@@ -637,24 +637,24 @@ msgstr "Predlošci poreza"
 #. module: share
 #: model:ir.module.module,shortdesc:share.module_meta_information
 msgid "Sharing Tools"
-msgstr "Sharing Tools"
+msgstr "Alati dijeljenja"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.split_into
 #: model:ir.model,name:stock.model_stock_split_into
 msgid "Split into"
-msgstr "Split into"
+msgstr "Razdvoji u "
 
 #. module: training
 #: selection:training.course.pending.wizard,state:0
 msgid "First Screen"
-msgstr "First Screen"
+msgstr "Prvi ekran"
 
 #. module: delivery
 #: code:addons/delivery/delivery.py:136
 #, python-format
 msgid "Default price"
-msgstr "Default price"
+msgstr "Zadana cijena"
 
 #. module: base
 #: code:addons/base/ir/ir_model.py:516
@@ -667,13 +667,13 @@ msgstr "Nemate prava kreiranja za dokument (%s) ! Prava imaju groupe: %s."
 #. module: survey
 #: field:survey.request,date_deadline:0
 msgid "Deadline date"
-msgstr "Deadline date"
+msgstr "Datum krajnjeg roka"
 
 #. module: account
 #: code:addons/account/account_move_line.py:1283
 #, python-format
 msgid "You can not use this general account in this journal !"
-msgstr "Ne možete koristiti odabrani opći konto u ovon dnevniku!"
+msgstr "Ne možete koristiti odabrani opći konto u ovom dnevniku!"
 
 #. module: mrp_operations
 #: model:ir.actions.act_window,help:mrp_operations.mrp_production_wc_action_planning
@@ -708,7 +708,7 @@ msgstr ""
 #. module: stock_no_autopicking
 #: model:ir.module.module,shortdesc:stock_no_autopicking.module_meta_information
 msgid "Stock No Auto-Picking"
-msgstr "Dionica bez automatskog biranja"
+msgstr "Bez automatske skladišnice"
 
 #. module: account_budget
 #: report:account.budget:0
@@ -723,30 +723,30 @@ msgstr "Budžet"
 #. module: warning
 #: field:res.partner,picking_warn_msg:0
 msgid "Message for Stock Picking"
-msgstr "Poruka uz preuzimanje zaliha"
+msgstr "Poruka za skladišnicu"
 
 #. module: crm_partner_assign
 #: field:crm.lead.forward.to.partner,history:0
 #: field:crm.lead.mass.forward.to.partner,history:0
 msgid "Send history"
-msgstr "Send history"
+msgstr "Povijest slanja"
 
 #. module: base
 #: field:ir.actions.wizard,wiz_name:0
 msgid "Wizard Name"
-msgstr "Naziv čarobnjaka"
+msgstr "Naziv asistenta"
 
 #. module: report_webkit
 #: code:addons/report_webkit/webkit_report.py:261
 #, python-format
 msgid "Please set a header in company settings"
-msgstr "Please set a header in company settings"
+msgstr "Molim postavite zaglavlje u postavkama organizacije"
 
 #. module: account_followup
 #: field:account_followup.followup.line,followup_id:0
 #: field:account_followup.stat,followup_id:0
 msgid "Follow Ups"
-msgstr "Follow Ups"
+msgstr "IOS-i"
 
 #. modules: crm_claim, crm_partner_assign, crm_fundraising, crm
 #: help:crm.lead.report,delay_close:0
@@ -755,12 +755,12 @@ msgstr "Follow Ups"
 #: help:crm.fundraising.report,delay_close:0
 #: help:crm.lead.report.assign,delay_close:0
 msgid "Number of Days to close the case"
-msgstr "Rješavanje slučaja u danima"
+msgstr "Broj dana za zatvaranje slučaja"
 
 #. module: survey
 #: selection:survey.question,type:0
 msgid "Single Textbox"
-msgstr "Single Textbox"
+msgstr "Redak teksta"
 
 #. module: base
 #: model:res.country,name:base.mu
@@ -780,17 +780,17 @@ msgstr "Statična mapa"
 #. module: project_mrp
 #: model:ir.module.module,shortdesc:project_mrp.module_meta_information
 msgid "Automatic task creation from procurement lines"
-msgstr "Automatic task creation from procurement lines"
+msgstr "Automatsko kreiranje zadataka iz stavki nabave"
 
 #. module: survey
 #: field:survey.question,is_require_answer:0
 msgid "Require Answer to Question"
-msgstr "Require Answer to Question"
+msgstr "Obavezan odgovor na pitanje"
 
 #. module: hr_recruitment
 #: model:hr.recruitment.stage,name:hr_recruitment.stage_job2
 msgid "First Interview"
-msgstr "First Interview"
+msgstr "Prvi intervju"
 
 #. module: stock_location
 #: help:product.pulled.flow,picking_type:0
@@ -798,7 +798,7 @@ msgstr "First Interview"
 msgid ""
 "Depending on the company, choose whatever you want to receive or send products"
 msgstr ""
-"Depending on the company, choose whatever you want to receive or send products"
+"Ovisno o organizaciji, odaberite što želite za prijem/isporuku proizvoda"
 
 #. module: base
 #: field:ir.actions.act_window,src_model:0
@@ -808,18 +808,18 @@ msgstr "Izvorni objekt"
 #. module: training
 #: model:ir.actions.act_window,name:training.course_linked_course
 msgid "Linked Courses"
-msgstr "Linked Courses"
+msgstr "Vezani tečajevi"
 
 #. module: l10n_be
 #: code:addons/l10n_be/wizard/l10n_be_partner_vat_listing.py:47
 #, python-format
 msgid "No data for the selected Year."
-msgstr "No data for the selected Year."
+msgstr "Nema podataka za odabranu godinu."
 
 #. module: marketing_campaign
 #: view:marketing.campaign:0
 msgid "Manual Mode"
-msgstr "Manual Mode"
+msgstr "Ručni način"
 
 #. module: account
 #: view:account.fiscalyear.close.state:0
@@ -829,7 +829,7 @@ msgstr "Zatvori fiskalnu godinu"
 #. module: django
 #: view:django.external.mapping:0
 msgid "Mappings"
-msgstr "Mappings"
+msgstr "Mapiranje"
 
 #. modules: training, base
 #: constraint:res.lang:0
@@ -838,13 +838,13 @@ msgid ""
 "Invalid date/time format directive specified. Please refer to the list of "
 "allowed directives, displayed when you edit a language."
 msgstr ""
-"Invalid date/time format directive specified. Please refer to the list of "
-"allowed directives, displayed when you edit a language."
+"Neispravan format datuma/vremena. Pogledajte popis dopuštenih formata na "
+"kartici jezika."
 
 #. module: account
 #: view:account.analytic.chart:0
 msgid "Select the Period for Analysis"
-msgstr "Odaberite period analize"
+msgstr "Odaberite razdoblje analize"
 
 #. modules: anonymization, account, base, base_synchro, base_report_creator
 #: field:account.journal.column,field:0
@@ -860,12 +860,12 @@ msgstr "Naziv polja"
 #. module: marketing_campaign
 #: selection:marketing.campaign,mode:0
 msgid "Test Directly"
-msgstr "Test Directly"
+msgstr "Testiraj direktno"
 
 #. module: purchase
 #: view:purchase.order.group:0
 msgid "Merge orders"
-msgstr "Merge orders"
+msgstr "Spoji naloge"
 
 #. module: stock_location
 #: code:addons/stock_location/procurement_pull.py:98
@@ -885,12 +885,12 @@ msgstr "Zadatak: %(name)s"
 #. module: membership
 #: help:res.partner,free_member:0
 msgid "Select if you want to give membership free of cost."
-msgstr "Select if you want to give membership free of cost."
+msgstr "Odaberite ako je članstvo besplatno."
 
 #. module: crm
 #: help:base.setup.installer,fetchmail:0
 msgid "Allows you to receive E-Mails from POP/IMAP server."
-msgstr "Allows you to receive E-Mails from POP/IMAP server."
+msgstr "Omogućuje vam primanje e-pošte sa POP/IMAP poslužitelja."
 
 #. module: hr_payroll
 #: report:paylip.details:0
@@ -904,7 +904,7 @@ msgstr "Payslip Lines by Contribution Register:"
 #: view:project.scrum.meeting:0
 #: view:project.scrum.sprint:0
 msgid "Scrum Meeting"
-msgstr "Scrum Meeting"
+msgstr "Scrum sastanak"
 
 #. module: sale
 #: code:addons/sale/sale.py:943
@@ -913,8 +913,8 @@ msgid ""
 "There is no income category account defined in default Properties for Product "
 "Category or Fiscal Position is not defined !"
 msgstr ""
-"Nije definiran konto kategorije dohotka u standardnim značajkama za "
-"kategoriju proizvoda ili Fiskalna pozicija nije definirana !"
+"Nije definiran konto prihoda za grupu proizvoda (ili proizvod) ili Fiskalna "
+"pozicija nije definirana !"
 
 #. module: base
 #: help:ir.actions.act_window,views:0
@@ -932,7 +932,7 @@ msgstr ""
 #. module: mrp_operations
 #: view:mrp_operations.operation.code:0
 msgid "Production Operation Code"
-msgstr "Production Operation Code"
+msgstr "Šifra operacije proizvodnje"
 
 #. modules: sale_journal, sale, sale_margin, delivery, warning, point_of_sale, sale_crm, dudtec_recursive_sale, sale_layout, sale_order_dates, nan_product_pack
 #: model:ir.model,name:delivery.model_sale_order
@@ -953,59 +953,59 @@ msgstr "Production Operation Code"
 #: model:ir.model,name:sale_order_dates.model_sale_order
 #: model:ir.model,name:warning.model_sale_order
 msgid "Sales Order"
-msgstr "Sales Order"
+msgstr "Prodajni nalog"
 
 #. module: training
 #: code:addons/training/training.py:1731
 #: code:addons/training/training.py:2464
 #, python-format
 msgid "Selection Date"
-msgstr "Selection Date"
+msgstr "Datum selekcije"
 
 #. module: stock_location
 #: model:stock.location,name:stock_location.location_dispatch_zone
 msgid "Dispatch Zone"
-msgstr "Dispatch Zone"
+msgstr "Dispečerska zona"
 
 #. module: purchase
 #: model:ir.actions.act_window,name:purchase.action_qty_per_product
 #: view:purchase.report:0
 msgid "Qty. per product"
-msgstr "Qty. per product"
+msgstr "Kol. po proizvodu"
 
 #. module: stock_planning
 #: code:addons/stock_planning/stock_planning.py:719
 #, python-format
 msgid "%s Pick List %s (%s,  %s) %s %s \n"
-msgstr "%s Pick List %s (%s,  %s) %s %s \n"
+msgstr "%s Skladišnica %s (%s,  %s) %s %s \n"
 
 #. module: project_scrum
 #: view:project.scrum.meeting:0
 #: view:project.scrum.sprint:0
 msgid "What do you plan to do till the next meeting?"
-msgstr "What do you plan to do till the next meeting?"
+msgstr "Što planirate napraviti do slijedećeg sastanka?"
 
 #. module: project_scrum
 #: model:ir.actions.act_window,name:project_scrum.action_scrum_backlog_merge
 #: view:project.scrum.backlog.merge:0
 msgid "Merge Backlogs"
-msgstr "Merge Backlogs"
+msgstr "Spoji Backlog-ove"
 
 #. module: training
 #: model:ir.actions.act_window,name:training.training_course_type_all_act
 #: model:ir.ui.menu,name:training.training_config_library_course_type_mi
 msgid "Levels"
-msgstr "Levels"
+msgstr "Nivoi"
 
 #. module: crm_helpdesk
 #: model:ir.module.module,shortdesc:crm_helpdesk.module_meta_information
 msgid "CRM Helpdesk"
-msgstr "CRM Helpdesk"
+msgstr "CRM korisnička podrška"
 
 #. module: membership
 #: help:product.product,membership:0
 msgid "Select if a product is a membership product."
-msgstr "Select if a product is a membership product."
+msgstr "Ozančite ako se proizvod koristi za članstvo."
 
 #. module: account
 #: model:ir.model,name:account.model_account_tax_template
@@ -1049,20 +1049,20 @@ msgstr "Clients"
 #. module: account
 #: selection:account.journal,type:0
 msgid "Purchase Refund"
-msgstr "Povrat nabave"
+msgstr "Odobrenja nabave"
 
 #. module: crm
 #: code:addons/crm/crm.py:176
 #: code:addons/crm/crm.py:479
 #, python-format
 msgid "The case '%s' has been cancelled."
-msgstr "The case '%s' has been cancelled."
+msgstr "Slučaj '%s' je otkazan."
 
 #. module: hr_holidays
 #: view:hr.employee:0
 #: field:hr.employee,remaining_leaves:0
 msgid "Remaining Legal Leaves"
-msgstr "Remaining Legal Leaves"
+msgstr "Preostalo zakonskih dopusta"
 
 #. module: base_csv
 #: help:csv.file,path:0
@@ -1072,7 +1072,7 @@ msgstr "The path to the file name. The last slash is not necessary"
 #. module: training
 #: view:training.holiday.year.wizard:0
 msgid "Generate Year"
-msgstr "Generate Year"
+msgstr "Kreiraj godinu"
 
 #. module: base_contact
 #: model:process.node,note:base_contact.process_node_partners0
@@ -1083,13 +1083,13 @@ msgstr "Tvrtke s kojima radite."
 #: code:addons/mrp/report/price.py:121
 #, python-format
 msgid "Hourly Cost"
-msgstr "Trošak po Satu"
+msgstr "Trošak po satu"
 
 #. modules: training, account_payment
 #: field:account.move.line,amount_to_pay:0
 #: field:training.participation.stakeholder.request,amount_to_pay:0
 msgid "Amount to pay"
-msgstr "Amount to pay"
+msgstr "Iznos za platiti"
 
 #. module: account
 #: help:account.journal,sequence_id:0
@@ -1097,21 +1097,20 @@ msgid ""
 "This field contains the informatin related to the numbering of the journal "
 "entries of this journal."
 msgstr ""
-"This field contains the informatin related to the numbering of the journal "
-"entries of this journal."
+"Brojčana serija koja će se koristiti za odbrojavanje dokumenata ovog dnevnika."
 
 #. module: account_payment_extension
 #: model:ir.actions.act_window,name:account_payment_extension.action_invoice_payments
 #: model:ir.ui.menu,name:account_payment_extension.menu_action_invoice_payments
 msgid "Invoice payments"
-msgstr "Invoice payments"
+msgstr "Plaćanja računa"
 
 #. module: hr_timesheet_sheet
 #: view:hr.timesheet.report:0
 #: model:ir.actions.act_window,name:hr_timesheet_sheet.action_hr_timesheet_report_stat_all
 #: model:ir.ui.menu,name:hr_timesheet_sheet.menu_hr_timesheet_report_all
 msgid "Timesheet Analysis"
-msgstr "Timesheet Analysis"
+msgstr "Analiza evidencije rada"
 
 #. module: account_analytic_default
 #: help:account.analytic.default,product_id:0
@@ -1140,7 +1139,7 @@ msgstr "Tekst"
 #. module: base
 #: field:ir.actions.server,wkf_model_id:0
 msgid "Workflow On"
-msgstr "Tijek procesa aktivan"
+msgstr "Tijek rada aktivan"
 
 #. module: hr
 #: field:hr.employee,marital:0
@@ -1151,7 +1150,7 @@ msgstr "Bračni status"
 #: view:email_template.send.wizard:0
 #: view:poweremail.send.wizard:0
 msgid "Discard Mail"
-msgstr "Discard Mail"
+msgstr "Odbaci mail"
 
 #. module: base
 #: model:res.country,name:base.co
@@ -1161,24 +1160,24 @@ msgstr "Kolumbija"
 #. module: account_chart_orthogonal
 #: model:ir.module.module,shortdesc:account_chart_orthogonal.module_meta_information
 msgid "Chart of accounts filtered by an analytical account."
-msgstr "Chart of accounts filtered by an analytical account."
+msgstr "Kontni plan filtriran po analitičkom kontu."
 
 #. module: auction
 #: view:auction.lots:0
 #: view:report.auction:0
 msgid "Object Category"
-msgstr "Object Category"
+msgstr "Grupa predmeta"
 
 #. module: project_scrum
 #: code:addons/project_scrum/wizard/project_scrum_backlog_sprint.py:57
 #, python-format
 msgid "Product Backlog '%s' is converted into Task %d."
-msgstr "Product Backlog '%s' is converted into Task %d."
+msgstr "Backlog proizvoda '%s' je pretvoren u zadatak %d."
 
 #. module: marketing_campaign
 #: help:marketing.campaign,object_id:0
 msgid "Choose the resource on which you want this campaign to be run"
-msgstr "Choose the resource on which you want this campaign to be run"
+msgstr "Odaberite resurs za ovu kampanju"
 
 #. module: account
 #: selection:account.account.type,sign:0
@@ -1201,12 +1200,12 @@ msgstr "Neprevedeno"
 #: field:mrp.production,date_planned:0
 #: field:procurement.order,date_planned:0
 msgid "Scheduled date"
-msgstr "Scheduled date"
+msgstr "Zakazani datum"
 
 #. module: account
 #: view:account.move.line.unreconcile.select:0
 msgid "Open For Unreconciliation"
-msgstr "Otvoreno za otvaranje"
+msgstr "Otvori za otvaranje IOS-a"
 
 #. module: crm_partner_assign
 #: model:ir.module.module,description:crm_partner_assign.module_meta_information
@@ -1244,7 +1243,7 @@ msgstr ""
 #: view:ir.actions.wizard:0
 #: model:ir.ui.menu,name:base.menu_ir_action_wizard
 msgid "Wizards"
-msgstr "Čarobnjaci"
+msgstr "Asistenti"
 
 #. module: document_webdav
 #: code:addons/document_webdav/webdav.py:37
@@ -1264,19 +1263,19 @@ msgid ""
 "Enables long-term projects tracking, including multiple-phase projects and "
 "resource allocation handling."
 msgstr ""
-"Enables long-term projects tracking, including multiple-phase projects and "
-"resource allocation handling."
+"Omogućuje praćenje dugotrajnih projekata, uključujući i višefazne projekte i "
+"upravljanje alokacijama resursa."
 
 #. module: project_long_term
 #: code:addons/project_long_term/wizard/project_compute_phases.py:50
 #, python-format
 msgid "Please Specify Project to be schedule"
-msgstr "Please Specify Project to be schedule"
+msgstr "Specificirajte projekt za planiranje"
 
 #. module: account
 #: help:account.model.line,amount_currency:0
 msgid "The amount expressed in an optional other currency."
-msgstr "Iznos je predstavljen opciono u drugoj valuti"
+msgstr "Iznos u drugoj valuti"
 
 #. module: base
 #: sql_constraint:ir.config_parameter:0
@@ -1297,34 +1296,34 @@ msgstr "Format"
 #. module: caldav
 #: help:basic.calendar.alias,cal_line_id:0
 msgid "The calendar/line this mapping applies to"
-msgstr "The calendar/line this mapping applies to"
+msgstr "Kalendar/redak na koji se primjenjije ovo mapiranje"
 
 #. module: account
 #: model:ir.model,name:account.model_account_invoice_confirm
 msgid "Confirm the selected invoices"
-msgstr "Potvrda odabranih računa"
+msgstr "Potvrdi odabrane račune"
 
 #. module: crm
 #: selection:crm.segmentation.line,expr_name:0
 msgid "Purchase Amount"
-msgstr "Iznos kupnje"
+msgstr "Iznos nabave"
 
 #. module: account_analytic_analysis
 #: field:account.analytic.account,theorical_margin:0
 msgid "Theoretical Margin"
-msgstr "Theoretical Margin"
+msgstr "Teoretski iznos"
 
 #. module: base_module_quality
 #: code:addons/base_module_quality/terp_test/terp_test.py:140
 #, python-format
 msgid "Tag Name"
-msgstr "Tag Name"
+msgstr "Naziv oznake"
 
 #. module: mrp
 #: model:ir.actions.act_window,name:mrp.mrp_bom_form_action2
 #: model:ir.ui.menu,name:mrp.menu_mrp_bom_form_action2
 msgid "Bill of Material Components"
-msgstr "Komponente Liste Materijala"
+msgstr "Komponente sastavnice"
 
 #. module: base
 #: view:ir.module.module:0
@@ -1334,22 +1333,22 @@ msgstr "Certificiran"
 #. module: crm
 #: help:base.setup.installer,crm_helpdesk:0
 msgid "Manages a Helpdesk service."
-msgstr "Manages a Helpdesk service."
+msgstr "Upravlja uslugom korisničke podrške."
 
 #. module: point_of_sale
 #: report:account.statement:0
 msgid "Statement Name"
-msgstr "Statement Name"
+msgstr "Naziv izvoda"
 
 #. module: hr_timesheet
 #: model:ir.model,name:hr_timesheet.model_hr_sign_out_project
 msgid "Sign Out By Project"
-msgstr "Sign Out By Project"
+msgstr "Odjava po projektu"
 
 #. module: account
 #: model:ir.model,name:account.model_account_invoice_refund
 msgid "Invoice Refund"
-msgstr "Povrat računa"
+msgstr "Računi odobrenja"
 
 #. module: stock
 #: code:addons/stock/stock.py:2417
@@ -1369,7 +1368,7 @@ msgstr ""
 #. module: account_followup
 #: model:ir.module.module,shortdesc:account_followup.module_meta_information
 msgid "Reminders"
-msgstr "Reminders"
+msgstr "Podsjetnici "
 
 #. module: product
 #: model:product.template,name:product.product_product_cpu2_product_template
@@ -1383,20 +1382,20 @@ msgid ""
 "The current user must have an email address configured in User Preferences to "
 "be able to send outgoing emails."
 msgstr ""
-"The current user must have an email address configured in User Preferences to "
-"be able to send outgoing emails."
+"Trenutni korisnik mora imati upisanu email adresu u Korisničkim postavkama "
+"kako bi mogao slati poruke e-pošte."
 
 #. module: auction
 #: view:auction.dates:0
 msgid "Last Auction Date"
-msgstr "Last Auction Date"
+msgstr "Zadnji datum aukcije"
 
 #. module: project_scrum
 #: view:board.board:0
 #: model:ir.actions.act_window,name:project_scrum.action_view_task_progress_graph
 #: view:project.task:0
 msgid "Task Progress"
-msgstr "Task Progress"
+msgstr "Napredak zadatka"
 
 #. module: l10n_be
 #: code:addons/l10n_be/wizard/l10n_be_vat_intra.py:95
@@ -1407,13 +1406,13 @@ msgstr "The period code you entered is not valid."
 #. module: mrp
 #: help:mrp.workcenter,costs_cycle:0
 msgid "Specify Cost of Work Center per cycle."
-msgstr "Specify Cost of Work Center per cycle."
+msgstr "Trošak radnog centra po ciklusu."
 
 #. module: membership
 #: help:product.product,membership_date_from:0
 #: help:res.partner,membership_start:0
 msgid "Date from which membership becomes active."
-msgstr "Date from which membership becomes active."
+msgstr "Datum aktiviranja članstva."
 
 #. module: training
 #: view:training.course:0
@@ -1424,7 +1423,7 @@ msgstr "Master Course"
 #. module: stock
 #: model:ir.model,name:stock.model_stock_report_prodlots
 msgid "Stock report by production lots"
-msgstr "Izvještaj zalihe za proizvodne lotove"
+msgstr "Zalihe po proizvodnim lotovima"
 
 #. module: training_dining_hall
 #: view:training.seance:0
@@ -1434,12 +1433,12 @@ msgstr "Do you want to confirm this seance (procurements, ...) ?"
 #. module: account_payment_extension
 #: view:account.move.line:0
 msgid "Receivable payments"
-msgstr "Receivable payments"
+msgstr "Plaćanja kupaca"
 
 #. module: auction
 #: field:auction.lots,paid_vnd:0
 msgid "Seller Paid"
-msgstr "Payé pour le vendeur"
+msgstr "Platio prodavač"
 
 #. module: document_ics
 #: field:crm.meeting,code:0
@@ -1465,7 +1464,7 @@ msgstr "tromjesečno"
 #: field:partner.vat.list_13,name:0
 #, python-format
 msgid "File Name"
-msgstr "File Name"
+msgstr "Naziv datoteke"
 
 #. module: base
 #: model:res.country,name:base.rs
@@ -1476,7 +1475,7 @@ msgstr "Srbija"
 #: code:addons/email_account/wizard/wizard_send_email.py:140
 #, python-format
 msgid "Email sent through invoice wizard"
-msgstr "Email sent through invoice wizard"
+msgstr "Email poslao asistent računa"
 
 #. modules: lunch, account
 #: view:analytic.entries.report:0
@@ -1487,7 +1486,7 @@ msgstr "   30 Dana   "
 #. module: report_webkit
 #: field:report.webkit.actions,open_action:0
 msgid "Open added action"
-msgstr "Open added action"
+msgstr "Otvori dodanu akciju"
 
 #. modules: account, base
 #: field:ir.sequence,fiscal_ids:0
@@ -1496,12 +1495,12 @@ msgstr "Open added action"
 #: model:ir.ui.menu,name:base.menu_ir_sequence_form
 #: model:ir.ui.menu,name:base.next_id_5
 msgid "Sequences"
-msgstr "Sekvence"
+msgstr "Brojčane serije"
 
 #. module: account_followup
 #: view:account_followup.stat:0
 msgid "Latest Followup Date"
-msgstr "Latest Followup Date"
+msgstr "Datum zadnjeg IOS-a"
 
 #. module: training_joomla
 #: field:training.joomla.configuration.wizard,lang_update:0
@@ -1521,7 +1520,7 @@ msgstr "Odaberite izvještaj"
 #: view:hr.recruitment.stage:0
 #: field:hr.recruitment.stage,requirements:0
 msgid "Requirements"
-msgstr "Requirements"
+msgstr "Uvjeti"
 
 #. module: auction
 #: view:auction.lots:0
@@ -1533,7 +1532,7 @@ msgstr "Buyer Information"
 #: model:ir.model,name:hr_expense_line_supplier.model_hr_expense_line
 #: model:ir.model,name:hr_expense_line_tax.model_hr_expense_line
 msgid "Expense Line"
-msgstr "Redak troškova"
+msgstr "Stavka troškova"
 
 #. module: auction
 #: help:auction.lots,gross_revenue:0
@@ -1543,26 +1542,26 @@ msgstr "Buyer Price - Seller Price"
 #. module: account
 #: sql_constraint:account.sequence.fiscalyear:0
 msgid "Main Sequence must be different from current !"
-msgstr "Main Sequence must be different from current !"
+msgstr "Glavna serija mora biti različita od trenutne !"
 
 #. modules: lunch, profile_tools
 #: model:ir.ui.menu,name:lunch.menu_lunch_category_root_configuration
 #: field:base.setup.installer,lunch:0
 msgid "Lunch"
-msgstr "Lunch"
+msgstr "Gablec/marenda"
 
 #. modules: hr_expense, sale
 #: field:hr.expense.expense,date_confirm:0
 #: field:hr.expense.report,date_confirm:0
 #: field:sale.order,date_confirm:0
 msgid "Confirmation Date"
-msgstr "Confirmation Date"
+msgstr "Datum potvrde"
 
 #. module: portal
 #: view:share.wizard:0
 #: field:share.wizard,group_ids:0
 msgid "Existing groups"
-msgstr "Existing groups"
+msgstr "Postojeće grupe"
 
 #. module: mrp
 #: model:ir.actions.act_window,help:mrp.mrp_workcenter_action
@@ -1578,7 +1577,7 @@ msgstr ""
 #. module: marketing_campaign
 #: view:marketing.campaign:0
 msgid "Test Mode"
-msgstr "Test Mode"
+msgstr "Testni način"
 
 #. module: training
 #: help:training.create.session.seances.line,tuesday:0
@@ -1612,12 +1611,12 @@ msgstr "Osnovni partner"
 #. module: crm
 #: view:crm.phonecall.report:0
 msgid "Phone calls made in current year"
-msgstr "Phone calls made in current year"
+msgstr "Tel. pozivi u ovoj godini"
 
 #. module: hr_attendance
 #: report:report.hr.timesheet.attendance.error:0
 msgid "Total period:"
-msgstr "Total period:"
+msgstr "Ukupno razdoblje:"
 
 #. modules: email_sale, email_account
 #: code:addons/email_account/wizard/wizard_send_email.py:144
@@ -1630,7 +1629,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Text:\n"
+"Tekst:\n"
 
 #. module: account_coda
 #: help:account.coda.import,def_payable:0
@@ -1654,7 +1653,7 @@ msgstr "Management System Dashboard"
 #. module: lunch
 #: model:ir.model,name:lunch.model_lunch_product
 msgid "Lunch Product"
-msgstr "Lunch Product"
+msgstr "Proizvod za gablec"
 
 #. modules: base_calendar, crm
 #: view:calendar.event:0
@@ -1670,17 +1669,17 @@ msgstr "Prikaži vrijeme kao"
 #: report:test.pdf:0
 #: model:ir.model,name:hr_payroll_account.model_hr_payslip
 msgid "Pay Slip"
-msgstr "Pay Slip"
+msgstr "Obračun plaće "
 
 #. module: stock
 #: view:report.stock.move:0
 msgid "Current year"
-msgstr "Current year"
+msgstr "Tekuća godina"
 
 #. module: sale
 #: view:sale.order:0
 msgid "Sales Order ready to be invoiced"
-msgstr "Sales Order ready to be invoiced"
+msgstr "Prodajni nalozi spremni za fakturiranje"
 
 #. module: base
 #: selection:base.language.install,lang:0
@@ -1699,7 +1698,7 @@ msgstr ""
 #: view:account.period:0
 #: view:account.period.close:0
 msgid "Close Period"
-msgstr "Zatvori period"
+msgstr "Zatvori razdoblje"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_payterm_form
@@ -1715,19 +1714,19 @@ msgstr "Account Common Partner Report"
 #. module: account_invoice_layout
 #: model:ir.actions.report.xml,name:account_invoice_layout.account_invoices_1
 msgid "Invoices with Layout"
-msgstr "Invoices with Layout"
+msgstr "Računi sa izgledom"
 
 #. module: marketing_campaign
 #: code:addons/marketing_campaign/marketing_campaign.py:220
 #, python-format
 msgid "Sorry, campaign duplication is not supported at the moment."
-msgstr "Sorry, campaign duplication is not supported at the moment."
+msgstr "Sorry, dupliciranje kampanja još uvijek nije podržano."
 
 #. module: analytic_user_function
 #: view:account.analytic.account:0
 #: field:account.analytic.account,user_product_ids:0
 msgid "Users/Products Rel."
-msgstr "veza Korisnici/Proizvodi"
+msgstr "Veza Korisnici/Proizvodi"
 
 #. module: base
 #: model:res.country,name:base.nu
@@ -1737,12 +1736,12 @@ msgstr "Niue"
 #. module: idea
 #: view:idea.category:0
 msgid "Category of ideas"
-msgstr "Kategorija Ideja"
+msgstr "Grupa ideja"
 
 #. module: account_financial_report
 #: report:account.move.line.report:0
 msgid "Entry Lines  -"
-msgstr "Entry Lines  -"
+msgstr "Stavke  -"
 
 #. module: base
 #: help:ir.model.fields,domain:0
@@ -1765,17 +1764,17 @@ msgstr "Greška ! Ne možete kreirati rekurzivna konta."
 #. module: auction
 #: model:ir.module.module,shortdesc:auction.module_meta_information
 msgid "Auction Management"
-msgstr "Gestion des enchères"
+msgstr "Upravljanje aukcijama"
 
 #. module: point_of_sale
 #: field:pos.order,type_rec:0
 msgid "Type of Receipt"
-msgstr "Type of Receipt"
+msgstr "Vrsta računa(potvrde)"
 
 #. module: project_scrum
 #: view:project.scrum.product.backlog:0
 msgid "Backlogs Not Assigned To Sprints."
-msgstr "Backlogs Not Assigned To Sprints."
+msgstr "Backlogovi koji nisu dodjeljeni Sprint-ovima."
 
 #. module: stock
 #: field:stock.inventory,move_ids:0
@@ -1796,7 +1795,7 @@ msgstr "Sigurno želite kreirati stavke?"
 #. module: hr_payroll
 #: model:ir.module.module,shortdesc:hr_payroll.module_meta_information
 msgid "Human Resource Payroll"
-msgstr "Human Resource Payroll"
+msgstr "Obračun plaća"
 
 #. modules: account_payment, account_payment_extension
 #: model:ir.actions.act_window,name:account_payment.action_payment_line_form
@@ -1810,7 +1809,7 @@ msgstr "Redak plaćanja"
 #. module: project_caldav
 #: view:project.task:0
 msgid "Recurrency Rule"
-msgstr "Recurrency Rule"
+msgstr "Pravilo ponavljanja"
 
 #. module: product
 #: model:product.template,name:product.product_product_25_product_template
@@ -1820,37 +1819,37 @@ msgstr "Miš"
 #. module: training
 #: sql_constraint:res.partner.contact_technical_skill:0
 msgid "Unique name for the technical skill"
-msgstr "Unique name for the technical skill"
+msgstr "Jedinstveni naziv tehničke vještine"
 
 #. module: account
 #: field:account.partner.reconcile.process,today_reconciled:0
 msgid "Partners Reconciled Today"
-msgstr "Danas zatvoreni partneri"
+msgstr "Danas zatvoreni partneri (IOS-i)"
 
 #. module: delivery
 #: model:ir.module.module,shortdesc:delivery.module_meta_information
 msgid "Carriers and Deliveries"
-msgstr "Carriers and Deliveries"
+msgstr "Prijevoznici i isporuke"
 
 #. module: account_asset
 #: view:account.asset.asset:0
 msgid "Change Duration"
-msgstr "Change Duration"
+msgstr "Promjeni trajanje"
 
 #. module: delivery
 #: field:stock.picking,carrier_tracking_ref:0
 msgid "Carrier Tracking Ref"
-msgstr "Carrier Tracking Ref"
+msgstr "Prijevoznička oznaka praćenja"
 
 #. module: smtpclient
 #: field:res.company,addresses:0
 msgid "Email Addresses"
-msgstr "Email Addresses"
+msgstr "Email adresa"
 
 #. module: point_of_sale
 #: report:pos.details_summary:0
 msgid "Sales total"
-msgstr "Sales total"
+msgstr "Ukupno prodaje"
 
 #. module: base
 #: model:res.country,name:base.mn
@@ -1871,18 +1870,18 @@ msgstr "mdx"
 #: field:account_fstr.category,progenitor_id:0
 #: field:account_fstr.category,progenitor_name:0
 msgid "Progenitor"
-msgstr "Progenitor"
+msgstr "Praroditelj"
 
 #. modules: training_hr, training
 #: view:training.subscription.line:0
 #: view:training.hr.subscription.line:0
 msgid "Do you want to confirm this subscription line?"
-msgstr "Do you want to confirm this subscription line?"
+msgstr "Želite li potvrditi ovaj redak pretplate?"
 
 #. module: delivery
 #: model:ir.model,name:delivery.model_delivery_sale_order
 msgid "Make Delievery"
-msgstr "Make Delievery"
+msgstr "Isporuči"
 
 #. module: email_template
 #: help:email.template,sub_object:0
@@ -1896,7 +1895,7 @@ msgstr ""
 #. module: hr_holidays
 #: view:hr.holidays.remaining.leaves.user:0
 msgid "Leaves by Type"
-msgstr "Leaves by Type"
+msgstr "Dopusti po tipu"
 
 #. modules: training_django, share, product_icecat, smtpclient
 #: field:product.icecat,ftpusername:0
@@ -1907,7 +1906,7 @@ msgstr "Leaves by Type"
 #: field:training.school,django_username:0
 #, python-format
 msgid "Username"
-msgstr "Username"
+msgstr "Korisničko ime"
 
 #. module: sale_margin
 #: help:sale.order,margin:0
@@ -1927,7 +1926,7 @@ msgstr "open Invoices"
 #: view:account.followup.print.all:0
 #: field:account.followup.print.all,email_body:0
 msgid "Email body"
-msgstr "Email body"
+msgstr "Email sadržaj"
 
 #. module: base_module_quality
 #: code:addons/base_module_quality/speed_test/speed_test.py:120
@@ -1950,7 +1949,7 @@ msgstr "No enough data"
 #: view:training.seance:0
 #: view:training.session:0
 msgid "Seances"
-msgstr "Seances"
+msgstr "Seanse"
 
 #. module: poweremail
 #: code:addons/poweremail/poweremail_core.py:629
@@ -1989,7 +1988,7 @@ msgstr ""
 #: model:ir.actions.act_window,name:purchase.action_purchase_by_supplier
 #: view:purchase.report:0
 msgid "Purchase by supplier"
-msgstr "Purchase by supplier"
+msgstr "Nabave po dobavljaču"
 
 #. module: account_reporting
 #: model:ir.module.module,description:account_reporting.module_meta_information
@@ -1997,8 +1996,8 @@ msgid ""
 "Financial and accounting reporting\n"
 "    Balance Sheet Report"
 msgstr ""
-"Financial and accounting reporting\n"
-"    Balance Sheet Report"
+"Računovodsvena izvješća\n"
+"    Bilanca"
 
 #. modules: account, account_voucher
 #: view:account.move.line.unreconcile.select:0
@@ -2007,7 +2006,7 @@ msgstr ""
 #: model:ir.model,name:account.model_account_move_line_unreconcile_select
 #: view:account.voucher.unreconcile:0
 msgid "Unreconciliation"
-msgstr "Poništavanje zatvaranja"
+msgstr "Poništavanje zatvaranja IOS-a"
 
 #. modules: process, base
 #: selection:ir.actions.server,state:0
@@ -2019,18 +2018,18 @@ msgstr "Prazan"
 #. module: base
 #: constraint:ir.ui.view:0
 msgid "Invalid XML for View Architecture!"
-msgstr "Neispravan XML za izgradnju preglednog ekrana!"
+msgstr "Neispravan XML definicije pogleda!"
 
 #. modules: email_sale, email_account
 #: model:ir.actions.wizard,name:email_account.account_invoice_email_send_wizard_2
 #: model:ir.actions.wizard,name:email_sale.sale_order_email_send_wizard_2
 msgid "Send by Email"
-msgstr "Send by Email"
+msgstr "Poslano e-poštom"
 
 #. module: stock
 #: field:stock.invoice.onshipping,group:0
 msgid "Group by partner"
-msgstr "Grupiraj prema partneru"
+msgstr "Grupiraj po partneru"
 
 #. modules: document, base_contact
 #: field:res.partner.job,extension:0
@@ -2072,7 +2071,7 @@ msgstr "Ukupna težina paketa"
 #: view:stock.picking:0
 #: field:stock.picking,date:0
 msgid "Order Date"
-msgstr "Order Date"
+msgstr "Datum naloga"
 
 #. module: account
 #: report:account.analytic.account.quantity_cost_ledger:0
@@ -2085,7 +2084,7 @@ msgstr "J.C./Move name"
 #: help:crm.meeting,rrule_type:0
 #: help:project.task,rrule_type:0
 msgid "Let the event automatically repeat at that interval"
-msgstr "Let the event automatically repeat at that interval"
+msgstr "Neka se događaj automatski ponavlja u intervalima"
 
 #. module: point_of_sale
 #: view:report.cash.register:0
@@ -2126,18 +2125,18 @@ msgstr "Box Name"
 #: view:hr.employee.category:0
 #: model:ir.model,name:hr.model_hr_employee_category
 msgid "Employee Category"
-msgstr "Kategorija djelatnika"
+msgstr "Grupa radnika"
 
 #. module: stock
 #: view:stock.location:0
 msgid "Localization"
-msgstr "Localization"
+msgstr "Lokacija"
 
 #. module: fetchmail
 #: selection:email.server,type:0
 #: selection:mailgate.message,server_type:0
 msgid "POP Server"
-msgstr "POP Server"
+msgstr "POP poslužitelj"
 
 #. module: project_planning
 #: model:ir.module.module,description:project_planning.module_meta_information
@@ -2179,7 +2178,7 @@ msgstr ""
 #. module: base
 #: selection:ir.property,type:0
 msgid "Char"
-msgstr "Slovčano"
+msgstr "Slovo"
 
 #. modules: training_dining_hall, account, training
 #: model:ir.actions.act_window,name:account.action_subscription_form_new
@@ -2192,13 +2191,13 @@ msgstr "Nova pretplata"
 #. module: resource
 #: selection:resource.resource,resource_type:0
 msgid "Human"
-msgstr "Human"
+msgstr "Osoba"
 
 #. module: project_scrum
 #: field:project.project,product_owner_id:0
 #: field:project.scrum.sprint,product_owner_id:0
 msgid "Product Owner"
-msgstr "Product Owner"
+msgstr "Vlasnik proizvoda"
 
 #. module: training
 #: help:training.course_type,max_limit:0
@@ -2250,7 +2249,7 @@ msgstr "Address which is linked to the Partner"
 #. module: product
 #: model:product.category,name:product.product_category_shelves0
 msgid "Shelves"
-msgstr "Shelves"
+msgstr "Police"
 
 #. module: training_dining_hall
 #: model:ir.model,name:training_dining_hall.model_training_group_special_day
@@ -2260,12 +2259,12 @@ msgstr "training.group.special_day"
 #. module: hr_payroll
 #: selection:hr.contract,schedule_pay:0
 msgid "Quarterly"
-msgstr "Quarterly"
+msgstr "Kvartalno"
 
 #. module: sale
 #: selection:sale.order,state:0
 msgid "Mannual In Progress"
-msgstr "Mannual In Progress"
+msgstr "Ručno u tijeku"
 
 #. modules: base, portal, jasper_reports, base_contact
 #: field:ir.module.module,website:0
@@ -2284,7 +2283,7 @@ msgstr "Product Removal Time"
 #. module: share
 #: field:res.groups,share:0
 msgid "Share Group"
-msgstr "Share Group"
+msgstr "Grupa dijeljenja"
 
 #. module: document_ics
 #: help:document.ics.crm.wizard,jobs:0
@@ -2304,7 +2303,7 @@ msgstr "Unutarnja opskrba"
 #: view:survey:0
 #: view:survey.request:0
 msgid "Search Survey"
-msgstr "Search Survey"
+msgstr "Traži upitnike"
 
 #. module: base
 #: model:res.country,name:base.gs
@@ -2314,7 +2313,7 @@ msgstr "S. Georgia i S. Sandwich otoci"
 #. module: point_of_sale
 #: field:pos.order.line,qty_rfd:0
 msgid "Refunded Quantity"
-msgstr "Refunded Quantity"
+msgstr "Količina povrata"
 
 #. module: hr_evaluation
 #: view:hr_evaluation.plan.phase:0
@@ -2325,7 +2324,7 @@ msgstr " (employee_name)s: Partner name"
 #: view:survey.request:0
 #: selection:survey.request,state:0
 msgid "Waiting Answer"
-msgstr "Waiting Answer"
+msgstr "Čeka odgovor"
 
 #. module: marketing_campaign
 #: code:addons/marketing_campaign/marketing_campaign.py:152
@@ -2345,7 +2344,7 @@ msgstr "Account1 Id"
 #. module: marketing_campaign
 #: field:marketing.campaign.segment,date_next_sync:0
 msgid "Next Synchronization"
-msgstr "Next Synchronization"
+msgstr "Slijedeća sinkronizacija"
 
 #. module: sale_journal
 #: help:res.partner,property_invoice_type:0
@@ -2355,7 +2354,7 @@ msgstr "The type of journal used for sales and picking."
 #. module: crm
 #: view:board.board:0
 msgid "Opportunities by Categories"
-msgstr "Opportunities by Categories"
+msgstr "Prilike po kategorijama"
 
 #. module: product
 #: constraint:product.pricelist.version:0
@@ -2415,7 +2414,7 @@ msgstr "Porez ili osnovica poreza ovisno o poreznoj grupi."
 #. module: survey
 #: selection:survey.question,type:0
 msgid "Numerical Textboxes"
-msgstr "Numerical Textboxes"
+msgstr "Broj"
 
 #. module: base_action_rule
 #: view:base.action.rule:0
@@ -2432,7 +2431,7 @@ msgstr "Couldn't send mail because your email address is not configured!"
 #: code:addons/purchase/purchase.py:296
 #, python-format
 msgid "Purchase order '%s' is confirmed."
-msgstr "Purchase order '%s' is confirmed."
+msgstr "Nalog nabave '%s' je potvrđen."
 
 #. modules: mrp_operations, point_of_sale, account_balance_reporting, hr_payroll, training_payment, stock, account_report, product, account_reporting, account_payment_extension, base_csv, base, account_budget, training, account, resource, project_planning, auction, mrp, account_financial_report, django, survey, pxgo_cash_statement, account_analytic_plans, letter_mgmt_v6, crm
 #: field:account.account,code:0
@@ -2500,13 +2499,13 @@ msgstr "Šifra"
 #. module: product_variant_multi
 #: model:ir.ui.menu,name:product_variant_multi.menu_variant_dimension
 msgid "Variant Dimensions"
-msgstr "Variant Dimensions"
+msgstr "Variabilne dimenzije"
 
 #. module: event
 #: view:event.event:0
 #: view:report.event.registration:0
 msgid "Events in draft or confirmed state"
-msgstr "Events in draft or confirmed state"
+msgstr "Eventi u stanju 'Nacrt' ili 'Potvrđeni'"
 
 #. module: account_coda
 #: field:account.bank.statement,coda_id:0
@@ -2516,12 +2515,12 @@ msgstr "Coda"
 #. module: resource
 #: field:resource.calendar.attendance,hour_to:0
 msgid "Work to"
-msgstr "Work to"
+msgstr "Radi do"
 
 #. module: base_calendar
 #: field:calendar.attendee,parent_ids:0
 msgid "Delegrated From"
-msgstr "Proslijeđeno od"
+msgstr "Delegirano od"
 
 #. module: analytic_journal_billing_rate
 #: view:analytic_journal_rate_grid:0
@@ -3116,8 +3115,8 @@ msgid ""
 "You cannot make an advance on a sales order                              that "
 "is defined as 'Automatic Invoice after delivery'."
 msgstr ""
-"Ne možete napraviti predujam prema narudžbi                              to "
-"je definirano kao 'Automatska faktura nakon dostave'."
+"Ne možete napraviti predujam prema nalogu                              to je "
+"definirano kao 'Automatski račun nakon isporuke'."
 
 #. module: base
 #: model:ir.model,name:base.model_ir_rule
@@ -3266,7 +3265,7 @@ msgstr "Naziv pokretača radnje"
 #: code:addons/sale/sale.py:970
 #, python-format
 msgid "You cannot cancel a sales order line that has already been invoiced !"
-msgstr "Ne možete otkazati stavku narudžbe koja je već fakturirana !"
+msgstr "Ne možete otkazati stavku naloga koja je već fakturirana !"
 
 #. module: mgmtsystem_nonconformity
 #: model:ir.model,name:mgmtsystem_nonconformity.model_mgmtsystem_nonconformity_origin
@@ -3989,7 +3988,7 @@ msgstr ""
 #. module: account_payment
 #: report:payment.order:0
 msgid "Invoice Ref"
-msgstr "Invoice Ref"
+msgstr "Poziv na br."
 
 #. module: event
 #: model:ir.actions.act_window,name:event.action_event_type
@@ -4086,7 +4085,7 @@ msgstr "Portugese (BR) / Português (BR)"
 #. module: hr_timesheet_invoice
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.act_my_account
 msgid "Accounts to invoice"
-msgstr "Accounts to invoice"
+msgstr "Konta ta fakturiranje"
 
 #. module: project
 #: view:project.project:0
@@ -5060,8 +5059,8 @@ msgid ""
 "Allows you to group and invoice your delivery orders according to different "
 "invoicing types: daily, weekly, etc."
 msgstr ""
-"Allows you to group and invoice your delivery orders according to different "
-"invoicing types: daily, weekly, etc."
+"Omogućuje grupiranje i fakturiranje prodajnih naloga prema frekvenciji izrade "
+"računa: dnevno, tjedno, mjesečno, itd."
 
 #. module: mgmtsystem_nonconformity
 #: model:ir.actions.act_window,name:mgmtsystem_nonconformity.open_mgmtsystem_nonconformity_origin_list
@@ -5397,7 +5396,7 @@ msgstr ""
 #. module: sale
 #: view:sale.order.line:0
 msgid "Sale Order Lines ready to be invoiced"
-msgstr "Sale Order Lines ready to be invoiced"
+msgstr "Stavke prodajnih naloga spremne za fakturiranje"
 
 #. module: hr_payroll
 #: model:ir.actions.report.xml,name:hr_payroll.payslip_report
@@ -5438,7 +5437,7 @@ msgstr "Datetime Extraction failed.Date:%s                       	Error:%s"
 #. module: sale
 #: view:sale.open.invoice:0
 msgid "You invoice has been successfully created!"
-msgstr "Vaša faktura je uspješno kreirana!"
+msgstr "Vaš račun je uspješno kreiran!"
 
 #. module: marketing_campaign_crm_demo
 #: report:crm.lead.demo:0
@@ -6177,13 +6176,12 @@ msgstr "Last Run"
 #, python-format
 msgid ""
 "Please put a partner on the picking list if you want to generate invoice."
-msgstr ""
-"Please put a partner on the picking list if you want to generate invoice."
+msgstr "Upišite partnera na zaglavlje dokumenta ako želite kreiranje računa."
 
 #. module: hr_timesheet_invoice
 #: help:hr.timesheet.invoice.create,name:0
 msgid "The detail of each work done will be displayed on the invoice"
-msgstr "The detail of each work done will be displayed on the invoice"
+msgstr "Detalji svakog obavljenog rada će se prikazati na računu"
 
 #. module: base_report_designer
 #: field:base.report.rml.save,file_rml:0
@@ -6213,7 +6211,7 @@ msgstr "VAT"
 #. module: auction
 #: model:ir.model,name:auction.model_auction_lots_make_invoice_buyer
 msgid "Make Invoice for Buyer"
-msgstr "Make Invoice for Buyer"
+msgstr "Kreiraj račun za kupca"
 
 #. module: product
 #: view:product.product:0
@@ -6617,7 +6615,7 @@ msgstr "Konto nadređenog poreza"
 #. module: product_margin
 #: help:product.product,turnover:0
 msgid "Sum of Multification of Invoice price and quantity of Customer Invoices"
-msgstr "Suma umnoška fakturne cijene i količine na fakturama kupca"
+msgstr "Suma umnoška cijene i količine na izlaznim računima"
 
 #. module: training_dining_hall
 #: field:dining.hall.subscription,name:0
@@ -6630,8 +6628,8 @@ msgid ""
 "The invoice is created automatically if the shipping policy is 'Invoice from "
 "pick' or 'Invoice on order after delivery'."
 msgstr ""
-"Faktura se kreira automatski ako je način dostave 'Faktura iz načina slaganja "
-"robe' ili 'Faktura na narudžbu nakon dostave'."
+"Račun se kreira automatski ako je način dostave 'Račun iz otpremnice' ili "
+"'Račun iz naloga nakon isporuke'."
 
 #. modules: training_dining_hall, base_contact
 #: help:res.partner.job,phone:0
@@ -7089,7 +7087,7 @@ msgstr "The bank account %s is not defined for the partner %s.\n"
 #. module: account
 #: help:account.invoice,period_id:0
 msgid "Keep empty to use the period of the validation(invoice) date."
-msgstr "Ostavite prazno"
+msgstr "Ostavite prazno za datum potvrde."
 
 #. module: stock
 #: help:stock.inventory.line.split,use_exist:0
@@ -7408,7 +7406,7 @@ msgstr "Naziv redka"
 #. module: sale
 #: help:sale.order,partner_invoice_id:0
 msgid "Invoice address for current sales order."
-msgstr "Adresa fakture za trenutnu narudžbu."
+msgstr "Adresa računa za trenutnu nalog."
 
 #. module: account
 #: view:account.fiscalyear:0
@@ -7506,7 +7504,7 @@ msgstr "Otvori ekran"
 #. module: account
 #: view:account.invoice:0
 msgid "Proforma Invoices"
-msgstr "Proforma Invoices"
+msgstr "Proforma računi"
 
 #. module: mgmtsystem_nonconformity
 #: model:ir.model,name:mgmtsystem_nonconformity.model_mgmtsystem_nonconformity_cause
@@ -8197,8 +8195,8 @@ msgid ""
 "Selected Invoice(s) cannot be cancelled as they are already in 'Cancelled' or "
 "'Done' state!"
 msgstr ""
-"Selected Invoice(s) cannot be cancelled as they are already in 'Cancelled' or "
-"'Done' state!"
+"Odabrani račun(i) se ne mogu otkazati jer su već u stanju 'Otkazan' ili "
+"'Izvršen'!"
 
 #. module: account
 #: code:addons/account/account.py:535
@@ -8298,7 +8296,7 @@ msgstr "You cannot sign in/sign out from an other date than today"
 #: model:ir.actions.act_window,name:purchase.purchase_line_form_action2
 #: model:ir.ui.menu,name:purchase.menu_purchase_line_order_draft
 msgid "Purchase Lines Not Invoiced"
-msgstr "Purchase Lines Not Invoiced"
+msgstr "Nefakturirane stavke nabave"
 
 #. module: hr_attendance
 #: help:hr.attendance,action_desc:0
@@ -8540,7 +8538,7 @@ msgstr "Are you sure to reset to Draft (Check the sessions for this offer)?"
 #: view:account.invoice.report:0
 #: view:report.account.invoice.product:0
 msgid "Pro-forma Invoices"
-msgstr "Pro-forma Invoices"
+msgstr "Proforma računi"
 
 #. module: project_planning
 #: field:report_account_analytic.planning.user,plan_tasks:0
@@ -8763,7 +8761,7 @@ msgstr "Depth of the product if it is part of a pack."
 #. module: account_invoice_number_v6
 #: model:ir.module.module,shortdesc:account_invoice_number_v6.module_meta_information
 msgid "Invoice number OpenERP6"
-msgstr "Invoice number OpenERP6"
+msgstr "Broj računa OpenERP6"
 
 #. module: base
 #: selection:ir.translation,type:0
@@ -9180,7 +9178,7 @@ msgstr "Validated By"
 #: view:mrp.repair:0
 #: view:sale.order:0
 msgid "Recreate Invoice"
-msgstr "Ponovno izradi fakturu"
+msgstr "Ponovno izradi račun"
 
 #. module: base
 #: model:res.country,name:base.sj
@@ -9722,8 +9720,8 @@ msgid ""
 "Number of hours (from journal of type 'general') that can be invoiced if you "
 "invoice based on analytic account."
 msgstr ""
-"Number of hours (from journal of type 'general') that can be invoiced if you "
-"invoice based on analytic account."
+"Broj sati (sa dnevnika tipa 'opći') koji se može fakturirati ako fakturirate "
+"prema analitičkim kontima."
 
 #. module: share
 #: code:addons/share/wizard/share_wizard.py:726
@@ -10240,7 +10238,7 @@ msgstr "Inventory Analysis"
 #: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_invoice_create.py:135
 #, python-format
 msgid "At least one line has no product !"
-msgstr "At least one line has no product !"
+msgstr "Barem jedna linija nema proizvod!"
 
 #. module: account
 #: model:ir.model,name:account.model_account_invoice_report
@@ -10267,7 +10265,7 @@ msgstr "My Remaining Hours by Project"
 #: view:sale.order:0
 #: view:mrp.repair:0
 msgid "Invoice Corrected"
-msgstr "Invoice Corrected"
+msgstr "Račun korigiran"
 
 #. module: stock_planning
 #: view:stock.sale.forecast:0
@@ -10619,7 +10617,7 @@ msgstr "Blokiranje poruke"
 #: view:mrp.repair:0
 #: view:sale.order:0
 msgid "Make Invoice"
-msgstr "Make Invoice"
+msgstr "Kreiraj račun"
 
 #. modules: purchase, hr_expense, poweremail, hr_holidays, email_template
 #: view:email_template.account:0
@@ -12872,7 +12870,7 @@ msgstr "Check it if you want to create a session on Saturday."
 #: field:auction.lots,sel_inv_id:0
 #: view:auction.lots.make.invoice:0
 msgid "Seller Invoice"
-msgstr "Facture du vendeur"
+msgstr "Račun prodavača"
 
 #. module: network_extension
 #: model:network.protocol,description:network_extension.network_protocol_https0
@@ -12882,7 +12880,7 @@ msgstr "http protocol over TLS/SSL"
 #. module: account
 #: model:process.node,note:account.process_node_importinvoice0
 msgid "Statement from invoice or payment"
-msgstr "Statement from invoice or payment"
+msgstr "Izvod iz računa ili plaćanja"
 
 #. module: subscription
 #: code:addons/subscription/subscription.py:115
@@ -14158,7 +14156,7 @@ msgstr "Solomonski otoci"
 #: view:stock.picking:0
 #: field:stock.picking,invoice_state:0
 msgid "Invoice Control"
-msgstr "Invoice Control"
+msgstr "Izrada računa"
 
 #. module: project
 #: model:project.task.type,name:project.project_tt_specification
@@ -14320,7 +14318,7 @@ msgstr "Class"
 #. module: project_timesheet
 #: view:project.project:0
 msgid "Invoiceable"
-msgstr "Invoiceable"
+msgstr "Za fakturiranje"
 
 #. module: document_ics
 #: selection:document.directory.ics.fields,name:0
@@ -14666,13 +14664,13 @@ msgstr "Model Internal Name"
 #. module: hr_timesheet_sheet
 #: model:process.transition,note:hr_timesheet_sheet.process_transition_invoiceontimesheet0
 msgid "The invoice is created based on the timesheet."
-msgstr "The invoice is created based on the timesheet."
+msgstr "Račun je kreiran prema praćenju vremena."
 
 #. module: event
 #: code:addons/event/event.py:395
 #, python-format
 msgid "Registered partner doesn't have an address to make the invoice."
-msgstr "Registered partner doesn't have an address to make the invoice."
+msgstr "Partner nema adresu za izradu računa."
 
 #. modules: hr_timesheet_invoice, point_of_sale
 #: help:account.analytic.account,amount_invoiced:0
@@ -15290,7 +15288,7 @@ msgstr "Output Operations"
 #. module: project_timesheet
 #: model:ir.ui.menu,name:project_timesheet.menu_project_billing_line
 msgid "Invoice Tasks Work"
-msgstr "Invoice Tasks Work"
+msgstr "Fakturiraj radove"
 
 #. module: training
 #: view:training.participation.stakeholder.request:0
@@ -15318,7 +15316,7 @@ msgstr ""
 #: field:account.invoice,reference:0
 #: field:account.invoice.line,invoice_id:0
 msgid "Invoice Reference"
-msgstr "Invoice Reference"
+msgstr "Poziv na br."
 
 #. module: newsletter
 #: view:newsletter.newsletter:0
@@ -15733,9 +15731,7 @@ msgstr "Da li treba prikazati savjet prilikom izvršenja akcije"
 msgid ""
 "Cannot delete invoice(s) that are already opened(or been in opened state "
 "ever) or paid!"
-msgstr ""
-"Cannot delete invoice(s) that are already opened(or been in opened state "
-"ever) or paid!"
+msgstr "Računi koji su jednom otvoreni ili plaćeni se ne mogu brisati!"
 
 #. module: board
 #: view:res.log.report:0
@@ -17148,9 +17144,7 @@ msgstr "Body (Rich Text Clients Only)"
 msgid ""
 "Can not find account chart for this company in invoice line account, Please "
 "Create account."
-msgstr ""
-"Can not find account chart for this company in invoice line account, Please "
-"Create account."
+msgstr "Nedostaje kontni plan za ovu organizaciju. Kreirajte konta."
 
 #. modules: training_dining_hall, training_hr, training, training_invoice_split
 #: field:change.participant,subscription_line_id:0
@@ -17392,7 +17386,7 @@ msgstr "lokacija"
 #. module: account_analytic_analysis
 #: field:account.analytic.account,ca_to_invoice:0
 msgid "Uninvoiced Amount"
-msgstr "Uninvoiced Amount"
+msgstr "Nefakturirani iznos"
 
 #. module: account_fstr
 #: field:account_fstr.category,consolidate_total:0
@@ -17808,7 +17802,7 @@ msgstr "Nonconformity"
 #. module: account_analytic_analysis
 #: field:account.analytic.account,hours_qtt_non_invoiced:0
 msgid "Uninvoiced Hours"
-msgstr "Uninvoiced Hours"
+msgstr "Nefakturirani sati"
 
 #. module: base
 #: selection:workflow.activity,kind:0
@@ -17962,10 +17956,10 @@ msgid ""
 "                        -Paid Member: A member who has paid the membership "
 "amount."
 msgstr ""
-"It indicates the membership state.\n"
-"                        -Non Member: A member who has not applied for any "
+"Označava stanje članstva.\n"
+"                        -Nije član: A member who has not applied for any "
 "membership.\n"
-"                        -Cancelled Member: A member who has cancelled his "
+"                        -Otkazano članstvo: A member who has cancelled his "
 "membership.\n"
 "                        -Old Member: A member whose membership date has "
 "expired.\n"
@@ -18140,7 +18134,7 @@ msgstr "You cannot modify an entry in a confirmed timesheet !"
 #. module: account_payment_extension
 #: view:payment.order:0
 msgid "Select invoices to pay/receive payment"
-msgstr "Select invoices to pay/receive payment"
+msgstr "Odaberite račune za plaćenje/primanje plaćanja"
 
 #. modules: hr_timesheet_invoice, fetchmail, idea, project_timesheet, point_of_sale, crm_claim, account_balance_reporting, base_calendar, network, hr_timesheet_sheet, analytic, jasper_reports, survey, document, account_analytic_default, account_payment, email_template, project_long_term, analytic_user_function, crm_partner_assign, lunch, base, crm_fundraising, subscription, hr_expense, account, account_analytic_analysis, resource, project_planning, auction, account_asset, hr_recruitment, hr_holidays, mgmtsystem_action, audittrail, crm_helpdesk, account_coda, crm
 #: view:account.analytic.line:0
@@ -18449,7 +18443,7 @@ msgstr "Could not cancel this purchase order !"
 #: view:account.invoice.cancel:0
 #: model:ir.actions.act_window,name:account.action_account_invoice_cancel
 msgid "Cancel Selected Invoices"
-msgstr "Poništi odabrane račune"
+msgstr "Storniraj odabrane račune"
 
 #. module: hr_payroll
 #: view:hr.payslip:0
@@ -18714,7 +18708,7 @@ msgstr ""
 #: help:account.tax.template,price_include:0
 msgid ""
 "Check this if the price you use on the product and invoices includes this tax."
-msgstr "Označite ovu kućicu ako cena proizvoda i racuna sadrze ovaj porez"
+msgstr "Označite ako cijena na proizvodu i računu sadrži ovaj porez."
 
 #. module: training
 #: code:addons/training/wizard/create_block_offer.py:59
@@ -18731,7 +18725,7 @@ msgstr "Access rights to be granted on the shared documents."
 #. module: event
 #: view:event.event:0
 msgid "Invoice Information"
-msgstr "Invoice Information"
+msgstr "Info računa"
 
 #. module: account
 #: help:account.invoice,move_id:0
@@ -18753,7 +18747,7 @@ msgstr "Legenda za formate datuma i vremena"
 #: view:training.participation.stakeholder:0
 #: field:training.participation.stakeholder,paid:0
 msgid "Invoiced & Paid"
-msgstr "Invoiced & Paid"
+msgstr "Fakturirano & Plaćeno"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_pos_confirm
@@ -19121,7 +19115,7 @@ msgstr ""
 #. module: hr_timesheet_invoice
 #: help:hr.timesheet.invoice.create,time:0
 msgid "The time of each work done will be displayed on the invoice"
-msgstr "The time of each work done will be displayed on the invoice"
+msgstr "Na računu će se prikazati stvarno vrijeme svakog rada"
 
 #. modules: project_caldav, base_calendar, crm
 #: help:calendar.event,edit_all:0
@@ -19146,8 +19140,7 @@ msgstr "Gives the sequence order when create Account Invoice."
 msgid ""
 "Sum of Multification of Sale Catalog price and quantity of Customer Invoices"
 msgstr ""
-"Suma umnoška kataloške cijene proizvoda i količinama proizvoda na fakturama "
-"kupca"
+"Suma umnoška kataloške cijene i količinama proizvoda na izlaznim računima"
 
 #. modules: poweremail, email_template
 #: view:email.template:0
@@ -19266,7 +19259,7 @@ msgstr ""
 #. module: procurement
 #: view:make.procurement:0
 msgid "Ask New Products"
-msgstr "Ask New Products"
+msgstr "Traži nove proizvode"
 
 #. module: hr_contract
 #: view:hr.contract:0
@@ -21095,7 +21088,7 @@ msgstr "Do you really want to create the invoice(s) ?"
 #. module: hr_timesheet_invoice
 #: report:account.analytic.profit:0
 msgid "Invoice rate by user"
-msgstr "Invoice rate by user"
+msgstr "Koef. računa po korisniku"
 
 #. module: account_voucher
 #: view:account.voucher:0
@@ -21107,7 +21100,7 @@ msgstr "Draft Vouchers"
 #: code:addons/auction/auction.py:578
 #, python-format
 msgid "No Invoice Address"
-msgstr "No Invoice Address"
+msgstr "Nema adrese računa"
 
 #. module: html_view
 #: model:ir.model,name:html_view.model_html_view
@@ -21195,7 +21188,7 @@ msgstr "Regular users only (no share user)"
 #. module: hr_timesheet_invoice
 #: field:account.analytic.account,amount_max:0
 msgid "Max. Invoice Price"
-msgstr "Max. Invoice Price"
+msgstr "Max. cijena na računu"
 
 #. module: base
 #: model:res.country,name:base.iq
@@ -22204,7 +22197,7 @@ msgstr "Number of attachments listed:"
 #: code:addons/auction/auction.py:692
 #, python-format
 msgid "The Buyer has no Invoice Address."
-msgstr "The Buyer has no Invoice Address."
+msgstr "Kupac nema adresu računa."
 
 #. module: account_voucher
 #: view:account.voucher:0
@@ -22280,7 +22273,7 @@ msgstr "Type is used to separate Leads and Opportunities"
 #. module: warning
 #: view:res.partner:0
 msgid "Warning on the Invoice"
-msgstr "Upozorenje na račun"
+msgstr "Upozorenje na računu"
 
 #. module: mrp
 #: view:report.workcenter.load:0
@@ -22714,7 +22707,7 @@ msgstr "Repeat Times"
 #: view:pxgo_account_admin_tools.pxgo_set_invoice_ref_in_moves:0
 #, python-format
 msgid "Set Invoice Reference in Moves"
-msgstr "Set Invoice Reference in Moves"
+msgstr "Postavi oznaku računa na knjiženjima"
 
 #. module: base
 #: view:res.log:0
@@ -22976,7 +22969,7 @@ msgstr "Missing mail account"
 #: code:addons/purchase/wizard/purchase_line_invoice.py:156
 #, python-format
 msgid "Supplier Invoices"
-msgstr "Računi dobavljača"
+msgstr "Ulazni računi"
 
 #. module: caldav
 #: view:user.preference:0
@@ -24263,7 +24256,7 @@ msgstr "Requested Date"
 #: code:addons/training/training_email.py:249
 #, python-format
 msgid "Accountant can only receive invoice emails"
-msgstr "Accountant can only receive invoice emails"
+msgstr "Knjigovođa može samo primati račune e-poštom"
 
 #. module: account
 #: model:ir.ui.menu,name:account.menu_finance_statistic_report_statement
@@ -25192,7 +25185,7 @@ msgstr "Uvezi iz računa ili plaćanja"
 #: field:auction.lots.make.invoice.buyer,amount:0
 #: field:account.analytic.account,amount_invoiced:0
 msgid "Invoiced Amount"
-msgstr "Invoiced Amount"
+msgstr "Iznos na računu"
 
 #. module: point_of_sale
 #: view:report.cash.register:0
@@ -26266,7 +26259,7 @@ msgstr "Dnevnik"
 #: report:account.invoice.list.report:0
 #: wizard_view:account.invoice.list.report,init:0
 msgid "Invoice List"
-msgstr "Invoice List"
+msgstr "Popis računa"
 
 #. module: document_ics
 #: model:ir.model,name:document_ics.model_document_directory_ics_fields
@@ -26736,7 +26729,7 @@ msgstr "Opterećenje Radnog Centra"
 #. module: sale
 #: view:sale.order.line:0
 msgid "Search Uninvoiced Lines"
-msgstr "Pretraži nefakturirane stavke"
+msgstr "Traži nefakturirane stavke"
 
 #. module: caldav
 #: view:basic.calendar:0
@@ -26844,7 +26837,7 @@ msgstr "Analitičke stavke"
 #. module: delivery
 #: report:sale.shipping:0
 msgid "Invoiced to"
-msgstr "Invoiced to"
+msgstr "Fakturirano"
 
 #. modules: sale, sale_layout
 #: report:sale.order:0
@@ -27579,7 +27572,7 @@ msgstr "Open Timesheet"
 #: code:addons/training/training.py:3147
 #, python-format
 msgid "Subscription line %s doesn't have any corresponding invoice line"
-msgstr "Subscription line %s doesn't have any corresponding invoice line"
+msgstr "Stavka pretplate %s nema odgovaraqjuću stavku računa"
 
 #. module: account
 #: view:board.board:0
@@ -27856,7 +27849,7 @@ msgstr "Created by Postponement of %s"
 #. module: membership
 #: model:process.node,name:membership.process_node_invoicedmember0
 msgid "Invoiced member"
-msgstr "Invoiced member"
+msgstr "Fakturirani član"
 
 #. module: mrp
 #: view:mrp.production.order:0
@@ -28496,7 +28489,7 @@ msgstr "Glavni dnevnik"
 #. module: purchase
 #: help:purchase.order,invoice_ids:0
 msgid "Invoices generated for a purchase order"
-msgstr "Invoices generated for a purchase order"
+msgstr "Kreirani računi za nalog nabave"
 
 #. module: product
 #: model:product.template,name:product.product_product_woodlintelm0_product_template
@@ -28658,7 +28651,7 @@ msgstr "Helps to generate automatically recurring documents."
 #. module: event
 #: field:event.registration,event_product:0
 msgid "Invoice Name"
-msgstr "Invoice Name"
+msgstr "Naziv računa"
 
 #. module: training
 #: help:training.session,address_id:0
@@ -28732,9 +28725,8 @@ msgid ""
 "The payment term defined gives a computed amount greater than the total "
 "invoiced amount."
 msgstr ""
-"Cannot create the invoice !\n"
-"The payment term defined gives a computed amount greater than the total "
-"invoiced amount."
+"Račun nije kreiran !\n"
+"Uvjeti plaćanja daju iznos veći od ukupnog iznosa računa."
 
 #. modules: auction, purchase, mrp_repair, event, sale
 #: view:auction.lots.make.invoice:0
@@ -28849,12 +28841,12 @@ msgstr "All sales lines"
 #. module: training
 #: help:training.subscription,address_id:0
 msgid "The Subscription invoice address."
-msgstr "The Subscription invoice address."
+msgstr "Adresa računa pretplate."
 
 #. module: purchase
 #: view:purchase.order:0
 msgid "Purchase orders that include lines not invoiced."
-msgstr "Purchase orders that include lines not invoiced."
+msgstr "Nalozi koji imaju nefakturirane stavke."
 
 #. module: product
 #: selection:product.uom,uom_type:0
@@ -29257,8 +29249,7 @@ msgid ""
 "Cancel Invoice: Creates the refund invoice, validate and reconcile it to "
 "cancel the current invoice."
 msgstr ""
-"Cancel Invoice: Creates the refund invoice, validate and reconcile it to "
-"cancel the current invoice."
+"Storniraj račun: Kreira storno računa, potvrđuje ga i zatvara sa ovim računom."
 
 #. module: hr_planned_leaves
 #: model:ir.ui.menu,name:hr_planned_leaves.menu_hrself_planned_leaves
@@ -29290,7 +29281,7 @@ msgstr "Stani"
 #. module: auction
 #: model:ir.actions.act_window,name:auction.action_auction_lots_make_invoice_buyer
 msgid "Invoice Buyer objects"
-msgstr "Facturer les objets de l'acheteur"
+msgstr "Predmeti na izlaznom računu"
 
 #. module: l10n_be
 #: model:ir.module.module,shortdesc:l10n_be.module_meta_information
@@ -29578,9 +29569,7 @@ msgstr "Cost per cycle"
 msgid ""
 "Number of hours that can be invoiced plus those that already have been "
 "invoiced."
-msgstr ""
-"Number of hours that can be invoiced plus those that already have been "
-"invoiced."
+msgstr "Broj sati koji se može fakturirati + već fakturirani sati."
 
 #. modules: email_sale, email_account
 #: wizard_view:account.invoice.email_send_2,init:0
@@ -29695,7 +29684,7 @@ msgstr "Predviđanje zalihe i prodaje"
 #: selection:sale.order,state:0
 #: selection:sale.report,state:0
 msgid "Invoice Exception"
-msgstr "Invoice Exception"
+msgstr "Iznimka računa"
 
 #. module: account
 #: help:account.period,special:0
@@ -29859,7 +29848,7 @@ msgstr "Preuzimanje zaliha"
 #. module: sale_margin
 #: view:report.account.invoice.product:0
 msgid "Invoice by Partner"
-msgstr "Invoice by Partner"
+msgstr "Računi po partnerima"
 
 #. module: training_django
 #: code:addons/training_django/wizard/wizard_create_user.py:74
@@ -30600,9 +30589,8 @@ msgid ""
 "of the purchase order, the invoice is based on received or on ordered "
 "quantities."
 msgstr ""
-"A Pick list generates a supplier invoice. Depending on the Invoicing control "
-"of the purchase order, the invoice is based on received or on ordered "
-"quantities."
+"Primka generira ulazni račun. Ovisno o kontroli računa na Nalogu nabave, "
+"račun se izrađuje na temelju primljenih ili naručenih količina."
 
 #. module: account_regularization
 #: model:ir.model,name:account_regularization.model_account_regularization
@@ -30646,7 +30634,7 @@ msgstr "Kopiraj posljednje predviđanje"
 #. module: purchase_payment
 #: help:purchase.order,payment_term:0
 msgid "The payment terms. They will be transferred to the invoice."
-msgstr "The payment terms. They will be transferred to the invoice."
+msgstr "Uvjeti plaćanja. Kopiraju se na račun."
 
 #. module: mrp_repair
 #: help:mrp.repair,guarantee_limit:0
@@ -30705,7 +30693,7 @@ msgstr ""
 #. module: point_of_sale
 #: view:pos.order:0
 msgid "Add product"
-msgstr "Add product"
+msgstr "Dodaj proizvod"
 
 #. module: base
 #: selection:base.language.install,lang:0
@@ -31075,7 +31063,7 @@ msgstr "Računovođa isplaćuje troškove"
 #: model:ir.actions.act_window,name:account_invoice_layout.action_account_invoice_special_msg
 #: model:ir.actions.report.xml,name:account_invoice_layout.account_invoices_layout_message
 msgid "Invoices with Layout and Message"
-msgstr "Fakure sa izgledom i porukom"
+msgstr "Računi sa izgledom i porukom"
 
 #. module: account
 #: field:account.tax,tax_code_id:0
@@ -31089,8 +31077,8 @@ msgid ""
 "The Journal Entry of the invoice have been totally reconciled with one or "
 "several Journal Entries of payment."
 msgstr ""
-"The Journal Entry of the invoice have been totally reconciled with one or "
-"several Journal Entries of payment."
+"Stavka dnevnika računa je kompletno zatvorena s jednom ili više stavaka "
+"plaćanja."
 
 #. modules: training_django, training_joomla
 #: view:training.course:0
@@ -31518,7 +31506,7 @@ msgstr "Production Operation"
 #. module: product_margin
 #: help:product.product,purchase_num_invoiced:0
 msgid "Sum of Quantity in Supplier Invoices"
-msgstr "Suma količina na dobavljačevim fakturama"
+msgstr "Suma količina na ulaznim računima"
 
 #. module: outlook
 #: view:outlook.installer:0
@@ -31683,7 +31671,7 @@ msgstr "Portugal"
 #. module: project_timesheet
 #: model:process.transition,note:project_timesheet.process_transition_taskinvoice0
 msgid "After task is completed, Create its invoice."
-msgstr "After task is completed, Create its invoice."
+msgstr "Nakon dovršenja zadataka kreiraj račun."
 
 #. module: crm_claim
 #: model:crm.case.categ,name:crm_claim.categ_claim1
@@ -31761,7 +31749,7 @@ msgstr "#Line Orders"
 #. module: membership
 #: field:membership.membership_line,account_invoice_line:0
 msgid "Account Invoice line"
-msgstr "Account Invoice line"
+msgstr "Stavka računa"
 
 #. module: account
 #: code:addons/account/account.py:1205
@@ -32400,7 +32388,7 @@ msgstr ""
 #. module: sale_margin
 #: model:ir.actions.act_window,name:sale_margin.action_report_account_invoice_report
 msgid "Invoice Analysis"
-msgstr "Invoice Analysis"
+msgstr "Analiza računa"
 
 #. module: project_long_term
 #: view:project.schedule.tasks:0
@@ -32663,7 +32651,7 @@ msgstr ""
 #. module: mrp_repair
 #: selection:mrp.repair,invoice_method:0
 msgid "No Invoice"
-msgstr "No Invoice"
+msgstr "Nema računa"
 
 #. module: training_dining_hall
 #: code:addons/training_dining_hall/training_dining_hall.py:332
@@ -32694,7 +32682,7 @@ msgstr "Preventive"
 #. module: sale_margin
 #: view:report.account.invoice.product:0
 msgid "Invoices by product"
-msgstr "Invoices by product"
+msgstr "Računi po proizvodu"
 
 #. module: idea
 #: model:ir.model,name:idea.model_idea_vote
@@ -33022,7 +33010,7 @@ msgstr "Dobavljačeve informacije"
 #. module: stock
 #: view:stock.picking:0
 msgid "Internal Pickings to invoice"
-msgstr "Internal Pickings to invoice"
+msgstr "Međuskladišnice za fakturiranje"
 
 #. modules: poweremail, email_template
 #: code:addons/email_template/email_template_account.py:250
@@ -33536,7 +33524,7 @@ msgstr "The unit of mesure for this product."
 #: model:ir.actions.act_window,name:sale.action_view_sale_open_invoice
 #: view:sale.open.invoice:0
 msgid "Open Invoice"
-msgstr "otvoreni računi"
+msgstr "Otvori račun"
 
 #. module: purchase
 #: view:purchase.report:0
@@ -34425,7 +34413,7 @@ msgstr "Članovi"
 #: view:hr.expense.report:0
 #: field:hr.expense.report,no_of_products:0
 msgid "# of Products"
-msgstr "# of Products"
+msgstr "# Proizvoda"
 
 #. module: crm
 #: view:crm.lead:0
@@ -34461,8 +34449,8 @@ msgid ""
 "Analytic costs (timesheets, some purchased products, ...) come from analytic "
 "accounts. These generate draft supplier invoices."
 msgstr ""
-"Analytic costs (timesheets, some purchased products, ...) come from analytic "
-"accounts. These generate draft supplier invoices."
+"Analitike troškova (šihterice, nabava, ...) dolaze sa analitičkih konta. Ona "
+"kreiraju nacrte ulaznih računa."
 
 #. module: account
 #: view:account.bank.statement:0
@@ -34718,8 +34706,8 @@ msgid ""
 "if all these costs have been invoiced at the normal sale price provided by "
 "the pricelist."
 msgstr ""
-"Na temelju troškova koje ste imali na projektu, što bi bio prihod ako svi ovi "
-"troškovi su obračunati po normalnoj  prodajnoj cijeni proistekli iz cjenika."
+"Na temelju troškova koje ste imali na projektu, što bi bio prihod da su svi "
+"ovi troškovi obračunati po normalnoj prodajnoj cijeni iz cjenika."
 
 #. module: base
 #: field:ir.model.fields,relation_field:0
@@ -34774,8 +34762,8 @@ msgid ""
 "is 'Shipping and Manual in Progress'. The invoice is created automatically if "
 "the shipping policy is 'Payment before Delivery'."
 msgstr ""
-"Prodavač kreira fakturu ručno, ako je pravilo otpremanja narudžbe 'Otpremanje "
-"i ručni postupak u tijeku'. Faktura se kreira automatski ako je postavljeno "
+"Prodavač kreira račun ručno, ako je pravilo otpremanja narudžbe 'Otpremanje i "
+"ručni postupak u tijeku'. Račun se kreira automatski ako je postavljeno "
 "pravilo otpremanja 'Plaćanje prije dostave'."
 
 #. module: purchase_requisition
@@ -34881,7 +34869,7 @@ msgstr "Fidži"
 #. module: hr_expense
 #: model:process.transition,name:hr_expense.process_transition_reimbursereinvoice0
 msgid "Reinvoice"
-msgstr "Reinvoice"
+msgstr "Prefakturiraj"
 
 #. module: marketing
 #: help:base.setup.installer,crm_profiling:0
@@ -35281,7 +35269,7 @@ msgstr "Provide path for Remote Calendar"
 #: field:training.offer.purchase.line,fix:0
 #: field:training.seance.purchase_line,fix:0
 msgid "Invoiced Quantity"
-msgstr "Invoiced Quantity"
+msgstr "Fakturirana količina"
 
 #. module: stock
 #: model:ir.model,name:stock.model_report_stock_lines_date
@@ -35320,7 +35308,7 @@ msgstr "Select the Option for Addresses Migration"
 #. module: sale
 #: help:sale.advance.payment.inv,amount:0
 msgid "The amount to be invoiced in advance."
-msgstr "Iznos za fakturiranje unaprijed."
+msgstr "Iznos za predujam."
 
 #. module: purchase
 #: report:purchase.order:0
@@ -35505,7 +35493,7 @@ msgstr "Draft Slip"
 #. module: auction
 #: model:ir.actions.act_window,name:auction.action_auction_lots_make_invoice
 msgid "Invoice Seller objects"
-msgstr "Facturer les objets du vendeur"
+msgstr "Prodavačevi predmeti na ručunu"
 
 #. module: report_webkit
 #: model:ir.model,name:report_webkit.model_ir_header_webkit
@@ -36312,7 +36300,7 @@ msgstr "'Minimum stock rule' material"
 #. module: sale
 #: help:sale.order,invoiced:0
 msgid "It indicates that an invoice has been paid."
-msgstr "Pokazatelj da je faktura plaćena."
+msgstr "Pokazatelj da je račun plaćen."
 
 #. module: account
 #: code:addons/account/account.py:1233
@@ -36593,7 +36581,7 @@ msgstr "Total Time"
 #: code:addons/email_account/wizard/wizard_send_email.py:63
 #, python-format
 msgid ". Invoice Num."
-msgstr ". Invoice Num."
+msgstr ". Račun br."
 
 #. module: crm
 #: field:crm.segmentation.line,expr_name:0
@@ -37435,7 +37423,7 @@ msgstr "Stupnjevi"
 #. module: sale
 #: selection:sale.config.picking_policy,order_policy:0
 msgid "Invoice Based on Sales Orders"
-msgstr "Faktura na temelju narudžbi"
+msgstr "Račun na temelju naloga"
 
 #. module: base
 #: field:res.company,user_ids:0
@@ -37981,7 +37969,7 @@ msgstr "Keep until sold"
 #. module: account_analytic_analysis
 #: field:account.analytic.account,hours_qtt_invoiced:0
 msgid "Invoiced Hours"
-msgstr "Invoiced Hours"
+msgstr "Fakturirani sati"
 
 #. module: auction
 #: model:account.tax,name:auction.tax_seller
@@ -38321,8 +38309,7 @@ msgid ""
 "Streamlines invoice payment and creates hooks to plug automated payment "
 "systems in."
 msgstr ""
-"Streamlines invoice payment and creates hooks to plug automated payment "
-"systems in."
+"Olakšava plaćanje računa i stvara podlogu za automatizirane sustave naplate."
 
 #. module: django
 #: code:addons/django/django.py:167
@@ -38766,8 +38753,8 @@ msgid ""
 "Selected Invoice(s) cannot be confirmed as they are not in 'Draft' or "
 "'Pro-Forma' state!"
 msgstr ""
-"Selected Invoice(s) cannot be confirmed as they are not in 'Draft' or "
-"'Pro-Forma' state!"
+"Odabrani račun(i) se ne mogu potvrditi jer nisu u stanju 'Nacrt' ili "
+"'Proforma'!"
 
 #. module: email_template
 #: view:email_template.mailbox:0
@@ -39104,7 +39091,7 @@ msgstr "Report File Name"
 #. module: account
 #: view:account.invoice.report:0
 msgid "Open and Paid Invoices"
-msgstr "Open and Paid Invoices"
+msgstr "Otvoreni i plaćeni računi"
 
 #. module: base
 #: model:ir.model,name:base.model_res_widget
@@ -39968,8 +39955,8 @@ msgid ""
 "The same sales order may have been invoiced in several times (by line for "
 "example)."
 msgstr ""
-"Ovo je lista faktura koje su generirane za ovu narudžbu. Ista narudžba može "
-"biti fakturirana više puta (npr. prema stavkama)."
+"Ovo je popis računa za ovaj nalog. Isti nalog može kreirati više računa (npr. "
+"prema stavkama)."
 
 #. module: account
 #: model:ir.model,name:account.model_analytic_entries_report
@@ -40072,8 +40059,8 @@ msgid ""
 "Check this box if you want to allow the cancellation the entries related to "
 "this journal or of the invoice related to this journal"
 msgstr ""
-"Check this box if you want to allow the cancellation the entries related to "
-"this journal or of the invoice related to this journal"
+"Označite ako želite dopustiti naknadno otkazivanje proknjiženih (potvrđenih) "
+"temeljnica ili računa ovog dnevnika."
 
 #. module: base
 #: selection:base.language.install,lang:0
@@ -40129,7 +40116,7 @@ msgstr "Maps to the ir_model_data for which this translation is provided."
 #. module: stock
 #: field:stock.invoice.onshipping,invoice_date:0
 msgid "Invoiced date"
-msgstr "Invoiced date"
+msgstr "Fakturirano dana"
 
 #. module: mrp
 #: selection:mrp.workcenter.load,time_unit:0
@@ -40366,7 +40353,7 @@ msgstr "Other Products"
 #. module: project_timesheet
 #: view:project.project:0
 msgid "Invoice Task Work"
-msgstr "Invoice Task Work"
+msgstr "Fakturiraj rad na zadatku"
 
 #. module: account
 #: view:account.partner.balance:0
@@ -40382,7 +40369,7 @@ msgstr ""
 #: model:ir.model,name:membership.model_membership_invoice
 #: view:membership.invoice:0
 msgid "Membership Invoice"
-msgstr "Membership Invoice"
+msgstr "Račun članstva"
 
 #. module: account
 #: code:addons/account/wizard/account_validate_account_move.py:61
@@ -41206,7 +41193,7 @@ msgstr "Feed back About terp file of Module"
 #. module: account_financial_report
 #: wizard_field:account.invoice.list.report,init,in_invoice:0
 msgid "Supplier invoices"
-msgstr "Supplier invoices"
+msgstr "Ulazni računi"
 
 #. module: base_report_creator
 #: help:base_report_creator.report.filter,expression:0
@@ -41974,7 +41961,7 @@ msgstr "VAT 20%"
 #: view:sale.order:0
 #, python-format
 msgid "Advance Invoice"
-msgstr "Faktura predujma"
+msgstr "Račun za predujam"
 
 #. module: project_scrum
 #: help:project.scrum.product.backlog,sequence:0
@@ -42726,7 +42713,7 @@ msgstr "Expenses during current year"
 #. module: account
 #: model:ir.model,name:account.model_account_invoice_tax
 msgid "Invoice Tax"
-msgstr "Porezi tačuna"
+msgstr "Porezi računa"
 
 #. module: base
 #: help:res.users,name:0
@@ -42868,7 +42855,7 @@ msgstr "Export Configuration"
 #: help:product.product,total_cost:0
 msgid ""
 "Sum of Multification of Invoice price and quantity of Supplier Invoices "
-msgstr "Suma umnoška fakturne cijene i količine na dobavljačevim fakturama "
+msgstr "Suma umnoška cijene i količine na ulaznim računima"
 
 #. modules: caldav, event
 #: model:ir.actions.act_window,name:caldav.action_calendar_event_subscribe
@@ -44344,8 +44331,8 @@ msgid ""
 "Modify Invoice: Cancels the current invoice and creates a new copy of it "
 "ready for editing."
 msgstr ""
-"Modify Invoice: Cancels the current invoice and creates a new copy of it "
-"ready for editing."
+"Promjeni račun: Stornira trenutni račun i kreira novu kopiju spremnu za "
+"izmjene."
 
 #. module: stock
 #: model:stock.location,name:stock.stock_location_scrapped
@@ -44465,12 +44452,12 @@ msgstr "Account Hierarchy"
 #. module: report_webkit_sample
 #: model:ir.actions.report.xml,name:report_webkit_sample.report_webkit_html
 msgid "WebKit invoice"
-msgstr "WebKit invoice"
+msgstr "WebKit račun"
 
 #. module: hr_expense
 #: help:hr.expense.expense,journal_id:0
 msgid "The journal used when the expense is invoiced"
-msgstr "The journal used when the expense is invoiced"
+msgstr "Ovaj dnevnik se koristi za račune troškova"
 
 #. module: account
 #: field:account.move.line.reconcile.writeoff,journal_id:0
@@ -44507,7 +44494,7 @@ msgstr "Suma podsuma"
 #. module: account_analytic_analysis
 #: field:account.analytic.account,last_invoice_date:0
 msgid "Last Invoice Date"
-msgstr "Zadnji Datum fakture"
+msgstr "Zadnji datum računa"
 
 #. modules: project_caldav, base_calendar, crm
 #: help:calendar.event,exrule:0
@@ -45031,7 +45018,8 @@ msgstr ""
 #. module: account
 #: view:account.invoice.refund:0
 msgid "Refund Invoice: Creates the refund invoice, ready for editing."
-msgstr "Refund Invoice: Creates the refund invoice, ready for editing."
+msgstr ""
+"Storno računa: Kreira storno računa, spremnog za ispravke (djelomični storno)."
 
 #. module: document
 #: field:ir.attachment,index_content:0
@@ -45292,7 +45280,7 @@ msgstr "Allow Custom Value"
 #: view:account.invoice:0
 #: model:ir.actions.act_window,name:account.act_account_journal_2_account_invoice_opened
 msgid "Unpaid Invoices"
-msgstr "Unpaid Invoices"
+msgstr "Neplaćeni računi"
 
 #. module: hr_expense
 #: view:hr.expense.expense:0
@@ -45360,7 +45348,7 @@ msgstr "Ukupni iznos za uplatu ovom dobavljaču."
 #. module: membership
 #: view:res.partner:0
 msgid "Invoiced/Paid/Free"
-msgstr "Invoiced/Paid/Free"
+msgstr "Fakturirano/Plaćeno/Gratis"
 
 #. module: account_fstr
 #: field:account_fstr.category,name:0
@@ -46125,7 +46113,7 @@ msgstr "Send sale order/s by Email"
 #. module: account
 #: model:process.transition,note:account.process_transition_suppliervalidentries0
 msgid "Accountant validates the accounting entries coming from the invoice. "
-msgstr "Accountant validates the accounting entries coming from the invoice. "
+msgstr "Knjigovođa potvrđuje temeljnicu nastalu iz računa. "
 
 #. module: hr_timesheet_invoice
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.product_services_form_view_installer
@@ -46324,7 +46312,7 @@ msgstr "Operatori:"
 #. module: product
 #: help:product.price.type,field:0
 msgid "Associated field in the product form."
-msgstr "Polje pridruženo na formi proizvoda"
+msgstr "Pridruženo polje sa forme proizvoda"
 
 #. modules: project_caldav, base_calendar, crm
 #: selection:calendar.event,class:0
@@ -46671,7 +46659,7 @@ msgstr "Duplicate subscription"
 #. module: hr_expense
 #: model:process.node,note:hr_expense.process_node_reinvoicing0
 msgid "Some costs may be reinvoices to the customer"
-msgstr "Some costs may be reinvoices to the customer"
+msgstr "Neki troškovi se mogu prefakturirati kupcu"
 
 #. modules: account_report, idea, hr_recruitment
 #: view:account.report.report:0
@@ -46724,7 +46712,7 @@ msgstr "Non Assigned Tasks to users"
 #: code:addons/sale/sale.py:589
 #, python-format
 msgid "You must first cancel all invoices attached to this sales order."
-msgstr "Morate prije otkazati sve fakture vezane uz ovu narudžbu."
+msgstr "Morate prije otkazati sve fakture vezane uz ovaj prodajni nalog."
 
 #. module: dudtec_recursive_sale
 #: field:sale.order,plan_duration:0
@@ -47242,7 +47230,7 @@ msgstr "TVA1"
 #. module: training_invoice_split
 #: view:training.offer.invoice:0
 msgid "Offer Invoice"
-msgstr "Offer Invoice"
+msgstr "Ponudi račun"
 
 #. module: account
 #: field:account.account,currency_id:0
@@ -47452,7 +47440,7 @@ msgstr "Redak analitičke raspodjele"
 #. module: hr_timesheet_invoice
 #: help:hr.timesheet.invoice.create,date:0
 msgid "The real date of each work will be displayed on the invoice"
-msgstr "The real date of each work will be displayed on the invoice"
+msgstr "Na računu će se prikazati stvarni datum svakog rada"
 
 #. module: account
 #: help:account.invoice.refund,filter_refund:0
@@ -47460,8 +47448,8 @@ msgid ""
 "Refund invoice base on this type. You can not Modify and Cancel if the "
 "invoice is already reconciled"
 msgstr ""
-"Refund invoice base on this type. You can not Modify and Cancel if the "
-"invoice is already reconciled"
+"Refund invoice base on this type. Ne možete mijenjati/otkazati zatvorene "
+"račune"
 
 #. module: sale_analytic_plans
 #: model:ir.module.module,description:sale_analytic_plans.module_meta_information
@@ -47772,7 +47760,7 @@ msgstr "B9  23  33 x 62 mm"
 #: code:addons/event/wizard/event_make_invoice.py:51
 #, python-format
 msgid "Invoice cannot be created if the registration is in %s state."
-msgstr "Invoice cannot be created if the registration is in %s state."
+msgstr "Ne može se kreirati račun ako je prijava u stanju %s ."
 
 #. module: account_voucher
 #: view:account.voucher:0
@@ -48185,7 +48173,7 @@ msgstr "Payslips by Employees"
 #: report:addons/report_webkit_sample/report/report_webkit_html.mako:35
 #: selection:report.account.invoice.product,type:0
 msgid "Supplier Invoice"
-msgstr "Račun Dobavljača"
+msgstr "Ulazni račun"
 
 #. module: hr
 #: field:hr.employee,address_id:0
@@ -48201,7 +48189,7 @@ msgstr "Invoice emails are only sent to accountants"
 #. module: account_payment
 #: field:payment.line,ml_inv_ref:0
 msgid "Invoice Ref."
-msgstr "Invoice Ref."
+msgstr "Poziv na br."
 
 #. modules: purchase, account, account_invoice_layout, sale, sale_layout, dudtec_recursive_sale
 #: field:account.invoice,invoice_line:0
@@ -48212,7 +48200,7 @@ msgstr "Invoice Ref."
 #: field:sale.order.line,invoice_lines:0
 #: view:sale.order:0
 msgid "Invoice Lines"
-msgstr "Retci računa"
+msgstr "Stavke računa"
 
 #. module: training_invoice_split
 #: code:addons/training_invoice_split/wizard/create_invoicing.py:35
@@ -48702,7 +48690,7 @@ msgstr "Ssh Key"
 #: code:addons/account/invoice.py:350
 #, python-format
 msgid "Invoice '%s' is waiting for validation."
-msgstr "Invoice '%s' is waiting for validation."
+msgstr "Račun '%s' čeka potvrdu."
 
 #. module: training
 #: code:addons/training/partner.py:199
@@ -49186,7 +49174,7 @@ msgstr ""
 #. module: stock_invoice_directly
 #: model:ir.module.module,shortdesc:stock_invoice_directly.module_meta_information
 msgid "Invoice Picking Directly"
-msgstr "Izravan odabir računa"
+msgstr "Izrada računa direktno iz primke/otpremnice"
 
 #. module: lunch
 #: model:ir.actions.act_window,name:lunch.view_lunch_product_form_installer
@@ -49828,7 +49816,7 @@ msgstr "Product Owner Email"
 #. module: hr_expense
 #: field:hr.expense.report,invoiced:0
 msgid "# of Invoiced Lines"
-msgstr "# of Invoiced Lines"
+msgstr "# fakturirano stavki"
 
 #. module: account
 #: report:account.overdue:0
@@ -50254,7 +50242,7 @@ msgstr "Recursive sale"
 #. module: account_financial_report
 #: model:ir.actions.report.xml,name:account_financial_report.account_invoice_list_report
 msgid "**Invoice list"
-msgstr "**Invoice list"
+msgstr "**Popis računa"
 
 #. modules: purchase, product, sale_journal, delivery, base, stock
 #: view:res.partner:0
@@ -50318,7 +50306,7 @@ msgstr ""
 #: help:notify.message,msg:0
 msgid ""
 "This notification will appear at the bottom of the Invoices when printed."
-msgstr "Ova poruka će se pojaviti na dnu ispisanih faktura."
+msgstr "Ova poruka će se pojaviti na dnu ispisa računa."
 
 #. modules: account, auction, hr_timesheet, sale, base, hr_payroll_account
 #: model:ir.actions.todo.category,name:account.category_accounting_configuration
@@ -50492,7 +50480,7 @@ msgstr "Li."
 #: wizard_view:account.invoice.email_send_2,init:0
 #: wizard_view:account.invoice.email_send_2,send:0
 msgid "Send invoice/s by Email"
-msgstr "Send invoice/s by Email"
+msgstr "Pošalji račun(e) e-poštom"
 
 #. module: pxgo_account_admin_tools
 #: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
@@ -50854,7 +50842,7 @@ msgstr "XML Izvještaj"
 #: report:sale.order:0
 #: report:sale.order.layout:0
 msgid "Invoice address :"
-msgstr "Invoice address :"
+msgstr "Adresa računa :"
 
 #. modules: hr_timesheet_sheet, product_margin
 #: view:hr.timesheet.report:0
@@ -51075,7 +51063,7 @@ msgstr "Log created in last month"
 #. module: auction
 #: view:auction.dates:0
 msgid "Invoiced Auction"
-msgstr "Invoiced Auction"
+msgstr "Fakturirana aukcija"
 
 #. module: account
 #: model:ir.ui.menu,name:account.menu_finance_charts
@@ -51904,7 +51892,7 @@ msgstr "Products to Purchase"
 #. module: hr_timesheet_invoice
 #: model:ir.module.module,shortdesc:hr_timesheet_invoice.module_meta_information
 msgid "Invoice on analytic lines"
-msgstr "Invoice on analytic lines"
+msgstr "Račun prema analitičkim stavkama"
 
 #. modules: purchase, stock
 #: view:purchase.order:0
@@ -52277,7 +52265,7 @@ msgstr "Slobodno"
 #: help:account.invoice,origin:0
 #: help:account.invoice.line,origin:0
 msgid "Reference of the document that produced this invoice."
-msgstr "Vezna oznaka dokumenta koji je stvorio ovaj račun."
+msgstr "Oznaka dokumenta koji je stvorio ovaj račun."
 
 #. module: hr_contract
 #: view:hr.contract:0
@@ -52576,7 +52564,7 @@ msgstr "Select the parameters for the account"
 #: field:product.pulled.flow,invoice_state:0
 #: field:stock.location.path,invoice_state:0
 msgid "Invoice Status"
-msgstr "Invoice Status"
+msgstr "Status računa"
 
 #. module: marketing_campaign
 #: view:campaign.analysis:0
@@ -52860,7 +52848,7 @@ msgstr "Production Work Centers"
 #. module: hr_expense
 #: view:hr.expense.report:0
 msgid "Invoiced Expenses"
-msgstr "Invoiced Expenses"
+msgstr "Fakturirani troškovi"
 
 #. module: resource
 #: field:resource.calendar.leaves,calendar_id:0
@@ -52875,10 +52863,9 @@ msgid ""
 "entry per accounting document: invoice, refund, supplier payment, bank "
 "statements, etc."
 msgstr ""
-"A journal entry consists of several journal items, each of which is either a "
-"debit or a credit transaction. OpenERP automatically creates one journal "
-"entry per accounting document: invoice, refund, supplier payment, bank "
-"statements, etc."
+"Temeljnica sadrži više knjigovodstvenih stavaka od kojih je svaka dugovna ili "
+"potražna transakcija. OpenERP automatski kreira jednu temeljnicu za jedan "
+"knjigovodstveni dokument: račun, plaćanje, izvod, itd."
 
 #. module: base_module_record
 #: wizard_field:base_module_record.module_record_data,init,info_yaml:0
@@ -53171,7 +53158,7 @@ msgstr "Pending Backlogs"
 #. module: warning
 #: field:res.partner,invoice_warn_msg:0
 msgid "Message for Invoice"
-msgstr "Poruka uz Račun"
+msgstr "Poruka uz račun"
 
 #. module: hr_holidays
 #: model:ir.actions.act_window,name:hr_holidays.action_view_holiday_status_manager_board
@@ -53537,7 +53524,7 @@ msgstr "Pakiranja"
 #. module: auction
 #: view:auction.dates:0
 msgid "Seller Invoices"
-msgstr "Seller Invoices"
+msgstr "Prodavačevi računi"
 
 #. module: newsletter
 #: field:newsletter.subscription,newsletter_unsubscribe_reason_id:0
@@ -53647,7 +53634,7 @@ msgstr "Vrijednosti"
 #. module: hr_timesheet_sheet
 #: field:hr_timesheet_sheet.sheet.account,invoice_rate:0
 msgid "Invoice rate"
-msgstr "Invoice rate"
+msgstr "Koef. računa"
 
 #. module: training
 #: help:training.offer,product_id:0
@@ -54006,7 +53993,7 @@ msgstr "%p - Equivalent za AM ili PM."
 #: model:ir.actions.act_window,name:account.action_account_invoice_report_all
 #: model:ir.ui.menu,name:account.menu_action_account_invoice_report_all
 msgid "Invoices Analysis"
-msgstr "analiza računa"
+msgstr "Analiza računa"
 
 #. module: point_of_sale
 #: field:pos.order,date_validity:0
@@ -54154,7 +54141,7 @@ msgstr "Window Action"
 #. module: account
 #: view:account.tax:0
 msgid "Tax Declaration: Invoices"
-msgstr "Porezna prijava"
+msgstr "Porezna prijava: Računi"
 
 #. modules: account_invoice_layout, account, sale_layout
 #: field:account.cashbox.line,subtotal:0
@@ -54247,7 +54234,7 @@ msgstr "Ispis dnevnika"
 #. module: hr_timesheet_invoice
 #: help:account.analytic.line,to_invoice:0
 msgid "It allows to set the discount while making invoice"
-msgstr "It allows to set the discount while making invoice"
+msgstr "Omogućuje postavljanje popusta kod kreiranja računa"
 
 #. module: mrp_operations
 #: model:ir.ui.menu,name:mrp_operations.menu_report_mrp_workorders_tree
@@ -55045,7 +55032,7 @@ msgstr "Export from OpenERP Mapping Python Function"
 #: code:addons/point_of_sale/report/pos_invoice.py:46
 #, python-format
 msgid "Please create an invoice for this sale."
-msgstr "Please create an invoice for this sale."
+msgstr "Kreirajte račun za ovu prodaju."
 
 #. modules: training_dining_hall, training
 #: view:training.session:0
@@ -55440,7 +55427,7 @@ msgstr "Prix d'adjudication"
 #. module: hr_timesheet_invoice
 #: help:hr.timesheet.invoice.create.final,balance_product:0
 msgid "The product that will be used to invoice the remaining amount"
-msgstr "The product that will be used to invoice the remaining amount"
+msgstr "Proizvod koji će se koristiti na računu za preostali iznos"
 
 #. module: document
 #: model:ir.actions.act_window,help:document.action_document_file_form
@@ -55448,8 +55435,8 @@ msgid ""
 "The Documents repository gives you access to all attachments, such as mails, "
 "project documents, invoices etc."
 msgstr ""
-"The Documents repository gives you access to all attachments, such as mails, "
-"project documents, invoices etc."
+"Repozitorij dokumenata omogućuje pristup svim privicima kao što su e-pošta, "
+"projektna dokumentacija, računi, itd."
 
 #. module: hr_payroll
 #: field:hr.payslip,payslip_run_id:0
@@ -55496,7 +55483,7 @@ msgstr "module.quality.check"
 #. module: account_voucher
 #: view:account.voucher:0
 msgid "Supplier Invoices and Outstanding transactions"
-msgstr "Supplier Invoices and Outstanding transactions"
+msgstr "Ulazni računi i otvorene stavke"
 
 #. modules: account, account_financial_report
 #: report:account.general.ledger_landscape:0
@@ -55830,7 +55817,7 @@ msgstr "It is the amount you plan to have that you cannot depreciate."
 #. module: product_margin
 #: help:product.product,normal_cost:0
 msgid "Sum of Multification of Cost price and quantity of Supplier Invoices"
-msgstr "Suma umnoška cijene troška i količine na dobavljačevim fakturama"
+msgstr "Suma umnoška cijene troška i količine na dobavljačevim računima"
 
 #. module: account_fstr
 #: field:account_fstr.category,bottom_spacing_title:0
@@ -56351,7 +56338,7 @@ msgstr "Financijske postavke nove organizacije"
 #: code:addons/auction/auction.py:578
 #, python-format
 msgid "The Buyer \"%s\" has no Invoice Address."
-msgstr "The Buyer \"%s\" has no Invoice Address."
+msgstr "Kupac \"%s\" nema adresu računa."
 
 #. module: training_dining_hall
 #: view:training.dining_hall.rule:0
@@ -56593,7 +56580,7 @@ msgstr "Processed"
 #. module: purchase_payment
 #: help:purchase.order,payment_type:0
 msgid "The type of payment. It will be transferred to the invoice."
-msgstr "The type of payment. It will be transferred to the invoice."
+msgstr "Vrsta plaćanja. Kopira se na račun."
 
 #. module: training_dining_hall
 #: field:res.partner.contact,picnic:0
@@ -56983,7 +56970,7 @@ msgstr "Select it if the contact goes to the dining hall on Sunday."
 #: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_invoice_create.py:63
 #, python-format
 msgid "Invoice is already linked to some of the analytic line(s)!"
-msgstr "Invoice is already linked to some of the analytic line(s)!"
+msgstr "Račun je već povezan sa nekim analitičkim stavkama!"
 
 #. module: caldav
 #: code:addons/caldav/wizard/caldav_browse.py:49
@@ -57791,7 +57778,7 @@ msgstr "ID de l'ordre d'achat"
 #: code:addons/hr_timesheet_invoice/hr_timesheet_invoice.py:119
 #, python-format
 msgid "You can not modify an invoiced analytic line!"
-msgstr "You can not modify an invoiced analytic line!"
+msgstr "Ne možete mijenjati fakturiranu analitičku stavku!"
 
 #. module: base
 #: view:ir.model.access:0
@@ -58149,8 +58136,8 @@ msgid ""
 "The bank account to pay to or to be paid from. It will be transferred to the "
 "invoice."
 msgstr ""
-"The bank account to pay to or to be paid from. It will be transferred to the "
-"invoice."
+"Bankovni račun na koji/s kojega treba izvršiti uplatu. Prekopirati će se na "
+"račun."
 
 #. module: stock
 #: code:addons/stock/stock.py:515
@@ -58239,7 +58226,7 @@ msgstr " Cashboxes "
 #. module: purchase
 #: model:ir.ui.menu,name:purchase.menu_procurement_management_pending_invoice
 msgid "Supplier Invoices to Receive"
-msgstr "Supplier Invoices to Receive"
+msgstr "Ulani računi u dolazu"
 
 #. module: base
 #: view:res.partner.event:0
@@ -58717,7 +58704,7 @@ msgstr "Assets purchased in last month"
 #. module: membership
 #: model:ir.actions.act_window,name:membership.action_membership_invoice_view
 msgid "Invoice Membership"
-msgstr "Invoice Membership"
+msgstr "Fakturiraj članstvo"
 
 #. modules: email_sale, email_account
 #: code:addons/email_account/wizard/wizard_send_email.py:71
@@ -59402,7 +59389,7 @@ msgstr "Provide path for remote calendar"
 #. module: account_invoice_layout
 #: model:ir.model,name:account_invoice_layout.model_account_invoice_special_msg
 msgid "Account Invoice Special Message"
-msgstr "Account Invoice Special Message"
+msgstr "Posebna poruka na računu"
 
 #. modules: purchase_requisition, purchase
 #: field:base.setup.installer,purchase_requisition:0
@@ -60483,7 +60470,7 @@ msgid ""
 "The real total does not match the computed total."
 msgstr ""
 "Molimo provjerite cijene na računu!\n"
-"Stvarna ukupna vrijednost se ne slaže sa izračunatom vrijednošću."
+"Ukupna vrijednost nije jednaka izračunatoj."
 
 #. module: email_template
 #: field:email_template.send.wizard,full_success:0
@@ -60680,7 +60667,7 @@ msgstr "Help URL"
 #. module: mrp
 #: field:mrp.bom,product_rounding:0
 msgid "Product Rounding"
-msgstr "Product Rounding"
+msgstr "Zaokruživanje (decimale)"
 
 #. modules: hr_timesheet_sheet, pxgo_account_admin_tools, hr_recruitment, crm
 #: model:crm.case.stage,name:crm.stage_lead1
@@ -60832,7 +60819,7 @@ msgstr "Automatski promijeni vjerojatnost"
 #. module: lunch
 #: model:ir.actions.act_window,name:lunch.action_lunch_category_form
 msgid " Product Categories "
-msgstr " Product Categories "
+msgstr "Grupe proizvoda"
 
 #. module: sale_crm
 #: model:ir.module.module,shortdesc:sale_crm.module_meta_information
@@ -60920,14 +60907,14 @@ msgstr "Training Offer Invoice"
 #: model:ir.model,name:point_of_sale.model_pos_details
 #: model:ir.model,name:point_of_sale.model_pos_sales_user_today_current_user
 msgid "Sales Details"
-msgstr "Sales Details"
+msgstr "Detalji prodaje"
 
 #. modules: product_images_olbs, training_images, report_webkit
 #: view:product.product:0
 #: view:res.company:0
 #: view:training.offer:0
 msgid "Images"
-msgstr "Images"
+msgstr "Slike"
 
 #. module: hr_timesheet_invoice
 #: help:hr_timesheet_invoice.factor,factor:0
@@ -60952,7 +60939,7 @@ msgstr "survey.name.wiz"
 #. module: product_variant_multi
 #: field:product.product,dimension_value_ids:0
 msgid "Dimensions"
-msgstr "Dimensions"
+msgstr "Dimenzije"
 
 #. module: training
 #: help:training.create.session.seances.line,friday:0
@@ -61220,7 +61207,7 @@ msgstr "The following course has not a valid duration '%s' (%d)"
 #: field:auction.lots,ach_inv_id:0
 #: view:auction.lots.make.invoice.buyer:0
 msgid "Buyer Invoice"
-msgstr "Facture de l'acheteur"
+msgstr "Račun kupcu"
 
 #. module: report_webkit
 #: field:ir.header_webkit,margin_right:0
@@ -61614,7 +61601,7 @@ msgstr "Not enough stock ! : "
 #: view:hr.holidays:0
 #: field:hr.holidays,notes:0
 msgid "Reasons"
-msgstr "Reasons"
+msgstr "Razlozi"
 
 #. module: network_extension
 #: help:network.network,dns:0
@@ -61860,7 +61847,7 @@ msgstr "Current month"
 #. module: training_invoice_split
 #: view:training.create.invoice.wizard:0
 msgid "Are you sure to create an invoice?"
-msgstr "Are you sure to create an invoice?"
+msgstr "Sigurno želite kreirati račun?"
 
 #. module: marketing
 #: model:ir.module.module,description:marketing.module_meta_information
@@ -63025,9 +63012,9 @@ msgid ""
 "order is 'On order'. The invoice can also be generated manually by the "
 "accountant (Invoice control = Manual)."
 msgstr ""
-"The invoice is created automatically if the Invoice control of the purchase "
-"order is 'On order'. The invoice can also be generated manually by the "
-"accountant (Invoice control = Manual)."
+"Ako je 'Fakturiranje' na nalogu postavljeno na 'Temeljem naloga', račun će se "
+"automatski generirati. Račun može izraditi i knjigovođa upisom računa i "
+"stavki kada je 'Fakturiranje' postavljano na 'Ručno'."
 
 #. modules: account_invoice_layout, purchase, sale_layout, point_of_sale, sale
 #: report:notify_account.invoice:0
@@ -63326,7 +63313,7 @@ msgstr ""
 #. module: sale
 #: model:ir.model,name:sale.model_sale_open_invoice
 msgid "Sales Open Invoice"
-msgstr "Otvorena faktura"
+msgstr "Otvoreni izlazni račun"
 
 #. module: purchase
 #: view:purchase.report:0
@@ -63336,7 +63323,7 @@ msgstr "Order in last month"
 #. module: account_voucher
 #: view:account.bank.statement:0
 msgid "Import Invoices"
-msgstr "Import Invoices"
+msgstr "Uvoz računa"
 
 #. module: marketing_campaign_crm_demo
 #: model:ir.actions.report.xml,name:marketing_campaign_crm_demo.mc_crm_lead_demo_report
@@ -64618,8 +64605,8 @@ msgid ""
 "If this box is checked, the system will try to group the accounting lines "
 "when generating them from invoices."
 msgstr ""
-"Ako je cekirano, sistem ce probati da grupise konta prilikom generisanja iz "
-"racuna."
+"Ako je označeno, kod kreiranja temeljnice iz računa zbraja istovrsne stavke u "
+"jednu stavku ako je moguće."
 
 #. module: account
 #: model:ir.model,name:account.model_account_sequence_fiscalyear
@@ -65667,7 +65654,7 @@ msgstr "Ukupna marža"
 #. module: hr_timesheet_invoice
 #: field:account.analytic.account,to_invoice:0
 msgid "Reinvoice Costs"
-msgstr "Reinvoice Costs"
+msgstr "Prefakturiraj troškove"
 
 #. modules: account, sale_margin, event, account_financial_report, sale
 #: model:ir.actions.act_window,name:account.action_invoice_tree1
@@ -66015,7 +66002,7 @@ msgstr "Poštanska adresa"
 #. module: project_timesheet
 #: model:process.transition,name:project_timesheet.process_transition_taskinvoice0
 msgid "Task invoice"
-msgstr "Task invoice"
+msgstr "Račun zadatka"
 
 #. module: report_webkit
 #: field:ir.header_webkit,format:0
@@ -66287,7 +66274,7 @@ msgstr "Task '%s' closed"
 #. module: membership
 #: model:process.transition,name:membership.process_transition_waitingtoinvoice0
 msgid "Waiting to invoice"
-msgstr "Waiting to invoice"
+msgstr "Čeka račun"
 
 #. modules: anonymization, base, crm, mail_gateway, base_module_quality
 #: field:ir.model.fields.anonymization,model_name:0
@@ -66558,8 +66545,8 @@ msgid ""
 "Bank Account Number, Company bank account if Invoice is customer or supplier "
 "refund, otherwise Partner bank account number."
 msgstr ""
-"Bank Account Number, Company bank account if Invoice is customer or supplier "
-"refund, otherwise Partner bank account number."
+"Broj bankovnog računa. Kod izlaznih računa (i povrata dobavljaču) to je "
+"bankovni račun organizacije, a kod ulaznih to je račun partnera."
 
 #. module: procurement
 #: code:addons/procurement/procurement.py:384
@@ -66832,7 +66819,7 @@ msgstr "Pokreni"
 #: model:ir.model,name:sale_margin.model_account_invoice_line
 #: field:training.subscription.line,invoice_line_id:0
 msgid "Invoice Line"
-msgstr "Redak računa"
+msgstr "Stavka računa"
 
 #. module: sale
 #: model:process.transition,note:sale.process_transition_saleprocurement0
@@ -66923,7 +66910,7 @@ msgstr "  dan u mjesecu= -1"
 #. module: hr_timesheet_invoice
 #: view:hr.timesheet.invoice.create.final:0
 msgid "Invoice Balance amount"
-msgstr "Invoice Balance amount"
+msgstr "Iznos salda računa"
 
 #. modules: sale_journal, project_timesheet, training_room, warning, crm_claim, event, crm_profiling, marketing_campaign, stock, product, account_payment_extension, training_multi_school, training, mail_gateway, crm_partner_assign, delivery, membership, base, purchase, account, partner_holidays, base_vat, django, project, purchase_payment, crm
 #: constraint:res.partner:0
@@ -67718,7 +67705,7 @@ msgstr "Contracts in progress"
 #. module: point_of_sale
 #: view:pos.add.product:0
 msgid "Add product :"
-msgstr "Add product :"
+msgstr "Dodaj proizvod :"
 
 #. module: training_dining_hall
 #: code:addons/training_dining_hall/wizard/generate_participations.py:93
@@ -68671,7 +68658,7 @@ msgstr "Please check that income account is set to %s"
 #. module: mrp_repair
 #: view:mrp.repair:0
 msgid "invoiced"
-msgstr "invoiced"
+msgstr "fakturirano"
 
 #. module: account
 #: field:account.move.line,tax_amount:0
@@ -69024,7 +69011,7 @@ msgstr "Mark Won"
 #. module: account
 #: help:account.invoice,account_id:0
 msgid "The partner account used for this invoice."
-msgstr "Konto partnera za ovu fakturu"
+msgstr "Konto partnera za ovaj račun"
 
 #. module: mrp_repair
 #: field:mrp.repair.make_invoice,group:0
@@ -69510,8 +69497,8 @@ msgid ""
 "Allows you to create your invoices and track the payments. It is an easier "
 "version of the accounting module for managers who are not accountants."
 msgstr ""
-"Allows you to create your invoices and track the payments. It is an easier "
-"version of the accounting module for managers who are not accountants."
+"Omogućuje izradu računa i praćenje plaćanja. Ovo je pojednostavljena verzija "
+"knjigovodstvenog modula za one koji nisu knjigovođe."
 
 #. module: base
 #: model:ir.model,name:base.model_workflow
@@ -69660,7 +69647,7 @@ msgstr "ID objekta"
 #. module: account
 #: model:process.transition,note:account.process_transition_validentries0
 msgid "Accountant validates the accounting entries coming from the invoice."
-msgstr "Accountant validates the accounting entries coming from the invoice."
+msgstr "Knjigovođa potvrđuje temeljnicu nastalu iz računa."
 
 #. module: auction
 #: report:auction.total.rml:0
@@ -69754,7 +69741,7 @@ msgstr "Reference of the document that produced this picking."
 #. module: account_payment_extension
 #: view:account.move.line:0
 msgid "Search Invoice Payments"
-msgstr "Search Invoice Payments"
+msgstr "Traži plaćanja računa"
 
 #. module: crm
 #: model:ir.actions.act_window,name:crm.crm_case_categ_phone_create_partner
@@ -69982,7 +69969,7 @@ msgstr "Uskladištivi proizvod"
 #. module: account_voucher
 #: view:account.voucher:0
 msgid "Invoices and outstanding transactions"
-msgstr "Invoices and outstanding transactions"
+msgstr "Računi i otvorene stavke"
 
 #. module: training
 #: code:addons/training/training.py:891
@@ -70194,8 +70181,8 @@ msgid ""
 "Analytic costs (timesheets, some purchased products, ...) come from analytic "
 "accounts. These generate draft invoices."
 msgstr ""
-"Analytic costs (timesheets, some purchased products, ...) come from analytic "
-"accounts. These generate draft invoices."
+"Analitike troškova (šihterice, nabava, ...) dolaze sa analitičkih konta. Ona "
+"kreiraju nacrte računa."
 
 #. module: base
 #: selection:ir.ui.view,type:0
@@ -70265,7 +70252,7 @@ msgstr "Email Template Preview"
 #. module: account_financial_report
 #: report:account.invoice.list.report:0
 msgid "Invoice date"
-msgstr "Invoice date"
+msgstr "Datum računa"
 
 #. modules: product, stock
 #: view:product.product:0
@@ -71310,7 +71297,7 @@ msgstr "Child Rules"
 #. module: hr_timesheet_invoice
 #: model:ir.model,name:hr_timesheet_invoice.model_hr_timesheet_invoice_factor
 msgid "Invoice Rate"
-msgstr "Invoice Rate"
+msgstr "Koef. računa"
 
 #. module: crm_claim
 #: view:crm.claim:0
@@ -72306,7 +72293,7 @@ msgstr "My Recruitment"
 #. module: account
 #: view:account.invoice:0
 msgid "Invoice lines"
-msgstr "Retci računa"
+msgstr "Stavke računa"
 
 #. modules: point_of_sale, pxgo_cash_statement, account, account_analytic_plans, account_sequence
 #: sql_constraint:account.journal:0
@@ -72348,7 +72335,7 @@ msgstr "Preciznost zaokruživanja"
 #. module: account
 #: model:process.node,note:account.process_node_paidinvoice0
 msgid "Invoice's state is Done"
-msgstr "Invoice's state is Done"
+msgstr "Stanje računa je 'Izvršen'"
 
 #. module: network_extension
 #: help:network.service,public_port:0
@@ -72486,7 +72473,7 @@ msgstr ""
 #. module: sale_margin
 #: model:ir.model,name:sale_margin.model_report_account_invoice_product
 msgid "Invoice Statistics"
-msgstr "Invoice Statistics"
+msgstr "Statistike računa"
 
 #. module: caldav
 #: help:calendar.event.export,name:0
@@ -73314,7 +73301,7 @@ msgstr "Knjiga troškova (Samo količine)"
 #. module: account
 #: model:process.node,note:account.process_node_supplierpaidinvoice0
 msgid "Invoice's state is Done."
-msgstr "Invoice's state is Done."
+msgstr "Stanje računa je 'Izvršen'."
 
 #. module: training
 #: code:addons/training/wizard/subscription_line_change_participant.py:45
@@ -73850,7 +73837,7 @@ msgstr "Renumbered fiscal periods"
 #. module: sale
 #: selection:sale.config.picking_policy,order_policy:0
 msgid "Invoice Based on Deliveries"
-msgstr "Faktura na temelju dostava"
+msgstr "Račun na temelju dostava"
 
 #. modules: account_balance_reporting, account_reporting
 #: view:account.balance.report:0
@@ -74646,7 +74633,7 @@ msgstr "Enter the verification code thay you get in your verification Email"
 #. module: product_margin
 #: help:product.product,sale_num_invoiced:0
 msgid "Sum of Quantity in Customer Invoices"
-msgstr "Suma količina na fakturama kupca"
+msgstr "Suma količina na izlaznim računima"
 
 #. module: base
 #: view:ir.actions.todo:0
@@ -74696,7 +74683,7 @@ msgstr "Grupa"
 #: model:ir.actions.wizard,name:account_financial_report.wizard_invoice_list_report
 #: model:ir.ui.menu,name:account_financial_report.menu_invoice_list_report
 msgid "**Print invoice list"
-msgstr "**Print invoice list"
+msgstr "**Ispis računa"
 
 #. module: training
 #: field:ir.attachment,is_support:0
@@ -75002,8 +74989,8 @@ msgid ""
 "The cost of each work done will be displayed on the invoice. You probably "
 "don't want to check this"
 msgstr ""
-"The cost of each work done will be displayed on the invoice. You probably "
-"don't want to check this"
+"Trošak svakog rada će se prikazati na računu. Vjerovatno to ne želite "
+"označiti."
 
 #. modules: stock_planning, hr_expense, account, mrp_repair, product, sale, hr_timesheet_invoice, stock, sale_layout, dudtec_recursive_sale
 #: field:account.analytic.line,product_uom_id:0
@@ -75132,7 +75119,7 @@ msgstr "Create Participations"
 #. module: auction
 #: view:auction.dates:0
 msgid "Buyer Invoices"
-msgstr "Buyer Invoices"
+msgstr "Izlazni računi"
 
 #. module: training_joomla
 #: help:training.joomla,username:0
@@ -75183,7 +75170,7 @@ msgstr "Obrazac Kontakta"
 #: model:ir.model,name:point_of_sale.model_pos_add_product
 #, python-format
 msgid "Add Product"
-msgstr "Add Product"
+msgstr "Dodaj proizvod"
 
 #. module: email_sale
 #: model:ir.module.module,shortdesc:email_sale.module_meta_information
@@ -75202,7 +75189,7 @@ msgstr "Opis modela"
 #. module: point_of_sale
 #: field:report.transaction.pos,invoice_am:0
 msgid "Invoice Amount"
-msgstr "Invoice Amount"
+msgstr "Iznos računa"
 
 #. module: base
 #: help:ir.actions.act_window,src_model:0
@@ -75654,7 +75641,7 @@ msgstr ""
 #: code:addons/event/wizard/event_make_invoice.py:63
 #, python-format
 msgid "Registration doesn't have any partner to invoice."
-msgstr "Registration doesn't have any partner to invoice."
+msgstr "Prijava nema partnera za izradu računa."
 
 #. module: caldav
 #: view:calendar.event.export:0
@@ -75778,7 +75765,7 @@ msgstr ""
 #: code:addons/account/wizard/account_change_currency.py:38
 #, python-format
 msgid "You can only change currency for Draft Invoice !"
-msgstr "You can only change currency for Draft Invoice !"
+msgstr "Valuta se može mijenjati samo na računima u stanju 'Nacrt'!"
 
 #. module: base
 #: view:res.lang:0
@@ -75872,7 +75859,7 @@ msgstr "Nadzorna ploča odjela ljudskih resursa"
 #. module: account
 #: view:account.invoice.report:0
 msgid "Supplier Invoices And Refunds"
-msgstr "Supplier Invoices And Refunds"
+msgstr "Ulazni računi i povrati"
 
 #. module: training
 #: model:ir.actions.report.xml,name:training.training_seance_presence_noshow_report
@@ -76128,9 +76115,10 @@ msgid ""
 "users, such as customers, suppliers, or accountants. You can share any "
 "OpenERP Menu such as your project tasks, support requests, invoices, etc."
 msgstr ""
-"Allows you to give restricted access to your OpenERP documents to external "
-"users, such as customers, suppliers, or accountants. You can share any "
-"OpenERP Menu such as your project tasks, support requests, invoices, etc."
+"Omogućuje ograničeni pristup dokumentima i podacima OpenERP-a vanjskim "
+"korisnicima kao što su kupci, dobavljači ili knjigovođe. Moguće je dijeliti "
+"pristup bilo kojem izborniku kao što su zadaci projekta, zahtjevi za "
+"podrškom, računi, itd."
 
 #. modules: base_contact_vat, base_vat
 #: code:addons/base_contact_vat/res_partner_contact.py:70
@@ -76664,7 +76652,7 @@ msgstr "training.session"
 #. module: account
 #: view:account.invoice.cancel:0
 msgid "Cancel Invoices"
-msgstr "Cancel Invoices"
+msgstr "Otkaži račune"
 
 #. module: training
 #: model:ir.actions.act_window,name:training.training_session_all_participants_act
@@ -77475,7 +77463,7 @@ msgstr "Computer"
 #. module: membership
 #: model:process.transition,note:membership.process_transition_invoicetopaid0
 msgid "Invoice is be paid."
-msgstr "Invoice is be paid."
+msgstr "Račun je plaćen."
 
 #. module: report_webkit
 #: selection:ir.header_webkit,format:0
@@ -77631,7 +77619,7 @@ msgstr "From a purchase order"
 #. module: sale
 #: help:sale.config.picking_policy,order_policy:0
 msgid "You can generate invoices based on sales orders or based on shippings."
-msgstr "Možete napraviti fakture prema narudžbama ili otpremnicama."
+msgstr "Možete kreirati račune prema nalozima ili otpremnicama."
 
 #. module: account_reverse
 #: help:account.move.reverse,init,journal_id:0
@@ -77765,7 +77753,7 @@ msgstr "Analitika"
 #. module: point_of_sale
 #: field:report.transaction.pos,invoice_id:0
 msgid "Nbr Invoice"
-msgstr "Nbr Invoice"
+msgstr "Račun br."
 
 #. module: base
 #: view:ir.rule:0
@@ -77886,7 +77874,7 @@ msgstr "Izbornik"
 #. module: account_invoice_layout
 #: model:ir.module.module,shortdesc:account_invoice_layout.module_meta_information
 msgid "Improve Invoice Layout"
-msgstr "Improve Invoice Layout"
+msgstr "Napredni izgled računa"
 
 #. module: crm
 #: field:base.setup.installer,sale_crm:0
@@ -77922,7 +77910,7 @@ msgstr "Tip Računa"
 #. module: sale
 #: model:ir.model,name:sale.model_sale_advance_payment_inv
 msgid "Sales Advance Payment Invoice"
-msgstr "Faktura za predujam plaćanja"
+msgstr "Izlazni račun za predujam"
 
 #. module: training
 #: field:training.seance,available_seats:0
@@ -78207,7 +78195,7 @@ msgstr ""
 #: code:addons/purchase/purchase.py:418
 #, python-format
 msgid "You must first cancel all invoices attached to this purchase order."
-msgstr "You must first cancel all invoices attached to this purchase order."
+msgstr "Najprije treba otkazati sve račune vezane na ovaj nalog nabave."
 
 #. module: base
 #: view:base.language.export:0
@@ -78355,7 +78343,7 @@ msgstr "No header defined for this Webkit report!"
 #: model:ir.actions.act_window,name:sale.action_view_sale_order_line_make_invoice
 #: view:sale.order:0
 msgid "Make Invoices"
-msgstr "Napravi fakture"
+msgstr "Kreiraj račune"
 
 #. module: account
 #: view:account.analytic.chart:0
@@ -78435,7 +78423,7 @@ msgstr "Tax Declaration: Credit Notes"
 #: view:hr.timesheet.invoice.create:0
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.action_hr_timesheet_invoice_create
 msgid "Invoice analytic lines"
-msgstr "Invoice analytic lines"
+msgstr "Fakturiraj analitičke stavke"
 
 #. module: account_followup
 #: model:ir.actions.act_window,name:account_followup.action_view_account_followup_followup_form
@@ -78798,7 +78786,7 @@ msgstr "Mail To"
 #: field:product.product,purchase_num_invoiced:0
 #: field:product.product,sale_num_invoiced:0
 msgid "# Invoiced"
-msgstr "# Invoiced"
+msgstr "# Fakturirano"
 
 #. module: pxgo_account_admin_tools
 #: view:pxgo_account_admin_tools.pxgo_set_partner_in_moves:0
@@ -79518,7 +79506,7 @@ msgstr "Funds by Categories"
 #. module: account
 #: view:account.entries.report:0
 msgid "# of Products Qty "
-msgstr "# of Products Qty "
+msgstr "# kol. Proizvoda"
 
 #. module: training_dining_hall
 #: help:promote.line.group.contacts.wizard,from_group_id:0
@@ -80342,7 +80330,7 @@ msgstr "Theme Update"
 #: code:addons/account_voucher/invoice.py:32
 #, python-format
 msgid "Pay Invoice"
-msgstr "Pay Invoice"
+msgstr "Plati račun"
 
 #. module: account
 #: view:account.aged.trial.balance:0
@@ -80969,7 +80957,7 @@ msgstr "Maping Lines"
 #: code:addons/account/invoice.py:1005
 #, python-format
 msgid "Invoice  '%s' is validated."
-msgstr "Invoice  '%s' is validated."
+msgstr "Račun '%s' je potvrđen."
 
 #. modules: account_followup, account, base_report_creator, hr_evaluation
 #: view:account.model:0
@@ -81021,7 +81009,7 @@ msgstr "Display Text"
 #. module: hr_timesheet_sheet
 #: model:process.node,name:hr_timesheet_sheet.process_node_invoiceonwork0
 msgid "Invoice on Work"
-msgstr "Invoice on Work"
+msgstr "Račun za radove"
 
 #. module: base
 #: model:res.partner.category,name:base.res_partner_category_16
@@ -82548,7 +82536,7 @@ msgstr ""
 #. module: auction
 #: field:auction.lots,paid_ach:0
 msgid "Buyer Invoice Reconciled"
-msgstr "Buyer Invoice Reconciled"
+msgstr "Račun kupcu zatvoren"
 
 #. module: account
 #: view:account.tax:0
@@ -83383,7 +83371,7 @@ msgstr "Login Information"
 #: model:ir.actions.act_window,name:account_analytic_analysis.action_hr_tree_invoiced_all
 #: model:ir.ui.menu,name:account_analytic_analysis.menu_action_hr_tree_invoiced_all
 msgid "All Uninvoiced Entries"
-msgstr "All Uninvoiced Entries"
+msgstr "Sve nefakturirane stavke"
 
 #. module: auction
 #: report:buyer.list:0
@@ -83534,7 +83522,7 @@ msgstr "Migrate data from another application"
 #. module: account
 #: model:ir.model,name:account.model_account_invoice_cancel
 msgid "Cancel the Selected Invoices"
-msgstr "Cancel the Selected Invoices"
+msgstr "Stornira odabrane račune"
 
 #. module: account
 #: help:product.category,property_account_income_categ:0
@@ -85344,7 +85332,7 @@ msgstr "Supplier of the product"
 #. module: account
 #: view:account.invoice:0
 msgid "My invoices"
-msgstr "My invoices"
+msgstr "Moji računi"
 
 #. module: base
 #: view:ir.property:0
@@ -86403,7 +86391,7 @@ msgstr "Payer les objets de l'acheteur"
 #: code:addons/account/wizard/account_invoice_refund.py:138
 #, python-format
 msgid "No Period found on Invoice!"
-msgstr "No Period found on Invoice!"
+msgstr "Nije pronađeno razdoblje na računu!"
 
 #. module: crm
 #: view:crm.phonecall.report:0
@@ -86564,8 +86552,8 @@ msgid ""
 "A Pick list generates an invoice. Depending on the Invoicing control of the "
 "sale order, the invoice is based on delivered or on ordered quantities."
 msgstr ""
-"A Pick list generates an invoice. Depending on the Invoicing control of the "
-"sale order, the invoice is based on delivered or on ordered quantities."
+"Primka generira ulazni račun. Ovisno o kontroli računa na Nalogu nabave, "
+"račun se izrađuje na temelju primljenih ili naručenih količina."
 
 #. module: lunch
 #: model:ir.model,name:lunch.model_report_lunch_order
@@ -86916,7 +86904,7 @@ msgstr "Osnovna Šifra"
 #. module: sale
 #: model:ir.model,name:sale.model_sale_make_invoice
 msgid "Sales Make Invoice"
-msgstr "Faktura obavljene prodaje"
+msgstr "Izrada izlaznog računa"
 
 #. modules: account, hr_timesheet_invoice, account_budget
 #: field:account.analytic.balance,date1:0
@@ -88409,7 +88397,7 @@ msgstr "Catalogs"
 #. module: mrp_repair
 #: field:mrp.repair,invoice_method:0
 msgid "Invoice Method"
-msgstr "Invoice Method"
+msgstr "Metoda računa"
 
 #. module: hr
 #: selection:hr.employee,gender:0
@@ -88424,7 +88412,7 @@ msgstr "Flemish (BE) / Vlaams (BE)"
 #. module: event
 #: field:event.registration,partner_invoice_id:0
 msgid "Partner Invoiced"
-msgstr "Partner Invoiced"
+msgstr "Partner računa"
 
 #. modules: account, point_of_sale, report_intrastat
 #: report:account.invoice:0
@@ -88553,8 +88541,7 @@ msgid ""
 "As soon as the reconciliation is done, the invoice's state turns to “done” (i."
 "e. paid) in the system."
 msgstr ""
-"As soon as the reconciliation is done, the invoice's state turns to “done” (i."
-"e. paid) in the system."
+"Čim je obavljeno zatvaranje, stanje računa prelazi u \"izvršen\" (plaćen)."
 
 #. module: account
 #: field:product.template,taxes_id:0
@@ -88594,7 +88581,7 @@ msgstr "Number of Registration"
 #. module: purchase
 #: help:purchase.order,invoiced:0
 msgid "It indicates that an invoice has been paid"
-msgstr "It indicates that an invoice has been paid"
+msgstr "Označava da je račun plaćen"
 
 #. modules: training_dining_hall, training
 #: view:training.subscription:0
@@ -88637,7 +88624,7 @@ msgstr "Decimal Accuracy"
 #. module: membership
 #: model:process.node,note:membership.process_node_paidmember0
 msgid "Membership invoice paid."
-msgstr "Membership invoice paid."
+msgstr "Račun članstva plaćen."
 
 #. module: report_webkit_sample
 #: report:addons/report_webkit_sample/report/report_webkit_html.mako:49
@@ -89056,7 +89043,7 @@ msgstr "uid - current user ID"
 #: code:addons/mrp_repair/wizard/cancel_repair.py:49
 #, python-format
 msgid "Repair order is not invoiced."
-msgstr "Repair order is not invoiced."
+msgstr "Nalog za popravak nije fakturiran."
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_analytic_invert_balance
@@ -90008,7 +89995,7 @@ msgstr "Deliver Products"
 #. module: sale
 #: selection:sale.order,order_policy:0
 msgid "Shipping & Manual Invoice"
-msgstr "Otprema i ručno napravljena faktura"
+msgstr "Otprema i ručno napravljen račun"
 
 #. module: base
 #: selection:base.language.install,lang:0
@@ -90299,7 +90286,7 @@ msgstr "Threshold for stable price"
 #. module: account
 #: help:report.invoice.created,origin:0
 msgid "Reference of the document that generated this invoice report."
-msgstr "Reference of the document that generated this invoice report."
+msgstr "Oznaka dokumenta koji je kreirao ovaj račun."
 
 #. module: training_dining_hall
 #: code:addons/training_dining_hall/training_dining_hall.py:457
@@ -90470,7 +90457,7 @@ msgstr "Cannot delete Production Order(s) which are in %s State!"
 #. module: sale_margin
 #: model:ir.ui.menu,name:sale_margin.menu_report_account_invoice_product
 msgid "Invoice Report"
-msgstr "Invoice Report"
+msgstr "Izvještaj o računima"
 
 #. module: account
 #: model:ir.ui.menu,name:account.menu_menu_Bank_process
@@ -90564,7 +90551,7 @@ msgstr "Search Leave"
 #. module: account_financial_report
 #: report:account.invoice.list.report:0
 msgid "Supplier Refund Invoices"
-msgstr "Supplier Refund Invoices"
+msgstr "Povrati ulaznih računa"
 
 #. module: account
 #: selection:account.automatic.reconcile,power:0
@@ -90594,12 +90581,12 @@ msgstr "Statistics by User"
 #. module: training_invoice_split
 #: selection:training.offer.invoicing,state:0
 msgid "Ready to be invoiced"
-msgstr "Ready to be invoiced"
+msgstr "Spremno za račun"
 
 #. module: sale
 #: field:sale.order,invoice_quantity:0
 msgid "Invoice on"
-msgstr "Računa za"
+msgstr "Račun za"
 
 #. module: survey
 #: view:survey.page:0
@@ -90861,7 +90848,7 @@ msgstr "Product Margin"
 #: view:training.subscription.line:0
 #: view:training.hr.subscription:0
 msgid "To Invoice"
-msgstr "To Invoice"
+msgstr "Za fakturiranje"
 
 #. module: training
 #: model:ir.model,name:training.model_validate_courses
@@ -91001,7 +90988,7 @@ msgstr "Posljednji"
 #. module: project
 #: model:ir.actions.act_window,name:project.act_my_account
 msgid "My accounts to invoice"
-msgstr "My accounts to invoice"
+msgstr "Moja konta za fakturiranje"
 
 #. module: stock
 #: model:ir.actions.act_window,help:stock.action_stock_journal_form
@@ -91534,7 +91521,7 @@ msgstr ""
 #. module: hr_timesheet_invoice
 #: model:ir.model,name:hr_timesheet_invoice.model_report_account_analytic_line_to_invoice
 msgid "Analytic lines to invoice report"
-msgstr "Analitičke stavke za ispis na fakturi"
+msgstr "Analitičke stavke za ispis na računu"
 
 #. module: product
 #: selection:product.uom,uom_type:0
@@ -91631,7 +91618,7 @@ msgstr "Total Discount"
 #. module: membership
 #: model:process.transition,name:membership.process_transition_invoicetopaid0
 msgid "Invoice to paid"
-msgstr "Invoice to paid"
+msgstr "Račun za platiti"
 
 #. module: purchase_requisition
 #: selection:purchase.requisition,exclusive:0
@@ -91723,7 +91710,7 @@ msgstr "Trigger invoices from sale order lines"
 #: code:addons/account_followup/wizard/account_followup_print.py:138
 #, python-format
 msgid "Invoices Reminder"
-msgstr "Invoices Reminder"
+msgstr "IOS-i računa"
 
 #. module: account
 #: help:account.journal,type:0
@@ -92728,7 +92715,7 @@ msgstr "In-Project Messaging System"
 #. module: account
 #: help:account.change.currency,currency_id:0
 msgid "Select a currency to apply on the invoice"
-msgstr "Select a currency to apply on the invoice"
+msgstr "Odaberite valutu računa"
 
 #. module: auction
 #: help:auction.pay.buy,amount3:0
@@ -92755,7 +92742,7 @@ msgstr "CODE"
 #: code:addons/account/wizard/account_invoice_refund.py:100
 #, python-format
 msgid "Can not %s draft/proforma/cancel invoice."
-msgstr "Can not %s draft/proforma/cancel invoice."
+msgstr "Nije moguće %s račun u stanju nacrt/proforma/otkazan."
 
 #. module: auction
 #: view:auction.lots:0
@@ -93469,7 +93456,7 @@ msgstr "Operation is already finished !"
 #: selection:report.membership,membership_state:0
 #: selection:res.partner,membership_state:0
 msgid "Invoiced Member"
-msgstr "Invoiced Member"
+msgstr "Fakturirano članstvo"
 
 #. module: base_report_designer
 #: model:ir.module.module,description:base_report_designer.module_meta_information
@@ -94059,7 +94046,7 @@ msgstr "Purchase order to be approved"
 #: view:purchase.order:0
 #: selection:training.dining_hall.special_day.rule,policy_not_used:0
 msgid "Not Invoiced"
-msgstr "Not Invoiced"
+msgstr "Nije fakturirano"
 
 #. module: account_analytic_plans
 #: field:account.analytic.plan.instance.line,plan_id:0
@@ -94516,7 +94503,7 @@ msgstr "Održan"
 #. module: report_intrastat
 #: model:ir.actions.report.xml,name:report_intrastat.invoice_intrastat_id
 msgid "Invoice Intrastat"
-msgstr "Intrastat Račun"
+msgstr "Intrastat račun"
 
 #. module: auction
 #: model:ir.actions.act_window,name:auction.action_auction_taken
@@ -94935,7 +94922,7 @@ msgstr "E-mail Notification on Answer"
 #: model:ir.model,name:purchase.model_stock_invoice_onshipping
 #: model:ir.model,name:stock.model_stock_invoice_onshipping
 msgid "Stock Invoice Onshipping"
-msgstr "Stock Invoice Onshipping"
+msgstr "Račun nakon isporuke"
 
 #. modules: training, account, mrp_repair, auction, share, project_long_term, product_images_olbs, hr, base, point_of_sale, anonymization, event, crm
 #: field:account.cashbox.line,ending_id:0
@@ -95116,7 +95103,7 @@ msgstr "Jezik 'en_US' se koristi kao osnovni jezik. Ne može se obrisati !"
 #. module: auction
 #: model:ir.model,name:auction.model_auction_lots_make_invoice
 msgid "Make invoice"
-msgstr "Make invoice"
+msgstr "Kreiraj račun"
 
 #. module: training
 #: view:training.participation.stakeholder.request:0
@@ -95242,7 +95229,7 @@ msgstr ""
 #: view:account.statement.from.invoice:0
 #: model:ir.actions.act_window,name:account_voucher.action_view_account_statement_from_invoice
 msgid "Import Invoices in Statement"
-msgstr "Import Invoices in Statement"
+msgstr "Uvezi račune na nalog"
 
 #. module: mrp
 #: field:mrp.production,move_prod_id:0
@@ -95366,7 +95353,7 @@ msgstr "The osv_memory field can only be compared with = and != operator."
 #. module: sale
 #: selection:sale.order,order_policy:0
 msgid "Invoice From The Picking"
-msgstr "Faktura iz odabira"
+msgstr "Račun na temelju izdatnica"
 
 #. module: crm
 #: selection:crm.lead2opportunity.partner,action:0
@@ -96363,7 +96350,7 @@ msgstr "Period2"
 #. module: purchase
 #: view:purchase.order.line:0
 msgid "Manual Invoices"
-msgstr "Manual Invoices"
+msgstr "Ručni računi"
 
 #. module: stock_planning
 #: field:stock.sale.forecast,analyzed_period1_id:0
@@ -96496,7 +96483,7 @@ msgstr "Nesigurno"
 #. module: dudtec_recursive_sale
 #: view:sale.order:0
 msgid "Related Invoices"
-msgstr "Related Invoices"
+msgstr "Vezani računi"
 
 #. module: account
 #: help:res.partner,property_account_payable:0
@@ -96792,8 +96779,7 @@ msgstr "Prodajna Analitika Upravljanja Distribucijom"
 #: help:base.setup.installer,account_analytic_plans:0
 msgid ""
 "Allows invoice lines to impact multiple analytic accounts simultaneously."
-msgstr ""
-"Allows invoice lines to impact multiple analytic accounts simultaneously."
+msgstr "Omogućuje knjiženje jedne stavke računa na više analitičkih konta."
 
 #. module: stock
 #: field:stock.invoice.onshipping,journal_id:0
@@ -97813,8 +97799,7 @@ msgstr ""
 #: model:process.transition,note:account.process_transition_invoiceimport0
 msgid ""
 "Import of the statement in the system from a supplier or customer invoice"
-msgstr ""
-"Import of the statement in the system from a supplier or customer invoice"
+msgstr "Uvoz naloga u sistem iz ulaznog ili izlaznog računa"
 
 #. module: sale
 #: code:addons/sale/sale.py:595
@@ -98203,7 +98188,7 @@ msgstr "Validate Account Move Lines"
 #. module: account
 #: model:process.transition,note:account.process_transition_reconcilepaid0
 msgid "As soon as the reconciliation is done, the invoice can be paid."
-msgstr "As soon as the reconciliation is done, the invoice can be paid."
+msgstr "Čim je obavljeno zatvaranje račun može biti plaćen."
 
 #. module: purchase
 #: model:ir.actions.act_window,name:purchase.action_purchase_order_by_user_all
