@@ -1,0 +1,103 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* training_images
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: training_images
+#: view:training.images:0
+msgid "Training Images"
+msgstr "Training Images"
+
+#. module: training_images
+#: field:training.images,base_image:0
+msgid "Base Image"
+msgstr "Base Image"
+
+#. module: training_images
+#: view:training.offer:0
+msgid "Notification Note"
+msgstr "Notification Note"
+
+#. module: training_images
+#: field:training.images,offer_id:0
+msgid "Offer"
+msgstr "Offer"
+
+#. module: training_images
+#: model:ir.model,name:training_images.model_training_offer
+msgid "training.offer"
+msgstr "training.offer"
+
+#. module: training_images
+#: view:training.images:0
+msgid "Image"
+msgstr "Slika"
+
+#. module: training_images
+#: model:ir.module.module,shortdesc:training_images.module_meta_information
+msgid "Training Image Gallery"
+msgstr "Training Image Gallery"
+
+#. module: training_images
+#: field:training.images,name:0
+msgid "Image Title"
+msgstr "Naslov slike"
+
+#. module: training_images
+#: model:ir.module.module,description:training_images.module_meta_information
+msgid "\n"
+"    This Module implements an Image Gallery for Training.\n"
+"    You can add images against every offer.\n"
+"\n"
+"    Code based product_images_olbs module by Sharoon Thomas, Open Labs Business Solutions\n"
+"    "
+msgstr "\n"
+"    This Module implements an Image Gallery for Training.\n"
+"    You can add images against every offer.\n"
+"\n"
+"    Code based product_images_olbs module by Sharoon Thomas, Open Labs Business Solutions\n"
+"    "
+
+#. module: training_images
+#: view:training.images:0
+#: field:training.images,comments:0
+msgid "Comments"
+msgstr "Komentari"
+
+#. module: training_images
+#: field:training.images,filename:0
+msgid "File Location"
+msgstr "File Location"
+
+#. module: training_images
+#: field:training.offer,image_ids:0
+msgid "Offer Images"
+msgstr "Offer Images"
+
+#. module: training_images
+#: view:training.offer:0
+msgid "Images"
+msgstr "Slike"
+
+#. module: training_images
+#: help:training.images,base_image:0
+msgid "Main Image of Offer"
+msgstr "Main Image of Offer"
+
+#. module: training_images
+#: model:ir.model,name:training_images.model_training_images
+msgid "Offer Image gallery"
+msgstr "Offer Image gallery"
+

@@ -1,0 +1,325 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* fetchmail
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: fetchmail
+#: constraint:email.server:0
+msgid "Warning! Record for selected Model can not be created\n"
+"Please choose valid Model"
+msgstr "Warning! Record for selected Model can not be created\n"
+"Please choose valid Model"
+
+#. module: fetchmail
+#: selection:email.server,state:0
+msgid "Confirmed"
+msgstr "Potvrđeno"
+
+#. module: fetchmail
+#: view:email.server:0
+msgid "Confirm"
+msgstr "Potvrdi"
+
+#. module: fetchmail
+#: selection:email.server,type:0
+#: selection:mailgate.message,server_type:0
+msgid "POP Server"
+msgstr "POP poslužitelj"
+
+#. module: fetchmail
+#: help:email.server,user_id:0
+msgid "This is the user that runs the cron"
+msgstr "This is the user that runs the cron"
+
+#. module: fetchmail
+#: view:email.server:0
+msgid "Group By..."
+msgstr "Grupiraj po..."
+
+#. module: fetchmail
+#: view:email.server:0
+#: field:email.server,state:0
+msgid "State"
+msgstr "Stanje"
+
+#. module: fetchmail
+#: view:email.server:0
+msgid "POP"
+msgstr "POP"
+
+#. module: fetchmail
+#: help:email.server,object_id:0
+msgid "Whenever an email arrives, it automatically creates the object of this type with all the information attached."
+msgstr "Whenever an email arrives, it automatically creates the object of this type with all the information attached."
+
+#. module: fetchmail
+#: selection:email.server,state:0
+msgid "Not Confirmed"
+msgstr "Not Confirmed"
+
+#. module: fetchmail
+#: view:email.server:0
+msgid "Server type IMAP."
+msgstr "Server type IMAP."
+
+#. module: fetchmail
+#: view:email.server:0
+msgid "Type"
+msgstr "Vrsta"
+
+#. module: fetchmail
+#: view:email.server:0
+msgid "POP/IMAP Servers"
+msgstr "POP/IMAP Servers"
+
+#. module: fetchmail
+#: model:ir.module.module,shortdesc:fetchmail.module_meta_information
+msgid "Fetchmail Server"
+msgstr "Fetchmail Server"
+
+#. module: fetchmail
+#: field:email.server,object_id:0
+msgid "Object To Create"
+msgstr "Object To Create"
+
+#. module: fetchmail
+#: view:email.server:0
+#: field:email.server,note:0
+msgid "Description"
+msgstr "Opis"
+
+#. module: fetchmail
+#: field:email.server,priority:0
+msgid "Server Priority"
+msgstr "Server Priority"
+
+#. module: fetchmail
+#: field:email.server,attach:0
+msgid "Add Attachments ?"
+msgstr "Add Attachments ?"
+
+#. module: fetchmail
+#: view:email.server:0
+msgid "# of emails"
+msgstr "# of emails"
+
+#. module: fetchmail
+#: field:email.server,user:0
+msgid "User Name"
+msgstr "Korisničko ime"
+
+#. module: fetchmail
+#: field:email.server,user_id:0
+msgid "User"
+msgstr "Korisnik"
+
+#. module: fetchmail
+#: field:email.server,date:0
+msgid "Date"
+msgstr "Datum"
+
+#. module: fetchmail
+#: selection:email.server,state:0
+msgid "Waiting for Verification"
+msgstr "Waiting for Verification"
+
+#. module: fetchmail
+#: field:email.server,password:0
+msgid "Password"
+msgstr "Lozinka"
+
+#. module: fetchmail
+#: model:ir.actions.act_window,name:fetchmail.view_email_server_form_installer
+msgid "Setup Your Mail server"
+msgstr "Setup Your Mail server"
+
+#. module: fetchmail
+#: model:ir.actions.act_window,name:fetchmail.act_server_history
+#: view:mailgate.message:0
+msgid "Emails"
+msgstr "E-pošta"
+
+#. module: fetchmail
+#: view:email.server:0
+msgid "Search Email Servers"
+msgstr "Search Email Servers"
+
+#. module: fetchmail
+#: view:email.server:0
+msgid "Server & Login"
+msgstr "Server & Login"
+
+#. module: fetchmail
+#: view:email.server:0
+msgid "Auto Reply?"
+msgstr "Auto Reply?"
+
+#. module: fetchmail
+#: field:email.server,name:0
+msgid "Name"
+msgstr "Naziv"
+
+#. module: fetchmail
+#: model:ir.model,name:fetchmail.model_mailgate_message
+msgid "Mailgateway Message"
+msgstr "Mailgateway Message"
+
+#. module: fetchmail
+#: view:email.server:0
+msgid "Set to Draft"
+msgstr "Postavi na nacrt"
+
+#. module: fetchmail
+#: field:email.server,message_ids:0
+#: model:ir.actions.act_window,name:fetchmail.action_view_mail_message_emails
+msgid "Messages"
+msgstr "Messages"
+
+#. module: fetchmail
+#: model:ir.actions.act_window,name:fetchmail.action_email_server_tree
+#: model:ir.ui.menu,name:fetchmail.menu_action_fetchmail_server_tree
+msgid "Email Servers"
+msgstr "Email Servers"
+
+#. module: fetchmail
+#: field:email.server,server:0
+msgid "Server"
+msgstr "Poslužitelj"
+
+#. module: fetchmail
+#: field:email.server,active:0
+msgid "Active"
+msgstr "Aktivan"
+
+#. module: fetchmail
+#: model:ir.module.module,description:fetchmail.module_meta_information
+msgid "\n"
+"Fetch email from POP / IMAP servers.\n"
+"====================================\n"
+"\n"
+"    * Supports SSL\n"
+"    * Integrated with all modules\n"
+"    * Automatically receive email\n"
+"    * Email-based record operations (Add, Update)\n"
+"    "
+msgstr "\n"
+"Fetch email from POP / IMAP servers.\n"
+"====================================\n"
+"\n"
+"    * Supports SSL\n"
+"    * Integrated with all modules\n"
+"    * Automatically receive email\n"
+"    * Email-based record operations (Add, Update)\n"
+"    "
+
+#. module: fetchmail
+#: field:email.server,is_ssl:0
+msgid "SSL ?"
+msgstr "SSL ?"
+
+#. module: fetchmail
+#: selection:email.server,type:0
+#: selection:mailgate.message,server_type:0
+msgid "IMAP Server"
+msgstr "IMAP Server"
+
+#. module: fetchmail
+#: view:email.server:0
+msgid "IMAP"
+msgstr "IMAP"
+
+#. module: fetchmail
+#: view:email.server:0
+#: model:ir.model,name:fetchmail.model_email_server
+msgid "POP/IMAP Server"
+msgstr "POP/IMAP Server"
+
+#. module: fetchmail
+#: view:email.server:0
+msgid "Server type POP."
+msgstr "Server type POP."
+
+#. module: fetchmail
+#: constraint:email.server:0
+msgid "Warning! Can't have duplicate server configuration!"
+msgstr "Warning! Can't have duplicate server configuration!"
+
+#. module: fetchmail
+#: field:email.server,type:0
+#: field:mailgate.message,server_type:0
+msgid "Server Type"
+msgstr "Server Type"
+
+#. module: fetchmail
+#: view:email.server:0
+msgid "Login Information"
+msgstr "Login Information"
+
+#. module: fetchmail
+#: view:email.server:0
+msgid "Server Information"
+msgstr "Server Information"
+
+#. module: fetchmail
+#: help:email.server,attach:0
+msgid "Fetches mail with attachments if true."
+msgstr "Fetches mail with attachments if true."
+
+#. module: fetchmail
+#: view:email.server:0
+msgid "If SSL required."
+msgstr "If SSL required."
+
+#. module: fetchmail
+#: field:email.server,port:0
+msgid "Port"
+msgstr "Port"
+
+#. module: fetchmail
+#: view:email.server:0
+msgid "SSL"
+msgstr "SSL"
+
+#. module: fetchmail
+#: view:email.server:0
+msgid "Process Parameter"
+msgstr "Process Parameter"
+
+#. module: fetchmail
+#: help:email.server,action_id:0
+msgid "An Email Server Action. It will be run whenever an e-mail is fetched from server."
+msgstr "An Email Server Action. It will be run whenever an e-mail is fetched from server."
+
+#. module: fetchmail
+#: help:email.server,priority:0
+msgid "Priority between 0 to 10, select define the order of Processing"
+msgstr "Priority between 0 to 10, select define the order of Processing"
+
+#. module: fetchmail
+#: field:email.server,action_id:0
+msgid "Email Server Action"
+msgstr "Email Server Action"
+
+#. module: fetchmail
+#: view:mailgate.message:0
+#: field:mailgate.message,server_id:0
+msgid "Mail Server"
+msgstr "Mail Server"
+
+#. module: fetchmail
+#: view:email.server:0
+msgid "Fetch Emails"
+msgstr "Fetch Emails"
+

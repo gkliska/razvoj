@@ -1,0 +1,301 @@
+.calMonth,
+.calWeek {
+    position: relative;
+}
+
+.calMonth td,
+.calWeek td {
+    padding: 0;
+}
+
+.calDayHeader {
+    height: 21px;
+
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    font-weight: bold;
+    font-size: 10px;
+    padding-top: 4px;
+}
+
+.calWeek a {
+    text-decoration: none;
+    color: black;
+}
+
+#calHeaderSect {
+    height: 21px;
+    border-top: 1px solid #DBDBDB;
+    
+    text-shadow: 0 1px 0 #FFFFFF;
+    text-transform: uppercase;
+}
+
+#calHeaderSect a,
+#calTimeCol {
+    color: #8D8D8D;
+}
+
+#calHeaderSect,
+#calAllDaySect {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 21px;
+    background-color: #F4F4F4;
+}
+
+#calAllDaySect {
+    border-top: 1px solid #FFF;
+}
+
+#calAllDaySect .droppable {
+    background-color: #BFE4FF;
+}
+
+.calWeek #calHeaderSect,
+.calWeek #calAllDaySect {
+    margin-left: 70px;
+    margin-right: 16px;
+}
+
+.calMonth #calHeaderSect {
+    margin-left: 35px;
+}
+
+#calBodySect {
+    position: relative;
+}
+
+.calWeek #calBodySect {
+    height: 480px;
+    overflow: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.calWeek .calDayHeader,
+.calWeek .calVRule {
+    border-left: 1px solid #FFF;
+}
+
+.calWeek .calVRule {
+    position: absolute;
+    top: 0;
+    width: 1px;
+}
+
+.calWeek .calHRule {
+    height: 19px;
+    background-color: #FFFFFF;
+    border-top: 1px dotted #F0F0F0;
+}
+
+.calTimeCol {
+    width: 70px;
+    font-size: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.calTimeCol div {
+    height: 39px;
+    padding-right: 2px;
+    text-align: right;
+}
+
+.calTimeCol div,
+.calWeek .calHRule.even {
+    border-top: 1px solid #F0F0F0;
+}
+
+.calEvent,
+.calEventNew {
+    position: absolute;
+    z-index: 100;
+    padding: 2px;
+    font-weight: 600;
+    line-height: 1em;
+    white-space: pre-wrap;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+    background: url("../images/schedule-a-highlite.png") repeat-x scroll 0 0 #FFF;
+    border: 1px solid #FFF;
+    color: #FFF;
+}
+
+.calWeek #calBodySect .calEvent,
+.calWeek #calBodySect .calEventNew {
+    padding: 0;
+    margin: 0;
+
+    font-size: 10px;
+    color: #FFF;
+    border: 1px solid black;
+    cursor: default;
+}
+
+.calEventTitle {
+    color: #000;
+    font-weight: bold;
+    padding: 2px;
+    white-space: pre-wrap;
+    cursor: move;
+}
+
+.calEventDesc {
+    padding: 2px;
+    vertical-align: top;
+    font-size: 10px;
+}
+
+.calEventGrip {
+    position: absolute;
+    padding: 0;
+
+    left: 0;
+    bottom: 1px;
+
+    width: 100%;
+    height: 5px;
+
+    background: url("../images/calGrip.gif") no-repeat scroll center bottom;
+    cursor: s-resize;
+}
+
+/**************************************/
+
+.calMonthWeek {
+    position: relative;
+    width: 100%;
+    height: 134px;
+}
+
+.calMonth .calTimeCol {
+    width: 35px;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.calMonth .calTimeCol div {
+    border-top: 1px solid #E9E9E9;
+}
+
+.calMonth .calGrid {
+    position: relative;
+    overflow: hidden;
+}
+
+.calMonthDay {
+    vertical-align: top;
+
+    background-color: white;
+    border-left: 1px solid #E9E9E9;
+
+    font-size: 10px;
+}
+
+.calMonthDay.dayOff {
+    background-color: #F9F9F9;
+}
+
+.calMonthDay.dayThis {
+    background-color: #FFFFDF;
+}
+
+.calMonthDayTitle {
+    height: 16px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #F4F4F4;
+    border-top: 1px solid #E9E9E9;
+    color: #8D8D8D;
+    text-align: center;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.calMonthDay.dayThis .calMonthDayTitle {
+    background-color: #E6E6A1;
+}
+
+#calAllDaySect .droppable,
+.calMonthDay.droppable {
+    background-color: #BFE4FF;
+}
+
+.calMonthDay.droppable .calMonthDayTitle{
+    background-color: #80C9FF;
+}
+
+.calMonthDay .calEventInfo {
+    position: absolute;
+    bottom: 1px;
+}
+
+.calMonthDay .calEventInfo,
+.calMonthDay .calEventInfo a {
+    color: #000;
+    font-size: .9em;
+    font-weight: 600;
+    text-shadow: 0 1px 0 #FFF;
+    padding-left: 2px;
+}
+
+.calMonthDay .calEventInfo a {
+    text-decoration: none;
+}
+
+/**
+ * Info Dialog
+ */
+
+#calInfoLayer {
+    display: none;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 199;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: gray;
+    opacity: 0.3;
+}
+
+#calInfoBox {
+    position: absolute;
+    z-index: 200;
+
+    background-color: white;
+    border: 2px solid #696969;
+}
+
+#calInfoBox .calInfoTitle {
+    padding: 2px;
+    background-color: #696969;
+    color: white;
+    font-weight: bold;
+}
+
+#calInfoBox .calInfoDesc {
+    padding: 2px;
+}
+.calInfoDesc {
+ border-bottom: 2px solid #696969;
+}
+
+#calInfoBox .calInfoButtons {
+    position: absolute;
+    bottom: 0;
+    padding: 2px;
+    border-top: 2px solid #696969;
+}
+

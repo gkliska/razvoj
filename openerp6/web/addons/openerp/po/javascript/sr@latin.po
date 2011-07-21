@@ -1,0 +1,107 @@
+# Serbian latin translation for openobject-client-web
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the openobject-client-web package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-client-web\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2011-03-18 11:58+0100\n"
+"PO-Revision-Date: 2011-02-08 11:59+0000\n"
+"Last-Translator: Milan Milosevic <Unknown>\n"
+"Language-Team: Serbian latin <sr@latin@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-07-12 04:35+0000\n"
+"X-Generator: Launchpad (build 13168)\n"
+
+#: static/javascript/form.js:92
+#, python-format
+msgid "You selected to open %(tabs)s tabs - do you want to continue?"
+msgstr "Izabrali ste otvaranje %(tabs)s taba - da li želite da nastavite?"
+
+#: static/javascript/form.js:185
+msgid "Invalid form, correct red fields."
+msgstr "Netačan obrazac, ispravite crvena polja."
+
+#: static/javascript/form.js:220
+msgid "Do you really want to delete this record?"
+msgstr ""
+
+#: static/javascript/form.js:988
+msgid "You must select one or several records !"
+msgstr "Morate da odaberete jedan ili nekoliko zapisa !"
+
+#: static/javascript/form.js:995
+msgid "You must save this record to perform the action !"
+msgstr ""
+
+#: static/javascript/form.js:1155
+msgid "Do you really want to delete the attachment"
+msgstr "Da li zaista želite da izbrišete prilog?"
+
+#: static/javascript/form.js:1189
+msgid "No record selected ! You can only attach to existing record."
+msgstr "Nije izabran zapis ! Možete dodati prilog samo uz postojeći zapis."
+
+#: static/javascript/form.js:1248
+msgid "OpenERP - Error"
+msgstr "OpenERP - Greška"
+
+#: static/javascript/form.js:1319
+msgid ""
+"Warning, the record has been modified,\n"
+"your changes will be discarded."
+msgstr ""
+"Upozorenje, zapis je izmenjen,\n"
+"izmene će biti poništene."
+
+#: static/javascript/listgrid.js:543 static/javascript/o2m.js:123
+msgid "To edit Record, please first save it."
+msgstr "Da biste izmenili Zapis, prvo ga morate sačuvati."
+
+#: static/javascript/listgrid.js:651
+msgid "Do you really want to delete selected record(s) ?"
+msgstr "Da li zaista želite da izbrišete izabran(e) zapis(e) ?"
+
+#: static/javascript/m2o.js:525
+msgid "error in display::"
+msgstr "greška u prikazu::"
+
+#: static/javascript/o2m.js:67
+msgid "Do you really want to delete record ?"
+msgstr "Da li zaista želite da izbrišete zapis ?"
+
+#: static/javascript/search.js:285
+msgid "Invalid Value"
+msgstr ""
+
+#: static/javascript/viewed.js:63
+msgid "Do you really want to remove this node?"
+msgstr "Da li zaista želite da uklonite ovaj čvor ?"
+
+#: static/javascript/viewed.js:329
+msgid "Do you really wants to create an inherited view here?"
+msgstr "Da li zaista želite da napravite nasleđeni prikaz"
+
+#: static/javascript/viewed.js:337
+msgid "No Record Selected"
+msgstr ""
+
+#: static/javascript/openerp/openerp.base.js:127
+msgid "doLoadingSuccess: Cannot parse JSON"
+msgstr "Učitavanje uspešno: ne može se analizirati JSON"
+
+#: static/javascript/openerp/openerp.base.js:335
+msgid "Loading"
+msgstr "Učitavanje"
+
+#: static/javascript/openerp/openerp.ui.tips.js:51
+msgid "Object"
+msgstr "Stavka"
+
+#: static/javascript/openerp/openerp.ui.tips.js:52
+msgid "Field"
+msgstr "Polje"

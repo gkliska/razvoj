@@ -1,0 +1,171 @@
+.calGantt {
+    background-color: #FFFFFF;
+    padding: 8px;
+    padding-top: 4px;
+    position: relative;
+}
+
+.calGantt #calHeaderC {
+    height: 36px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 17px;
+    margin-bottom: 4px;
+    border: 1px inset white;
+    font-size: 1em;
+    font-weight: 600;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.calGantt .calHeader {
+    text-align: center;
+    position: relative;
+    height: 18px;
+}
+
+.calGantt .calHeader .calTitle {
+    border-left: 1px dotted #b0b0b0;
+    padding: 2px 0px;
+}
+
+.calGantt .calHeader .calSubTitle {
+    border-top: 1px dotted #b0b0b0;
+    border-left: 1px dotted #b0b0b0;
+
+    font-size: .9em;
+    
+    padding: 2px 0px;
+}
+
+#Calendar.gantt-view p.side {
+    padding: 2px 8px 0;
+}
+#Calendar.gantt-view ul.head li.notab {
+    padding: 0;
+    position: relative;
+    top: -4px;
+}
+
+.calGantt #calListC,
+.calGantt #calGridC {
+    height: 500px;
+    border: 1px inset #FFF;
+    background-color: #FFF;
+    overflow: scroll;
+    position: relative;
+}
+
+.calGantt #calListC {
+    margin-right: 4px;
+    overflow-y: hidden;
+    width: 200px;
+}
+
+.calGantt .calGrid {
+    position: relative;
+}
+
+.calGantt .calColumn {
+
+    height: 100%;
+
+    position: absolute;
+    vertical-align: top;
+
+    background-color: white;
+    border-left: 1px dotted #C0C0C0;
+
+    font-size: 10px;
+}
+
+.calGantt .calColumn.dayThis {
+    background-color: #FFFFDF;
+}
+
+.calGantt .calVRule {
+    position: absolute;
+    top: 0pt;
+    width: 1px;
+    height: 100%;
+
+    border-left: 1px dotted #E0E0E0;
+}
+
+.calGantt #calGroupC {
+    position: absolute;
+    padding-bottom: 10px;
+}
+
+.calGantt .calGroup {
+    position: relative;
+    overflow: hidden;
+}
+
+.calGantt .calBar,
+.calGantt .calEvent {
+    position: relative;
+    height: 14px;
+    margin-top: 1px;
+    width: 0;
+    padding: 0;
+}
+
+.calGantt .calBar div {
+    background: url("../images/schedule-a-highlite.png") repeat-x scroll 0 0 #C9C9C9;
+}
+
+.calGantt .calBar {
+    border: 1px solid #6c6c6c;
+}
+
+.calGantt .calGroupLabel,
+.calGantt .calEventLabel {
+    height: 16px;
+    padding-top: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.calGantt .calGroupLabel:hover,
+.calGantt .calEventLabel:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.calGantt .calEventLabel {
+    padding-left: 25px;
+}
+
+.calGantt .calGroupLabel {
+    height: 16px;
+    font-weight: bold;
+}
+
+.calGantt .calEventGrip2 {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    right: 0px;
+    cursor: w-resize;
+}
+
+td#calOptions {
+	vertical-align: top;
+}
+
+td#calOptions dd {
+	padding-left: 0;
+}
+.calGantt .grip {
+    background:#EEEEEE url(../images/vertical-grip.png) no-repeat scroll center 2px;
+    width: 5px;
+    height: 27px;
+    cursor:e-resize;
+}
+/**
+ * vim: sts=4 st=4 et
+ *
+ */

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE martif PUBLIC 'ISO 12200:1999A//DTD MARTIF core (DXFcdV04)//EN' 'TBXcdv04.dtd'>
+<martif type="TBX" xml:lang="en_US">
+    <text>
+        <body>
+        <termEntry id="-0">
+        <langSet xml:lang="en_US">
+          <ntig>
+            <termGrp>
+              <term>employee</term>
+            </termGrp>
+          </ntig>
+        </langSet>
+        <langSet xml:lang="hr">
+          <ntig>
+            <termGrp>
+              <term>radnik</term>
+            </termGrp>
+          </ntig>
+        </langSet>
+        <langSet xml:lang="en_US">
+          <ntig>
+            <termGrp>
+              <term></term>
+            </termGrp>
+          </ntig>
+        </langSet>
+      </termEntry>
+      <termEntry id="-1">
+        <langSet xml:lang="en_US">
+          <ntig>
+            <termGrp>
+              <term></term>
+            </termGrp>
+          </ntig>
+        </langSet>
+        <langSet xml:lang="hr">
+          <ntig>
+            <termGrp>
+              <term></term>
+            </termGrp>
+          </ntig>
+        </langSet>
+      </termEntry>
+    </body>
+    </text>
+</martif>

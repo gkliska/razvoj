@@ -1,0 +1,61 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* reverse_bom
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: reverse_bom
+#: model:ir.module.module,description:reverse_bom.module_meta_information
+msgid "\n"
+"    Allow to inverse BOM component in Open ERP.\n"
+"\n"
+"    Features:\n"
+"    "
+msgstr "\n"
+"    Allow to inverse BOM component in Open ERP.\n"
+"\n"
+"    Features:\n"
+"    "
+
+#. module: reverse_bom
+#: view:mrp.reversed.bom:0
+msgid "Do you want to Reverse this BOM?"
+msgstr "Do you want to Reverse this BOM?"
+
+#. module: reverse_bom
+#: view:mrp.reversed.bom:0
+msgid "Cancel"
+msgstr "Odustani"
+
+#. module: reverse_bom
+#: view:mrp.reversed.bom:0
+msgid "Yes"
+msgstr "Da"
+
+#. module: reverse_bom
+#: model:ir.actions.act_window,name:reverse_bom.action_reversebom
+#: view:mrp.reversed.bom:0
+msgid "Reverse BOM"
+msgstr "Reverse BOM"
+
+#. module: reverse_bom
+#: model:ir.model,name:reverse_bom.model_mrp_reversed_bom
+msgid "Reversed Bom"
+msgstr "Reversed Bom"
+
+#. module: reverse_bom
+#: model:ir.module.module,shortdesc:reverse_bom.module_meta_information
+msgid "Create reversed BoM"
+msgstr "Create reversed BoM"
+

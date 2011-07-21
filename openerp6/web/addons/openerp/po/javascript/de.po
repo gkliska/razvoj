@@ -1,0 +1,114 @@
+# German translations for PROJECT.
+# Copyright (C) 2010 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2011-03-18 11:58+0100\n"
+"PO-Revision-Date: 2011-01-11 10:16+0000\n"
+"Last-Translator: Ferdinand-camptocamp <Unknown>\n"
+"Language-Team: de <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-07-12 04:35+0000\n"
+"X-Generator: Launchpad (build 13168)\n"
+"Generated-By: Babel None\n"
+
+#: static/javascript/form.js:92
+#, python-format
+msgid "You selected to open %(tabs)s tabs - do you want to continue?"
+msgstr ""
+"Sie haben %(tabs)s Tabs zum Öffnen ausgewählt - möchten Sie fortfahren?"
+
+#: static/javascript/form.js:185
+msgid "Invalid form, correct red fields."
+msgstr "Ungültiges Formular - bitte korrigieren Sie die roten Felder."
+
+#: static/javascript/form.js:220
+msgid "Do you really want to delete this record?"
+msgstr "Möchten Sie diesen Datensatz wirklich löschen?"
+
+#: static/javascript/form.js:988
+msgid "You must select one or several records !"
+msgstr "Sie müssen einen oder mehrere Datensätze auswählen !"
+
+#: static/javascript/form.js:995
+msgid "You must save this record to perform the action !"
+msgstr "Sie müssen diesen Datensatz sichern, um die Aktion auszuführen."
+
+#: static/javascript/form.js:1155
+msgid "Do you really want to delete the attachment"
+msgstr "Möchten Sie den Dateianhang wirklich löschen?"
+
+#: static/javascript/form.js:1189
+msgid "No record selected ! You can only attach to existing record."
+msgstr ""
+"Kein Datensatz ausgewählt! Anhänge können nur für bestehende Datensätze "
+"definiert werden."
+
+#: static/javascript/form.js:1248
+msgid "OpenERP - Error"
+msgstr "OpenERP - Fehler"
+
+#: static/javascript/form.js:1319
+msgid ""
+"Warning, the record has been modified,\n"
+"your changes will be discarded."
+msgstr ""
+"Warnung, Dieser Datensatz wurde verändert, \n"
+"Ihre Veränderungen gehen verloren."
+
+#: static/javascript/listgrid.js:543 static/javascript/o2m.js:123
+msgid "To edit Record, please first save it."
+msgstr "Um den Eintrag zu barbeiten, bitte erst speichern."
+
+#: static/javascript/listgrid.js:651
+msgid "Do you really want to delete selected record(s) ?"
+msgstr "Möchten Sie wirklich die ausgewählten Daten(sätze) löschen?"
+
+#: static/javascript/m2o.js:525
+msgid "error in display::"
+msgstr "Fehler in der Anzeige"
+
+#: static/javascript/o2m.js:67
+msgid "Do you really want to delete record ?"
+msgstr "Möchten Sie wirklich den ausgewählten Datensatz löschen?"
+
+#: static/javascript/search.js:285
+msgid "Invalid Value"
+msgstr "Ungültiger Wert"
+
+#: static/javascript/viewed.js:63
+msgid "Do you really want to remove this node?"
+msgstr "Möchten Sie diesen Knoten wirklich entfernen?"
+
+#: static/javascript/viewed.js:329
+msgid "Do you really wants to create an inherited view here?"
+msgstr "Möchten Sie wirklich eine vererbte Ansicht anlegen?"
+
+#: static/javascript/viewed.js:337
+msgid "No Record Selected"
+msgstr ""
+
+#: static/javascript/openerp/openerp.base.js:127
+msgid "doLoadingSuccess: Cannot parse JSON"
+msgstr "doLoadingSuccess: Kann JSON nicht parsen"
+
+#: static/javascript/openerp/openerp.base.js:335
+msgid "Loading"
+msgstr "Lade..."
+
+#: static/javascript/openerp/openerp.ui.tips.js:51
+msgid "Object"
+msgstr "Objekt"
+
+#: static/javascript/openerp/openerp.ui.tips.js:52
+msgid "Field"
+msgstr "Feld"
+
+#~ msgid "You must select at least one record."
+#~ msgstr "Sie müssen mindestens einen Datensatz auswählen."

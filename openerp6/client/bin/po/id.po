@@ -1,0 +1,2760 @@
+# Indonesian translation for openobject-client
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the openobject-client package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-client\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-12-13 18:11+0100\n"
+"PO-Revision-Date: 2010-10-25 18:57+0000\n"
+"Last-Translator: suwidi@dev.web.id <Unknown>\n"
+"Language-Team: Indonesian <id@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-07-16 04:54+0000\n"
+"X-Generator: Launchpad (build 13405)\n"
+"Language: id\n"
+
+#: bin/plugins/__init__.py:27
+msgid "Print Workflow"
+msgstr "Cetak alur kerja"
+
+#: bin/plugins/__init__.py:28
+msgid "Print Workflow (with subflows)"
+msgstr "Cetak alur kerja (Kompleks)"
+
+#: bin/plugins/__init__.py:40
+msgid "No available plugin for this resource !"
+msgstr "Tidak ada plugin yang tersedia untuk resource ini !"
+
+#: bin/plugins/__init__.py:42
+msgid "Choose a Plugin"
+msgstr "Pilih Plugin"
+
+#: bin/modules/action/wizard.py:150 bin/modules/gui/main.py:188 bin/rpc.py:156
+msgid "Connection refused !"
+msgstr "Koneksi ditolak!"
+
+#: bin/modules/action/wizard.py:162 bin/modules/action/wizard.py:168
+#: bin/modules/action/wizard.py:170 bin/modules/gui/main.py:196
+#: bin/modules/gui/main.py:202 bin/rpc.py:202 bin/rpc.py:204
+msgid "Application Error"
+msgstr "Kesalahan Aplikasi"
+
+#: bin/modules/action/wizard.py:170 bin/rpc.py:204
+msgid "View details"
+msgstr "Lihat detail"
+
+#: bin/modules/action/main.py:48
+msgid "Nothing to print!"
+msgstr "Tidak ada yang dicetak!"
+
+#: bin/modules/action/main.py:66
+msgid "Printing aborted, too long delay !"
+msgstr "Cetak gagal, terlalu lama menunggu !"
+
+#: bin/modules/action/main.py:195
+msgid "Select your action"
+msgstr "Pilih tidakan anda"
+
+#: bin/modules/gui/main.py:89 bin/modules/gui/main.py:342
+msgid "Could not connect to server !"
+msgstr "Tidak dapat menghubungi server !"
+
+#: bin/modules/gui/main.py:93 bin/openerp.glade:72 bin/openerp.glade:6278
+#: bin/openerp.glade:6524 bin/openerp.glade:6847 bin/openerp.glade:7508
+msgid "Server:"
+msgstr "Server:"
+
+#: bin/modules/gui/main.py:104 bin/openerp.glade:98 bin/openerp.glade:6560
+#: bin/openerp.glade:6804 bin/openerp.glade:7103 bin/openerp.glade:7465
+msgid "Change"
+msgstr "Ubah"
+
+#: bin/modules/gui/main.py:111
+msgid "Super Administrator Password:"
+msgstr "Password Super Administrator:"
+
+#: bin/modules/gui/main.py:194
+msgid "Bad Super Administrator Password"
+msgstr ""
+
+#: bin/modules/gui/main.py:218
+msgid "Migration Scripts"
+msgstr "Scrip untuk migrasi"
+
+#: bin/modules/gui/main.py:221
+msgid "Contract ID:"
+msgstr "ID Kontrak"
+
+#: bin/modules/gui/main.py:227
+msgid "Contract Password:"
+msgstr "Kata kunci"
+
+#: bin/modules/gui/main.py:242
+msgid "You already have the latest version"
+msgstr "Anda sudah menggunakan versi terbaru"
+
+#: bin/modules/gui/main.py:247
+msgid "The following updates are available:"
+msgstr "Vesri terbaru tersedia adalah:"
+
+#: bin/modules/gui/main.py:259
+msgid "You can now migrate your databases."
+msgstr "Andan dapat migrasi database."
+
+#: bin/modules/gui/main.py:264
+msgid "Migrate Database"
+msgstr "Migrasi Database"
+
+#: bin/modules/gui/main.py:281
+msgid "Database"
+msgstr ""
+
+#: bin/modules/gui/main.py:293
+msgid "Your database has been upgraded."
+msgstr "Database sukses termigrasi"
+
+#: bin/modules/gui/main.py:295
+msgid "Your databases have been upgraded."
+msgstr "Database sukses termigrasi"
+
+#: bin/modules/gui/main.py:297
+msgid "You have not selected a database"
+msgstr ""
+
+#: bin/modules/gui/main.py:361
+msgid "No database found, you must create one !"
+msgstr "Tidak menemukan database, anda harus membuat database baru !"
+
+#: bin/modules/gui/main.py:469
+msgid "Unknown"
+msgstr "Tak dikenal"
+
+#: bin/modules/gui/main.py:474
+#, python-format
+msgid ""
+"The versions of the server (%s) and the client (%s) missmatch. The client "
+"may not work properly. Use it at your own risks."
+msgstr ""
+"Versi server (%s) dan klien (%s) tidak sesuai. Klien mungkin tidak bekerja "
+"secara benar. Anda menanggung resikonya."
+
+#: bin/modules/gui/main.py:610
+msgid "Sorry,'"
+msgstr "Maar,'"
+
+#: bin/modules/gui/main.py:610 bin/modules/gui/main.py:613
+msgid "Bad database name !"
+msgstr "Nama database tidak benar"
+
+#: bin/modules/gui/main.py:613
+msgid ""
+"The database name must contain only normal characters or \"_\".\n"
+"You must avoid all accents, space or special characters."
+msgstr ""
+"Nama basisdata hanya boleh terdiri atas karakter normal atau \"_\"\n"
+"Anda harus menghidari segala aksen, spasi atau karakter khusus"
+
+#: bin/modules/gui/main.py:647 bin/modules/gui/main.py:649
+#: bin/modules/gui/main.py:651
+msgid "Could not create database."
+msgstr "Tidak dapat membuat database"
+
+#: bin/modules/gui/main.py:647
+msgid "Database already exists !"
+msgstr "Database sudah ada !"
+
+#: bin/modules/gui/main.py:649 bin/modules/gui/main.py:1383
+#: bin/modules/gui/main.py:1403 bin/modules/gui/main.py:1482
+msgid "Bad database administrator password !"
+msgstr "Kata kunci adaministrator salah"
+
+#: bin/modules/gui/main.py:651 bin/modules/gui/main.py:658
+msgid "Error during database creation !"
+msgstr "Galat saat pembuataan database !"
+
+#: bin/modules/gui/main.py:658
+msgid ""
+"The server crashed during installation.\n"
+"We suggest you to drop this database."
+msgstr ""
+"Server gagal pada saat instalasi\n"
+"Disarankan anda untuk membuang database ini"
+
+#: bin/modules/gui/main.py:704 bin/modules/gui/main.py:1078
+msgid "Press Ctrl+O to login"
+msgstr "Tekan Ctrl+O untuk login"
+
+#: bin/modules/gui/main.py:881
+msgid "Edit"
+msgstr "Sunting"
+
+#: bin/modules/gui/main.py:980
+#, python-format
+msgid "%s"
+msgstr ""
+
+#: bin/modules/gui/main.py:982
+msgid "No Company"
+msgstr ""
+
+#: bin/modules/gui/main.py:995
+#, python-format
+msgid "%s request(s)"
+msgstr "%s request(s)"
+
+#: bin/modules/gui/main.py:997
+msgid "No request"
+msgstr "Tidak ada pesan"
+
+#: bin/modules/gui/main.py:999
+#, python-format
+msgid " - %s request(s) sent"
+msgstr ""
+
+#: bin/modules/gui/main.py:1037
+msgid ""
+"Please double-check the database name or contact your administrator to "
+"verify the database status."
+msgstr ""
+
+#: bin/modules/gui/main.py:1037
+msgid "Database cannot be accessed or does not exist"
+msgstr ""
+
+#: bin/modules/gui/main.py:1041
+msgid ""
+"Connection error !\n"
+"Unable to connect to the server !"
+msgstr ""
+"Koneksi bermasalah !\n"
+"Tidak bisa kontak server !"
+
+#: bin/modules/gui/main.py:1043
+msgid ""
+"Authentication error !\n"
+"Bad Username or Password !"
+msgstr ""
+"Galat !\n"
+"Username atau Password tidak cocok !"
+
+#: bin/modules/gui/main.py:1056
+#, python-format
+msgid "OpenERP - %s"
+msgstr ""
+
+#: bin/modules/gui/main.py:1076
+msgid "Not logged !"
+msgstr "Anda belum login!"
+
+#: bin/modules/gui/main.py:1085 bin/widget/view/form_gtk/one2many_list.py:52
+#: bin/openerp.glade:6126
+msgid "OpenERP"
+msgstr ""
+
+#: bin/modules/gui/main.py:1159
+msgid ""
+"You can not log into the system !\n"
+"Ask the administrator to verify\n"
+"you have an action defined for your user."
+msgstr ""
+"Anda tidak bisa login !\n"
+"Mintalah kepada administrator Anda."
+
+#: bin/modules/gui/main.py:1191 bin/modules/gui/main.py:1198
+msgid "Do you really want to quit ?"
+msgstr "Yakin ingin keluar ?"
+
+#: bin/modules/gui/main.py:1262
+#, python-format
+msgid "Attachments (%d)"
+msgstr "Lampiran (%d)"
+
+#: bin/modules/gui/main.py:1275
+msgid "Attachments"
+msgstr "Lampiran"
+
+#: bin/modules/gui/main.py:1374
+msgid "Delete a database"
+msgstr "Hapus database"
+
+#: bin/modules/gui/main.py:1380
+msgid "Database dropped successfully !"
+msgstr "Database telah dihapus !"
+
+#: bin/modules/gui/main.py:1383
+msgid "Could not drop database."
+msgstr "Tidak dapa menghapus database."
+
+#: bin/modules/gui/main.py:1385
+msgid "Couldn't drop database"
+msgstr "Tidak dapa menghapus database."
+
+#: bin/modules/gui/main.py:1388 bin/widget/view/form_gtk/image.py:114
+#: bin/widget/view/form_gtk/url.py:117 bin/openerp.glade:5901
+msgid "Open..."
+msgstr "Buka..."
+
+#: bin/modules/gui/main.py:1400
+msgid "Database restored successfully !"
+msgstr "Database berhasil dikembalikan"
+
+#: bin/modules/gui/main.py:1403
+msgid "Could not restore database."
+msgstr "Tidak dapat mengembalikan database"
+
+#: bin/modules/gui/main.py:1405
+msgid "Couldn't restore database"
+msgstr "Tidak dapat mengembalikan database."
+
+#: bin/modules/gui/main.py:1444
+msgid ""
+"Confirmation password does not match new password, operation cancelled!"
+msgstr "Kata kunci kedua tidak cocok, proses gagal."
+
+#: bin/modules/gui/main.py:1446
+msgid "Validation Error."
+msgstr "Kesalahan validasi"
+
+#: bin/modules/gui/main.py:1454
+msgid "Could not change the Super Admin password."
+msgstr "Kata kunci Super Admin tidak dapat dirubah"
+
+#: bin/modules/gui/main.py:1455
+msgid "Bad password provided !"
+msgstr "Salah kata kunci"
+
+#: bin/modules/gui/main.py:1457
+msgid "Error, password not changed."
+msgstr "Galat, sandi tidak berubah."
+
+#: bin/modules/gui/main.py:1463 bin/modules/gui/main.py:1486
+msgid "Backup a database"
+msgstr "Backup a database"
+
+#: bin/modules/gui/main.py:1466 bin/modules/gui/window/win_export.py:328
+#: bin/printer/printer.py:216 bin/widget/view/form_gtk/image.py:129
+#: bin/widget/view/form_gtk/binary.py:167
+msgid "Save As..."
+msgstr "Simpan Sebagai..."
+
+#: bin/modules/gui/main.py:1479
+msgid "Database backed up successfully !"
+msgstr "Database berhasil dibackup!"
+
+#: bin/modules/gui/main.py:1482
+msgid "Could not backup the database."
+msgstr "Database tidak bisa dibackup."
+
+#: bin/modules/gui/main.py:1484
+msgid "Couldn't backup database."
+msgstr "Backup database gagal."
+
+#: bin/modules/gui/window/form.py:173
+msgid "Resource ID does not exist for this object!"
+msgstr "ID sumber tidak tersedia pada item ini !"
+
+#: bin/modules/gui/window/form.py:231
+msgid "No record selected ! You can only attach to existing record."
+msgstr "Tidak ada data terpilih, Anda hanya bisa mengabil data bersangkutan"
+
+#: bin/modules/gui/window/form.py:247
+msgid "You have to select a record !"
+msgstr "Satu data telah terpilih !"
+
+#: bin/modules/gui/window/form.py:253
+#: bin/modules/gui/window/view_tree/view_tree_sc.py:42
+msgid "ID"
+msgstr "ID"
+
+#: bin/modules/gui/window/form.py:254
+msgid "Creation User"
+msgstr "Pembuatan pengguna (user)"
+
+#: bin/modules/gui/window/form.py:255
+msgid "Creation Date"
+msgstr "Tanggal dibuat"
+
+#: bin/modules/gui/window/form.py:256
+msgid "Latest Modification by"
+msgstr "Modifikasi Terakhir oleh:"
+
+#: bin/modules/gui/window/form.py:257
+msgid "Latest Modification Date"
+msgstr "Tanggal Modifikasi Terakhir"
+
+#: bin/modules/gui/window/form.py:258
+msgid "Internal Module Data ID"
+msgstr ""
+
+#: bin/modules/gui/window/form.py:269
+msgid ""
+"Record is not saved ! \n"
+" Do You want to Clear Current Record ?"
+msgstr ""
+"Data belum tersimpang\n"
+"Apakah anda ingin membuang data ini?"
+
+#: bin/modules/gui/window/form.py:272
+#: bin/widget/view/form_gtk/one2many_list.py:380
+msgid "Are you sure to remove this record ?"
+msgstr "Yakin membuang data ini ?"
+
+#: bin/modules/gui/window/form.py:274
+#: bin/widget/view/form_gtk/one2many_list.py:382
+msgid "Are you sure to remove those records ?"
+msgstr "Yakin membuang semua data ini ?"
+
+#: bin/modules/gui/window/form.py:278
+msgid "Resources cleared."
+msgstr "Sumber telah dibersihkan"
+
+#: bin/modules/gui/window/form.py:280
+msgid "Resources successfully removed."
+msgstr "Berhasil membersihkan semua sumber"
+
+#: bin/modules/gui/window/form.py:314
+msgid "Working now on the duplicated document !"
+msgstr "Bekerja pada dukumen ganda"
+
+#: bin/modules/gui/window/form.py:329
+msgid "Document Saved."
+msgstr "Dokumen tersimpan."
+
+#: bin/modules/gui/window/form.py:331 bin/modules/gui/window/form.py:332
+#: bin/widget/view/form_gtk/parser.py:126
+#: bin/widget/view/form_gtk/parser.py:127 bin/widget/view/list.py:568
+#: bin/widget/view/list.py:569
+msgid "Invalid form, correct red fields !"
+msgstr "Form salah, perbaiki filed dengan label merah!"
+
+#: bin/modules/gui/window/form.py:331 bin/widget/view/form_gtk/parser.py:126
+#: bin/widget/view/list.py:568
+msgid "Error !"
+msgstr "Galat"
+
+#: bin/modules/gui/window/form.py:334
+msgid "Warning !"
+msgstr ""
+
+#: bin/modules/gui/window/form.py:353 bin/modules/gui/window/form.py:457
+msgid ""
+"This record has been modified\n"
+"do you want to save it ?"
+msgstr ""
+"Data telah dirubah\n"
+"Anda ingin menyimpannya?"
+
+#: bin/modules/gui/window/form.py:407
+msgid "You must select one or several records !"
+msgstr "Anda harus memilih data satu atau lebih !"
+
+#: bin/modules/gui/window/form.py:416
+msgid "Print Screen"
+msgstr "Cetak Layar"
+
+#: bin/modules/gui/window/form.py:436
+msgid "No record selected"
+msgstr "Data belum terpilih"
+
+#: bin/modules/gui/window/form.py:441
+msgid "New document"
+msgstr "Dokumen baru"
+
+#: bin/modules/gui/window/form.py:443
+msgid "Editing document (id: "
+msgstr "Modifikasi dokument (id: "
+
+#: bin/modules/gui/window/form.py:446
+msgid "Record: "
+msgstr "Data: "
+
+#: bin/modules/gui/window/form.py:447
+msgid " of "
+msgstr " dari "
+
+#: bin/modules/gui/window/win_import.py:51
+msgid "The file is empty !"
+msgstr "Berkas kosong !"
+
+#: bin/modules/gui/window/win_import.py:51
+msgid "Importation !"
+msgstr "Penting !"
+
+#: bin/modules/gui/window/win_import.py:56
+msgid "XML-RPC error !"
+msgstr "XML-RPC bermasalah !"
+
+#: bin/modules/gui/window/win_import.py:61
+msgid "Imported one object !"
+msgstr "Terimpor satu item"
+
+#: bin/modules/gui/window/win_import.py:63
+#, python-format
+msgid "Imported %d objects !"
+msgstr "Terimpor %d item!"
+
+#: bin/modules/gui/window/win_import.py:68
+#, python-format
+msgid ""
+"Error trying to import this record:\n"
+"%s\n"
+"Error Message:\n"
+"%s\n"
+"\n"
+"%s"
+msgstr ""
+
+#: bin/modules/gui/window/win_import.py:69
+msgid "Importation Error !"
+msgstr "Error penting"
+
+#: bin/modules/gui/window/win_import.py:100
+#: bin/modules/gui/window/win_import.py:104
+msgid "Field name"
+msgstr "nama Field"
+
+#: bin/modules/gui/window/win_import.py:169
+msgid "Error opening .CSV file"
+msgstr ""
+
+#: bin/modules/gui/window/win_import.py:169
+msgid "Input Error."
+msgstr ""
+
+#: bin/modules/gui/window/win_import.py:187
+#, python-format
+msgid "You cannot import this field %s, because we cannot auto-detect it"
+msgstr "Anda tidak bisa mengimport  %s, karena field tidak terdeteksi"
+
+#: bin/modules/gui/window/win_import.py:190
+#, python-format
+msgid ""
+"Error processing your first line of the file.\n"
+"Field %s is unknown !"
+msgstr ""
+
+#: bin/modules/gui/window/win_import.py:190
+msgid "Import Error."
+msgstr ""
+
+#: bin/modules/gui/window/win_import.py:221
+msgid "You have not selected any fields to import"
+msgstr "Anda belum memilih field untuk di import"
+
+#: bin/modules/gui/window/win_extension.py:42
+msgid "Extension"
+msgstr ""
+
+#: bin/modules/gui/window/win_extension.py:42
+msgid "Application"
+msgstr ""
+
+#: bin/modules/gui/window/win_extension.py:42
+msgid "Print Processor"
+msgstr ""
+
+#: bin/modules/gui/window/win_extension.py:114
+msgid "This extension is already defined"
+msgstr "Extension ini telah dipilh"
+
+#: bin/modules/gui/window/win_extension.py:114 bin/openerp.glade:7684
+msgid "Extension Manager"
+msgstr "Pengelola Ekstensi"
+
+#: bin/modules/gui/window/win_selection.py:51
+msgid "Name"
+msgstr "Nama"
+
+#: bin/modules/gui/window/win_selection.py:55
+msgid "Ressource Name"
+msgstr "Nama sumber"
+
+#: bin/modules/gui/window/win_selection.py:55
+msgid "Names"
+msgstr "Nama-nama"
+
+#: bin/modules/gui/window/__init__.py:31
+msgid "Unknown Window"
+msgstr "Tampilan Tak Dikenal"
+
+#: bin/modules/gui/window/win_preference.py:68
+msgid "Preferences"
+msgstr ""
+
+#: bin/modules/gui/window/win_preference.py:85
+msgid ""
+"The default language of the interface has been modified, do not forget to "
+"restart the client to have the interface in your language"
+msgstr ""
+"Pilhan bahasa sudah dirubah, jangan lupa men-start ulang untuk melihat efek "
+"perubahan"
+
+#: bin/modules/gui/window/win_preference.py:87
+msgid "Default language modified !"
+msgstr "Pakem bahasa sudah dirubah"
+
+#: bin/modules/gui/window/view_tree/parse.py:35
+msgid "Tree"
+msgstr "Pohon"
+
+#: bin/modules/gui/window/view_tree/view_tree_sc.py:48
+msgid "Description"
+msgstr "Deskripsi"
+
+#: bin/modules/gui/window/tree.py:204 bin/modules/gui/window/tree.py:260
+msgid "No resource selected!"
+msgstr "Belum ada sumber terpilih"
+
+#: bin/modules/gui/window/tree.py:218
+msgid ""
+"Are you sure you want\n"
+"to remove this record?"
+msgstr ""
+"Anda yakin membuang\n"
+"data ini?"
+
+#: bin/modules/gui/window/tree.py:223
+msgid "Error removing resource!"
+msgstr "Gagall membuang sumber !"
+
+#: bin/modules/gui/window/tree.py:234
+msgid "Unable to chroot: no tree resource selected"
+msgstr "Tidak bisa chroot: tidak ada cabang sumber dipilih"
+
+#: bin/modules/gui/window/win_export.py:50
+msgid " record(s) saved !"
+msgstr " Data tersimpan !"
+
+#: bin/modules/gui/window/win_export.py:53
+msgid ""
+"Operation failed !\n"
+"I/O error"
+msgstr "Operasi gagal ! I/O bermasalah"
+
+#: bin/modules/gui/window/win_export.py:79
+#: bin/modules/gui/window/win_export.py:105
+msgid "Error Opening Excel !"
+msgstr "Gagal membuka Excel !"
+
+#: bin/modules/gui/window/win_export.py:284
+msgid "What is the name of this export ?"
+msgstr ""
+
+#: bin/modules/gui/window/win_export.py:320
+msgid "Exportation Error !"
+msgstr "Pengimporan bermasalah"
+
+#: bin/modules/gui/window/win_search.py:49
+#: bin/widget/view/diagram_gtk/xdot.py:1772
+msgid "OpenERP - Link"
+msgstr "openERP - Tautan"
+
+#: bin/modules/gui/window/win_search.py:126
+#, python-format
+msgid "OpenERP Search: %s"
+msgstr "Pencarian OpenERP: %s"
+
+#: bin/modules/gui/window/win_search.py:127
+#, python-format
+msgid "OpenERP Search: %s (%%d result(s))"
+msgstr "Pencarian OpenERP: %s (%%d result(s))"
+
+#: bin/options.py:109
+#, python-format
+msgid "OpenERP Client %s"
+msgstr "Klien OpenERP %s"
+
+#: bin/options.py:110
+msgid "specify alternate config file"
+msgstr "tentukan altenatif file config"
+
+#: bin/options.py:111
+msgid "Enable basic debugging. Alias for '--log-level=debug'"
+msgstr "sediakan debugging dasar, Alias untuk '--log-level=debug'"
+
+#: bin/options.py:112
+#, python-format
+msgid "specify the log level: %s"
+msgstr "tentukan tingkatan log : %s"
+
+#: bin/options.py:113
+msgid "specify the user login"
+msgstr "login pemakai harus disebutkan"
+
+#: bin/options.py:114
+msgid "specify the server port"
+msgstr "tentukan port untuk server"
+
+#: bin/options.py:115
+msgid "specify the server ip/name"
+msgstr "tentukan ip/nama server"
+
+#: bin/common/common.py:89
+msgid "Close current tip"
+msgstr ""
+
+#: bin/common/common.py:90
+msgid ""
+"<span foreground=\"darkred\"><b>Close Current Tip:</b></span>\n"
+"This will hide the current tip. It will be displayed again next time you "
+"open this menu item, unless you disable all tips using the <b>'Menu "
+"Tips'</b> option in the user preferences."
+msgstr ""
+
+#: bin/common/common.py:100
+msgid "Disable all tips"
+msgstr ""
+
+#: bin/common/common.py:101
+msgid ""
+"<span foreground=\"darkred\"><b>Disable all tips:</b></span>\n"
+"This will disable the display of tips on all menu items.\n"
+"To re-enable tips you need to check the <b>'Menu Tips'</b> option in the "
+"user preferences."
+msgstr ""
+
+#: bin/common/common.py:115 bin/common/common.py:117
+msgid "Tips"
+msgstr ""
+
+#: bin/common/common.py:133
+msgid "OpenERP Computing"
+msgstr "OpenERP sedang bekerja"
+
+#: bin/common/common.py:152
+msgid "Operation in progress"
+msgstr "Operasi sedang bekerja"
+
+#: bin/common/common.py:156
+msgid ""
+"Please wait,\n"
+"this operation may take a while..."
+msgstr ""
+"harap ditunggu\n"
+"operasi ini memerlukan waktu beberapa saat"
+
+#: bin/common/common.py:190
+#, python-format
+msgid "Ensure that the file %s is correct"
+msgstr ""
+
+#: bin/common/common.py:364
+msgid " has reported the following bug:\n"
+msgstr ""
+
+#: bin/common/common.py:364
+msgid "remarks"
+msgstr ""
+
+#: bin/common/common.py:367
+msgid "Support request sent !"
+msgstr "Permintaan dukungan telah dikirim!"
+
+#: bin/common/common.py:387 bin/common/common.py:430
+msgid ""
+"\n"
+"<b>An unknown error has been reported.</b>\n"
+"\n"
+"<b>You do not have a valid OpenERP publisher warranty contract !</b>\n"
+"If you are using OpenERP in production, it is highly suggested to subscribe\n"
+"a publisher warranty program.\n"
+"\n"
+"The OpenERP publisher warranty contract provides you a bugfix guarantee and "
+"an\n"
+"automatic migration system so that we can fix your problems within a few\n"
+"hours. If you had a publisher warranty contract, this error would have been "
+"sent\n"
+"to the quality team of the OpenERP editor.\n"
+"\n"
+"The publisher warranty program offers you:\n"
+"* Automatic migrations on new versions,\n"
+"* A bugfix guarantee,\n"
+"* Monthly announces of potential bugs and their fixes,\n"
+"* Security alerts by email and automatic migration,\n"
+"* Access to the customer portal.\n"
+"\n"
+"You can use the link bellow for more information. The detail of the error\n"
+"is displayed on the second tab.\n"
+msgstr ""
+
+#: bin/common/common.py:410
+#, python-format
+msgid ""
+"\n"
+"<b>An unknown error has been reported.</b>\n"
+"\n"
+"Your publisher warranty contract does not cover all modules installed in "
+"your system !\n"
+"If you are using OpenERP in production, it is highly suggested to upgrade "
+"your\n"
+"contract.\n"
+"\n"
+"If you have developed your own modules or installed third party module, we\n"
+"can provide you an additional publisher warranty contract for these modules. "
+"After\n"
+"having reviewed your modules, our quality team will ensure they will "
+"migrate\n"
+"automatically for all future stable versions of OpenERP at no extra cost.\n"
+"\n"
+"Here is the list of modules not covered by your publisher warranty "
+"contract:\n"
+"%s\n"
+"\n"
+"You can use the link bellow for more information. The detail of the error\n"
+"is displayed on the second tab."
+msgstr ""
+
+#: bin/common/common.py:488
+msgid ""
+"Your problem has been sent to the quality team !\n"
+"We will recontact you after analysing the problem."
+msgstr ""
+"Masalahmu  sudah dikirm ke tim mutu!\n"
+"Kami akan menghubungi lagi setelah menganalisis masalah."
+
+#: bin/common/common.py:491
+#, python-format
+msgid ""
+"Your problem could *NOT* be sent to the quality team !\n"
+"Please report this error manually at:\n"
+"\t%s"
+msgstr ""
+
+#: bin/common/common.py:491
+msgid "Error"
+msgstr "Galat"
+
+#: bin/common/common.py:646
+msgid "Open with..."
+msgstr "Buka dengan..."
+
+#: bin/translate.py:183
+#, python-format
+msgid "Unable to set locale %s: %s"
+msgstr ""
+
+#: bin/printer/printer.py:184
+#, python-format
+msgid "Unable to handle %s filetype"
+msgstr "tidak dapat menangani tipe file %s"
+
+#: bin/printer/printer.py:189
+msgid ""
+"Linux Automatic Printing not implemented.\n"
+"Use preview option !"
+msgstr ""
+"Otomatis pencetakan pada linux belum di terapkan\n"
+"Gunakan pratinjau"
+
+#: bin/printer/printer.py:197
+msgid "Error! No Data found. Make sure you have enough data to print!"
+msgstr ""
+
+#: bin/printer/printer.py:224
+msgid "Error writing the file!"
+msgstr "Gagal menuliskan file"
+
+#: bin/openerp-client.py:140
+msgid "Closing OpenERP, KeyboardInterrupt"
+msgstr "Menutup OpenERP, KeyboardInterrupt"
+
+#: bin/widget_search/reference.py:78 bin/widget_search/filter.py:74
+#: bin/widget_search/selection.py:116 bin/widget_search/spinbutton.py:72
+#: bin/widget_search/spinint.py:75 bin/widget_search/char.py:66
+#: bin/widget_search/calendar.py:126 bin/widget_search/calendar.py:243
+#: bin/widget_search/custom_filter.py:176 bin/widget_search/checkbox.py:67
+#: bin/widget/view/form_gtk/button.py:47
+msgid "The content of the widget or ValueError if not valid"
+msgstr "Isi dari widget atau ValueError jika tidak valid"
+
+#: bin/widget_search/form.py:445
+msgid "The content of the form or exception if not valid"
+msgstr "Isi form atau exception jika isi tidak valid"
+
+#: bin/widget_search/date_widget.py:61
+#: bin/widget/view/form_gtk/date_widget.py:63
+msgid ""
+"You can use special operation by pressing +, - or =.  Plus/minus "
+"adds/decrease the variable to the current selected date. Equals set part of "
+"selected date. Available variables: 12h = 12 hours, 8d = 8 days, 4w = 4 "
+"weeks, 1m = 1 month, 2y = 2 years. Some examples:\n"
+"* +21d : adds 21 days to selected year\n"
+"* =23w : set date to the 23th week of the year\n"
+"* -4m : decrease 4 months to the current date\n"
+"You can also use \"=\" to set the date to the current date/time and '-' to "
+"clear the field."
+msgstr ""
+"Kamu dapat memakai tanda khusus dengan menekan +, - atau =. Plus/minus "
+"Tambah/kurang variable dari tanggal yang dipilih sekarang. Bagian sama "
+"dengan tanggal yang dipilih. Variable yang tersedia: 12j= 12 jam, 8h= 8 "
+"hari, 4m = 4 minggu, 1 b = 1 bulan, 2t= 2 tahun. Beberapa contoh\n"
+"*+21h: tambahkan 21 hari pada tahun yang dipilih\n"
+"*=23m: set tanggal ke minggu ke 23 dari tahun tersebut\n"
+"*-4 : kurangi 4 bulan dari tanggal sekarang\n"
+"Kamu bisa juga memakai \"=\" untuk menset tanggal pada tanggal/waktu "
+"sekarang dan '-' untuk menghapus filed"
+
+#: bin/widget_search/wid_int.py:52
+msgid "The content of the widget or exception if not valid"
+msgstr ""
+
+#: bin/widget_search/char.py:43
+msgid "Error: "
+msgstr ""
+
+#: bin/widget_search/calendar.py:50 bin/widget_search/calendar.py:177
+msgid "Start date"
+msgstr "Tanggal mulai"
+
+#: bin/widget_search/calendar.py:54 bin/widget_search/calendar.py:74
+#: bin/widget_search/calendar.py:181 bin/widget_search/calendar.py:201
+#: bin/widget/view/form_gtk/calendar.py:58
+#: bin/widget/view/form_gtk/calendar.py:182
+msgid "Open the calendar widget"
+msgstr "Buka widget kalender"
+
+#: bin/widget_search/calendar.py:70 bin/widget_search/calendar.py:197
+msgid "End date"
+msgstr "Tanggal akhir"
+
+#: bin/widget_search/calendar.py:129 bin/widget_search/calendar.py:249
+#: bin/widget/view/form_gtk/calendar.py:135
+#: bin/widget/view/form_gtk/calendar.py:246
+msgid "OpenERP - Date selection"
+msgstr "OpenERP - Pilihan tanggal"
+
+#: bin/widget_search/custom_filter.py:56
+msgid "contains"
+msgstr ""
+
+#: bin/widget_search/custom_filter.py:57
+msgid "doesn't contain"
+msgstr ""
+
+#: bin/widget_search/custom_filter.py:58
+msgid "is equal to"
+msgstr ""
+
+#: bin/widget_search/custom_filter.py:59
+msgid "is not equal to"
+msgstr ""
+
+#: bin/widget_search/custom_filter.py:60
+msgid "greater than"
+msgstr ""
+
+#: bin/widget_search/custom_filter.py:61
+msgid "less than"
+msgstr ""
+
+#: bin/widget_search/custom_filter.py:62
+msgid "in"
+msgstr ""
+
+#: bin/widget_search/custom_filter.py:63
+msgid "not in"
+msgstr ""
+
+#: bin/widget_search/custom_filter.py:82
+msgid ""
+"Enter Values separated by ',' if operator 'in' or 'not in' is chosen.\n"
+"For Date and DateTime Formats, specify text in '%Y-%m-%d' and '%Y-%m-%d "
+"%H:%M:%S' formats respectively."
+msgstr ""
+
+#: bin/widget_search/checkbox.py:35 bin/widget_search/checkbox.py:54
+msgid "Yes"
+msgstr "Ya"
+
+#: bin/widget_search/checkbox.py:36
+msgid "No"
+msgstr "Tidak"
+
+#: bin/widget/view/form.py:136 bin/widget/view/form.py:199
+msgid "You must save this record to use the relate button !"
+msgstr "Kamu harus menyimpan catatan untuk memakai tombol terkait"
+
+#: bin/widget/view/form.py:141
+msgid "Action not defined !"
+msgstr ""
+
+#: bin/widget/view/form.py:211
+msgid "You must select a record to use the relate button !"
+msgstr "Kamu harus memilih catatan untuk memakai tombol terkait"
+
+#: bin/widget/view/form.py:236 bin/widget/view/form_gtk/parser.py:647
+#: bin/widget/view/form_gtk/parser.py:767
+#: bin/widget/view/form_gtk/parser.py:824
+msgid "No other language available!"
+msgstr "Tidak tersedia bahasa lain"
+
+#: bin/widget/view/form.py:243 bin/widget/view/form_gtk/parser.py:663
+#: bin/widget/view/form_gtk/parser.py:773
+#: bin/widget/view/form_gtk/parser.py:830
+msgid "Add Translation"
+msgstr "Tambah terjemahan"
+
+#: bin/widget/view/form.py:291 bin/widget/view/form_gtk/parser.py:886
+msgid "Translate label"
+msgstr "Terjemahkan label"
+
+#: bin/widget/view/calendar_gtk/parser.py:356 bin/openerp.glade:8106
+msgid "Week"
+msgstr "Minggu"
+
+#: bin/widget/view/calendar_gtk/parser_dummy.py:30
+msgid "Calendar View Error !"
+msgstr "Tampilan Kalender Salah"
+
+#: bin/widget/view/calendar_gtk/parser_dummy.py:31
+msgid "You must intall the library python-hippocanvas to use calendars."
+msgstr ""
+"Kamu harus memasang library python-hippocanvas untuk memakai kalender"
+
+#: bin/widget/view/screen_container.py:73
+msgid "--Actions--"
+msgstr ""
+
+#: bin/widget/view/screen_container.py:73
+msgid "Save as a Shortcut"
+msgstr ""
+
+#: bin/widget/view/screen_container.py:73
+msgid "Save as a Filter"
+msgstr ""
+
+#: bin/widget/view/screen_container.py:73
+msgid "Manage Filters"
+msgstr ""
+
+#: bin/widget/view/tree_gtk/parser.py:61
+msgid ""
+"You have unsaved record(s) !  \n"
+"\n"
+"Please Save them before sorting !"
+msgstr ""
+
+#: bin/widget/view/tree_gtk/editabletree.py:139
+#, python-format
+msgid "Shortcut: %s"
+msgstr "Jalan Pintas %s"
+
+#: bin/widget/view/tree_gtk/editabletree.py:139
+msgid "F1 New - F2 Open/Search"
+msgstr "F1 Baru - F2 Buka/Cari"
+
+#: bin/widget/view/tree_gtk/editabletree.py:214
+#, python-format
+msgid "Warning; field %s is required!"
+msgstr "Peringatan, field %s harus di isi"
+
+#: bin/widget/view/tree_gtk/date_renderer.py:197
+msgid ""
+"Press <i>'+'</i>, <i>'-'</i> or <i>'='</i> for special date operations."
+msgstr ""
+"Tekan <i>'+'</i>, <i>'-'</i> or <i>'='</i> untuk operasi tanggal kusus"
+
+#: bin/widget/view/widget_parse.py:53
+#, python-format
+msgid "This type (%s) is not supported by the GTK client !"
+msgstr "Tipe (%s) ini tidak didukung oleh GTK client !"
+
+#: bin/widget/view/widget_parse.py:64
+msgid "No valid view found for this object!"
+msgstr "Tidak menemukan view untuk object ini!"
+
+#: bin/widget/view/graph_gtk/parser.py:64
+msgid "Can not generate graph !"
+msgstr "Tidak dapat membuat grafik"
+
+#: bin/widget/view/diagram_gtk/xdot.py:1422
+msgid "Dot Viewer"
+msgstr ""
+
+#: bin/widget/view/diagram_gtk/xdot.py:1712
+msgid "Add New Node"
+msgstr ""
+
+#: bin/widget/view/diagram_gtk/xdot.py:1713
+msgid "Add New Edge"
+msgstr ""
+
+#: bin/widget/view/diagram_gtk/xdot.py:1714
+msgid "Enlarge the Diagram"
+msgstr ""
+
+#: bin/widget/view/diagram_gtk/xdot.py:1715
+msgid "Shrink the Diagram"
+msgstr ""
+
+#: bin/widget/view/diagram_gtk/xdot.py:1716
+msgid "Fit the diagram to the window"
+msgstr ""
+
+#: bin/widget/view/diagram_gtk/xdot.py:1717
+msgid "Show the diagram at its normal size"
+msgstr ""
+
+#: bin/widget/view/diagram_gtk/xdot.py:1718
+msgid "Print the Diagram"
+msgstr ""
+
+#: bin/widget/view/diagram_gtk/xdot.py:1789
+#, python-format
+msgid "Close Current %s"
+msgstr ""
+
+#: bin/widget/view/diagram_gtk/xdot.py:1790
+#, python-format
+msgid "Delete Current %s"
+msgstr ""
+
+#: bin/widget/view/diagram_gtk/xdot.py:1791
+#, python-format
+msgid "Edit Current %s"
+msgstr ""
+
+#: bin/widget/view/diagram_gtk/xdot.py:1875
+msgid " - Dot Viewer"
+msgstr ""
+
+#: bin/widget/view/form_gtk/reference.py:76 bin/openerp.glade:1250
+msgid "Create a new resource"
+msgstr "Buat sumber baru"
+
+#: bin/widget/view/form_gtk/reference.py:89
+msgid "Search / Open a resource"
+msgstr "Cari/Buka sumber"
+
+#: bin/widget/view/form_gtk/parser.py:61
+msgid "Wrong icon for the button !"
+msgstr "Icon salah untuk tombol ini!"
+
+#: bin/widget/view/form_gtk/parser.py:318
+msgid "Field"
+msgstr ""
+
+#: bin/widget/view/form_gtk/parser.py:318
+msgid "Object"
+msgstr ""
+
+#: bin/widget/view/form_gtk/parser.py:630
+msgid "Enter some text to the related field before adding translations!"
+msgstr "Masukan kata sebelum menambahkan terjemahan!"
+
+#: bin/widget/view/form_gtk/parser.py:637
+msgid "You need to save resource before adding translations!"
+msgstr "Kamu harus menyimpan sumber sebelum menambah terjemahan"
+
+#: bin/widget/view/form_gtk/parser.py:891
+msgid "Translate view"
+msgstr "Tampilan terjemah"
+
+#: bin/widget/view/form_gtk/one2many_list.py:64
+msgid "Cancel"
+msgstr ""
+
+#: bin/widget/view/form_gtk/one2many_list.py:70
+msgid "Save & Close"
+msgstr ""
+
+#: bin/widget/view/form_gtk/one2many_list.py:75
+msgid "Save & New"
+msgstr ""
+
+#: bin/widget/view/form_gtk/one2many_list.py:175
+#: bin/widget/view/form_gtk/interface.py:47
+msgid "Set to default value"
+msgstr "Set nilai dasar"
+
+#: bin/widget/view/form_gtk/one2many_list.py:178
+msgid "Set Default"
+msgstr "Atur Nilai Dasar"
+
+#: bin/widget/view/form_gtk/one2many_list.py:209
+msgid "Create a new entry"
+msgstr "Buat entri baru"
+
+#: bin/widget/view/form_gtk/one2many_list.py:213
+msgid "Edit this entry"
+msgstr "Ubah entri ini"
+
+#: bin/widget/view/form_gtk/one2many_list.py:217
+msgid "Remove this entry"
+msgstr "Hapus entri ini"
+
+#: bin/widget/view/form_gtk/one2many_list.py:223
+#: bin/widget/view/form_gtk/many2many.py:84
+msgid "Previous Page"
+msgstr ""
+
+#: bin/widget/view/form_gtk/one2many_list.py:227
+#: bin/widget/view/form_gtk/many2many.py:88
+msgid "Previous Record"
+msgstr ""
+
+#: bin/widget/view/form_gtk/one2many_list.py:235
+#: bin/widget/view/form_gtk/many2many.py:96
+msgid "Next Record"
+msgstr ""
+
+#: bin/widget/view/form_gtk/one2many_list.py:239
+#: bin/widget/view/form_gtk/many2many.py:100
+msgid "Next Page"
+msgstr ""
+
+#: bin/widget/view/form_gtk/one2many_list.py:245
+msgid "Switch"
+msgstr "Ganti"
+
+#: bin/widget/view/form_gtk/one2many_list.py:251
+#: bin/widget/view/form_gtk/many2many.py:106
+msgid "Choose Limit"
+msgstr ""
+
+#: bin/widget/view/form_gtk/one2many_list.py:292
+msgid "You have to select a resource !"
+msgstr "Kamu harus memilih sumber"
+
+#: bin/widget/view/form_gtk/image.py:73
+msgid "Set Image"
+msgstr "Set Citra"
+
+#: bin/widget/view/form_gtk/image.py:82 bin/widget/view/form_gtk/binary.py:84
+msgid "Save As"
+msgstr "Simpan Sebagai"
+
+#: bin/widget/view/form_gtk/image.py:93 bin/widget/view/form_gtk/binary.py:88
+msgid "Clear"
+msgstr "Hapus"
+
+#: bin/widget/view/form_gtk/image.py:104
+msgid "All files"
+msgstr "Semua berkas"
+
+#: bin/widget/view/form_gtk/image.py:108
+msgid "Images"
+msgstr "Citra"
+
+#: bin/widget/view/form_gtk/image.py:127
+msgid "There is no image to save as !"
+msgstr ""
+
+#: bin/widget/view/form_gtk/image.py:127
+msgid "Warning"
+msgstr ""
+
+#: bin/widget/view/form_gtk/many2one.py:158 bin/widget/view/form_gtk/url.py:55
+msgid "Open this resource"
+msgstr "Buka sumber ini"
+
+#: bin/widget/view/form_gtk/many2one.py:163
+msgid "Search a resource"
+msgstr "Cari sumber ini"
+
+#: bin/widget/view/form_gtk/many2one.py:174 bin/openerp.glade:1404
+msgid "Action"
+msgstr "Tindakan"
+
+#: bin/widget/view/form_gtk/many2one.py:175
+msgid "Report"
+msgstr "Laporan"
+
+#: bin/widget/view/form_gtk/many2one.py:388 bin/widget/view/list.py:618
+msgid "You must select a record to use the relation !"
+msgstr "Kamu harus memilih sumber untuk menggunakan relasi!"
+
+#: bin/widget/view/form_gtk/interface.py:48
+msgid "Set as default"
+msgstr "Set sebagai nilai dasar"
+
+#: bin/widget/view/form_gtk/interface.py:63
+msgid "You can not set to the default value here !"
+msgstr ""
+
+#: bin/widget/view/form_gtk/interface.py:63
+msgid "Operation not permited"
+msgstr ""
+
+#: bin/widget/view/form_gtk/binary.py:76
+msgid "Select"
+msgstr "Pilih"
+
+#: bin/widget/view/form_gtk/binary.py:80
+msgid "Open"
+msgstr "Buka"
+
+#: bin/widget/view/form_gtk/binary.py:119
+#: bin/widget/view/form_gtk/binary.py:163
+msgid "Unable to read the file data"
+msgstr "Tidak bisa membaca berkas data"
+
+#: bin/widget/view/form_gtk/binary.py:129
+#: bin/widget/view/form_gtk/binary.py:155
+#, python-format
+msgid "Error reading the file: %s"
+msgstr "Gagal membaca file: %s"
+
+#: bin/widget/view/form_gtk/binary.py:138
+msgid "All Files"
+msgstr "Seluruh Berkas"
+
+#: bin/widget/view/form_gtk/binary.py:148
+msgid "Select a file..."
+msgstr "Pilih berkas..."
+
+#: bin/widget/view/form_gtk/binary.py:177
+#, python-format
+msgid "Error writing the file: %s"
+msgstr "Gagal menulis file: %s"
+
+#: bin/widget/view/form_gtk/wid_common.py:59
+msgid "Always applicable !"
+msgstr "Selalu cocok!"
+
+#: bin/widget/view/form_gtk/calendar.py:100
+#: bin/widget/view/form_gtk/calendar.py:162
+msgid "Invalid date value! Year must be greater than 1899 !"
+msgstr "Nilai bermasalah, gunakan tahun setelah 1899"
+
+#: bin/widget/view/form_gtk/calendar.py:252
+msgid "Hour:"
+msgstr "Jam:"
+
+#: bin/widget/view/form_gtk/calendar.py:255
+msgid "Minute:"
+msgstr "Menit"
+
+#: bin/widget/view/form_gtk/calendar.py:289
+msgid "Invalid datetime value! Year must be greater than 1899 !"
+msgstr "Jam tanggal bermasalah, gunakan tahun setelah 1899"
+
+#: bin/widget/view/gantt_gtk/parser_dummy.py:30
+msgid "Gantt view not yet implemented !"
+msgstr "Tampilan Gantt belum diterapkan"
+
+#: bin/widget/view/gantt_gtk/parser_dummy.py:31
+msgid ""
+"The gantt view is not available in this GTK Client, you should use the web "
+"interface or switch to the calendar view."
+msgstr ""
+"Tampilan Gantt tidak tersedia pada Klien GTK, kamu sebaiknya memakai "
+"tampilan web atau mengganti tampilan kalender"
+
+#: bin/widget/screen/screen.py:354
+msgid ""
+"(Any existing filter with the \n"
+"same name will be replaced)"
+msgstr ""
+
+#: bin/rpc.py:157
+msgid "Connection refused!"
+msgstr "Koneksi ditolak!"
+
+#: bin/rpc.py:187
+msgid ""
+"Unable to reach to OpenERP server !\n"
+"You should check your connection to the network and the OpenERP server."
+msgstr "Tidak dapat menghubungi server OpenERP !"
+
+#: bin/rpc.py:187
+msgid "Connection Error"
+msgstr "Kesalahan Sambungan"
+
+#: bin/openerp.glade:6
+msgid "OpenERP - Login"
+msgstr "OpenERP - Login"
+
+#: bin/openerp.glade:116 bin/openerp.glade:6450
+msgid "Database:"
+msgstr "Database"
+
+#: bin/openerp.glade:131
+msgid "User:"
+msgstr "Pengguna:"
+
+#: bin/openerp.glade:146 bin/openerp.glade:6436 bin/openerp.glade:6747
+msgid "Password:"
+msgstr "Kata Sandi:"
+
+#: bin/openerp.glade:265
+msgid "_File"
+msgstr "_File"
+
+#: bin/openerp.glade:272
+msgid "_Connect..."
+msgstr "_Menyambung..."
+
+#: bin/openerp.glade:288
+msgid "_Disconnect"
+msgstr "_Terputus"
+
+#: bin/openerp.glade:308
+msgid "Databases"
+msgstr "Database"
+
+#: bin/openerp.glade:315
+msgid "_New database"
+msgstr "_New database"
+
+#: bin/openerp.glade:330
+msgid "_Restore database"
+msgstr "_Mengembalikan database"
+
+#: bin/openerp.glade:345
+msgid "_Backup database"
+msgstr "_Backup database"
+
+#: bin/openerp.glade:360
+msgid "Dro_p database"
+msgstr "Menghapus database"
+
+#: bin/openerp.glade:380
+msgid "_Download Migrations Code"
+msgstr "_Unduh Skrip Migrasi"
+
+#: bin/openerp.glade:395
+msgid "_Migrate Database(s)"
+msgstr "_Migrasi database"
+
+#: bin/openerp.glade:415
+msgid "Administrator Password"
+msgstr "Kata sandi Administrator"
+
+#: bin/openerp.glade:460
+msgid "_User"
+msgstr "_Pengguna"
+
+#: bin/openerp.glade:468
+msgid "_Preferences"
+msgstr "_Pengaturan"
+
+#: bin/openerp.glade:488
+msgid "_Send a request"
+msgstr "_Kirim permintaan (Pesan)"
+
+#: bin/openerp.glade:503
+msgid "_Read my requests"
+msgstr "_Membaca pesan permintaan saya"
+
+#: bin/openerp.glade:523
+msgid "_Waiting Requests"
+msgstr "_Menunggu Permintaan"
+
+#: bin/openerp.glade:536
+msgid "For_m"
+msgstr "Copy text   \t For_m"
+
+#: bin/openerp.glade:544
+msgid "_New"
+msgstr "_Baru"
+
+#: bin/openerp.glade:560
+msgid "_Save"
+msgstr "_Simpan"
+
+#: bin/openerp.glade:576
+msgid "Copy this resource"
+msgstr "Salin sumber ini"
+
+#: bin/openerp.glade:577
+msgid "_Duplicate"
+msgstr "_Gandakan"
+
+#: bin/openerp.glade:593
+msgid "_Delete"
+msgstr "_Hapus"
+
+#: bin/openerp.glade:614
+msgid "Find"
+msgstr "Cari"
+
+#: bin/openerp.glade:630
+msgid "Ne_xt"
+msgstr "_lanjut"
+
+#: bin/openerp.glade:646
+msgid "Pre_vious"
+msgstr "_Sebelum"
+
+#: bin/openerp.glade:662
+msgid "Switch to list/form"
+msgstr "Pindah to list/form"
+
+#: bin/openerp.glade:678
+msgid "_Menu"
+msgstr "_Menu"
+
+#: bin/openerp.glade:699
+msgid "_New Home Tab"
+msgstr "_Tab baru depan"
+
+#: bin/openerp.glade:715 bin/openerp.glade:5024
+msgid "Close Tab"
+msgstr "Tutup Tab"
+
+#: bin/openerp.glade:731
+msgid "Previous Tab"
+msgstr "Tab sebelum"
+
+#: bin/openerp.glade:740 bin/openerp.glade:5080
+msgid "Next Tab"
+msgstr "Tab lanjut"
+
+#: bin/openerp.glade:754
+msgid "View _logs"
+msgstr "Tampilkan log"
+
+#: bin/openerp.glade:762
+msgid "_Go to resource ID..."
+msgstr "_Go to resource ID..."
+
+#: bin/openerp.glade:776
+msgid "_Open"
+msgstr "_Buka"
+
+#: bin/openerp.glade:791
+msgid "Reloa_d / Undo"
+msgstr "Reloa_d / Undo"
+
+#: bin/openerp.glade:812
+msgid "Repeat latest _action"
+msgstr "Ulangi proses ter_akhir"
+
+#: bin/openerp.glade:826
+msgid "_Preview in PDF"
+msgstr "_Tampikan dalam PDF"
+
+#: bin/openerp.glade:842
+msgid "Previe_w in editor"
+msgstr "Tampikan pada Editor"
+
+#: bin/openerp.glade:862
+msgid "Expor_t data..."
+msgstr "Expor_t data..."
+
+#: bin/openerp.glade:877
+msgid "I_mport data..."
+msgstr "I_mport data..."
+
+#: bin/openerp.glade:889
+msgid "_Options"
+msgstr "Pengaturan"
+
+#: bin/openerp.glade:896
+msgid "_Extension Manager"
+msgstr "Pengaturan _Extension"
+
+#: bin/openerp.glade:904
+msgid "_Menubar"
+msgstr "_Menubar"
+
+#: bin/openerp.glade:912
+msgid "Text _and Icons"
+msgstr "Text  _dan Ikon"
+
+#: bin/openerp.glade:920
+msgid "_Icons only"
+msgstr "_Ikon saja"
+
+#: bin/openerp.glade:929
+msgid "_Text only"
+msgstr "_Teks saja"
+
+#: bin/openerp.glade:942
+msgid "_Forms"
+msgstr "_Forms"
+
+#: bin/openerp.glade:950
+msgid "Right Toolbar"
+msgstr ""
+
+#: bin/openerp.glade:958
+msgid "Tabs default position"
+msgstr "Taps pada posisi asli"
+
+#: bin/openerp.glade:966
+msgid "Top"
+msgstr "Atas"
+
+#: bin/openerp.glade:974
+msgid "Left"
+msgstr "Kiri"
+
+#: bin/openerp.glade:983
+msgid "Right"
+msgstr "Kanan"
+
+#: bin/openerp.glade:992
+msgid "Bottom"
+msgstr "Dasar"
+
+#: bin/openerp.glade:1005
+msgid "Tabs default orientation"
+msgstr ""
+
+#: bin/openerp.glade:1013
+msgid "Horizontal"
+msgstr "Mendatar"
+
+#: bin/openerp.glade:1021
+msgid "Vertical"
+msgstr "Tegak"
+
+#: bin/openerp.glade:1038
+msgid "_Print"
+msgstr "_Cetak"
+
+#: bin/openerp.glade:1045
+msgid "Previe_w before print"
+msgstr ""
+
+#: bin/openerp.glade:1069
+msgid "_Save options"
+msgstr "_Opsi penyimpanan"
+
+#: bin/openerp.glade:1089
+msgid "_Plugins"
+msgstr "_Plugin"
+
+#: bin/openerp.glade:1097
+msgid "_Execute a plugin"
+msgstr ""
+
+#: bin/openerp.glade:1117
+msgid "_Shortcuts"
+msgstr "_Shortcut"
+
+#: bin/openerp.glade:1125
+msgid "_Help"
+msgstr "_Bantuan"
+
+#: bin/openerp.glade:1132
+msgid "Enable Debug Mode Tooltips"
+msgstr ""
+
+#: bin/openerp.glade:1140 bin/openerp.glade:4395
+msgid "Support Request"
+msgstr "Permintaan dukungan"
+
+#: bin/openerp.glade:1160
+msgid "User _Manual"
+msgstr "Pentunjuk penggunaan"
+
+#: bin/openerp.glade:1175
+msgid "_Contextual Help"
+msgstr ""
+
+#: bin/openerp.glade:1191
+msgid "Keyboard Shortcuts"
+msgstr "Tombol pintas Keyboad"
+
+#: bin/openerp.glade:1204
+msgid "_License"
+msgstr "_Lisensi"
+
+#: bin/openerp.glade:1219
+msgid "_About..."
+msgstr "_Tentang..."
+
+#: bin/openerp.glade:1261
+msgid "Edit / Save this resource"
+msgstr ""
+
+#: bin/openerp.glade:1277
+msgid "Delete this resource"
+msgstr "Hapus sumber ini"
+
+#: bin/openerp.glade:1290
+msgid "Go to previous matched search"
+msgstr ""
+
+#: bin/openerp.glade:1291
+msgid "Previous"
+msgstr "Sebelumnya"
+
+#: bin/openerp.glade:1302
+msgid "Go to next matched resource"
+msgstr ""
+
+#: bin/openerp.glade:1303
+msgid "Next"
+msgstr "Berikutnya"
+
+#: bin/openerp.glade:1316
+msgid "List"
+msgstr ""
+
+#: bin/openerp.glade:1328
+msgid "Form"
+msgstr ""
+
+#: bin/openerp.glade:1341
+msgid "Calendar"
+msgstr ""
+
+#: bin/openerp.glade:1351
+msgid "Diagram"
+msgstr ""
+
+#: bin/openerp.glade:1361
+msgid "Graph"
+msgstr ""
+
+#: bin/openerp.glade:1374
+msgid "Gantt"
+msgstr ""
+
+#: bin/openerp.glade:1392
+msgid "Print documents"
+msgstr ""
+
+#: bin/openerp.glade:1403
+msgid "Launch actions about this resource"
+msgstr ""
+
+#: bin/openerp.glade:1416
+msgid "Add an attachment to this resource"
+msgstr ""
+
+#: bin/openerp.glade:1417
+msgid "Attachment"
+msgstr ""
+
+#: bin/openerp.glade:1432 bin/openerp.glade:1433
+msgid "Menu"
+msgstr ""
+
+#: bin/openerp.glade:1450 bin/openerp.glade:1451
+msgid "Reload"
+msgstr ""
+
+#: bin/openerp.glade:1468
+msgid "Close this window"
+msgstr ""
+
+#: bin/openerp.glade:1512
+msgid "Company:"
+msgstr ""
+
+#: bin/openerp.glade:1535
+msgid "Requests:"
+msgstr ""
+
+#: bin/openerp.glade:1558
+msgid "Read my Requests"
+msgstr ""
+
+#: bin/openerp.glade:1579
+msgid "Send a new request"
+msgstr ""
+
+#: bin/openerp.glade:1619
+msgid "OpenERP - Tree Resources"
+msgstr ""
+
+#: bin/openerp.glade:1672
+msgid "Shortcuts"
+msgstr ""
+
+#: bin/openerp.glade:1781
+msgid "OpenERP - Forms"
+msgstr ""
+
+#: bin/openerp.glade:1805
+msgid "State:"
+msgstr ""
+
+#: bin/openerp.glade:1837
+msgid "OpenERP - About"
+msgstr ""
+
+#: bin/openerp.glade:1851
+msgid ""
+"<b>About OpenERP</b>\n"
+"<i>The most advanced Open Source ERP &amp; CRM !</i>"
+msgstr ""
+
+#: bin/openerp.glade:1890
+msgid ""
+"\n"
+"OpenERP - GTK Client - v%s\n"
+"\n"
+"OpenERP is an Open Source ERP+CRM\n"
+"for small to medium businesses.\n"
+"\n"
+"The whole source code is distributed under\n"
+"the terms of the GNU Public Licence.\n"
+"\n"
+"(c) 2003-TODAY, Tiny sprl\n"
+"\n"
+"More Info on www.openerp.com !"
+msgstr ""
+
+#: bin/openerp.glade:1918
+msgid "_OpenERP"
+msgstr ""
+
+#: bin/openerp.glade:1946
+msgid ""
+"\n"
+"(c) 2003-TODAY - Tiny sprl\n"
+"OpenERP is a product of Tiny sprl:\n"
+"\n"
+"Tiny sprl\n"
+"40 Chaussée de Namur\n"
+"1367 Gérompont\n"
+"Belgium\n"
+"\n"
+"Tel : (+32)81.81.37.00\n"
+"Mail: sales@tiny.be\n"
+"Web: http://tiny.be"
+msgstr ""
+
+#: bin/openerp.glade:1977
+msgid "_Contact"
+msgstr ""
+
+#: bin/openerp.glade:2029
+msgid "Open ERP - Forms widget"
+msgstr ""
+
+#: bin/openerp.glade:2208 bin/openerp.glade:4741
+msgid "OpenERP - Confirmation"
+msgstr ""
+
+#: bin/openerp.glade:2287
+msgid "OpenERP - Selection"
+msgstr ""
+
+#: bin/openerp.glade:2301
+msgid "Your selection:"
+msgstr ""
+
+#: bin/openerp.glade:2381
+msgid "OpenERP - Dialog"
+msgstr ""
+
+#: bin/openerp.glade:2405
+msgid "OpenERP, Field Preference target"
+msgstr ""
+
+#: bin/openerp.glade:2436
+msgid "_only for you"
+msgstr ""
+
+#: bin/openerp.glade:2450
+msgid "for _all users"
+msgstr ""
+
+#: bin/openerp.glade:2470
+msgid "<b>Value applicable for:</b>"
+msgstr ""
+
+#: bin/openerp.glade:2506
+msgid "<b>Value applicable if:</b>"
+msgstr ""
+
+#: bin/openerp.glade:2524
+msgid "Field _Name:"
+msgstr ""
+
+#: bin/openerp.glade:2538
+msgid "_Domain:"
+msgstr ""
+
+#: bin/openerp.glade:2597
+msgid "Default _value:"
+msgstr ""
+
+#: bin/openerp.glade:2652
+msgid "OpenERP - Export to CSV"
+msgstr ""
+
+#: bin/openerp.glade:2700
+msgid "Save List"
+msgstr ""
+
+#: bin/openerp.glade:2748
+msgid "Remove List"
+msgstr ""
+
+#: bin/openerp.glade:2803
+msgid "<b>Exports List</b>"
+msgstr ""
+
+#: bin/openerp.glade:2820
+msgid "<b>Predefined Exports</b>"
+msgstr ""
+
+#: bin/openerp.glade:2846
+msgid "Import Compatible"
+msgstr ""
+
+#: bin/openerp.glade:2862
+msgid "<b>Select an Option to Export</b>"
+msgstr ""
+
+#: bin/openerp.glade:2909
+msgid "Available Fields"
+msgstr ""
+
+#: bin/openerp.glade:2952 bin/openerp.glade:5647
+msgid "_Add"
+msgstr ""
+
+#: bin/openerp.glade:2999 bin/openerp.glade:5694
+msgid "_Remove"
+msgstr ""
+
+#: bin/openerp.glade:3047
+msgid "_Nothing"
+msgstr ""
+
+#: bin/openerp.glade:3102
+msgid "Fields to Export"
+msgstr ""
+
+#: bin/openerp.glade:3132
+msgid ""
+"Open in Excel\n"
+"Save as CSV"
+msgstr ""
+
+#: bin/openerp.glade:3151
+msgid "Add _field names"
+msgstr ""
+
+#: bin/openerp.glade:3168
+msgid "<b>Opti_ons</b>"
+msgstr ""
+
+#: bin/openerp.glade:3227
+msgid "OpenERP - Search"
+msgstr ""
+
+#: bin/openerp.glade:3307
+msgid "OpenERP - Preferences"
+msgstr ""
+
+#: bin/openerp.glade:3321
+msgid "<b>User preferences</b>"
+msgstr ""
+
+#: bin/openerp.glade:3387
+msgid "Tip of the Day"
+msgstr ""
+
+#: bin/openerp.glade:3434
+msgid "_Display a new tip next time?"
+msgstr ""
+
+#: bin/openerp.glade:3487
+msgid "Pre_vious Tip"
+msgstr ""
+
+#: bin/openerp.glade:3533
+msgid "Ne_xt Tip"
+msgstr ""
+
+#: bin/openerp.glade:3579
+msgid "OpenERP - License"
+msgstr ""
+
+#: bin/openerp.glade:3594
+msgid "OpenERP license"
+msgstr ""
+
+#: bin/openerp.glade:4292
+msgid "Go to resource ID"
+msgstr ""
+
+#: bin/openerp.glade:4342
+msgid "Search ID:"
+msgstr ""
+
+#: bin/openerp.glade:4421
+msgid ""
+"<b>Complete this form to submit your bug and/or send a support request.</b>\n"
+"<i>\n"
+"Your request will be sent to the OpenERP team and we will reply shortly.\n"
+"Note that we may not reply if you do not have a support contract with Tiny "
+"or an official partner.</i>"
+msgstr ""
+
+#: bin/openerp.glade:4480
+msgid "Phone number:"
+msgstr ""
+
+#: bin/openerp.glade:4493
+msgid "Emergency:"
+msgstr ""
+
+#: bin/openerp.glade:4507
+msgid ""
+"Not Urgent\n"
+"Medium\n"
+"Urgent\n"
+"Very Urgent"
+msgstr ""
+
+#: bin/openerp.glade:4540
+msgid "<b>Support contract id:</b>"
+msgstr ""
+
+#: bin/openerp.glade:4597
+msgid "Other comments:"
+msgstr ""
+
+#: bin/openerp.glade:4611
+msgid "Explain your problem:"
+msgstr ""
+
+#: bin/openerp.glade:4650
+msgid "<b>Your email:</b>"
+msgstr ""
+
+#: bin/openerp.glade:4664
+msgid "<b>Your Company:</b>"
+msgstr ""
+
+#: bin/openerp.glade:4678
+msgid "<b>Your name:</b>"
+msgstr ""
+
+#: bin/openerp.glade:4769 bin/openerp.glade:6155
+msgid "Hello World!"
+msgstr ""
+
+#: bin/openerp.glade:4831
+msgid "Keyboard shortcuts"
+msgstr ""
+
+#: bin/openerp.glade:4853
+msgid "<b>Shortcuts for OpenERP</b>"
+msgstr ""
+
+#: bin/openerp.glade:4867
+msgid "Close window without saving"
+msgstr ""
+
+#: bin/openerp.glade:4882
+msgid "<Ctrl> + <Esc>"
+msgstr ""
+
+#: bin/openerp.glade:4896
+msgid "<i>When editing a resource in a popup window</i>"
+msgstr ""
+
+#: bin/openerp.glade:4912
+msgid "Save and Close window"
+msgstr ""
+
+#: bin/openerp.glade:4927
+msgid "<Ctrl> + <Enter>"
+msgstr ""
+
+#: bin/openerp.glade:4940
+msgid "Switch view mode"
+msgstr ""
+
+#: bin/openerp.glade:4955
+msgid "<Ctrl> + L"
+msgstr ""
+
+#: bin/openerp.glade:4968
+msgid "Next record"
+msgstr ""
+
+#: bin/openerp.glade:4983
+msgid "Previous record"
+msgstr ""
+
+#: bin/openerp.glade:4998
+msgid "<PgDn>"
+msgstr ""
+
+#: bin/openerp.glade:5011
+msgid "<PgUp>"
+msgstr ""
+
+#: bin/openerp.glade:5039
+msgid "Save"
+msgstr ""
+
+#: bin/openerp.glade:5054
+msgid "<Ctrl> + W"
+msgstr ""
+
+#: bin/openerp.glade:5067
+msgid "<Ctrl> + S"
+msgstr ""
+
+#: bin/openerp.glade:5095
+msgid "<Ctrl> + <PgDn>"
+msgstr ""
+
+#: bin/openerp.glade:5108
+msgid "Previous tab"
+msgstr ""
+
+#: bin/openerp.glade:5123
+msgid "<Ctrl> + <PgUp>"
+msgstr ""
+
+#: bin/openerp.glade:5136
+msgid "New"
+msgstr ""
+
+#: bin/openerp.glade:5151
+msgid "<Ctrl> + N"
+msgstr ""
+
+#: bin/openerp.glade:5164
+msgid "Delete"
+msgstr ""
+
+#: bin/openerp.glade:5179
+msgid "<Ctrl> + D"
+msgstr ""
+
+#: bin/openerp.glade:5192
+msgid "Find / Search"
+msgstr ""
+
+#: bin/openerp.glade:5207
+msgid "<Ctrl> + F"
+msgstr ""
+
+#: bin/openerp.glade:5220
+msgid "Connect"
+msgstr ""
+
+#: bin/openerp.glade:5235
+msgid "<Ctrl> + O"
+msgstr ""
+
+#: bin/openerp.glade:5249
+msgid "Main Shortcuts"
+msgstr ""
+
+#: bin/openerp.glade:5266
+msgid "F2"
+msgstr ""
+
+#: bin/openerp.glade:5279
+msgid "<b>Shortcuts in relation fields</b>"
+msgstr ""
+
+#: bin/openerp.glade:5294
+msgid "<b>Shortcuts in text entries</b>"
+msgstr ""
+
+#: bin/openerp.glade:5307
+msgid "Open current field"
+msgstr ""
+
+#: bin/openerp.glade:5322
+msgid "Add a new line/field"
+msgstr ""
+
+#: bin/openerp.glade:5337
+msgid "F1"
+msgstr ""
+
+#: bin/openerp.glade:5350
+msgid "Auto-Complete text field"
+msgstr ""
+
+#: bin/openerp.glade:5365
+msgid "<Enter>"
+msgstr ""
+
+#: bin/openerp.glade:5378
+msgid "Previous editable widget"
+msgstr ""
+
+#: bin/openerp.glade:5393
+msgid "<Shift> + <Tab>"
+msgstr ""
+
+#: bin/openerp.glade:5406
+msgid "Next editable widget"
+msgstr ""
+
+#: bin/openerp.glade:5421
+msgid "<Tab>"
+msgstr ""
+
+#: bin/openerp.glade:5434
+msgid "Paste selected text"
+msgstr ""
+
+#: bin/openerp.glade:5449
+msgid "Copy selected text"
+msgstr ""
+
+#: bin/openerp.glade:5464
+msgid "Cut selected text"
+msgstr ""
+
+#: bin/openerp.glade:5479
+msgid "<Ctrl> + V"
+msgstr ""
+
+#: bin/openerp.glade:5492
+msgid "<Ctrl> + C"
+msgstr ""
+
+#: bin/openerp.glade:5505
+msgid "<Ctrl> + X"
+msgstr ""
+
+#: bin/openerp.glade:5522
+msgid "Edition Widgets"
+msgstr ""
+
+#: bin/openerp.glade:5560
+msgid "Import from CSV"
+msgstr ""
+
+#: bin/openerp.glade:5605
+msgid "<b>All fields</b>"
+msgstr ""
+
+#: bin/openerp.glade:5742
+msgid "N_othing"
+msgstr ""
+
+#: bin/openerp.glade:5801
+msgid "Auto-Detect"
+msgstr ""
+
+#: bin/openerp.glade:5856
+msgid "<b>Fields to import</b>"
+msgstr ""
+
+#: bin/openerp.glade:5891
+msgid "File to Import:"
+msgstr ""
+
+#: bin/openerp.glade:5965
+msgid "Lines to Skip:"
+msgstr ""
+
+#: bin/openerp.glade:5994
+msgid "Text Delimiter:"
+msgstr ""
+
+#: bin/openerp.glade:6022
+msgid "Encoding:"
+msgstr ""
+
+#: bin/openerp.glade:6035
+msgid "Field Separater:"
+msgstr ""
+
+#: bin/openerp.glade:6047
+msgid "CSV Parameters"
+msgstr ""
+
+#: bin/openerp.glade:6222
+msgid "Server"
+msgstr ""
+
+#: bin/openerp.glade:6232
+msgid "<b>Connect to a OpenERP server</b>"
+msgstr ""
+
+#: bin/openerp.glade:6291
+msgid "Protocol connection:"
+msgstr ""
+
+#: bin/openerp.glade:6337
+msgid "Port:"
+msgstr ""
+
+#: bin/openerp.glade:6389
+msgid "Choose a database..."
+msgstr ""
+
+#: bin/openerp.glade:6404
+msgid "<b>Backup a database</b>"
+msgstr ""
+
+#: bin/openerp.glade:6645
+msgid "Restore a database"
+msgstr ""
+
+#: bin/openerp.glade:6658
+msgid "<b>Restore a database</b>"
+msgstr ""
+
+#: bin/openerp.glade:6702
+msgid "(must not contain any special char)"
+msgstr ""
+
+#: bin/openerp.glade:6732
+msgid "New database name:"
+msgstr ""
+
+#: bin/openerp.glade:6832 bin/openerp.glade:6978 bin/openerp.glade:7493
+msgid "http://localhost:8069"
+msgstr ""
+
+#: bin/openerp.glade:6906
+msgid "Create a new database"
+msgstr ""
+
+#: bin/openerp.glade:6919
+msgid "<b>Create a new database</b>"
+msgstr ""
+
+#: bin/openerp.glade:6990
+msgid ""
+"This is the URL of the OpenERP server. Use 'localhost' if the server is "
+"installed on this computer. Click on 'Change' to change the address."
+msgstr ""
+
+#: bin/openerp.glade:6994
+msgid ""
+"<sup><b><span foreground=\"dark green\">?</span></b></sup>OpenERP Server:"
+msgstr ""
+
+#: bin/openerp.glade:7025
+msgid ""
+"This is the password of the user that have the rights to administer "
+"databases. This is not a OpenERP user, just a super administrator. If you "
+"did not changed it, the password is 'admin' after installation."
+msgstr ""
+
+#: bin/openerp.glade:7029
+msgid ""
+"<sup><b><span foreground=\"dark green\">?</span></b></sup>Super "
+"Administrator Password:"
+msgstr ""
+
+#: bin/openerp.glade:7048
+msgid "admin"
+msgstr ""
+
+#: bin/openerp.glade:7062
+msgid "(<i>admin</i>, by default)"
+msgstr ""
+
+#: bin/openerp.glade:7127
+msgid ""
+"Choose the name of the database that will be created. The name must not "
+"contain any special character. Exemple: 'terp'."
+msgstr ""
+
+#: bin/openerp.glade:7129
+msgid ""
+"<sup><b><span foreground=\"dark green\">?</span></b></sup>New Database Name:"
+msgstr ""
+
+#: bin/openerp.glade:7154
+msgid ""
+"Choose the default language that will be installed for this database. You "
+"will be able to install new languages after installation through the "
+"administration menu."
+msgstr ""
+
+#: bin/openerp.glade:7156
+msgid ""
+"<sup><b><span foreground=\"dark green\">?</span></b></sup>Default Language:"
+msgstr ""
+
+#: bin/openerp.glade:7169
+msgid ""
+"This is the password of the 'admin' user that will be created in your new "
+"database."
+msgstr ""
+
+#: bin/openerp.glade:7171
+msgid ""
+"<sup><b><span foreground=\"dark green\">?</span></b></sup>Administrator "
+"Password:"
+msgstr ""
+
+#: bin/openerp.glade:7184
+msgid ""
+"This is the password of the 'admin' user that will be created in your new "
+"database. It has to be the same than the above field."
+msgstr ""
+
+#: bin/openerp.glade:7186
+msgid ""
+"<sup><b><span foreground=\"dark green\">?</span></b></sup>Confirm Password:"
+msgstr ""
+
+#: bin/openerp.glade:7279
+msgid ""
+"Check this box if you want demonstration data to be installed on your new "
+"database. These data will help you to understand OpenERP, with predefined "
+"products, partners, etc."
+msgstr ""
+
+#: bin/openerp.glade:7282
+msgid ""
+"<sup><b><span foreground=\"dark green\">?</span></b></sup>Load Demonstration "
+"Data:"
+msgstr ""
+
+#: bin/openerp.glade:7349
+msgid "Change password"
+msgstr "Ganti password"
+
+#: bin/openerp.glade:7366
+msgid "<b>Change your super admin password</b>"
+msgstr "<b>Ubah password super admin anda</b>"
+
+#: bin/openerp.glade:7519
+msgid "Old password:"
+msgstr "Password lama:"
+
+#: bin/openerp.glade:7532
+msgid "New password:"
+msgstr "Password baru:"
+
+#: bin/openerp.glade:7545
+msgid "New password confirmation:"
+msgstr "Konfirmasi password baru:"
+
+#: bin/openerp.glade:7604
+msgid "OpenERP Message"
+msgstr "Pesan OpenERP"
+
+#: bin/openerp.glade:7788
+msgid "Concurrency exception"
+msgstr ""
+
+#: bin/openerp.glade:7813
+msgid ""
+"<b>\n"
+"Write concurrency warning:\n"
+"</b>\n"
+"This document has been modified while you were editing it.\n"
+"  Choose:\n"
+"   - \"Cancel\" to cancel saving.\n"
+"   - \"Compare\" to see the modified version.\n"
+"   - \"Write anyway\" to save your current version.\n"
+msgstr ""
+
+#: bin/openerp.glade:7876
+msgid "Compare"
+msgstr "Bandingkan"
+
+#: bin/openerp.glade:7922
+msgid "Write anyway"
+msgstr ""
+
+#: bin/openerp.glade:7952 bin/openerp.glade:7962
+msgid "window1"
+msgstr ""
+
+#: bin/openerp.glade:8034
+msgid "Today"
+msgstr "Hari ini"
+
+#: bin/openerp.glade:8080
+msgid "September 2008"
+msgstr "September 2008"
+
+#: bin/openerp.glade:8094
+msgid "Day"
+msgstr "Hari"
+
+#: bin/openerp.glade:8118
+msgid "Month"
+msgstr "Bulan"
+
+#: bin/openerp.glade:8276
+msgid "Fields on which Search criteria to be applied"
+msgstr ""
+
+#: bin/openerp.glade:8289
+msgid "Conditional Operators"
+msgstr ""
+
+#: bin/openerp.glade:8316
+msgid "The Choice will be applied with next filter if any"
+msgstr ""
+
+#: bin/openerp.glade:8317
+msgid ""
+"AND\n"
+"OR"
+msgstr ""
+
+#: bin/openerp.glade:8330
+msgid "Remove Filter"
+msgstr ""
+
+#: bin/openerp.glade:8349
+msgid "Filter Entry"
+msgstr ""
+
+#: bin/openerp.glade:8395
+msgid "Enter Filter Name:"
+msgstr ""
+
+#: bin/win_error.glade:40
+msgid "label"
+msgstr "label"
+
+#: bin/win_error.glade:100
+msgid "Click here for details about the publisher warranty proposition"
+msgstr ""
+
+#: bin/win_error.glade:120
+msgid "<i>_Publisher Warranty</i>"
+msgstr ""
+
+#: bin/win_error.glade:151
+msgid ""
+"<b>Publisher Warranty Contract.</b>\n"
+"<i>\n"
+"Your request will be send to OpenERP and publisher warranty team will reply "
+"you shortly.\n"
+"</i>"
+msgstr ""
+
+#: bin/win_error.glade:186
+msgid "Explain what you did:"
+msgstr ""
+
+#: bin/win_error.glade:200
+msgid "Others Comments:"
+msgstr "Komentar Lain"
+
+#: bin/win_error.glade:285
+msgid "Send to Publisher Warranty Team"
+msgstr ""
+
+#: bin/win_error.glade:318
+msgid "Summary of the problem:"
+msgstr ""
+
+#: bin/win_error.glade:360
+msgid "<i>_Support Request</i>"
+msgstr ""
+
+#: bin/win_error.glade:387
+msgid "Details"
+msgstr "Rincian"
+
+#: bin/win_error.glade:404
+msgid "<i>_Details</i>"
+msgstr "<i>_Rincian</i>"
+
+#~ msgid "Parameters :"
+#~ msgstr "Parameter :"
+
+#~ msgid "Limit :"
+#~ msgstr "Batas :"
+
+#~ msgid "Offset :"
+#~ msgstr "ofset"
+
+#~ msgid "The content of the widget or excpetion if not valid"
+#~ msgstr "Isi dari widget atau exception jika tidak valid"
+
+#~ msgid "This widget is readonly !"
+#~ msgstr "Widget ini redonly"
+
+#~ msgid ""
+#~ "Thank you for the feedback !\n"
+#~ "Your comments have been sent to OpenERP.\n"
+#~ "You should now start by creating a new database or\n"
+#~ "connecting to an existing server through the \"File\" menu."
+#~ msgstr ""
+#~ "Terimakasih atas umpan baliknya\n"
+#~ "Komentarmu telah di kirim ke OpenERP\n"
+#~ "Kamu seharusnya mulai membuat database baru sekarang atau\n"
+#~ "terhubung ke server yang ada melalui menu \"File\""
+
+#~ msgid "Print Workflow (Complex)"
+#~ msgstr "Cetak alur kerja (Kompleks)"
+
+#~ msgid ""
+#~ "\n"
+#~ "<b>An unknown error has been reported.</b>\n"
+#~ "\n"
+#~ "<b>You do not have a valid Open ERP maintenance contract !</b>\n"
+#~ "If you are using Open ERP in production, it is highly suggested to "
+#~ "subscribe\n"
+#~ "a maintenance program.\n"
+#~ "\n"
+#~ "The Open ERP maintenance contract provides you a bugfix guarantee and an\n"
+#~ "automatic migration system so that we can fix your problems within a few\n"
+#~ "hours. If you had a maintenance contract, this error would have been sent\n"
+#~ "to the quality team of the Open ERP editor.\n"
+#~ "\n"
+#~ "The maintenance program offers you:\n"
+#~ "* Automatic migrations on new versions,\n"
+#~ "* A bugfix guarantee,\n"
+#~ "* Monthly announces of potential bugs and their fixes,\n"
+#~ "* Security alerts by email and automatic migration,\n"
+#~ "* Access to the customer portal.\n"
+#~ "\n"
+#~ "You can use the link bellow for more information. The detail of the error\n"
+#~ "is displayed on the second tab.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "<b>Kesalahan yang belum diketahui telah dilaporkan.</b>\n"
+#~ "<b>Kamu tidak punya kontrak pemeliharaan OpenERP yang sah!<b/b>\n"
+#~ "Jika kamu memakai OpenERP dalam produksi, sangat disarankan untuk mengikuti "
+#~ "\n"
+#~ "program perawatan\n"
+#~ "\n"
+#~ "Kontrak perwatan OpenERP memyediakan jaminan perbaikan bug\n"
+#~ "dan migrasi otomatis sehingga kami dapat memperbaiki program\n"
+#~ "dalam beberapa jam. Jika kamu memiliki kontrak maintenance, \n"
+#~ "kesalahan ini sudah dikirim tim mutu dari editor OpenERP\n"
+#~ "\n"
+#~ "Program perawatan menawarkan:\n"
+#~ "*Migrasi otomatis ke versi terbaru\n"
+#~ "*Jaminan perbaikan bug\n"
+#~ "*Peringatan keamanan melalui email dan migrasi otomatis\n"
+#~ "*akses ke portal pelanggan\n"
+#~ "\n"
+#~ "Kamu dapat memakai tautan dibawah untuk informasi lebih lanjut. Detil "
+#~ "kesalahn\n"
+#~ "ditampilan di tab kedua.\n"
+
+#, python-format
+#~ msgid "Unable to set locale %s"
+#~ msgstr "Tidak dapat mengeset locale menjadi %s"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
+
+#~ msgid "specify channels to log"
+#~ msgstr "tentukan saluran untuk log"
+
+#~ msgid "<b>Operation in progress</b>"
+#~ msgstr "<b>proses sedang dijalankan</b>"
+
+#~ msgid "OpenERP Database Installation"
+#~ msgstr "instalasi basis data OpenERP"
+
+#~ msgid "Send to Maintenance Team"
+#~ msgstr "Kirim ke Tim Pemeliharaan"
+
+#~ msgid ""
+#~ "You can connect to the new database using one of the following account:\n"
+#~ "\n"
+#~ "    Administrator: admin / admin "
+#~ msgstr ""
+#~ "Anda dapat melakukan koneksi dengan database yang baru dengan menggunakan "
+#~ "account berikut:\n"
+#~ "\n"
+#~ "    Administrator: admin / admin "
+
+#~ msgid "<b>Database created successfully!</b>"
+#~ msgstr "<b>Database sukses terbuat!</b>"
+
+#~ msgid "Database creation"
+#~ msgstr "Pembuatan Database"
+
+#~ msgid "Load Demonstration Data:"
+#~ msgstr "Isi Data Demonstrasi"
+
+#~ msgid "Confirm Password:"
+#~ msgstr "Konfirmasi Password:"
+
+#~ msgid "New Database Name:"
+#~ msgstr "Nama Database Baru:"
+
+#~ msgid "OpenERP Server:"
+#~ msgstr "Server OpenERP"
+
+#~ msgid "Administrator Password:"
+#~ msgstr "Password Administrator:"
+
+#~ msgid "Default Language:"
+#~ msgstr "Bahasa Default:"
+
+#~ msgid ""
+#~ "Thank you for testing OpenERP !\n"
+#~ "You should now start by creating a new database or\n"
+#~ "connecting to an existing server through the \"File\" menu."
+#~ msgstr ""
+#~ "Terimakasih telah mencoba OpenERP!\n"
+#~ "Anda dapat memulai dengan membuat database baru sekarang atau\n"
+#~ "menggunakan server yang ada melalui menu \"File\""
+
+#~ msgid "Error no report"
+#~ msgstr "Kesalahan tanpa laporan"
+
+#, python-format
+#~ msgid ""
+#~ "\n"
+#~ "<b>An unknown error has been reported.</b>\n"
+#~ "\n"
+#~ "Your maintenance contract does not cover all modules installed in your "
+#~ "system !\n"
+#~ "If you are using Open ERP in production, it is highly suggested to upgrade "
+#~ "your\n"
+#~ "contract.\n"
+#~ "\n"
+#~ "If you have developed your own modules or installed third party module, we\n"
+#~ "can provide you an additional maintenance contract for these modules. After\n"
+#~ "having reviewed your modules, our quality team will ensure they will "
+#~ "migrate\n"
+#~ "automatically for all future stable versions of Open ERP at no extra cost.\n"
+#~ "\n"
+#~ "Here is the list of modules not covered by your maintenance contract:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "You can use the link bellow for more information. The detail of the error\n"
+#~ "is displayed on the second tab."
+#~ msgstr ""
+#~ "\n"
+#~ "<b>Kesalahan tak terduga telah dilaporkan</b>\n"
+#~ "Kontrak maintenance tidak mencakup semua modul yang terinstall !, jika "
+#~ "system ini digunakan dalam perusahaan sangat disarankan untuk upgrade "
+#~ "kontrak maintenance Anda.\n"
+#~ "Jika modul merupakan buatan anda maka kami akan memberikan kontrak setelah "
+#~ "menguji modul ini.\n"
+#~ "\n"
+#~ "Berikut adalah daftar modul yang tercantum dalam modul kontrak anda:\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Gunakan link untuk melihat detail"
+
+#~ msgid "gtk-ok"
+#~ msgstr "gtk-oke"
+
+#~ msgid "gtk-cancel"
+#~ msgstr "gtk-batal"
+
+#~ msgid "Your Name:"
+#~ msgstr "Nama Anda:"
+
+#~ msgid ""
+#~ "Function only available for MS Office !\n"
+#~ "Sorry, OOo users :("
+#~ msgstr "Fungsi hanya tersedia didalam aplikasi MS Excel !"
+
+#~ msgid "Preference"
+#~ msgstr "Tampilan"
+
+#, python-format
+#~ msgid " - %s request(s) sended"
+#~ msgstr " - %s pesan terkirim"
+
+#~ msgid "The following users have been installed on your database:"
+#~ msgstr "Pengguna ini sudah ada dalam database:"
+
+#~ msgid "You can now connect to the database as an administrator."
+#~ msgstr "Silakan mencoba database sebagai administrator."
+
+#~ msgid "_Tips"
+#~ msgstr "_Tips"

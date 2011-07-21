@@ -1,0 +1,125 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* account_chart_orthogonal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_chart_orthogonal
+#: model:ir.model,name:account_chart_orthogonal.model_account_chart_orthogonal_wizard
+msgid "account.chart.orthogonal.wizard"
+msgstr "account.chart.orthogonal.wizard"
+
+#. module: account_chart_orthogonal
+#: selection:account.chart.orthogonal.wizard,target_move:0
+msgid "All Posted Entries"
+msgstr "Sve proknjižene stavke"
+
+#. module: account_chart_orthogonal
+#: view:account.chart.orthogonal.wizard:0
+msgid "Open"
+msgstr "Otvoreno"
+
+#. module: account_chart_orthogonal
+#: constraint:account.move.line:0
+msgid "You can not create move line on closed account."
+msgstr "You can not create move line on closed account."
+
+#. module: account_chart_orthogonal
+#: model:ir.module.module,description:account_chart_orthogonal.module_meta_information
+msgid "\n"
+"Add the option to display the chart of accounts filtered by an analytical account. This orthogonal view could be used as\n"
+"very simple way to enable multi-company. \n"
+"\n"
+"Originally, this is used by the mbi_pos module to use multiple stores in a single chart of account, instead of creating cash, inventory,\n"
+"etc. accounts for every store. \n"
+"    "
+msgstr "\n"
+"Add the option to display the chart of accounts filtered by an analytical account. This orthogonal view could be used as\n"
+"very simple way to enable multi-company. \n"
+"\n"
+"Originally, this is used by the mbi_pos module to use multiple stores in a single chart of account, instead of creating cash, inventory,\n"
+"etc. accounts for every store. \n"
+"    "
+
+#. module: account_chart_orthogonal
+#: model:ir.actions.act_window,name:account_chart_orthogonal.action_wizard_chart_orthogonal
+#: model:ir.ui.menu,name:account_chart_orthogonal.menu_wizard_chart_orthogonal
+msgid "Chart of Accounts (filter by analytic account)"
+msgstr "Chart of Accounts (filter by analytic account)"
+
+#. module: account_chart_orthogonal
+#: help:account.chart.orthogonal.wizard,analytic_id:0
+msgid "The moves not related to this analytic account will be filtered out."
+msgstr "The moves not related to this analytic account will be filtered out."
+
+#. module: account_chart_orthogonal
+#: field:account.chart.orthogonal.wizard,analytic_id:0
+msgid "Analytic Account"
+msgstr "Konto analitike"
+
+#. module: account_chart_orthogonal
+#: model:ir.model,name:account_chart_orthogonal.model_account_move_line
+msgid "Journal Items"
+msgstr "Stavke glavne knjige"
+
+#. module: account_chart_orthogonal
+#: field:account.chart.orthogonal.wizard,fiscalyear:0
+msgid "Fiscal Year"
+msgstr "Fiskalna godina"
+
+#. module: account_chart_orthogonal
+#: view:account.chart.orthogonal.wizard:0
+msgid "(If you do not select Fiscal year it will take all open fiscal years)"
+msgstr "(ostavite prazno za sve otvorene fiskalne godine)"
+
+#. module: account_chart_orthogonal
+#: sql_constraint:account.move.line:0
+msgid "Wrong credit or debit value in accounting entry !"
+msgstr "Wrong credit or debit value in accounting entry !"
+
+#. module: account_chart_orthogonal
+#: view:account.chart.orthogonal.wizard:0
+msgid "Cancel"
+msgstr "Odustani"
+
+#. module: account_chart_orthogonal
+#: model:ir.module.module,shortdesc:account_chart_orthogonal.module_meta_information
+msgid "Chart of accounts filtered by an analytical account."
+msgstr "Kontni plan filtriran po analitičkom kontu."
+
+#. module: account_chart_orthogonal
+#: view:account.chart.orthogonal.wizard:0
+msgid "Chart of Accounts (orthogonal)"
+msgstr "Chart of Accounts (orthogonal)"
+
+#. module: account_chart_orthogonal
+#: constraint:account.move.line:0
+msgid "Company must be same for its related account and period."
+msgstr "Company must be same for its related account and period."
+
+#. module: account_chart_orthogonal
+#: field:account.chart.orthogonal.wizard,target_move:0
+msgid "Target Moves"
+msgstr "Ciljna knjiženja"
+
+#. module: account_chart_orthogonal
+#: selection:account.chart.orthogonal.wizard,target_move:0
+msgid "All Entries"
+msgstr "Sve stavke"
+
+#. module: account_chart_orthogonal
+#: constraint:account.move.line:0
+msgid "You can not create move line on view account."
+msgstr "Ne može se knjižiti na sintetički konto."
+

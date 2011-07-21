@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        ##############################################################################
+        #
+        #    jasper_server module for OpenERP, 
+        #    Copyright (C) 2010 SYLEAM Info Services ([http://www.Syleam.fr/]) Damien CRIER
+        #
+        #    This file is a part of jasper_server
+        #
+        #    jasper_server is free software: you can redistribute it and/or modify
+        #    it under the terms of the GNU General Public License as published by
+        #    the Free Software Foundation, either version 3 of the License, or
+        #    (at your option) any later version.
+        #
+        #    jasper_server is distributed in the hope that it will be useful,
+        #    but WITHOUT ANY WARRANTY; without even the implied warranty of
+        #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        #    GNU General Public License for more details.
+        #
+        #    You should have received a copy of the GNU General Public License
+        #    along with this program.  If not, see [http://www.gnu.org/licenses/].
+        #
+        ##############################################################################
+
+        <record model="jasper.document" id="jasper_document_4">
+            <field name="name">Partner List</field>
+            <field name="depth">2</field>
+            <field name="jasper_file">partner_list.jrxml</field>
+            <field name="format_choice">mono</field>
+            <field name="model_id" ref="base.model_res_partner"/>
+            <field name="enabled" eval="1"/>
+            <field name="report_unit">PartnerList</field>
+            <field name="mode">sql</field>
+            <field name="service">partner_list</field>
+            <field name="format">PDF</field>
+            <field name="toolbar" eval="0"/>
+        </record>
+
+        <record id="jasper_server_1" model="jasper.server">
+            <field name="host">localhost</field>
+            <field name="port">8180</field>
+            <field name="user">jasperadmin</field>
+            <field name="pass">jasperadmin</field>
+            <field name="enable" eval="1"/>
+        </record>
+
+    </data>
+</openerp>

@@ -1,0 +1,103 @@
+div.notebook {
+    overflow: hidden;
+    margin: 6px 0 5px;
+    padding: 0;
+}
+
+.notebook-tabs {
+    height: 18px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.notebook-tabs-strip {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.notebook-tabs.scrolling .notebook-tabs-strip {
+    left: 14px;
+    right: 14px;
+}
+
+.notebook-tabs.scrolling .left.scroller {
+    background: #F0EEEE url(../images/notebook/nb-left.png) no-repeat center;
+}
+.notebook-tabs.scrolling .right.scroller {
+    background: #F0EEEE url(../images/notebook/nb-right.png) no-repeat center;
+}
+
+.notebook-tab {
+    display: -moz-inline-stack;
+    display: inline; /*IE7 */
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 2px;
+    background: #d0d0d0;
+    border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    cursor: pointer;
+    vertical-align: top;
+}
+.notebook-tab:hover {
+    background: #e0e0e0;
+}
+.notebook-tab-active, li.notebook-tab-active:hover {
+    background: #f9f9f9;
+    cursor: auto;
+    border: 1px solid #999;
+    border-bottom: none;
+}
+
+li.notebook-tab span.tab-title {
+    display: block;
+    outline: none;
+    text-decoration: none !important;
+    float: left;
+    height: 15px;
+    padding: 3px 7px 0 7px;
+    color: #555555 !important;
+    text-shadow: None;
+}
+
+li.notebook-tab span.tab-close {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    width: 12px;
+    height: 12px;
+    background: transparent url(../images/notebook/tab-close.png) no-repeat center;
+    cursor: pointer;
+}
+
+li.notebook-tab-closable span.tab-title {
+    padding-right: 18px;
+}
+
+div.notebook-pages {
+    padding: 10px 5px;
+    background: #f9f9f9;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius-topleft: 0;
+    border-top-left-radius: 0;
+    box-shadow: 0 1px 1px #ddd;
+    -moz-box-shadow: 0 1px 1px #ddd;
+    -webkit-box-shadow: 0 1px 1px #ddd;
+    border: 1px solid #999;
+}
+
+div.notebook-page {
+    display: none;
+}
+
+div.notebook-page-active {
+    display: block;
+}

@@ -1,0 +1,297 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* hr_contract
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_contract
+#: field:hr.contract,wage:0
+msgid "Wage"
+msgstr "Plata"
+
+#. module: hr_contract
+#: view:hr.contract:0
+msgid "Information"
+msgstr "Informacija"
+
+#. module: hr_contract
+#: view:hr.contract:0
+msgid "Trial Period"
+msgstr "Trial Period"
+
+#. module: hr_contract
+#: field:hr.contract,trial_date_start:0
+msgid "Trial Start Date"
+msgstr "Trial Start Date"
+
+#. module: hr_contract
+#: view:hr.employee:0
+msgid "Medical Examination"
+msgstr "Medical Examination"
+
+#. module: hr_contract
+#: field:hr.employee,vehicle:0
+msgid "Company Vehicle"
+msgstr "Vozilo organizacije"
+
+#. module: hr_contract
+#: view:hr.employee:0
+msgid "Miscellaneous"
+msgstr "Razno"
+
+#. module: hr_contract
+#: view:hr.contract:0
+msgid "Current"
+msgstr "Trenutno"
+
+#. module: hr_contract
+#: view:hr.contract:0
+msgid "Group By..."
+msgstr "Grupiraj po..."
+
+#. module: hr_contract
+#: field:hr.contract,department_id:0
+msgid "Department"
+msgstr "Odjel"
+
+#. module: hr_contract
+#: view:hr.contract:0
+msgid "Overpassed"
+msgstr "Prekoračeni"
+
+#. module: hr_contract
+#: view:hr.contract:0
+#: field:hr.contract,employee_id:0
+#: model:ir.model,name:hr_contract.model_hr_employee
+msgid "Employee"
+msgstr "Radnik"
+
+#. module: hr_contract
+#: model:ir.module.module,shortdesc:hr_contract.module_meta_information
+msgid "Human Resources Contracts"
+msgstr "Ugovori radnika"
+
+#. module: hr_contract
+#: view:hr.contract:0
+msgid "Search Contract"
+msgstr "Traži ugovore"
+
+#. module: hr_contract
+#: view:hr.contract:0
+msgid "Contracts in progress"
+msgstr "Contracts in progress"
+
+#. module: hr_contract
+#: field:hr.employee,vehicle_distance:0
+msgid "Home-Work Distance"
+msgstr "Udaljenost prebivalište-posao"
+
+#. module: hr_contract
+#: view:hr.contract:0
+#: field:hr.employee,contract_ids:0
+#: model:ir.actions.act_window,name:hr_contract.act_hr_employee_2_hr_contract
+#: model:ir.actions.act_window,name:hr_contract.action_hr_contract
+#: model:ir.ui.menu,name:hr_contract.hr_menu_contract
+msgid "Contracts"
+msgstr "Ugovori"
+
+#. module: hr_contract
+#: view:hr.employee:0
+msgid "Personal Info"
+msgstr "Personal Info"
+
+#. module: hr_contract
+#: view:hr.contract:0
+msgid "Contracts whose end date already passed"
+msgstr "Contracts whose end date already passed"
+
+#. module: hr_contract
+#: help:hr.employee,contract_id:0
+msgid "Latest contract of the employee"
+msgstr "Posljednji ugovor radnika"
+
+#. module: hr_contract
+#: view:hr.contract:0
+msgid "Job"
+msgstr "Posao"
+
+#. module: hr_contract
+#: view:hr.contract:0
+#: field:hr.contract,advantages:0
+msgid "Advantages"
+msgstr "Advantages"
+
+#. module: hr_contract
+#: view:hr.contract:0
+msgid "Valid for"
+msgstr "Valid for"
+
+#. module: hr_contract
+#: view:hr.contract:0
+msgid "Work Permit"
+msgstr "Work Permit"
+
+#. module: hr_contract
+#: field:hr.employee,children:0
+msgid "Number of Children"
+msgstr "Number of Children"
+
+#. module: hr_contract
+#: model:ir.actions.act_window,name:hr_contract.action_hr_contract_type
+#: model:ir.ui.menu,name:hr_contract.hr_menu_contract_type
+msgid "Contract Types"
+msgstr "Vrste ugovora"
+
+#. module: hr_contract
+#: constraint:hr.employee:0
+msgid "Error ! You cannot create recursive Hierarchy of Employees."
+msgstr "Pogreška ! Ne možete kreirati rekurzivnu hijerarhiju djelatnika."
+
+#. module: hr_contract
+#: field:hr.contract,date_end:0
+msgid "End Date"
+msgstr "Završni Datum"
+
+#. module: hr_contract
+#: help:hr.contract,wage:0
+msgid "Basic Salary of the employee"
+msgstr "Basic Salary of the employee"
+
+#. module: hr_contract
+#: field:hr.contract,name:0
+msgid "Contract Reference"
+msgstr "Ugovor br."
+
+#. module: hr_contract
+#: help:hr.employee,vehicle_distance:0
+msgid "In kilometers"
+msgstr "U kilometrima"
+
+#. module: hr_contract
+#: view:hr.contract:0
+#: field:hr.contract,notes:0
+msgid "Notes"
+msgstr "Bilješke"
+
+#. module: hr_contract
+#: field:hr.contract,permit_no:0
+msgid "Work Permit No"
+msgstr "Work Permit No"
+
+#. module: hr_contract
+#: view:hr.contract:0
+#: field:hr.employee,contract_id:0
+#: model:ir.model,name:hr_contract.model_hr_contract
+#: model:ir.ui.menu,name:hr_contract.next_id_56
+msgid "Contract"
+msgstr "Ugovor"
+
+#. module: hr_contract
+#: view:hr.contract:0
+#: field:hr.contract,type_id:0
+#: view:hr.contract.type:0
+#: field:hr.contract.type,name:0
+#: model:ir.model,name:hr_contract.model_hr_contract_type
+msgid "Contract Type"
+msgstr "Vrsta Ugovora"
+
+#. module: hr_contract
+#: view:hr.contract:0
+#: field:hr.contract,working_hours:0
+msgid "Working Schedule"
+msgstr "Raspored rada"
+
+#. module: hr_contract
+#: view:hr.employee:0
+msgid "Job Info"
+msgstr "Job Info"
+
+#. module: hr_contract
+#: field:hr.contract,visa_expire:0
+msgid "Visa Expire Date"
+msgstr "Visa Expire Date"
+
+#. module: hr_contract
+#: field:hr.contract,job_id:0
+msgid "Job Title"
+msgstr "Naziv posla"
+
+#. module: hr_contract
+#: field:hr.employee,manager:0
+msgid "Is a Manager"
+msgstr "Da li je voditelj"
+
+#. module: hr_contract
+#: field:hr.contract,date_start:0
+msgid "Start Date"
+msgstr "Početni datum"
+
+#. module: hr_contract
+#: constraint:hr.contract:0
+msgid "Error! contract start-date must be lower then contract end-date."
+msgstr "Error! contract start-date must be lower then contract end-date."
+
+#. module: hr_contract
+#: model:ir.module.module,description:hr_contract.module_meta_information
+msgid "\n"
+"Add all information on the employee form to manage contracts.\n"
+"=============================================================\n"
+"\n"
+"    * Marital status,\n"
+"    * Security number,\n"
+"    * Place of birth, birth date, ...\n"
+"\n"
+"You can assign several contracts per employee.\n"
+"    "
+msgstr "\n"
+"Add all information on the employee form to manage contracts.\n"
+"=============================================================\n"
+"\n"
+"    * Marital status,\n"
+"    * Security number,\n"
+"    * Place of birth, birth date, ...\n"
+"\n"
+"You can assign several contracts per employee.\n"
+"    "
+
+#. module: hr_contract
+#: field:hr.contract,visa_no:0
+msgid "Visa No"
+msgstr "Visa No"
+
+#. module: hr_contract
+#: field:hr.employee,place_of_birth:0
+msgid "Place of Birth"
+msgstr "Mjesto Rođenja"
+
+#. module: hr_contract
+#: view:hr.contract:0
+msgid "Duration"
+msgstr "Trajanje"
+
+#. module: hr_contract
+#: field:hr.employee,medic_exam:0
+msgid "Medical Examination Date"
+msgstr "Medical Examination Date"
+
+#. module: hr_contract
+#: field:hr.contract,trial_date_end:0
+msgid "Trial End Date"
+msgstr "Trial End Date"
+
+#. module: hr_contract
+#: view:hr.contract.type:0
+msgid "Search Contract Type"
+msgstr "Traži vrste ugovora"
+

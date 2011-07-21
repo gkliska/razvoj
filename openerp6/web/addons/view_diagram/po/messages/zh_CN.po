@@ -1,0 +1,140 @@
+# Chinese (Simplified) translation for openobject-client-web
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the openobject-client-web package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-client-web\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2011-03-18 11:58+0100\n"
+"PO-Revision-Date: 2011-01-03 15:51+0000\n"
+"Last-Translator: Wei \"oldrev\" Li <oldrev@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-07-12 04:38+0000\n"
+"X-Generator: Launchpad (build 13168)\n"
+
+#: controllers/_diagram.py:91 controllers/_diagram.py:212
+msgid "Could not delete state"
+msgstr "无法删除状态"
+
+#: controllers/_diagram.py:276
+msgid "No workflow associated!"
+msgstr "无相关工作流!"
+
+#: controllers/process.py:44
+msgid "Help: Not Defined"
+msgstr "帮助: 未定义"
+
+#: controllers/process.py:88
+#, python-format
+msgid "%(name)s - Resource: %(resource)s, State: %(state)s"
+msgstr "%(name)s - 资源: %(resource)s, 状态: %(state)s"
+
+#: controllers/process.py:100
+msgid "Last modified by:"
+msgstr "最近修改者："
+
+#: controllers/templates/process.mako:4 controllers/templates/process.mako:87
+#: controllers/templates/process_tip.mako:5
+msgid "Process"
+msgstr "处理"
+
+#: controllers/templates/process.mako:55
+msgid "Documentation"
+msgstr "文档"
+
+#: controllers/templates/process.mako:56
+msgid "Read Documentation Online"
+msgstr "阅读在线文档"
+
+#: controllers/templates/process.mako:62
+msgid "Forum"
+msgstr "论坛"
+
+#: controllers/templates/process.mako:63
+msgid "Community Discussion"
+msgstr "社区"
+
+#: controllers/templates/process.mako:68
+msgid "Books"
+msgstr "书籍"
+
+#: controllers/templates/process.mako:69
+msgid "Get the book on Amazon"
+msgstr "在Amazon购书"
+
+#: controllers/templates/process.mako:74
+msgid "Support / Publisher Warranty"
+msgstr "支持/发布者保障"
+
+#: controllers/templates/process.mako:75
+msgid "Get the OpenERP Warranty"
+msgstr "获取openerp授权"
+
+#: controllers/templates/process.mako:97
+msgid "Select Process"
+msgstr "选择处理"
+
+#: controllers/templates/process.mako:103
+msgid "Select"
+msgstr "选择"
+
+#: controllers/templates/process.mako:117
+msgid "[Edit Process]"
+msgstr "[编辑处理]"
+
+#: controllers/templates/process.mako:119
+msgid "[show fields]"
+msgstr "[显示字段]"
+
+#: controllers/templates/process.mako:120
+msgid "[hide fields]"
+msgstr "[隐藏字段]"
+
+#: controllers/templates/process_open.mako:54
+#: controllers/templates/process_tip.mako:20
+#: controllers/templates/wkf_popup.mako:52
+msgid "Close"
+msgstr "关闭"
+
+#: controllers/templates/process_open.mako:55
+#: controllers/templates/wkf_popup.mako:49
+msgid "Save"
+msgstr "保存"
+
+#: controllers/templates/workflow.mako:4
+msgid "Workflow"
+msgstr "工作流"
+
+#: controllers/templates/workflow.mako:20
+#, python-format
+msgid "Workflow (%s)"
+msgstr "工作流(%s)"
+
+#: widgets/_views.py:8
+msgid "Diagram"
+msgstr "图表"
+
+#: widgets/_views.py:9
+msgid "Diagram view..."
+msgstr "图表视图"
+
+#: widgets/templates/diagram.mako:27
+msgid "Loading..."
+msgstr "正在加载..."
+
+#~ msgid "hide fields"
+#~ msgstr "隐藏字段"
+
+#~ msgid "show fields"
+#~ msgstr "显示字段"
+
+#~ msgid "Opportunities Documentation Online"
+#~ msgstr "在线的商机文档"
+
+#~ msgid "Support / Maintenance"
+#~ msgstr "支持/维护"

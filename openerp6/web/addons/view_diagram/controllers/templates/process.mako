@@ -1,0 +1,166 @@
+<%inherit file="/openerp/controllers/templates/base_dispatch.mako"/>
+
+<%def name="header()">
+    <title>${_("Process")}</title>
+
+    <link type="text/css" rel="stylesheet" href="/view_diagram/static/css/process.css"/>
+
+    <script src="/view_diagram/static/javascript/draw2d/wz_jsgraphics.js"></script>
+    <script src="/view_diagram/static/javascript/draw2d/mootools.js"></script>
+    <script src="/view_diagram/static/javascript/draw2d/moocanvas.js"></script>
+    <script src="/view_diagram/static/javascript/draw2d/draw2d.js"></script>
+
+    <script src="/view_diagram/static/javascript/process.js"></script>
+
+    <script type="text/javascript">
+        openobject.process.Node.prototype.onHelp = function() {
+            window.open(this.data.url || "http://doc.openerp.com/v6.0/index.php?model=" + this.data.model + "&lang=${lang}&version=${version}");
+        }
+    </script>
+    % if selection:
+    <script type="text/javascript">
+        var select_workflow = function() {
+            var id = parseInt(openobject.dom.get('select_workflow').value, 10) || null;
+            var res_model = openobject.dom.get('res_model').value || null;
+            var res_id = parseInt(openobject.dom.get('res_id').value, 10) || null;
+            openLink(openobject.http.getURL("/view_diagram/process", {id: id, res_model: res_model, res_id: res_id, title: '${title}'}));
+        }
+    </script>
+    % else:
+    <script type="text/javascript">
+        jQuery(document).ready(function(evt){
+
+            var id = parseInt(openobject.dom.get('id').value, 10) || 0;
+            var res_model = openobject.dom.get('res_model').value;
+            var res_id = openobject.dom.get('res_id').value || 0;
+
+            if (id) {
+                var wkf = new openobject.process.Workflow('process_canvas');
+                wkf.load(id, res_model, res_id, '${title}');
+            }
+        });
+    </script>
+    % endif
+</%def>
+
+<%def name="content()">
+    <table class="view" border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
+        <tr>
+            <td width="75%" valign="top" class="fields collapsed" style="padding-top:10px;">
+                <h1>${title} (${res_model})
+                </h1>
+                <p class="process-links">
+                    <a class="cta-a" target="_blank" href="${context_help}">
+                        <span>
+                            <strong>${_("Documentation")}</strong>
+                            ${_("Read Documentation Online")}
+                        </span>
+                        
+                    </a>
+                    <a class="cta-a" target="_blank" href="http://www.openerp.com/forum/">
+                        <span>
+                            <strong>${_("Forum")}</strong>
+                            ${_("Community Discussion")}
+                        </span>
+                    </a>
+                    <a class="cta-a" target="_blank" href="http://www.openerp.com/services/books">
+                        <span>
+                            <strong>${_("Books")}</strong>
+                            ${_("Get the book on Amazon")}
+                        </span>
+                    </a>
+                    <a class="cta-a" target="_blank" href="http://www.openerp.com/services/subscribe-onsite">
+                        <span>
+                            <strong>${_("Support / Publisher Warranty")}</strong>
+                            ${_("Get the OpenERP Warranty")}
+                        </span>
+                    </a>
+                </p>
+                <p class="process-help-text">
+                    ${help}
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="padding-bottom:0" colspan="1" valign="bottom">
+                <h2 style="padding:0 0 0 10px; font-weight:bold">${process_title} ${_("Process")}</h2>
+            </td>
+        </tr>
+
+        % if selection:
+        <tr>
+            <td colspan="1">
+                <input type="hidden" id="res_model" value="${res_model}"/>
+                <input type="hidden" id="res_id" value="${res_id}"/>
+                <fieldset style="margin: 0 0 10px 10px; display: inline; padding: 4px">
+                    <legend><b style="padding: 4px;">${_("Select Process")}</b></legend>
+                    <select id="select_workflow" name="select_workflow" style="min-width: 150px">
+                        % for val, text in selection:
+                        <option value="${val}" ${val==id and "selected" or ""} >${text}</option>
+                        % endfor
+                    </select>
+                    <button class="button" type="button" onclick="select_workflow()">${_("Select")}</button>
+                </fieldset>
+            </td>
+        </tr>
+
+        %else:
+        <tr>
+            <td colspan="2">
+                <input type="hidden" id="id" value="${id}"/>
+                <input type="hidden" id="res_model" value="${res_model}"/>
+                <input type="hidden" id="res_id" value="${res_id}"/>
+                <div id="process_canvas" style="margin-top: 0"></div>
+                <div align="left" style="padding: 5px 10px;">
+					
+                    <a target="_blank" id="show_customize_menu" href="${edit_process_url}">${_("[Edit Process]")}</a>
+					
+                    <span class="fields collapsed"><span class="expand-button">${_("[show fields]")}</span></span>
+                    <span class="fields collapsed"><span class="collapse-button">${_("[hide fields]")}</span></span>
+                    <br/>
+                </div>
+            </td>
+        </tr>
+        % endif
+
+        % if fields:
+        <tr>
+            <td colspan="2" class="fields collapsed">
+                <div align="left" style="padding: 5px 10px;">
+                    <table border="0">
+                    % for k, v in fields.items():
+                        <tr>
+                            <td valign="top">
+                                <span class="process-field-name">${k}:</span>
+                            </td>
+                            <td valign="top">
+                            % for l, m in v.iteritems():
+                                % if m:
+                                    <span class="process-field-attribute-name">
+                                        ${l}${m is not True and ':' or ''}
+                                    </span>
+                                    % if m is not True:
+                                        <span class="process-field-attribute-value">${m}</span>
+                                    % endif
+                                    <br />
+                                % endif
+                            % endfor
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" colspan="2">&nbsp;</td>
+                        </tr>
+                    % endfor
+                    </table>
+                </div>
+                <script type="text/javascript">
+                    jQuery('.fields .expand-button, .fields .collapse-button').click(function() {
+                        jQuery('.fields').toggleClass('expanded collapsed');
+                    });
+                </script>
+            </td>
+        </tr>
+        % endif
+    </table>
+</%def>

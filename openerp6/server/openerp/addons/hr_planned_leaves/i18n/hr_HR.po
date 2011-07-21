@@ -1,0 +1,177 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* hr_planned_leaves
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_planned_leaves
+#: field:hrself.holidays.summary.dept,date_from:0
+msgid "From"
+msgstr "Od"
+
+#. module: hr_planned_leaves
+#: selection:hrself.holidays.summary.dept,report_type:0
+msgid "Excel"
+msgstr "Excel"
+
+#. module: hr_planned_leaves
+#: field:hrself.holidays.summary.dept,report_type:0
+msgid "Report Type"
+msgstr "Tip izvještaja"
+
+#. module: hr_planned_leaves
+#: view:hrself.holidays.summary.dept:0
+#: model:ir.actions.act_window,name:hr_planned_leaves.action_hr_holidays_summary_dept
+msgid "Holidays by Department"
+msgstr "Holidays by Department"
+
+#. module: hr_planned_leaves
+#: view:hrself.holidays.summary.dept:0
+msgid "Print"
+msgstr "Ispis"
+
+#. module: hr_planned_leaves
+#: model:ir.actions.report.xml,name:hr_planned_leaves.report_hrself_planned_leaves
+msgid "Planned Leaves"
+msgstr "Planned Leaves"
+
+#. module: hr_planned_leaves
+#: field:hrself.holidays.summary.dept,depts:0
+msgid "Department(s)"
+msgstr "Odjel(i)"
+
+#. module: hr_planned_leaves
+#: code:addons/hr_planned_leaves/report/hr_planned_leaves.py:36
+#, python-format
+msgid "March"
+msgstr "Ožujak"
+
+#. module: hr_planned_leaves
+#: code:addons/hr_planned_leaves/report/hr_planned_leaves.py:36
+#, python-format
+msgid "August"
+msgstr "Kolovoz"
+
+#. module: hr_planned_leaves
+#: code:addons/hr_planned_leaves/report/hr_planned_leaves.py:36
+#, python-format
+msgid "May"
+msgstr "Svibanj"
+
+#. module: hr_planned_leaves
+#: code:addons/hr_planned_leaves/report/hr_planned_leaves.py:36
+#, python-format
+msgid "June"
+msgstr "Lipanj"
+
+#. module: hr_planned_leaves
+#: model:ir.module.module,description:hr_planned_leaves.module_meta_information
+msgid "Extension of generic HR module for Groupe S needs."
+msgstr "Extension of generic HR module for Groupe S needs."
+
+#. module: hr_planned_leaves
+#: code:addons/hr_planned_leaves/report/hr_planned_leaves.py:36
+#, python-format
+msgid "July"
+msgstr "Srpanj"
+
+#. module: hr_planned_leaves
+#: code:addons/hr_planned_leaves/report/hr_planned_leaves.py:36
+#, python-format
+msgid "February"
+msgstr "Veljača"
+
+#. module: hr_planned_leaves
+#: code:addons/hr_planned_leaves/report/hr_planned_leaves.py:36
+#, python-format
+msgid "October"
+msgstr "Listopad"
+
+#. module: hr_planned_leaves
+#: code:addons/hr_planned_leaves/report/hr_planned_leaves.py:36
+#, python-format
+msgid "January"
+msgstr "Siječanj"
+
+#. module: hr_planned_leaves
+#: code:addons/hr_planned_leaves/report/hr_planned_leaves.py:36
+#, python-format
+msgid "April"
+msgstr "Travanj"
+
+#. module: hr_planned_leaves
+#: field:hrself.holidays.summary.dept,employee_ids:0
+msgid "Employee(s)"
+msgstr "Radnik(ci)"
+
+#. module: hr_planned_leaves
+#: model:ir.model,name:hr_planned_leaves.model_hrself_holidays_summary_dept
+msgid "HR Holidays Summary Report By Department"
+msgstr "HR Holidays Summary Report By Department"
+
+#. module: hr_planned_leaves
+#: code:addons/hr_planned_leaves/wizard/hr_planned_leaves_wizard.py:67
+#, python-format
+msgid "Error"
+msgstr "Greška"
+
+#. module: hr_planned_leaves
+#: selection:hrself.holidays.summary.dept,report_type:0
+msgid "PDF"
+msgstr "PDF"
+
+#. module: hr_planned_leaves
+#: code:addons/hr_planned_leaves/report/hr_planned_leaves.py:36
+#, python-format
+msgid "November"
+msgstr "Studeni"
+
+#. module: hr_planned_leaves
+#: field:hrself.holidays.summary.dept,date_to:0
+msgid "To"
+msgstr "Do"
+
+#. module: hr_planned_leaves
+#: code:addons/hr_planned_leaves/report/hr_planned_leaves.py:36
+#, python-format
+msgid "September"
+msgstr "Rujan"
+
+#. module: hr_planned_leaves
+#: code:addons/hr_planned_leaves/report/hr_planned_leaves.py:36
+#, python-format
+msgid "December"
+msgstr "Prosinac"
+
+#. module: hr_planned_leaves
+#: code:addons/hr_planned_leaves/wizard/hr_planned_leaves_wizard.py:67
+#, python-format
+msgid "You have to select at least 1 Department. And try again"
+msgstr "You have to select at least 1 Department. And try again"
+
+#. module: hr_planned_leaves
+#: model:ir.ui.menu,name:hr_planned_leaves.menu_hrself_planned_leaves
+msgid "Planned leaves"
+msgstr "Planned leaves"
+
+#. module: hr_planned_leaves
+#: view:hrself.holidays.summary.dept:0
+msgid "Cancel"
+msgstr "Odustani"
+
+#. module: hr_planned_leaves
+#: model:ir.module.module,shortdesc:hr_planned_leaves.module_meta_information
+msgid "Groupe S HR self Report"
+msgstr "Groupe S HR self Report"
+

@@ -1,0 +1,27 @@
+Metadata-Version: 1.0
+Name: aeroolib
+Version: 1.0.0
+Summary: A templating library able to output odt and pdf files
+Home-page: http://www.alistek.com/
+Author: Alistek Ltd.
+Author-email: info@alistek.com
+License: GPL License
+Description: 
+        aeroolib
+        =========
+        
+        A templating library which provides a way to easily output all kind of
+        different files (odt, ods, png, svg, ...). Adding support for more filetype is
+        easy: you just have to create a plugin for this.
+        
+        aeroolib also provides a report repository allowing you to link python objects
+        and report together, find reports by mimetypes/name/python objects.
+            
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing

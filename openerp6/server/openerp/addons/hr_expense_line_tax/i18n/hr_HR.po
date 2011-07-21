@@ -1,0 +1,76 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* hr_expense_line_tax
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_expense_line_tax
+#: code:addons/hr_expense_line_tax/hr_expense_line_tax.py:93
+#, python-format
+msgid "The employee must have a Home address."
+msgstr "The employee must have a Home address."
+
+#. module: hr_expense_line_tax
+#: code:addons/hr_expense_line_tax/hr_expense_line_tax.py:80
+#: code:addons/hr_expense_line_tax/hr_expense_line_tax.py:93
+#: code:addons/hr_expense_line_tax/hr_expense_line_tax.py:95
+#, python-format
+msgid "Error !"
+msgstr "Greška !"
+
+#. module: hr_expense_line_tax
+#: model:ir.model,name:hr_expense_line_tax.model_hr_expense_line
+msgid "Expense Line"
+msgstr "Stavka troškova"
+
+#. module: hr_expense_line_tax
+#: code:addons/hr_expense_line_tax/hr_expense_line_tax.py:95
+#, python-format
+msgid "The employee's home address must have a partner linked."
+msgstr "The employee's home address must have a partner linked."
+
+#. module: hr_expense_line_tax
+#: field:hr.expense.line,tax_id:0
+msgid "Tax"
+msgstr "Porez"
+
+#. module: hr_expense_line_tax
+#: code:addons/hr_expense_line_tax/hr_expense_line_tax.py:80
+#, python-format
+msgid "Please configure Default Expanse account for Product purchase, `property_account_expense_categ`"
+msgstr "Please configure Default Expanse account for Product purchase, `property_account_expense_categ`"
+
+#. module: hr_expense_line_tax
+#: model:ir.module.module,shortdesc:hr_expense_line_tax.module_meta_information
+msgid "Tax on expense line"
+msgstr "Tax on expense line"
+
+#. module: hr_expense_line_tax
+#: model:ir.model,name:hr_expense_line_tax.model_hr_expense_expense
+msgid "Expense"
+msgstr "Trošak"
+
+#. module: hr_expense_line_tax
+#: model:ir.module.module,description:hr_expense_line_tax.module_meta_information
+msgid "\n"
+"	This module adds a tax field on the expense line and set the taxes of\n"
+"        the employee invoice based on this tax, discarding the ones set on the \n"
+"        product.	\n"
+"    "
+msgstr "\n"
+"	This module adds a tax field on the expense line and set the taxes of\n"
+"        the employee invoice based on this tax, discarding the ones set on the \n"
+"        product.	\n"
+"    "
+

@@ -1,0 +1,25 @@
+[root]
+ +-- cherrypy
+ |    +-- access
+ |    +-- error
+ |
+ +-- openobject
+      +-- addons
+      |    +--openerp
+      |        +-- utils
+      |        |    +-- tools
+      |        +-- widgets
+      |             +-- form
+      |             |    +-- Form
+      |             |         +-- parse
+      |             +-- listgrid
+      |             |    +-- List
+      |             |         +-- parse
+      |             +-- search
+      |                  +-- Search
+      |                       +-- parse
+      +-- i18n
+           +-- format
+           +-- _gettext
+           +-- utils
+                +-- get_locale

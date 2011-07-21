@@ -1,0 +1,421 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* letter_mgmt_v6
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: letter_mgmt_v6
+#: field:res.letter,weight:0
+msgid "Weight (in KG)"
+msgstr "Weight (in KG)"
+
+#. module: letter_mgmt_v6
+#: view:res.letter:0
+msgid "Received Date"
+msgstr "Datum primitka"
+
+#. module: letter_mgmt_v6
+#: model:ir.actions.act_window,name:letter_mgmt_v6.action_letter_class_tree_view
+#: model:ir.ui.menu,name:letter_mgmt_v6.letter_class_menu
+#: view:letter.class:0
+msgid "Letter Class"
+msgstr "Tipovi pisama"
+
+#. module: letter_mgmt_v6
+#: view:res.letter:0
+msgid "Inbound Source"
+msgstr "Izvor dolazne"
+
+#. module: letter_mgmt_v6
+#: view:res.letter:0
+msgid "Receiver"
+msgstr "Receiver"
+
+#. module: letter_mgmt_v6
+#: code:addons/letter_mgmt_v6/letter_mgmt.py:176
+#: view:res.letter:0
+#: selection:res.letter,state:0
+#, python-format
+msgid "Received Damage"
+msgstr "Primljeno oštećeno"
+
+#. module: letter_mgmt_v6
+#: view:res.letter:0
+#: field:res.letter,note:0
+msgid "Note"
+msgstr "Bilješka"
+
+#. module: letter_mgmt_v6
+#: field:letter.history,name:0
+msgid "Action"
+msgstr "Akcija"
+
+#. module: letter_mgmt_v6
+#: field:res.letter,state:0
+msgid "State"
+msgstr "Stanje"
+
+#. module: letter_mgmt_v6
+#: selection:res.letter,state:0
+msgid "Draft"
+msgstr "Nacrt"
+
+#. module: letter_mgmt_v6
+#: view:res.letter:0
+msgid "Send By"
+msgstr "Poslano po"
+
+#. module: letter_mgmt_v6
+#: help:res.letter,ref_data:0
+msgid "Reference Number Provided by postal provider."
+msgstr "Reference Number Provided by postal provider."
+
+#. module: letter_mgmt_v6
+#: field:res.letter,channel_id:0
+msgid "Sent / Receive Source"
+msgstr "Sent / Receive Source"
+
+#. module: letter_mgmt_v6
+#: field:res.letter,snd_rec_id:0
+msgid "Sender / Receiver"
+msgstr "Sender / Receiver"
+
+#. module: letter_mgmt_v6
+#: field:letter.channel,name:0
+#: field:letter.class,name:0
+#: field:letter.type,name:0
+#: field:res.letter,type:0
+msgid "Type"
+msgstr "Vrsta"
+
+#. module: letter_mgmt_v6
+#: field:res.letter,date:0
+msgid "Sent / Received Date"
+msgstr "Datum Slanja / Primanja"
+
+#. module: letter_mgmt_v6
+#: code:addons/letter_mgmt_v6/letter_mgmt.py:166
+#: view:res.letter:0
+#: selection:res.letter,state:0
+#, python-format
+msgid "Sent"
+msgstr "Sent"
+
+#. module: letter_mgmt_v6
+#: model:ir.actions.act_window,name:letter_mgmt_v6.action_res_letter_in_tree_view
+#: model:ir.ui.menu,name:letter_mgmt_v6.res_letter_in_menu
+msgid "Inbound Letters"
+msgstr "Dolazna pošta"
+
+#. module: letter_mgmt_v6
+#: model:ir.model,name:letter_mgmt_v6.model_letter_history
+msgid "Letter Communication History"
+msgstr "Povijest komunikacije"
+
+#. module: letter_mgmt_v6
+#: model:ir.actions.act_window,name:letter_mgmt_v6.action_letter_type_tree_view
+#: model:ir.ui.menu,name:letter_mgmt_v6.letter_type_menu
+#: view:letter.type:0
+msgid "Letter Type"
+msgstr "Vrsta pošte"
+
+#. module: letter_mgmt_v6
+#: model:ir.model,name:letter_mgmt_v6.model_letter_channel
+msgid "channels using which letters can be sent/received like:post,fax"
+msgstr "kanali prijema/slanja pošte. Npr:pošta,faks,dostava, preporučeno."
+
+#. module: letter_mgmt_v6
+#: model:ir.actions.act_window,name:letter_mgmt_v6.action_letter_history_tree_view
+msgid "Letter History"
+msgstr "Povijest"
+
+#. module: letter_mgmt_v6
+#: field:res.letter,company_id:0
+msgid "Company"
+msgstr "Organizacija"
+
+#. module: letter_mgmt_v6
+#: help:res.letter,type:0
+msgid "Type of Letter, Depeding upon size"
+msgstr "Vrsta pisma, prema veličini"
+
+#. module: letter_mgmt_v6
+#: view:res.letter:0
+msgid "Extra Info."
+msgstr "Dodatni podaci."
+
+#. module: letter_mgmt_v6
+#: model:ir.actions.act_window,name:letter_mgmt_v6.action_res_letter_out_tree_view
+#: model:ir.ui.menu,name:letter_mgmt_v6.res_letter_out_menu
+msgid "Outbound Letters"
+msgstr "Odlazna pošta"
+
+#. module: letter_mgmt_v6
+#: help:res.letter,class:0
+msgid "Classification of Document"
+msgstr "Classification of Document"
+
+#. module: letter_mgmt_v6
+#: model:ir.module.module,shortdesc:letter_mgmt_v6.module_meta_information
+msgid "Letter Management"
+msgstr "Upravljenje poštom"
+
+#. module: letter_mgmt_v6
+#: view:res.letter:0
+msgid "Letter"
+msgstr "Pismo"
+
+#. module: letter_mgmt_v6
+#: field:res.letter,address_id:0
+msgid "Address"
+msgstr "Adresa"
+
+#. module: letter_mgmt_v6
+#: field:letter.history,date:0
+msgid "Date"
+msgstr "Datum"
+
+#. module: letter_mgmt_v6
+#: model:ir.ui.menu,name:letter_mgmt_v6.letter_log_config_menu
+msgid "Configuration"
+msgstr "Postava"
+
+#. module: letter_mgmt_v6
+#: view:res.letter:0
+msgid "Outbound Source"
+msgstr "Outbound Source"
+
+#. module: letter_mgmt_v6
+#: field:res.letter,user_id:0
+msgid "Dispatcher"
+msgstr "Otprematelj"
+
+#. module: letter_mgmt_v6
+#: selection:res.letter,move:0
+msgid "OUT"
+msgstr "OUT"
+
+#. module: letter_mgmt_v6
+#: help:res.letter,number:0
+msgid "Autogenerated Number of letter"
+msgstr "Automatski broj pisma"
+
+#. module: letter_mgmt_v6
+#: code:addons/letter_mgmt_v6/letter_mgmt.py:157
+#: view:res.letter:0
+#: selection:res.letter,state:0
+#, python-format
+msgid "Received"
+msgstr "Primljeno"
+
+#. module: letter_mgmt_v6
+#: field:res.letter,ref_data:0
+msgid "Reference Number"
+msgstr "Vezni broj"
+
+#. module: letter_mgmt_v6
+#: model:ir.model,name:letter_mgmt_v6.model_res_letter
+msgid "A Register class to log all movements regarding letters"
+msgstr "A Register class to log all movements regarding letters"
+
+#. module: letter_mgmt_v6
+#: sql_constraint:letter.type:0
+msgid "Code must be unique !"
+msgstr "Code must be unique !"
+
+#. module: letter_mgmt_v6
+#: code:addons/letter_mgmt_v6/letter_mgmt.py:171
+#: selection:res.letter,state:0
+#, python-format
+msgid "Received But Returned"
+msgstr "Primljeno i vraćeno"
+
+#. module: letter_mgmt_v6
+#: field:letter.history,register_id:0
+msgid "Register"
+msgstr "Register"
+
+#. module: letter_mgmt_v6
+#: model:ir.model,name:letter_mgmt_v6.model_letter_class
+msgid "letter like : classified, confidential, personal, etc."
+msgstr "povjerljivost : tajno, povjerljivo, osobno, i sl.."
+
+#. module: letter_mgmt_v6
+#: field:letter.history,user_id:0
+msgid "User Responsible"
+msgstr "User Responsible"
+
+#. module: letter_mgmt_v6
+#: code:addons/letter_mgmt_v6/letter_mgmt.py:181
+#: view:res.letter:0
+#, python-format
+msgid "Set To Draft"
+msgstr "Set To Draft"
+
+#. module: letter_mgmt_v6
+#: model:ir.module.module,description:letter_mgmt_v6.module_meta_information
+msgid "\n"
+"    Using this module you can track Incoming / Outgoing letters, parcels, registered documents\n"
+"    or any other paper documents that are important for company to keep track of.\n"
+"    "
+msgstr "\n"
+"    Using this module you can track Incoming / Outgoing letters, parcels, registered documents\n"
+"    or any other paper documents that are important for company to keep track of.\n"
+"    "
+
+#. module: letter_mgmt_v6
+#: field:letter.channel,active:0
+#: field:letter.class,active:0
+#: field:letter.type,active:0
+#: field:res.letter,active:0
+msgid "Active"
+msgstr "Aktivan"
+
+#. module: letter_mgmt_v6
+#: view:res.letter:0
+msgid "Sent Date"
+msgstr "Sent Date"
+
+#. module: letter_mgmt_v6
+#: help:res.letter,name:0
+msgid "Subject of letter"
+msgstr "Predmet pisma"
+
+#. module: letter_mgmt_v6
+#: selection:res.letter,move:0
+msgid "IN"
+msgstr "IN"
+
+#. module: letter_mgmt_v6
+#: selection:res.letter,state:0
+msgid "Cancelled"
+msgstr "Otkazani"
+
+#. module: letter_mgmt_v6
+#: view:res.letter:0
+msgid "Letters"
+msgstr "Pisma"
+
+#. module: letter_mgmt_v6
+#: help:res.letter,move:0
+msgid "Incoming or Outgoing Letter"
+msgstr "Dolazna ili odlazna pošta"
+
+#. module: letter_mgmt_v6
+#: view:letter.history:0
+#: view:res.letter:0
+#: field:res.letter,history_line:0
+msgid "History"
+msgstr "Povijest"
+
+#. module: letter_mgmt_v6
+#: view:res.letter:0
+msgid "Received For"
+msgstr "Primljeno za"
+
+#. module: letter_mgmt_v6
+#: field:letter.type,code:0
+msgid "Code"
+msgstr "Šifra"
+
+#. module: letter_mgmt_v6
+#: view:res.letter:0
+msgid "Letteres"
+msgstr "Pisma"
+
+#. module: letter_mgmt_v6
+#: field:res.letter,parent_id:0
+msgid "Parent"
+msgstr "Roditelj"
+
+#. module: letter_mgmt_v6
+#: field:res.letter,int_ref:0
+msgid "Reference"
+msgstr "Vezna oznaka"
+
+#. module: letter_mgmt_v6
+#: model:ir.actions.act_window,name:letter_mgmt_v6.action_letter_channel_tree_view
+#: model:ir.ui.menu,name:letter_mgmt_v6.letter_channel_menu
+#: view:letter.channel:0
+msgid "Letter Channel"
+msgstr "Kanal prijema/otpreme"
+
+#. module: letter_mgmt_v6
+#: view:res.letter:0
+msgid "Received but Returned"
+msgstr "Primljeno i vraćeno"
+
+#. module: letter_mgmt_v6
+#: field:res.letter,move:0
+msgid "Move"
+msgstr "Temeljnica"
+
+#. module: letter_mgmt_v6
+#: field:res.letter,number:0
+msgid "Number"
+msgstr "Broj"
+
+#. module: letter_mgmt_v6
+#: field:res.letter,class:0
+msgid "Class"
+msgstr "Class"
+
+#. module: letter_mgmt_v6
+#: view:res.letter:0
+msgid "Letter Line(s)"
+msgstr "Stavke pošiljke"
+
+#. module: letter_mgmt_v6
+#: model:ir.ui.menu,name:letter_mgmt_v6.letter_log_menu
+#: model:ir.ui.menu,name:letter_mgmt_v6.res_letter_menu
+msgid "Letter(s)"
+msgstr "Pisma"
+
+#. module: letter_mgmt_v6
+#: field:res.letter,child_line:0
+msgid "Letter Lines"
+msgstr "Stavke pisma"
+
+#. module: letter_mgmt_v6
+#: code:addons/letter_mgmt_v6/letter_mgmt.py:161
+#: view:res.letter:0
+#, python-format
+msgid "Cancel"
+msgstr "Odustani"
+
+#. module: letter_mgmt_v6
+#: field:res.letter,partner_id:0
+msgid "Partner"
+msgstr "Partner"
+
+#. module: letter_mgmt_v6
+#: field:res.letter,name:0
+msgid "Subject"
+msgstr "Predmet"
+
+#. module: letter_mgmt_v6
+#: model:ir.model,name:letter_mgmt_v6.model_letter_type
+msgid "types for letters like : envelope,parcel, etc."
+msgstr "vrste pošiljke kao: pismo, paket, itd."
+
+#. module: letter_mgmt_v6
+#: field:res.letter,int_ref2:0
+msgid "Reference 2"
+msgstr "Poveznica 2"
+
+#. module: letter_mgmt_v6
+#: field:res.letter,size:0
+msgid "Size"
+msgstr "Veličina"
+

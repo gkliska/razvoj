@@ -1,0 +1,152 @@
+5.0.4 (2009-08-28)
+	
+	* [FIX] dynamic context is missing in non-editable view.
+	* [FIX] don't show header/footer on a view opened from button actions if current view has no header/footer.
+	* [IMP] wizard buttons now moved to bottom.
+	* [FIX] O2M popop crash after wizard action ends.
+
+	For more complete bug fix history, please visit Launchpad.
+
+5.0.3-1 (2009-08-26)
+
+	* [IMP] process view node now links to parent document directory if no record selected.
+	* [FIX] Fixed one2many popup (context problem).
+	* [FIX] Remember active notebook page.
+	* [FIX] Included lib/populate.sh in source distribution package.
+
+	For more complete bug fix history, please visit Launchpad.
+
+5.0.3 (2009-08-21)
+
+	Bug Fixed (major):
+
+	* [FIX] graph crashed, if date value is empty.
+	* [FIX] O2M popup (IE issue).
+	* [FIX] validation problem in wizards.
+	* [FIX] search widget (missing validation).
+	* [FIX] don't show sidebar if target=new.
+	* [FIX] process view popup.
+	* [IMP] datetime validation (year out of range).
+	* [FIX] Fixed graph view for unicode characters.
+	* [FIX] Fixed `Graph View` when there is no data on y-axis (For OOCRM).
+
+	For more complete bug fix history, please visit Launchpad.
+
+5.0.2 (2009-08-11)
+
+	New Features:
+	
+	* Removed TurboGears & PyXML dependencies
+	* Ported to CherryPy 3 + Mako template, almost 5-7 time faster then the previous version
+	* Re-implementation of graph with Open Flash Chart 2
+	* Implemented profiler for code profiling (for developer's only)
+	* Implemented unit test api (for developer's only)
+	* Implemented anonymous login
+	
+	Improvements:
+	
+	* Compatible with Python 2.6
+	* start-openobject-web command is renamed to openobject-web
+	* Improved cache system (efficiently handle per db cache).
+	* Added min_rows, limit configuration options for M2M/O2M fields
+	* Improved ListGrid button action (support act_url).
+	* Implemented `Concurrency Exception` handling.
+	* Database filter options from configuration
+	* Login controller with custom template for small Ajax login screen
+	* Strip the header completely for action with target=new.
+	* New Picture widget (display only)
+	* Improved wiki widget
+	* Improvements in `Import/Export` (db_id, id, import compatible).
+
+	Bug Fixed (major):
+
+	* Concurrenry problem when inserting o2m values from popup.
+	* Calendar view (improper day span).
+	* Incorrect sequence number incrementation
+	* Fixed long URI problem (relate links)
+	* Fixed notebook widget (nested notebooks are not working)
+	* Dynamic notebook page visibility with attrs.
+	* Improved Ajax validator (fixes onchange problem when there is some invalid value in the form)
+	* Prevent conflicts with `onchange` and `attrs/state change` hooks.
+	* Month calendar issue (day span 3 instead of 2 for hours=16 with day_length=8)
+	* M2M (listview reload) problem in wizards.
+	* O2M popup rendering time is too slow (IE bug)
+	* attrs (invisible) is not working properly on fields with labels
+	* attrs is not working properly on Group widgets
+	* Evaluate dynamic domain & context expression.
+	* Search popup validation problem (bug #338141)
+	* Ignore concurrency check if no check field defined.
+	* Create custom field for custom object (o2m popup problem).
+
+	For more complete bug fix history, please visit Launchpad.
+
+
+5.0.0 (2009-02-06)
+
+	New Features:
+
+	* Enterprise Intelligence (Process View)
+	* Workflow Designer
+	* Object Designer
+	* View Editor
+	* Gantt View
+	* Wiki Widget
+	* Fency Tooltip
+	* Progressbar Widget
+	* Resizable Textarea
+	* Wait dialog for wizards
+	* Support for concurrency check
+	* State & Attrs support (dynamic field attribute change)
+	* Standard Attachment window.
+	* Sortable TreeGrid
+	* Requires TurboGears 1.0.8 & MochiKit 1.4
+	* Reordering of records in ListGrid
+	* Reimplemented TreeGrid (dynamic node adding, images etc)
+	* Reimplemented init.d script (generic, now works on flavour of Linux).
+	* ListGrid record limit from Window action (ir.actions.act_window).
+	* Internationalization support for JavaScript.
+	* Implemented multiple delete records in listgrid.
+	* Implemented TIMEZONE & localised number, datetime format.
+	* Global Ajax call progress indicator massage.	
+	* Client side validation of required fields
+	* Charts/Graphs have been replace with the beautiful flash charts using Open Flash Charts.
+	* Command line options
+	* Win32 Installer
+
+	Improvements:
+	
+	* Calendar view (default mode in view, e.g. mode="week")
+	* Save export list in export dialog.
+	* Switch O2M using Ajax (no page reload)
+	* Rendering speed of very big forms has been 4 times faster now.
+	* Reimplemented `reference widget` as an extended `M2O` (using same JS).
+	* Reimplemented Database admin views.
+	* M2O can have selection widget (widget="selection")
+	* M2M having features like O2M (navigation, search, new, edit).
+	* Improved TinyMCE (widget="html_tag")
+	* Improved `ONCHANGE` implementation (validators + reduced M2O Ajax calls).
+	* Improved `M2O` field (reduced Ajax calls + auto insert for single item)
+	* Improved calendar visuals (better colors, tango style)
+	* Improved `Calendar View`, now updates event title on move (week/day mode).
+	* Improved Cache System
+	* Improved Binary widget
+	* Generate proper filename while printing reports
+	* Improved form parser (duplicate field validation).
+	* Client side validation for required fields (no page reload)
+	* Changes the way web app loads default configuration.
+
+	Bug fixed:
+	
+	* Fixed timezone change problem (CEST to CET)
+	* Fixed `sidebar links` problem (ignore links for multi records on FORM)
+	* Fixed `Month Calendar` (proper week numbers for last and first months)
+	* Fixed `import/export` controller (i18n)
+	* Fixed `import error` (accented char in column title)
+	* Fixed `datetime` widget (missing readonly functionality)
+	* Fixed Calendar (filter by color groups problem)
+	* Fixed loading of the translation catalog fails if installed as egg.
+
+	For more complete bug fix history, please visit Launchpad.
+
+For previous versions, please visit OpenERP web site.
+

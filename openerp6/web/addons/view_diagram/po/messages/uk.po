@@ -1,0 +1,138 @@
+# Ukrainian translations for PROJECT.
+# Copyright (C) 2010 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2011-03-18 11:58+0100\n"
+"PO-Revision-Date: 2011-02-02 08:26+0000\n"
+"Last-Translator: Eugene Babiy <eugene.babiy@gmail.com>\n"
+"Language-Team: uk <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-07-12 04:38+0000\n"
+"X-Generator: Launchpad (build 13168)\n"
+"Generated-By: Babel None\n"
+
+#: controllers/_diagram.py:91 controllers/_diagram.py:212
+msgid "Could not delete state"
+msgstr "Неможливо відалити стан"
+
+#: controllers/_diagram.py:276
+msgid "No workflow associated!"
+msgstr "Не має зв’язанного робочого процессу"
+
+#: controllers/process.py:44
+msgid "Help: Not Defined"
+msgstr "Допомога: не визначено"
+
+#: controllers/process.py:88
+#, python-format
+msgid "%(name)s - Resource: %(resource)s, State: %(state)s"
+msgstr "%(name)s - Ресурс: %(resource)s, Стан: %(state)s"
+
+#: controllers/process.py:100
+msgid "Last modified by:"
+msgstr "Останні зміни:"
+
+#: controllers/templates/process.mako:4 controllers/templates/process.mako:87
+#: controllers/templates/process_tip.mako:5
+msgid "Process"
+msgstr "Процес"
+
+#: controllers/templates/process.mako:55
+msgid "Documentation"
+msgstr "Документація"
+
+#: controllers/templates/process.mako:56
+msgid "Read Documentation Online"
+msgstr "Читати Документацію онлайн"
+
+#: controllers/templates/process.mako:62
+msgid "Forum"
+msgstr "Форум"
+
+#: controllers/templates/process.mako:63
+msgid "Community Discussion"
+msgstr "Спільне обговорення"
+
+#: controllers/templates/process.mako:68
+msgid "Books"
+msgstr "Книги"
+
+#: controllers/templates/process.mako:69
+msgid "Get the book on Amazon"
+msgstr "Купити книгу на Amazon"
+
+#: controllers/templates/process.mako:74
+msgid "Support / Publisher Warranty"
+msgstr "Підтримка / Гарантія Видавця"
+
+#: controllers/templates/process.mako:75
+msgid "Get the OpenERP Warranty"
+msgstr "Отримати гарантію OpenERP"
+
+#: controllers/templates/process.mako:97
+msgid "Select Process"
+msgstr "Виберіть Процесс"
+
+#: controllers/templates/process.mako:103
+msgid "Select"
+msgstr "Вибрати"
+
+#: controllers/templates/process.mako:117
+msgid "[Edit Process]"
+msgstr "[Змінити Процес]"
+
+#: controllers/templates/process.mako:119
+msgid "[show fields]"
+msgstr "[показати поля]"
+
+#: controllers/templates/process.mako:120
+msgid "[hide fields]"
+msgstr "[приховати поля]"
+
+#: controllers/templates/process_open.mako:54
+#: controllers/templates/process_tip.mako:20
+#: controllers/templates/wkf_popup.mako:52
+msgid "Close"
+msgstr "Закрити"
+
+#: controllers/templates/process_open.mako:55
+#: controllers/templates/wkf_popup.mako:49
+msgid "Save"
+msgstr "Зберегти"
+
+#: controllers/templates/workflow.mako:4
+msgid "Workflow"
+msgstr "Робочий процес"
+
+#: controllers/templates/workflow.mako:20
+#, python-format
+msgid "Workflow (%s)"
+msgstr "Робочий процес (%s)"
+
+#: widgets/_views.py:8
+msgid "Diagram"
+msgstr "Діаграма"
+
+#: widgets/_views.py:9
+msgid "Diagram view..."
+msgstr "У вигляді Діаграми..."
+
+#: widgets/templates/diagram.mako:27
+msgid "Loading..."
+msgstr "Завантаження..."
+
+#~ msgid "Community Forum"
+#~ msgstr "Форум комьюніті"
+
+#~ msgid "Online Documentation"
+#~ msgstr "Документація в інтернеті"
+
+#~ msgid "Help:"
+#~ msgstr "Довідка:"

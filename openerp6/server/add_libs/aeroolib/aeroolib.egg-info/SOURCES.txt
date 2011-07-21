@@ -1,0 +1,17 @@
+AUTHORS
+CHANGES
+LICENSE
+MANIFEST.in
+README
+setup.cfg
+setup.py
+aeroolib/__init__.py
+aeroolib/reporting.py
+aeroolib.egg-info/PKG-INFO
+aeroolib.egg-info/SOURCES.txt
+aeroolib.egg-info/dependency_links.txt
+aeroolib.egg-info/requires.txt
+aeroolib.egg-info/top_level.txt
+aeroolib/plugins/__init__.py
+aeroolib/plugins/base.py
+aeroolib/plugins/opendocument.py

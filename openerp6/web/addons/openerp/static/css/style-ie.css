@@ -1,0 +1,111 @@
+td.label,
+.item {
+    padding: 2px;
+}
+
+td.label {
+    padding: 0 4px;
+}
+
+img.imgSelect {
+    margin-left: 2px;
+}
+
+table.tree-grid th,
+table.tree-grid td {
+    padding: 0 5px;
+}
+
+div.box2 button {
+    margin: 0 2px;
+}
+
+/* range widgets */
+#search_view_notebook input.datetime,
+#search_view_notebook input.date,
+#search_view_notebook input.time,
+#search_view_notebook input.integer,
+#search_view_notebook input.float{
+    width: 98%;
+}
+
+.item input,
+.item select,
+.item textarea,
+.item button {
+    width: 98%;
+}
+
+.resizable-textarea .grip {
+    width: 98%;
+}
+
+.grid-row.editors .grid-cell {
+    padding: 4px;
+}
+
+.grid-cell.selector {
+    padding: 0 4px;
+}
+
+button.button-b {
+	min-width: 0;
+}
+/* http://dean.edwards.name/my/base64-sordid.html */
+img{behavior:expression((this.runtimeStyle.behavior="none")&&(/^data:.*;base64/i.test(this.src))&&(this.src="/image/b64?"+this.src.slice(5)));}
+
+.ie7 #applications_menu li {
+	float: left;
+}
+
+.ie7 .notebook-tab {
+	float: left;
+}
+
+.ie7 .item select {
+	width: 120px;
+}
+
+.ie7 .item input {
+	width: 120px;
+}
+
+.ie7 .item .item-wrapper td {
+	width: 120px;
+}
+
+.ie7 .item IMG.datetime {
+	margin-left: 0;
+}
+
+.ie7 #secondary div.wrap {
+	width: 180px;
+}
+
+.ie7 #search_filter_data .fields .filters-group .fields {
+	width: 100%;	
+}
+
+.ie7 td.search_filters.item {
+	width: auto;
+}
+
+.ie7 td.search_filters.item .filter-a {
+	width: auto;
+}
+
+.ie7 .filter-a .filter_with_icon {
+	min-width: auto;
+}
+
+.ie #primary {
+	height:auto;
+}
+.ie #secondary {
+	height:100%;
+}
+
+/**
+ * vim: sts=4 st=4 et 
+ *
+ */
