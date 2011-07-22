@@ -1,0 +1,44 @@
+kljuc;naziv
+5;MJESTA I NOSITELJI TROŠKOVA (A. u proizvodno uslužnim djelatnostima)
+50;GLAVNA MJESTA U PROIZVODNJI
+500;Pogon I
+5001;Izravni troškovi materijala (u raèunovodstvu troškovima razrada po radnim nalozima ili po procesima u proizvodnji)
+5002;Izravni troškovi rada
+5003;Opæi fiksni troškovi proizvodnje (Razrada: amortizacija, održavanje, poslovodstvo pogona, drugi fiksni troškovi pogona)
+5004;Opæi varijabilni troškovi proizvodnje (Razrada: neizravni troškovi materijala u proizvodnji, energija utrošena u proizvodnju, neizravni troškovi plaæa u proizvodnji, drugi varijabilni troškovi pogona)
+501;Pogon II - Ista razrada za svaki daljnji pogon kao za pogon I.
+502;Pogon III...
+505;Izravni troškovi proizvoda (usluge) - radni nalog (obuhvat ili analitika kao i kod konta 500)
+51;ODRŽAVANJE
+510;Radionica "A"
+5100;Izravni troškovi materijala i prièuvnih dijelova (po radnom nalogu, jedinici usluge i slièno)
+5101;Izravni troškovi rada
+5102;Opæi fiksni troškovi radionice
+5103;Opæi varijabilni troškovi radionice
+5104;Drugi opæi troškovi radionice
+511;Radionica "B" (Izrada kao i kod radionice "A")
+512;Itd.
+52;TRANSPORT
+520;Jedinica osobni prijevoz
+5200;Izravni troškovi pogonskog goriva (Razrada po vozilu)
+5201;Izravni troškovi materijala (Razrada po vozilu)
+5202;Izravni troškovi plaæa (Razrada po vozilu)
+5203;Opæi fiksni troškovi jedinice osobni prijevoz
+5204;Opæi varijabilni troškovi jedinice osobni prijevoz
+521;Jedinica teretni prijevoz
+5210;Izravni troškovi pogonskog goriva (Razrada po vozilu)
+5211;Izravni troškovi materijala (Razrada po vozilu)
+5212;Izravni troškovi plaæa (Razrada po vozilu)
+5213;Opæi fiksni troškovi jedinice teretni prijevoz
+5214;Opæi varijabilni troškovi jedinice teretni prijevoz
+522;Druge jedinice prijevoza (Razrada analogno za prethodne jedinice.)
+53;TROŠKOVI UPRAVE I ADMINISTRACIJE
+530;Materijal u troškovima uprave i administracije
+531;Plaæe, troškovi uprave i administracije
+532;Amortizacija u troškovima prodaje
+533;Drugi troškovi uprave i administracije (Razrada prema potrebama društva, na primjer: dnevnice, bankovni troškovi, osiguranje, reprezentacija itd.)
+54;TROŠKOVI PRODAJE
+540;Materijal u troškovima prodaje
+541;Plaæe u troškovima prodaje
+542;Amortizacija u troškovima prodaje
+543;Drugi troškovi prodaje (Razrada npr. troškovi opreme prodanih proizvoda, troškovi fakturiranja, troškovi propagande i slièno)

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<racunski-plan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="RRIF-RP2011.XSD">
+  <racun>
+    <kljuc>5</kljuc>
+    <naziv>MJESTA I NOSITELJI TROŠKOVA (A. u proizvodno uslužnim djelatnostima)</naziv>
+  </racun>
+  <racun>
+    <kljuc>50</kljuc>
+    <naziv>GLAVNA MJESTA U PROIZVODNJI</naziv>
+  </racun>
+  <racun>
+    <kljuc>500</kljuc>
+    <naziv>Pogon I</naziv>
+  </racun>
+  <racun>
+    <kljuc>5001</kljuc>
+    <naziv>Izravni troškovi materijala (u računovodstvu troškovima razrada po radnim nalozima ili po procesima u proizvodnji)</naziv>
+  </racun>
+  <racun>
+    <kljuc>5002</kljuc>
+    <naziv>Izravni troškovi rada</naziv>
+  </racun>
+  <racun>
+    <kljuc>5003</kljuc>
+    <naziv>Opći fiksni troškovi proizvodnje (Razrada: amortizacija, održavanje, poslovodstvo pogona, drugi fiksni troškovi pogona)</naziv>
+  </racun>
+  <racun>
+    <kljuc>5004</kljuc>
+    <naziv>Opći varijabilni troškovi proizvodnje (Razrada: neizravni troškovi materijala u proizvodnji, energija utrošena u proizvodnju, neizravni troškovi plaća u proizvodnji, drugi varijabilni troškovi pogona)</naziv>
+  </racun>
+  <racun>
+    <kljuc>501</kljuc>
+    <naziv>Pogon II - Ista razrada za svaki daljnji pogon kao za pogon I.</naziv>
+  </racun>
+  <racun>
+    <kljuc>502</kljuc>
+    <naziv>Pogon III...</naziv>
+  </racun>
+  <racun>
+    <kljuc>505</kljuc>
+    <naziv>Izravni troškovi proizvoda (usluge) - radni nalog (obuhvat ili analitika kao i kod konta 500)</naziv>
+  </racun>
+  <racun>
+    <kljuc>51</kljuc>
+    <naziv>ODRŽAVANJE</naziv>
+  </racun>
+  <racun>
+    <kljuc>510</kljuc>
+    <naziv>Radionica "A"</naziv>
+  </racun>
+  <racun>
+    <kljuc>5100</kljuc>
+    <naziv>Izravni troškovi materijala i pričuvnih dijelova (po radnom nalogu, jedinici usluge i slično)</naziv>
+  </racun>
+  <racun>
+    <kljuc>5101</kljuc>
+    <naziv>Izravni troškovi rada</naziv>
+  </racun>
+  <racun>
+    <kljuc>5102</kljuc>
+    <naziv>Opći fiksni troškovi radionice</naziv>
+  </racun>
+  <racun>
+    <kljuc>5103</kljuc>
+    <naziv>Opći varijabilni troškovi radionice</naziv>
+  </racun>
+  <racun>
+    <kljuc>5104</kljuc>
+    <naziv>Drugi opći troškovi radionice</naziv>
+  </racun>
+  <racun>
+    <kljuc>511</kljuc>
+    <naziv>Radionica "B" (Izrada kao i kod radionice "A")</naziv>
+  </racun>
+  <racun>
+    <kljuc>512</kljuc>
+    <naziv>Itd.</naziv>
+  </racun>
+  <racun>
+    <kljuc>52</kljuc>
+    <naziv>TRANSPORT</naziv>
+  </racun>
+  <racun>
+    <kljuc>520</kljuc>
+    <naziv>Jedinica osobni prijevoz</naziv>
+  </racun>
+  <racun>
+    <kljuc>5200</kljuc>
+    <naziv>Izravni troškovi pogonskog goriva (Razrada po vozilu)</naziv>
+  </racun>
+  <racun>
+    <kljuc>5201</kljuc>
+    <naziv>Izravni troškovi materijala (Razrada po vozilu)</naziv>
+  </racun>
+  <racun>
+    <kljuc>5202</kljuc>
+    <naziv>Izravni troškovi plaća (Razrada po vozilu)</naziv>
+  </racun>
+  <racun>
+    <kljuc>5203</kljuc>
+    <naziv>Opći fiksni troškovi jedinice osobni prijevoz</naziv>
+  </racun>
+  <racun>
+    <kljuc>5204</kljuc>
+    <naziv>Opći varijabilni troškovi jedinice osobni prijevoz</naziv>
+  </racun>
+  <racun>
+    <kljuc>521</kljuc>
+    <naziv>Jedinica teretni prijevoz</naziv>
+  </racun>
+  <racun>
+    <kljuc>5210</kljuc>
+    <naziv>Izravni troškovi pogonskog goriva (Razrada po vozilu)</naziv>
+  </racun>
+  <racun>
+    <kljuc>5211</kljuc>
+    <naziv>Izravni troškovi materijala (Razrada po vozilu)</naziv>
+  </racun>
+  <racun>
+    <kljuc>5212</kljuc>
+    <naziv>Izravni troškovi plaća (Razrada po vozilu)</naziv>
+  </racun>
+  <racun>
+    <kljuc>5213</kljuc>
+    <naziv>Opći fiksni troškovi jedinice teretni prijevoz</naziv>
+  </racun>
+  <racun>
+    <kljuc>5214</kljuc>
+    <naziv>Opći varijabilni troškovi jedinice teretni prijevoz</naziv>
+  </racun>
+  <racun>
+    <kljuc>522</kljuc>
+    <naziv>Druge jedinice prijevoza (Razrada analogno za prethodne jedinice.)</naziv>
+  </racun>
+  <racun>
+    <kljuc>53</kljuc>
+    <naziv>TROŠKOVI UPRAVE I ADMINISTRACIJE</naziv>
+  </racun>
+  <racun>
+    <kljuc>530</kljuc>
+    <naziv>Materijal u troškovima uprave i administracije</naziv>
+  </racun>
+  <racun>
+    <kljuc>531</kljuc>
+    <naziv>Plaće, troškovi uprave i administracije</naziv>
+  </racun>
+  <racun>
+    <kljuc>532</kljuc>
+    <naziv>Amortizacija u troškovima prodaje</naziv>
+  </racun>
+  <racun>
+    <kljuc>533</kljuc>
+    <naziv>Drugi troškovi uprave i administracije (Razrada prema potrebama društva, na primjer: dnevnice, bankovni troškovi, osiguranje, reprezentacija itd.)</naziv>
+  </racun>
+  <racun>
+    <kljuc>54</kljuc>
+    <naziv>TROŠKOVI PRODAJE</naziv>
+  </racun>
+  <racun>
+    <kljuc>540</kljuc>
+    <naziv>Materijal u troškovima prodaje</naziv>
+  </racun>
+  <racun>
+    <kljuc>541</kljuc>
+    <naziv>Plaće u troškovima prodaje</naziv>
+  </racun>
+  <racun>
+    <kljuc>542</kljuc>
+    <naziv>Amortizacija u troškovima prodaje</naziv>
+  </racun>
+  <racun>
+    <kljuc>543</kljuc>
+    <naziv>Drugi troškovi prodaje (Razrada npr. troškovi opreme prodanih proizvoda, troškovi fakturiranja, troškovi propagande i slično)</naziv>
+  </racun>
+</racunski-plan>

@@ -1,129 +1,261 @@
-# Croatian translation for openobject-client-kde
-# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
-# This file is distributed under the same license as the openobject-client-kde package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* jasper_reports
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: openobject-client-kde\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2010-06-27 14:39+0000\n"
-"PO-Revision-Date: 2010-11-21 11:11+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Croatian <hr@li.org>\n"
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-12 10:48+0000\n"
-"X-Generator: Launchpad (build 12792)\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "\"Debit\""
+msgstr "\"Duguje\""
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "$F{name}.get( \"abc\")"
+msgstr "$F{name}.get( \"abc\")"
 
 #. module: jasper_reports
 #: field:ir.actions.report.xml,jasper_report:0
 msgid "Is Jasper Report?"
-msgstr ""
+msgstr "Is Jasper Report?"
 
 #. module: jasper_reports
-#: constraint:ir.model:0
-msgid ""
-"The Object name must start with x_ and not contain any special character !"
-msgstr ""
+#: report:res.partner.jaspertest:0
+msgid "Attachment:"
+msgstr "Attachment:"
 
 #. module: jasper_reports
-#: wizard_button:jasper_create_data_template,init,create:0
-msgid "Create"
-msgstr ""
+#: report:res.partner.jaspertest:0
+msgid "$F{ref}"
+msgstr "$F{ref}"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "website"
+msgstr "website"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "debit"
+msgstr "debit"
 
 #. module: jasper_reports
 #: field:ir.actions.report.xml,jasper_output:0
 msgid "Jasper Output"
-msgstr ""
+msgstr "Jasper Output"
 
 #. module: jasper_reports
-#: constraint:ir.actions.act_window:0
-msgid "Invalid model name in the action definition."
-msgstr ""
+#: model:ir.actions.report.xml,name:jasper_reports.res_partner_jaspertest
+msgid "Jasper Partners"
+msgstr "Jasper Partners"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "Attachments/name"
+msgstr "Attachments/name"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "Attachments/datas"
+msgstr "Attachments/datas"
+
+#. module: jasper_reports
+#: wizard_field:jasper_create_data_template,create,data:0
+msgid "XML"
+msgstr "XML"
+
+#. module: jasper_reports
+#: selection:ir.actions.report.xml,jasper_output:0
+msgid "PDF"
+msgstr "PDF"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "$F{datas}"
+msgstr "$F{datas}"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "$F{name}"
+msgstr "$F{name}"
 
 #. module: jasper_reports
 #: selection:ir.actions.report.xml,jasper_output:0
 msgid "XLS"
-msgstr ""
+msgstr "XLS"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "$F{attachment_id}"
+msgstr "$F{attachment_id}"
 
 #. module: jasper_reports
 #: view:ir.actions.report.xml:0
 #: field:ir.actions.report.xml,jasper_file_ids:0
 msgid "Files"
-msgstr ""
+msgstr "Datoteke"
 
 #. module: jasper_reports
-#: selection:ir.actions.report.xml,jasper_output:0
-msgid "RTF"
-msgstr ""
+#: code:addons/jasper_reports/report_xml.py:122
+#, python-format
+msgid "There is more than one report marked as default"
+msgstr "There is more than one report marked as default"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "Number of attachments listed:"
+msgstr "Number of attachments listed:"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "$F{credit_limit}"
+msgstr "$F{credit_limit}"
 
 #. module: jasper_reports
 #: view:ir.actions.report.xml:0
 msgid "Update from attachments"
-msgstr ""
+msgstr "Update from attachments"
 
 #. module: jasper_reports
-#: model:ir.actions.act_window,name:jasper_reports.ir_action_report_jasper
-#: view:ir.actions.report.xml:0
-#: model:ir.module.module,shortdesc:jasper_reports.module_meta_information
-#: model:ir.ui.menu,name:jasper_reports.jasper_reports_menu
-#: model:ir.ui.menu,name:jasper_reports.menu_ir_action_report_jasper
-msgid "Jasper Reports"
-msgstr ""
-
-#. module: jasper_reports
-#: selection:ir.actions.report.xml,jasper_output:0
-msgid "ODS"
-msgstr ""
+#: code:addons/jasper_reports/report_xml.py:144
+#, python-format
+msgid "No report has been marked as default."
+msgstr "No report has been marked as default."
 
 #. module: jasper_reports
 #: selection:ir.actions.report.xml,jasper_output:0
 msgid "ODT"
-msgstr ""
+msgstr "ODT"
 
 #. module: jasper_reports
-#: code:addons/jasper_reports/report_xml.py:0
-#, python-format
-msgid "There is more than one report marked as default"
-msgstr ""
+#: model:ir.actions.act_window,name:jasper_reports.ir_action_report_jasper
+#: view:ir.actions.report.xml:0
+#: model:ir.ui.menu,name:jasper_reports.jasper_reports_menu
+#: model:ir.ui.menu,name:jasper_reports.menu_ir_action_report_jasper
+msgid "Jasper Reports"
+msgstr "Jasper Reports"
 
 #. module: jasper_reports
 #: selection:ir.actions.report.xml,jasper_output:0
-msgid "HTML"
-msgstr ""
+msgid "ODS"
+msgstr "ODS"
 
 #. module: jasper_reports
-#: code:addons/jasper_reports/wizard/create_data_template.py:0
-#, python-format
-msgid "User"
-msgstr ""
+#: report:res.partner.jaspertest:0
+msgid "\"The report shows information of selected partners, including attachments with their image, if possible.\""
+msgstr "\"The report shows information of selected partners, including attachments with their image, if possible.\""
 
 #. module: jasper_reports
-#: view:ir.actions.report.xml:0
-msgid "Groups"
-msgstr ""
+#: report:res.partner.jaspertest:0
+msgid "$F{datas_fname}"
+msgstr "$F{datas_fname}"
 
 #. module: jasper_reports
 #: field:ir.actions.report.xml.file,report_id:0
 msgid "Report"
-msgstr ""
+msgstr "Izvještaj"
 
 #. module: jasper_reports
-#: wizard_field:jasper_create_data_template,create,data:0
-msgid "XML"
-msgstr ""
+#: report:res.partner.jaspertest:0
+msgid "\"Limit\""
+msgstr "\"Limit\""
 
 #. module: jasper_reports
-#: constraint:ir.ui.view:0
-msgid "Invalid XML for View Architecture!"
-msgstr ""
+#: report:res.partner.jaspertest:0
+msgid "$P{SUBREPORT_DIR} + \"subpartner.jasper\""
+msgstr "$P{SUBREPORT_DIR} + \"subpartner.jasper\""
 
 #. module: jasper_reports
-#: model:ir.model,name:jasper_reports.model_ir_actions_report_xml_file
-msgid "ir.actions.report.xml.file"
-msgstr ""
+#: selection:ir.actions.report.xml,jasper_output:0
+msgid "HTML"
+msgstr "HTML"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "\"/home/albert/d/git/nan-openerp/openobject-client-kde-5.0/server-modules/jasper_reports/demo/\""
+msgstr "\"/home/albert/d/git/nan-openerp/openobject-client-kde-5.0/server-modules/jasper_reports/demo/\""
+
+#. module: jasper_reports
+#: view:ir.actions.report.xml:0
+msgid "Groups"
+msgstr "Grupe"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "$V{attachments}"
+msgstr "$V{attachments}"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "Date"
+msgstr "Datum"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "$P{STANDARD_DIR} + \"report_header.jasper\""
+msgstr "$P{STANDARD_DIR} + \"report_header.jasper\""
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "\"Used\""
+msgstr "\"Used\""
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "ref"
+msgstr "ref"
+
+#. module: jasper_reports
+#: wizard_button:jasper_create_data_template,init,create:0
+msgid "Create"
+msgstr "Stvori"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "$F{date}"
+msgstr "$F{date}"
+
+#. module: jasper_reports
+#: code:addons/jasper_reports/report_xml.py:254
+#, python-format
+msgid "User"
+msgstr "Korisnik"
+
+#. module: jasper_reports
+#: wizard_field:jasper_create_data_template,init,depth:0
+msgid "Depth"
+msgstr "Dubina"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "Website"
+msgstr "Web stranice"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "\"/home/albert/d/koo/server-modules/jasper_reports/report/\""
+msgstr "\"/home/albert/d/koo/server-modules/jasper_reports/report/\""
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "$F{debit}"
+msgstr "$F{debit}"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "Name"
+msgstr "Naziv"
 
 #. module: jasper_reports
 #: model:ir.actions.wizard,name:jasper_reports.jasper_create_data_template_action
@@ -131,85 +263,186 @@ msgstr ""
 #: wizard_view:jasper_create_data_template,create:0
 #: wizard_view:jasper_create_data_template,init:0
 msgid "Create Data Template"
-msgstr ""
+msgstr "Create Data Template"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "credit_limit"
+msgstr "credit_limit"
 
 #. module: jasper_reports
 #: field:ir.actions.report.xml.file,default:0
 msgid "Default"
-msgstr ""
+msgstr "Default"
 
 #. module: jasper_reports
-#: code:addons/jasper_reports/report_xml.py:0
-#, python-format
-msgid "No report has been marked as default."
-msgstr ""
+#: report:res.partner.jaspertest:0
+msgid "$F{debit_limit}"
+msgstr "$F{debit_limit}"
 
 #. module: jasper_reports
-#: wizard_field:jasper_create_data_template,init,depth:0
-msgid "Depth"
-msgstr ""
+#: report:res.partner.jaspertest:0
+msgid "credit"
+msgstr "credit"
 
 #. module: jasper_reports
-#: code:addons/jasper_reports/report_xml.py:0
-#, python-format
-msgid "Error"
-msgstr ""
+#: report:res.partner.jaspertest:0
+msgid "tr(new Locale(\"es\",\"ES\"), \"SECOND LOCALE TEST {0}\", 1)"
+msgstr "tr(new Locale(\"es\",\"ES\"), \"SECOND LOCALE TEST {0}\", 1)"
+
+#. module: jasper_reports
+#: wizard_button:jasper_create_data_template,init,end:0
+msgid "Cancel"
+msgstr "Odustani"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "$F{website}"
+msgstr "$F{website}"
 
 #. module: jasper_reports
 #: selection:ir.actions.report.xml,jasper_output:0
-msgid "PDF"
-msgstr ""
+msgid "RTF"
+msgstr "RTF"
+
+#. module: jasper_reports
+#: code:addons/jasper_reports/report_xml.py:122
+#: code:addons/jasper_reports/report_xml.py:144
+#, python-format
+msgid "Error"
+msgstr "Greška"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "date"
+msgstr "date"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "File Name:"
+msgstr "File Name:"
 
 #. module: jasper_reports
 #: field:ir.actions.report.xml,jasper_model_id:0
 #: wizard_field:jasper_create_data_template,create,model:0
 #: wizard_field:jasper_create_data_template,init,model:0
 msgid "Model"
-msgstr ""
+msgstr "Model"
 
 #. module: jasper_reports
 #: selection:ir.actions.report.xml,jasper_output:0
 msgid "CSV"
-msgstr ""
+msgstr "CSV"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "\"This is a sample JasperReports report\""
+msgstr "\"This is a sample JasperReports report\""
+
+#. module: jasper_reports
+#: model:ir.model,name:jasper_reports.model_ir_actions_report_xml_file
+msgid "ir.actions.report.xml.file"
+msgstr "ir.actions.report.xml.file"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "name"
+msgstr "name"
 
 #. module: jasper_reports
 #: view:ir.actions.report.xml.file:0
 msgid "Jasper Reports File"
-msgstr ""
+msgstr "Jasper Reports File"
 
 #. module: jasper_reports
-#: code:addons/jasper_reports/wizard/create_data_template.py:0
+#: code:addons/jasper_reports/report_xml.py:248
 #, python-format
 msgid "Attachments"
-msgstr ""
+msgstr "Privitci"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "Reference"
+msgstr "Vezna oznaka"
 
 #. module: jasper_reports
 #: selection:ir.actions.report.xml,jasper_output:0
 msgid "Text"
-msgstr ""
+msgstr "Tekst"
 
 #. module: jasper_reports
 #: field:ir.actions.report.xml.file,filename:0
 #: wizard_field:jasper_create_data_template,create,filename:0
 msgid "File Name"
-msgstr ""
+msgstr "Naziv datoteke"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "/data/record"
+msgstr "/data/record"
 
 #. module: jasper_reports
 #: wizard_button:jasper_create_data_template,create,end:0
 msgid "Accept"
-msgstr ""
+msgstr "Prihvati"
 
 #. module: jasper_reports
-#: model:ir.module.module,description:jasper_reports.module_meta_information
-msgid "This module integrates Jasper Reports with OpenERP."
-msgstr ""
+#: report:res.partner.jaspertest:0
+msgid "Attachments/datas_fname"
+msgstr "Attachments/datas_fname"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "\"Credit\""
+msgstr "\"Potražuje\""
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "$F{attachment_name}"
+msgstr "$F{attachment_name}"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "tr(\"TESTING TRANSLATED TEXTS\")"
+msgstr "tr(\"TESTING TRANSLATED TEXTS\")"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "$P{EVENTS_DATA_SOURCE}"
+msgstr "$P{EVENTS_DATA_SOURCE}"
 
 #. module: jasper_reports
 #: field:ir.actions.report.xml.file,file:0
 msgid "File"
-msgstr ""
+msgstr "Datoteka"
 
 #. module: jasper_reports
-#: wizard_button:jasper_create_data_template,init,end:0
-msgid "Cancel"
-msgstr ""
+#: report:res.partner.jaspertest:0
+msgid "debit_limit"
+msgstr "debit_limit"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "Attachments/id"
+msgstr "Attachments/id"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "$F{credit}"
+msgstr "$F{credit}"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "\"Sample Partner Report\""
+msgstr "\"Primjer izvještaja o partneru\""
+
+#. module: jasper_reports
+#: model:ir.model,name:jasper_reports.model_ir_actions_report_xml
+msgid "ir.actions.report.xml"
+msgstr "ir.actions.report.xml"
+
+#. module: jasper_reports
+#: report:res.partner.jaspertest:0
+msgid "$P{REPORT_DATA_SOURCE}"
+msgstr "$P{REPORT_DATA_SOURCE}"
+

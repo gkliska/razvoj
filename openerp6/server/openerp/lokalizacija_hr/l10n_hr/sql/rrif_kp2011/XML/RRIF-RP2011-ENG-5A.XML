@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<chart-of-accounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="RRIF-RP2011-ENG.XSD">
+  <account>
+    <key>5</key>
+    <name>COST CENTRES AND COST DRIVER (A. IN PRODUCTION AND SERVICE OPERATIONS)</name>
+    <naziv>MJESTA I NOSITELJI TROŠKOVA (A. u proizvodno uslužnim djelatnostima)</naziv>
+  </account>
+  <account>
+    <key>50</key>
+    <name>MAIN COST CENTRE</name>
+    <naziv>GLAVNA MJESTA U PROIZVODNJI</naziv>
+  </account>
+  <account>
+    <key>500</key>
+    <name>Drive I</name>
+    <naziv>Pogon I</naziv>
+  </account>
+  <account>
+    <key>501</key>
+    <name>Drive II</name>
+    <naziv>Pogon II</naziv>
+  </account>
+  <account>
+    <key>502</key>
+    <name>Drive III</name>
+    <naziv>Pogon III...</naziv>
+  </account>
+  <account>
+    <key>505</key>
+    <name>Direct production costs of goods (services)- working order</name>
+    <naziv>Izravni troškovi proizvoda (usluge) – radni nalog</naziv>
+  </account>
+  <account>
+    <key>51</key>
+    <name>MAINTENANCE</name>
+    <naziv>ODRŽAVANJE</naziv>
+  </account>
+  <account>
+    <key>510</key>
+    <name>Workshop "A"</name>
+    <naziv>Radionica »A«</naziv>
+  </account>
+  <account>
+    <key>511</key>
+    <name>Workshop "B"</name>
+    <naziv>Radionica »B«</naziv>
+  </account>
+  <account>
+    <key>512</key>
+    <name>etc.</name>
+    <naziv>Itd.</naziv>
+  </account>
+  <account>
+    <key>52</key>
+    <name>TRANSPORTATION</name>
+    <naziv>TRANSPORT</naziv>
+  </account>
+  <account>
+    <key>520</key>
+    <name>Private car</name>
+    <naziv>Jedinica osobni prijevoz</naziv>
+  </account>
+  <account>
+    <key>521</key>
+    <name>Truck</name>
+    <naziv>Jedinica teretni prijevoz</naziv>
+  </account>
+  <account>
+    <key>522</key>
+    <name>Other vehicles</name>
+    <naziv>Druge jedinice prijevoza</naziv>
+  </account>
+  <account>
+    <key>53</key>
+    <name>MANAGEMENT AND ADMINISTRATIVE OVERHEADS</name>
+    <naziv>TROŠKOVI UPRAVE I ADMINISTRACIJE</naziv>
+  </account>
+  <account>
+    <key>530</key>
+    <name>Material used in management and administrative overheads</name>
+    <naziv>Materijal u troškovima uprave i administracije</naziv>
+  </account>
+  <account>
+    <key>531</key>
+    <name>Wages and other costs of administration</name>
+    <naziv>Plaće, troškovi uprave i administracije</naziv>
+  </account>
+  <account>
+    <key>532</key>
+    <name>Depreciation used in management and administrative overheads</name>
+    <naziv>Amortizacija u troškovima prodaje</naziv>
+  </account>
+  <account>
+    <key>533</key>
+    <name>Other management and administrative overheads</name>
+    <naziv>Drugi troškovi uprave i administracije (Razrada prema    potrebama društva, na primjer: dnevnice, bankovni troškovi, osiguranje, reprezentacija itd.)</naziv>
+  </account>
+  <account>
+    <key>54</key>
+    <name>SELLING COSTS</name>
+    <naziv>TROŠKOVI PRODAJE</naziv>
+  </account>
+  <account>
+    <key>540</key>
+    <name>Material used in selling costs</name>
+    <naziv>Materijal u troškovima prodaje</naziv>
+  </account>
+  <account>
+    <key>541</key>
+    <name>Wages used in selling costs</name>
+    <naziv>Plaće u troškovima prodaje</naziv>
+  </account>
+  <account>
+    <key>542</key>
+    <name>Depreciation in selling costs</name>
+    <naziv>Amortizacija u troškovima prodaje</naziv>
+  </account>
+  <account>
+    <key>543</key>
+    <name>Other selling costs</name>
+    <naziv>Drugi troškovi prodaje (Razrada npr. troškovi opreme prodanih proizvoda, troškovi fakturiranja, troškovi propagande i slično)</naziv>
+  </account>
+</chart-of-accounts>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="chart-of-accounts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="account" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="key" type="xs:string"/>
+              <xs:element name="name" type="xs:string"/>
+              <xs:element name="naziv" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:key name="account-key">
+      <xs:selector xpath="./account"/>
+      <xs:field xpath="key"/>
+    </xs:key>
+  </xs:element>
+</xs:schema>

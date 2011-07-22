@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="racunski-plan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="racun" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="kljuc" type="xs:string"/>
+              <xs:element name="naziv" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:key name="racun-kljuc">
+      <xs:selector xpath="./racun"/>
+      <xs:field xpath="kljuc"/>
+    </xs:key>
+  </xs:element>
+</xs:schema>

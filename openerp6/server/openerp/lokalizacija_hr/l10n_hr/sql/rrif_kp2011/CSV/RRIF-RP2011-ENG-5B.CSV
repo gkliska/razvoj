@@ -1,0 +1,15 @@
+#;account;raèun
+5;COST CENTRES AND COST DRIVER (B. IN TRADE SECTOR);MJESTA I NOSITELJI TROŠKOVA (B. u djelatnosti trgovine)
+50;MANAGEMENT AND ADMINISTRATIVE OVERHEADS;TROŠKOVI UPRAVE I ADMINISTRACIJA
+500;Material used in management and administrative overheads;Materijal u troškovima uprave i administracije
+501;Wages and other costs of administration;Plaæe u troškovima uprave i prodaje
+502;Depreciation used in management and administrative overheads;Amortizacija u troškovima uprave i administracije
+503;Other costs related to the administration and selling;Drugi troškovi uprave i prodaje (Razrada npr. dnevnica, osiguranje, bankovni troškovi, reprezentacija itd.)
+51;SELLING COSTS;TROŠKOVI PRODAJE
+510;Material used during selling process in total selling costs;Materijal u troškovima prodaje
+511;Wages in selling costs;Plaæe u troškovima prodaje
+512;Depreciation in selling costs;Amortizacija u troškovima prodaje
+513;Other costs related to the selling;Drugi troškovi prodaje (Razrada npr. otpreme pošiljaka, fakturiranje, propaganda, naplata ambalaža, omotni papir, troškovi izvoza, troškovi posredništva itd.)
+59;ALLOCATION OF COSTS;RASPORED TROŠKOVA
+590;Allocation of costs to cost of conversion (cost of production) - (on acc. 60, 62, 63);Raspored troškova na zalihe proizvodnje i usluga
+591;Allocation of costs to expenditures - to be shown in this year income statement - (on acc. 72);Raspored troškova u rashode na teret prihoda

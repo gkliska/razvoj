@@ -4,17 +4,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenERP Server 6.0dev\n"
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
 "Report-Msgid-Bugs-To: support@openerp.com\n"
-"POT-Creation-Date: 2009-08-28 16:01+0000\n"
-"PO-Revision-Date: 2011-02-23 15:45+0000\n"
-"Last-Translator: Goran Kliska (Aplikacija d.o.o.) <gkliska@gmail.com>\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-06-18 05:14+0000\n"
-"X-Generator: Launchpad (build 13168)\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
 
 #. module: account_report
 #: field:account.report.history,name:0
@@ -24,14 +23,14 @@ msgid "Indicator"
 msgstr "Pokazatelj"
 
 #. module: account_report
-#: wizard_field:print.indicators.pdf,init,file:0
+#: field:account.report.print.indicators.with.pdf,file:0
 msgid "Select a PDF File"
-msgstr "Odaberite PDF datoteku"
+msgstr "Select a PDF File"
 
 #. module: account_report
-#: constraint:ir.actions.act_window:0
-msgid "Invalid model name in the action definition."
-msgstr "Pogrešno ime modela u definiciji akcije."
+#: model:ir.actions.report.xml,name:account_report.fiscal_statements
+msgid "Financial Statements"
+msgstr "Financial Statements"
 
 #. module: account_report
 #: view:account.report.report:0
@@ -39,9 +38,14 @@ msgid "Operators:"
 msgstr "Operatori:"
 
 #. module: account_report
-#: field:account.report.report,parent_id:0
-msgid "Parent"
-msgstr "Nadređeni"
+#: model:ir.model,name:account_report.model_account_report_report
+msgid "Account Reporting"
+msgstr "Izvještaji"
+
+#. module: account_report
+#: report:print.indicators:0
+msgid "("
+msgstr "("
 
 #. module: account_report
 #: field:account.report.report,disp_graph:0
@@ -61,22 +65,28 @@ msgstr "Ostalo"
 #. module: account_report
 #: view:account.report.report:0
 msgid "balance(['ACCOUNT_CODE',],fiscalyear)"
-msgstr ""
+msgstr "balance(['ACCOUNT_CODE',],fiscalyear)"
 
 #. module: account_report
-#: rml:print.indicators:0
+#: report:print.indicators:0
 msgid "Tabular Summary"
-msgstr ""
+msgstr "Tabular Summary"
+
+#. module: account_report
+#: code:addons/account_report/wizard/account_report_print_indicators.py:80
+#, python-format
+msgid "Please select maximum 8 records to fit the page-width."
+msgstr "Please select maximum 8 records to fit the page-width."
 
 #. module: account_report
 #: view:account.report.report:0
 msgid "Notes"
-msgstr ""
+msgstr "Bilješke"
 
 #. module: account_report
 #: view:account.report.report:0
 msgid "= Goodness Indicator Limit:"
-msgstr ""
+msgstr "= Goodness Indicator Limit:"
 
 #. module: account_report
 #: view:account.report.report:0
@@ -84,15 +94,9 @@ msgid "Very bad"
 msgstr "Vrlo loše"
 
 #. module: account_report
-#: field:account.report.history,val:0
-#: field:account.report.report,amount:0
-msgid "Value"
-msgstr "Vrijednost"
-
-#. module: account_report
-#: view:account.report.report:0
-msgid "= Badness Indicator Limit:"
-msgstr ""
+#: help:account.report.report,active:0
+msgid "If the active field is set to true, it will allow you to hide the account report without removing it."
+msgstr "If the active field is set to true, it will allow you to hide the account report without removing it."
 
 #. module: account_report
 #: view:account.report.report:0
@@ -101,9 +105,9 @@ msgid "Bad"
 msgstr "Loše"
 
 #. module: account_report
-#: wizard_view:print.indicators.pdf,init:0
+#: view:account.report.print.indicators.with.pdf:0
 msgid "Select the PDF file on which Indicators will be printed."
-msgstr "Odaberite PDF datoteku na kojoj će biti ispisani pokazatelji"
+msgstr "Odaberite PDF datoteku za ispis indikatora."
 
 #. module: account_report
 #: view:account.report.report:0
@@ -123,12 +127,25 @@ msgstr "Vrlo loše"
 #. module: account_report
 #: model:ir.actions.act_window,name:account_report.account_report_history_record_structure
 msgid "Indicator history"
-msgstr "Povijest pokazivača"
+msgstr "Povijest indikatora"
 
 #. module: account_report
 #: view:account.report.report:0
 msgid "credit(['ACCOUNT_CODE',],fiscalyear)"
-msgstr ""
+msgstr "credit(['ACCOUNT_CODE',],fiscalyear)"
+
+#. module: account_report
+#: model:ir.module.module,description:account_report.module_meta_information
+msgid "Financial and accounting reporting\n"
+"    Fiscal statements\n"
+"    Indicators\n"
+"    Adds a dashboard for accountant that include  Indicators reporting.\n"
+"    "
+msgstr "Financial and accounting reporting\n"
+"    Fiscal statements\n"
+"    Indicators\n"
+"    Adds a dashboard for accountant that include  Indicators reporting.\n"
+"    "
 
 #. module: account_report
 #: view:account.report.report:0
@@ -136,14 +153,9 @@ msgid "Report Amount:"
 msgstr "Iznos izvješća:"
 
 #. module: account_report
-#: model:ir.actions.report.xml,name:account_report.fiscal_statements
-msgid "Fiscal Statements"
-msgstr "Fiskalni izvodi"
-
-#. module: account_report
-#: wizard_button:print.indicators,init,next:0
+#: view:account.report.print.indicators:0
 msgid "Next"
-msgstr "Slijedeći"
+msgstr "Next"
 
 #. module: account_report
 #: model:ir.module.module,shortdesc:account_report.module_meta_information
@@ -151,25 +163,20 @@ msgid "Reporting for accounting"
 msgstr "Računovodstvena izvješća"
 
 #. module: account_report
-#: wizard_button:print.indicators,next,print:0
-#: wizard_button:print.indicators.pdf,init,print:0
+#: view:account.report.print.indicators:0
+#: view:account.report.print.indicators.with.pdf:0
 msgid "Print"
-msgstr "Ispiši"
+msgstr "Ispis"
 
 #. module: account_report
 #: field:account.report.report,type:0
 msgid "Type"
-msgstr "Tip"
-
-#. module: account_report
-#: model:ir.actions.report.xml,name:account_report.report_indicator_pdf
-msgid "Print Indicators in PDF"
-msgstr "Ispiši pokazivače u PDF"
+msgstr "Vrsta"
 
 #. module: account_report
 #: view:account.report.report:0
 msgid "Account Tax Code:"
-msgstr ""
+msgstr "Porezna grupa:"
 
 #. module: account_report
 #: view:account.report.report:0
@@ -178,29 +185,45 @@ msgid "Good"
 msgstr "Dobro"
 
 #. module: account_report
-#: view:account.report.history:0
-msgid "Account Report History"
-msgstr ""
+#: code:addons/account_report/account.py:211
+#, python-format
+msgid "Error !"
+msgstr "Greška !"
 
 #. module: account_report
-#: constraint:ir.ui.view:0
-msgid "Invalid XML for View Architecture!"
-msgstr "Neispravan XML za arhitekturu prikaza!"
+#: model:ir.ui.menu,name:account_report.menu_menu_finance_generic_reporting
+msgid "Reporting"
+msgstr "Izvještavanje"
+
+#. module: account_report
+#: field:account.report.print.indicators,base_selection:0
+msgid "Fiscal year"
+msgstr "Fiskalna godina"
+
+#. module: account_report
+#: view:account.report.history:0
+msgid "Account Report History"
+msgstr "Account Report History"
 
 #. module: account_report
 #: help:account.report.report,badness_limit:0
 msgid "This Value sets the limit of badness."
-msgstr ""
+msgstr "This Value sets the limit of badness."
 
 #. module: account_report
-#: wizard_field:print.indicators,init,select_base:0
-msgid "Choose Criteria"
-msgstr "Odaberite uvjet"
+#: view:account.report.report:0
+msgid "= Badness Indicator Limit:"
+msgstr "= Badness Indicator Limit:"
+
+#. module: account_report
+#: field:account.report.report,parent_id:0
+msgid "Parent"
+msgstr "Roditelj"
 
 #. module: account_report
 #: view:account.report.report:0
 msgid "debit(['ACCOUNT_CODE',],fiscalyear)"
-msgstr ""
+msgstr "debit(['ACCOUNT_CODE',],fiscalyear)"
 
 #. module: account_report
 #: view:account.report.report:0
@@ -208,9 +231,20 @@ msgid "Account Credit:"
 msgstr "Potražni konto"
 
 #. module: account_report
-#: wizard_view:print.indicators,init:0
+#: view:account.report.print.indicators:0
 msgid "Select the criteria based on which Indicators will be printed."
-msgstr "Odaberite uvjet zasnovan na pokazivačima koji će biti ispisani."
+msgstr "Select the criteria based on which Indicators will be printed."
+
+#. module: account_report
+#: field:account.report.history,fiscalyear_id:0
+msgid "Fiscal Year"
+msgstr "Fiskalna godina"
+
+#. module: account_report
+#: model:ir.actions.act_window,name:account_report.action_account_report_tree_view
+#: model:ir.ui.menu,name:account_report.menu_action_account_report_tree_view
+msgid "Custom Reporting"
+msgstr "Custom Reporting"
 
 #. module: account_report
 #: view:account.report.report:0
@@ -226,304 +260,290 @@ msgstr "Vrlo dobro"
 #. module: account_report
 #: field:account.report.report,note:0
 msgid "Note"
-msgstr ""
+msgstr "Bilješka"
 
 #. module: account_report
-#: rml:accounting.report:0
-#: rml:print.indicators:0
+#: report:accounting.report:0
+#: report:print.indicators:0
 msgid "Currency:"
-msgstr ""
+msgstr "Valuta:"
 
 #. module: account_report
 #: field:account.report.report,status:0
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #. module: account_report
 #: help:account.report.report,disp_tree:0
-msgid ""
-"When the indicators are printed, if one indicator is set with this field to "
-"True, then it will display one more graphs with all its children in tree"
-msgstr ""
+msgid "When the indicators are printed, if one indicator is set with this field to True, then it will display one more graphs with all its children in tree"
+msgstr "When the indicators are printed, if one indicator is set with this field to True, then it will display one more graphs with all its children in tree"
 
 #. module: account_report
 #: selection:account.report.report,status:0
 msgid "Normal"
-msgstr ""
+msgstr "Normalan"
+
+#. module: account_report
+#: help:account.report.report,sequence:0
+msgid "Gives the sequence order when displaying a list of account reports."
+msgstr "Gives the sequence order when displaying a list of account reports."
 
 #. module: account_report
 #: view:account.report.report:0
 msgid "Example: (balance(['6','45'],-1) - credit(['7'])) / report('RPT1')"
-msgstr ""
+msgstr "Primjer: (balance(['6','45'],-1) - credit(['7'])) / report('RPT1')"
 
 #. module: account_report
 #: field:account.report.report,active:0
 msgid "Active"
-msgstr ""
+msgstr "Aktivan"
 
 #. module: account_report
 #: field:account.report.report,disp_tree:0
 msgid "Display Tree"
-msgstr ""
+msgstr "Prikaži stablo"
 
 #. module: account_report
-#: selection:print.indicators,init,select_base:0
+#: selection:account.report.print.indicators,select_base:0
 msgid "Based On Fiscal Years"
-msgstr ""
-
-#. module: account_report
-#: model:ir.model,name:account_report.model_account_report_report
-msgid "Account reporting"
-msgstr ""
+msgstr "Based On Fiscal Years"
 
 #. module: account_report
 #: view:account.report.report:0
 msgid "Account Balance:"
-msgstr ""
+msgstr "Saldo konta:"
 
 #. module: account_report
-#: rml:print.indicators:0
+#: report:print.indicators:0
 msgid "Expression :"
-msgstr ""
+msgstr "Expression :"
 
 #. module: account_report
 #: view:account.report.report:0
 msgid "report('REPORT_CODE')"
-msgstr ""
+msgstr "report('REPORT_CODE')"
 
 #. module: account_report
 #: field:account.report.report,expression:0
 msgid "Expression"
-msgstr ""
+msgstr "Expression"
 
 #. module: account_report
 #: view:account.report.report:0
 msgid "Accounting reporting"
-msgstr ""
+msgstr "Accounting reporting"
 
 #. module: account_report
-#: model:ir.actions.act_window,name:account_report.action_account_report_form
-#: model:ir.ui.menu,name:account_report.menu_action_account_report_form
-msgid "New Reporting Item Formula"
-msgstr ""
+#: field:account.report.print.indicators,select_base:0
+msgid "Choose Criteria"
+msgstr "Choose Criteria"
 
 #. module: account_report
 #: field:account.report.report,code:0
-#: rml:accounting.report:0
+#: report:accounting.report:0
 msgid "Code"
-msgstr ""
+msgstr "Šifra"
 
 #. module: account_report
 #: field:account.report.history,tmp:0
 msgid "temp"
-msgstr ""
+msgstr "temp"
 
 #. module: account_report
 #: field:account.report.history,period_id:0
 msgid "Period"
-msgstr ""
+msgstr "Period"
 
 #. module: account_report
 #: view:account.report.report:0
 msgid "General"
-msgstr ""
+msgstr "Općenito"
 
 #. module: account_report
 #: view:account.report.report:0
 msgid "Legend of operators"
-msgstr ""
+msgstr "Legend of operators"
 
 #. module: account_report
-#: wizard_button:print.indicators,init,end:0
-#: wizard_button:print.indicators,next,end:0
-#: wizard_button:print.indicators.pdf,init,end:0
+#: view:account.report.print.indicators:0
+#: view:account.report.print.indicators.with.pdf:0
 msgid "Cancel"
-msgstr ""
+msgstr "Odustani"
 
 #. module: account_report
 #: field:account.report.report,child_ids:0
 msgid "Children"
-msgstr ""
-
-#. module: account_report
-#: constraint:ir.model:0
-msgid ""
-"The Object name must start with x_ and not contain any special character !"
-msgstr ""
+msgstr "Podređeni"
 
 #. module: account_report
 #: help:account.report.report,goodness_limit:0
 msgid "This Value sets the limit of goodness."
-msgstr ""
+msgstr "This Value sets the limit of goodness."
 
 #. module: account_report
-#: model:ir.actions.wizard,name:account_report.wizard_print_indicators
+#: model:ir.actions.act_window,name:account_report.action_account_report_print_indicators
+#: model:ir.model,name:account_report.model_account_report_print_indicators
+#: model:ir.model,name:account_report.model_account_report_print_indicators_with_pdf
 #: model:ir.ui.menu,name:account_report.menu_wizard_print_indicators
-#: wizard_view:print.indicators,init:0
-#: wizard_view:print.indicators,next:0
 msgid "Print Indicators"
-msgstr ""
+msgstr "Print Indicators"
 
 #. module: account_report
 #: view:account.report.report:0
 msgid "+ - * / ( )"
-msgstr ""
+msgstr "+ - * / ( )"
 
 #. module: account_report
-#: rml:accounting.report:0
-#: rml:print.indicators:0
+#: report:accounting.report:0
+#: report:print.indicators:0
 msgid "Printing date:"
-msgstr ""
+msgstr "Printing date:"
 
 #. module: account_report
-#: model:ir.actions.wizard,name:account_report.wizard_indicators_with_pdf
+#: model:ir.actions.act_window,name:account_report.action_account_report_print_indicators_with_pdf
+#: model:ir.actions.report.xml,name:account_report.report_indicator_pdf
 msgid "Indicators in PDF"
-msgstr ""
+msgstr "Indikatori u PDF"
 
 #. module: account_report
-#: rml:accounting.report:0
-#: rml:print.indicators:0
+#: report:accounting.report:0
+#: report:print.indicators:0
 msgid "at"
-msgstr ""
+msgstr "na"
 
 #. module: account_report
-#: rml:accounting.report:0
+#: report:accounting.report:0
 msgid "Accounting Report"
-msgstr ""
+msgstr "Accounting izvještaj"
 
 #. module: account_report
 #: field:account.report.report,goodness_limit:0
 msgid "Goodness Indicator Limit"
-msgstr ""
+msgstr "Goodness Indicator Limit"
 
 #. module: account_report
 #: model:ir.actions.act_window,name:account_report.action_account_report_tree_view_other
 #: model:ir.ui.menu,name:account_report.menu_action_account_report_tree_view_other
 msgid "Other reports"
-msgstr ""
+msgstr "Ostali izvještaji"
 
 #. module: account_report
-#: view:account.report.report:0
-msgid ""
-"Note: The second arguement 'fiscalyear' and 'period' are optional "
-"arguements.If the value is -1,previous fiscalyear or period is considered."
-msgstr ""
-
-#. module: account_report
-#: rml:print.indicators:0
+#: report:print.indicators:0
 msgid ")"
-msgstr ""
+msgstr ")"
 
 #. module: account_report
 #: model:ir.actions.act_window,name:account_report.action_account_report_tree_view_fiscal
 #: model:ir.ui.menu,name:account_report.menu_action_account_report_tree_view_fiscal
 msgid "Fiscal Statements reporting"
-msgstr ""
+msgstr "Fiscal Statements reporting"
 
 #. module: account_report
-#: selection:print.indicators,init,select_base:0
+#: selection:account.report.print.indicators,select_base:0
 msgid "Based on Fiscal Periods"
-msgstr ""
+msgstr "Based on Fiscal Periods"
 
 #. module: account_report
+#: view:account.report.print.indicators:0
 #: model:ir.actions.report.xml,name:account_report.report_print_indicators
-#: rml:print.indicators:0
+#: report:print.indicators:0
 msgid "Indicators"
-msgstr ""
+msgstr "Indikatori"
 
 #. module: account_report
-#: wizard_view:print.indicators.pdf,init:0
+#: view:account.report.print.indicators.with.pdf:0
 msgid "Print Indicators with PDF"
-msgstr ""
+msgstr "Print Indicators with PDF"
 
 #. module: account_report
 #: model:ir.actions.act_window,name:account_report.action_account_report_tree_view_indicator
 #: model:ir.ui.menu,name:account_report.menu_action_account_report_tree_view_indicator
 msgid "Indicators reporting"
-msgstr ""
+msgstr "Indikatori"
 
 #. module: account_report
 #: field:account.report.report,name:0
-#: rml:accounting.report:0
-#: rml:print.indicators:0
+#: report:accounting.report:0
+#: report:print.indicators:0
 msgid "Name"
-msgstr ""
+msgstr "Naziv"
 
 #. module: account_report
-#: wizard_field:print.indicators,next,base_selection:0
-msgid "Select Criteria"
-msgstr ""
+#: code:addons/account_report/account.py:211
+#, python-format
+msgid "You cannot delete an indicator history record. You may have to delete the concerned Indicator!"
+msgstr "You cannot delete an indicator history record. You may have to delete the concerned Indicator!"
 
 #. module: account_report
 #: view:account.report.report:0
 msgid "tax_code(['ACCOUNT_TAX_CODE',],period)"
-msgstr ""
+msgstr "tax_code(['ACCOUNT_TAX_CODE',],period)"
 
 #. module: account_report
-#: field:account.report.history,fiscalyear_id:0
-msgid "Fiscal Year"
-msgstr ""
+#: view:account.report.report:0
+msgid "Note: The second argument 'fiscalyear' and 'period' are optional arguments.If the value is -1,previous fiscalyear or period is considered."
+msgstr "Uputa: Drugi argument 'fiscalyear' i 'period' nisu obavezni. Vrijednost  -1 se koristi za prethodnu poslovnu godinu ili period."
 
 #. module: account_report
 #: model:ir.actions.act_window,name:account_report.action_account_report_tree
-#: model:ir.actions.act_window,name:account_report.action_account_report_tree_view
 #: model:ir.ui.menu,name:account_report.menu_action_account_report_tree_define
-#: model:ir.ui.menu,name:account_report.menu_action_account_report_tree_view
 msgid "Custom reporting"
-msgstr ""
+msgstr "Custom reporting"
 
 #. module: account_report
-#: rml:print.indicators:0
+#: field:account.report.history,val:0
+#: field:account.report.report,amount:0
+msgid "Value"
+msgstr "Vrijednost"
+
+#. module: account_report
+#: code:addons/account_report/wizard/account_report_print_indicators.py:80
+#, python-format
+msgid "User Error!"
+msgstr "User Error!"
+
+#. module: account_report
+#: report:print.indicators:0
 msgid "Page"
-msgstr ""
+msgstr "Page"
 
 #. module: account_report
 #: selection:account.report.report,type:0
 msgid "View"
-msgstr ""
+msgstr "Pogled"
 
 #. module: account_report
-#: rml:print.indicators:0
+#: report:print.indicators:0
 msgid "Indicators -"
-msgstr ""
+msgstr "Indikatori -"
 
 #. module: account_report
 #: help:account.report.report,disp_graph:0
-msgid ""
-"If the field is set to True, information will be printed as a Graph, "
-"otherwise as an array."
-msgstr ""
+msgid "If the field is set to True, information will be printed as a Graph, otherwise as an array."
+msgstr "If the field is set to True, information will be printed as a Graph, otherwise as an array."
 
 #. module: account_report
 #: view:account.report.report:0
 msgid "Return value for status"
-msgstr ""
+msgstr "Return value for status"
 
 #. module: account_report
 #: field:account.report.report,sequence:0
 msgid "Sequence"
-msgstr ""
+msgstr "Sekvenca"
 
 #. module: account_report
-#: rml:accounting.report:0
+#: report:accounting.report:0
 msgid "Amount"
-msgstr ""
+msgstr "Iznos"
 
 #. module: account_report
-#: rml:print.indicators:0
+#: report:print.indicators:0
 msgid "1cm 27.7cm 20cm 27.7cm"
-msgstr ""
-
-#. module: account_report
-#: model:ir.module.module,description:account_report.module_meta_information
-msgid ""
-"Financial and accounting reporting\n"
-"    Fiscal statements\n"
-"    Indicators\n"
-"    "
-msgstr ""
+msgstr "1cm 27.7cm 20cm 27.7cm"
 
 #. module: account_report
 #: selection:account.report.report,type:0
 msgid "Fiscal Statement"
-msgstr ""
+msgstr "Fiscal Statement"
+

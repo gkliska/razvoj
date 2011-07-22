@@ -1,0 +1,178 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* pxgo_cash_statement
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: pxgo_cash_statement
+#: model:ir.module.module,shortdesc:pxgo_cash_statement.module_meta_information
+msgid "Pexego - Cash Statements"
+msgstr "Pexego - Cash Statements"
+
+#. module: pxgo_cash_statement
+#: view:account.bank.statement:0
+msgid "Calculate"
+msgstr "Calculate"
+
+#. module: pxgo_cash_statement
+#: view:account.bank.statement:0
+msgid "Confirm"
+msgstr "Potvrdi"
+
+#. module: pxgo_cash_statement
+#: model:ir.module.module,description:pxgo_cash_statement.module_meta_information
+msgid "\n"
+"Module for easier cash management.\n"
+"\n"
+"Adds an \"Entries by Cash Statement\" view of the bank statements that shows only\n"
+"the fields required for cash management.\n"
+"It works with \"Cash Statement Line Types\" that allow to predefine cash lines\n"
+"(pre-set the account, type [withdrawal/deposit], and description of the cash\n"
+"statement line), so the user doesn't have to cope with those details\n"
+"(even more, if the user introduces an invalid quantity, for example a positive\n"
+"amount for a withdrawal, OpenERP will automatically correct the entry).\n"
+"            "
+msgstr "\n"
+"Module for easier cash management.\n"
+"\n"
+"Adds an \"Entries by Cash Statement\" view of the bank statements that shows only\n"
+"the fields required for cash management.\n"
+"It works with \"Cash Statement Line Types\" that allow to predefine cash lines\n"
+"(pre-set the account, type [withdrawal/deposit], and description of the cash\n"
+"statement line), so the user doesn't have to cope with those details\n"
+"(even more, if the user introduces an invalid quantity, for example a positive\n"
+"amount for a withdrawal, OpenERP will automatically correct the entry).\n"
+"            "
+
+#. module: pxgo_cash_statement
+#: field:account.bank.statement.line,line_type_id:0
+#: field:account.bank.statement.line.type,type:0
+msgid "Type"
+msgstr "Vrsta"
+
+#. module: pxgo_cash_statement
+#: view:account.bank.statement.line.type:0
+msgid "Default values for type"
+msgstr "Uobičajene vrijednosti za tip"
+
+#. module: pxgo_cash_statement
+#: view:account.bank.statement.line.type:0
+#: model:ir.actions.act_window,name:pxgo_cash_statement.action_account_bank_statement_type
+#: model:ir.ui.menu,name:pxgo_cash_statement.menu_action_account_bank_statement_type
+msgid "Cash Statement Line Types"
+msgstr "Cash Statement Line Types"
+
+#. module: pxgo_cash_statement
+#: model:ir.model,name:pxgo_cash_statement.model_account_journal
+msgid "Journal"
+msgstr "Dnevnik"
+
+#. module: pxgo_cash_statement
+#: view:account.bank.statement:0
+msgid "Cash Statement lines"
+msgstr "Stavke izvoda blagajne"
+
+#. module: pxgo_cash_statement
+#: help:account.journal,show_in_cash_statements:0
+msgid "If enabled, this journal will be available on the Entries by Cash Statements."
+msgstr "If enabled, this journal will be available on the Entries by Cash Statements."
+
+#. module: pxgo_cash_statement
+#: model:ir.actions.act_window,name:pxgo_cash_statement.action_cash_statement
+#: model:ir.ui.menu,name:pxgo_cash_statement.menu_action_entries_by_cash_statement
+msgid "Entries by Cash Statements"
+msgstr "Temeljnice blagajni"
+
+#. module: pxgo_cash_statement
+#: field:account.bank.statement.line.type,account_id:0
+msgid "Account"
+msgstr "Konto"
+
+#. module: pxgo_cash_statement
+#: field:account.bank.statement.line.type,name:0
+msgid "Name"
+msgstr "Naziv"
+
+#. module: pxgo_cash_statement
+#: view:account.bank.statement:0
+msgid "Notes"
+msgstr "Bilješke"
+
+#. module: pxgo_cash_statement
+#: field:account.journal,show_in_cash_statements:0
+msgid "Show in Cash Statements"
+msgstr "Show in Cash Statements"
+
+#. module: pxgo_cash_statement
+#: selection:account.bank.statement.line.type,type:0
+msgid "Deposit"
+msgstr "Polog"
+
+#. module: pxgo_cash_statement
+#: selection:account.bank.statement.line.type,type:0
+msgid "Withdrawal"
+msgstr "Withdrawal"
+
+#. module: pxgo_cash_statement
+#: view:account.bank.statement:0
+#: field:account.bank.statement,cash_statement:0
+msgid "Cash Statement"
+msgstr "Izvod blagajne"
+
+#. module: pxgo_cash_statement
+#: constraint:account.bank.statement.line:0
+msgid "The amount of the voucher must be the same amount as the one on the statement line"
+msgstr "Iznos vaučera mora biti jednak iznosu stavke izvoda banke/blagajne."
+
+#. module: pxgo_cash_statement
+#: view:account.bank.statement.line.type:0
+#: model:ir.model,name:pxgo_cash_statement.model_account_bank_statement_line_type
+msgid "Cash Statement Line Type"
+msgstr "Cash Statement Line Type"
+
+#. module: pxgo_cash_statement
+#: model:ir.model,name:pxgo_cash_statement.model_account_bank_statement_line
+msgid "Bank Statement Line"
+msgstr "Redak bankovnog izvoda"
+
+#. module: pxgo_cash_statement
+#: field:account.bank.statement.line.type,code:0
+msgid "Code"
+msgstr "Šifra"
+
+#. module: pxgo_cash_statement
+#: sql_constraint:account.journal:0
+msgid "The name of the journal must be unique per company !"
+msgstr "Naziv dnevnika mora biti jedinstven za jednu organizaciju!"
+
+#. module: pxgo_cash_statement
+#: model:ir.model,name:pxgo_cash_statement.model_account_bank_statement
+msgid "Bank Statement"
+msgstr "Izvod banke"
+
+#. module: pxgo_cash_statement
+#: sql_constraint:account.journal:0
+msgid "The code of the journal must be unique per company !"
+msgstr "Šifra dnevnika mora biti jedinstvena (za organizaciju) !"
+
+#. module: pxgo_cash_statement
+#: view:account.bank.statement:0
+msgid "Cancel"
+msgstr "Odustani"
+
+#. module: pxgo_cash_statement
+#: field:account.bank.statement.line.type,partner_id:0
+msgid "Partner"
+msgstr "Partner"
+

@@ -4,69 +4,78 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenERP Server 6.0dev\n"
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
 "Report-Msgid-Bugs-To: support@openerp.com\n"
-"POT-Creation-Date: 2011-01-11 11:15+0000\n"
-"PO-Revision-Date: 2010-08-03 06:19+0000\n"
-"Last-Translator: Mantavya Gajjar (Open ERP) <Unknown>\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-29 05:22+0000\n"
-"X-Generator: Launchpad (build 12758)\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
 
 #. module: hr_timesheet_invoice
 #: view:report.timesheet.line:0
 #: view:report_timesheet.user:0
 msgid "Timesheet by user"
-msgstr "Raspored po Korisniku"
+msgstr "Ev.rada po korisniku"
+
+#. module: hr_timesheet_invoice
+#: view:report.timesheet.line:0
+msgid "Timesheet lines in this year"
+msgstr "Timesheet lines in this year"
 
 #. module: hr_timesheet_invoice
 #: view:hr_timesheet_invoice.factor:0
 msgid "Type of invoicing"
-msgstr ""
+msgstr "Type of invoicing"
 
 #. module: hr_timesheet_invoice
 #: report:account.analytic.profit:0
 msgid "Profit"
-msgstr ""
+msgstr "Profit"
 
 #. module: hr_timesheet_invoice
-#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_final_invoice_create.py:68
+#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_final_invoice_create.py:70
 #, python-format
 msgid "Analytic account incomplete"
-msgstr ""
+msgstr "Analytic account incomplete"
 
 #. module: hr_timesheet_invoice
 #: model:ir.model,name:hr_timesheet_invoice.model_hr_timesheet_invoice_create_final
 msgid "Create invoice from timesheet final"
-msgstr ""
+msgstr "Kreiraj finalni račun iz evidencija rada "
 
 #. module: hr_timesheet_invoice
 #: view:hr.timesheet.invoice.create:0
 msgid "Force to use a specific product"
-msgstr ""
+msgstr "Force to use a specific product"
 
 #. module: hr_timesheet_invoice
 #: view:report.timesheet.line:0
 msgid "    7 Days    "
-msgstr ""
+msgstr "    7 dana    "
 
 #. module: hr_timesheet_invoice
 #: report:account.analytic.profit:0
 msgid "Income"
-msgstr ""
+msgstr "Prihod"
+
+#. module: hr_timesheet_invoice
+#: view:report_timesheet.account.date:0
+msgid "Daily Timesheets for this year"
+msgstr "Daily Timesheets for this year"
 
 #. module: hr_timesheet_invoice
 #: view:account.analytic.line:0
 msgid "To Invoice"
-msgstr ""
+msgstr "Za fakturiranje"
 
 #. module: hr_timesheet_invoice
 #: model:ir.model,name:hr_timesheet_invoice.model_report_timesheet_user
 msgid "Timesheet per day"
-msgstr "Raspored po danu"
+msgstr "Ev.rada po danu"
 
 #. module: hr_timesheet_invoice
 #: selection:report.account.analytic.line.to.invoice,month:0
@@ -75,24 +84,22 @@ msgstr "Raspored po danu"
 #: selection:report_timesheet.account.date,month:0
 #: selection:report_timesheet.user,month:0
 msgid "March"
-msgstr ""
+msgstr "Ožujak"
 
 #. module: hr_timesheet_invoice
 #: field:hr.timesheet.invoice.create.final,name:0
 msgid "Name of entry"
-msgstr ""
+msgstr "Naziv"
 
 #. module: hr_timesheet_invoice
 #: help:account.analytic.account,pricelist_id:0
-msgid ""
-"The product to invoice is defined on the employee form, the price will be "
-"deduced by this pricelist on the product."
-msgstr ""
+msgid "The product to invoice is defined on the employee form, the price will be deduced by this pricelist on the product."
+msgstr "Proizvod na računu je definiran na kartici djelatnika. Cijena će se odrediti prema ovom cjeniku."
 
 #. module: hr_timesheet_invoice
 #: model:ir.model,name:hr_timesheet_invoice.model_hr_timesheet_invoice_factor
 msgid "Invoice Rate"
-msgstr ""
+msgstr "Koef. računa"
 
 #. module: hr_timesheet_invoice
 #: view:report.account.analytic.line.to.invoice:0
@@ -101,25 +108,26 @@ msgstr ""
 #: view:report_timesheet.account.date:0
 #: view:report_timesheet.user:0
 msgid "This Year"
-msgstr ""
+msgstr "Ova godina"
 
 #. module: hr_timesheet_invoice
 #: help:hr.timesheet.invoice.create.final,time:0
 msgid "Display time in the history of works"
-msgstr ""
+msgstr "Display time in the history of works"
 
 #. module: hr_timesheet_invoice
 #: view:hr.timesheet.analytic.profit:0
 msgid "Journals"
-msgstr ""
+msgstr "Dnevnici"
 
 #. module: hr_timesheet_invoice
 #: view:report.timesheet.line:0
 #: field:report.timesheet.line,day:0
 msgid "Day"
-msgstr ""
+msgstr "Dan"
 
 #. module: hr_timesheet_invoice
+#: view:product.product:0
 #: field:report.account.analytic.line.to.invoice,product_uom_id:0
 msgid "UoM"
 msgstr "JM"
@@ -127,23 +135,28 @@ msgstr "JM"
 #. module: hr_timesheet_invoice
 #: view:report.timesheet.line:0
 msgid "Account"
-msgstr ""
+msgstr "Konto"
 
 #. module: hr_timesheet_invoice
 #: field:hr.timesheet.invoice.create,time:0
 #: field:hr.timesheet.invoice.create.final,time:0
 msgid "Time spent"
-msgstr ""
+msgstr "Time spent"
 
 #. module: hr_timesheet_invoice
 #: field:account.analytic.account,amount_invoiced:0
 msgid "Invoiced Amount"
-msgstr ""
+msgstr "Iznos na računu"
+
+#. module: hr_timesheet_invoice
+#: constraint:account.move.line:0
+msgid "You can not create move line on closed account."
+msgstr "You can not create move line on closed account."
 
 #. module: hr_timesheet_invoice
 #: view:report.timesheet.line:0
 msgid "Uninvoiced line with billing rate"
-msgstr ""
+msgstr "Nefakturirani redak s omjerom naplate"
 
 #. module: hr_timesheet_invoice
 #: field:report_timesheet.invoice,account_id:0
@@ -153,7 +166,7 @@ msgstr "Projekt"
 #. module: hr_timesheet_invoice
 #: field:account.analytic.account,pricelist_id:0
 msgid "Sale Pricelist"
-msgstr ""
+msgstr "Prodajni cjenik"
 
 #. module: hr_timesheet_invoice
 #: field:report.account.analytic.line.to.invoice,amount:0
@@ -163,22 +176,33 @@ msgstr "Iznos"
 #. module: hr_timesheet_invoice
 #: view:account.analytic.account:0
 msgid "Reactivate Account"
-msgstr ""
+msgstr "Reaktiviraj konto"
+
+#. module: hr_timesheet_invoice
+#: view:product.product:0
+msgid "Products"
+msgstr "Proizvodi"
 
 #. module: hr_timesheet_invoice
 #: help:hr.timesheet.invoice.create,name:0
 msgid "The detail of each work done will be displayed on the invoice"
-msgstr ""
+msgstr "Detalji svakog obavljenog rada će se prikazati na računu"
+
+#. module: hr_timesheet_invoice
+#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_invoice_create.py:63
+#, python-format
+msgid "Warning !"
+msgstr "Upozorenje!"
 
 #. module: hr_timesheet_invoice
 #: model:ir.model,name:hr_timesheet_invoice.model_hr_timesheet_invoice_create
 msgid "Create invoice from timesheet"
-msgstr ""
+msgstr "Kreiraj račun iz evidencija rada"
 
 #. module: hr_timesheet_invoice
 #: report:account.analytic.profit:0
 msgid "Period to enddate"
-msgstr ""
+msgstr "Period to enddate"
 
 #. module: hr_timesheet_invoice
 #: model:ir.model,name:hr_timesheet_invoice.model_report_analytic_account_close
@@ -188,35 +212,35 @@ msgstr "Analitički konto koji treba zatvoriti"
 #. module: hr_timesheet_invoice
 #: view:board.board:0
 msgid "Uninvoice Lines With Billing Rate"
-msgstr ""
+msgstr "Poništi fakturiranje redaka s omjerom naplate"
 
 #. module: hr_timesheet_invoice
 #: view:report.timesheet.line:0
 msgid "Group By..."
-msgstr ""
+msgstr "Grupiraj po..."
 
 #. module: hr_timesheet_invoice
 #: view:hr.timesheet.invoice.create:0
 #: view:hr.timesheet.invoice.create.final:0
 msgid "Create Invoices"
-msgstr ""
+msgstr "Kreiraj račune"
 
 #. module: hr_timesheet_invoice
 #: model:ir.model,name:hr_timesheet_invoice.model_report_timesheet_account_date
 #: view:report_timesheet.account.date:0
 msgid "Daily timesheet per account"
-msgstr "Dnevni Raspored po Kupcu"
+msgstr "Dnevna ev. rada po kontu"
 
 #. module: hr_timesheet_invoice
 #: view:hr.timesheet.invoice.create.final:0
 msgid "Final invoice for analytic account"
-msgstr ""
+msgstr "Finalni račun za analitički konto"
 
 #. module: hr_timesheet_invoice
-#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_invoice_create.py:76
+#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_invoice_create.py:91
 #, python-format
 msgid "Analytic Account incomplete"
-msgstr ""
+msgstr "Analytic Account incomplete"
 
 #. module: hr_timesheet_invoice
 #: model:ir.model,name:hr_timesheet_invoice.model_account_analytic_account
@@ -224,17 +248,17 @@ msgstr ""
 #: field:report_timesheet.account,account_id:0
 #: field:report_timesheet.account.date,account_id:0
 msgid "Analytic Account"
-msgstr "Analitički konto"
+msgstr "Konto analitike"
 
 #. module: hr_timesheet_invoice
 #: field:report.analytic.account.close,date_deadline:0
 msgid "Deadline"
-msgstr "Rok"
+msgstr "Krajnji rok"
 
 #. module: hr_timesheet_invoice
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.act_my_account
 msgid "Accounts to invoice"
-msgstr ""
+msgstr "Fakturirati konta"
 
 #. module: hr_timesheet_invoice
 #: field:report.analytic.account.close,partner_id:0
@@ -244,37 +268,42 @@ msgstr "Partner"
 #. module: hr_timesheet_invoice
 #: constraint:account.analytic.account:0
 msgid "Error! You can not create recursive analytic accounts."
-msgstr ""
+msgstr "Error! You can not create recursive analytic accounts."
 
 #. module: hr_timesheet_invoice
 #: help:hr.timesheet.invoice.create,time:0
 msgid "The time of each work done will be displayed on the invoice"
-msgstr ""
+msgstr "Vrijeme svih radova će se prikazati na računu."
 
 #. module: hr_timesheet_invoice
 #: field:hr.timesheet.invoice.create.final,balance_product:0
 msgid "Balance product"
-msgstr ""
+msgstr "Balance product"
 
 #. module: hr_timesheet_invoice
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.act_account_analytic_account_2_report_timehsheet_account
 msgid "Timesheets"
-msgstr "Rasporedi"
+msgstr "Ev. rada"
 
 #. module: hr_timesheet_invoice
 #: model:ir.model,name:hr_timesheet_invoice.model_hr_timesheet_analytic_cost_ledger
 msgid "hr.timesheet.analytic.cost.ledger"
-msgstr ""
+msgstr "hr.timesheet.analytic.cost.ledger"
 
 #. module: hr_timesheet_invoice
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.action_hr_timesheet_invoice_create_final
 msgid "Final Invoice"
-msgstr ""
+msgstr "Final Invoice"
+
+#. module: hr_timesheet_invoice
+#: report:account.analytic.profit:0
+msgid "User or Journal Name"
+msgstr "User or Journal Name"
 
 #. module: hr_timesheet_invoice
 #: view:hr.timesheet.invoice.create.final:0
 msgid "Do you want details for each line of the invoices ?"
-msgstr ""
+msgstr "Želite li uključiti detalje na svakoj stavci računa?"
 
 #. module: hr_timesheet_invoice
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.act_res_users_2_report_timesheet_invoice
@@ -284,10 +313,15 @@ msgid "Costs to invoice"
 msgstr "Troškovi za fakturiranje"
 
 #. module: hr_timesheet_invoice
+#: view:report_timesheet.user:0
+msgid "Timesheet by user in this month"
+msgstr "Timesheet by user in this month"
+
+#. module: hr_timesheet_invoice
 #: field:report.account.analytic.line.to.invoice,account_id:0
 #: field:report.analytic.account.close,name:0
 msgid "Analytic account"
-msgstr "Analitički Konto"
+msgstr "Analitički konto"
 
 #. module: hr_timesheet_invoice
 #: field:report.analytic.account.close,state:0
@@ -298,34 +332,33 @@ msgstr "Stanje"
 #: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_analytic_profit.py:58
 #, python-format
 msgid "Data Insufficient!"
-msgstr ""
+msgstr "Data Insufficient!"
 
 #. module: hr_timesheet_invoice
 #: report:hr.timesheet.invoice.account.analytic.account.cost_ledger:0
 msgid "Debit"
-msgstr ""
+msgstr "Duguje"
 
 #. module: hr_timesheet_invoice
-#: field:hr.timesheet.analytic.profit,employee_ids:0
-msgid "Employee"
-msgstr ""
+#: view:hr.timesheet.analytic.cost.ledger:0
+#: view:hr.timesheet.analytic.profit:0
+msgid "Print"
+msgstr "Ispis"
 
 #. module: hr_timesheet_invoice
 #: help:account.analytic.line,to_invoice:0
 msgid "It allows to set the discount while making invoice"
-msgstr ""
+msgstr "Omogućuje postavljanje popusta kod kreiranja računa"
 
 #. module: hr_timesheet_invoice
 #: help:hr.timesheet.invoice.create,price:0
-msgid ""
-"The cost of each work done will be displayed on the invoice. You probably "
-"don't want to check this"
-msgstr ""
+msgid "The cost of each work done will be displayed on the invoice. You probably don't want to check this"
+msgstr "Trošak svakog pojedinog rada će se prikazati na računu. Možda to ne želite?"
 
 #. module: hr_timesheet_invoice
 #: field:hr_timesheet_invoice.factor,customer_name:0
 msgid "Name"
-msgstr ""
+msgstr "Naziv"
 
 #. module: hr_timesheet_invoice
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.act_acc_analytic_acc_2_report_acc_analytic_line_to_invoice
@@ -336,31 +369,17 @@ msgstr "Stavke za fakturiranje"
 #: code:addons/hr_timesheet_invoice/hr_timesheet_invoice.py:118
 #, python-format
 msgid "Error !"
-msgstr ""
+msgstr "Greška !"
 
 #. module: hr_timesheet_invoice
 #: model:hr_timesheet_invoice.factor,name:hr_timesheet_invoice.timesheet_invoice_factor3
 msgid "Gratis"
-msgstr ""
-
-#. module: hr_timesheet_invoice
-#: model:ir.module.module,description:hr_timesheet_invoice.module_meta_information
-msgid ""
-"\n"
-"Module to generate invoices based on costs (human resources, expenses, "
-"...).\n"
-"You can define price lists in analytic account, make some theoretical "
-"revenue\n"
-"reports, eso."
-msgstr ""
+msgstr "Gratis"
 
 #. module: hr_timesheet_invoice
 #: help:account.analytic.account,to_invoice:0
-msgid ""
-"Fill this field if you plan to automatically generate invoices based on the "
-"costs in this analytic account: timesheets, expenses, ...You can configure "
-"an automatic invoice rate on analytic accounts."
-msgstr ""
+msgid "Fill this field if you plan to automatically generate invoices based on the costs in this analytic account: timesheets, expenses, ...You can configure an automatic invoice rate on analytic accounts."
+msgstr "Fill this field if you plan to automatically generate invoices based on the costs in this analytic account: timesheets, expenses, ...You can configure an automatic invoice rate on analytic accounts."
 
 #. module: hr_timesheet_invoice
 #: view:hr.timesheet.analytic.profit:0
@@ -368,18 +387,18 @@ msgstr ""
 #: model:ir.actions.report.xml,name:hr_timesheet_invoice.report_analytical_profit
 #: model:ir.ui.menu,name:hr_timesheet_invoice.menu_hr_timesheet_analytic_profit
 msgid "Timesheet Profit"
-msgstr ""
+msgstr "Profit po evidencijama rada"
 
 #. module: hr_timesheet_invoice
-#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_invoice_create.py:80
+#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_invoice_create.py:95
 #, python-format
 msgid "Partner incomplete"
-msgstr ""
+msgstr "Partner incomplete"
 
 #. module: hr_timesheet_invoice
 #: help:hr.timesheet.invoice.create.final,name:0
 msgid "Display detail of work in the invoice line."
-msgstr ""
+msgstr "Prikaži detaljni opis radova na stavci računa."
 
 #. module: hr_timesheet_invoice
 #: selection:report.account.analytic.line.to.invoice,month:0
@@ -388,50 +407,60 @@ msgstr ""
 #: selection:report_timesheet.account.date,month:0
 #: selection:report_timesheet.user,month:0
 msgid "July"
-msgstr ""
+msgstr "Srpanj"
 
 #. module: hr_timesheet_invoice
 #: report:hr.timesheet.invoice.account.analytic.account.cost_ledger:0
 msgid "Printing date"
-msgstr ""
+msgstr "Datum ispisa"
 
 #. module: hr_timesheet_invoice
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.action_hr_analytic_timesheet_open_tree
 #: model:ir.ui.menu,name:hr_timesheet_invoice.menu_hr_analytic_timesheet_tree
 msgid "Bill Tasks Works"
-msgstr ""
+msgstr "Fakturiranje zadataka"
 
 #. module: hr_timesheet_invoice
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.action_hr_timesheet_invoice_factor_form
 #: model:ir.ui.menu,name:hr_timesheet_invoice.hr_timesheet_invoice_factor_view
 msgid "Types of Invoicing"
-msgstr ""
+msgstr "Types of Invoicing"
+
+#. module: hr_timesheet_invoice
+#: constraint:hr.analytic.timesheet:0
+msgid "You can not modify an entry in a Confirmed/Done timesheet !."
+msgstr "You can not modify an entry in a Confirmed/Done timesheet !."
 
 #. module: hr_timesheet_invoice
 #: report:account.analytic.profit:0
 msgid "Theorical"
-msgstr ""
+msgstr "Theorical"
 
 #. module: hr_timesheet_invoice
 #: code:addons/hr_timesheet_invoice/hr_timesheet_invoice.py:119
 #, python-format
 msgid "You can not modify an invoiced analytic line!"
-msgstr ""
+msgstr "Promjena fakturiranih analitičkih stavki nije dozvoljena!"
 
 #. module: hr_timesheet_invoice
 #: model:ir.model,name:hr_timesheet_invoice.model_report_account_analytic_line_to_invoice
 msgid "Analytic lines to invoice report"
-msgstr "Analitičke stavke za ispis na fakturi"
+msgstr "Analitičke stavke za ispis na računu"
+
+#. module: hr_timesheet_invoice
+#: field:report_timesheet.invoice,amount_invoice:0
+msgid "To invoice"
+msgstr "Za fakturiranje"
 
 #. module: hr_timesheet_invoice
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.action_timesheet_user_stat_all
 msgid "Timesheet by User"
-msgstr "Raspored po Korisniku"
+msgstr "Ev.rada po korisniku"
 
 #. module: hr_timesheet_invoice
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.action_timesheet_invoice_stat_all
 msgid "Timesheet by Invoice"
-msgstr "Raspored prema Računu"
+msgstr "Ev.rada po računu"
 
 #. module: hr_timesheet_invoice
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.action_analytic_account_tree
@@ -442,23 +471,26 @@ msgstr "Zastarjela Analitička Konta"
 #. module: hr_timesheet_invoice
 #: field:hr_timesheet_invoice.factor,factor:0
 msgid "Discount (%)"
-msgstr ""
+msgstr "Popust (%)"
 
 #. module: hr_timesheet_invoice
 #: model:hr_timesheet_invoice.factor,name:hr_timesheet_invoice.timesheet_invoice_factor1
 msgid "Yes (100%)"
-msgstr ""
+msgstr "Da(100%)"
 
 #. module: hr_timesheet_invoice
-#: report:account.analytic.profit:0
-msgid "Employee or Journal Name"
-msgstr ""
+#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_final_invoice_create.py:71
+#, python-format
+msgid "Please fill in the partner and pricelist field in the analytic account:\n"
+"%s"
+msgstr "Please fill in the partner and pricelist field in the analytic account:\n"
+"%s"
 
 #. module: hr_timesheet_invoice
-#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_invoice_create.py:189
+#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_invoice_create.py:206
 #, python-format
 msgid "Invoices"
-msgstr ""
+msgstr "Računi"
 
 #. module: hr_timesheet_invoice
 #: selection:report.account.analytic.line.to.invoice,month:0
@@ -467,7 +499,7 @@ msgstr ""
 #: selection:report_timesheet.account.date,month:0
 #: selection:report_timesheet.user,month:0
 msgid "December"
-msgstr ""
+msgstr "Prosinac"
 
 #. module: hr_timesheet_invoice
 #: field:report.account.analytic.line.to.invoice,month:0
@@ -482,9 +514,15 @@ msgstr "Mjesec"
 #. module: hr_timesheet_invoice
 #: report:account.analytic.profit:0
 msgid "Currency"
-msgstr ""
+msgstr "Valuta"
 
 #. module: hr_timesheet_invoice
+#: model:ir.model,name:hr_timesheet_invoice.model_account_move_line
+msgid "Journal Items"
+msgstr "Stavke glavne knjige"
+
+#. module: hr_timesheet_invoice
+#: field:hr.timesheet.analytic.profit,employee_ids:0
 #: view:report.timesheet.line:0
 #: field:report.timesheet.line,user_id:0
 #: field:report_timesheet.account,user_id:0
@@ -496,20 +534,23 @@ msgstr "Korisnik"
 
 #. module: hr_timesheet_invoice
 #: help:hr.timesheet.invoice.create,product:0
-msgid ""
-"Complete this field only if you want to force to use a specific product. "
-"Keep empty to use the real product that comes from the cost."
-msgstr ""
+msgid "Complete this field only if you want to force to use a specific product. Keep empty to use the real product that comes from the cost."
+msgstr "Complete this field only if you want to force to use a specific product. Keep empty to use the real product that comes from the cost."
+
+#. module: hr_timesheet_invoice
+#: view:hr.timesheet.analytic.profit:0
+msgid "Users"
+msgstr "Korisnici"
 
 #. module: hr_timesheet_invoice
 #: view:report.timesheet.line:0
 msgid "Non Assigned timesheets to users"
-msgstr ""
+msgstr "Ne dodijeljene evidencije rada"
 
 #. module: hr_timesheet_invoice
 #: field:report.timesheet.line,invoice_id:0
 msgid "Invoiced"
-msgstr ""
+msgstr "Fakturirano"
 
 #. module: hr_timesheet_invoice
 #: field:report.analytic.account.close,quantity_max:0
@@ -519,42 +560,42 @@ msgstr "Maks. količina"
 #. module: hr_timesheet_invoice
 #: view:hr.timesheet.invoice.create.final:0
 msgid "Invoice Balance amount"
-msgstr ""
+msgstr "Iznos salda računa"
 
 #. module: hr_timesheet_invoice
 #: report:account.analytic.profit:0
 msgid "Invoice rate by user"
-msgstr ""
+msgstr "Koef. računa po korisniku"
 
 #. module: hr_timesheet_invoice
 #: view:report_timesheet.account:0
 msgid "Timesheet by account"
-msgstr "Raspored po Stranki"
+msgstr "Ev.rada po kontu"
 
 #. module: hr_timesheet_invoice
 #: field:hr.timesheet.analytic.profit,date_from:0
 msgid "From"
-msgstr ""
+msgstr "Od"
 
 #. module: hr_timesheet_invoice
 #: view:account.analytic.account:0
 msgid "Pending"
-msgstr ""
+msgstr "Na čekanju"
 
 #. module: hr_timesheet_invoice
 #: help:account.analytic.account,amount_invoiced:0
 msgid "Total invoiced"
-msgstr ""
+msgstr "Ukupno računi"
 
 #. module: hr_timesheet_invoice
 #: report:hr.timesheet.invoice.account.analytic.account.cost_ledger:0
 msgid "Period to"
-msgstr ""
+msgstr "Razdoblje do"
 
 #. module: hr_timesheet_invoice
 #: model:ir.model,name:hr_timesheet_invoice.model_account_analytic_line
 msgid "Analytic Line"
-msgstr ""
+msgstr "Analitičke stavke"
 
 #. module: hr_timesheet_invoice
 #: selection:report.account.analytic.line.to.invoice,month:0
@@ -563,19 +604,19 @@ msgstr ""
 #: selection:report_timesheet.account.date,month:0
 #: selection:report_timesheet.user,month:0
 msgid "August"
-msgstr ""
+msgstr "Kolovoz"
 
 #. module: hr_timesheet_invoice
 #: report:hr.timesheet.invoice.account.analytic.account.cost_ledger:0
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.action_hr_timesheet_invoice_cost_ledger
 #: model:ir.actions.report.xml,name:hr_timesheet_invoice.account_analytic_account_cost_ledger
 msgid "Cost Ledger"
-msgstr ""
+msgstr "Knjiga troškova"
 
 #. module: hr_timesheet_invoice
 #: model:hr_timesheet_invoice.factor,name:hr_timesheet_invoice.timesheet_invoice_factor2
 msgid "50%"
-msgstr ""
+msgstr "50%"
 
 #. module: hr_timesheet_invoice
 #: selection:report.account.analytic.line.to.invoice,month:0
@@ -584,23 +625,23 @@ msgstr ""
 #: selection:report_timesheet.account.date,month:0
 #: selection:report_timesheet.user,month:0
 msgid "June"
-msgstr ""
+msgstr "Lipanj"
 
 #. module: hr_timesheet_invoice
 #: help:hr.timesheet.invoice.create.final,date:0
 msgid "Display date in the history of works"
-msgstr ""
+msgstr "Display date in the history of works"
 
 #. module: hr_timesheet_invoice
 #: model:ir.model,name:hr_timesheet_invoice.model_report_timesheet_account
 #: view:report_timesheet.account:0
 msgid "Timesheet per account"
-msgstr "Raspored po Kupcu"
+msgstr "Ev.rada po kontu"
 
 #. module: hr_timesheet_invoice
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.action_timesheet_account_stat_all
 msgid "Timesheet by Account"
-msgstr "Raspored po Kupcu"
+msgstr "Ev.rada po kontu"
 
 #. module: hr_timesheet_invoice
 #: field:hr.timesheet.invoice.create,date:0
@@ -610,10 +651,10 @@ msgid "Date"
 msgstr "Datum"
 
 #. module: hr_timesheet_invoice
-#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_invoice_create.py:81
+#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_invoice_create.py:96
 #, python-format
 msgid "Please fill in the Address field in the Partner: %s."
-msgstr ""
+msgstr "Please fill in the Address field in the Partner: %s."
 
 #. module: hr_timesheet_invoice
 #: selection:report.account.analytic.line.to.invoice,month:0
@@ -622,38 +663,53 @@ msgstr ""
 #: selection:report_timesheet.account.date,month:0
 #: selection:report_timesheet.user,month:0
 msgid "November"
-msgstr ""
+msgstr "Studeni"
 
 #. module: hr_timesheet_invoice
 #: view:report.timesheet.line:0
 msgid "Extended Filters..."
-msgstr ""
+msgstr "Prošireni filtri..."
 
 #. module: hr_timesheet_invoice
-#: field:report_timesheet.invoice,amount_invoice:0
-msgid "To invoice"
-msgstr "Za fakturiranje"
+#: constraint:account.move.line:0
+msgid "Company must be same for its related account and period."
+msgstr "Company must be same for its related account and period."
 
 #. module: hr_timesheet_invoice
 #: report:account.analytic.profit:0
 msgid "Eff."
-msgstr ""
+msgstr "Eff."
 
 #. module: hr_timesheet_invoice
 #: view:hr.timesheet.invoice.create:0
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.action_hr_timesheet_invoice_create
 msgid "Invoice analytic lines"
-msgstr ""
+msgstr "Fakturiraj analitičke stavke"
+
+#. module: hr_timesheet_invoice
+#: model:ir.module.module,description:hr_timesheet_invoice.module_meta_information
+msgid "Generate your Invoices from Expenses, Timesheet Entries, ...\n"
+"Module to generate invoices based on costs (human resources, expenses, ...).\n"
+"============================================================================\n"
+"\n"
+"You can define price lists in analytic account, make some theoretical revenue\n"
+"reports, etc."
+msgstr "Generate your Invoices from Expenses, Timesheet Entries, ...\n"
+"Module to generate invoices based on costs (human resources, expenses, ...).\n"
+"============================================================================\n"
+"\n"
+"You can define price lists in analytic account, make some theoretical revenue\n"
+"reports, etc."
 
 #. module: hr_timesheet_invoice
 #: report:hr.timesheet.invoice.account.analytic.account.cost_ledger:0
 msgid "J.C. /Move name"
-msgstr ""
+msgstr "Naziv temeljnice"
 
 #. module: hr_timesheet_invoice
 #: report:hr.timesheet.invoice.account.analytic.account.cost_ledger:0
 msgid "Total:"
-msgstr ""
+msgstr "Ukupno:"
 
 #. module: hr_timesheet_invoice
 #: selection:report.account.analytic.line.to.invoice,month:0
@@ -662,38 +718,23 @@ msgstr ""
 #: selection:report_timesheet.account.date,month:0
 #: selection:report_timesheet.user,month:0
 msgid "January"
-msgstr ""
+msgstr "Siječanj"
 
 #. module: hr_timesheet_invoice
 #: report:hr.timesheet.invoice.account.analytic.account.cost_ledger:0
 msgid "Credit"
-msgstr ""
+msgstr "Potražuje"
 
 #. module: hr_timesheet_invoice
-#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_final_invoice_create.py:69
-#, python-format
-msgid ""
-"Please fill in the partner and pricelist field in the analytic account:\n"
-"%s"
-msgstr ""
-
-#. module: hr_timesheet_invoice
-#: constraint:account.analytic.account:0
-msgid ""
-"Error! The currency has to be the same as the currency of the selected "
-"company"
-msgstr ""
-
-#. module: hr_timesheet_invoice
-#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_invoice_create.py:120
+#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_invoice_create.py:135
 #, python-format
 msgid "Error"
-msgstr ""
+msgstr "Greška"
 
 #. module: hr_timesheet_invoice
 #: field:hr.timesheet.analytic.cost.ledger,date2:0
 msgid "End of period"
-msgstr ""
+msgstr "Završetak perioda"
 
 #. module: hr_timesheet_invoice
 #: report:hr.timesheet.invoice.account.analytic.account.cost_ledger:0
@@ -715,47 +756,42 @@ msgstr "Količina"
 #. module: hr_timesheet_invoice
 #: report:hr.timesheet.invoice.account.analytic.account.cost_ledger:0
 msgid "Date/Code"
-msgstr ""
+msgstr "Datum/Šifra"
 
 #. module: hr_timesheet_invoice
 #: field:report.timesheet.line,general_account_id:0
 msgid "General Account"
-msgstr "Opći Račun Kupca"
+msgstr "Konto glavne knjige"
 
 #. module: hr_timesheet_invoice
 #: model:ir.model,name:hr_timesheet_invoice.model_hr_timesheet_analytic_profit
 msgid "Print Timesheet Profit"
-msgstr ""
+msgstr "Print Timesheet Profit"
 
 #. module: hr_timesheet_invoice
 #: field:account.analytic.account,to_invoice:0
 msgid "Reinvoice Costs"
-msgstr ""
+msgstr "Prefakturiraj troškove"
 
 #. module: hr_timesheet_invoice
 #: report:account.analytic.profit:0
 msgid "Totals:"
-msgstr ""
-
-#. module: hr_timesheet_invoice
-#: field:hr.timesheet.analytic.profit,date_to:0
-msgid "To"
-msgstr ""
+msgstr "Sume:"
 
 #. module: hr_timesheet_invoice
 #: view:hr.timesheet.invoice.create:0
 msgid "Do you want to show details of work in invoice ?"
-msgstr ""
+msgstr "Želite li ispisati detalje o radovima na računu?"
 
 #. module: hr_timesheet_invoice
 #: report:hr.timesheet.invoice.account.analytic.account.cost_ledger:0
 msgid "Period from"
-msgstr ""
+msgstr "Od perioda"
 
 #. module: hr_timesheet_invoice
 #: field:account.analytic.account,amount_max:0
 msgid "Max. Invoice Price"
-msgstr ""
+msgstr "Max. cijena na računu"
 
 #. module: hr_timesheet_invoice
 #: selection:report.account.analytic.line.to.invoice,month:0
@@ -764,14 +800,14 @@ msgstr ""
 #: selection:report_timesheet.account.date,month:0
 #: selection:report_timesheet.user,month:0
 msgid "September"
-msgstr ""
+msgstr "Rujan"
 
 #. module: hr_timesheet_invoice
 #: field:account.analytic.line,invoice_id:0
 #: model:ir.model,name:hr_timesheet_invoice.model_account_invoice
 #: view:report.timesheet.line:0
 msgid "Invoice"
-msgstr ""
+msgstr "Račun"
 
 #. module: hr_timesheet_invoice
 #: view:account.analytic.account:0
@@ -780,21 +816,17 @@ msgstr ""
 #: view:hr.timesheet.invoice.create:0
 #: view:hr.timesheet.invoice.create.final:0
 msgid "Cancel"
-msgstr ""
+msgstr "Odustani"
 
 #. module: hr_timesheet_invoice
 #: view:account.analytic.account:0
 msgid "Close"
-msgstr ""
+msgstr "Zatvori"
 
 #. module: hr_timesheet_invoice
 #: model:ir.actions.act_window,help:hr_timesheet_invoice.action_hr_timesheet_invoice_factor_form
-msgid ""
-"OpenERP allows you to create default invoicing types. You might have to "
-"regularly assign discounts because of a specific contract or agreement with "
-"a customer. From this menu, you can create additional types of invoicing to "
-"speed up your invoicing."
-msgstr ""
+msgid "OpenERP allows you to create default invoicing types. You might have to regularly assign discounts because of a specific contract or agreement with a customer. From this menu, you can create additional types of invoicing to speed up your invoicing."
+msgstr "OpenERP allows you to create default invoicing types. You might have to regularly assign discounts because of a specific contract or agreement with a customer. From this menu, you can create additional types of invoicing to speed up your invoicing."
 
 #. module: hr_timesheet_invoice
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.action_timesheet_line_stat_all
@@ -802,38 +834,36 @@ msgstr ""
 #: model:ir.model,name:hr_timesheet_invoice.model_report_timesheet_line
 #: view:report.timesheet.line:0
 msgid "Timesheet Line"
-msgstr ""
+msgstr "Stavka evidencije rada"
 
 #. module: hr_timesheet_invoice
-#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_final_invoice_create.py:147
+#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_final_invoice_create.py:144
 #, python-format
 msgid "Balance product needed"
-msgstr ""
+msgstr "Balance product needed"
 
 #. module: hr_timesheet_invoice
 #: view:hr.timesheet.invoice.create:0
 msgid "Billing Data"
-msgstr ""
+msgstr "Billing Data"
 
 #. module: hr_timesheet_invoice
-#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_invoice_create.py:77
+#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_invoice_create.py:92
 #, python-format
-msgid ""
-"Please fill in the Partner or Customer and Sale Pricelist fields in the "
-"Analytic Account:\n"
+msgid "Please fill in the Partner or Customer and Sale Pricelist fields in the Analytic Account:\n"
 "%s"
-msgstr ""
+msgstr "Please fill in the Partner or Customer and Sale Pricelist fields in the Analytic Account:\n"
+"%s"
 
 #. module: hr_timesheet_invoice
 #: help:hr_timesheet_invoice.factor,customer_name:0
 msgid "Label for the customer"
-msgstr ""
+msgstr "Labela za kupca"
 
 #. module: hr_timesheet_invoice
-#: view:hr.timesheet.analytic.cost.ledger:0
-#: view:hr.timesheet.analytic.profit:0
-msgid "Print"
-msgstr ""
+#: field:hr.timesheet.analytic.profit,date_to:0
+msgid "To"
+msgstr "Do"
 
 #. module: hr_timesheet_invoice
 #: selection:report.account.analytic.line.to.invoice,month:0
@@ -842,38 +872,38 @@ msgstr ""
 #: selection:report_timesheet.account.date,month:0
 #: selection:report_timesheet.user,month:0
 msgid "October"
-msgstr ""
+msgstr "Listopad"
 
 #. module: hr_timesheet_invoice
 #: help:hr.timesheet.invoice.create.final,price:0
 msgid "Display cost of the item you reinvoice"
-msgstr ""
+msgstr "Prikaži troškove koji će se pre-fakturirati"
 
 #. module: hr_timesheet_invoice
 #: help:hr.timesheet.invoice.create,date:0
 msgid "The real date of each work will be displayed on the invoice"
-msgstr ""
+msgstr "Na računu će se prikazati stvarni datum svakog rada"
 
 #. module: hr_timesheet_invoice
-#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_invoice_create.py:120
+#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_invoice_create.py:135
 #, python-format
 msgid "At least one line has no product !"
-msgstr ""
+msgstr "Barem jedna linija nema proizvod!"
 
 #. module: hr_timesheet_invoice
 #: view:report_timesheet.invoice:0
 msgid "Timesheets to invoice"
-msgstr "Rasporedi za obračun"
+msgstr "Ev. rada za fakturiranje"
 
 #. module: hr_timesheet_invoice
 #: field:hr.timesheet.analytic.cost.ledger,date1:0
 msgid "Start of period"
-msgstr ""
+msgstr "Početak razdoblja"
 
 #. module: hr_timesheet_invoice
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.action_timesheet_account_date_stat_all
 msgid "Daily Timesheet by Account"
-msgstr "Dnevni Rasporedi po Kupcu"
+msgstr "Dnevna evidencija rada po kontu"
 
 #. module: hr_timesheet_invoice
 #: field:hr.timesheet.invoice.create,product:0
@@ -886,17 +916,17 @@ msgstr "Proizvod"
 #. module: hr_timesheet_invoice
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.action_timesheet_uninvoiced_line
 msgid "Uninvoice lines with billing rate"
-msgstr ""
+msgstr "Odfakturiraj retke sa faktorom"
 
 #. module: hr_timesheet_invoice
 #: report:account.analytic.profit:0
 msgid "%"
-msgstr ""
+msgstr "%"
 
 #. module: hr_timesheet_invoice
 #: field:hr_timesheet_invoice.factor,name:0
 msgid "Internal name"
-msgstr ""
+msgstr "Interni naziv"
 
 #. module: hr_timesheet_invoice
 #: selection:report.account.analytic.line.to.invoice,month:0
@@ -905,35 +935,38 @@ msgstr ""
 #: selection:report_timesheet.account.date,month:0
 #: selection:report_timesheet.user,month:0
 msgid "May"
-msgstr ""
+msgstr "Svibanj"
 
 #. module: hr_timesheet_invoice
 #: field:hr.timesheet.analytic.profit,journal_ids:0
 msgid "Journal"
-msgstr ""
+msgstr "Dnevnik"
 
 #. module: hr_timesheet_invoice
 #: help:hr.timesheet.invoice.create.final,balance_product:0
 msgid "The product that will be used to invoice the remaining amount"
-msgstr ""
+msgstr "Proizvod koji će se koristiti na računu za preostali iznos"
 
 #. module: hr_timesheet_invoice
 #: model:ir.actions.act_window,help:hr_timesheet_invoice.action_hr_analytic_timesheet_open_tree
-msgid ""
-"This list shows you every task you can invoice to the customer. Select the "
-"lines and click the Action button to generate the invoices automatically."
-msgstr ""
+msgid "This list shows you every task you can invoice to the customer. Select the lines and click the Action button to generate the invoices automatically."
+msgstr "Svi zadaci koji se mogu fakturirati kupcu. Odaberite retke i pritisnite gumb za kreiranje računa."
+
+#. module: hr_timesheet_invoice
+#: view:report_timesheet.account.date:0
+msgid "Daily Timesheets of this month"
+msgstr "Daily Timesheets of this month"
 
 #. module: hr_timesheet_invoice
 #: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_analytic_profit.py:58
 #, python-format
 msgid "No Records Found for Report!"
-msgstr ""
+msgstr "No Records Found for Report!"
 
 #. module: hr_timesheet_invoice
 #: view:report_timesheet.invoice:0
 msgid "Timesheet by invoice"
-msgstr "Raspored za obračun"
+msgstr "Ev.rada po računu"
 
 #. module: hr_timesheet_invoice
 #: view:report.account.analytic.line.to.invoice:0
@@ -942,17 +975,17 @@ msgstr "Raspored za obračun"
 #: view:report_timesheet.account.date:0
 #: view:report_timesheet.user:0
 msgid "This Month"
-msgstr "Ovaj Mjesec"
+msgstr "Ovaj mjesec"
 
 #. module: hr_timesheet_invoice
 #: view:hr.timesheet.analytic.cost.ledger:0
 msgid "Select Period"
-msgstr ""
+msgstr "Odaberite period"
 
 #. module: hr_timesheet_invoice
 #: report:account.analytic.profit:0
 msgid "Period from startdate"
-msgstr ""
+msgstr "Period from startdate"
 
 #. module: hr_timesheet_invoice
 #: selection:report.account.analytic.line.to.invoice,month:0
@@ -961,17 +994,17 @@ msgstr ""
 #: selection:report_timesheet.account.date,month:0
 #: selection:report_timesheet.user,month:0
 msgid "February"
-msgstr ""
+msgstr "Veljača"
 
 #. module: hr_timesheet_invoice
 #: model:ir.module.module,shortdesc:hr_timesheet_invoice.module_meta_information
 msgid "Invoice on analytic lines"
-msgstr ""
+msgstr "Račun prema stavkama analitike"
 
 #. module: hr_timesheet_invoice
 #: view:report_timesheet.account.date:0
 msgid "Daily timesheet by account"
-msgstr "Dnevni Raspored po Kupcu"
+msgstr "Dnevna evidencija rada po kontu"
 
 #. module: hr_timesheet_invoice
 #: field:report.account.analytic.line.to.invoice,sale_price:0
@@ -979,14 +1012,9 @@ msgid "Sale price"
 msgstr "Prodajna cijena"
 
 #. module: hr_timesheet_invoice
-#: view:hr.timesheet.analytic.profit:0
-msgid "Employees"
-msgstr ""
-
-#. module: hr_timesheet_invoice
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.act_res_users_2_report_timesheet_user
 msgid "Timesheets per day"
-msgstr "Rasporedi po danu"
+msgstr "Ev. rada po danu"
 
 #. module: hr_timesheet_invoice
 #: selection:report.account.analytic.line.to.invoice,month:0
@@ -995,32 +1023,43 @@ msgstr "Rasporedi po danu"
 #: selection:report_timesheet.account.date,month:0
 #: selection:report_timesheet.user,month:0
 msgid "April"
-msgstr ""
+msgstr "Travanj"
 
 #. module: hr_timesheet_invoice
 #: view:account.analytic.account:0
 msgid "Invoicing Data"
-msgstr ""
+msgstr "Podaci računa"
 
 #. module: hr_timesheet_invoice
 #: help:hr_timesheet_invoice.factor,factor:0
 msgid "Discount in percentage"
-msgstr ""
+msgstr "Popust %"
+
+#. module: hr_timesheet_invoice
+#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_invoice_create.py:63
+#, python-format
+msgid "Invoice is already linked to some of the analytic line(s)!"
+msgstr "Račun je već povezan sa nekim analitičkim stavkama!"
 
 #. module: hr_timesheet_invoice
 #: view:hr_timesheet_invoice.factor:0
 msgid "Types of invoicing"
-msgstr ""
+msgstr "Types of invoicing"
 
 #. module: hr_timesheet_invoice
 #: model:ir.actions.act_window,name:hr_timesheet_invoice.act_res_users_2_report_timehsheet_account
 msgid "Timesheets per account"
-msgstr "Rasporedi po Stranki"
+msgstr "Ev. rada po kontu"
 
 #. module: hr_timesheet_invoice
 #: field:hr.timesheet.invoice.create,name:0
 msgid "Description"
 msgstr "Opis"
+
+#. module: hr_timesheet_invoice
+#: model:ir.actions.act_window,name:hr_timesheet_invoice.product_services_form_view_installer
+msgid "Configure Your Services"
+msgstr "Configure Your Services"
 
 #. module: hr_timesheet_invoice
 #: report:account.analytic.profit:0
@@ -1029,9 +1068,14 @@ msgid "Units"
 msgstr "Jedinice"
 
 #. module: hr_timesheet_invoice
+#: view:report_timesheet.user:0
+msgid "Timesheet by user in this year"
+msgstr "Timesheet by user in this year"
+
+#. module: hr_timesheet_invoice
 #: field:account.analytic.line,to_invoice:0
 msgid "Type of Invoicing"
-msgstr ""
+msgstr "Vrsta fakturiranja"
 
 #. module: hr_timesheet_invoice
 #: view:report.account.analytic.line.to.invoice:0
@@ -1039,15 +1083,20 @@ msgid "Analytic Lines to Invoice"
 msgstr "Analitičke stavke za fakturiranje"
 
 #. module: hr_timesheet_invoice
-#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_final_invoice_create.py:147
+#: view:report.timesheet.line:0
+msgid "Timesheet lines in this month"
+msgstr "Timesheet lines in this month"
+
+#. module: hr_timesheet_invoice
+#: code:addons/hr_timesheet_invoice/wizard/hr_timesheet_final_invoice_create.py:144
 #, python-format
 msgid "Please fill a Balance product in the wizard"
-msgstr ""
+msgstr "Please fill a Balance product in the wizard"
 
 #. module: hr_timesheet_invoice
 #: field:report_timesheet.invoice,manager_id:0
 msgid "Manager"
-msgstr "Upravitelj"
+msgstr "Voditelj"
 
 #. module: hr_timesheet_invoice
 #: report:account.analytic.profit:0
@@ -1067,64 +1116,20 @@ msgstr "Trošak"
 #: field:report_timesheet.account.date,name:0
 #: field:report_timesheet.user,name:0
 msgid "Year"
-msgstr ""
+msgstr "Godina"
 
-#~ msgid "Invalid model name in the action definition."
-#~ msgstr "Nepravilno ime modela u definiciji radnje."
+#. module: hr_timesheet_invoice
+#: sql_constraint:account.move.line:0
+msgid "Wrong credit or debit value in accounting entry !"
+msgstr "Wrong credit or debit value in accounting entry !"
 
-#~ msgid "Invalid XML for View Architecture!"
-#~ msgstr "Neispravan XML za Arhitekturu Prikaza!"
+#. module: hr_timesheet_invoice
+#: view:report.timesheet.line:0
+msgid "Timesheet lines during last 7 days"
+msgstr "Timesheet lines during last 7 days"
 
-#~ msgid ""
-#~ "The Object name must start with x_ and not contain any special character !"
-#~ msgstr ""
-#~ "Naziv Objekta mora početi s x_ i ne smije sadržavati bilo koji posebni znak !"
+#. module: hr_timesheet_invoice
+#: constraint:account.move.line:0
+msgid "You can not create move line on view account."
+msgstr "Ne može se knjižiti na sintetički konto."
 
-#~ msgid "Invoicing"
-#~ msgstr "Fakturiranje"
-
-#~ msgid "Analytic Account Reporting"
-#~ msgstr "Izvještaji analitike"
-
-#~ msgid "Analytic lines - Reporting"
-#~ msgstr "Analitičke stavke - Izvještavanje"
-
-#~ msgid "My daily timesheets by account"
-#~ msgstr "Moji dnevni Rasporedi po Kupcu"
-
-#~ msgid "My Timesheet of the Month"
-#~ msgstr "Moj raspored u mjesecu"
-
-#~ msgid "Random Timesheet Lines"
-#~ msgstr "Nasumični tokovi Rasporeda"
-
-#~ msgid "Timesheet - Reporting"
-#~ msgstr "Raspored - Izvještavanje"
-
-#~ msgid "My timesheets by account"
-#~ msgstr "Moji rasporedi prema Kupcu"
-
-#~ msgid "Random Timesheet Report"
-#~ msgstr "Nasumičan izvještaj Rasporeda"
-
-#~ msgid "Random Timesheets"
-#~ msgstr "Nasumični Rasporedi"
-
-#~ msgid "Random Timesheets Lines"
-#~ msgstr "Nasumični tokovi Rasporeda"
-
-#~ msgid "Random Timesheet"
-#~ msgstr "Nasumičan Raspored"
-
-#~ msgid "My timesheets to invoice"
-#~ msgstr "Moji rasporedi za obračun"
-
-#~ msgid ""
-#~ "Module to add timesheet views like\n"
-#~ "    All Month, Timesheet By User, Timesheet Of Month, Timesheet By Account"
-#~ msgstr ""
-#~ "Modul koji dodaje poglede Rasporeda poput: Čitav Mjesec, Raspored prema "
-#~ "Korisniku, Raspored Mjeseca, Raspored prema Kupcu"
-
-#~ msgid "Timesheet by user (this month)"
-#~ msgstr "Raspored prema Korisniku (Ovaj mjesec)"

@@ -1,0 +1,90 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* gt_product_category_taxes
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: gt_product_category_taxes
+#: model:ir.model,name:gt_product_category_taxes.model_product_category
+msgid "Product Category"
+msgstr "Grupa proizvoda"
+
+#. module: gt_product_category_taxes
+#: view:product.category:0
+msgid "Impuestos Ventas"
+msgstr "Impuestos Ventas"
+
+#. module: gt_product_category_taxes
+#: model:ir.module.module,shortdesc:gt_product_category_taxes.module_meta_information
+msgid "Taxing properties in product category"
+msgstr "Taxing properties in product category"
+
+#. module: gt_product_category_taxes
+#: field:product.category,sale_tax_ids:0
+msgid "Impuestos en Ventas"
+msgstr "Impuestos en Ventas"
+
+#. module: gt_product_category_taxes
+#: constraint:product.category:0
+msgid "Error ! You can not create recursive categories."
+msgstr "Greška ! Ne možete stvoriti rekurzivne grupe."
+
+#. module: gt_product_category_taxes
+#: model:ir.model,name:gt_product_category_taxes.model_account_invoice_line
+msgid "Invoice Line"
+msgstr "Stavka računa"
+
+#. module: gt_product_category_taxes
+#: code:addons/gt_product_category_taxes/product.py:57
+#, python-format
+msgid "You must first select a partner !"
+msgstr "Morate prvo odabrati partnera !"
+
+#. module: gt_product_category_taxes
+#: view:product.category:0
+msgid "Impuestos Compras"
+msgstr "Impuestos Compras"
+
+#. module: gt_product_category_taxes
+#: code:addons/gt_product_category_taxes/product.py:120
+#, python-format
+msgid "Configuration Error !"
+msgstr "Greška konfiguracije !"
+
+#. module: gt_product_category_taxes
+#: code:addons/gt_product_category_taxes/product.py:121
+#, python-format
+msgid "Can not find account chart for this company, Please Create account."
+msgstr "Can not find account chart for this company, Please Create account."
+
+#. module: gt_product_category_taxes
+#: code:addons/gt_product_category_taxes/product.py:57
+#, python-format
+msgid "No Partner Defined !"
+msgstr "Nije definiran partner !"
+
+#. module: gt_product_category_taxes
+#: field:product.category,purchase_tax_ids:0
+msgid "Impuestos en Compras"
+msgstr "Impuestos en Compras"
+
+#. module: gt_product_category_taxes
+#: model:ir.module.module,description:gt_product_category_taxes.module_meta_information
+msgid "\n"
+"    This module helps to configure taxes for products in category\n"
+"    "
+msgstr "\n"
+"    This module helps to configure taxes for products in category\n"
+"    "
+

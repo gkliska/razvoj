@@ -1,279 +1,100 @@
 # Translation of OpenERP Server.
 # This file contains the translation of the following modules:
-# * base_setup
-# Drazen Bosak <drazen.bosak@gmail.com>, 2010.
+#	* base_setup
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenERP Server 6.0dev\n"
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
 "Report-Msgid-Bugs-To: support@openerp.com\n"
-"POT-Creation-Date: 2011-01-11 11:14+0000\n"
-"PO-Revision-Date: 2010-06-06 23:31+0000\n"
-"Last-Translator: Drazen Bosak <Unknown>\n"
-"Language-Team: Vinteh\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-29 05:03+0000\n"
-"X-Generator: Launchpad (build 12758)\n"
-"Language: hr\n"
-
-#. module: base_setup
-#: field:base.setup.company,city:0
-msgid "City"
-msgstr "Grad"
-
-#. module: base_setup
-#: view:base.setup.installer:0
-msgid "Install"
-msgstr "Instaliraj"
-
-#. module: base_setup
-#: field:base.setup.installer,account_voucher:0
-msgid "Invoicing"
-msgstr ""
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
 
 #. module: base_setup
 #: field:base.setup.installer,hr:0
 msgid "Human Resources"
-msgstr ""
+msgstr "Ljudski potencijali"
 
 #. module: base_setup
-#: field:base.setup.company,email:0
-msgid "E-mail"
-msgstr "E-Mail"
+#: model:ir.model,name:base_setup.model_product_installer
+msgid "product.installer"
+msgstr "product.installer"
 
 #. module: base_setup
-#: field:base.setup.company,account_no:0
-msgid "Bank Account No"
-msgstr ""
+#: view:base.setup.config:0
+msgid "New Database"
+msgstr "New Database"
 
 #. module: base_setup
-#: field:base.setup.installer,profile_tools:0
-msgid "Extra Tools"
-msgstr ""
-
-#. module: base_setup
-#: field:base.setup.company,rml_footer1:0
-msgid "Report Footer 1"
-msgstr "Podnožje Izvještaja 1"
-
-#. module: base_setup
-#: help:base.setup.installer,mrp:0
-msgid ""
-"Helps you manage your manufacturing processes and generate reports on those "
-"processes."
-msgstr ""
+#: help:base.setup.installer,stock:0
+msgid "Helps you manage your inventory and main stock operations: delivery orders, receptions, etc."
+msgstr "Helps you manage your inventory and main stock operations: delivery orders, receptions, etc."
 
 #. module: base_setup
 #: help:base.setup.installer,marketing:0
 msgid "Helps you manage your marketing campaigns step by step."
-msgstr ""
-
-#. module: base_setup
-#: view:base.setup.config:0
-msgid "Your database is now created."
-msgstr ""
+msgstr "Helps you manage your marketing campaigns step by step."
 
 #. module: base_setup
 #: field:base.setup.installer,point_of_sale:0
 msgid "Point of Sales"
-msgstr ""
+msgstr "Point of Sales"
 
 #. module: base_setup
-#: field:base.setup.installer,association:0
-msgid "Associations"
-msgstr ""
+#: view:res.company.logo:0
+msgid " "
+msgstr " "
 
 #. module: base_setup
-#: help:base.setup.installer,account_accountant:0
-msgid ""
-"Helps you handle your accounting needs, if you are not an accountant, we "
-"suggest you to install only the Invoicing "
-msgstr ""
+#: view:base.setup.installer:0
+#: view:migrade.application.installer.modules:0
+msgid "title"
+msgstr "naslov"
 
 #. module: base_setup
-#: code:addons/base_setup/__init__.py:50
-#, python-format
-msgid "The following users have been installed : \n"
-msgstr ""
-
-#. module: base_setup
-#: field:base.setup.company,progress:0
-#: field:base.setup.installer,progress:0
-msgid "Configuration Progress"
-msgstr ""
-
-#. module: base_setup
-#: field:base.setup.company,rml_footer2:0
-msgid "Report Footer 2"
-msgstr "Podnožje Izvještaja 2"
-
-#. module: base_setup
-#: field:base.setup.company,currency:0
-#: model:ir.model,name:base_setup.model_res_currency
-msgid "Currency"
-msgstr "Valuta"
-
-#. module: base_setup
-#: field:base.setup.company,state_id:0
-msgid "Fed. State"
-msgstr ""
-
-#. module: base_setup
-#: field:base.setup.installer,marketing:0
-msgid "Marketing"
-msgstr ""
-
-#. module: base_setup
-#: field:base.setup.company,company_id:0
-msgid "Company"
-msgstr ""
-
-#. module: base_setup
-#: field:base.setup.installer,sale:0
-msgid "Sales Management"
-msgstr ""
-
-#. module: base_setup
-#: help:base.setup.installer,profile_tools:0
-msgid ""
-"Lets you install various interesting but non-essential tools like Survey, "
-"Lunch and Ideas box."
-msgstr ""
-
-#. module: base_setup
-#: view:base.setup.config:0
-msgid ""
-"You can start configuring the system or connect directly to the database as "
-"an administrator."
-msgstr ""
+#: help:base.setup.installer,report_designer:0
+msgid "Lets you install various tools to simplify and enhance OpenERP's report creation."
+msgstr "Lets you install various tools to simplify and enhance OpenERP's report creation."
 
 #. module: base_setup
 #: field:base.setup.installer,report_designer:0
 msgid "Advanced Reporting"
-msgstr ""
+msgstr "Napredno izvještavanje"
 
 #. module: base_setup
-#: field:base.setup.company,phone:0
-msgid "Phone"
-msgstr "Telefon"
+#: help:base.setup.installer,project:0
+msgid "Helps you manage your projects and tasks by tracking them, generating plannings, etc..."
+msgstr "Helps you manage your projects and tasks by tracking them, generating plannings, etc..."
 
 #. module: base_setup
-#: view:base.setup.company:0
-msgid "res_config_contents"
-msgstr ""
+#: help:base.setup.installer,point_of_sale:0
+msgid "Helps you get the most out of your points of sales with fast sale encoding, simplified payment mode encoding, automatic picking lists generation and more."
+msgstr "Helps you get the most out of your points of sales with fast sale encoding, simplified payment mode encoding, automatic picking lists generation and more."
 
 #. module: base_setup
-#: view:base.setup.company:0
-msgid ""
-"Your company information will be used to personalize documents issued with "
-"OpenERP such as invoices, sales orders and much more."
-msgstr ""
+#: help:base.setup.installer,hr:0
+msgid "Helps you manage your human resources by encoding your employees structure, generating work sheets, tracking attendance and more."
+msgstr "Helps you manage your human resources by encoding your employees structure, generating work sheets, tracking attendance and more."
 
 #. module: base_setup
-#: view:base.setup.installer:0
-msgid "title"
-msgstr ""
+#: code:addons/base_setup/__init__.py:49
+#, python-format
+msgid "    - %s :\n"
+"		Login : %s \n"
+"		Password : %s"
+msgstr "    - %s :\n"
+"		Login : %s \n"
+"		Password : %s"
 
 #. module: base_setup
 #: field:base.setup.installer,knowledge:0
 msgid "Knowledge Management"
-msgstr ""
-
-#. module: base_setup
-#: model:ir.module.module,description:base_setup.module_meta_information
-msgid ""
-"\n"
-"    This module implements a configuration system that helps user\n"
-"    to configure the system at the installation of a new database.\n"
-"\n"
-"    It allows you to select between a list of profiles to install:\n"
-"    * Minimal profile\n"
-"    * Accounting only\n"
-"    * Services companies\n"
-"    * Manufacturing companies\n"
-"\n"
-"    It also asks screens to help easily configure your company, the header "
-"and\n"
-"    footer, the account chart to install and the language.\n"
-"    "
-msgstr ""
-
-#. module: base_setup
-#: help:base.setup.installer,product_expiry:0
-msgid ""
-"Installs a preselected set of OpenERP applications which will help you "
-"manage your industry."
-msgstr ""
-
-#. module: base_setup
-#: help:base.setup.installer,project:0
-msgid ""
-"Helps you manage your projects and tasks by tracking them, generating "
-"plannings, etc..."
-msgstr ""
-
-#. module: base_setup
-#: field:base.setup.company,name:0
-msgid "Company Name"
-msgstr "Ime Tvrtke"
-
-#. module: base_setup
-#: view:base.setup.config:0
-msgid "Skip Configuration Wizards"
-msgstr ""
-
-#. module: base_setup
-#: help:base.setup.installer,hr:0
-msgid ""
-"Helps you manage your human resources by encoding your employees structure, "
-"generating work sheets, tracking attendance and more."
-msgstr ""
-
-#. module: base_setup
-#: help:base.setup.installer,account_voucher:0
-msgid ""
-"Allows you to create your invoices and track the payments. It is an easier "
-"version of the accounting module for managers who are not accountants."
-msgstr ""
-
-#. module: base_setup
-#: model:ir.model,name:base_setup.model_base_setup_company
-msgid "base.setup.company"
-msgstr ""
-
-#. module: base_setup
-#: help:base.setup.installer,purchase:0
-msgid ""
-"Helps you manage your purchase-related processes such as requests for "
-"quotations, supplier invoices, etc..."
-msgstr ""
-
-#. module: base_setup
-#: help:base.setup.company,rml_footer2:0
-msgid ""
-"This sentence will appear at the bottom of your reports.\n"
-"We suggest you to put bank information here:\n"
-"IBAN: BE74 1262 0121 6907 - SWIFT: CPDF BE71 - VAT: BE0477.472.701"
-msgstr ""
-"Ova će se rečenica pojavljivati u podnožju vaših izvještaja.\n"
-"Savjetujemo vam da ovdje upišete bankovne podatke:\n"
-"IBAN: BE74 1262 0121 6907 - SWIFT: CPDF BE71 - PDV: BE0477.472.701"
-
-#. module: base_setup
-#: field:base.setup.company,street2:0
-msgid "Street 2"
-msgstr ""
-
-#. module: base_setup
-#: model:ir.model,name:base_setup.model_base_setup_installer
-msgid "base.setup.installer"
-msgstr ""
-
-#. module: base_setup
-#: field:base.setup.company,country_id:0
-msgid "Country"
-msgstr "Država"
+msgstr "Upravljanje znanjem"
 
 #. module: base_setup
 #: model:ir.actions.act_window,name:base_setup.action_base_setup
@@ -283,204 +104,335 @@ msgstr "Postava"
 #. module: base_setup
 #: field:base.setup.installer,account_accountant:0
 msgid "Accounting & Finance"
-msgstr ""
+msgstr "Accounting & Finance"
 
 #. module: base_setup
-#: field:base.setup.installer,auction:0
-msgid "Auction Houses"
-msgstr ""
+#: view:migrade.application.installer.modules:0
+msgid "Import data from other applications. Following the selected application, you can import more or less type of data matching to OpenERP objects. Choose the application and then the data you want to import in OpenERP"
+msgstr "Import data from other applications. Following the selected application, you can import more or less type of data matching to OpenERP objects. Choose the application and then the data you want to import in OpenERP"
 
 #. module: base_setup
-#: field:base.setup.company,zip:0
-msgid "Zip Code"
-msgstr ""
+#: view:res.company.logo:0
+msgid "Upload your company logo in JPG or PNG with a format similar to 450*150 pixels "
+msgstr "Upload your company logo in JPG or PNG with a format similar to 450*150 pixels "
 
 #. module: base_setup
-#: view:base.setup.config:0
-msgid "Start Configuration"
-msgstr "Započnite Konfiguriranje"
-
-#. module: base_setup
-#: help:base.setup.installer,knowledge:0
-msgid ""
-"Lets you install addons geared towards sharing knowledge with and between "
-"your employees."
-msgstr ""
-
-#. module: base_setup
-#: view:base.setup.installer:0
-msgid ""
-"Select the Applications you want your system to cover. If you are not sure "
-"about your exact needs at this stage, you can easily install them later."
-msgstr ""
-
-#. module: base_setup
-#: view:base.setup.company:0
-#: model:ir.actions.act_window,name:base_setup.action_base_setup_company
-msgid "Company Configuration"
-msgstr ""
-
-#. module: base_setup
-#: field:base.setup.company,logo:0
-msgid "Logo"
-msgstr "Logo"
-
-#. module: base_setup
-#: help:base.setup.installer,point_of_sale:0
-msgid ""
-"Helps you get the most out of your points of sales with fast sale encoding, "
-"simplified payment mode encoding, automatic picking lists generation and "
-"more."
-msgstr ""
-
-#. module: base_setup
-#: field:base.setup.installer,purchase:0
-msgid "Purchase Management"
-msgstr ""
-
-#. module: base_setup
-#: help:base.setup.installer,sale:0
-msgid "Helps you handle your quotations, sale orders and invoicing."
-msgstr ""
-
-#. module: base_setup
-#: field:base.setup.installer,stock:0
-msgid "Warehouse Management"
-msgstr ""
-
-#. module: base_setup
-#: field:base.setup.installer,project:0
-msgid "Project Management"
-msgstr ""
-
-#. module: base_setup
-#: field:base.setup.config,installed_users:0
-msgid "Installed Users"
-msgstr ""
-
-#. module: base_setup
-#: view:base.setup.config:0
-msgid "New Database"
-msgstr ""
-
-#. module: base_setup
-#: field:base.setup.installer,crm:0
-msgid "Customer Relationship Management"
-msgstr ""
-
-#. module: base_setup
-#: help:base.setup.installer,auction:0
-msgid ""
-"Installs a preselected set of OpenERP applications selected to help you "
-"manage your auctions as well as the business processes around them."
-msgstr ""
-
-#. module: base_setup
-#: help:base.setup.company,rml_header1:0
-msgid ""
-"This sentence will appear at the top right corner of your reports.\n"
-"We suggest you to put a slogan here:\n"
-"\"Open Source Business Solutions\"."
-msgstr ""
-"Ova će se rečenica pojavljivati u gornjem desno kutu vaših izvještaja.\n"
-"Savjetujemo vam da ovdje upišete slogan tvrtke:\n"
-"\"Open Source Business Solutions\""
-
-#. module: base_setup
-#: help:base.setup.installer,report_designer:0
-msgid ""
-"Lets you install various tools to simplify and enhance OpenERP's report "
-"creation."
-msgstr ""
-
-#. module: base_setup
-#: field:base.setup.company,rml_header1:0
-msgid "Report Header"
-msgstr "Zaglavlje Izvještaja"
-
-#. module: base_setup
-#: view:base.setup.config:0
-msgid "Information about your new database"
-msgstr ""
-
-#. module: base_setup
-#: field:base.setup.company,config_logo:0
-#: field:base.setup.config,config_logo:0
-#: field:base.setup.installer,config_logo:0
-msgid "Image"
-msgstr ""
+#: field:migrade.application.installer.modules,sync_google_contact:0
+msgid "Sync Google Contact"
+msgstr "Sync Google Contact"
 
 #. module: base_setup
 #: field:base.setup.installer,product_expiry:0
 msgid "Food Industry"
-msgstr ""
+msgstr "Food Industry"
 
 #. module: base_setup
-#: field:base.setup.installer,mrp:0
-msgid "Manufacturing"
-msgstr ""
+#: help:migrade.application.installer.modules,import_sugarcrm:0
+msgid "For Import Sugarcrm"
+msgstr "For Import Sugarcrm"
 
 #. module: base_setup
-#: view:base.setup.company:0
-msgid "Your Logo - Use a size of about 450x150 pixels."
-msgstr "Vaš Logo: Koristite veličinu slike od cca. 450x150 pixela."
+#: selection:specify.partner.terminology,partner:0
+msgid "Partner"
+msgstr "Partner"
 
 #. module: base_setup
-#: help:base.setup.company,rml_footer1:0
-msgid ""
-"This sentence will appear at the bottom of your reports.\n"
-"We suggest you to write legal sentences here:\n"
-"Web: http://openerp.com - Fax: +32.81.73.35.01 - Fortis Bank: 126-2013269-07"
-msgstr ""
-"Ova će se rečenica pojavljivati u podnožju vaših izvještaja.\n"
-"Savjetujemo vam da ovdje upišete osnovne podatke:\n"
-"Web: http://openerp.com - Fax: +32.81.73.35.01 - Fortis Bank: 126-2013269-07"
+#: model:ir.actions.act_window,name:base_setup.action_res_company_logo
+#: view:res.company.logo:0
+msgid "Upload Your Company Logo"
+msgstr "Učitajte logo vaše organizacije"
 
 #. module: base_setup
-#: field:base.setup.company,website:0
-msgid "Company Website"
-msgstr ""
+#: selection:product.installer,customers:0
+msgid "Create"
+msgstr "Stvori"
+
+#. module: base_setup
+#: help:user.preferences.config,context_tz:0
+msgid "Set default for new user's timezone, used to perform timezone conversions between the server and the client."
+msgstr "Set default for new user's timezone, used to perform timezone conversions between the server and the client."
+
+#. module: base_setup
+#: selection:specify.partner.terminology,partner:0
+msgid "Donor"
+msgstr "Donor"
+
+#. module: base_setup
+#: field:base.setup.installer,association:0
+msgid "Associations"
+msgstr "Associations"
+
+#. module: base_setup
+#: help:base.setup.installer,account_accountant:0
+msgid "Helps you handle your accounting needs, if you are not an accountant, we suggest you to install only the Invoicing "
+msgstr "Helps you handle your accounting needs, if you are not an accountant, we suggest you to install only the Invoicing "
+
+#. module: base_setup
+#: selection:specify.partner.terminology,partner:0
+msgid "Patient"
+msgstr "Pacijent"
+
+#. module: base_setup
+#: model:ir.actions.act_window,name:base_setup.action_migrade_application_installer_modules
+#: view:migrade.application.installer.modules:0
+msgid "Migrate data from another application"
+msgstr "Migrate data from another application"
+
+#. module: base_setup
+#: model:ir.actions.act_window,name:base_setup.action_user_preferences_config_form
+#: view:user.preferences.config:0
+msgid "Define default users preferences"
+msgstr "Define default users preferences"
+
+#. module: base_setup
+#: view:base.setup.installer:0
+msgid "Select the Applications you want your system to cover. If you are not sure about your exact needs at this stage, you can easily install them later."
+msgstr "Odaberite aplikacije koje želite koristiti. Ako, u ovoj fazi, još niste sigurni možete ih instalirati kasnije."
+
+#. module: base_setup
+#: help:user.preferences.config,view:0
+msgid "If you use OpenERP for the first time we strongly advise you to select the simplified interface, which has less features but is easier. You can always switch later from the user preferences."
+msgstr "If you use OpenERP for the first time we strongly advise you to select the simplified interface, which has less features but is easier. You can always switch later from the user preferences."
+
+#. module: base_setup
+#: field:user.preferences.config,view:0
+msgid "Interface"
+msgstr "Sučelje"
+
+#. module: base_setup
+#: model:ir.model,name:base_setup.model_migrade_application_installer_modules
+msgid "migrade.application.installer.modules"
+msgstr "migrade.application.installer.modules"
+
+#. module: base_setup
+#: help:base.setup.installer,account_voucher:0
+msgid "Allows you to create your invoices and track the payments. It is an easier version of the accounting module for managers who are not accountants."
+msgstr "Omogućuje izradu računa i praćenje plaćanja. Ovo je pojednostavljena verzija knjigovodstvenog modula za one koji nisu knjigovođe."
+
+#. module: base_setup
+#: model:ir.module.module,description:base_setup.module_meta_information
+msgid "\n"
+"This module helps to configure the system at the installation of a new database.\n"
+"================================================================================\n"
+"\n"
+"It allows you to choose the type of interface and select from a list of applications to install.\n"
+"\n"
+"It also helps to easily configure your company.\n"
+"    "
+msgstr "\n"
+"This module helps to configure the system at the installation of a new database.\n"
+"================================================================================\n"
+"\n"
+"It allows you to choose the type of interface and select from a list of applications to install.\n"
+"\n"
+"It also helps to easily configure your company.\n"
+"    "
+
+#. module: base_setup
+#: field:base.setup.installer,account_voucher:0
+msgid "Invoicing & Payments"
+msgstr "Invoicing & Payments"
+
+#. module: base_setup
+#: view:res.company.logo:0
+msgid "Upload"
+msgstr "Upload"
+
+#. module: base_setup
+#: help:base.setup.installer,knowledge:0
+msgid "Lets you install addons geared towards sharing knowledge with and between your employees."
+msgstr "Lets you install addons geared towards sharing knowledge with and between your employees."
+
+#. module: base_setup
+#: field:migrade.application.installer.modules,import_saleforce:0
+msgid "Import Saleforce"
+msgstr "Import Saleforce"
+
+#. module: base_setup
+#: model:ir.model,name:base_setup.model_base_setup_config
+msgid "base.setup.config"
+msgstr "base.setup.config"
+
+#. module: base_setup
+#: help:base.setup.installer,sale:0
+msgid "Helps you handle your quotations, sale orders and invoicing."
+msgstr "Upravljanje ponudama, prodajnim nalozima i izlaznim računima."
+
+#. module: base_setup
+#: field:base.setup.installer,project:0
+msgid "Project Management"
+msgstr "Project Management"
+
+#. module: base_setup
+#: field:base.setup.installer,progress:0
+#: field:migrade.application.installer.modules,progress:0
+#: field:product.installer,progress:0
+#: field:res.company.logo,progress:0
+#: field:specify.partner.terminology,progress:0
+#: field:user.preferences.config,progress:0
+msgid "Configuration Progress"
+msgstr "Napredak konfiguracije"
+
+#. module: base_setup
+#: field:base.setup.installer,crm:0
+msgid "Customer Relationship Management"
+msgstr "CRM - Upravljanje odnosima s kupcima"
+
+#. module: base_setup
+#: field:base.setup.config,config_logo:0
+#: field:base.setup.installer,config_logo:0
+#: field:migrade.application.installer.modules,config_logo:0
+#: field:product.installer,config_logo:0
+#: field:res.company.logo,config_logo:0
+#: field:specify.partner.terminology,config_logo:0
+#: field:user.preferences.config,config_logo:0
+msgid "Image"
+msgstr "Slika"
+
+#. module: base_setup
+#: view:specify.partner.terminology:0
+msgid "Based on the industry needs you can use this wizard to change the terminologies for Partners. "
+msgstr "Based on the industry needs you can use this wizard to change the terminologies for Partners. "
+
+#. module: base_setup
+#: field:base.setup.installer,sale:0
+msgid "Sales Management"
+msgstr "Upravljanje prodajom"
 
 #. module: base_setup
 #: view:base.setup.installer:0
 msgid "Install Specific Industry Applications"
-msgstr ""
+msgstr "Install Specific Industry Applications"
 
 #. module: base_setup
-#: field:base.setup.company,street:0
-msgid "Street"
-msgstr "Ulica"
+#: field:res.company.logo,logo:0
+msgid "Logo"
+msgstr "Znak"
 
 #. module: base_setup
-#: view:base.setup.company:0
-msgid "Configure Your Company Information"
-msgstr ""
+#: help:base.setup.installer,association:0
+msgid "Installs a preselected set of OpenERP applications which will help you manage your association more efficiently."
+msgstr "Installs a preselected set of OpenERP applications which will help you manage your association more efficiently."
 
 #. module: base_setup
-#: help:base.setup.company,website:0
-msgid "Example: http://openerp.com"
-msgstr ""
+#: view:user.preferences.config:0
+msgid "Specify default values. This will set the default values for each new user, each user is free to change his own preferences."
+msgstr "Specify default values. This will set the default values for each new user, each user is free to change his own preferences."
+
+#. module: base_setup
+#: field:user.preferences.config,menu_tips:0
+msgid "Display Tips"
+msgstr "Display Tips"
+
+#. module: base_setup
+#: selection:specify.partner.terminology,partner:0
+msgid "Guest"
+msgstr "Guest"
+
+#. module: base_setup
+#: selection:specify.partner.terminology,partner:0
+msgid "Member"
+msgstr "Pripadnik"
+
+#. module: base_setup
+#: field:base.setup.installer,profile_tools:0
+msgid "Extra Tools"
+msgstr "Extra Tools"
+
+#. module: base_setup
+#: selection:product.installer,customers:0
+msgid "Import"
+msgstr "Uvoz"
+
+#. module: base_setup
+#: field:product.installer,customers:0
+msgid "Customers"
+msgstr "Kupci"
+
+#. module: base_setup
+#: selection:user.preferences.config,view:0
+msgid "Extended"
+msgstr "Prošireno"
+
+#. module: base_setup
+#: view:migrade.application.installer.modules:0
+msgid "Configure"
+msgstr "Postavke"
+
+#. module: base_setup
+#: help:migrade.application.installer.modules,import_saleforce:0
+msgid "For Import Saleforce"
+msgstr "For Import Saleforce"
+
+#. module: base_setup
+#: selection:specify.partner.terminology,partner:0
+msgid "Tenant"
+msgstr "Tenant"
+
+#. module: base_setup
+#: view:base.setup.config:0
+msgid "Only for experimented users"
+msgstr "Only for experimented users"
+
+#. module: base_setup
+#: field:user.preferences.config,context_lang:0
+msgid "Language"
+msgstr "Jezik"
+
+#. module: base_setup
+#: field:specify.partner.terminology,partner:0
+msgid "Choose how to call a customer"
+msgstr "Choose how to call a customer"
+
+#. module: base_setup
+#: field:migrade.application.installer.modules,quickbooks_ippids:0
+msgid "Quickbooks Ippids"
+msgstr "Quickbooks Ippids"
+
+#. module: base_setup
+#: selection:specify.partner.terminology,partner:0
+msgid "Client"
+msgstr "Client"
 
 #. module: base_setup
 #: view:base.setup.installer:0
-#: model:ir.actions.act_window,name:base_setup.action_base_setup_installer
-msgid "Install Applications"
-msgstr ""
+msgid "Install"
+msgstr "Instaliraj"
+
+#. module: base_setup
+#: model:ir.actions.act_window,name:base_setup.action_config_access_other_user
+msgid "Create New User's Login"
+msgstr "Create New User's Login"
+
+#. module: base_setup
+#: model:ir.model,name:base_setup.model_user_preferences_config
+msgid "user.preferences.config"
+msgstr "user.preferences.config"
+
+#. module: base_setup
+#: view:base.setup.config:0
+msgid "Your database is now created."
+msgstr "Your database is now created."
+
+#. module: base_setup
+#: help:product.installer,customers:0
+msgid "Import or create customers"
+msgstr "Import or create customers"
+
+#. module: base_setup
+#: selection:user.preferences.config,view:0
+msgid "Simplified"
+msgstr "Pojednostavljeno"
 
 #. module: base_setup
 #: help:base.setup.installer,crm:0
-msgid ""
-"Helps you track and manage relations with customers such as leads, requests "
-"or issues. Can automatically send reminders, escalate requests or trigger "
-"business-specific actions based on standard events."
-msgstr ""
+msgid "Helps you track and manage relations with customers such as leads, requests or issues. Can automatically send reminders, escalate requests or trigger business-specific actions based on standard events."
+msgstr "Helps you track and manage relations with customers such as leads, requests or issues. Can automatically send reminders, escalate requests or trigger business-specific actions based on standard events."
 
 #. module: base_setup
-#: help:base.setup.installer,stock:0
-msgid ""
-"Helps you manage your inventory and main stock operations: delivery orders, "
-"receptions, etc."
-msgstr ""
+#: model:ir.model,name:base_setup.model_specify_partner_terminology
+msgid "specify.partner.terminology"
+msgstr "specify.partner.terminology"
 
 #. module: base_setup
 #: model:ir.module.module,shortdesc:base_setup.module_meta_information
@@ -488,82 +440,172 @@ msgid "Base Setup"
 msgstr "Osnovni Postav"
 
 #. module: base_setup
-#: help:base.setup.installer,association:0
-msgid ""
-"Installs a preselected set of OpenERP applications which will help you "
-"manage your association more efficiently."
-msgstr ""
+#: model:ir.actions.act_window,name:base_setup.action_partner_terminology_config_form
+#: view:specify.partner.terminology:0
+msgid "Specify Your Terminology"
+msgstr "Specify Your Terminology"
 
 #. module: base_setup
-#: model:ir.model,name:base_setup.model_base_setup_config
-msgid "base.setup.config"
-msgstr ""
+#: model:ir.actions.act_window,name:base_setup.action_import_create_installer
+msgid "Import or create customers "
+msgstr "Import or create customers "
 
-#~ msgid "Cancel"
-#~ msgstr "Odustani"
+#. module: base_setup
+#: view:base.setup.config:0
+msgid "Start Configuration"
+msgstr "Započni konfiguraciju"
 
-#~ msgid "Profile"
-#~ msgstr "Profil"
+#. module: base_setup
+#: help:base.setup.installer,mrp:0
+msgid "Helps you manage your manufacturing processes and generate reports on those processes."
+msgstr "Helps you manage your manufacturing processes and generate reports on those processes."
 
-#~ msgid "Street2"
-#~ msgstr "Ulica2"
+#. module: base_setup
+#: view:base.setup.config:0
+msgid "You can start configuring the system or connect directly to the database as an administrator."
+msgstr "You can start configuring the system or connect directly to the database as an administrator."
 
-#~ msgid ""
-#~ "You can start configuring the system or connect directly to the database "
-#~ "using the default setup."
-#~ msgstr ""
-#~ "Možete početi s konfiguracijom sustava ili se izravno spojiti na bazu "
-#~ "podataka koristeći predefinirane postavke."
+#. module: base_setup
+#: field:base.setup.config,installed_users:0
+msgid "Installed Users"
+msgstr "Instalirani korisnici"
 
-#~ msgid "Zip code"
-#~ msgstr "Pošt. broj"
+#. module: base_setup
+#: view:base.setup.config:0
+msgid "Information about your new database"
+msgstr "Podaci nove baze podataka"
 
-#~ msgid "Select a Profile"
-#~ msgstr "Odaberite Profil"
+#. module: base_setup
+#: field:base.setup.installer,marketing:0
+msgid "Marketing"
+msgstr "Marketing"
 
-#~ msgid "Report header"
-#~ msgstr "Zaglavlje Izvještaja"
+#. module: base_setup
+#: help:base.setup.installer,profile_tools:0
+msgid "Lets you install various interesting but non-essential tools like Survey, Lunch and Ideas box."
+msgstr "Lets you install various interesting but non-essential tools like Survey, Lunch and Ideas box."
 
-#~ msgid ""
-#~ "You'll be able to install more modules later through the Administration menu."
-#~ msgstr ""
-#~ "Moći ćete instalirati više Modula kasnije kroz izbornik Admininstracija"
+#. module: base_setup
+#: help:migrade.application.installer.modules,quickbooks_ippids:0
+msgid "For Quickbooks Ippids"
+msgstr "For Quickbooks Ippids"
 
-#~ msgid ""
-#~ "A profile sets a pre-selection of modules for specific needs. These profiles "
-#~ "have been setup to help you discover the different aspects of OpenERP. This "
-#~ "is just an overview, we have 300+ available modules."
-#~ msgstr ""
-#~ "Profil određuje pred-izbor modula za specifične potrebe. Ti su profili "
-#~ "podešeni kako biste lakše otkrivali različite aspekte Open ERP-a. Ovo je tek "
-#~ "osvrt, postoji 300+ raspoloživih modula."
+#. module: base_setup
+#: model:ir.actions.act_window,help:base_setup.action_import_create_installer
+msgid "Create some customers, suppliers and their contacts manually or import a CSV spreadsheet by clicking on the import link"
+msgstr "Create some customers, suppliers and their contacts manually or import a CSV spreadsheet by clicking on the import link"
 
-#~ msgid "Next"
-#~ msgstr "Dalje"
+#. module: base_setup
+#: help:base.setup.installer,product_expiry:0
+msgid "Installs a preselected set of OpenERP applications which will help you manage your industry."
+msgstr "Installs a preselected set of OpenERP applications which will help you manage your industry."
 
-#~ msgid "State"
-#~ msgstr "Stanje"
+#. module: base_setup
+#: field:base.setup.installer,mrp:0
+msgid "Manufacturing"
+msgstr "Proizvodnja"
 
-#~ msgid "Your new database is now fully installed."
-#~ msgstr "Vaša nova baza podataka sada je instalirana u potpunosti."
+#. module: base_setup
+#: selection:specify.partner.terminology,partner:0
+msgid "Customer"
+msgstr "Kupac"
 
-#~ msgid "General Information"
-#~ msgstr "Opće Informacije"
+#. module: base_setup
+#: model:ir.model,name:base_setup.model_res_company_logo
+msgid "res.company.logo"
+msgstr "res.company.logo"
 
-#~ msgid "Report Information"
-#~ msgstr "Informacija o Izvještaju"
+#. module: base_setup
+#: help:base.setup.installer,purchase:0
+msgid "Helps you manage your purchase-related processes such as requests for quotations, supplier invoices, etc..."
+msgstr "Pomaže kod upravljanja procesa nabave: zahtjevnice, zahtjevi za ponudama, ponude dobavljača, narudžbe, ulazni računi, plaćanja i dr.."
 
-#~ msgid "Define Main Company"
-#~ msgstr "Odredite glavnu Tvrtku"
+#. module: base_setup
+#: help:user.preferences.config,context_lang:0
+msgid "Sets default language for the all user interface, when UI translations are available. If you want to Add new Language, you can add it from 'Load an Official Translation' wizard  from 'Administration' menu."
+msgstr "Sets default language for the all user interface, when UI translations are available. If you want to Add new Language, you can add it from 'Load an Official Translation' wizard  from 'Administration' menu."
 
-#~ msgid "Summary"
-#~ msgstr "Sižetak"
+#. module: base_setup
+#: model:ir.model,name:base_setup.model_base_setup_installer
+msgid "base.setup.installer"
+msgstr "base.setup.installer"
 
-#~ msgid "Installation Done"
-#~ msgstr "Instalacija Završena"
+#. module: base_setup
+#: field:base.setup.installer,auction:0
+msgid "Auction Houses"
+msgstr "Auction Houses"
 
-#~ msgid "Use Directly"
-#~ msgstr "Koristi Izravno"
+#. module: base_setup
+#: model:ir.actions.act_window,name:base_setup.action_base_setup_company
+msgid "Company Configuration"
+msgstr "Postava organizacije"
 
-#~ msgid "Previous"
-#~ msgstr "Prethodno"
+#. module: base_setup
+#: field:user.preferences.config,context_tz:0
+msgid "Timezone"
+msgstr "Vremenska zona"
+
+#. module: base_setup
+#: field:base.setup.installer,purchase:0
+msgid "Purchase Management"
+msgstr "Upravljanje nabavom"
+
+#. module: base_setup
+#: help:base.setup.installer,auction:0
+msgid "Installs a preselected set of OpenERP applications selected to help you manage your auctions as well as the business processes around them."
+msgstr "Installs a preselected set of OpenERP applications selected to help you manage your auctions as well as the business processes around them."
+
+#. module: base_setup
+#: help:user.preferences.config,menu_tips:0
+msgid "Check out this box if you want to always display tips on each menu action"
+msgstr "Prikazivanje savjeta na svakoj akciji/prozoru"
+
+#. module: base_setup
+#: code:addons/base_setup/__init__.py:55
+#, python-format
+msgid "The following users have been installed : \n"
+""
+msgstr "The following users have been installed : \n"
+""
+
+#. module: base_setup
+#: field:migrade.application.installer.modules,import_sugarcrm:0
+msgid "Import Sugarcrm"
+msgstr "Import Sugarcrm"
+
+#. module: base_setup
+#: view:res.company.logo:0
+#: view:specify.partner.terminology:0
+#: view:user.preferences.config:0
+msgid "res_config_contents"
+msgstr "res_config_contents"
+
+#. module: base_setup
+#: view:base.setup.config:0
+msgid "Skip Configuration Wizards"
+msgstr "Preskoči asistente konfiguracije"
+
+#. module: base_setup
+#: view:base.setup.installer:0
+#: model:ir.actions.act_window,name:base_setup.action_base_setup_installer
+msgid "Install Applications"
+msgstr "Instaliraj aplikacije"
+
+#. module: base_setup
+#: code:addons/base_setup/__init__.py:48
+#, python-format
+msgid "    - %s :\n"
+"		Login : %s"
+msgstr "    - %s :\n"
+"		Login : %s"
+
+#. module: base_setup
+#: field:base.setup.installer,stock:0
+msgid "Warehouse Management"
+msgstr "Upravljanje skladištem"
+
+#. module: base_setup
+#: help:migrade.application.installer.modules,sync_google_contact:0
+msgid "For Sync Google Contact"
+msgstr "For Sync Google Contact"
+

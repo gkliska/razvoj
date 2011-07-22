@@ -4,47 +4,47 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenERP Server 6.0dev\n"
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
 "Report-Msgid-Bugs-To: support@openerp.com\n"
-"POT-Creation-Date: 2011-01-03 16:58+0000\n"
-"PO-Revision-Date: 2010-08-03 08:43+0000\n"
-"Last-Translator: Goran Kliska (Aplikacija d.o.o.) <gkliska@gmail.com>\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-29 04:56+0000\n"
-"X-Generator: Launchpad (build 12758)\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
 
 #. module: point_of_sale
 #: field:pos.discount,discount_notes:0
 msgid "Discount Notes"
-msgstr ""
+msgstr "Bilješke popusta"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_trans_pos_tree_today
 msgid "Sales by day"
-msgstr ""
+msgstr "Prodaje po danu"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_pos_confirm
 msgid "Point of Sale Confirm"
-msgstr ""
+msgstr "Potvrdi POS"
 
 #. module: point_of_sale
-#: wizard_button:pos.discount,init,apply_discount:0
+#: model:ir.actions.act_window,name:point_of_sale.action_pos_discount
+#: view:pos.discount:0
 msgid "Apply Discount"
-msgstr "Primjeni popust"
+msgstr "Apply Discount"
 
 #. module: point_of_sale
 #: view:pos.order:0
 msgid "Set to draft"
-msgstr "Stavi u pripremu"
+msgstr "Postavi na nacrt"
 
 #. module: point_of_sale
 #: field:report.transaction.pos,product_nb:0
 msgid "Product Nb."
-msgstr ""
+msgstr "Product Nb."
 
 #. module: point_of_sale
 #: model:ir.module.module,shortdesc:point_of_sale.module_meta_information
@@ -54,43 +54,52 @@ msgstr "Blagajna"
 #. module: point_of_sale
 #: view:report.pos.order:0
 msgid "Today"
-msgstr ""
+msgstr "Danas"
 
 #. module: point_of_sale
-#: wizard_view:pos.add_product,init:0
+#: view:pos.add.product:0
 msgid "Add product :"
-msgstr ""
+msgstr "Dodaj proizvod :"
 
 #. module: point_of_sale
 #: view:all.closed.cashbox.of.the.day:0
 msgid "All Cashboxes Of the day :"
-msgstr ""
+msgstr "All Cashboxes Of the day :"
 
 #. module: point_of_sale
 #: view:pos.box.entries:0
 msgid "Put Money"
-msgstr ""
+msgstr "Put Money"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_report_cash_register_all
 #: model:ir.ui.menu,name:point_of_sale.menu_report_cash_register_all
 msgid "Register Analysis"
-msgstr ""
+msgstr "Register Analysis"
 
 #. module: point_of_sale
 #: model:ir.actions.report.xml,name:point_of_sale.pos_lines_detail
+#: report:pos.details:0
+#: report:pos.details_summary:0
 msgid "Details of Sales"
-msgstr ""
+msgstr "Detalji prodaje"
 
 #. module: point_of_sale
 #: view:pos.close.statement:0
 msgid "Are you sure you want to close the statements ?"
-msgstr ""
+msgstr "Are you sure you want to close the statements ?"
 
 #. module: point_of_sale
-#: wizard_view:pos.scan_product,init:0
+#: model:ir.actions.act_window,name:point_of_sale.action_pos_scan_product
+#: model:ir.model,name:point_of_sale.model_pos_scan_product
+#: view:pos.scan.product:0
 msgid "Scan product"
-msgstr ""
+msgstr "Scan product"
+
+#. module: point_of_sale
+#: model:ir.model,name:point_of_sale.model_pos_return_memory
+msgid "pos.return.memory"
+msgstr "pos.return.memory"
 
 #. module: point_of_sale
 #: view:report.cash.register:0
@@ -98,50 +107,57 @@ msgstr ""
 #: view:report.pos.order:0
 #: field:report.pos.order,day:0
 msgid "Day"
-msgstr ""
+msgstr "Dan"
 
 #. module: point_of_sale
-#: wizard_view:pos.payment,ask_pay:0
+#: view:pos.make.payment:0
 msgid "Add payment :"
-msgstr ""
+msgstr "Dodaj plaćanje :"
 
 #. module: point_of_sale
-#: view:report.cash.register:0
-#: view:report.pos.order:0
-msgid "My Sales"
-msgstr ""
+#: field:report.sales.by.margin.pos,product_name:0
+#: field:report.sales.by.margin.pos.month,product_name:0
+msgid "Product Name"
+msgstr "Naziv proizvoda"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_box_out
 msgid "Box Out"
-msgstr ""
+msgstr "Box Out"
+
+#. module: point_of_sale
+#: view:report.cash.register:0
+msgid "Month from Creation date of cash register"
+msgstr "Month from Creation date of cash register"
 
 #. module: point_of_sale
 #: report:pos.sales.user.today.current.user:0
 msgid "Today's Sales By Current User"
-msgstr ""
+msgstr "Današnje prodaje korisnika programa"
 
 #. module: point_of_sale
-#: rml:pos.invoice:0
-#: field:pos.payment,amount:0
-#: wizard_field:pos.payment,ask_pay,amount:0
+#: report:account.statement:0
+#: field:pos.box.entries,amount:0
+#: field:pos.box.out,amount:0
+#: report:pos.invoice:0
+#: field:pos.make.payment,amount:0
+#: report:pos.user.product:0
 #: field:report.transaction.pos,amount:0
 msgid "Amount"
-msgstr ""
+msgstr "Iznos"
 
 #. module: point_of_sale
-#: rml:pos.details:0
-#: rml:pos.lines:0
-msgid "VAT"
-msgstr "PDV"
+#: view:pos.return:0
+msgid " Enter the quantities which you want to return."
+msgstr " Enter the quantities which you want to return."
 
 #. module: point_of_sale
 #: report:pos.invoice:0
 msgid "Origin"
-msgstr ""
+msgstr "Izvor"
 
 #. module: point_of_sale
-#: rml:pos.invoice:0
+#: report:pos.invoice:0
 msgid "Tax"
 msgstr "Porez"
 
@@ -153,16 +169,17 @@ msgstr "Transakcije ukupno"
 #. module: point_of_sale
 #: help:account.journal,special_journal:0
 msgid "Will put all the orders in waiting status till being accepted"
-msgstr ""
+msgstr "Will put all the orders in waiting status till being accepted"
 
 #. module: point_of_sale
-#: field:pos.order,partner_id:0
+#: report:account.statement:0
+#: field:report.pos.order,partner_id:0
 msgid "Partner"
-msgstr "Stranka"
+msgstr "Partner"
 
 #. module: point_of_sale
-#: rml:pos.details:0
-#: rml:pos.details_summary:0
+#: report:pos.details:0
+#: report:pos.details_summary:0
 msgid "Total of the day"
 msgstr "Ukupno za dan"
 
@@ -170,41 +187,51 @@ msgstr "Ukupno za dan"
 #: view:report.pos.order:0
 #: field:report.pos.order,average_price:0
 msgid "Average Price"
-msgstr ""
+msgstr "Prosječna cijena"
 
 #. module: point_of_sale
-#: rml:pos.invoice:0
-#: rml:pos.lines:0
+#: report:pos.lines:0
 msgid "Disc. (%)"
-msgstr "Popust (%)"
+msgstr "Pop.(%)"
 
 #. module: point_of_sale
-#: rml:pos.details:0
-#: rml:pos.details_summary:0
-msgid "Total discount"
-msgstr ""
+#: model:ir.ui.menu,name:point_of_sale.menu_point_open_config
+msgid "Cash Register Management"
+msgstr "Cash Register Management"
 
 #. module: point_of_sale
+#: view:account.bank.statement:0
+#: view:pos.order:0
 #: field:pos.order,state:0
+#: report:pos.sales.user:0
+#: report:pos.sales.user.today:0
+#: report:pos.sales.user.today.current.user:0
+#: field:report.cash.register,state:0
+#: field:report.pos.order,state:0
 msgid "State"
 msgstr "Stanje"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_pos_payment
 msgid "Add payment"
-msgstr ""
+msgstr "Dodaj plaćanje"
+
+#. module: point_of_sale
+#: view:pos.return.memory:0
+msgid "Return Product"
+msgstr "Return Product"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_trans_pos_tree_month
 msgid "Sales by month"
-msgstr ""
+msgstr "Prodaje po mjesecima"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_report_sales_by_user_pos_today
 #: view:report.sales.by.user.pos:0
 #: view:report.sales.by.user.pos.month:0
 msgid "Sales by User"
-msgstr ""
+msgstr "Prodaje po korisniku"
 
 #. module: point_of_sale
 #: report:pos.invoice:0
@@ -216,62 +243,63 @@ msgstr "Pop.(%)"
 #: field:pos.box.entries,ref:0
 #: field:pos.box.out,ref:0
 msgid "Ref"
-msgstr ""
+msgstr "Vezna oznaka"
 
 #. module: point_of_sale
 #: view:report.pos.order:0
 #: field:report.pos.order,price_total:0
 msgid "Total Price"
-msgstr ""
+msgstr "Total Price"
 
 #. module: point_of_sale
 #: view:product.product:0
 msgid "Miscelleanous"
-msgstr ""
+msgstr "Razno"
 
 #. module: point_of_sale
 #: model:ir.actions.report.xml,name:point_of_sale.pos_sales_user
 #: report:pos.sales.user:0
 msgid "Sales Report"
-msgstr ""
+msgstr "Izveštaj prodaje"
 
 #. module: point_of_sale
 #: code:addons/point_of_sale/wizard/pos_discount.py:52
 #, python-format
 msgid "No Order Lines"
-msgstr ""
+msgstr "No Order Lines"
+
+#. module: point_of_sale
+#: field:pos.return.memory,line_id:0
+msgid "Line Id"
+msgstr "Line Id"
 
 #. module: point_of_sale
 #: view:pos.order:0
 msgid "Other Information"
-msgstr ""
+msgstr "Ostali podaci"
 
 #. module: point_of_sale
 #: view:product.product:0
 msgid "Product Type"
-msgstr ""
+msgstr "Product Type"
 
 #. module: point_of_sale
 #: view:pos.order:0
 #: view:pos.payment.report.date:0
 msgid "Dates"
-msgstr ""
+msgstr "Datumi"
 
 #. module: point_of_sale
 #: field:res.company,company_discount:0
 msgid "Max Discount(%)"
-msgstr ""
+msgstr "Max Discount(%)"
 
 #. module: point_of_sale
-#: model:ir.ui.menu,name:point_of_sale.menu_point_open_config
-msgid "Cash register management"
-msgstr ""
-
-#. module: point_of_sale
-#: code:addons/point_of_sale/pos.py:0
+#: code:addons/point_of_sale/point_of_sale.py:1061
+#: code:addons/point_of_sale/point_of_sale.py:1080
 #, python-format
 msgid "No valid pricelist line found !"
-msgstr ""
+msgstr "Nije pronađena stavka cjenika!"
 
 #. module: point_of_sale
 #: report:pos.details:0
@@ -281,18 +309,23 @@ msgstr ""
 #: report:pos.payment.report.user:0
 #: report:pos.user.product:0
 msgid "["
-msgstr ""
+msgstr "["
 
 #. module: point_of_sale
 #: field:report.sales.by.margin.pos,total:0
 #: field:report.sales.by.margin.pos.month,total:0
 msgid "Margin"
-msgstr ""
+msgstr "Marža"
 
 #. module: point_of_sale
 #: field:pos.order.line,discount:0
 msgid "Discount (%)"
 msgstr "Popust (%)"
+
+#. module: point_of_sale
+#: field:pos.order,price_type:0
+msgid "Price Method"
+msgstr "Price Method"
 
 #. module: point_of_sale
 #: view:pos.order.line:0
@@ -302,66 +335,77 @@ msgstr "Uk. količina"
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_report_sales_by_user_pos_month
 msgid "Sales by user monthly"
-msgstr ""
+msgstr "Prodaje po korisniku mjesečno"
 
 #. module: point_of_sale
 #: code:addons/point_of_sale/wizard/pos_open_statement.py:54
 #, python-format
-msgid ""
-"You can not open a Cashbox for \"%s\".\n"
+msgid "You can not open a Cashbox for \"%s\".\n"
 "Please close its related cash register."
-msgstr ""
+msgstr "You can not open a Cashbox for \"%s\".\n"
+"Please close its related cash register."
+
+#. module: point_of_sale
+#: report:all.closed.cashbox.of.the.day:0
+msgid "Today's Closed Cashbox"
+msgstr "Today's Closed Cashbox"
 
 #. module: point_of_sale
 #: help:pos.order,user_salesman_id:0
 msgid "User who is logged into the system."
-msgstr ""
+msgstr "User who is logged into the system."
 
 #. module: point_of_sale
 #: field:product.product,income_pdt:0
 msgid "Product for Input"
-msgstr ""
+msgstr "Product for Input"
 
 #. module: point_of_sale
 #: report:pos.details:0
 #: report:pos.details_summary:0
 msgid "Mode of Payment"
-msgstr ""
+msgstr "Način plaćanja"
+
+#. module: point_of_sale
+#: view:report.cash.register:0
+msgid "Day from Creation date of cash register"
+msgstr "Day from Creation date of cash register"
 
 #. module: point_of_sale
 #: model:ir.ui.menu,name:point_of_sale.menu_point_of_sale
 msgid "Daily Operations"
-msgstr ""
+msgstr "Daily Operations"
 
 #. module: point_of_sale
 #: view:account.bank.statement:0
 msgid "Search Cash Statements"
-msgstr ""
+msgstr "Search Cash Statements"
 
 #. module: point_of_sale
 #: view:pos.confirm:0
 msgid "Are you sure you want to close your sales ?"
-msgstr ""
+msgstr "Are you sure you want to close your sales ?"
 
 #. module: point_of_sale
 #: selection:report.cash.register,month:0
 #: selection:report.pos.order,month:0
 msgid "August"
-msgstr ""
+msgstr "Kolovoz"
 
 #. module: point_of_sale
 #: selection:report.cash.register,month:0
 #: selection:report.pos.order,month:0
 msgid "June"
-msgstr ""
+msgstr "Lipanj"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_report_sales_by_user_pos_month
 msgid "Sales by User Monthly"
-msgstr ""
+msgstr "Sales by User Monthly"
 
 #. module: point_of_sale
-#: field:pos.payment,payment_date:0
+#: field:pos.order,date_payment:0
+#: field:report.pos.order,date_payment:0
 msgid "Payment Date"
 msgstr "Datum plaćanja"
 
@@ -369,72 +413,76 @@ msgstr "Datum plaćanja"
 #: report:account.statement:0
 #: report:all.closed.cashbox.of.the.day:0
 msgid "Closing Date"
-msgstr ""
+msgstr "Datum zaključenja"
 
 #. module: point_of_sale
 #: selection:report.cash.register,month:0
 #: selection:report.pos.order,month:0
 msgid "October"
-msgstr ""
+msgstr "Listopad"
 
 #. module: point_of_sale
 #: field:account.bank.statement.line,am_out:0
 msgid "To count"
-msgstr ""
+msgstr "To count"
 
 #. module: point_of_sale
-#: rml:pos.details:0
-#: rml:pos.details_summary:0
+#: report:pos.details:0
+#: report:pos.details_summary:0
 msgid "Summary"
 msgstr "Sažetak"
 
 #. module: point_of_sale
 #: view:pos.order:0
 msgid "Quotations"
-msgstr ""
+msgstr "Ponude"
 
 #. module: point_of_sale
 #: field:report.pos.order,delay_payment:0
 msgid "Delay Payment"
-msgstr ""
+msgstr "Delay Payment"
 
 #. module: point_of_sale
-#: wizard_field:pos.add_product,init,quantity:0
-#: rml:pos.invoice:0
-#: rml:pos.lines:0
+#: field:pos.add.product,quantity:0
+#: report:pos.invoice:0
+#: report:pos.lines:0
 #: field:pos.order.line,qty:0
+#: field:pos.return.memory,quantity:0
+#: field:report.sales.by.user.pos,qty:0
+#: field:report.sales.by.user.pos.month,qty:0
 msgid "Quantity"
 msgstr "Količina"
 
 #. module: point_of_sale
 #: help:account.journal,auto_cash:0
 msgid "This field authorize the automatic creation of the cashbox"
-msgstr ""
+msgstr "This field authorize the automatic creation of the cashbox"
 
 #. module: point_of_sale
 #: view:account.bank.statement:0
 msgid "Period"
-msgstr ""
+msgstr "Period"
 
 #. module: point_of_sale
-#: rml:pos.invoice:0
+#: report:pos.invoice:0
+#: report:pos.payment.report:0
 msgid "Net Total:"
 msgstr "Ukupno netto:"
 
 #. module: point_of_sale
 #: field:pos.order.line,name:0
 msgid "Line Description"
-msgstr ""
+msgstr "Opis stavke"
 
 #. module: point_of_sale
 #: view:product.product:0
 msgid "Codes"
-msgstr ""
+msgstr "Šifre"
 
 #. module: point_of_sale
 #: view:pos.box.out:0
 msgid "Output Operation"
-msgstr ""
+msgstr "Output Operation"
 
 #. module: point_of_sale
 #: view:all.closed.cashbox.of.the.day:0
@@ -446,217 +494,239 @@ msgstr ""
 #: view:pos.sales.user.today:0
 #: view:pos.sales.user.today.current_user:0
 msgid "Print Report"
-msgstr ""
-
-#. module: point_of_sale
-#: rml:pos.invoice:0
-#: rml:pos.lines:0
-#: field:pos.order.line,price_unit:0
-msgid "Unit Price"
-msgstr "Jedinična cijena"
+msgstr "Ispiši"
 
 #. module: point_of_sale
 #: code:addons/point_of_sale/wizard/pos_box_entries.py:107
 #, python-format
 msgid "Please check that income account is set to %s"
-msgstr ""
+msgstr "Please check that income account is set to %s"
 
 #. module: point_of_sale
 #: code:addons/point_of_sale/wizard/pos_add_product.py:56
-#: code:addons/point_of_sale/wizard/pos_return.py:166
-#: code:addons/point_of_sale/wizard/pos_return.py:327
+#: code:addons/point_of_sale/wizard/pos_return.py:98
+#: code:addons/point_of_sale/wizard/pos_return.py:253
 #: model:ir.actions.act_window,name:point_of_sale.action_add_product
 #: model:ir.model,name:point_of_sale.model_pos_add_product
 #, python-format
 msgid "Add Product"
-msgstr ""
+msgstr "Dodaj proizvod"
 
 #. module: point_of_sale
 #: field:report.transaction.pos,invoice_am:0
 msgid "Invoice Amount"
-msgstr ""
+msgstr "Iznos računa"
 
 #. module: point_of_sale
+#: view:account.bank.statement:0
+#: field:account.bank.statement.line,journal_id:0
+#: report:account.statement:0
+#: report:all.closed.cashbox.of.the.day:0
+#: model:ir.model,name:point_of_sale.model_account_journal
 #: field:pos.config.journal,journal_id:0
 #: field:pos.order,sale_journal:0
-#: wizard_field:pos.payment,ask_pay,journal:0
-#: field:pos.payment,journal_id:0
-#: field:report.transaction.pos,journal_id:0
+#: view:report.cash.register:0
+#: field:report.cash.register,journal_id:0
+#: field:report.pos.order,journal_id:0
 msgid "Journal"
-msgstr ""
+msgstr "Dnevnik"
 
 #. module: point_of_sale
-#: rml:pos.invoice:0
+#: report:pos.invoice:0
 msgid "Tel. :"
-msgstr ""
+msgstr "Tel.:"
 
 #. module: point_of_sale
-#: model:ir.actions.wizard,name:point_of_sale.pos_payment
 #: view:pos.order:0
+#: selection:pos.order,state:0
+#: selection:report.pos.order,state:0
 msgid "Payment"
-msgstr ""
+msgstr "Plaćanje"
+
+#. module: point_of_sale
+#: view:report.cash.register:0
+msgid "Cash Analysis created in current month"
+msgstr "Cash Analysis created in current month"
 
 #. module: point_of_sale
 #: report:account.statement:0
 #: report:all.closed.cashbox.of.the.day:0
 msgid "Ending Balance"
-msgstr ""
+msgstr "Ending Balance"
 
 #. module: point_of_sale
 #: model:ir.ui.menu,name:point_of_sale.products_for_output_operations
 msgid "Products for Output Operations"
-msgstr ""
+msgstr "Products for Output Operations"
 
 #. module: point_of_sale
 #: view:pos.payment.report.date:0
 msgid "Sale by Date and User"
-msgstr ""
+msgstr "Sale by Date and User"
 
 #. module: point_of_sale
 #: code:addons/point_of_sale/point_of_sale.py:69
 #, python-format
-msgid ""
-"Cannot delete a point of sale which is closed or contains confirmed "
-"cashboxes!"
-msgstr ""
+msgid "Cannot delete a point of sale which is closed or contains confirmed cashboxes!"
+msgstr "Cannot delete a point of sale which is closed or contains confirmed cashboxes!"
 
 #. module: point_of_sale
-#: rml:pos.details:0
-#: rml:pos.details_summary:0
+#: report:pos.details:0
+#: report:pos.details_summary:0
 msgid "Mode of Taxes"
-msgstr ""
+msgstr "Mode of Taxes"
 
 #. module: point_of_sale
 #: code:addons/point_of_sale/wizard/pos_close_statement.py:48
 #, python-format
 msgid "Cash registers are already closed."
-msgstr ""
+msgstr "Cash registers are already closed."
 
 #. module: point_of_sale
 #: constraint:product.product:0
 msgid "Error: Invalid ean code"
-msgstr ""
+msgstr "Greška: Neispravan barkod!"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_pos_open_statement
 #: view:pos.confirm:0
 #: view:pos.open.statement:0
 msgid "Open Statements"
-msgstr ""
+msgstr "Open Statements"
 
 #. module: point_of_sale
 #: view:pos.add.product:0
 msgid "Save & New"
-msgstr ""
+msgstr "Save & New"
 
 #. module: point_of_sale
 #: report:pos.details:0
 msgid "Sales total(Revenue)"
-msgstr ""
+msgstr "Sales total(Revenue)"
 
 #. module: point_of_sale
-#: rml:pos.details:0
-#: rml:pos.details_summary:0
+#: report:pos.details:0
+#: report:pos.details_summary:0
 msgid "Total paid"
-msgstr "Uk. plaćeno"
+msgstr "Ukupno plaćeno"
 
 #. module: point_of_sale
 #: field:account.journal,check_dtls:0
 msgid "Check Details"
-msgstr ""
+msgstr "Check Details"
 
 #. module: point_of_sale
-#: rml:pos.details:0
-#: rml:pos.details_summary:0
+#: report:pos.details:0
+#: report:pos.details_summary:0
 msgid "Qty of product"
-msgstr "Kol."
+msgstr "Kol proizvoda"
+
+#. module: point_of_sale
+#: model:ir.model,name:point_of_sale.model_report_transaction_pos
+msgid "transaction for the pos"
+msgstr "transaction for the pos"
 
 #. module: point_of_sale
 #: field:pos.order,contract_number:0
 msgid "Contract Number"
-msgstr ""
+msgstr "Contract Number"
 
 #. module: point_of_sale
 #: selection:report.cash.register,month:0
 #: selection:report.pos.order,month:0
 msgid "March"
-msgstr ""
+msgstr "Ožujak"
 
 #. module: point_of_sale
 #: model:ir.actions.report.xml,name:point_of_sale.pos_users_product_re
 #: report:pos.user.product:0
 msgid "User's Product"
-msgstr ""
+msgstr "User's Product"
 
 #. module: point_of_sale
-#: code:addons/point_of_sale/point_of_sale.py:1042
-#: code:addons/point_of_sale/point_of_sale.py:1067
+#: code:addons/point_of_sale/point_of_sale.py:1047
+#: code:addons/point_of_sale/point_of_sale.py:1072
 #, python-format
-msgid ""
-"You have to select a pricelist in the sale form !\n"
+msgid "You have to select a pricelist in the sale form !\n"
 "Please set one before choosing a product."
-msgstr ""
+msgstr "Morate odabrati cjenik na kartici prodaje !\n"
+"Molim, odaberite cjenik prije upisa proizvoda."
 
 #. module: point_of_sale
-#: field:pos.order.line,price_subtotal:0
+#: report:pos.lines:0
+msgid "VAT"
+msgstr "VAT"
+
+#. module: point_of_sale
+#: view:pos.order:0
+#: field:pos.order.line,price_subtotal_incl:0
 msgid "Subtotal"
-msgstr ""
+msgstr "Podzbroj"
+
+#. module: point_of_sale
+#: model:ir.ui.menu,name:point_of_sale.menu_open_statement
+msgid "Open Cash Registers"
+msgstr "Open Cash Registers"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.act_pos_open_statement
 #: model:ir.model,name:point_of_sale.model_pos_close_statement
 #: view:pos.close.statement:0
 msgid "Close Statements"
-msgstr ""
+msgstr "Close Statements"
 
 #. module: point_of_sale
 #: view:account.journal:0
 msgid "Extended Configureation"
-msgstr ""
+msgstr "Extended Configureation"
 
 #. module: point_of_sale
 #: report:account.statement:0
 #: report:all.closed.cashbox.of.the.day:0
 msgid "Starting Balance"
-msgstr ""
+msgstr "Početni saldo"
 
 #. module: point_of_sale
 #: report:pos.payment.report.user:0
 msgid "Payment By User"
-msgstr ""
+msgstr "Plaćanja po korisniku"
 
 #. module: point_of_sale
 #: field:pos.order,type_rec:0
 msgid "Type of Receipt"
-msgstr ""
+msgstr "Vrsta računa(potvrde)"
 
 #. module: point_of_sale
 #: view:report.pos.order:0
 #: field:report.pos.order,nbr:0
 msgid "# of Lines"
-msgstr ""
+msgstr "# linija"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_pos_order_accepted
 msgid "Accepted Sales"
-msgstr ""
+msgstr "Prihvaćene prodaje"
 
 #. module: point_of_sale
 #: help:account.journal,check_dtls:0
-msgid ""
-"This field authorize Validation of Cashbox without checking ending details"
-msgstr ""
+msgid "This field authorize Validation of Cashbox without checking ending details"
+msgstr "This field authorize Validation of Cashbox without checking ending details"
 
 #. module: point_of_sale
 #: report:all.closed.cashbox.of.the.day:0
 msgid "St.Name"
-msgstr ""
+msgstr "St.Name"
 
 #. module: point_of_sale
-#: rml:pos.details:0
-#: rml:pos.details_summary:0
+#: report:pos.details_summary:0
 msgid "Sales total"
-msgstr "Ukupno prodaja"
+msgstr "Ukupno prodaje"
+
+#. module: point_of_sale
+#: code:addons/point_of_sale/wizard/pos_payment.py:165
+#, python-format
+msgid "Customer doesn't have an address to make the invoice"
+msgstr "Customer doesn't have an address to make the invoice"
 
 #. module: point_of_sale
 #: view:pos.order.line:0
@@ -664,26 +734,30 @@ msgid "Sum of subtotals"
 msgstr "Suma podsuma"
 
 #. module: point_of_sale
-#: wizard_field:pos.payment,ask_pay,payment_date:0
+#: field:pos.make.payment,payment_date:0
 msgid "Payment date"
 msgstr "Datum plaćanja"
 
 #. module: point_of_sale
 #: field:pos.order,lines:0
 msgid "Order Lines"
-msgstr ""
+msgstr "Order Lines"
 
 #. module: point_of_sale
 #: field:pos.order.line,create_date:0
 msgid "Creation Date"
-msgstr "Datum Kreiranja"
+msgstr "Datum kreiranja"
 
 #. module: point_of_sale
 #: model:ir.actions.report.xml,name:point_of_sale.pos_sales_user_today
 msgid "Today's Sales"
-msgstr ""
+msgstr "Današnje prodaje"
 
 #. module: point_of_sale
+#: view:report.sales.by.margin.pos:0
+#: view:report.sales.by.margin.pos.month:0
+#: view:report.sales.by.user.pos:0
+#: view:report.sales.by.user.pos.month:0
 #: view:report.transaction.pos:0
 msgid "POS "
 msgstr "POS "
@@ -696,31 +770,32 @@ msgid "Total :"
 msgstr "Ukupno :"
 
 #. module: point_of_sale
-#: code:addons/point_of_sale/pos.py:0
+#: code:addons/point_of_sale/point_of_sale.py:1207
 #, python-format
 msgid "Create line failed !"
-msgstr ""
+msgstr "Create line failed !"
 
 #. module: point_of_sale
-#: field:report.sales.by.margin.pos,product_name:0
-#: field:report.sales.by.margin.pos.month,product_name:0
-msgid "Product Name"
-msgstr ""
+#: view:report.cash.register:0
+#: view:report.pos.order:0
+msgid "My Sales"
+msgstr "My Sales"
 
 #. module: point_of_sale
-#: code:addons/point_of_sale/pos.py:0
+#: code:addons/point_of_sale/point_of_sale.py:69
 #, python-format
 msgid "Invalid action !"
-msgstr ""
+msgstr "Pogrešna akcija !"
 
 #. module: point_of_sale
+#: field:pos.make.payment,pricelist_id:0
 #: field:pos.order,pricelist_id:0
 msgid "Pricelist"
-msgstr "Cjenik"
+msgstr "Pricelist"
 
 #. module: point_of_sale
-#: rml:pos.details:0
-#: rml:pos.details_summary:0
+#: report:pos.details:0
+#: report:pos.details_summary:0
 msgid "Total invoiced"
 msgstr "Ukupno računi"
 
@@ -728,17 +803,17 @@ msgstr "Ukupno računi"
 #: view:report.pos.order:0
 #: field:report.pos.order,product_qty:0
 msgid "# of Qty"
-msgstr ""
+msgstr "# kol"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_pos_return
 msgid "Point of sale return"
-msgstr ""
+msgstr "Point of sale return"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_report_sales_by_margin_pos_month
 msgid "Sales by margin monthly"
-msgstr ""
+msgstr "Prodaje po marži mjesečno"
 
 #. module: point_of_sale
 #: view:pos.order:0
@@ -747,86 +822,84 @@ msgstr ""
 #: field:report.sales.by.user.pos,date_order:0
 #: field:report.sales.by.user.pos.month,date_order:0
 msgid "Order Date"
-msgstr ""
+msgstr "Datum naloga"
 
 #. module: point_of_sale
-#: report:all.closed.cashbox.of.the.day:0
-msgid "Today's Closed Cashbox"
-msgstr ""
+#: view:report.cash.register:0
+msgid "Cash Analysis created during this year"
+msgstr "Cash Analysis created during this year"
 
 #. module: point_of_sale
-#: rml:pos.invoice:0
+#: report:pos.invoice:0
 msgid "Draft Invoice"
-msgstr ""
+msgstr "Nacrt računa"
 
 #. module: point_of_sale
 #: constraint:account.bank.statement.line:0
-msgid ""
-"The amount of the voucher must be the same amount as the one on the "
-"statement line"
-msgstr ""
+msgid "The amount of the voucher must be the same amount as the one on the statement line"
+msgstr "Iznos vaučera mora biti jednak iznosu stavke izvoda banke/blagajne."
 
 #. module: point_of_sale
 #: field:product.product,expense_pdt:0
 msgid "Product for expenses"
-msgstr ""
+msgstr "Product for expenses"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_report_pos_sales_user_today_current_user
 #: view:pos.sales.user.today.current_user:0
 msgid "Sales for Current User"
-msgstr ""
+msgstr "Prodaje po trenutnom korisniku"
 
 #. module: point_of_sale
 #: report:pos.invoice:0
 msgid "Fiscal Position Remark :"
-msgstr ""
+msgstr "Komentar fiskalne pozicije:"
 
 #. module: point_of_sale
 #: selection:report.cash.register,month:0
 #: selection:report.pos.order,month:0
 msgid "September"
-msgstr ""
+msgstr "Rujan"
 
 #. module: point_of_sale
 #: report:account.statement:0
 #: report:all.closed.cashbox.of.the.day:0
 msgid "Opening Date"
-msgstr ""
+msgstr "Opening Date"
 
 #. module: point_of_sale
 #: report:pos.lines:0
 msgid "Taxes :"
-msgstr ""
+msgstr "Taxes :"
 
 #. module: point_of_sale
 #: field:report.transaction.pos,disc:0
 msgid "Disc."
-msgstr ""
+msgstr "Popust"
 
 #. module: point_of_sale
-#: rml:pos.invoice:0
+#: report:pos.invoice:0
 msgid "VAT :"
 msgstr "PDV :"
 
 #. module: point_of_sale
 #: view:pos.order.line:0
 msgid "POS Order lines"
-msgstr ""
+msgstr "POS Order lines"
 
 #. module: point_of_sale
 #: view:pos.receipt:0
 msgid "Receipt :"
-msgstr ""
+msgstr "Receipt :"
 
 #. module: point_of_sale
-#: field:pos.order,amount_paid:0
+#: field:account.bank.statement.line,pos_statement_id:0
 #: field:pos.order,amount_return:0
 msgid "unknown"
 msgstr "nepoznato"
 
 #. module: point_of_sale
-#: rml:pos.details:0
+#: report:pos.details:0
 #: field:report.transaction.pos,date_create:0
 msgid "Date"
 msgstr "Datum"
@@ -834,171 +907,174 @@ msgstr "Datum"
 #. module: point_of_sale
 #: view:report.pos.order:0
 msgid "Extended Filters..."
-msgstr ""
+msgstr "Prošireni filtri..."
 
 #. module: point_of_sale
 #: field:pos.order,num_sale:0
 msgid "Internal Note"
-msgstr ""
+msgstr "Interna bilješka"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_res_company
 msgid "Companies"
-msgstr ""
+msgstr "Organizacije"
 
 #. module: point_of_sale
-#: model:ir.model,name:point_of_sale.model_report_transaction_pos
-msgid "transaction for the pos"
-msgstr ""
+#: report:pos.details:0
+#: report:pos.details_summary:0
+msgid "Total discount"
+msgstr "Total discount"
 
 #. module: point_of_sale
 #: code:addons/point_of_sale/wizard/pos_get_sale.py:54
 #, python-format
 msgid "UserError "
-msgstr ""
+msgstr "UserError "
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_pos_box_entries
 msgid "Pos Box Entries"
-msgstr ""
+msgstr "Pos Box Entries"
 
 #. module: point_of_sale
-#: code:addons/point_of_sale/wizard/wizard_get_sale.py:0
+#: code:addons/point_of_sale/wizard/pos_get_sale.py:54
 #, python-format
 msgid "You can't modify this order. It has already been paid"
-msgstr ""
+msgstr "You can't modify this order. It has already been paid"
 
 #. module: point_of_sale
-#: field:pos.details,date_end:0
-#: field:pos.sale.user,date_end:0
-msgid "Date End"
-msgstr ""
+#: field:pos.config.journal,code:0
+#: report:pos.details:0
+msgid "Code"
+msgstr "Šifra"
 
 #. module: point_of_sale
 #: report:pos.invoice:0
 msgid "Your Reference"
-msgstr ""
+msgstr "Vaša oznaka"
 
 #. module: point_of_sale
 #: field:report.transaction.pos,no_trans:0
 msgid "Number of Transaction"
-msgstr ""
+msgstr "Number of Transaction"
 
 #. module: point_of_sale
-#: wizard_button:pos.add_product,init,end:0
-#: wizard_button:pos.config.journal,init,end:0
-#: wizard_button:pos.discount,init,end:0
-#: view:pos.order:0
+#: view:pos.add.product:0
+#: view:pos.box.entries:0
+#: view:pos.box.out:0
+#: view:pos.get.sale:0
+#: view:pos.make.payment:0
 #: selection:pos.order,state:0
-#: wizard_button:pos.payment,ask_pay,end:0
-#: wizard_button:pos.refund_order,init,end:0
-#: wizard_button:pos.sale.get,init,end:0
-#: wizard_button:pos.scan_product,init,end:0
+#: view:pos.receipt:0
+#: view:pos.return:0
+#: selection:report.pos.order,state:0
 msgid "Cancel"
-msgstr ""
+msgstr "Odustani"
 
 #. module: point_of_sale
 #: view:pos.order:0
 msgid "Return Picking"
-msgstr ""
+msgstr "Povrat robe"
 
 #. module: point_of_sale
 #: model:ir.actions.report.xml,name:point_of_sale.pos_details_summary
 msgid "Sales (summary)"
-msgstr "Prodaje"
+msgstr "Prodaje (ukupno)"
 
 #. module: point_of_sale
 #: view:product.product:0
 msgid "Information"
-msgstr ""
+msgstr "Informacija"
 
 #. module: point_of_sale
 #: model:ir.ui.menu,name:point_of_sale.menu_wizard_enter_jrnl
 msgid "Input Operations"
-msgstr ""
+msgstr "Input Operations"
 
 #. module: point_of_sale
-#: model:ir.model,name:point_of_sale.model_report_cash_register
-#: view:report.cash.register:0
-msgid "Point of Sale Cash Register Analysis"
-msgstr ""
+#: view:pos.make.payment:0
+msgid "The cash register must be opened to be able to execute a payment."
+msgstr "Blagajna mora biti otvorena ako se želi upisati uplata."
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_pos_sales_user_today
 msgid "Sale by Users"
-msgstr ""
+msgstr "Sale by Users"
 
 #. module: point_of_sale
 #: report:pos.payment.report:0
 msgid "Payment For Sale"
-msgstr ""
+msgstr "Payment For Sale"
 
 #. module: point_of_sale
 #: field:pos.order,first_name:0
 msgid "First Name"
-msgstr ""
+msgstr "Ime osobe"
 
 #. module: point_of_sale
-#: view:pos.order:0
-msgid "Other"
-msgstr "Ostalo"
+#: field:pos.order,invoice_wanted:0
+msgid "Create Invoice"
+msgstr "Kreiraj račun"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_pos_order_line
 msgid "Lines of Point of Sale"
-msgstr ""
+msgstr "Stavke POS-a"
 
 #. module: point_of_sale
 #: view:pos.order:0
 #: view:report.transaction.pos:0
 msgid "Amount total"
-msgstr ""
+msgstr "Uk. iznos"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_new_bank_statement_all_tree
 #: model:ir.ui.menu,name:point_of_sale.menu_all_menu_all_register
 msgid "Cash Registers"
-msgstr ""
+msgstr "Blagajne"
 
 #. module: point_of_sale
 #: view:account.journal:0
 #: field:account.journal,journal_users:0
 msgid "Users"
-msgstr ""
+msgstr "Korisnici"
 
 #. module: point_of_sale
-#: rml:pos.details:0
-#: rml:pos.invoice:0
-#: rml:pos.lines:0
-#: rml:pos.receipt:0
+#: report:pos.details:0
+#: report:pos.invoice:0
+#: report:pos.lines:0
 msgid "Price"
-msgstr ""
+msgstr "Cijena"
 
 #. module: point_of_sale
-#: wizard_field:pos.scan_product,init,gencod:0
+#: field:pos.scan.product,gencod:0
 msgid "Barcode"
-msgstr ""
+msgstr "Barcode"
 
 #. module: point_of_sale
+#: view:report.sales.by.margin.pos:0
+#: view:report.sales.by.margin.pos.month:0
+#: view:report.sales.by.user.pos:0
+#: view:report.sales.by.user.pos.month:0
 #: view:report.transaction.pos:0
 msgid "POS"
-msgstr ""
+msgstr "POS"
 
 #. module: point_of_sale
 #: field:report.cash.register,date:0
 msgid "Create Date"
-msgstr ""
+msgstr "Kreiraj datum"
 
 #. module: point_of_sale
 #: model:ir.ui.menu,name:point_of_sale.menu_wizard_enter_jrnl2
 msgid "Output Operations"
-msgstr ""
+msgstr "Output Operations"
 
 #. module: point_of_sale
 #: report:pos.details:0
 #: report:pos.details_summary:0
 msgid "Start Period"
-msgstr ""
+msgstr "Od perioda"
 
 #. module: point_of_sale
 #: report:account.statement:0
@@ -1006,12 +1082,12 @@ msgstr ""
 #: report:pos.sales.user.today:0
 #: report:pos.sales.user.today.current.user:0
 msgid "Name"
-msgstr ""
+msgstr "Naziv"
 
 #. module: point_of_sale
-#: model:ir.ui.menu,name:point_of_sale.menu_open_statement
-msgid "Open Cash Registers"
-msgstr ""
+#: constraint:product.product:0
+msgid "Several dimension values for the same dimension type"
+msgstr "Several dimension values for the same dimension type"
 
 #. module: point_of_sale
 #: report:pos.details:0
@@ -1021,17 +1097,36 @@ msgstr ""
 #: report:pos.payment.report.user:0
 #: report:pos.user.product:0
 msgid "]"
-msgstr ""
+msgstr "]"
 
 #. module: point_of_sale
 #: sql_constraint:account.journal:0
 msgid "The name of the journal must be unique per company !"
-msgstr ""
+msgstr "Naziv dnevnika mora biti jedinstven za jednu organizaciju!"
 
 #. module: point_of_sale
-#: rml:pos.invoice:0
-msgid "Supplier Refund"
-msgstr ""
+#: view:report.pos.order:0
+msgid "POS ordered created during current year"
+msgstr "POS ordered created during current year"
+
+#. module: point_of_sale
+#: report:pos.details:0
+#: report:pos.details_summary:0
+#: report:pos.lines:0
+#: report:pos.payment.report:0
+#: report:pos.payment.report.date:0
+#: report:pos.payment.report.user:0
+#: report:pos.sales.user:0
+#: report:pos.sales.user.today:0
+#: report:pos.sales.user.today.current.user:0
+#: report:pos.user.product:0
+msgid "Print Date"
+msgstr "Datum ispisa"
+
+#. module: point_of_sale
+#: view:pos.return:0
+msgid "Return With Exchange"
+msgstr "Return With Exchange"
 
 #. module: point_of_sale
 #: view:account.bank.statement:0
@@ -1039,63 +1134,69 @@ msgstr ""
 #: view:report.cash.register:0
 #: view:report.pos.order:0
 msgid "Group By..."
-msgstr ""
+msgstr "Grupiraj po..."
+
+#. module: point_of_sale
+#: help:pos.order.line,prodlot_id:0
+msgid "You can specify Production lot for stock move created when you validate the pos order"
+msgstr "You can specify Production lot for stock move created when you validate the pos order"
 
 #. module: point_of_sale
 #: view:pos.order:0
 msgid "POS Orders"
-msgstr ""
+msgstr "POS Orders"
 
 #. module: point_of_sale
 #: model:ir.actions.report.xml,name:point_of_sale.all_closed_cashbox_of_the_day
 msgid "All Closed CashBox"
-msgstr ""
+msgstr "All Closed CashBox"
 
 #. module: point_of_sale
-#: code:addons/point_of_sale/pos.py:0
+#: code:addons/point_of_sale/point_of_sale.py:1046
+#: code:addons/point_of_sale/point_of_sale.py:1071
 #, python-format
 msgid "No Pricelist !"
-msgstr ""
+msgstr "Nema cjenika !"
 
 #. module: point_of_sale
-#: wizard_view:pos.sale.get,init:0
+#: model:ir.actions.act_window,name:point_of_sale.action_pos_get_sale
+#: view:pos.get.sale:0
 msgid "Select an Open Sale Order"
-msgstr ""
+msgstr "Odaberite otvoreni prodajni nalog"
 
 #. module: point_of_sale
 #: view:pos.order:0
 msgid "Order date"
-msgstr ""
+msgstr "Datum naloga"
 
 #. module: point_of_sale
-#: rml:pos.invoice:0
+#: report:pos.invoice:0
 msgid "Base"
-msgstr ""
+msgstr "Osnovica"
 
 #. module: point_of_sale
 #: view:product.product:0
 msgid "Account"
-msgstr ""
+msgstr "Konto"
 
 #. module: point_of_sale
 #: field:pos.order,sale_manager:0
 msgid "Salesman Manager"
-msgstr ""
+msgstr "Salesman Manager"
 
 #. module: point_of_sale
 #: view:pos.order:0
-#: field:pos.order,note:0
 msgid "Notes"
 msgstr "Bilješke"
 
 #. module: point_of_sale
-#: wizard_field:pos.sale.get,init,picking_id:0
+#: field:pos.get.sale,picking_id:0
+#: view:pos.order:0
 msgid "Sale Order"
-msgstr ""
+msgstr "Prodajni nalog"
 
 #. module: point_of_sale
-#: rml:pos.invoice:0
-#: rml:pos.lines:0
+#: report:pos.invoice:0
 #: field:pos.order,amount_tax:0
 msgid "Taxes"
 msgstr "Porezi"
@@ -1103,14 +1204,15 @@ msgstr "Porezi"
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_pos_order_line
 #: model:ir.actions.act_window,name:point_of_sale.action_pos_order_line_day
+#: model:ir.actions.act_window,name:point_of_sale.action_pos_order_line_form
 msgid "Sale line"
-msgstr ""
+msgstr "Stavka prodaje"
 
 #. module: point_of_sale
-#: field:pos.config.journal,code:0
-#: rml:pos.details:0
-msgid "Code"
-msgstr "Šifra"
+#: field:pos.details,date_end:0
+#: field:pos.sale.user,date_end:0
+msgid "Date End"
+msgstr "Datum završetka"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_product_input
@@ -1118,72 +1220,62 @@ msgstr "Šifra"
 #: model:ir.ui.menu,name:point_of_sale.menu_point_of_sale_product
 #: model:ir.ui.menu,name:point_of_sale.menu_pos_products
 msgid "Products"
-msgstr ""
+msgstr "Proizvodi"
 
 #. module: point_of_sale
 #: model:ir.actions.report.xml,name:point_of_sale.pos_payment_report
 msgid "Payment Report For Sale"
-msgstr ""
+msgstr "Payment Report For Sale"
 
 #. module: point_of_sale
 #: field:account.journal,special_journal:0
 msgid "Special Journal"
-msgstr ""
+msgstr "Special Journal"
+
+#. module: point_of_sale
+#: field:pos.return.memory,pos_moves_id:0
+msgid "Move"
+msgstr "Temeljnica"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_all_closed_cashbox_of_the_day
 msgid "All closed cashbox of the day"
-msgstr ""
+msgstr "All closed cashbox of the day"
 
 #. module: point_of_sale
 #: view:pos.order:0
 msgid "Extra Info"
-msgstr ""
+msgstr "Dodatni podaci"
 
 #. module: point_of_sale
-#: rml:pos.invoice:0
+#: report:pos.invoice:0
 msgid "Fax :"
-msgstr "Fax :"
+msgstr "Fax:"
 
 #. module: point_of_sale
 #: field:pos.order,user_id:0
 msgid "Connected Salesman"
-msgstr ""
-
-#. module: point_of_sale
-#: model:ir.module.module,description:point_of_sale.module_meta_information
-msgid ""
-"\n"
-"Main features :\n"
-" - Fast encoding of the sale.\n"
-" - Allow to choose one payment mode (the quick way) or to split the payment "
-"between several payment mode.\n"
-" - Computation of the amount of money to return.\n"
-" - Create and confirm picking list automatically.\n"
-" - Allow the user to create invoice automatically.\n"
-" - Allow to refund former sales.\n"
-"\n"
-"    "
-msgstr ""
-
-#. module: point_of_sale
-#: field:pos.order,price_type:0
-msgid "Price method"
-msgstr ""
+msgstr "Connected Salesman"
 
 #. module: point_of_sale
 #: view:pos.receipt:0
 msgid "Print the receipt of the sale"
-msgstr ""
+msgstr "Ispis računa POS-a"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_stock_picking
 msgid "Picking List"
-msgstr ""
+msgstr "Skladišni dokument"
 
 #. module: point_of_sale
-#: rml:pos.details:0
-#: rml:pos.receipt:0
+#: report:pos.details:0
+#: report:pos.payment.report:0
+#: report:pos.payment.report.date:0
+#: report:pos.payment.report.user:0
+#: report:pos.sales.user.today.current.user:0
+#: report:pos.user.product:0
+#: field:report.sales.by.margin.pos,qty:0
+#: field:report.sales.by.margin.pos.month,qty:0
 msgid "Qty"
 msgstr "Kol."
 
@@ -1191,53 +1283,60 @@ msgstr "Kol."
 #: view:report.cash.register:0
 #: view:report.pos.order:0
 msgid "Month -1"
-msgstr ""
+msgstr "Month -1"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_report_pos_sale_user
 #: model:ir.model,name:point_of_sale.model_pos_sale_user
 #: view:pos.payment.report.user:0
 msgid "Sale by User"
-msgstr ""
+msgstr "Sale by User"
 
 #. module: point_of_sale
-#: code:addons/point_of_sale/pos.py:0
-#: code:addons/point_of_sale/report/pos_invoice.py:0
+#: code:addons/point_of_sale/point_of_sale.py:561
+#: code:addons/point_of_sale/point_of_sale.py:748
+#: code:addons/point_of_sale/point_of_sale.py:856
+#: code:addons/point_of_sale/report/pos_invoice.py:46
+#: code:addons/point_of_sale/wizard/pos_box_entries.py:103
+#: code:addons/point_of_sale/wizard/pos_box_entries.py:107
+#: code:addons/point_of_sale/wizard/pos_box_out.py:94
+#: code:addons/point_of_sale/wizard/pos_box_out.py:98
+#: code:addons/point_of_sale/wizard/pos_box_out.py:100
 #, python-format
 msgid "Error !"
-msgstr ""
+msgstr "Greška !"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_pos_confirm
 msgid "Sale Confirm"
-msgstr ""
+msgstr "Sale Confirm"
 
 #. module: point_of_sale
 #: view:report.cash.register:0
 msgid "state"
-msgstr ""
+msgstr "stanje"
 
 #. module: point_of_sale
 #: view:product.product:0
 msgid "Prices"
-msgstr ""
+msgstr "Prices"
 
 #. module: point_of_sale
 #: selection:report.cash.register,month:0
 #: selection:report.pos.order,month:0
 msgid "July"
-msgstr ""
+msgstr "Srpanj"
 
 #. module: point_of_sale
-#: code:addons/point_of_sale/point_of_sale.py:544
+#: code:addons/point_of_sale/point_of_sale.py:550
 #, python-format
 msgid "Please provide an account for the product: %s"
-msgstr ""
+msgstr "Please provide an account for the product: %s"
 
 #. module: point_of_sale
 #: field:report.pos.order,delay_validation:0
 msgid "Delay Validation"
-msgstr ""
+msgstr "Delay Validation"
 
 #. module: point_of_sale
 #: field:pos.order,nb_print:0
@@ -1247,34 +1346,34 @@ msgstr "Broj kopija"
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_pos_make_payment
 msgid "Point of Sale Payment"
-msgstr ""
+msgstr "POS plaćanje"
 
 #. module: point_of_sale
 #: report:pos.details:0
 #: report:pos.details_summary:0
 msgid "End Period"
-msgstr ""
+msgstr "Do perioda"
 
 #. module: point_of_sale
 #: field:account.journal,auto_cash:0
 msgid "Automatic Opening"
-msgstr ""
+msgstr "Automatic Opening"
 
 #. module: point_of_sale
 #: field:pos.order.line,price_ded:0
 msgid "Discount(Amount)"
-msgstr ""
+msgstr "Popust(Iznos)"
 
 #. module: point_of_sale
 #: code:addons/point_of_sale/wizard/pos_add_product.py:51
 #, python-format
 msgid "Active ID is not found"
-msgstr ""
+msgstr "Active ID is not found"
 
 #. module: point_of_sale
 #: field:account.bank.statement.line,is_acc:0
 msgid "Is accompte"
-msgstr ""
+msgstr "Is accompte"
 
 #. module: point_of_sale
 #: view:report.cash.register:0
@@ -1282,17 +1381,22 @@ msgstr ""
 #: view:report.pos.order:0
 #: field:report.pos.order,month:0
 msgid "Month"
-msgstr ""
+msgstr "Mjesec"
 
 #. module: point_of_sale
 #: view:pos.order:0
 msgid "Sales Order POS"
-msgstr ""
+msgstr "Nalozi maloprodaje (POS)"
 
 #. module: point_of_sale
 #: report:account.statement:0
 msgid "Statement Name"
-msgstr ""
+msgstr "Naziv izvoda"
+
+#. module: point_of_sale
+#: view:report.pos.order:0
+msgid "Year of order date"
+msgstr "Year of order date"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_new_bank_statement_tree
@@ -1301,287 +1405,331 @@ msgstr ""
 #: field:pos.box.out,journal_id:0
 #: field:pos.make.payment,journal:0
 msgid "Cash Register"
-msgstr ""
+msgstr "Blagajna MP"
 
 #. module: point_of_sale
 #: field:pos.payment.report.date,date_start:0
 msgid "Start Date"
-msgstr ""
+msgstr "Početni datum"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_pos_receipt
 msgid "Point of sale receipt"
-msgstr ""
+msgstr "Račun POS-a "
 
 #. module: point_of_sale
 #: code:addons/point_of_sale/wizard/pos_payment.py:91
 #, python-format
 msgid "No order lines defined for this sale "
-msgstr ""
+msgstr "Nisu definirane stavke ove prodaje "
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_report_sales_by_margin_pos_today
 msgid "Sales by User Daily margin"
-msgstr ""
+msgstr "Sales by User Daily margin"
 
 #. module: point_of_sale
 #: field:pos.order,note_2:0
 msgid "Customer Note"
-msgstr ""
+msgstr "Customer Note"
 
 #. module: point_of_sale
-#: code:addons/point_of_sale/pos.py:0
+#: code:addons/point_of_sale/point_of_sale.py:340
 #, python-format
 msgid "No order lines defined for this sale."
-msgstr ""
+msgstr "Nisu upisane stavke naloga za ovu prodaju."
 
 #. module: point_of_sale
 #: field:report.cash.register,balance_start:0
 msgid "Opening Balance"
-msgstr ""
+msgstr "Početni saldo"
 
 #. module: point_of_sale
+#: view:report.pos.order:0
+msgid "POS ordered created by today"
+msgstr "POS ordered created by today"
+
+#. module: point_of_sale
+#: field:pos.order,amount_paid:0
 #: selection:pos.order,state:0
+#: view:report.pos.order:0
+#: selection:report.pos.order,state:0
 msgid "Paid"
 msgstr "Plaćeno"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_pos_all_sales_lines
 msgid "All sales lines"
-msgstr ""
+msgstr "Sve stavke prodaje"
+
+#. module: point_of_sale
+#: view:report.cash.register:0
+msgid "Cash Analysis created in last month"
+msgstr "Cash Analysis created in last month"
+
+#. module: point_of_sale
+#: view:report.cash.register:0
+msgid "Cash Analysis created by today"
+msgstr "Cash Analysis created by today"
 
 #. module: point_of_sale
 #: selection:pos.order,state:0
 #: selection:report.cash.register,state:0
 msgid "Quotation"
-msgstr ""
+msgstr "Quotation"
 
 #. module: point_of_sale
-#: rml:pos.invoice:0
+#: report:all.closed.cashbox.of.the.day:0
+#: report:pos.invoice:0
+#: report:pos.lines:0
+#: report:pos.payment.report.date:0
+#: report:pos.payment.report.user:0
 msgid "Total:"
 msgstr "Ukupno:"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_report_sales_by_margin_pos
 msgid "Sales by margin"
-msgstr ""
+msgstr "Prodaje po marži"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_pos_config_journal
 msgid "Journal Configuration"
-msgstr ""
+msgstr "Postava dnevnika"
 
 #. module: point_of_sale
 #: view:pos.order:0
 msgid "Statement lines"
-msgstr ""
+msgstr "Retci izvoda"
+
+#. module: point_of_sale
+#: view:report.cash.register:0
+msgid "Year from Creation date of cash register"
+msgstr "Year from Creation date of cash register"
 
 #. module: point_of_sale
 #: help:pos.order,user_id:0
-msgid ""
-"Person who uses the the cash register. It could be a reliever, a student or "
-"an interim employee."
-msgstr ""
+msgid "Person who uses the the cash register. It could be a reliever, a student or an interim employee."
+msgstr "Person who uses the the cash register. It could be a reliever, a student or an interim employee."
 
 #. module: point_of_sale
 #: field:report.transaction.pos,invoice_id:0
 msgid "Nbr Invoice"
-msgstr ""
+msgstr "Račun br."
 
 #. module: point_of_sale
-#: model:ir.actions.report.xml,name:point_of_sale.pos_receipt
+#: model:ir.actions.act_window,name:point_of_sale.action_report_pos_receipt
 msgid "Receipt"
-msgstr "Račun"
+msgstr "Receipt"
 
 #. module: point_of_sale
-#: field:pos.order,invoice_wanted:0
-msgid "Create Invoice"
-msgstr ""
+#: report:pos.invoice:0
+#: report:pos.lines:0
+#: field:pos.order.line,price_unit:0
+#: report:pos.payment.report:0
+#: report:pos.payment.report.date:0
+#: report:pos.payment.report.user:0
+msgid "Unit Price"
+msgstr "Jedinična cijena"
 
 #. module: point_of_sale
 #: selection:pos.order,state:0
+#: selection:report.pos.order,state:0
 msgid "Done"
-msgstr ""
+msgstr "Izvršeno"
 
 #. module: point_of_sale
 #: model:ir.actions.report.xml,name:point_of_sale.pos_invoice_report
-#: rml:pos.invoice:0
+#: report:pos.invoice:0
+#: field:pos.make.payment,invoice_wanted:0
 #: field:pos.order,invoice_id:0
-#: wizard_field:pos.payment,ask_pay,invoice_wanted:0
-#: field:report.transaction.pos,invoice_id:0
 msgid "Invoice"
-msgstr ""
+msgstr "Račun"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_pos_get_sale
 msgid "Get From Sale"
-msgstr ""
+msgstr "Get From Sale"
 
 #. module: point_of_sale
 #: view:account.bank.statement:0
 #: selection:report.cash.register,state:0
 msgid "Open"
-msgstr ""
+msgstr "Otvoreno"
 
 #. module: point_of_sale
 #: field:pos.order.line,order_id:0
-#: field:pos.payment,order_id:0
 msgid "Order Ref"
-msgstr ""
+msgstr "Order Ref"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_report_pos_payment_repport_date
 #: model:ir.ui.menu,name:point_of_sale.menu_pos_payment_report_date
 msgid "Sales lines Report"
-msgstr ""
+msgstr "Sales lines Report"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_box_entries
 #: view:pos.box.entries:0
 msgid "Box Entries"
-msgstr ""
+msgstr "Box Entries"
 
 #. module: point_of_sale
 #: selection:pos.order,price_type:0
 msgid "Tax excluded"
-msgstr ""
+msgstr "Tax excluded"
 
 #. module: point_of_sale
 #: field:report.sales.by.margin.pos,net_margin_per_qty:0
 #: field:report.sales.by.margin.pos.month,net_margin_per_qty:0
 msgid "Net margin per Qty"
-msgstr ""
+msgstr "Neto marža po kol."
 
 #. module: point_of_sale
 #: view:report.sales.by.margin.pos:0
 #: view:report.sales.by.margin.pos.month:0
 msgid "Sales by User Margin"
-msgstr ""
+msgstr "Sales by User Margin"
 
 #. module: point_of_sale
-#: rml:pos.invoice:0
+#: report:pos.invoice:0
 msgid "Taxes:"
-msgstr ""
+msgstr "Porezi:"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_report_pos_order
 msgid "Point of Sale Orders Statistics"
-msgstr ""
+msgstr "Point of Sale Orders Statistics"
 
 #. module: point_of_sale
-#: wizard_field:pos.add_product,init,product:0
-#: rml:pos.details:0
+#: model:ir.model,name:point_of_sale.model_product_product
+#: field:pos.add.product,product_id:0
+#: report:pos.details:0
 #: field:pos.order.line,product_id:0
+#: report:pos.payment.report:0
+#: report:pos.payment.report.date:0
+#: report:pos.payment.report.user:0
+#: field:pos.return.memory,product_id:0
+#: report:pos.user.product:0
+#: view:product.product:0
+#: view:report.pos.order:0
+#: field:report.pos.order,product_id:0
 msgid "Product"
-msgstr ""
+msgstr "Proizvod"
 
 #. module: point_of_sale
 #: model:ir.actions.report.xml,name:point_of_sale.pos_lines_report
 msgid "Pos Lines"
-msgstr ""
+msgstr "Pos Lines"
 
 #. module: point_of_sale
 #: field:product.product,disc_controle:0
 msgid "Discount Control"
-msgstr ""
+msgstr "Kontrola popusta"
 
 #. module: point_of_sale
 #: field:report.cash.register,balance_end_real:0
 msgid "Closing Balance"
-msgstr ""
+msgstr "Završni saldo"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_report_pos_details
 #: model:ir.ui.menu,name:point_of_sale.menu_pos_details
 msgid "Sale Details"
-msgstr ""
+msgstr "Prodaja detaljno"
 
 #. module: point_of_sale
 #: field:pos.payment.report.date,date_end:0
 msgid "End Date"
-msgstr ""
+msgstr "Završni Datum"
 
 #. module: point_of_sale
 #: field:pos.order,date_order:0
 msgid "Date Ordered"
-msgstr ""
+msgstr "Date Ordered"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_report_pos_payment_report_user
 #: model:ir.model,name:point_of_sale.model_pos_payment_report_user
 msgid "Sales lines by Users"
-msgstr ""
+msgstr "Sales lines by Users"
 
 #. module: point_of_sale
 #: field:res.company,max_diff:0
 msgid "Max Difference for Cashboxes"
-msgstr ""
+msgstr "Max Difference for Cashboxes"
 
 #. module: point_of_sale
 #: view:pos.close.statement:0
 #: view:pos.confirm:0
 #: view:pos.open.statement:0
 msgid "Yes"
-msgstr ""
+msgstr "Da"
 
 #. module: point_of_sale
-#: code:addons/point_of_sale/point_of_sale.py:743
+#: code:addons/point_of_sale/point_of_sale.py:748
 #, python-format
 msgid "There is no income account defined for this product: \"%s\" (id:%d)"
-msgstr ""
+msgstr "Ne postoji konto prihoda za ovaj proizvod: \"%s\" (id:%d)"
 
 #. module: point_of_sale
-#: view:pos.make.payment:0
-msgid "The cash register must be opened to be able to execute a payment."
-msgstr ""
+#: model:ir.model,name:point_of_sale.model_report_cash_register
+#: view:report.cash.register:0
+msgid "Point of Sale Cash Register Analysis"
+msgstr "Point of Sale Cash Register Analysis"
 
 #. module: point_of_sale
 #: report:pos.lines:0
 msgid "Net Total :"
-msgstr ""
+msgstr "Net Total :"
 
 #. module: point_of_sale
 #: view:product.product:0
 msgid "Product Description"
-msgstr ""
+msgstr "Product Description"
 
 #. module: point_of_sale
 #: field:pos.details,date_start:0
 #: field:pos.sale.user,date_start:0
 msgid "Date Start"
-msgstr ""
+msgstr "Datum početka"
 
 #. module: point_of_sale
-#: rml:pos.lines:0
 #: field:pos.order,amount_total:0
+#: report:pos.payment.report:0
+#: report:pos.payment.report.date:0
+#: report:pos.payment.report.user:0
+#: report:pos.sales.user.today.current.user:0
+#: field:report.sales.by.user.pos,amount:0
+#: field:report.sales.by.user.pos.month,amount:0
 msgid "Total"
-msgstr ""
+msgstr "Ukupno"
 
 #. module: point_of_sale
 #: view:pos.sale.user:0
 msgid "Sale By User"
-msgstr ""
+msgstr "Sale By User"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_pos_open_statement
 msgid "Open Cash Register"
-msgstr ""
+msgstr "Otvori blagajnu"
 
 #. module: point_of_sale
 #: report:account.statement:0
 #: model:ir.actions.report.xml,name:point_of_sale.account_statement
 msgid "Statement"
-msgstr ""
+msgstr "Izvod"
 
 #. module: point_of_sale
 #: field:pos.order,name:0
 msgid "Order Description"
-msgstr ""
+msgstr "Order Description"
 
 #. module: point_of_sale
 #: field:pos.make.payment,num_sale:0
 msgid "Num.File"
-msgstr ""
+msgstr "Num.File"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_pos_payment_report
@@ -1589,305 +1737,381 @@ msgstr ""
 #: model:ir.model,name:point_of_sale.model_pos_payment_report
 #: view:pos.payment.report:0
 msgid "Payment Report"
-msgstr ""
+msgstr "Izvještaj plaćanja"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_view_pos_return
+#: view:pos.return:0
 msgid "Return lines"
-msgstr ""
+msgstr "Return lines"
 
 #. module: point_of_sale
-#: rml:pos.lines:0
+#: model:ir.module.module,description:point_of_sale.module_meta_information
+msgid "\n"
+"This module provides a quick and easy sale process.\n"
+"===================================================\n"
+"\n"
+"Main features :\n"
+"---------------\n"
+"    * Fast encoding of the sale.\n"
+"    * Allow to choose one payment mode (the quick way) or to split the payment between several payment mode.\n"
+"    * Computation of the amount of money to return.\n"
+"    * Create and confirm picking list automatically.\n"
+"    * Allow the user to create invoice automatically.\n"
+"    * Allow to refund former sales.\n"
+"    "
+msgstr "\n"
+"This module provides a quick and easy sale process.\n"
+"===================================================\n"
+"\n"
+"Main features :\n"
+"---------------\n"
+"    * Fast encoding of the sale.\n"
+"    * Allow to choose one payment mode (the quick way) or to split the payment between several payment mode.\n"
+"    * Computation of the amount of money to return.\n"
+"    * Create and confirm picking list automatically.\n"
+"    * Allow the user to create invoice automatically.\n"
+"    * Allow to refund former sales.\n"
+"    "
+
+#. module: point_of_sale
+#: report:account.statement:0
+#: report:all.closed.cashbox.of.the.day:0
+#: report:pos.details:0
+#: report:pos.details_summary:0
+#: report:pos.lines:0
+#: field:pos.order,company_id:0
+#: field:pos.order.line,company_id:0
+#: report:pos.payment.report:0
+#: report:pos.payment.report.date:0
+#: report:pos.payment.report.user:0
+#: report:pos.sales.user:0
+#: report:pos.sales.user.today:0
+#: report:pos.sales.user.today.current.user:0
+#: report:pos.user.product:0
+#: field:report.pos.order,company_id:0
 msgid "Company"
-msgstr "Tvrtka"
+msgstr "Organizacija"
 
 #. module: point_of_sale
-#: rml:pos.invoice:0
+#: report:pos.invoice:0
 msgid "Invoice Date"
 msgstr "Datum računa"
 
 #. module: point_of_sale
-#: code:addons/point_of_sale/point_of_sale.py:1057
-#: code:addons/point_of_sale/point_of_sale.py:1076
+#: code:addons/point_of_sale/point_of_sale.py:1062
+#: code:addons/point_of_sale/point_of_sale.py:1081
 #, python-format
-msgid ""
-"Couldn't find a pricelist line matching this product and quantity.\n"
+msgid "Couldn't find a pricelist line matching this product and quantity.\n"
 "You have to change either the product, the quantity or the pricelist."
-msgstr ""
+msgstr "Couldn't find a pricelist line matching this product and quantity.\n"
+"You have to change either the product, the quantity or the pricelist."
 
 #. module: point_of_sale
 #: field:pos.order.line,serial_number:0
 msgid "Serial Number"
-msgstr ""
+msgstr "Serial Number"
 
 #. module: point_of_sale
 #: view:pos.order:0
 msgid "Reprint"
-msgstr ""
+msgstr "Reprint"
 
 #. module: point_of_sale
-#: code:addons/point_of_sale/point_of_sale.py:555
+#: code:addons/point_of_sale/point_of_sale.py:561
 #: code:addons/point_of_sale/wizard/pos_box_entries.py:103
-#: code:addons/point_of_sale/wizard/pos_box_out.py:101
+#: code:addons/point_of_sale/wizard/pos_box_out.py:100
 #, python-format
 msgid "You have to open at least one cashbox"
-msgstr ""
+msgstr "You have to open at least one cashbox"
 
 #. module: point_of_sale
 #: model:ir.actions.report.xml,name:point_of_sale.pos_payment_report_user
 msgid "Today's Payment By User"
-msgstr ""
+msgstr "Today's Payment By User"
 
 #. module: point_of_sale
 #: field:stock.picking,pos_order:0
 msgid "Pos order"
-msgstr ""
+msgstr "Pos order"
 
 #. module: point_of_sale
 #: code:addons/point_of_sale/wizard/pos_discount.py:52
 #: code:addons/point_of_sale/wizard/pos_payment.py:91
+#: code:addons/point_of_sale/wizard/pos_payment.py:165
 #, python-format
 msgid "Error!"
-msgstr ""
+msgstr "Error!"
 
 #. module: point_of_sale
-#: rml:pos.lines:0
+#: report:pos.lines:0
 msgid "No. Of Articles"
-msgstr "Komada"
+msgstr "Br.Artikala"
 
 #. module: point_of_sale
 #: field:pos.order,date_validity:0
-#: wizard_field:pos.refund_order,init,date_validity:0
 msgid "Validity Date"
-msgstr ""
+msgstr "Validity Date"
 
 #. module: point_of_sale
-#: view:pos.order:0
 #: field:pos.order,pickings:0
 msgid "Picking"
-msgstr ""
+msgstr "Skladišnice"
 
 #. module: point_of_sale
 #: field:pos.order,shop_id:0
+#: field:report.pos.order,shop_id:0
 msgid "Shop"
 msgstr "Trgovina"
 
 #. module: point_of_sale
-#: field:pos.order,last_out_picking:0
+#: field:pos.order,picking_id:0
 msgid "Last Output Picking"
-msgstr ""
+msgstr "Zadnja otpremnica"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_account_bank_statement_line
 msgid "Bank Statement Line"
-msgstr ""
+msgstr "Redak bankovnog izvoda"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_account_bank_statement
 msgid "Bank Statement"
-msgstr ""
+msgstr "Izvod banke"
 
 #. module: point_of_sale
 #: report:pos.user.product:0
 msgid "Ending Date"
-msgstr ""
+msgstr "Do datuma"
 
 #. module: point_of_sale
 #: view:report.sales.by.user.pos:0
 #: view:report.sales.by.user.pos.month:0
 #: view:report.transaction.pos:0
 msgid "POS Report"
-msgstr ""
+msgstr "POS Izvještaj"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_pos_discount
 msgid "Add Discount"
-msgstr ""
+msgstr "Add Discount"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_pos_close_statement
 msgid "Close Cash Register"
-msgstr ""
+msgstr "Close Cash Register"
 
 #. module: point_of_sale
 #: field:pos.order.line,qty_rfd:0
 msgid "Refunded Quantity"
-msgstr ""
+msgstr "Količina povrata"
 
 #. module: point_of_sale
-#: wizard_view:pos.scan_product,init:0
+#: view:pos.scan.product:0
 msgid "Scan Barcode"
-msgstr "Očitaj barkod"
+msgstr "Scan Barcode"
 
 #. module: point_of_sale
 #: field:pos.box.entries,product_id:0
 #: field:pos.box.out,product_id:0
 msgid "Operation"
-msgstr ""
+msgstr "Operacija"
 
 #. module: point_of_sale
 #: model:ir.ui.menu,name:point_of_sale.menu_point_ofsale
 msgid "Sales Order"
-msgstr ""
+msgstr "Prodajni nalog"
 
 #. module: point_of_sale
 #: field:pos.order,journal_entry:0
 msgid "Journal Entry"
-msgstr ""
+msgstr "Temeljnica"
 
 #. module: point_of_sale
 #: selection:report.cash.register,state:0
 msgid "Confirmed"
-msgstr ""
+msgstr "Potvrđeno"
 
 #. module: point_of_sale
 #: report:pos.invoice:0
 msgid "Cancelled Invoice"
-msgstr ""
+msgstr "Otkazani račun"
 
 #. module: point_of_sale
-#: model:ir.actions.wizard,name:point_of_sale.pos_confirm
-#: wizard_button:pos.sale.get,init,set:0
+#: view:account.bank.statement:0
+#: view:pos.get.sale:0
+#: view:report.cash.register:0
 msgid "Confirm"
 msgstr "Potvrdi"
 
 #. module: point_of_sale
 #: report:pos.payment.report.date:0
 msgid "Sales Lines"
-msgstr ""
+msgstr "Stavke prodaje"
 
 #. module: point_of_sale
 #: constraint:res.company:0
 msgid "Error! You can not create recursive companies."
-msgstr ""
+msgstr "Pogreška! Ne možete kreirati rekurzivne organizacije."
 
 #. module: point_of_sale
 #: field:pos.discount,discount:0
 msgid "Discount "
-msgstr ""
+msgstr "Popust "
 
 #. module: point_of_sale
-#: rml:pos.invoice:0
+#: report:pos.invoice:0
 msgid "Supplier Invoice"
 msgstr "Ulazni račun"
 
 #. module: point_of_sale
-#: code:addons/point_of_sale/pos.py:0
+#: code:addons/point_of_sale/point_of_sale.py:1215
 #, python-format
 msgid "Modify line failed !"
-msgstr ""
+msgstr "Modify line failed !"
 
 #. module: point_of_sale
-#: wizard_field:pos.payment,ask_pay,payment_name:0
+#: field:pos.make.payment,payment_name:0
 msgid "Payment name"
 msgstr "Naziv plaćanja"
 
 #. module: point_of_sale
+#: view:report.pos.order:0
+msgid "Day of order date"
+msgstr "Day of order date"
+
+#. module: point_of_sale
 #: model:ir.ui.menu,name:point_of_sale.menu_point_rep
 msgid "Reporting"
-msgstr "Izvještaji"
+msgstr "Izvještavanje"
 
 #. module: point_of_sale
 #: model:ir.ui.menu,name:point_of_sale.products_for_input_operations
 msgid "Products for Input Operations"
-msgstr ""
+msgstr "Products for Input Operations"
 
 #. module: point_of_sale
 #: model:ir.actions.report.xml,name:point_of_sale.pos_sales_user_today_current_user
 msgid "Today's Sales by Current User"
-msgstr ""
+msgstr "Današnje prodaje po trenutnom korisniku programa"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_pos_box_out
 msgid "Pos Box Out"
-msgstr ""
+msgstr "Pos Box Out"
 
 #. module: point_of_sale
 #: sql_constraint:account.journal:0
 msgid "The code of the journal must be unique per company !"
-msgstr ""
+msgstr "Šifra dnevnika mora biti jedinstvena (za organizaciju) !"
 
 #. module: point_of_sale
-#: model:ir.ui.menu,name:point_of_sale.menu_point_config
+#: model:ir.ui.menu,name:point_of_sale.menu_point_config_product
 msgid "Configuration"
 msgstr "Postava"
 
 #. module: point_of_sale
 #: report:pos.user.product:0
 msgid "Starting Date"
-msgstr ""
+msgstr "Početni datum"
 
 #. module: point_of_sale
 #: field:pos.order,date_validation:0
 #: field:report.pos.order,date_validation:0
 msgid "Validation Date"
-msgstr ""
+msgstr "Validation Date"
 
 #. module: point_of_sale
-#: code:addons/point_of_sale/point_of_sale.py:504
-#: code:addons/point_of_sale/point_of_sale.py:506
+#: view:pos.return:0
+msgid "Refund Without Exchange"
+msgstr "Refund Without Exchange"
+
+#. module: point_of_sale
+#: code:addons/point_of_sale/point_of_sale.py:510
+#: code:addons/point_of_sale/point_of_sale.py:512
 #, python-format
 msgid "You don't have enough access to validate this sale!"
-msgstr ""
+msgstr "Nemate dovoljan nivo prava pristupa za potvrdu ove prodaje!"
+
+#. module: point_of_sale
+#: view:report.pos.order:0
+msgid "POS ordered created during current month"
+msgstr "POS ordered created during current month"
+
+#. module: point_of_sale
+#: view:report.pos.order:0
+msgid "POS ordered created last month"
+msgstr "POS ordered created last month"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_pos_invoice
 msgid "Invoices"
-msgstr ""
+msgstr "Računi"
 
 #. module: point_of_sale
 #: selection:report.cash.register,month:0
 #: selection:report.pos.order,month:0
 msgid "December"
-msgstr ""
+msgstr "Prosinac"
 
 #. module: point_of_sale
 #: view:report.pos.order:0
 #: field:report.pos.order,total_discount:0
 msgid "Total Discount"
-msgstr ""
+msgstr "Total Discount"
 
 #. module: point_of_sale
 #: view:pos.box.out:0
 msgid "Take Money"
-msgstr ""
+msgstr "Take Money"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_pos_details
 #: model:ir.model,name:point_of_sale.model_pos_sales_user_today_current_user
 msgid "Sales Details"
-msgstr ""
+msgstr "Detalji prodaje"
 
 #. module: point_of_sale
 #: field:product.product,am_out:0
 msgid "Control for Output Operations"
-msgstr ""
+msgstr "Control for Output Operations"
 
 #. module: point_of_sale
 #: code:addons/point_of_sale/wizard/pos_close_statement.py:48
 #: code:addons/point_of_sale/wizard/pos_open_statement.py:54
 #, python-format
 msgid "Message"
-msgstr ""
+msgstr "Message"
 
 #. module: point_of_sale
+#: view:account.journal:0
 #: model:ir.actions.act_window,name:point_of_sale.action_pos_order_tree2
 #: model:ir.actions.act_window,name:point_of_sale.action_pos_order_tree3
 #: model:ir.actions.act_window,name:point_of_sale.action_pos_pos_form
+#: model:ir.actions.act_window,name:point_of_sale.action_pos_pos_form_user
 #: model:ir.model,name:point_of_sale.model_pos_order
-#: model:ir.ui.menu,name:point_of_sale.menu_point_ofsale
 #: model:ir.ui.menu,name:point_of_sale.menu_point_root
+#: view:product.product:0
+#: view:res.company:0
 msgid "Point of Sale"
-msgstr ""
+msgstr "Point of Sale"
 
 #. module: point_of_sale
-#: field:pos.order,user_id:0
+#: view:pos.order:0
+#: field:pos.payment.report.date,user_id:0
+#: field:pos.payment.report.user,user_id:0
+#: field:pos.sale.user,user_id:0
+#: field:pos.sales.user.today,user_id:0
+#: view:report.pos.order:0
+#: field:report.pos.order,user_id:0
 msgid "Salesman"
 msgstr "Prodavač"
 
 #. module: point_of_sale
-#: rml:pos.details:0
+#: report:pos.details:0
 #: selection:pos.order,state:0
+#: view:report.pos.order:0
+#: selection:report.pos.order,state:0
 msgid "Invoiced"
 msgstr "Fakturirano"
 
@@ -1896,70 +2120,82 @@ msgstr "Fakturirano"
 #: view:pos.confirm:0
 #: view:pos.open.statement:0
 msgid "No"
-msgstr ""
+msgstr "Ne"
 
 #. module: point_of_sale
 #: field:pos.order.line,notice:0
 msgid "Discount Notice"
-msgstr ""
+msgstr "Napomena popusta"
 
 #. module: point_of_sale
-#: wizard_button:pos.scan_product,init,add:0
+#: view:pos.scan.product:0
 msgid "Add"
 msgstr "Dodaj"
 
 #. module: point_of_sale
-#: selection:pos.order,state:0
+#: view:report.cash.register:0
+#: selection:report.pos.order,state:0
 msgid "Draft"
-msgstr "U pripremi"
+msgstr "Nacrt"
 
 #. module: point_of_sale
 #: view:pos.order.line:0
 msgid "POS Order line"
-msgstr ""
+msgstr "POS Order line"
 
 #. module: point_of_sale
 #: view:pos.open.statement:0
 msgid "Are you sure you want to open the statements ?"
-msgstr ""
+msgstr "Are you sure you want to open the statements ?"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_pos_payment_report_date
 msgid "POS Payment Report according to date"
-msgstr ""
+msgstr "POS Payment Report according to date"
 
 #. module: point_of_sale
-#: rml:pos.invoice:0
+#: report:pos.invoice:0
 msgid "PRO-FORMA"
-msgstr "Predračun"
+msgstr "Pro-forma"
 
 #. module: point_of_sale
-#: code:addons/point_of_sale/pos.py:0
+#: code:addons/point_of_sale/point_of_sale.py:641
 #, python-format
 msgid "Please provide a partner for the sale."
-msgstr ""
+msgstr "Upišite partnera - kupca kojem prodajete."
 
 #. module: point_of_sale
-#: code:addons/point_of_sale/point_of_sale.py:852
+#: code:addons/point_of_sale/point_of_sale.py:857
 #, python-format
-msgid ""
-"There is no receivable account defined for this journal: \"%s\" (id:%d)"
-msgstr ""
+msgid "There is no receivable account defined for this journal: \"%s\" (id:%d)"
+msgstr "There is no receivable account defined for this journal: \"%s\" (id:%d)"
 
 #. module: point_of_sale
 #: field:pos.order,user_salesman_id:0
 msgid "Cashier"
-msgstr ""
+msgstr "Blagajnik"
 
 #. module: point_of_sale
+#: report:account.statement:0
+#: report:all.closed.cashbox.of.the.day:0
+#: view:pos.payment.report.date:0
+#: report:pos.sales.user:0
+#: report:pos.sales.user.today:0
+#: report:pos.sales.user.today.current.user:0
+#: report:pos.user.product:0
+#: view:report.cash.register:0
+#: field:report.cash.register,user_id:0
+#: field:report.sales.by.margin.pos,user_id:0
+#: field:report.sales.by.margin.pos.month,user_id:0
+#: field:report.sales.by.user.pos,user_id:0
+#: field:report.sales.by.user.pos.month,user_id:0
 #: field:report.transaction.pos,user_id:0
 msgid "User"
 msgstr "Korisnik"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_trans_pos_tree
-#: model:ir.actions.act_window,name:point_of_sale.action_trans_pos_tree_month
-#: model:ir.actions.act_window,name:point_of_sale.action_trans_pos_tree_today
+#: model:ir.model,name:point_of_sale.model_report_sales_by_user_pos
 msgid "Sales by user"
 msgstr "Prodaje po korisniku"
 
@@ -1967,163 +2203,188 @@ msgstr "Prodaje po korisniku"
 #: selection:report.cash.register,month:0
 #: selection:report.pos.order,month:0
 msgid "November"
-msgstr ""
+msgstr "Studeni"
 
 #. module: point_of_sale
 #: view:pos.receipt:0
 msgid "Print Receipt"
-msgstr ""
+msgstr "Print Receipt"
 
 #. module: point_of_sale
 #: selection:report.cash.register,month:0
 #: selection:report.pos.order,month:0
 msgid "January"
-msgstr ""
+msgstr "Siječanj"
 
 #. module: point_of_sale
 #: view:pos.order.line:0
 msgid "POS Orders lines"
-msgstr ""
+msgstr "POS Orders lines"
 
 #. module: point_of_sale
-#: code:addons/point_of_sale/pos.py:0
+#: code:addons/point_of_sale/point_of_sale.py:340
+#: code:addons/point_of_sale/point_of_sale.py:510
+#: code:addons/point_of_sale/point_of_sale.py:512
+#: code:addons/point_of_sale/point_of_sale.py:550
+#: code:addons/point_of_sale/point_of_sale.py:641
+#: code:addons/point_of_sale/point_of_sale.py:1207
+#: code:addons/point_of_sale/point_of_sale.py:1215
 #, python-format
 msgid "Error"
-msgstr ""
+msgstr "Greška"
 
 #. module: point_of_sale
 #: field:report.transaction.pos,journal_id:0
 msgid "Sales Journal"
-msgstr ""
+msgstr "Dnevnik prodaje"
 
 #. module: point_of_sale
-#: rml:pos.invoice:0
+#: report:pos.invoice:0
 msgid "Refund"
-msgstr "Povrat"
+msgstr "Povrat novca"
 
 #. module: point_of_sale
-#: code:addons/point_of_sale/report/pos_invoice.py:0
+#: field:pos.order.line,prodlot_id:0
+msgid "Production Lot"
+msgstr "Lot proizvodnje"
+
+#. module: point_of_sale
+#: code:addons/point_of_sale/report/pos_invoice.py:46
 #, python-format
 msgid "Please create an invoice for this sale."
-msgstr ""
+msgstr "Kreirajte račun za ovu prodaju."
 
 #. module: point_of_sale
 #: report:pos.sales.user:0
 #: report:pos.sales.user.today:0
 #: field:report.pos.order,date:0
 msgid "Date Order"
-msgstr ""
+msgstr "Date Order"
 
 #. module: point_of_sale
 #: model:ir.ui.menu,name:point_of_sale.menu_close_statement
 msgid "Close Cash Registers"
-msgstr ""
+msgstr "Close Cash Registers"
 
 #. module: point_of_sale
 #: report:pos.details:0
 #: report:pos.payment.report.date:0
 #: report:pos.payment.report.user:0
 msgid "Disc(%)"
-msgstr ""
+msgstr "Pop(%)"
 
 #. module: point_of_sale
-#: view:pos.order:0
+#: view:all.closed.cashbox.of.the.day:0
+#: view:pos.details:0
+#: view:pos.discount:0
+#: view:pos.payment.report:0
+#: view:pos.payment.report.date:0
+#: view:pos.payment.report.user:0
+#: view:pos.sale.user:0
+#: view:pos.sales.user.today:0
+#: view:pos.sales.user.today.current_user:0
+#: view:pos.scan.product:0
 msgid "Close"
-msgstr ""
+msgstr "Zatvori"
 
 #. module: point_of_sale
 #: view:pos.order:0
 msgid "Order lines"
-msgstr ""
+msgstr "Order lines"
+
+#. module: point_of_sale
+#: field:pos.return,pos_moves_ids:0
+msgid "Moves"
+msgstr "Temeljnice"
 
 #. module: point_of_sale
 #: field:pos.order.line,price_subtotal:0
 msgid "Subtotal w/o Tax"
-msgstr ""
+msgstr "Subtotal w/o Tax"
 
 #. module: point_of_sale
 #: view:pos.order:0
 msgid "Add product"
-msgstr ""
+msgstr "Dodaj proizvod"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_report_pos_payment
 msgid "Pyament Report"
-msgstr ""
+msgstr "Izvještaj blagajne"
 
 #. module: point_of_sale
 #: field:report.transaction.pos,jl_id:0
 msgid "Cash Journals"
-msgstr ""
+msgstr "Cash Journals"
 
 #. module: point_of_sale
 #: view:pos.details:0
 msgid "POS Details :"
-msgstr ""
+msgstr "POS Detalji :"
 
 #. module: point_of_sale
 #: report:pos.sales.user.today:0
 msgid "Today's Sales By User"
-msgstr ""
+msgstr "Današnje prodaje po korisniku"
 
 #. module: point_of_sale
 #: view:pos.box.entries:0
 #: view:pos.box.out:0
 msgid "Please fill these fields for entries to the box:"
-msgstr ""
+msgstr "Please fill these fields for entries to the box:"
 
 #. module: point_of_sale
-#: code:addons/point_of_sale/wizard/pos_box_out.py:99
+#: code:addons/point_of_sale/wizard/pos_box_out.py:98
 #, python-format
 msgid "please check that account is set to %s"
-msgstr ""
+msgstr "please check that account is set to %s"
 
 #. module: point_of_sale
+#: field:pos.box.entries,name:0
+#: field:pos.box.out,name:0
 #: field:pos.config.journal,name:0
-#: rml:pos.invoice:0
-#: rml:pos.lines:0
-#: field:pos.payment,name:0
-#: rml:pos.receipt:0
+#: report:pos.invoice:0
+#: report:pos.lines:0
 msgid "Description"
-msgstr ""
+msgstr "Opis"
 
 #. module: point_of_sale
 #: selection:report.cash.register,month:0
 #: selection:report.pos.order,month:0
 msgid "May"
-msgstr ""
+msgstr "Svibanj"
 
 #. module: point_of_sale
 #: report:pos.lines:0
 msgid "Sales lines"
-msgstr ""
+msgstr "Stavke prodaje"
 
 #. module: point_of_sale
 #: field:pos.order,note:0
 msgid "Internal Notes"
-msgstr ""
+msgstr "Interne bilješke"
 
 #. module: point_of_sale
 #: view:pos.add.product:0
 msgid "Save & Close"
-msgstr ""
+msgstr "Save & Close"
 
 #. module: point_of_sale
 #: view:pos.order:0
 msgid "Running"
-msgstr ""
+msgstr "Izvodi se"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_report_all_closed_cashbox_of_the_day
 msgid "All Cashboxes Of the day"
-msgstr ""
+msgstr "Sve današnje blagajne"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_report_pos_order_all
 #: model:ir.ui.menu,name:point_of_sale.menu_report_pos_order_all
 #: view:report.pos.order:0
 msgid "Point of Sale Analysis"
-msgstr ""
+msgstr "Analiza maloprodaje (POS-a)"
 
 #. module: point_of_sale
 #: field:pos.make.payment,partner_id:0
@@ -2131,7 +2392,7 @@ msgstr ""
 #: field:pos.order,partner_id:0
 #: view:report.pos.order:0
 msgid "Customer"
-msgstr ""
+msgstr "Kupac"
 
 #. module: point_of_sale
 #: field:pos.make.payment,is_acc:0
@@ -2139,82 +2400,87 @@ msgstr ""
 #: selection:pos.order,state:0
 #: selection:report.pos.order,state:0
 msgid "Advance"
-msgstr ""
+msgstr "Advance"
 
 #. module: point_of_sale
 #: selection:report.cash.register,month:0
 #: selection:report.pos.order,month:0
 msgid "February"
-msgstr ""
+msgstr "Veljača"
 
 #. module: point_of_sale
 #: view:report.cash.register:0
 msgid "    Today    "
-msgstr ""
+msgstr "    Danas    "
 
 #. module: point_of_sale
-#: code:addons/point_of_sale/wizard/pos_box_out.py:95
+#: code:addons/point_of_sale/wizard/pos_box_out.py:94
 #, python-format
-msgid ""
-"The maximum value you can still withdraw is exceeded. \n"
+msgid "The maximum value you can still withdraw is exceeded. \n"
 " Remaining value is equal to %d "
-msgstr ""
+msgstr "The maximum value you can still withdraw is exceeded. \n"
+" Remaining value is equal to %d "
 
 #. module: point_of_sale
 #: field:pos.order,remboursed:0
 msgid "Remboursed"
-msgstr ""
+msgstr "Remboursed"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_pos_order_tree_open
 msgid "Opened Sales"
-msgstr ""
+msgstr "Opened Sales"
 
 #. module: point_of_sale
 #: selection:report.cash.register,month:0
 #: selection:report.pos.order,month:0
 msgid "April"
-msgstr ""
+msgstr "Travanj"
 
 #. module: point_of_sale
-#: view:pos.order:0
+#: field:pos.order,statement_ids:0
 msgid "Payments"
-msgstr ""
+msgstr "Plaćanja"
 
 #. module: point_of_sale
-#: rml:pos.lines:0
-msgid "Print Date"
-msgstr ""
+#: report:pos.invoice:0
+msgid "Supplier Refund"
+msgstr "Povrat URA"
 
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_report_sales_by_margin_pos_month
 msgid "Sales by User Monthly margin"
-msgstr ""
+msgstr "Sales by User Monthly margin"
 
 #. module: point_of_sale
 #: view:pos.order:0
 msgid "Search Sales Order"
-msgstr ""
+msgstr "Traži prodajne naloge"
 
 #. module: point_of_sale
 #: field:pos.order,account_move:0
 msgid "Account Entry"
-msgstr ""
+msgstr "Temeljnica"
 
 #. module: point_of_sale
 #: code:addons/point_of_sale/wizard/pos_add_product.py:84
-#: code:addons/point_of_sale/wizard/pos_return.py:407
+#: code:addons/point_of_sale/wizard/pos_return.py:331
 #: view:pos.make.payment:0
 #: view:pos.order:0
 #, python-format
 msgid "Make Payment"
-msgstr ""
+msgstr "Plaćanje"
 
 #. module: point_of_sale
 #: model:ir.model,name:point_of_sale.model_pos_sales_user_today
 #: view:pos.sales.user.today:0
 msgid "Sales User Today"
-msgstr ""
+msgstr "Prodaja po korisniku"
+
+#. module: point_of_sale
+#: view:report.pos.order:0
+msgid "Month of order date"
+msgstr "Month of order date"
 
 #. module: point_of_sale
 #: view:report.cash.register:0
@@ -2222,82 +2488,5 @@ msgstr ""
 #: view:report.pos.order:0
 #: field:report.pos.order,year:0
 msgid "Year"
-msgstr ""
+msgstr "Godina"
 
-#~ msgid "Discount :"
-#~ msgstr "Popust"
-
-#~ msgid ","
-#~ msgstr ","
-
-#~ msgid "Orders of the day"
-#~ msgstr "Današnje narudžbe"
-
-#~ msgid "This is the logged in user (not necessarily the salesman)."
-#~ msgstr "Ovo je prijavljeni korisnik (ne nužno i prodavač)"
-
-#~ msgid "Tel : + 32 (0) 2 231 04 35"
-#~ msgstr "+ 32 (0) 2 231 04 35"
-
-#~ msgid "Ok"
-#~ msgstr "U redu"
-
-#~ msgid "Refund Orders"
-#~ msgstr "Storno"
-
-#~ msgid "Logged in User"
-#~ msgstr "Prijavljeni korisnik"
-
-#~ msgid "VAT(%)"
-#~ msgstr "PDV(%)"
-
-#~ msgid "Disc"
-#~ msgstr "Popust"
-
-#~ msgid "Date :"
-#~ msgstr "Datum :"
-
-#~ msgid "Order Payments"
-#~ msgstr "Plaćanja"
-
-#~ msgid "Invalid XML for View Architecture!"
-#~ msgstr "Neispravan XML za arhitekturu prikaza!"
-
-#~ msgid "POS Lines of the day"
-#~ msgstr "Dnevna prodaja blagajne"
-
-#~ msgid "Add products"
-#~ msgstr "Dodaj proizvode"
-
-#~ msgid "E-mail :"
-#~ msgstr "E-mail :"
-
-#~ msgid "Discount"
-#~ msgstr "Popust"
-
-#~ msgid "Payment Name"
-#~ msgstr "Naziv plaćanja"
-
-#~ msgid "Sales of the day"
-#~ msgstr "Dnevna prodaja"
-
-#~ msgid "Period:"
-#~ msgstr "Razdoblje:"
-
-#~ msgid "All the sales"
-#~ msgstr "Sve prodaje"
-
-#~ msgid "Compute"
-#~ msgstr "Izračunaj"
-
-#~ msgid ":"
-#~ msgstr ":"
-
-#~ msgid "Mode of payment"
-#~ msgstr "Način plaćanja"
-
-#~ msgid "Refund order :"
-#~ msgstr "Povrat:"
-
-#~ msgid "Discount percentage"
-#~ msgstr "Postotak popusta"

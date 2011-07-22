@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<racunski-plan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="RRIF-RP2011.XSD">
+  <racun>
+    <kljuc>5</kljuc>
+    <naziv>MJESTA I NOSITELJI TROŠKOVA (B. u djelatnosti trgovine)</naziv>
+  </racun>
+  <racun>
+    <kljuc>50</kljuc>
+    <naziv>TROŠKOVI UPRAVE I ADMINISTRACIJA</naziv>
+  </racun>
+  <racun>
+    <kljuc>500</kljuc>
+    <naziv>Materijal u troškovima uprave i administracije</naziv>
+  </racun>
+  <racun>
+    <kljuc>501</kljuc>
+    <naziv>Plaće u troškovima uprave i prodaje</naziv>
+  </racun>
+  <racun>
+    <kljuc>502</kljuc>
+    <naziv>Amortizacija u troškovima uprave i administracije</naziv>
+  </racun>
+  <racun>
+    <kljuc>503</kljuc>
+    <naziv>Drugi troškovi uprave i prodaje (Razrada npr. dnevnica, osiguranje, bankovni troškovi, reprezentacija itd.)</naziv>
+  </racun>
+  <racun>
+    <kljuc>51</kljuc>
+    <naziv>TROŠKOVI PRODAJE</naziv>
+  </racun>
+  <racun>
+    <kljuc>510</kljuc>
+    <naziv>Materijal u troškovima prodaje</naziv>
+  </racun>
+  <racun>
+    <kljuc>511</kljuc>
+    <naziv>Plaće u troškovima prodaje</naziv>
+  </racun>
+  <racun>
+    <kljuc>512</kljuc>
+    <naziv>Amortizacija u troškovima prodaje</naziv>
+  </racun>
+  <racun>
+    <kljuc>513</kljuc>
+    <naziv>Drugi troškovi prodaje (Razrada npr. otpreme pošiljaka, fakturiranje, propaganda, naplata ambalaža, omotni papir, troškovi izvoza, troškovi posredništva itd.)</naziv>
+  </racun>
+  <racun>
+    <kljuc>59</kljuc>
+    <naziv>RASPORED TROŠKOVA</naziv>
+  </racun>
+  <racun>
+    <kljuc>590</kljuc>
+    <naziv>Raspored troškova na zalihe proizvodnje i usluga</naziv>
+  </racun>
+  <racun>
+    <kljuc>591</kljuc>
+    <naziv>Raspored troškova u rashode na teret prihoda</naziv>
+  </racun>
+  <racun>
+    <kljuc>5910</kljuc>
+    <naziv>Raspored troškova uprave i administracije</naziv>
+  </racun>
+  <racun>
+    <kljuc>5911</kljuc>
+    <naziv>Raspored troškova uprave</naziv>
+  </racun>
+</racunski-plan>

@@ -1,0 +1,68 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* mgmtsystem_nonconformity_project
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mgmtsystem_nonconformity_project
+#: model:ir.module.module,shortdesc:mgmtsystem_nonconformity_project.module_meta_information
+msgid "Management System - Project"
+msgstr "Management System - Project"
+
+#. module: mgmtsystem_nonconformity_project
+#: selection:mgmtsystem.nonconformity,corrective_type:0
+#: selection:mgmtsystem.nonconformity,preventive_type:0
+msgid "Task"
+msgstr "Task"
+
+#. module: mgmtsystem_nonconformity_project
+#: model:ir.module.module,description:mgmtsystem_nonconformity_project.module_meta_information
+msgid "\n"
+"	This module enables you to set a project as an action in the nonconformity.\n"
+"    "
+msgstr "\n"
+"	This module enables you to set a project as an action in the nonconformity.\n"
+"    "
+
+#. module: mgmtsystem_nonconformity_project
+#: field:mgmtsystem.nonconformity,corrective_type:0
+msgid "Corrective Action Type"
+msgstr "Vrsta korektivne akcije"
+
+#. module: mgmtsystem_nonconformity_project
+#: model:ir.model,name:mgmtsystem_nonconformity_project.model_mgmtsystem_nonconformity
+msgid "Nonconformity of the management system"
+msgstr "Nesukladnost sistema upravljanja"
+
+#. module: mgmtsystem_nonconformity_project
+#: selection:mgmtsystem.nonconformity,corrective_type:0
+#: selection:mgmtsystem.nonconformity,preventive_type:0
+msgid "Project"
+msgstr "Projekt"
+
+#. module: mgmtsystem_nonconformity_project
+#: field:mgmtsystem.nonconformity,preventive_project_id:0
+msgid "Preventive Project"
+msgstr "Preventive Project"
+
+#. module: mgmtsystem_nonconformity_project
+#: field:mgmtsystem.nonconformity,corrective_project_id:0
+msgid "Corrective Project"
+msgstr "Projekt korekcije"
+
+#. module: mgmtsystem_nonconformity_project
+#: field:mgmtsystem.nonconformity,preventive_type:0
+msgid "Preventive Action Type"
+msgstr "Preventive Action Type"
+

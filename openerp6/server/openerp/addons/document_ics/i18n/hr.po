@@ -4,29 +4,26 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenERP Server 6.0dev\n"
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
 "Report-Msgid-Bugs-To: support@openerp.com\n"
-"POT-Creation-Date: 2011-01-11 11:15+0000\n"
-"PO-Revision-Date: 2010-08-03 03:48+0000\n"
-"Last-Translator: Mantavya Gajjar (Open ERP) <Unknown>\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-04-29 05:35+0000\n"
-"X-Generator: Launchpad (build 12758)\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
 
 #. module: document_ics
 #: help:document.ics.crm.wizard,claims:0
-msgid ""
-"Manages the supplier and customers claims,including your corrective or "
-"preventive actions."
-msgstr ""
+msgid "Manages the supplier and customers claims,including your corrective or preventive actions."
+msgstr "Manages the supplier and customers claims,including your corrective or preventive actions."
 
 #. module: document_ics
 #: field:document.directory.content,object_id:0
 msgid "Object"
-msgstr "Objekt"
+msgstr "Object"
 
 #. module: document_ics
 #: selection:document.directory.ics.fields,name:0
@@ -35,11 +32,8 @@ msgstr "uid"
 
 #. module: document_ics
 #: help:document.ics.crm.wizard,fund:0
-msgid ""
-"This may help associations in their fund raising process and tracking."
-msgstr ""
-"Ovo može pomoći udrugama u procesu prikupljanja i praćenja sredstava za "
-"financiranje."
+msgid "This may help associations in their fund raising process and tracking."
+msgstr "Ovo može pomoći udrugama u procesu prikupljanja i praćenja sredstava za financiranje."
 
 #. module: document_ics
 #: field:document.ics.crm.wizard,jobs:0
@@ -57,21 +51,14 @@ msgid "Helpdesk"
 msgstr "Helpdesk"
 
 #. module: document_ics
-#: selection:document.directory.ics.fields,fn:0
-msgid "Interval in hours"
-msgstr ""
-
-#. module: document_ics
 #: selection:document.directory.ics.fields,name:0
 msgid "dtstamp"
 msgstr "dtstamp"
 
 #. module: document_ics
 #: help:document.directory.content,fname_field:0
-msgid ""
-"The field of the                         object used in the filename. Has to "
-"be a unique identifier."
-msgstr ""
+msgid "The field of the                         object used in the filename. Has to be a unique identifier."
+msgstr "The field of the                         object used in the filename. Has to be a unique identifier."
 
 #. module: document_ics
 #: field:document.directory.ics.fields,content_id:0
@@ -85,14 +72,13 @@ msgstr "Kalendar sastanaka"
 
 #. module: document_ics
 #: view:document.ics.crm.wizard:0
-msgid ""
-"OpenERP can create and pre-configure a series of integrated calendar for you."
-msgstr ""
+msgid "OpenERP can create and pre-configure a series of integrated calendar for you."
+msgstr "OpenERP can create and pre-configure a series of integrated calendar for you."
 
 #. module: document_ics
 #: help:document.ics.crm.wizard,helpdesk:0
 msgid "Manages an Helpdesk service."
-msgstr "Upravlja helpdesk uslugom"
+msgstr "Upravlja uslugom korisničke podrške"
 
 #. module: document_ics
 #: selection:document.directory.ics.fields,name:0
@@ -107,14 +93,12 @@ msgstr "sažetak"
 #. module: document_ics
 #: model:ir.model,name:document_ics.model_crm_meeting
 msgid "Meeting"
-msgstr ""
+msgstr "Sastanak"
 
 #. module: document_ics
 #: help:document.ics.crm.wizard,lead:0
-msgid ""
-"Allows you to track and manage leads which are pre-sales requests or "
-"contacts, the very first contact with a customer request."
-msgstr ""
+msgid "Allows you to track and manage leads which are pre-sales requests or contacts, the very first contact with a customer request."
+msgstr "Allows you to track and manage leads which are pre-sales requests or contacts, the very first contact with a customer request."
 
 #. module: document_ics
 #: selection:document.directory.ics.fields,name:0
@@ -124,7 +108,7 @@ msgstr "opis"
 #. module: document_ics
 #: field:document.directory.ics.fields,fn:0
 msgid "Function"
-msgstr ""
+msgstr "Funkcija"
 
 #. module: document_ics
 #: model:ir.actions.act_window,name:document_ics.action_view_document_ics_config_directories
@@ -139,34 +123,32 @@ msgstr "Prati prepoznate poslovne prilike za vaš prodajni cjevovod."
 #. module: document_ics
 #: field:document.ics.crm.wizard,progress:0
 msgid "Configuration Progress"
-msgstr ""
+msgstr "Napredak konfiguracije"
 
 #. module: document_ics
 #: help:document.ics.crm.wizard,jobs:0
-msgid ""
-"Helps you to organise the jobs hiring process: evaluation, meetings, email "
-"integration..."
-msgstr ""
+msgid "Helps you to organise the jobs hiring process: evaluation, meetings, email integration..."
+msgstr "Helps you to organise the jobs hiring process: evaluation, meetings, email integration..."
 
 #. module: document_ics
 #: view:document.ics.crm.wizard:0
 msgid "title"
-msgstr ""
+msgstr "naslov"
 
 #. module: document_ics
 #: field:document.ics.crm.wizard,fund:0
 msgid "Fund Raising Operations"
-msgstr "Operacije za skupljanje sredstava"
+msgstr "Fund Raising Operations"
 
 #. module: document_ics
 #: model:ir.model,name:document_ics.model_document_directory_content
 msgid "Directory Content"
-msgstr ""
+msgstr "Sadržaj mape"
 
 #. module: document_ics
 #: model:ir.model,name:document_ics.model_document_directory_ics_fields
 msgid "Document Directory ICS Fields"
-msgstr ""
+msgstr "Document Directory ICS Fields"
 
 #. module: document_ics
 #: model:ir.module.module,shortdesc:document_ics.module_meta_information
@@ -175,22 +157,18 @@ msgstr "Podrška za iCal temeljem sustava za upravljanje dokumentima."
 
 #. module: document_ics
 #: help:document.ics.crm.wizard,phonecall:0
-msgid ""
-"Helps you to encode the result of a phone call or to plan a list of phone "
-"calls to process."
-msgstr ""
+msgid "Helps you to encode the result of a phone call or to plan a list of phone calls to process."
+msgstr "Helps you to encode the result of a phone call or to plan a list of phone calls to process."
 
 #. module: document_ics
 #: help:document.ics.crm.wizard,document_ics:0
-msgid ""
-" Will allow you to synchronise your Open ERP calendars with your phone, "
-"outlook, Sunbird, ical, ..."
-msgstr ""
+msgid " Will allow you to synchronise your Open ERP calendars with your phone, outlook, Sunbird, ical, ..."
+msgstr " Will allow you to synchronise your Open ERP calendars with your phone, outlook, Sunbird, ical, ..."
 
 #. module: document_ics
 #: field:document.directory.ics.fields,field_id:0
 msgid "OpenERP Field"
-msgstr ""
+msgstr "OpenERP Field"
 
 #. module: document_ics
 #: view:document.directory:0
@@ -205,7 +183,22 @@ msgstr "ICS vrijednost"
 #. module: document_ics
 #: selection:document.directory.ics.fields,fn:0
 msgid "Expression as constant"
-msgstr ""
+msgstr "Expression as constant"
+
+#. module: document_ics
+#: model:ir.module.module,description:document_ics.module_meta_information
+msgid "\n"
+"Allows to synchronise calendars with others applications.\n"
+"=========================================================\n"
+"\n"
+"Will allow you to synchronise your OpenERP calendars with your phone, outlook, Sunbird, ical, ...\n"
+"    "
+msgstr "\n"
+"Allows to synchronise calendars with others applications.\n"
+"=========================================================\n"
+"\n"
+"Will allow you to synchronise your OpenERP calendars with your phone, outlook, Sunbird, ical, ...\n"
+"    "
 
 #. module: document_ics
 #: selection:document.directory.ics.fields,name:0
@@ -225,7 +218,7 @@ msgstr "Naziv"
 #. module: document_ics
 #: help:document.directory.ics.fields,fn:0
 msgid "Alternate method                 of calculating the value"
-msgstr ""
+msgstr "Alternate method                 of calculating the value"
 
 #. module: document_ics
 #: help:document.ics.crm.wizard,meeting:0
@@ -240,7 +233,7 @@ msgstr "Domena"
 #. module: document_ics
 #: help:document.ics.crm.wizard,bugs:0
 msgid "Used by companies to track bugs and support requests on software"
-msgstr ""
+msgstr "Used by companies to track bugs and support requests on software"
 
 #. module: document_ics
 #: selection:document.directory.ics.fields,name:0
@@ -260,7 +253,7 @@ msgstr "Dijeljeni kalendar"
 #. module: document_ics
 #: field:document.ics.crm.wizard,claims:0
 msgid "Claims"
-msgstr "Pritužbe"
+msgstr "Prigovori"
 
 #. module: document_ics
 #: selection:document.directory.ics.fields,name:0
@@ -270,12 +263,12 @@ msgstr "dtstart"
 #. module: document_ics
 #: field:document.directory.ics.fields,expr:0
 msgid "Expression"
-msgstr ""
+msgstr "Expression"
 
 #. module: document_ics
 #: field:document.ics.crm.wizard,bugs:0
 msgid "Bug Tracking"
-msgstr "Praćenje pogrešaka"
+msgstr "Bug Tracking"
 
 #. module: document_ics
 #: selection:document.directory.ics.fields,name:0
@@ -285,27 +278,27 @@ msgstr "kategorije"
 #. module: document_ics
 #: view:document.ics.crm.wizard:0
 msgid "Configure"
-msgstr ""
+msgstr "Postavke"
 
 #. module: document_ics
 #: selection:document.directory.ics.fields,fn:0
 msgid "Use the field"
-msgstr ""
+msgstr "Use the field"
 
 #. module: document_ics
 #: view:document.ics.crm.wizard:0
 msgid "Create Pre-Configured Calendars"
-msgstr "Napravi predkonfigurirani kalendar"
+msgstr "Napravi pre-konfigurirani kalendar"
 
 #. module: document_ics
 #: field:document.directory.content,fname_field:0
 msgid "Filename field"
-msgstr ""
+msgstr "Filename field"
 
 #. module: document_ics
 #: field:document.directory.content,obj_iterate:0
 msgid "Iterate object"
-msgstr ""
+msgstr "Iterate object"
 
 #. module: document_ics
 #: field:crm.meeting,code:0
@@ -313,14 +306,14 @@ msgid "Calendar Code"
 msgstr "Šifra kalendara"
 
 #. module: document_ics
-#: model:ir.module.module,description:document_ics.module_meta_information
-msgid "Allows to synchronise calendars with others applications."
-msgstr "Omogući sinkronizaciju kalendara s drugim aplikacijama"
+#: selection:document.directory.ics.fields,fn:0
+msgid "Interval in hours"
+msgstr "Interval u satima"
 
 #. module: document_ics
 #: field:document.ics.crm.wizard,config_logo:0
 msgid "Image"
-msgstr ""
+msgstr "Slika"
 
 #. module: document_ics
 #: selection:document.directory.ics.fields,name:0
@@ -329,20 +322,18 @@ msgstr "kreiran"
 
 #. module: document_ics
 #: help:document.directory.content,obj_iterate:0
-msgid ""
-"If set, a separate                         instance will be created for each "
-"record of Object"
-msgstr ""
+msgid "If set, a separate                         instance will be created for each record of Object"
+msgstr "If set, a separate                         instance will be created for each record of Object"
 
 #. module: document_ics
 #: view:document.ics.crm.wizard:0
 msgid "res_config_contents"
-msgstr ""
+msgstr "res_config_contents"
 
 #. module: document_ics
 #: field:document.ics.crm.wizard,lead:0
 msgid "Leads"
-msgstr ""
+msgstr "Potencijalni kontakti"
 
 #. module: document_ics
 #: model:ir.model,name:document_ics.model_document_ics_crm_wizard
@@ -374,76 +365,3 @@ msgstr "url"
 msgid "Business Opportunities"
 msgstr "Poslovne prilike"
 
-#~ msgid "Invalid XML for View Architecture!"
-#~ msgstr "Nevažeći XML za Arhitekturu Prikaza!"
-
-#~ msgid "Next"
-#~ msgstr "Dalje"
-
-#~ msgid "Error! You can not create recursive Directories."
-#~ msgstr "Pogreška! Ne možete stvarati rekurzivne mape."
-
-#~ msgid "Open ERP Field"
-#~ msgstr "Open ERP polje"
-
-#~ msgid ""
-#~ "The Object name must start with x_ and not contain any special character !"
-#~ msgstr ""
-#~ "Naziv objekta mora počinjati sa x_ i ne smije sadržavati specijalne znakove!"
-
-#~ msgid ""
-#~ "This Configuration step use to create Calendars in document for all Case "
-#~ "Sections"
-#~ msgstr ""
-#~ "Ovaj korak postavki koristi se za stvaranje kalendara u dokumentima ze sve "
-#~ "slučaj sekcije"
-
-#~ msgid "Used by companies to track bugs and support requests on softwares"
-#~ msgstr ""
-#~ "Korišten od tvrtki za praćenje pogrešaka i zahtjeva za podrškom na programima"
-
-#~ msgid "Invalid model name in the action definition."
-#~ msgstr "Nevažeće ime modela u definiciji akcije."
-
-#~ msgid ""
-#~ "Help you to organise the jobs hiring process: evaluation, meetings, email "
-#~ "integration..."
-#~ msgstr ""
-#~ "Pomaže vam organizirati proces zapošljavanja: procjena, sastanci, "
-#~ "integracija elektroničke pošte..."
-
-#~ msgid "Error ! You cannot create recursive sections."
-#~ msgstr "Pogreška ! Ne možete stvarati rekurzivne sekcije."
-
-#~ msgid ""
-#~ "Allows you to track and manage prospects which are pre-sales requests or "
-#~ "contacts, the very first contact with a customer request."
-#~ msgstr ""
-#~ "Omogućava vam da pratite i upravljate prilikama koje uključuju predprodajne "
-#~ "upite ili kontakte, prvi kontakt s upitom korisnika."
-
-#~ msgid ""
-#~ "Manages the supplier and customers claims, including your corrective or "
-#~ "preventive actions."
-#~ msgstr ""
-#~ "Upravlja pritužbama dobavljača i kupaca, uključujući korektivne ili "
-#~ "preventivne akcije."
-
-#~ msgid "Duration(In Hour)"
-#~ msgstr "Trajanje (u satima)"
-
-#~ msgid ""
-#~ "Help you to encode the result of a phone call or to planify a list of phone "
-#~ "calls to process."
-#~ msgstr ""
-#~ "Pomaže vam unijeti rezultate telefonskog poziva ili planirati popis poziva "
-#~ "za obradu."
-
-#~ msgid "Prospect"
-#~ msgstr "Prilika"
-
-#~ msgid "Cancel"
-#~ msgstr "Odustani"
-
-#~ msgid "document.directory.ics.fields"
-#~ msgstr "document.directory.ics.fields"

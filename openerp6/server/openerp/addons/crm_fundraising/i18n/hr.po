@@ -1,0 +1,829 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* crm_fundraising
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Current Funds"
+msgstr "Current Funds"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,planned_revenue:0
+msgid "Planned Revenue"
+msgstr "Planirani prihod"
+
+#. module: crm_fundraising
+#: field:crm.fundraising.report,nbr:0
+msgid "# of Cases"
+msgstr "# Slučaja"
+
+#. module: crm_fundraising
+#: selection:crm.fundraising,state:0
+#: selection:crm.fundraising.report,state:0
+msgid "Cancelled"
+msgstr "Otkazani"
+
+#. module: crm_fundraising
+#: field:crm.fundraising.report,probability:0
+msgid "Avg. Probability"
+msgstr "Avg. Probability"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Funds Form"
+msgstr "Funds Form"
+
+#. module: crm_fundraising
+#: field:crm.fundraising.report,delay_close:0
+msgid "Delay to close"
+msgstr "Delay to close"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,company_id:0
+#: view:crm.fundraising.report:0
+#: field:crm.fundraising.report,company_id:0
+msgid "Company"
+msgstr "Organizacija"
+
+#. module: crm_fundraising
+#: model:ir.actions.act_window,name:crm_fundraising.crm_fund_categ_action
+msgid "Fundraising Categories"
+msgstr "Fundraising Categories"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,email_cc:0
+msgid "Watchers Emails"
+msgstr "Email nadglednika"
+
+#. module: crm_fundraising
+#: view:crm.fundraising.report:0
+msgid "Cases"
+msgstr "Slučajevi"
+
+#. module: crm_fundraising
+#: selection:crm.fundraising,priority:0
+msgid "Highest"
+msgstr "Najviši"
+
+#. module: crm_fundraising
+#: view:crm.fundraising.report:0
+#: field:crm.fundraising.report,day:0
+msgid "Day"
+msgstr "Dan"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Add Internal Note"
+msgstr "Dodaj internu bilješku"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,partner_mobile:0
+msgid "Mobile"
+msgstr "Mobilni"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Notes"
+msgstr "Bilješke"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,message_ids:0
+msgid "Messages"
+msgstr "Messages"
+
+#. module: crm_fundraising
+#: view:crm.fundraising.report:0
+msgid "My company"
+msgstr "Moja organizacija"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Amount"
+msgstr "Iznos"
+
+#. module: crm_fundraising
+#: model:crm.case.categ,name:crm_fundraising.categ_fund4
+msgid "Arts And Culture"
+msgstr "Arts And Culture"
+
+#. module: crm_fundraising
+#: view:crm.fundraising.report:0
+#: field:crm.fundraising.report,amount_revenue:0
+msgid "Est.Revenue"
+msgstr "Est.Revenue"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Open Funds"
+msgstr "Open Funds"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,partner_address_id:0
+msgid "Partner Contact"
+msgstr "Osoba kod partnera"
+
+#. module: crm_fundraising
+#: view:crm.fundraising.report:0
+msgid "   Month   "
+msgstr "   Mjesec   "
+
+#. module: crm_fundraising
+#: field:crm.fundraising,type_id:0
+msgid "Campaign"
+msgstr "Kampanja"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+#: view:crm.fundraising.report:0
+msgid "Group By..."
+msgstr "Grupiraj po..."
+
+#. module: crm_fundraising
+#: field:crm.fundraising,date_action_next:0
+msgid "Next Action"
+msgstr "Siljedeća akcija"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Reset to Draft"
+msgstr "Vrati u nacrt"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Extra Info"
+msgstr "Dodatni podaci"
+
+#. module: crm_fundraising
+#: model:ir.model,name:crm_fundraising.model_crm_fundraising
+#: model:ir.ui.menu,name:crm_fundraising.menu_config_fundrising
+#: model:ir.ui.menu,name:crm_fundraising.menu_crm_case_fund_raise
+msgid "Fund Raising"
+msgstr "Prikupljanje sredstava"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+#: field:crm.fundraising,partner_id:0
+#: field:crm.fundraising.report,partner_id:0
+msgid "Partner"
+msgstr "Partner"
+
+#. module: crm_fundraising
+#: view:crm.fundraising.report:0
+msgid "Funds raised in current year"
+msgstr "Funds raised in current year"
+
+#. module: crm_fundraising
+#: model:ir.actions.act_window,name:crm_fundraising.action_report_crm_fundraising
+#: model:ir.ui.menu,name:crm_fundraising.menu_report_crm_fundraising_tree
+msgid "Fundraising Analysis"
+msgstr "Fundraising Analysis"
+
+#. module: crm_fundraising
+#: model:ir.module.module,shortdesc:crm_fundraising.module_meta_information
+msgid "CRM Fundraising"
+msgstr "CRM Fundraising"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Misc"
+msgstr "Ostalo"
+
+#. module: crm_fundraising
+#: field:crm.fundraising.report,section_id:0
+msgid "Section"
+msgstr "Grupa"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+#: field:crm.fundraising,priority:0
+msgid "Priority"
+msgstr "Prioritet"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Send New Email"
+msgstr "Pošalji novi e-mail"
+
+#. module: crm_fundraising
+#: model:crm.case.categ,name:crm_fundraising.categ_fund1
+msgid "Social Rehabilitation And Rural Upliftment"
+msgstr "Social Rehabilitation And Rural Upliftment"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Pending Funds"
+msgstr "Pending Funds"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+#: view:crm.fundraising.report:0
+msgid "Payment Mode"
+msgstr "Način plaćanja"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Reply"
+msgstr "Odgovor"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,email_from:0
+msgid "Email"
+msgstr "E-mail"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,canal_id:0
+msgid "Channel"
+msgstr "Kanal"
+
+#. module: crm_fundraising
+#: selection:crm.fundraising,priority:0
+msgid "Lowest"
+msgstr "Najniži"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+#: view:crm.fundraising.report:0
+msgid "My Sales Team(s)"
+msgstr "My Sales Team(s)"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,create_date:0
+msgid "Creation Date"
+msgstr "Datum kreiranja"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,date_deadline:0
+msgid "Deadline"
+msgstr "Krajnji rok"
+
+#. module: crm_fundraising
+#: selection:crm.fundraising.report,month:0
+msgid "July"
+msgstr "Srpanj"
+
+#. module: crm_fundraising
+#: model:ir.ui.menu,name:crm_fundraising.menu_crm_case_fundraising-act
+msgid "Categories"
+msgstr "Kategorije"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,stage_id:0
+msgid "Stage"
+msgstr "Stupanj"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "History Information"
+msgstr "Povijest"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Dates"
+msgstr "Datumi"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,partner_name2:0
+msgid "Employee Email"
+msgstr "Employee Email"
+
+#. module: crm_fundraising
+#: view:crm.fundraising.report:0
+msgid "    Month-1    "
+msgstr "   Mjesec-1   "
+
+#. module: crm_fundraising
+#: model:crm.case.categ,name:crm_fundraising.categ_fund2
+msgid "Learning And Education"
+msgstr "Učenje i obrazovanje"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: crm_fundraising
+#: selection:crm.fundraising.report,month:0
+msgid "March"
+msgstr "Ožujak"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Fund Description"
+msgstr "Fund Description"
+
+#. module: crm_fundraising
+#: help:crm.fundraising.report,delay_close:0
+msgid "Number of Days to close the case"
+msgstr "Broj dana za zatvaranje slučaja"
+
+#. module: crm_fundraising
+#: view:crm.fundraising.report:0
+msgid "Funds raised in current month"
+msgstr "Funds raised in current month"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "References"
+msgstr "Reference"
+
+#. module: crm_fundraising
+#: view:crm.case.stage:0
+#: view:crm.fundraising.report:0
+msgid "Fundraising"
+msgstr "Fundraising"
+
+#. module: crm_fundraising
+#: model:ir.actions.act_window,help:crm_fundraising.action_report_crm_fundraising
+msgid "Have a general overview of all fund raising activities by sorting them with specific criteria such as the estimated revenue, average success probability and delay to close."
+msgstr "Have a general overview of all fund raising activities by sorting them with specific criteria such as the estimated revenue, average success probability and delay to close."
+
+#. module: crm_fundraising
+#: selection:crm.fundraising.report,month:0
+msgid "September"
+msgstr "Rujan"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Communication"
+msgstr "Komunikacija"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Funds Tree"
+msgstr "Funds Tree"
+
+#. module: crm_fundraising
+#: view:crm.fundraising.report:0
+#: field:crm.fundraising.report,month:0
+msgid "Month"
+msgstr "Mjesec"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Escalate"
+msgstr "Eskalirati"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,write_date:0
+msgid "Update Date"
+msgstr "Datum ažuriranja"
+
+#. module: crm_fundraising
+#: model:crm.case.resource.type,name:crm_fundraising.type_fund3
+msgid "Credit Card"
+msgstr "Credit Card"
+
+#. module: crm_fundraising
+#: model:ir.actions.act_window,name:crm_fundraising.crm_fundraising_stage_act
+msgid "Fundraising Stages"
+msgstr "Fundraising Stages"
+
+#. module: crm_fundraising
+#: view:crm.fundraising.report:0
+msgid "Salesman"
+msgstr "Prodavač"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,ref:0
+msgid "Reference"
+msgstr "Vezna oznaka"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,ref2:0
+msgid "Reference 2"
+msgstr "Poveznica 2"
+
+#. module: crm_fundraising
+#: view:crm.fundraising.report:0
+msgid "Funds raised in last month"
+msgstr "Funds raised in last month"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+#: field:crm.fundraising,categ_id:0
+#: view:crm.fundraising.report:0
+#: field:crm.fundraising.report,categ_id:0
+msgid "Category"
+msgstr "Grupa"
+
+#. module: crm_fundraising
+#: view:crm.fundraising.report:0
+msgid "  Year  "
+msgstr " Godina "
+
+#. module: crm_fundraising
+#: field:crm.fundraising,planned_cost:0
+#: view:crm.fundraising.report:0
+#: field:crm.fundraising.report,planned_cost:0
+msgid "Planned Costs"
+msgstr "Planned Costs"
+
+#. module: crm_fundraising
+#: help:crm.fundraising,email_cc:0
+msgid "These email addresses will be added to the CC field of all inbound and outbound emails for this record before being sent. Separate multiple email addresses with a comma"
+msgstr "These email addresses will be added to the CC field of all inbound and outbound emails for this record before being sent. Separate multiple email addresses with a comma"
+
+#. module: crm_fundraising
+#: selection:crm.fundraising,state:0
+#: view:crm.fundraising.report:0
+#: selection:crm.fundraising.report,state:0
+msgid "Draft"
+msgstr "Nacrt"
+
+#. module: crm_fundraising
+#: selection:crm.fundraising,priority:0
+msgid "Low"
+msgstr "Niski"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,date_closed:0
+#: selection:crm.fundraising,state:0
+#: selection:crm.fundraising.report,state:0
+msgid "Closed"
+msgstr "Zatvoren"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+#: selection:crm.fundraising,state:0
+#: view:crm.fundraising.report:0
+#: selection:crm.fundraising.report,state:0
+msgid "Pending"
+msgstr "Na čekanju"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Communication & History"
+msgstr "Komunikacija i povijest"
+
+#. module: crm_fundraising
+#: model:ir.ui.menu,name:crm_fundraising.menu_crm_fundraising_stage_act
+msgid "Stages"
+msgstr "Faze"
+
+#. module: crm_fundraising
+#: selection:crm.fundraising.report,month:0
+msgid "August"
+msgstr "Kolovoz"
+
+#. module: crm_fundraising
+#: selection:crm.fundraising,priority:0
+msgid "Normal"
+msgstr "Normalan"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Global CC"
+msgstr "Global CC"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+#: model:ir.actions.act_window,name:crm_fundraising.crm_case_category_act_fund_all1
+msgid "Funds"
+msgstr "Funds"
+
+#. module: crm_fundraising
+#: selection:crm.fundraising.report,month:0
+msgid "June"
+msgstr "Lipanj"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,partner_phone:0
+msgid "Phone"
+msgstr "Telefon"
+
+#. module: crm_fundraising
+#: field:crm.fundraising.report,user_id:0
+msgid "User"
+msgstr "Korisnik"
+
+#. module: crm_fundraising
+#: view:crm.fundraising.report:0
+msgid "#Fundraising"
+msgstr "#Fundraising"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,active:0
+msgid "Active"
+msgstr "Aktivan"
+
+#. module: crm_fundraising
+#: selection:crm.fundraising.report,month:0
+msgid "November"
+msgstr "Studeni"
+
+#. module: crm_fundraising
+#: view:crm.fundraising.report:0
+msgid "Extended Filters..."
+msgstr "Prošireni filtri..."
+
+#. module: crm_fundraising
+#: view:crm.fundraising.report:0
+msgid "Search"
+msgstr "Search"
+
+#. module: crm_fundraising
+#: selection:crm.fundraising.report,month:0
+msgid "October"
+msgstr "Listopad"
+
+#. module: crm_fundraising
+#: selection:crm.fundraising.report,month:0
+msgid "January"
+msgstr "Siječanj"
+
+#. module: crm_fundraising
+#: model:crm.case.resource.type,name:crm_fundraising.type_fund2
+msgid "Cheque"
+msgstr "Cheque"
+
+#. module: crm_fundraising
+#: model:ir.actions.act_window,help:crm_fundraising.crm_fund_categ_action
+msgid "Manage and define the fund raising categories you want to be maintained in the system."
+msgstr "Manage and define the fund raising categories you want to be maintained in the system."
+
+#. module: crm_fundraising
+#: help:crm.fundraising,email_from:0
+msgid "These people will receive email."
+msgstr "Ove će osobe primiti email."
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Fund Category"
+msgstr "Fund Category"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,date:0
+msgid "Date"
+msgstr "Datum"
+
+#. module: crm_fundraising
+#: model:crm.case.categ,name:crm_fundraising.categ_fund3
+msgid "Healthcare"
+msgstr "Healthcare"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "History"
+msgstr "Povijest"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Attachments"
+msgstr "Privitci"
+
+#. module: crm_fundraising
+#: view:crm.fundraising.report:0
+msgid "Month of fundraising"
+msgstr "Month of fundraising"
+
+#. module: crm_fundraising
+#: model:ir.model,name:crm_fundraising.model_crm_case_stage
+msgid "Stage of case"
+msgstr "Faza slučaja"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Estimates"
+msgstr "Estimates"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+#: field:crm.fundraising,state:0
+#: view:crm.fundraising.report:0
+#: field:crm.fundraising.report,state:0
+msgid "State"
+msgstr "Stanje"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Unassigned"
+msgstr "Nedodjeljen"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+#: view:crm.fundraising.report:0
+msgid "Done"
+msgstr "Izvršeno"
+
+#. module: crm_fundraising
+#: selection:crm.fundraising.report,month:0
+msgid "December"
+msgstr "Prosinac"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+#: view:crm.fundraising.report:0
+msgid "Cancel"
+msgstr "Odustani"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+#: selection:crm.fundraising,state:0
+#: view:crm.fundraising.report:0
+#: selection:crm.fundraising.report,state:0
+msgid "Open"
+msgstr "Otvoreno"
+
+#. module: crm_fundraising
+#: model:ir.actions.act_window,help:crm_fundraising.crm_case_category_act_fund_all1
+msgid "If you need to collect money for your organization or a campaign, Fund Raising allows you to track all your fund raising activities. In the search list, filter by funds description, email, history and probability of success."
+msgstr "If you need to collect money for your organization or a campaign, Fund Raising allows you to track all your fund raising activities. In the search list, filter by funds description, email, history and probability of success."
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+#: field:crm.fundraising,user_id:0
+msgid "Responsible"
+msgstr "Odgovoran"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Current"
+msgstr "Trenutno"
+
+#. module: crm_fundraising
+#: model:ir.module.module,description:crm_fundraising.module_meta_information
+msgid "\n"
+"Fundraising.\n"
+"============\n"
+"\n"
+"When you wish to support your organization or a campaign, you can trace\n"
+"all your activities for collecting money. The menu opens a search list\n"
+"where you can find fund descriptions, email, history and probability of\n"
+"success. Several action buttons allow you to easily modify your different\n"
+"fund status.\n"
+"    "
+msgstr "\n"
+"Fundraising.\n"
+"============\n"
+"\n"
+"When you wish to support your organization or a campaign, you can trace\n"
+"all your activities for collecting money. The menu opens a search list\n"
+"where you can find fund descriptions, email, history and probability of\n"
+"success. Several action buttons allow you to easily modify your different\n"
+"fund status.\n"
+"    "
+
+#. module: crm_fundraising
+#: help:crm.fundraising,section_id:0
+msgid "Sales team to which Case belongs to. Define Responsible user and Email account for mail gateway."
+msgstr "Sales team to which Case belongs to. Define Responsible user and Email account for mail gateway."
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Details"
+msgstr "Detalji"
+
+#. module: crm_fundraising
+#: model:ir.model,name:crm_fundraising.model_crm_fundraising_report
+msgid "CRM Fundraising Report"
+msgstr "CRM Fundraising Report"
+
+#. module: crm_fundraising
+#: view:crm.fundraising.report:0
+msgid "Date of fundraising"
+msgstr "Date of fundraising"
+
+#. module: crm_fundraising
+#: view:crm.fundraising.report:0
+#: field:crm.fundraising.report,amount_revenue_prob:0
+msgid "Est. Rev*Prob."
+msgstr "Est. Rev*Prob."
+
+#. module: crm_fundraising
+#: field:crm.fundraising.report,type_id:0
+msgid "Fundraising Type"
+msgstr "Fundraising Type"
+
+#. module: crm_fundraising
+#: model:ir.actions.act_window,help:crm_fundraising.crm_fundraising_stage_act
+msgid "Create and manage fund raising activity categories you want to be maintained in the system."
+msgstr "Create and manage fund raising activity categories you want to be maintained in the system."
+
+#. module: crm_fundraising
+#: field:crm.fundraising,description:0
+msgid "Description"
+msgstr "Opis"
+
+#. module: crm_fundraising
+#: selection:crm.fundraising.report,month:0
+msgid "May"
+msgstr "Svibanj"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,probability:0
+msgid "Probability (%)"
+msgstr "Vjerojatnost (%)"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,partner_name:0
+msgid "Employee's Name"
+msgstr "Employee's Name"
+
+#. module: crm_fundraising
+#: help:crm.fundraising,canal_id:0
+msgid "The channels represent the different communication  modes available with the customer."
+msgstr "The channels represent the different communication  modes available with the customer."
+
+#. module: crm_fundraising
+#: help:crm.fundraising,state:0
+msgid "The state is set to 'Draft', when a case is created.                                  \n"
+"If the case is in progress the state is set to 'Open'.                                  \n"
+"When the case is over, the state is set to 'Done'.                                  \n"
+"If the case needs to be reviewed then the state is set to 'Pending'."
+msgstr "Stanje je postavljeno na 'Nacrt', kada se stvara Slučaj.\n"
+"Ako je Slučaj je u tijeku Stanje je postavljeno na 'Otvoren'.\n"
+"Kada se Slučaj završi, Stanje je postavljen na \"Gotovo\".\n"
+"Ako slučaj treba biti pregledan, Stanje je postavljeno na 'U tijeku'."
+
+#. module: crm_fundraising
+#: selection:crm.fundraising.report,month:0
+msgid "February"
+msgstr "Veljača"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+#: field:crm.fundraising,name:0
+msgid "Name"
+msgstr "Naziv"
+
+#. module: crm_fundraising
+#: model:crm.case.resource.type,name:crm_fundraising.type_fund1
+msgid "Cash"
+msgstr "Gotovina"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Funds by Categories"
+msgstr "Funds by Categories"
+
+#. module: crm_fundraising
+#: selection:crm.fundraising.report,month:0
+msgid "April"
+msgstr "Travanj"
+
+#. module: crm_fundraising
+#: view:crm.fundraising.report:0
+msgid "My Case(s)"
+msgstr "My Case(s)"
+
+#. module: crm_fundraising
+#: model:crm.case.resource.type,name:crm_fundraising.type_fund4
+msgid "Demand Draft"
+msgstr "Demand Draft"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+msgid "Search Funds"
+msgstr "Search Funds"
+
+#. module: crm_fundraising
+#: selection:crm.fundraising,priority:0
+msgid "High"
+msgstr "Visok"
+
+#. module: crm_fundraising
+#: view:crm.fundraising:0
+#: field:crm.fundraising,section_id:0
+#: view:crm.fundraising.report:0
+msgid "Sales Team"
+msgstr "Prodajni tim"
+
+#. module: crm_fundraising
+#: field:crm.fundraising.report,create_date:0
+msgid "Create Date"
+msgstr "Kreiraj datum"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,date_action_last:0
+msgid "Last Action"
+msgstr "Posljednja akcija"
+
+#. module: crm_fundraising
+#: view:crm.fundraising.report:0
+#: field:crm.fundraising.report,name:0
+msgid "Year"
+msgstr "Godina"
+
+#. module: crm_fundraising
+#: field:crm.fundraising,duration:0
+msgid "Duration"
+msgstr "Trajanje"
+
