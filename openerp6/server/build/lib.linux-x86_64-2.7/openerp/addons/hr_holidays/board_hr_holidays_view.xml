@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <menuitem id="base.menu_hr_dasboard" name="Dashboard" parent="hr.menu_hr_reporting" sequence="0"/>
+        <menuitem
+            action="hr.open_board_hr"
+            icon="terp-graph"
+            id="base.menu_hr_project"
+            parent="base.menu_hr_dasboard"
+            sequence="4"/>
+
+            <!-- Need to merge in above view -->
+
+        <record model="ir.actions.act_window" id="action_hr_holidays_leaves_by_month">
+            <field name="name">My Leaves</field>
+            <field name="res_model">hr.holidays.status</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" eval="False"/>
+            <field name="context">{}</field>
+            <field name="domain">[]</field>
+        </record>
+        <record id="board_hr_holidays_leave_by_month_form" model="ir.ui.view">
+            <field name="name">board.hr.holidays.leave.month.form</field>
+            <field name="model">board.board</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="hr.board_hr_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/hpaned/child2" position="inside">
+                 <action colspan="4" height="220" name="%(action_hr_holidays_leaves_by_month)d" string="Leaves" />
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

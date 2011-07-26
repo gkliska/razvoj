@@ -1,0 +1,6 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_training_offer_invoice","training_offer_invoice","model_training_offer_invoice","training.group_subscription_user",1,1,1,1
+"access_training_offer_invoice_line","training_offer_invoice_line","model_training_offer_invoice_line","training.group_subscription_user",1,1,1,1
+"access_training_offer_invoicing","training_offer_invoicing","model_training_offer_invoicing","training.group_subscription_user",1,1,1,1
+"access_training_create_invoice_wizard","training_create_invoice_wizard","model_training_create_invoice_wizard","training.group_subscription_user",1,1,1,1
+"access_training_create_invoice_wizard","training_create_invoice_wizard","model_training_create_invoice_wizard","training.group_subscription_user",1,1,1,1

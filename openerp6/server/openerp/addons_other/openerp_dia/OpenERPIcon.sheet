@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <sheet xmlns="http://www.lysator.liu.se/~alla/dia/dia-sheet-ns">
+    <name>Open ERP Icon Pack</name>
+        <description>OpenERP icon pack to be used with the Buttons and Search View</description>
+            <contents>
+
+        <object name="shape - translate">
+            <description>translate</description>
+        </object>
+
+        <object name="shape - stock_translate">
+            <description>stock_translate</description>
+        </object>
+
+        <object name="shape - graph">
+            <description>graph</description>
+        </object>
+
+        <object name="shape - personal-">
+            <description>personal-</description>
+        </object>
+
+        <object name="shape - gtk-underline">
+            <description>gtk-underline</description>
+        </object>
+
+        <object name="shape - gtk-connect">
+            <description>gtk-connect</description>
+        </object>
+
+        <object name="shape - gtk-cdrom">
+            <description>gtk-cdrom</description>
+        </object>
+
+        <object name="shape - gtk-dialog-warning">
+            <description>gtk-dialog-warning</description>
+        </object>
+
+        <object name="shape - gtk-media-pause">
+            <description>gtk-media-pause</description>
+        </object>
+
+        <object name="shape - gtk-directory-remote">
+            <description>gtk-directory-remote</description>
+        </object>
+
+        <object name="shape - gnome-cpu-frequency-applet+">
+            <description>gnome-cpu-frequency-applet+</description>
+        </object>
+
+        <object name="shape - gtk-go-down">
+            <description>gtk-go-down</description>
+        </object>
+
+        <object name="shape - gtk-cut">
+            <description>gtk-cut</description>
+        </object>
+
+        <object name="shape - project">
+            <description>project</description>
+        </object>
+
+        <object name="shape - gtk-media-record">
+            <description>gtk-media-record</description>
+        </object>
+
+        <object name="shape - personal">
+            <description>personal</description>
+        </object>
+
+        <object name="shape - sale">
+            <description>sale</description>
+        </object>
+
+        <object name="shape - gtk-convert">
+            <description>gtk-convert</description>
+        </object>
+
+        <object name="shape - folder-green">
+            <description>folder-green</description>
+        </object>
+
+        <object name="shape - gtk-save">
+            <description>gtk-save</description>
+        </object>
+
+        <object name="shape - gtk-directory">
+            <description>gtk-directory</description>
+        </object>
+
+        <object name="shape - folder-yellow">
+            <description>folder-yellow</description>
+        </object>
+
+        <object name="shape - gtk-dialog-question">
+            <description>gtk-dialog-question</description>
+        </object>
+
+        <object name="shape - call-start">
+            <description>call-start</description>
+        </object>
+
+        <object name="shape - gtk-index">
+            <description>gtk-index</description>
+        </object>
+
+        <object name="shape - gtk-media-stop">
+            <description>gtk-media-stop</description>
+        </object>
+
+        <object name="shape - gtk-select-all">
+            <description>gtk-select-all</description>
+        </object>
+
+        <object name="shape - gtk-cancel">
+            <description>gtk-cancel</description>
+        </object>
+
+        <object name="shape - gtk-harddisk">
+            <description>gtk-harddisk</description>
+        </object>
+
+        <object name="shape - gtk-jump-to-rtl">
+            <description>gtk-jump-to-rtl</description>
+        </object>
+
+        <object name="shape - hr">
+            <description>hr</description>
+        </object>
+
+        <object name="shape - gtk-delete">
+            <description>gtk-delete</description>
+        </object>
+
+        <object name="shape - gtk-zoom-fit">
+            <description>gtk-zoom-fit</description>
+        </object>
+
+        <object name="shape - gtk-remove">
+            <description>gtk-remove</description>
+        </object>
+
+        <object name="shape - accessories-archiver">
+            <description>accessories-archiver</description>
+        </object>
+
+        <object name="shape - account">
+            <description>account</description>
+        </object>
+
+        <object name="shape - gtk-close">
+            <description>gtk-close</description>
+        </object>
+
+        <object name="shape - gtk-dialog-info">
+            <description>gtk-dialog-info</description>
+        </object>
+
+        <object name="shape - gtk-print">
+            <description>gtk-print</description>
+        </object>
+
+        <object name="shape - gtk-go-up">
+            <description>gtk-go-up</description>
+        </object>
+
+        <object name="shape - gtk-yes">
+            <description>gtk-yes</description>
+        </object>
+
+        <object name="shape - gtk-leave-fullscreen">
+            <description>gtk-leave-fullscreen</description>
+        </object>
+
+        <object name="shape - gtk-network">
+            <description>gtk-network</description>
+        </object>
+
+        <object name="shape - mail_delete">
+            <description>mail_delete</description>
+        </object>
+
+        <object name="shape - gtk-floppy">
+            <description>gtk-floppy</description>
+        </object>
+
+        <object name="shape - gtk-strikethrough">
+            <description>gtk-strikethrough</description>
+        </object>
+
+        <object name="shape - gtk-jump-to-ltr">
+            <description>gtk-jump-to-ltr</description>
+        </object>
+
+        <object name="shape - gtk-dnd-multiple">
+            <description>gtk-dnd-multiple</description>
+        </object>
+
+        <object name="shape - gtk-open">
+            <description>gtk-open</description>
+        </object>
+
+        <object name="shape - camera_test">
+            <description>camera_test</description>
+        </object>
+
+        <object name="shape - go-week">
+            <description>go-week</description>
+        </object>
+
+        <object name="shape - gtk-go-back-ltr">
+            <description>gtk-go-back-ltr</description>
+        </object>
+
+        <object name="shape - gtk-justify-right">
+            <description>gtk-justify-right</description>
+        </object>
+
+        <object name="shape - gtk-indent">
+            <description>gtk-indent</description>
+        </object>
+
+        <object name="shape - gtk-italic">
+            <description>gtk-italic</description>
+        </object>
+
+        <object name="shape - gtk-undelete">
+            <description>gtk-undelete</description>
+        </object>
+
+        <object name="shape - gtk-spell-check">
+            <description>gtk-spell-check</description>
+        </object>
+
+        <object name="shape - gtk-new">
+            <description>gtk-new</description>
+        </object>
+
+        <object name="shape - gtk-dnd">
+            <description>gtk-dnd</description>
+        </object>
+
+        <object name="shape - mail-replied">
+            <description>mail-replied</description>
+        </object>
+
+        <object name="shape - gtk-file">
+            <description>gtk-file</description>
+        </object>
+
+        <object name="shape - face-plain">
+            <description>face-plain</description>
+        </object>
+
+        <object name="shape - gtk-media-forward">
+            <description>gtk-media-forward</description>
+        </object>
+
+        <object name="shape - gtk-edit">
+            <description>gtk-edit</description>
+        </object>
+
+        <object name="shape - rating-rated">
+            <description>rating-rated</description>
+        </object>
+
+        <object name="shape - gtk-info">
+            <description>gtk-info</description>
+        </object>
+
+        <object name="shape - gtk-save-as">
+            <description>gtk-save-as</description>
+        </object>
+
+        <object name="shape - stock_format-scientific">
+            <description>stock_format-scientific</description>
+        </object>
+
+        <object name="shape - stock_graph">
+            <description>stock_graph</description>
+        </object>
+
+        <object name="shape - gtk-properties">
+            <description>gtk-properties</description>
+        </object>
+
+        <object name="shape - gtk-justify-left">
+            <description>gtk-justify-left</description>
+        </object>
+
+        <object name="shape - go-today">
+            <description>go-today</description>
+        </object>
+
+        <object name="shape - gtk-dialog-authentication">
+            <description>gtk-dialog-authentication</description>
+        </object>
+
+        <object name="shape - stock_gantt">
+            <description>stock_gantt</description>
+        </object>
+
+        <object name="shape - document-new">
+            <description>document-new</description>
+        </object>
+
+        <object name="shape - gtk-zoom-100">
+            <description>gtk-zoom-100</description>
+        </object>
+
+        <object name="shape - crm">
+            <description>crm</description>
+        </object>
+
+        <object name="shape - gtk-select-font">
+            <description>gtk-select-font</description>
+        </object>
+
+        <object name="shape - tools">
+            <description>tools</description>
+        </object>
+
+        <object name="shape - dolar_ok!">
+            <description>dolar_ok!</description>
+        </object>
+
+        <object name="shape - stock">
+            <description>stock</description>
+        </object>
+
+        <object name="shape - gtk-go-forward">
+            <description>gtk-go-forward</description>
+        </object>
+
+        <object name="shape - gtk-stop">
+            <description>gtk-stop</description>
+        </object>
+
+        <object name="shape - gtk-quit">
+            <description>gtk-quit</description>
+        </object>
+
+        <object name="shape - gtk-select-color">
+            <description>gtk-select-color</description>
+        </object>
+
+        <object name="shape - gtk-clear">
+            <description>gtk-clear</description>
+        </object>
+
+        <object name="shape - gtk-paste">
+            <description>gtk-paste</description>
+        </object>
+
+        <object name="shape - go-month">
+            <description>go-month</description>
+        </object>
+
+        <object name="shape - accessories-archiver-minus">
+            <description>accessories-archiver-minus</description>
+        </object>
+
+        <object name="shape - gtk-media-play">
+            <description>gtk-media-play</description>
+        </object>
+
+        <object name="shape - mail-forward">
+            <description>mail-forward</description>
+        </object>
+
+        <object name="shape - mail-">
+            <description>mail-</description>
+        </object>
+
+        <object name="shape - gtk-execute">
+            <description>gtk-execute</description>
+        </object>
+
+        <object name="shape - gtk-help">
+            <description>gtk-help</description>
+        </object>
+
+        <object name="shape - check">
+            <description>check</description>
+        </object>
+
+        <object name="shape - gtk-color-picker">
+            <description>gtk-color-picker</description>
+        </object>
+
+        <object name="shape - stock_format-default">
+            <description>stock_format-default</description>
+        </object>
+
+        <object name="shape - product">
+            <description>product</description>
+        </object>
+
+        <object name="shape - gtk-goto-last">
+            <description>gtk-goto-last</description>
+        </object>
+
+        <object name="shape - gtk-justify-fill">
+            <description>gtk-justify-fill</description>
+        </object>
+
+        <object name="shape - gtk-media-next">
+            <description>gtk-media-next</description>
+        </object>
+
+        <object name="shape - gtk-refresh">
+            <description>gtk-refresh</description>
+        </object>
+
+        <object name="shape - go-home">
+            <description>go-home</description>
+        </object>
+
+        <object name="shape - stock_log">
+            <description>stock_log</description>
+        </object>
+
+        <object name="shape - emblem-important">
+            <description>emblem-important</description>
+        </object>
+
+        <object name="shape - gtk-disconnect">
+            <description>gtk-disconnect</description>
+        </object>
+
+        <object name="shape - gtk-goto-bottom">
+            <description>gtk-goto-bottom</description>
+        </object>
+
+        <object name="shape - go-year">
+            <description>go-year</description>
+        </object>
+
+        <object name="shape - stock_effects-object-colorize">
+            <description>stock_effects-object-colorize</description>
+        </object>
+
+        <object name="shape - gtk-fullscreen">
+            <description>gtk-fullscreen</description>
+        </object>
+
+        <object name="shape - gdu-smart-failing">
+            <description>gdu-smart-failing</description>
+        </object>
+
+        <object name="shape - folder-blue">
+            <description>folder-blue</description>
+        </object>
+
+        <object name="shape - gtk-home">
+            <description>gtk-home</description>
+        </object>
+
+        <object name="shape - mail-message-new">
+            <description>mail-message-new</description>
+        </object>
+
+        <object name="shape - gtk-zoom-in">
+            <description>gtk-zoom-in</description>
+        </object>
+
+        <object name="shape - gtk-undo">
+            <description>gtk-undo</description>
+        </object>
+
+        <object name="shape - gtk-missing-image">
+            <description>gtk-missing-image</description>
+        </object>
+
+        <object name="shape - gtk-unindent">
+            <description>gtk-unindent</description>
+        </object>
+
+        <object name="shape - stock_align_left_24">
+            <description>stock_align_left_24</description>
+        </object>
+
+        <object name="shape - gtk-sort-ascending">
+            <description>gtk-sort-ascending</description>
+        </object>
+
+        <object name="shape - gtk-media-rewind">
+            <description>gtk-media-rewind</description>
+        </object>
+
+        <object name="shape - gtk-print-preview">
+            <description>gtk-print-preview</description>
+        </object>
+
+        <object name="shape - report">
+            <description>report</description>
+        </object>
+
+        <object name="shape - gtk-copy">
+            <description>gtk-copy</description>
+        </object>
+
+        <object name="shape - gtk-revert-to-saved">
+            <description>gtk-revert-to-saved</description>
+        </object>
+
+        <object name="shape - gtk-find-and-replace">
+            <description>gtk-find-and-replace</description>
+        </object>
+
+        <object name="shape - stock_calendar">
+            <description>stock_calendar</description>
+        </object>
+
+        <object name="shape - gtk-sort-descending">
+            <description>gtk-sort-descending</description>
+        </object>
+
+        <object name="shape - marketing">
+            <description>marketing</description>
+        </object>
+
+        <object name="shape - gtk-paste-v">
+            <description>gtk-paste-v</description>
+        </object>
+
+        <object name="shape - gtk-jump-to">
+            <description>gtk-jump-to</description>
+        </object>
+
+        <object name="shape - administration">
+            <description>administration</description>
+        </object>
+
+        <object name="shape - gtk-bold">
+            <description>gtk-bold</description>
+        </object>
+
+        <object name="shape - gtk-goto-top">
+            <description>gtk-goto-top</description>
+        </object>
+
+        <object name="shape - locked">
+            <description>locked</description>
+        </object>
+
+        <object name="shape - gtk-add">
+            <description>gtk-add</description>
+        </object>
+
+        <object name="shape - gtk-ok">
+            <description>gtk-ok</description>
+        </object>
+
+        <object name="shape - gtk-go-back">
+            <description>gtk-go-back</description>
+        </object>
+
+        <object name="shape - gtk-apply">
+            <description>gtk-apply</description>
+        </object>
+
+        <object name="shape - idea">
+            <description>idea</description>
+        </object>
+
+        <object name="shape - gtk-go-back-rtl">
+            <description>gtk-go-back-rtl</description>
+        </object>
+
+        <object name="shape - gtk-dialog-error">
+            <description>gtk-dialog-error</description>
+        </object>
+
+        <object name="shape - stage">
+            <description>stage</description>
+        </object>
+
+        <object name="shape - purchase">
+            <description>purchase</description>
+        </object>
+
+        <object name="shape - folder-violet">
+            <description>folder-violet</description>
+        </object>
+
+        <object name="shape - gtk-find">
+            <description>gtk-find</description>
+        </object>
+
+        <object name="shape - partner">
+            <description>partner</description>
+        </object>
+
+        <object name="shape - gtk-media-previous">
+            <description>gtk-media-previous</description>
+        </object>
+
+        <object name="shape - accessories-archiver+">
+            <description>accessories-archiver+</description>
+        </object>
+
+        <object name="shape - stock_zoom">
+            <description>stock_zoom</description>
+        </object>
+
+        <object name="shape - gtk-no">
+            <description>gtk-no</description>
+        </object>
+
+        <object name="shape - gtk-justify-center">
+            <description>gtk-justify-center</description>
+        </object>
+
+        <object name="shape - calendar">
+            <description>calendar</description>
+        </object>
+
+        <object name="shape - folder-orange">
+            <description>folder-orange</description>
+        </object>
+
+        <object name="shape - mrp">
+            <description>mrp</description>
+        </object>
+
+        <object name="shape - personal+">
+            <description>personal+</description>
+        </object>
+
+        <object name="shape - gtk-preferences">
+            <description>gtk-preferences</description>
+        </object>
+
+        <object name="shape - gtk-zoom-out">
+            <description>gtk-zoom-out</description>
+        </object>
+
+        <object name="shape - stock_person">
+            <description>stock_person</description>
+        </object>
+
+        <object name="shape - gtk-goto-first">
+            <description>gtk-goto-first</description>
+        </object>
+
+        <object name="shape - dolar">
+            <description>dolar</description>
+        </object>
+
+        <object name="shape - dialog-close">
+            <description>dialog-close</description>
+        </object>
+
+        <object name="shape - stock_symbol-selection">
+            <description>stock_symbol-selection</description>
+        </object>
+
+        <object name="shape - gtk-redo">
+            <description>gtk-redo</description>
+        </object>
+
+    </contents>
+</sheet>

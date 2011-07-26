@@ -1,0 +1,89 @@
+<openerp>
+    <data>
+
+        <record model="ir.ui.view" id="training_create_session_seances_form">
+            <field name="name">training.create.session.seances.form</field>
+            <field name="model">training.create.session.seances</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Create Session and Seances">
+                    <field name="offer_id" on_change="onchange_offer(offer_id)" attrs="{'readonly': [('state','=','second')]}"/>
+                    <field name="address_id"/>
+                    <field name="format_id"/>
+
+                    <newline/>
+                    <field name="date_from"/>
+                    <field name="date_to"/>
+                    <group colspan="4" attrs="{'readonly': [('state','=','first')]}">
+                        <field name="line_ids" mode="tree,form" colspan="4" nolabel="1">
+                            <tree editable="bottom" string="The courses of the offer">
+                                <field name="course_id" domain="[('offer_ids', 'in', parent.offer_id.course_ids.course_id)]"/>
+                                <field name="time" widget="float_time"/>
+                                <field name="duration" widget="float_time"/>
+                                <field name="monday"/>
+                                <field name="tuesday"/>
+                                <field name="wednesday"/>
+                                <field name="thursday"/>
+                                <field name="friday"/>
+                                <field name="saturday"/>
+                                <field name="sunday"/>
+                                <field name="create_sessions_id" invisible="1"/>
+                            </tree>
+                            <form string="The courses of the offer">
+                                <group colspan="4" col="6">
+                                    <field name="course_id"/>
+                                    <field name="time" widget="float_time"/>
+                                    <field name="duration" widget="float_time"/>
+                                </group>
+                                <group colspan="4" col="14">
+                                    <field name="monday"/>
+                                    <field name="tuesday"/>
+                                    <field name="wednesday"/>
+                                    <field name="thursday"/>
+                                    <field name="friday"/>
+                                    <field name="saturday"/>
+                                    <field name="sunday"/>
+                                </group>
+                                <field name="create_sessions_id" invisible="1"/>
+                            </form>
+                        </field>
+                    </group>
+                    <group colspan="4">
+                        <button type="object" special="cancel" string="Cancel" icon="gtk-cancel" colspan="2"/>
+                        <group colspan="2">
+                            <button name="next_step" type="object" string="Next" icon="terp-gtk-go-back-rtl" colspan="2" states="first"/>
+                            <button name="create_close" type="object" string="Create &amp; Close" icon="terp-camera_test" states="second"/>
+                            <button name="create_new" type="object" string="Create &amp; New" icon="terp-gtk-go-back-rtl" states="second"/>
+                        </group>
+                    </group>
+                    <field name="state" invisible="1"/>
+                </form>
+            </field>
+        </record>
+
+	    <act_window name="Create Session and Seances Wizard"
+			    id="create_sessions_wizard_shortcut"
+			    res_model="training.create.session.seances"
+			    src_model="training.offer"
+			    view_mode="form"
+			    target="new"
+	            key2="client_action_multi"/>
+
+        <record model="ir.actions.act_window" id="training_create_session_seances_wizard_action">
+            <field name="name">Create Session and Seances</field>
+            <field name="res_model">training.create.session.seances</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+
+<!--Menu Item-->
+        <menuitem
+            name="Create Session and Seances"
+            id="training_create_session_seances_wizard_menu"
+            action="training_create_session_seances_wizard_action"
+            parent="training_planning_session_future_all_mi"/>
+
+    </data>
+</openerp>

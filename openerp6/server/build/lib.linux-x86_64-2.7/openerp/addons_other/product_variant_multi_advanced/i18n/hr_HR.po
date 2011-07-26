@@ -1,0 +1,74 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* product_variant_multi_advanced
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_variant_multi_advanced
+#: model:ir.model,name:product_variant_multi_advanced.model_product_product
+msgid "Product"
+msgstr "Proizvod"
+
+#. module: product_variant_multi_advanced
+#: constraint:product.product:0
+msgid "Several dimension values for the same dimension type"
+msgstr "Several dimension values for the same dimension type"
+
+#. module: product_variant_multi_advanced
+#: field:product.product,name:0
+msgid "Name"
+msgstr "Naziv"
+
+#. module: product_variant_multi_advanced
+#: model:ir.model,name:product_variant_multi_advanced.model_product_template
+msgid "Product Template"
+msgstr "Predložak proizvoda"
+
+#. module: product_variant_multi_advanced
+#: field:product.product,description_sale:0
+msgid "Sale Description"
+msgstr "Prodajni opis"
+
+#. module: product_variant_multi_advanced
+#: constraint:product.template:0
+msgid "Error: The default UOM and the purchase UOM must be in the same category."
+msgstr "Greška: Zadana jedinica mjere i jedinica mjere nabave moraju biti iz iste kategorije jedinica mjera."
+
+#. module: product_variant_multi_advanced
+#: view:product.template:0
+msgid "Build Sale Description ->"
+msgstr "Build Sale Description ->"
+
+#. module: product_variant_multi_advanced
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Greška: Neispravan barkod!"
+
+#. module: product_variant_multi_advanced
+#: view:product.product:0
+msgid "Sale description"
+msgstr "Sale description"
+
+#. module: product_variant_multi_advanced
+#: model:ir.module.module,shortdesc:product_variant_multi_advanced.module_meta_information
+msgid "Product Variant Multi Advanced"
+msgstr "Product Variant Multi Advanced"
+
+#. module: product_variant_multi_advanced
+#: model:ir.module.module,description:product_variant_multi_advanced.module_meta_information
+msgid "This module extend the capacity of product_variant_multi giving the posibility of building automatically the name, the description... of the product from the product template.\n"
+"Due to some limit of the orm you will need to apply some patch on the server"
+msgstr "This module extend the capacity of product_variant_multi giving the posibility of building automatically the name, the description... of the product from the product template.\n"
+"Due to some limit of the orm you will need to apply some patch on the server"
+

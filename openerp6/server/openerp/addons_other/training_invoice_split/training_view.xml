@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+	    <record model="ir.ui.view" id="view_training_offer_invoice_form">
+		    <field name="name">training.offer.invoice.form</field>
+		    <field name="model">training.offer.invoice</field>
+		    <field name="type">form</field>
+		    <field name="priority" eval="5"/>
+		    <field name="arch" type="xml">
+		    <form string="Offer Invoice">
+			    <field name="name"/>
+			    <field name="active"/>
+                <field colspan="4" mode="tree,form" name="invoice_line_ids" nolabel="1">
+                    <tree string="Invoicing Line" editable="top">
+                        <field name="reference_date"/>
+                        <field name="days"/>
+                        <field name="price"/>
+                        <field name="sequence"/>
+                        <field name="company_id" groups="base.group_multi_company"/>
+                        <field name="payment_type"/>
+                    </tree>
+                    <form>
+                        <field name="reference_date"/>
+                        <field name="days"/>
+                        <field name="price"/>
+                        <field name="sequence"/>
+                        <field name="company_id" groups="base.group_multi_company"/>
+                        <field name="payment_type" domain="[('company_id', '=', company_id)]"/>
+                    </form>
+                </field>
+                <newline/>
+			    <field name="amount_total"/>
+		    </form>
+		    </field>
+	    </record>
+	
+	    <record model="ir.ui.view" id="view_training_offer_invoice_tree">
+		    <field name="name">training.offer.invoice.tree</field>
+		    <field name="model">training.offer.invoice</field>
+		    <field name="type">tree</field>
+		    <field name="priority" eval="5"/>
+		    <field name="arch" type="xml">
+			    <tree string="Offer Invoicing">
+				    <field name="name" />
+				    <field name="amount_total"/>
+				    <field name="active"/>
+			    </tree>
+		    </field>
+	    </record>
+
+        <record model="ir.actions.act_window" id="action_training_offer_invoice_action">
+            <field name="name">Offer Invoicing</field>
+            <field name="res_model">training.offer.invoice</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Training Invoicing-->
+        <record id="training_offer_invoicing_filter" model="ir.ui.view">
+            <field name="name">training.offer.invoicing.select</field>
+            <field name="model">training.offer.invoicing</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Search Offer">
+                   <group col='15' colspan='4'>
+                        <filter icon="terp-document-new" string="Wait" domain="[('state','=','wait')]"/>
+                        <filter icon="terp-camera_test" string="Done" domain="[('state','=','inv_done')]"/>
+                        <filter icon="terp-gtk-stop" string="Invoicing" domain="[('state','=','inv')]"/>
+                        <separator orientation="vertical"/>
+                        <separator orientation="vertical"/>
+                        <field name="partner"/>
+                        <field name="subscription_line_id"/>
+                        <field name="date"/>
+                        <field name="invoice_id"/>
+                        <field name="company_id"/>
+                        <field name="payment_type"/>
+                   </group>
+               </search>
+            </field>
+        </record>
+
+	    <record model="ir.ui.view" id="view_training_offer_invoicing_form">
+		    <field name="name">training.offer.invoicing.form</field>
+		    <field name="model">training.offer.invoicing</field>
+		    <field name="type">form</field>
+		    <field name="priority" eval="5"/>
+		    <field name="arch" type="xml">
+		    <form string="Offer Invoicing">
+			    <field name="date" attrs="{'readonly': [('state', '!=', 'wait')]}"/>
+			    <field name="price" attrs="{'readonly': [('state', '!=', 'wait')]}"/>
+			    <field name="state"/>
+                <field name="company_id" widget="selection" attrs="{'readonly': [('state', '!=', 'wait')]}"/>
+			    <field name="invoice_id"/>
+			    <field name="subscription_line_id"/>
+			    <field name="invoice_type"/>
+                <field name="payment_type" domain="[('company_id', '=', company_id)]" attrs="{'readonly': [('state', '!=', 'wait')]}"/>
+                <group states="wait,inv" groups="training.group_training" colspan="4">
+                    <button name="%(action_create_invoice)d" type='action' string='Create Invoice' icon="gtk-execute"/>
+                </group>
+		    </form>
+		    </field>
+	    </record>
+
+	    <record model="ir.ui.view" id="view_training_offer_invoicing_tree">
+		    <field name="name">training.offer.invoicing.tree</field>
+		    <field name="model">training.offer.invoicing</field>
+		    <field name="type">tree</field>
+		    <field name="priority" eval="5"/>
+		    <field name="arch" type="xml">
+			<tree string="Invoicing" colors="black:state=='inv_done';red:state=='wait';darkgreen:state=='inv'">
+			    <field name="partner"/>
+                <field name="date" />
+			    <field name="price"/>
+			    <field name="state"/>
+                <field name="company_id"/>
+			    <field name="invoice_id"/>
+			    <field name="subscription_line_id"/>
+			    <field name="invoice_type"/>
+                <field name="payment_type"/>
+			</tree>
+		    </field>
+	    </record>
+
+        <record model="ir.actions.act_window" id="action_training_offer_invoicing_action">
+            <field name="name">Invoicing</field>
+            <field name="res_model">training.offer.invoicing</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="training_invoicing" parent="training.training_subscription_management_mi" action="action_training_offer_invoicing_action" sequence="50"/>
+
+        <!-- Inherits views -->
+        <record model="ir.ui.view" id="view_training_offer_invoice_inherit_form">
+            <field name="name">training.offer.invoice.inherit.form</field>
+            <field name="model">training.offer</field>
+            <field name="inherit_id" ref="training.training_offer_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form/notebook/page[@string='Description']" position="after">
+                    <page string="Invoicing">
+                        <field name="invoice_ids" colspan="4" nolabel="1">
+                            <field name="name" />
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_training_subscription_line_invoice_inherit_form">
+            <field name="name">training.subscription.line.invoice.inherit.form</field>
+            <field name="model">training.subscription.line</field>
+            <field name="inherit_id" ref="training.training_subscription_line_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+    			<xpath expr="/form/notebook/page[@string='General']/separator[@string='Invoicing']" position="replace"></xpath>
+    			<xpath expr="/form/notebook/page[@string='General']/field[@name='price']" position="replace"></xpath>
+    			<xpath expr="/form/notebook/page[@string='General']/group/field[@name='invoice_id']" position="replace"></xpath>
+    			<xpath expr="/form/notebook/page[@string='General']/group/field[@name='invoice_line_id']" position="replace"></xpath>
+    			<xpath expr="/form/notebook/page[@string='General']/group/group/group/button[@string='Create Invoice']" position="replace"></xpath>
+                <xpath expr="/form/notebook/page[@string='General']" position="after">
+                    <page string="Invoicing">
+                        <field colspan="4" mode="tree,form" name="invoicing_ids" nolabel="1" attrs="{'readonly':[('state', '!=', 'confirmed')]}">
+                            <form string="Invoicing">
+                                <field name="date" attrs="{'readonly': [('state', '!=', 'wait')]}"/>
+			                    <field name="price" attrs="{'readonly': [('state', '!=', 'wait')]}"/>
+			                    <field name="state"/>
+			                    <field name="invoice_type"/>
+                                <field name="company_id" widget="selection" attrs="{'readonly': [('state', '!=', 'wait')]}"/>
+                                <field name="payment_type" domain="[('company_id', '=', company_id)]" attrs="{'readonly': [('state', '!=', 'wait')]}"/>
+			                    <field name="invoice_id" readonly="1"/>
+			                    <field name="seq" invisible="1"/>
+                            </form>
+                            <tree string="Invoicing" colors="black:state=='inv_done';red:state=='wait';darkgreen:state=='inv'">
+                                <field name="date"/>
+			                    <field name="price"/>
+			                    <field name="state"/>
+			                    <field name="invoice_type"/>
+			                    <field name="invoice_id"/>
+                                <field name="company_id"/>
+			                    <field name="payment_type"/>
+                            </tree>
+                        </field>
+                        <group states="confirmed" groups="training.group_training">
+                            <button name="%(action_create_invoicing)d" type='action' string='Create Invoicing' icon="gtk-execute"/>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <act_window name="All Invoicing Lines"
+            groups='base.group_user'
+            src_model="training.subscription.line"
+            res_model="training.offer.invoicing"
+            domain="[('subscription_line_id', '=', active_id)]"
+            id="act_window_offer_invoicing_line_related" />
+    </data>
+</openerp>

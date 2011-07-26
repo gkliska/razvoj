@@ -1,0 +1,25 @@
+#;account;raèun
+5;COST CENTRES AND COST DRIVER (A. IN PRODUCTION AND SERVICE OPERATIONS);MJESTA I NOSITELJI TROŠKOVA (A. u proizvodno uslužnim djelatnostima)
+50;MAIN COST CENTRE;GLAVNA MJESTA U PROIZVODNJI
+500;Drive I;Pogon I
+501;Drive II;Pogon II
+502;Drive III;Pogon III...
+505;Direct production costs of goods (services)- working order;Izravni troškovi proizvoda (usluge) – radni nalog
+51;MAINTENANCE;ODRŽAVANJE
+510;Workshop "A";Radionica »A«
+511;Workshop "B";Radionica »B«
+512;etc.;Itd.
+52;TRANSPORTATION;TRANSPORT
+520;Private car;Jedinica osobni prijevoz
+521;Truck;Jedinica teretni prijevoz
+522;Other vehicles;Druge jedinice prijevoza
+53;MANAGEMENT AND ADMINISTRATIVE OVERHEADS;TROŠKOVI UPRAVE I ADMINISTRACIJE
+530;Material used in management and administrative overheads;Materijal u troškovima uprave i administracije
+531;Wages and other costs of administration;Plaæe, troškovi uprave i administracije
+532;Depreciation used in management and administrative overheads;Amortizacija u troškovima prodaje
+533;Other management and administrative overheads;Drugi troškovi uprave i administracije (Razrada prema    potrebama društva, na primjer: dnevnice, bankovni troškovi, osiguranje, reprezentacija itd.)
+54;SELLING COSTS;TROŠKOVI PRODAJE
+540;Material used in selling costs;Materijal u troškovima prodaje
+541;Wages used in selling costs;Plaæe u troškovima prodaje
+542;Depreciation in selling costs;Amortizacija u troškovima prodaje
+543;Other selling costs;Drugi troškovi prodaje (Razrada npr. troškovi opreme prodanih proizvoda, troškovi fakturiranja, troškovi propagande i slièno)

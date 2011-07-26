@@ -1,0 +1,42 @@
+<openerp>
+    <data>
+
+        <record model="ir.ui.view" id="exam_questionnaire_wizard_form">
+            <field name="name">training.exam.questionnaire.wizard.form</field>
+            <field name="model">training.exam.questionnaire.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Questionnaire Wizard" col="2">
+                    <separator string="Questionnaire Information" colspan="2" />
+                    <field name="name" />
+                    <field name="course_id" />
+                    <separator string="Information about the questions" colspan="2"/>
+                    <field name="kind" />
+                    <field name="number_of_question" />
+	                <newline/>
+	                <separator colspan="4"/>
+                    <group colspan="4">
+                        <label colspan="2"/>
+                        <button string="_Cancel" icon="gtk-cancel" special="cancel"/>
+                        <button name="action_generate_questionnaire" string="_Apply" icon="gtk-apply" type="object" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="exam_questionnaire_wizard_act">
+            <field name="name">Generate Questionnaire</field>
+            <field name="res_model">training.exam.questionnaire.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <!-- Training/ Library/ Exams/ Questionnaires/ Generate Questionnaire -->
+        <menuitem
+            id="library_exam_questionnaire_generate_mi"
+            parent="library_exam_mi"
+            action="exam_questionnaire_wizard_act" sequence="3"/>
+
+    </data>
+</openerp>

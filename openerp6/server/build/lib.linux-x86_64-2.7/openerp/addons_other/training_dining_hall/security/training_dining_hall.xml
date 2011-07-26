@@ -1,0 +1,126 @@
+<?xml version="1.0" ?>
+<openerp>
+	<data noupdate="1">
+		<record id="group_dining_hall_user" model="res.groups">
+			<field name="name">Training Dining Hall / User</field>
+		</record>
+
+		<record id="group_dining_hall_manager" model="res.groups">
+			<field name="name">Training Dining Hall / Manager</field>
+		</record>
+
+		<record id="group_dining_hall_view" model="res.groups">
+			<field name="name">Training Dining Hall / View</field>
+		</record>
+
+		<record id="ir_rule_training_session_view_group0" model="ir.rule">
+			<field name="model_id" ref="training.model_training_session"/>
+			<field name="domain_force">[('school_id','in',[x.id for x in user.school_ids])]</field>
+			<field name="name">Training Session - View group</field>
+			<field eval="0" name="global"/>
+			<field eval="[(6,0,[ref('group_dining_hall_view')])]" name="groups"/>
+			<field eval="1" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="1" name="perm_create"/>
+		</record>
+
+		<record id="ir_rule_training_seance_view_group0" model="ir.rule">
+			<field name="model_id" ref="training.model_training_seance"/>
+			<field name="domain_force">[('school_id','in',[x.id for x in user.school_ids])]</field>
+			<field name="name">Training Seance - View group</field>
+			<field eval="0" name="global"/>
+			<field eval="[(6,0,[ref('group_dining_hall_view')])]" name="groups"/>
+			<field eval="1" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="1" name="perm_create"/>
+		</record>
+
+		<record id="ir_rule_res_partner_contact_view_group0" model="ir.rule">
+			<field name="model_id" ref="base_contact.model_res_partner_contact"/>
+			<field name="domain_force">[('school_id','in',[x.id for x in user.school_ids])]</field>
+			<field name="name">Contact for Training Dining Hall - View group</field>
+			<field eval="0" name="global"/>
+			<field eval="[(6,0,[ref('group_dining_hall_view')])]" name="groups"/>
+			<field eval="1" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="1" name="perm_create"/>
+		</record>
+
+		<record id="ir_rule_res_partner_view_group0" model="ir.rule">
+			<field name="model_id" ref="base.model_res_partner"/>
+			<field name="domain_force">[('school_ids','in',[x.id for x in user.school_ids])]</field>
+			<field name="name">Partner for Training Dining Hall - View group</field>
+			<field eval="0" name="global"/>
+			<field eval="[(6,0,[ref('group_dining_hall_view')])]" name="groups"/>
+			<field eval="1" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="1" name="perm_create"/>
+		</record>
+
+		<record id="ir_rule_training_group_view_group0" model="ir.rule">
+			<field name="model_id" ref="training.model_training_group"/>
+			<field name="domain_force">[('school_id','in',[x.id for x in user.school_ids])]</field>
+			<field name="name">Training Group - View group</field>
+			<field eval="0" name="global"/>
+			<field eval="[(6,0,[ref('group_dining_hall_view')])]" name="groups"/>
+			<field eval="1" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="1" name="perm_create"/>
+		</record>
+
+		<record id="ir_rule_training_participation_view_group0" model="ir.rule">
+			<field name="model_id" ref="training.model_training_participation"/>
+			<field name="domain_force">[('school_id','in',[x.id for x in user.school_ids])]</field>
+			<field name="name">Training Participation - View group</field>
+			<field eval="0" name="global"/>
+			<field eval="[(6,0,[ref('group_dining_hall_view')])]" name="groups"/>
+			<field eval="1" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="1" name="perm_create"/>
+		</record>
+
+		<record id="ir_rule_training_subscription_line_view_group0" model="ir.rule">
+			<field name="model_id" ref="training.model_training_subscription_line"/>
+			<field name="domain_force">[('school_id','in',[x.id for x in user.school_ids])]</field>
+			<field name="name">Training Subscription Line - View group</field>
+			<field eval="0" name="global"/>
+			<field eval="[(6,0,[ref('group_dining_hall_view')])]" name="groups"/>
+			<field eval="1" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="1" name="perm_create"/>
+		</record>
+
+		<record id="ir_rule_training_subscription_view_group0" model="ir.rule">
+			<field name="model_id" ref="training.model_training_subscription"/>
+			<field name="domain_force">[('school_id','in',[x.id for x in user.school_ids])]</field>
+			<field name="name">Training Subscription - View group</field>
+			<field eval="0" name="global"/>
+			<field eval="[(6,0,[ref('group_dining_hall_view')])]" name="groups"/>
+			<field eval="1" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="1" name="perm_create"/>
+		</record>
+
+		<record id="ir_rule_training_holiday_year_view_group0" model="ir.rule">
+			<field name="model_id" ref="training.model_training_holiday_year"/>
+			<field name="domain_force">[('school_id','in',[x.id for x in user.school_ids])]</field>
+			<field name="name">Training Holiday Year - View group</field>
+			<field eval="0" name="global"/>
+			<field eval="[(6,0,[ref('group_dining_hall_view')])]" name="groups"/>
+			<field eval="1" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="1" name="perm_create"/>
+		</record>
+
+	</data>
+</openerp>
+

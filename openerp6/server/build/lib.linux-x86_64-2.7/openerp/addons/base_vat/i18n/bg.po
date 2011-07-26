@@ -1,0 +1,91 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* base_vat
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-01-11 11:14+0000\n"
+"PO-Revision-Date: 2011-02-27 10:03+0000\n"
+"Last-Translator: Dimitar Markov <dimitar.markov@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-04-29 05:02+0000\n"
+"X-Generator: Launchpad (build 12758)\n"
+
+#. module: base_vat
+#: code:addons/base_vat/base_vat.py:87
+#, python-format
+msgid ""
+"The Vat does not seems to be correct. You should have entered something like "
+"this %s"
+msgstr ""
+"ДДС номерът не изглежда верен. Трябва да въведете нещо подобно на това %s"
+
+#. module: base_vat
+#: model:ir.module.module,description:base_vat.module_meta_information
+msgid ""
+"\n"
+"    Enable the VAT Number for the partner. Check the validity of that VAT "
+"Number.\n"
+"\n"
+"    This module follows the methods stated at http://sima-pc.com/nif.php "
+"for\n"
+"    checking the validity of VAT Number assigned to partners in European "
+"countries.\n"
+"    "
+msgstr ""
+"\n"
+"    Включва ДДС номер за партньора. Проверява валидността на ДДС номера.\n"
+"\n"
+"    Модулът използва методите указани на http://sima-pc.com/nif.php за\n"
+"    проверка валидността на ДДС номера на партньори от европейските страни.\n"
+"    "
+
+#. module: base_vat
+#: model:ir.module.module,shortdesc:base_vat.module_meta_information
+msgid "Base VAT - To check VAT number validity"
+msgstr "ДДС - модул за проверка валидността на ДДС номер"
+
+#. module: base_vat
+#: constraint:res.partner:0
+msgid "Error ! You can not create recursive associated members."
+msgstr "Грешка ! Не може да създадете рекурсивно свързани членове"
+
+#. module: base_vat
+#: code:addons/base_vat/base_vat.py:88
+#, python-format
+msgid "The VAT is invalid, It should begin with the country code"
+msgstr "ДДС номерът е невалиден, трябва да започва с кода на държавата"
+
+#. module: base_vat
+#: help:res.partner,vat_subjected:0
+msgid ""
+"Check this box if the partner is subjected to the VAT. It will be used for "
+"the VAT legal statement."
+msgstr ""
+"Отметнете тук ако партньорът ви е регистриран по ДДС.  Ще бъде използвано за "
+"ДДС декларацията."
+
+#. module: base_vat
+#: model:ir.model,name:base_vat.model_res_partner
+msgid "Partner"
+msgstr "Партньор"
+
+#. module: base_vat
+#: field:res.partner,vat_subjected:0
+msgid "VAT Legal Statement"
+msgstr "ДДС декларация"
+
+#~ msgid "Invalid XML for View Architecture!"
+#~ msgstr "Невалиден XML за преглед на архитектурата"
+
+#~ msgid "VAT"
+#~ msgstr "ДДС"
+
+#~ msgid ""
+#~ "Enable the VAT Number for the partner. Check the validity of that VAT Number."
+#~ msgstr "Разреши ДДС номер за партньора. Провери валидността на ДДС номера."

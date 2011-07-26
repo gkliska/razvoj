@@ -1,0 +1,4369 @@
+# Slovak translation for openobject-addons
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2011-01-11 11:15+0000\n"
+"PO-Revision-Date: 2010-11-30 17:09+0000\n"
+"Last-Translator: Radoslav Sloboda <rado.sloboda@gmail.com>\n"
+"Language-Team: Slovak <sk@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-04-29 04:59+0000\n"
+"X-Generator: Launchpad (build 12758)\n"
+
+#. module: crm
+#: view:crm.lead.report:0
+msgid "# Leads"
+msgstr "# Iniciatívy"
+
+#. module: crm
+#: view:crm.lead:0
+#: selection:crm.lead,type:0
+#: selection:crm.lead.report,type:0
+msgid "Lead"
+msgstr "Iniciatíva"
+
+#. module: crm
+#: model:crm.case.categ,name:crm.categ_oppor3
+msgid "Need Services"
+msgstr "Potrebné služby"
+
+#. module: crm
+#: selection:crm.meeting,rrule_type:0
+msgid "Monthly"
+msgstr "Mesačne"
+
+#. module: crm
+#: view:crm.opportunity2phonecall:0
+msgid "Schedule a PhoneCall"
+msgstr "Naplánovať telefónny hovor"
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_case_stage
+msgid "Stage of case"
+msgstr "Etapa udalosti"
+
+#. module: crm
+#: view:crm.meeting:0
+msgid "Visibility"
+msgstr "Viditeľnosť"
+
+#. module: crm
+#: field:crm.lead,title:0
+msgid "Title"
+msgstr "Titul"
+
+#. module: crm
+#: field:crm.meeting,show_as:0
+msgid "Show as"
+msgstr "Zobraziť ako"
+
+#. module: crm
+#: field:crm.meeting,day:0
+#: selection:crm.meeting,select1:0
+msgid "Date of month"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+#: view:crm.phonecall:0
+msgid "Today"
+msgstr "Dnes"
+
+#. module: crm
+#: view:crm.merge.opportunity:0
+msgid "Select Opportunities"
+msgstr "Vyberte príležitosti"
+
+#. module: crm
+#: view:crm.meeting:0
+#: view:crm.phonecall2opportunity:0
+#: view:crm.phonecall2phonecall:0
+#: view:crm.send.mail:0
+msgid " "
+msgstr " "
+
+#. module: crm
+#: view:crm.lead.report:0
+#: field:crm.phonecall.report,delay_close:0
+msgid "Delay to close"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Previous Stage"
+msgstr "Predchádzajúca etapa"
+
+#. module: crm
+#: code:addons/crm/wizard/crm_add_note.py:26
+#, python-format
+msgid "Can not add note!"
+msgstr "Nemôžete pridávať poznámky!"
+
+#. module: crm
+#: field:crm.case.stage,name:0
+msgid "Stage Name"
+msgstr "Názov etapy"
+
+#. module: crm
+#: view:crm.lead.report:0
+#: field:crm.lead.report,day:0
+#: view:crm.phonecall.report:0
+#: field:crm.phonecall.report,day:0
+msgid "Day"
+msgstr "Deň"
+
+#. module: crm
+#: sql_constraint:crm.case.section:0
+msgid "The code of the sales team must be unique !"
+msgstr "Kód predajného tímu musí byť jedinečný!"
+
+#. module: crm
+#: code:addons/crm/wizard/crm_lead_to_opportunity.py:93
+#, python-format
+msgid "Lead '%s' has been converted to an opportunity."
+msgstr "Iniciatíva '%s' bola zmenená na príležitosť."
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:228
+#, python-format
+msgid "The lead '%s' has been closed."
+msgstr "Iniciatíva '%s' bola uzatvorená."
+
+#. module: crm
+#: selection:crm.meeting,freq:0
+msgid "No Repeat"
+msgstr "Bez opakovania"
+
+#. module: crm
+#: code:addons/crm/wizard/crm_lead_to_opportunity.py:133
+#: code:addons/crm/wizard/crm_lead_to_opportunity.py:258
+#: code:addons/crm/wizard/crm_lead_to_partner.py:55
+#: code:addons/crm/wizard/crm_phonecall_to_partner.py:52
+#, python-format
+msgid "Warning !"
+msgstr "Pozor!"
+
+#. module: crm
+#: selection:crm.meeting,rrule_type:0
+msgid "Yearly"
+msgstr "Ročne"
+
+#. module: crm
+#: field:crm.segmentation.line,name:0
+msgid "Rule Name"
+msgstr "Názov pravidla"
+
+#. module: crm
+#: view:crm.case.resource.type:0
+#: view:crm.lead:0
+#: field:crm.lead,type_id:0
+#: view:crm.lead.report:0
+#: field:crm.lead.report,type_id:0
+#: model:ir.model,name:crm.model_crm_case_resource_type
+msgid "Campaign"
+msgstr "Kampaň"
+
+#. module: crm
+#: selection:crm.lead2opportunity.partner,action:0
+msgid "Do not create a partner"
+msgstr "Nevytvárať partnera"
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Search Opportunities"
+msgstr "Vyhľadanie príležitostí"
+
+#. module: crm
+#: code:addons/crm/wizard/crm_merge_opportunities.py:46
+#, python-format
+msgid ""
+"Opportunity must have Partner assigned before merging with other Opportunity."
+msgstr ""
+
+#. module: crm
+#: code:addons/crm/wizard/crm_merge_opportunities.py:46
+#: code:addons/crm/wizard/crm_merge_opportunities.py:53
+#, python-format
+msgid "Warning!"
+msgstr "Varovanie!"
+
+#. module: crm
+#: view:crm.lead.report:0
+#: model:ir.actions.act_window,name:crm.action_report_crm_opportunity
+#: model:ir.ui.menu,name:crm.menu_report_crm_opportunities_tree
+msgid "Opportunities Analysis"
+msgstr "Analýza príležitostí"
+
+#. module: crm
+#: field:crm.lead,partner_id:0
+#: view:crm.lead.report:0
+#: field:crm.lead.report,partner_id:0
+#: field:crm.lead2opportunity,partner_id:0
+#: field:crm.lead2opportunity.partner,partner_id:0
+#: field:crm.lead2partner,partner_id:0
+#: view:crm.meeting:0
+#: field:crm.meeting,partner_id:0
+#: field:crm.partner2opportunity,partner_id:0
+#: view:crm.phonecall:0
+#: field:crm.phonecall,partner_id:0
+#: view:crm.phonecall.report:0
+#: field:crm.phonecall.report,partner_id:0
+#: field:crm.phonecall2opportunity,partner_id:0
+#: field:crm.phonecall2partner,partner_id:0
+#: model:ir.model,name:crm.model_res_partner
+#: model:process.node,name:crm.process_node_partner0
+msgid "Partner"
+msgstr "Partner"
+
+#. module: crm
+#: field:crm.meeting,organizer:0
+#: field:crm.meeting,organizer_id:0
+msgid "Organizer"
+msgstr "Organizér"
+
+#. module: crm
+#: view:crm.phonecall:0
+#: view:crm.phonecall2phonecall:0
+#: model:ir.actions.act_window,name:crm.phonecall_to_phonecall_act
+#: view:res.partner:0
+msgid "Schedule Other Call"
+msgstr "Naplánovať ostatné hovory"
+
+#. module: crm
+#: help:crm.meeting,edit_all:0
+msgid "Edit all Occurrences  of recurrent Meeting."
+msgstr "Upraviť všetky výskyty opakovaného stretnutia."
+
+#. module: crm
+#: code:addons/crm/wizard/crm_opportunity_to_phonecall.py:134
+#: code:addons/crm/wizard/crm_phonecall_to_phonecall.py:89
+#: model:crm.case.categ,name:crm.categ_meet3
+#: view:crm.phonecall:0
+#: model:ir.ui.menu,name:crm.menu_crm_config_phonecall
+#: view:res.partner:0
+#, python-format
+msgid "Phone Call"
+msgstr "Telefón"
+
+#. module: crm
+#: field:crm.lead,optout:0
+msgid "Opt-Out"
+msgstr "Nezasielať"
+
+#. module: crm
+#: code:addons/crm/crm_opportunity.py:108
+#, python-format
+msgid "The opportunity '%s' has been marked as lost."
+msgstr "Príležitosť '%s' bola označená ako stratená."
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.action_report_crm_lead
+msgid ""
+"Leads Analysis allows you to check different CRM related information. Check "
+"for treatment delays, number of responses given and emails sent. You can "
+"sort out your leads analysis by different groups to get accurate grained "
+"analysis."
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Send New Email"
+msgstr "Poslať nový Email"
+
+#. module: crm
+#: field:crm.segmentation,segmentation_line:0
+msgid "Criteria"
+msgstr "Kritériá"
+
+#. module: crm
+#: view:crm.segmentation:0
+msgid "Excluded Answers :"
+msgstr ""
+
+#. module: crm
+#: field:crm.case.stage,section_ids:0
+msgid "Sections"
+msgstr "Sekcie"
+
+#. module: crm
+#: view:crm.merge.opportunity:0
+msgid "_Merge"
+msgstr "_Merge"
+
+#. module: crm
+#: view:crm.lead.report:0
+#: model:ir.actions.act_window,name:crm.action_report_crm_lead
+#: model:ir.ui.menu,name:crm.menu_report_crm_leads_tree
+msgid "Leads Analysis"
+msgstr "Analýza iniciatív"
+
+#. module: crm
+#: view:crm.lead2opportunity.action:0
+msgid ""
+"If you select Merge with existing Opportunity, the lead details(with the "
+"communication history) will be merged with existing Opportunity of Selected "
+"partner."
+msgstr ""
+"Ak vyberiete sa spojiť s existujúcou príležitosťou, detaily iniciatívy "
+"(spolu s históriou komunikácie) budú spojené s existujúcou príležitosťou "
+"vybraného partnera."
+
+#. module: crm
+#: selection:crm.meeting,class:0
+msgid "Public"
+msgstr "Verejné"
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.crm_case_resource_type_act
+#: model:ir.ui.menu,name:crm.menu_crm_case_resource_type_act
+msgid "Campaigns"
+msgstr "Kampane"
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.crm_lead_categ_action
+#: model:ir.ui.menu,name:crm.menu_crm_case_phonecall-act
+#: model:ir.ui.menu,name:crm.menu_crm_lead_categ
+msgid "Categories"
+msgstr "Kategórie"
+
+#. module: crm
+#: selection:crm.meeting,end_type:0
+msgid "Forever"
+msgstr "Bez konca"
+
+#. module: crm
+#: help:crm.lead,optout:0
+msgid ""
+"If opt-out is checked, this contact has refused to receive emails or "
+"unsubscribed to a campaign."
+msgstr ""
+"Ak je vybrané nezasielať, tak tento kontakt odmietol prijímať e-maily alebo "
+"sa odhlásil z kampaní."
+
+#. module: crm
+#: model:process.transition,name:crm.process_transition_leadpartner0
+msgid "Prospect Partner"
+msgstr ""
+
+#. module: crm
+#: field:crm.lead,contact_name:0
+msgid "Contact Name"
+msgstr "Názov kontaktu"
+
+#. module: crm
+#: selection:crm.lead2opportunity.partner,action:0
+#: selection:crm.lead2partner,action:0
+#: selection:crm.phonecall2partner,action:0
+msgid "Link to an existing partner"
+msgstr "Link na existujúceho partnera"
+
+#. module: crm
+#: view:crm.lead:0
+#: view:crm.meeting:0
+#: field:crm.phonecall,partner_contact:0
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: crm
+#: view:crm.installer:0
+msgid "Enhance your core CRM Application with additional functionalities."
+msgstr ""
+
+#. module: crm
+#: field:crm.case.stage,on_change:0
+msgid "Change Probability Automatically"
+msgstr ""
+
+#. module: crm
+#: field:base.action.rule,regex_history:0
+msgid "Regular Expression on Case History"
+msgstr ""
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:209
+#, python-format
+msgid "The lead '%s' has been opened."
+msgstr "Iniciatíva '%s' bola otvorená."
+
+#. module: crm
+#: model:process.transition,name:crm.process_transition_opportunitymeeting0
+msgid "Opportunity Meeting"
+msgstr ""
+
+#. module: crm
+#: help:crm.lead.report,delay_close:0
+#: help:crm.phonecall.report,delay_close:0
+msgid "Number of Days to close the case"
+msgstr "Počet dní na uzatvorenie udalosti"
+
+#. module: crm
+#: model:process.node,note:crm.process_node_opportunities0
+msgid "When a real project/opportunity is detected"
+msgstr ""
+
+#. module: crm
+#: field:crm.installer,crm_fundraising:0
+msgid "Fundraising"
+msgstr ""
+
+#. module: crm
+#: view:res.partner:0
+#: field:res.partner,opportunity_ids:0
+msgid "Leads and Opportunities"
+msgstr "Iniciatívy a príležitosti"
+
+#. module: crm
+#: view:crm.send.mail:0
+msgid "_Send"
+msgstr "_Send"
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Communication"
+msgstr "Komunikácia"
+
+#. module: crm
+#: field:crm.case.section,change_responsible:0
+msgid "Change Responsible"
+msgstr "Zmena zodpovednosti"
+
+#. module: crm
+#: field:crm.merge.opportunity,state:0
+msgid "Set State To"
+msgstr "Nastaviť stav"
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_case_categ_phone_outgoing0
+msgid ""
+"Outbound Calls list all the calls to be done by your sales team. A salesman "
+"can record the information about the call in the form view. This information "
+"will be stored in the partner form to trace every contact you have with a "
+"customer. You can also import a .CSV file with a list of calls to be done by "
+"your sales team."
+msgstr ""
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_lead2opportunity_action
+msgid "Convert/Merge Opportunity"
+msgstr "Zmeniť / zlúčiť príležitosť"
+
+#. module: crm
+#: field:crm.lead,write_date:0
+msgid "Update Date"
+msgstr "Dátum aktualizácie"
+
+#. module: crm
+#: view:crm.lead2opportunity.action:0
+#: field:crm.lead2opportunity.action,name:0
+msgid "Select Action"
+msgstr "Vybrať akciu"
+
+#. module: crm
+#: field:base.action.rule,trg_categ_id:0
+#: view:crm.lead:0
+#: field:crm.lead,categ_id:0
+#: view:crm.lead.report:0
+#: field:crm.lead.report,categ_id:0
+#: field:crm.opportunity2phonecall,categ_id:0
+#: field:crm.phonecall,categ_id:0
+#: field:crm.phonecall.report,categ_id:0
+#: field:crm.phonecall2phonecall,categ_id:0
+msgid "Category"
+msgstr "Kategória"
+
+#. module: crm
+#: view:crm.lead.report:0
+msgid "#Opportunities"
+msgstr "#Príležitostí"
+
+#. module: crm
+#: model:crm.case.resource.type,name:crm.type_oppor2
+msgid "Campaign 1"
+msgstr "Kampaň 1"
+
+#. module: crm
+#: model:crm.case.resource.type,name:crm.type_oppor1
+msgid "Campaign 2"
+msgstr "Kampaň 2"
+
+#. module: crm
+#: view:crm.meeting:0
+msgid "Privacy"
+msgstr "Súkromie"
+
+#. module: crm
+#: view:crm.lead.report:0
+msgid "Opportunity Analysis"
+msgstr "Analýzy príležitosti"
+
+#. module: crm
+#: help:crm.meeting,location:0
+msgid "Location of Event"
+msgstr "Miesto konania"
+
+#. module: crm
+#: field:crm.meeting,rrule:0
+msgid "Recurrent Rule"
+msgstr "Opakujúce sa pravidlá"
+
+#. module: crm
+#: model:crm.case.resource.type,name:crm.type_lead1
+msgid "Version 4.2"
+msgstr "Verzia 4.2"
+
+#. module: crm
+#: model:crm.case.resource.type,name:crm.type_lead2
+msgid "Version 4.4"
+msgstr "Verzia 4.4"
+
+#. module: crm
+#: help:crm.installer,fetchmail:0
+msgid "Allows you to receive E-Mails from POP/IMAP server."
+msgstr "Umožňuje prijímať e-maily z POP/IMAP servera."
+
+#. module: crm
+#: model:process.transition,note:crm.process_transition_opportunitymeeting0
+msgid "Normal or phone meeting for opportunity"
+msgstr "Štandartné alebo telefonické stretnutie pre obchodnú príležitosť"
+
+#. module: crm
+#: model:process.node,note:crm.process_node_leads0
+msgid "Very first contact with new prospect"
+msgstr "Úplne prvý kontakt s novou perspektívou"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:278
+#: code:addons/crm/wizard/crm_lead_to_opportunity.py:195
+#: code:addons/crm/wizard/crm_lead_to_opportunity.py:229
+#: code:addons/crm/wizard/crm_lead_to_opportunity.py:297
+#: view:crm.lead2opportunity:0
+#: view:crm.partner2opportunity:0
+#: model:ir.actions.act_window,name:crm.action_crm_lead2opportunity
+#: model:ir.actions.act_window,name:crm.action_view_crm_partner2opportunity
+#: model:ir.actions.act_window,name:crm.crm_partner2opportunity
+#, python-format
+msgid "Create Opportunity"
+msgstr "Vytvoriť príležitosť"
+
+#. module: crm
+#: view:crm.installer:0
+msgid "Configure"
+msgstr "Nastaviť"
+
+#. module: crm
+#: code:addons/crm/crm.py:378
+#: view:crm.lead:0
+#: view:res.partner:0
+#, python-format
+msgid "Escalate"
+msgstr "Eskalovať"
+
+#. module: crm
+#: model:ir.module.module,shortdesc:crm.module_meta_information
+msgid "Customer & Supplier Relationship Management"
+msgstr "Zákaznícke & dodávateľske riadenie vzťahov"
+
+#. module: crm
+#: selection:crm.lead.report,month:0
+#: selection:crm.meeting,month_list:0
+#: selection:crm.phonecall.report,month:0
+msgid "June"
+msgstr "Jún"
+
+#. module: crm
+#: selection:crm.segmentation,state:0
+msgid "Not Running"
+msgstr "Nebeží"
+
+#. module: crm
+#: view:crm.send.mail:0
+#: model:ir.actions.act_window,name:crm.action_crm_reply_mail
+msgid "Reply to last Mail"
+msgstr "Odpoveď na posledný email"
+
+#. module: crm
+#: field:crm.lead,email:0
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#. module: crm
+#: field:crm.installer,wiki_sale_faq:0
+msgid "Sale FAQ"
+msgstr "FAQ predaja"
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_send_mail_attachment
+msgid "crm.send.mail.attachment"
+msgstr "crm.send.mail.attachment"
+
+#. module: crm
+#: selection:crm.lead.report,month:0
+#: selection:crm.meeting,month_list:0
+#: selection:crm.phonecall.report,month:0
+msgid "October"
+msgstr "Október"
+
+#. module: crm
+#: view:crm.segmentation:0
+msgid "Included Answers :"
+msgstr "Zahrnuté odpovede:"
+
+#. module: crm
+#: help:crm.meeting,email_from:0
+#: help:crm.phonecall,email_from:0
+msgid "These people will receive email."
+msgstr "Títo ľudia budú prijímať e-maily."
+
+#. module: crm
+#: view:crm.meeting:0
+#: field:crm.meeting,name:0
+msgid "Summary"
+msgstr "Názov"
+
+#. module: crm
+#: view:crm.segmentation:0
+msgid "State of Mind Computation"
+msgstr ""
+
+#. module: crm
+#: help:crm.case.section,change_responsible:0
+msgid ""
+"Thick this box if you want that on escalation, the responsible of this sale "
+"team automatically becomes responsible of the lead/opportunity escaladed"
+msgstr ""
+
+#. module: crm
+#: help:crm.installer,outlook:0
+#: help:crm.installer,thunderbird:0
+msgid ""
+"Allows you to link your e-mail to OpenERP's documents. You can attach it to "
+"any existing one in OpenERP or create a new one."
+msgstr ""
+
+#. module: crm
+#: view:crm.case.categ:0
+msgid "Case Category"
+msgstr "Kategória udalosti"
+
+#. module: crm
+#: help:crm.segmentation,som_interval_default:0
+msgid ""
+"Default state of mind for period preceeding the 'Max Interval' computation. "
+"This is the starting state of mind by default if the partner has no event."
+msgstr ""
+
+#. module: crm
+#: selection:crm.meeting,end_type:0
+msgid "End date"
+msgstr "Dátum ukončenia"
+
+#. module: crm
+#: constraint:base.action.rule:0
+msgid "Error: The mail is not well formated"
+msgstr "Chyba: Email nie je dobre formátovaný"
+
+#. module: crm
+#: view:crm.segmentation:0
+msgid "Profiling Options"
+msgstr "Možnosti profilovania"
+
+#. module: crm
+#: view:crm.phonecall.report:0
+msgid "#Phone calls"
+msgstr "#Telefónnych hovorov"
+
+#. module: crm
+#: help:crm.segmentation,categ_id:0
+msgid ""
+"The partner category that will be added to partners that match the "
+"segmentation criterions after computation."
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Communication history"
+msgstr "História komunikácie"
+
+#. module: crm
+#: help:crm.phonecall,canal_id:0
+msgid ""
+"The channels represent the different communication                         "
+"modes available with the customer. With each commercial opportunity, you can "
+"indicate                         the canall which is this opportunity source."
+msgstr ""
+
+#. module: crm
+#: code:addons/crm/crm_meeting.py:93
+#, python-format
+msgid "The meeting '%s' has been confirmed."
+msgstr "Stretnutie '%s' bolo potvrdené."
+
+#. module: crm
+#: field:crm.case.section,user_id:0
+msgid "Responsible User"
+msgstr "Zodpovedná osoba"
+
+#. module: crm
+#: code:addons/crm/wizard/crm_phonecall_to_partner.py:53
+#, python-format
+msgid "A partner is already defined on this phonecall."
+msgstr "Partner je už definovaný v tomto telefónnom hovore."
+
+#. module: crm
+#: help:crm.case.section,reply_to:0
+msgid ""
+"The email address put in the 'Reply-To' of all emails sent by OpenERP about "
+"cases in this sales team"
+msgstr ""
+
+#. module: crm
+#: view:res.users:0
+msgid "Current Activity"
+msgstr "Aktuálna aktivita"
+
+#. module: crm
+#: help:crm.meeting,exrule:0
+msgid ""
+"Defines a rule or repeating pattern of time to exclude from the recurring "
+"rule."
+msgstr ""
+
+#. module: crm
+#: field:crm.case.section,resource_calendar_id:0
+msgid "Working Time"
+msgstr "Pracovný čas"
+
+#. module: crm
+#: view:crm.segmentation.line:0
+msgid "Partner Segmentation Lines"
+msgstr "Riadky segmentácie partnera"
+
+#. module: crm
+#: view:crm.lead:0
+#: view:crm.meeting:0
+msgid "Details"
+msgstr "Detaily"
+
+#. module: crm
+#: help:crm.installer,crm_caldav:0
+msgid ""
+"Helps you to synchronize the meetings with other calendar clients and "
+"mobiles."
+msgstr ""
+"Vám pomôže zosynchronizovať kalendár stretnutí s ostatnými kalendármi a "
+"mobilných telefónov."
+
+#. module: crm
+#: selection:crm.meeting,freq:0
+msgid "Years"
+msgstr "Roky"
+
+#. module: crm
+#: help:crm.installer,crm_claim:0
+msgid ""
+"Manages the suppliers and customers claims, including your corrective or "
+"preventive actions."
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Leads Form"
+msgstr "Formulár iniciatívy"
+
+#. module: crm
+#: view:crm.segmentation:0
+#: model:ir.model,name:crm.model_crm_segmentation
+msgid "Partner Segmentation"
+msgstr "Segmentácia partnera"
+
+#. module: crm
+#: field:crm.lead.report,probable_revenue:0
+msgid "Probable Revenue"
+msgstr "Pravdepodobné príjmy"
+
+#. module: crm
+#: help:crm.segmentation,name:0
+msgid "The name of the segmentation."
+msgstr "Názov segmentácie."
+
+#. module: crm
+#: field:crm.case.stage,probability:0
+#: field:crm.lead,probability:0
+msgid "Probability (%)"
+msgstr "Pravdepodobnosť (%)"
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Leads Generation"
+msgstr ""
+
+#. module: crm
+#: view:board.board:0
+#: model:ir.ui.menu,name:crm.menu_board_statistics_dash
+msgid "Statistics Dashboard"
+msgstr "Nástenka štatistík"
+
+#. module: crm
+#: code:addons/crm/wizard/crm_lead_to_opportunity.py:86
+#: code:addons/crm/wizard/crm_lead_to_opportunity.py:96
+#: code:addons/crm/wizard/crm_partner_to_opportunity.py:101
+#: code:addons/crm/wizard/crm_phonecall_to_opportunity.py:117
+#: view:crm.lead:0
+#: selection:crm.lead,type:0
+#: selection:crm.lead.report,type:0
+#: field:crm.lead2opportunity,name:0
+#: field:crm.meeting,opportunity_id:0
+#: field:crm.phonecall,opportunity_id:0
+#, python-format
+msgid "Opportunity"
+msgstr "Príležitosť"
+
+#. module: crm
+#: model:crm.case.resource.type,name:crm.type_lead7
+msgid "Television"
+msgstr "Televízia"
+
+#. module: crm
+#: field:crm.installer,crm_caldav:0
+msgid "Calendar Synchronizing"
+msgstr "Synchronizácia kalendára"
+
+#. module: crm
+#: view:crm.segmentation:0
+msgid "Stop Process"
+msgstr "Zastavenie procesu"
+
+#. module: crm
+#: view:crm.phonecall:0
+msgid "Search Phonecalls"
+msgstr "Vyhľadávanie telefonických hovorov"
+
+#. module: crm
+#: view:crm.lead2opportunity.partner:0
+#: view:crm.lead2partner:0
+#: view:crm.phonecall2partner:0
+msgid "Continue"
+msgstr "Pokračovať"
+
+#. module: crm
+#: field:crm.segmentation,som_interval:0
+msgid "Days per Periode"
+msgstr "Dní za obdobie"
+
+#. module: crm
+#: field:crm.meeting,byday:0
+msgid "By day"
+msgstr "Podľa dňa"
+
+#. module: crm
+#: field:base.action.rule,act_section_id:0
+msgid "Set Team to"
+msgstr "Nastaviť tím"
+
+#. module: crm
+#: view:calendar.attendee:0
+#: field:calendar.attendee,categ_id:0
+msgid "Event Type"
+msgstr "Typ udalosti"
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_installer
+msgid "crm.installer"
+msgstr "crm.installer"
+
+#. module: crm
+#: field:crm.segmentation,exclusif:0
+msgid "Exclusive"
+msgstr "Exkluzívny"
+
+#. module: crm
+#: code:addons/crm/crm_opportunity.py:91
+#, python-format
+msgid "The opportunity '%s' has been won."
+msgstr "Príležitosť '%s' bola získaná."
+
+#. module: crm
+#: help:crm.meeting,alarm_id:0
+msgid "Set an alarm at this time, before the event occurs"
+msgstr ""
+
+#. module: crm
+#: model:ir.module.module,description:crm.module_meta_information
+msgid ""
+"The generic OpenERP Customer Relationship Management\n"
+"system enables a group of people to intelligently and efficiently manage\n"
+"leads, opportunities, meeting, phonecall etc.\n"
+"It manages key tasks such as communication, identification, prioritization,\n"
+"assignment, resolution and notification.\n"
+"\n"
+"OpenERP ensures that all cases are successfully tracked by users, customers "
+"and\n"
+"suppliers. It can automatically send reminders, escalate the request, "
+"trigger\n"
+"specific methods and lots of other actions based on your own enterprise "
+"rules.\n"
+"\n"
+"The greatest thing about this system is that users don't need to do "
+"anything\n"
+"special. They can just send email to the request tracker. OpenERP will take\n"
+"care of thanking them for their message, automatically routing it to the\n"
+"appropriate staff, and make sure all future correspondence gets to the "
+"right\n"
+"place.\n"
+"\n"
+"The CRM module has a email gateway for the synchronisation interface\n"
+"between mails and OpenERP. \n"
+"Create dashboard for CRM that includes:\n"
+"    * My Leads (list)\n"
+"    * Leads by Stage (graph)\n"
+"    * My Meetings (list)\n"
+"    * Sales Pipeline by Stage (graph)\n"
+"    * My Cases (list)\n"
+"    * Jobs Tracking (graph)\n"
+msgstr ""
+"OpenERP systém Customer Relationship Management\n"
+"umožňuje skupine ľudí inteligentne a efektívne riadiť\n"
+"príležitosti, stretnutia, telefónne hovori atď..\n"
+"Spravujú kľúčové úlohy ako je komunikácia, identifikácia, stanovenie "
+"priorít,\n"
+"priradenia, riešenia a oznámenia.\n"
+"\n"
+"OpenERP zaisťuje, že všetky udalosti sú úspešne monitorované podľa "
+"používateľov, zákazníkov a\n"
+"dodávateľov. Je možné automaticky posielať upomienky, eskalovať žiadosti, "
+"spúšťat\n"
+"špecifické metódy a množstvo ďalších akcií na základe svojich vlastných "
+"pravidiel v podnikaní.\n"
+"\n"
+"Najlepšou vecou v tomto systéme je, že používatelia nemusia nič robiť\n"
+"špeciálne. Stačí len poslať e-mailom ako žiadosť na tracker. OpenERP im \n"
+"len poďakuje za ich správu a automaticky presmeruje na\n"
+"vhodný personál. Takto budete uistení, že všetky budúce korešpondencie sa "
+"dostanú na správne\n"
+"miesto.\n"
+"\n"
+"CRM modul má e-mailová brána pre synchronizáciu\n"
+"medzi mailami a OpenERP.\n"
+"\n"
+"Vytvorená nástenka pre CRM obsahuje:\n"
+"* Môj iniciatívy (zoznam)\n"
+"* Iniciatívy podľa etáp (graf)\n"
+"* Moje stretnutia (zoznam)\n"
+"* Predaj podľa etáp (graf)\n"
+"* Moje udalosti (zoznam)\n"
+"* Sledovanie prác (graf)\n"
+
+#. module: crm
+#: field:crm.lead.report,create_date:0
+#: field:crm.phonecall.report,create_date:0
+msgid "Create Date"
+msgstr "Dátum vytvorenia"
+
+#. module: crm
+#: field:crm.lead,ref2:0
+msgid "Reference 2"
+msgstr "Referencie 2"
+
+#. module: crm
+#: view:crm.segmentation:0
+msgid "Sales Purchase"
+msgstr ""
+
+#. module: crm
+#: view:crm.case.stage:0
+#: field:crm.case.stage,requirements:0
+msgid "Requirements"
+msgstr "Požiadavky"
+
+#. module: crm
+#: help:crm.meeting,exdate:0
+msgid ""
+"This property defines the list of date/time exceptions for a recurring "
+"calendar component."
+msgstr ""
+
+#. module: crm
+#: view:crm.phonecall2opportunity:0
+msgid "Convert To Opportunity "
+msgstr "Zmeniť na príležitosť "
+
+#. module: crm
+#: help:crm.case.stage,sequence:0
+msgid "Gives the sequence order when displaying a list of case stages."
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+#: field:crm.merge.opportunity,opportunity_ids:0
+#: model:ir.actions.act_window,name:crm.crm_case_category_act_oppor11
+#: model:ir.ui.menu,name:crm.menu_crm_case_opp
+#: model:process.node,name:crm.process_node_opportunities0
+msgid "Opportunities"
+msgstr "Príležitosti"
+
+#. module: crm
+#: field:crm.segmentation,categ_id:0
+msgid "Partner Category"
+msgstr "Kategória partnera"
+
+#. module: crm
+#: view:crm.add.note:0
+#: model:ir.actions.act_window,name:crm.action_crm_add_note
+msgid "Add Note"
+msgstr "Pridať poznámku"
+
+#. module: crm
+#: field:crm.lead,is_supplier_add:0
+msgid "Supplier"
+msgstr "Dodávateľ"
+
+#. module: crm
+#: help:crm.send.mail,reply_to:0
+msgid "Reply-to of the Sales team defined on this case"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Mark Won"
+msgstr ""
+
+#. module: crm
+#: selection:crm.segmentation.line,expr_name:0
+msgid "Purchase Amount"
+msgstr "Suma nákupu"
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Mark Lost"
+msgstr ""
+
+#. module: crm
+#: selection:crm.lead.report,month:0
+#: selection:crm.meeting,month_list:0
+#: selection:crm.phonecall.report,month:0
+msgid "March"
+msgstr "Marec"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:230
+#, python-format
+msgid "The opportunity '%s' has been closed."
+msgstr "Príležitosť '%s' bola uzavretá."
+
+#. module: crm
+#: field:crm.lead,day_open:0
+msgid "Days to Open"
+msgstr "Dni do otvorenia"
+
+#. module: crm
+#: view:crm.meeting:0
+msgid "Show time as"
+msgstr "Zobraziť čas ako"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:264
+#: view:crm.phonecall2partner:0
+#, python-format
+msgid "Create Partner"
+msgstr "Vytvoriť partnera"
+
+#. module: crm
+#: selection:crm.segmentation.line,expr_operator:0
+msgid "<"
+msgstr "<"
+
+#. module: crm
+#: field:crm.lead,mobile:0
+#: field:crm.phonecall,partner_mobile:0
+msgid "Mobile"
+msgstr "Mobil"
+
+#. module: crm
+#: field:crm.meeting,end_type:0
+msgid "Way to end reccurency"
+msgstr "Spôsob ukončenia"
+
+#. module: crm
+#: code:addons/crm/wizard/crm_merge_opportunities.py:53
+#, python-format
+msgid ""
+"There are no other 'Open' or 'Pending' Opportunities for the partner '%s'."
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Next Stage"
+msgstr "Nasledujúca etapa"
+
+#. module: crm
+#: view:board.board:0
+msgid "My Meetings"
+msgstr "Moje stretnutia"
+
+#. module: crm
+#: field:crm.lead,ref:0
+msgid "Reference"
+msgstr "Referencie"
+
+#. module: crm
+#: field:crm.lead,optin:0
+msgid "Opt-In"
+msgstr "Zasielať"
+
+#. module: crm
+#: code:addons/crm/crm_opportunity.py:208
+#: code:addons/crm/crm_phonecall.py:184
+#: code:addons/crm/wizard/crm_phonecall_to_meeting.py:55
+#: code:addons/crm/wizard/crm_phonecall_to_meeting.py:137
+#: view:crm.meeting:0
+#: model:ir.actions.act_window,name:crm.act_crm_opportunity_crm_meeting_new
+#: model:ir.actions.act_window,name:crm.crm_case_categ_meet
+#: model:ir.ui.menu,name:crm.menu_crm_case_categ_meet
+#: model:ir.ui.menu,name:crm.menu_meeting_sale
+#: view:res.partner:0
+#: field:res.partner,meeting_ids:0
+#, python-format
+msgid "Meetings"
+msgstr "Stretnutia"
+
+#. module: crm
+#: view:crm.meeting:0
+msgid "Choose day where repeat the meeting"
+msgstr ""
+
+#. module: crm
+#: field:crm.lead,date_action_next:0
+#: field:crm.lead,title_action:0
+#: field:crm.meeting,date_action_next:0
+#: field:crm.phonecall,date_action_next:0
+msgid "Next Action"
+msgstr "Ďalšie akcie"
+
+#. module: crm
+#: field:crm.meeting,end_date:0
+msgid "Repeat Until"
+msgstr "Opakovať do"
+
+#. module: crm
+#: field:crm.meeting,date_deadline:0
+msgid "Deadline"
+msgstr "Konečný termín"
+
+#. module: crm
+#: help:crm.meeting,active:0
+msgid ""
+"If the active field is set to          true, it will allow you to hide the "
+"event alarm information without removing it."
+msgstr ""
+
+#. module: crm
+#: code:addons/crm/wizard/crm_phonecall_to_opportunity.py:57
+#, python-format
+msgid "Closed/Cancelled Phone Call Could not convert into Opportunity"
+msgstr "Uzavretý / Zrušený telefónny hovor nemožno zmeniť na príležitosť"
+
+#. module: crm
+#: view:crm.segmentation:0
+msgid "Partner Segmentations"
+msgstr "Segmentácie partnera"
+
+#. module: crm
+#: view:crm.meeting:0
+#: field:crm.meeting,user_id:0
+#: view:crm.phonecall:0
+#: field:crm.phonecall,user_id:0
+#: view:res.partner:0
+msgid "Responsible"
+msgstr "Zodpovedná osoba"
+
+#. module: crm
+#: view:res.partner:0
+msgid "Previous"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Statistics"
+msgstr "Štatistiky"
+
+#. module: crm
+#: view:crm.meeting:0
+#: field:crm.send.mail,email_from:0
+msgid "From"
+msgstr "Od"
+
+#. module: crm
+#: view:crm.lead2opportunity.action:0
+#: view:res.partner:0
+msgid "Next"
+msgstr "Ďalej"
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Stage:"
+msgstr "Etapa:"
+
+#. module: crm
+#: model:crm.case.stage,name:crm.stage_lead5
+#: model:crm.case.stage,name:crm.stage_opportunity5
+#: view:crm.lead:0
+msgid "Won"
+msgstr "Získaná"
+
+#. module: crm
+#: field:crm.lead.report,delay_expected:0
+msgid "Overpassed Deadline"
+msgstr ""
+
+#. module: crm
+#: model:crm.case.section,name:crm.section_sales_department
+msgid "Sales Department"
+msgstr ""
+
+#. module: crm
+#: field:crm.send.mail,html:0
+msgid "HTML formatting?"
+msgstr "HTML formátovanie?"
+
+#. module: crm
+#: field:crm.case.stage,type:0
+#: field:crm.lead,type:0
+#: field:crm.lead.report,type:0
+#: view:crm.meeting:0
+#: view:crm.phonecall:0
+#: view:crm.phonecall.report:0
+#: view:res.partner:0
+msgid "Type"
+msgstr "Typ"
+
+#. module: crm
+#: view:crm.segmentation:0
+msgid "Compute Segmentation"
+msgstr ""
+
+#. module: crm
+#: selection:crm.lead,priority:0
+#: selection:crm.lead.report,priority:0
+#: selection:crm.phonecall,priority:0
+#: selection:crm.phonecall.report,priority:0
+msgid "Lowest"
+msgstr "Najnižšia"
+
+#. module: crm
+#: view:crm.add.note:0
+#: view:crm.send.mail:0
+#: field:crm.send.mail.attachment,binary:0
+msgid "Attachment"
+msgstr "Príloha"
+
+#. module: crm
+#: selection:crm.lead.report,month:0
+#: selection:crm.meeting,month_list:0
+#: selection:crm.phonecall.report,month:0
+msgid "August"
+msgstr "August"
+
+#. module: crm
+#: view:crm.lead:0
+#: field:crm.lead,create_date:0
+#: field:crm.lead.report,creation_date:0
+#: field:crm.meeting,create_date:0
+#: field:crm.phonecall,create_date:0
+#: field:crm.phonecall.report,creation_date:0
+msgid "Creation Date"
+msgstr "Dátum vytvorenia"
+
+#. module: crm
+#: model:crm.case.categ,name:crm.categ_oppor5
+msgid "Need a Website Design"
+msgstr ""
+
+#. module: crm
+#: field:crm.meeting,recurrent_uid:0
+msgid "Recurrent ID"
+msgstr "ID opakovania"
+
+#. module: crm
+#: view:crm.lead:0
+#: view:crm.meeting:0
+#: field:crm.send.mail,subject:0
+#: view:res.partner:0
+msgid "Subject"
+msgstr "Predmet"
+
+#. module: crm
+#: field:crm.meeting,tu:0
+msgid "Tue"
+msgstr "Ut"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:300
+#: view:crm.case.stage:0
+#: view:crm.lead:0
+#: field:crm.lead,stage_id:0
+#: view:crm.lead.report:0
+#: field:crm.lead.report,stage_id:0
+#, python-format
+msgid "Stage"
+msgstr "Etapa"
+
+#. module: crm
+#: view:crm.lead:0
+msgid "History Information"
+msgstr "Informácie o histórii"
+
+#. module: crm
+#: field:base.action.rule,act_mail_to_partner:0
+msgid "Mail to Partner"
+msgstr "Mail na partnera"
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Mailings"
+msgstr "Korešpondencia"
+
+#. module: crm
+#: field:crm.meeting,class:0
+msgid "Mark as"
+msgstr "Označiť ako"
+
+#. module: crm
+#: field:crm.meeting,count:0
+msgid "Repeat"
+msgstr "Počet"
+
+#. module: crm
+#: help:crm.meeting,rrule_type:0
+msgid "Let the event automatically repeat at that interval"
+msgstr ""
+
+#. module: crm
+#: view:base.action.rule:0
+msgid "Condition Case Fields"
+msgstr ""
+
+#. module: crm
+#: view:crm.case.section:0
+#: field:crm.case.section,stage_ids:0
+#: view:crm.case.stage:0
+#: model:ir.actions.act_window,name:crm.crm_case_stage_act
+#: model:ir.actions.act_window,name:crm.crm_lead_stage_act
+#: model:ir.actions.act_window,name:crm.crm_opportunity_stage_act
+#: model:ir.ui.menu,name:crm.menu_crm_lead_stage_act
+#: model:ir.ui.menu,name:crm.menu_crm_opportunity_stage_act
+msgid "Stages"
+msgstr "Etapy"
+
+#. module: crm
+#: field:crm.lead,planned_revenue:0
+#: field:crm.lead2opportunity,planned_revenue:0
+#: field:crm.partner2opportunity,planned_revenue:0
+#: field:crm.phonecall2opportunity,planned_revenue:0
+msgid "Expected Revenue"
+msgstr "Očakávaný príjem"
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_phonecall_categ_action
+msgid ""
+"Create specific phone call categories to better define the type of calls "
+"tracked in the system."
+msgstr ""
+"Vytvorí osobitnú kategóriu telefonátu pre lepšie definovanie typu hovorov "
+"sledovaných v systéme."
+
+#. module: crm
+#: selection:crm.lead.report,month:0
+#: selection:crm.meeting,month_list:0
+#: selection:crm.phonecall.report,month:0
+msgid "September"
+msgstr "September"
+
+#. module: crm
+#: field:crm.segmentation,partner_id:0
+msgid "Max Partner ID processed"
+msgstr ""
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.action_report_crm_phonecall
+#: model:ir.ui.menu,name:crm.menu_report_crm_phonecalls_tree
+msgid "Phone Calls Analysis"
+msgstr "Analýzy telefónnych hovorov"
+
+#. module: crm
+#: field:crm.lead.report,opening_date:0
+#: field:crm.phonecall.report,opening_date:0
+msgid "Opening Date"
+msgstr "Dátum otvorenia"
+
+#. module: crm
+#: help:crm.phonecall,duration:0
+msgid "Duration in Minutes"
+msgstr "Doba trvania v minútach"
+
+#. module: crm
+#: help:crm.installer,crm_helpdesk:0
+msgid "Manages a Helpdesk service."
+msgstr ""
+
+#. module: crm
+#: field:crm.partner2opportunity,name:0
+msgid "Opportunity Name"
+msgstr "Názov príležitosti"
+
+#. module: crm
+#: help:crm.case.section,active:0
+msgid ""
+"If the active field is set to true, it will allow you to hide the sales team "
+"without removing it."
+msgstr ""
+
+#. module: crm
+#: view:crm.lead.report:0
+#: view:crm.phonecall.report:0
+msgid "  Year  "
+msgstr "  Rok  "
+
+#. module: crm
+#: field:crm.meeting,edit_all:0
+msgid "Edit All"
+msgstr "Upraviť všetko"
+
+#. module: crm
+#: field:crm.meeting,fr:0
+msgid "Fri"
+msgstr "Pia"
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_lead
+msgid "crm.lead"
+msgstr "crm.lead"
+
+#. module: crm
+#: field:crm.meeting,write_date:0
+msgid "Write Date"
+msgstr ""
+
+#. module: crm
+#: view:crm.meeting:0
+msgid "End of recurrency"
+msgstr "Koniec opakovania"
+
+#. module: crm
+#: view:crm.meeting:0
+msgid "Reminder"
+msgstr "Pripomienka"
+
+#. module: crm
+#: help:crm.segmentation,sales_purchase_active:0
+msgid ""
+"Check if you want to use this tab as part of the segmentation rule. If not "
+"checked, the criteria beneath will be ignored"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead2opportunity.partner:0
+#: view:crm.lead2partner:0
+#: view:crm.phonecall:0
+#: view:crm.phonecall2partner:0
+#: model:ir.actions.act_window,name:crm.action_crm_lead2partner
+#: model:ir.actions.act_window,name:crm.action_crm_phonecall2partner
+#: view:res.partner:0
+msgid "Create a Partner"
+msgstr "Vytvoriť partnera"
+
+#. module: crm
+#: field:crm.segmentation,state:0
+msgid "Execution Status"
+msgstr ""
+
+#. module: crm
+#: selection:crm.meeting,week_list:0
+msgid "Monday"
+msgstr "Pondelok"
+
+#. module: crm
+#: field:crm.lead,day_close:0
+msgid "Days to Close"
+msgstr "Dni do uzatvorenia"
+
+#. module: crm
+#: field:crm.add.note,attachment_ids:0
+#: field:crm.case.section,complete_name:0
+#: field:crm.send.mail,attachment_ids:0
+msgid "unknown"
+msgstr "neznámy"
+
+#. module: crm
+#: field:crm.lead,id:0
+#: field:crm.meeting,id:0
+#: field:crm.phonecall,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_partner2opportunity
+msgid "Partner To Opportunity"
+msgstr "Partner pre príležitosť"
+
+#. module: crm
+#: view:crm.meeting:0
+#: field:crm.meeting,date:0
+#: field:crm.opportunity2phonecall,date:0
+#: view:crm.phonecall:0
+#: field:crm.phonecall,date:0
+#: field:crm.phonecall2phonecall,date:0
+#: view:res.partner:0
+msgid "Date"
+msgstr "Dátum"
+
+#. module: crm
+#: view:crm.lead:0
+#: view:crm.lead.report:0
+#: view:crm.meeting:0
+#: view:crm.phonecall.report:0
+msgid "Extended Filters..."
+msgstr "Rozšírené filtre..."
+
+#. module: crm
+#: field:crm.phonecall2opportunity,name:0
+msgid "Opportunity Summary"
+msgstr "Zhrnutie príležitosti"
+
+#. module: crm
+#: view:crm.phonecall.report:0
+msgid "Search"
+msgstr "Hľadať"
+
+#. module: crm
+#: view:board.board:0
+msgid "Opportunities by Categories"
+msgstr "Príležitosti podľa katogórie"
+
+#. module: crm
+#: view:crm.meeting:0
+msgid "Choose day in the month where repeat the meeting"
+msgstr "Vyberte deň v mesiaci, kedy sa opakuje stretnutie"
+
+#. module: crm
+#: view:crm.segmentation:0
+msgid "Segmentation Description"
+msgstr "Opis segmentácie"
+
+#. module: crm
+#: view:crm.lead:0
+#: view:res.partner:0
+msgid "History"
+msgstr "História"
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_segmentation_tree-act
+msgid ""
+"Create specific partner categories which you can assign to your partners to "
+"better manage your interactions with them. The segmentation tool is able to "
+"assign categories to partners according to criteria you set."
+msgstr ""
+
+#. module: crm
+#: field:crm.case.section,code:0
+msgid "Code"
+msgstr "Kód"
+
+#. module: crm
+#: field:crm.case.section,child_ids:0
+msgid "Child Teams"
+msgstr "Podriadené tímy"
+
+#. module: crm
+#: view:crm.lead:0
+#: field:crm.lead,state:0
+#: view:crm.lead.report:0
+#: field:crm.lead.report,state:0
+#: view:crm.meeting:0
+#: field:crm.meeting,state:0
+#: field:crm.phonecall,state:0
+#: view:crm.phonecall.report:0
+#: field:crm.phonecall.report,state:0
+msgid "State"
+msgstr "Stav"
+
+#. module: crm
+#: field:crm.meeting,freq:0
+msgid "Frequency"
+msgstr "Frekvencia"
+
+#. module: crm
+#: view:crm.lead:0
+msgid "References"
+msgstr "Ďalšie zdroje"
+
+#. module: crm
+#: code:addons/crm/crm.py:392
+#: view:crm.lead:0
+#: view:crm.lead2opportunity:0
+#: view:crm.lead2opportunity.action:0
+#: view:crm.lead2opportunity.partner:0
+#: view:crm.lead2partner:0
+#: view:crm.phonecall:0
+#: view:crm.phonecall2partner:0
+#: view:res.partner:0
+#, python-format
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#. module: crm
+#: model:ir.model,name:crm.model_res_users
+msgid "res.users"
+msgstr "res.users"
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_merge_opportunity
+msgid "Merge two Opportunities"
+msgstr "Zlúčiť dve príležitosti"
+
+#. module: crm
+#: selection:crm.meeting,end_type:0
+msgid "Fix amout of times"
+msgstr "Určiť počet intervalov"
+
+#. module: crm
+#: view:crm.lead:0
+#: view:crm.meeting:0
+#: view:crm.phonecall:0
+msgid "Current"
+msgstr ""
+
+#. module: crm
+#: field:crm.meeting,exrule:0
+msgid "Exception Rule"
+msgstr ""
+
+#. module: crm
+#: help:base.action.rule,act_mail_to_partner:0
+msgid "Check this if you want the rule to send an email to the partner."
+msgstr ""
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.crm_phonecall_categ_action
+msgid "Phonecall Categories"
+msgstr "Kategórie telefónnych hovorov"
+
+#. module: crm
+#: view:crm.meeting:0
+msgid "Invite People"
+msgstr "Pozvaní ľudia"
+
+#. module: crm
+#: constraint:crm.case.section:0
+msgid "Error ! You cannot create recursive Sales team."
+msgstr "Chyba! Nemôžete vytvoriť rekurzívny predajný tím."
+
+#. module: crm
+#: view:crm.meeting:0
+msgid "Search Meetings"
+msgstr "Vyhľadanie stretnutí"
+
+#. module: crm
+#: selection:crm.segmentation.line,expr_name:0
+msgid "Sale Amount"
+msgstr "Predajná suma"
+
+#. module: crm
+#: code:addons/crm/wizard/crm_send_email.py:141
+#, python-format
+msgid "Unable to send mail. Please check SMTP is configured properly."
+msgstr ""
+"Nie je možné odoslať poštu. Skontrolujte prosím, či je SMTP správne "
+"nakonfigurovaný."
+
+#. module: crm
+#: selection:crm.segmentation.line,expr_operator:0
+msgid "="
+msgstr "="
+
+#. module: crm
+#: selection:crm.meeting,state:0
+msgid "Unconfirmed"
+msgstr "Nepotvrdené"
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.action_report_crm_opportunity
+msgid ""
+"Opportunities Analysis gives you an instant access to your opportunities "
+"with information such as the expected revenue, planned cost, missed "
+"deadlines or the number of interactions per opportunity. This report is "
+"mainly used by the sales manager in order to do the periodic review with the "
+"teams of the sales pipeline."
+msgstr ""
+
+#. module: crm
+#: field:crm.case.categ,name:0
+#: field:crm.installer,name:0
+#: field:crm.lead,name:0
+#: field:crm.segmentation,name:0
+#: field:crm.send.mail.attachment,name:0
+msgid "Name"
+msgstr "Názov"
+
+#. module: crm
+#: field:crm.meeting,alarm_id:0
+#: field:crm.meeting,base_calendar_alarm_id:0
+msgid "Alarm"
+msgstr "Pripomenutie"
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_lead_stage_act
+msgid ""
+"Add specific stages to leads and opportunities allowing your sales to better "
+"organise their sales pipeline. Stages will allow them to easily track how a "
+"specific lead or opportunity is positioned in the sales cycle."
+msgstr ""
+
+#. module: crm
+#: view:crm.lead.report:0
+#: view:crm.phonecall.report:0
+msgid "My Case(s)"
+msgstr "Moja udalosť"
+
+#. module: crm
+#: field:crm.lead,birthdate:0
+msgid "Birthdate"
+msgstr "Dátum narodenia"
+
+#. module: crm
+#: view:crm.meeting:0
+msgid "The"
+msgstr ""
+
+#. module: crm
+#: field:crm.send.mail.attachment,wizard_id:0
+msgid "Wizard"
+msgstr "Sprievodca"
+
+#. module: crm
+#: help:crm.lead,section_id:0
+msgid ""
+"Sales team to which this case belongs to. Defines responsible user and e-"
+"mail address for the mail gateway."
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+#: view:crm.phonecall:0
+msgid "Creation"
+msgstr "Vytvorené"
+
+#. module: crm
+#: selection:crm.lead,priority:0
+#: selection:crm.lead.report,priority:0
+#: selection:crm.phonecall,priority:0
+#: selection:crm.phonecall.report,priority:0
+msgid "High"
+msgstr "Vysoká"
+
+#. module: crm
+#: model:process.node,note:crm.process_node_partner0
+msgid "Convert to prospect to business partner"
+msgstr ""
+
+#. module: crm
+#: view:crm.phonecall2opportunity:0
+msgid "_Convert"
+msgstr "_Convert"
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.action_view_attendee_form
+msgid ""
+"With Meeting Invitations you can create and manage the meeting invitations "
+"sent/to be sent to your colleagues/partners. You can not only invite OpenERP "
+"users, but also external parties, such as a customer."
+msgstr ""
+
+#. module: crm
+#: selection:crm.meeting,week_list:0
+msgid "Saturday"
+msgstr "Sobota"
+
+#. module: crm
+#: selection:crm.meeting,byday:0
+msgid "Fifth"
+msgstr "Piaty"
+
+#. module: crm
+#: view:crm.phonecall2phonecall:0
+msgid "_Schedule"
+msgstr "_Schedule"
+
+#. module: crm
+#: field:crm.lead.report,delay_close:0
+msgid "Delay to Close"
+msgstr ""
+
+#. module: crm
+#: field:crm.meeting,we:0
+msgid "Wed"
+msgstr "St"
+
+#. module: crm
+#: model:crm.case.categ,name:crm.categ_oppor6
+msgid "Potential Reseller"
+msgstr ""
+
+#. module: crm
+#: field:crm.lead.report,planned_revenue:0
+msgid "Planned Revenue"
+msgstr "Plánované príjmy"
+
+#. module: crm
+#: view:crm.lead:0
+#: view:crm.lead.report:0
+#: view:crm.meeting:0
+#: view:crm.phonecall:0
+#: view:crm.phonecall.report:0
+msgid "Group By..."
+msgstr "Zoskupiť podľa..."
+
+#. module: crm
+#: help:crm.lead,partner_id:0
+msgid "Optional linked partner, usually after conversion of the lead"
+msgstr ""
+
+#. module: crm
+#: view:crm.meeting:0
+msgid "Invitation details"
+msgstr "Detaily pozvánky"
+
+#. module: crm
+#: field:crm.case.section,parent_id:0
+msgid "Parent Team"
+msgstr ""
+
+#. module: crm
+#: field:crm.lead,date_action:0
+msgid "Next Action Date"
+msgstr "Ďalší dátum s akciou"
+
+#. module: crm
+#: selection:crm.segmentation,state:0
+msgid "Running"
+msgstr "Spustené"
+
+#. module: crm
+#: selection:crm.meeting,freq:0
+msgid "Hours"
+msgstr "Hodiny"
+
+#. module: crm
+#: field:crm.lead,zip:0
+msgid "Zip"
+msgstr "PSČ"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:213
+#, python-format
+msgid "The case '%s' has been opened."
+msgstr "Udalosť '%s' bola otvorená."
+
+#. module: crm
+#: view:crm.installer:0
+msgid "title"
+msgstr "titul"
+
+#. module: crm
+#: model:crm.case.categ,name:crm.categ_phone1
+#: model:ir.actions.act_window,name:crm.crm_case_categ_phone_incoming0
+#: model:ir.ui.menu,name:crm.menu_crm_case_phone_inbound
+msgid "Inbound"
+msgstr "Prichádzajúce"
+
+#. module: crm
+#: help:crm.case.stage,probability:0
+msgid ""
+"This percentage depicts the default/average probability of the Case for this "
+"stage to be a success"
+msgstr ""
+
+#. module: crm
+#: view:crm.phonecall.report:0
+#: model:ir.actions.act_window,name:crm.act_crm_opportunity_crm_phonecall_new
+msgid "Phone calls"
+msgstr "Telefónne hovory"
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Communication  History"
+msgstr "História komunikácie"
+
+#. module: crm
+#: selection:crm.meeting,show_as:0
+msgid "Free"
+msgstr "Voľný"
+
+#. module: crm
+#: view:crm.installer:0
+msgid "Synchronization"
+msgstr "Synchronizácia"
+
+#. module: crm
+#: field:crm.case.section,allow_unlink:0
+msgid "Allow Delete"
+msgstr "Povoliť odstránenie"
+
+#. module: crm
+#: field:crm.meeting,mo:0
+msgid "Mon"
+msgstr "Po"
+
+#. module: crm
+#: selection:crm.lead,priority:0
+#: selection:crm.lead.report,priority:0
+#: selection:crm.phonecall,priority:0
+#: selection:crm.phonecall.report,priority:0
+msgid "Highest"
+msgstr "Najvyššia"
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_case_categ_phone_incoming0
+msgid ""
+"The Inbound Calls tool allows you to log your inbound calls on the fly. Each "
+"call you get will appear on the partner form to trace every contact you have "
+"with a partner. From the phone call form, you can trigger a request for "
+"another call, a meeting or an opportunity."
+msgstr ""
+
+#. module: crm
+#: help:crm.meeting,recurrency:0
+msgid "Recurrent Meeting"
+msgstr "Opakované stretnutie"
+
+#. module: crm
+#: view:crm.case.section:0
+#: view:crm.lead:0
+#: field:crm.lead,description:0
+msgid "Notes"
+msgstr "Poznámky"
+
+#. module: crm
+#: selection:crm.meeting,freq:0
+msgid "Days"
+msgstr "Dni"
+
+#. module: crm
+#: field:crm.segmentation.line,expr_value:0
+msgid "Value"
+msgstr "Hodnota"
+
+#. module: crm
+#: view:crm.lead:0
+#: view:crm.lead.report:0
+msgid "Opportunity by Categories"
+msgstr "Príležitosťi podľa kategórie"
+
+#. module: crm
+#: view:crm.lead:0
+#: field:crm.lead,partner_name:0
+msgid "Customer Name"
+msgstr "Meno zákazníka"
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_case_categ_meet
+msgid ""
+"The meeting calendar is shared between the sales teams and fully integrated "
+"with other applications such as the employee holidays or the business "
+"opportunities. You can also synchronize meetings with your mobile phone "
+"using the caldav interface."
+msgstr ""
+"Kalendár stretnutí je zdieľaný medzi predajné tímy a plne integrovaný s "
+"ďalšími aplikáciami. Napríklad s dovolenkou zamestnanca alebo obchodnej "
+"príležitosti. Môžete tiež synchronizovať vaše stretnutia v mobilnom telefóne "
+"s využitím protokolu CalDAV."
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_phonecall2opportunity
+msgid "Phonecall To Opportunity"
+msgstr "Telefónny hovor na príležitosť"
+
+#. module: crm
+#: field:crm.case.section,reply_to:0
+msgid "Reply-To"
+msgstr "Odpoveď-pre"
+
+#. module: crm
+#: view:crm.case.section:0
+msgid "Select stages for this Sales Team"
+msgstr "Vyberte etapu pre tento obchodný tím"
+
+#. module: crm
+#: view:board.board:0
+msgid "Opportunities by Stage"
+msgstr "Príležitostí podľa etapy"
+
+#. module: crm
+#: view:crm.meeting:0
+msgid "Recurrency Option"
+msgstr "Voľby opakovania"
+
+#. module: crm
+#: model:process.transition,note:crm.process_transition_leadpartner0
+msgid "Prospect is converting to business partner"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead2opportunity:0
+#: view:crm.partner2opportunity:0
+#: model:ir.actions.act_window,name:crm.phonecall2opportunity_act
+msgid "Convert To Opportunity"
+msgstr "Zmeniť na príležitosť"
+
+#. module: crm
+#: view:crm.phonecall:0
+#: view:crm.phonecall.report:0
+#: view:res.partner:0
+msgid "Held"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+#: view:crm.phonecall:0
+#: view:res.partner:0
+msgid "Reset to Draft"
+msgstr "Reset pre návrh"
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Extra Info"
+msgstr "Ďalšie informácie"
+
+#. module: crm
+#: view:crm.merge.opportunity:0
+#: model:ir.actions.act_window,name:crm.action_merge_opportunities
+#: model:ir.actions.act_window,name:crm.merge_opportunity_act
+msgid "Merge Opportunities"
+msgstr "Zlúčenie príležitostí"
+
+#. module: crm
+#: model:crm.case.resource.type,name:crm.type_lead5
+msgid "Google Adwords"
+msgstr "Google Adwords"
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_phonecall
+msgid "crm.phonecall"
+msgstr "crm.phonecall"
+
+#. module: crm
+#: model:crm.case.resource.type,name:crm.type_lead3
+msgid "Mail Campaign 2"
+msgstr "Emailová kampaň 2"
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Create"
+msgstr "Vytvoriť"
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Dates"
+msgstr "Termíny"
+
+#. module: crm
+#: code:addons/crm/crm.py:492
+#, python-format
+msgid "Send"
+msgstr "Odoslať"
+
+#. module: crm
+#: view:crm.lead:0
+#: field:crm.lead,priority:0
+#: view:crm.lead.report:0
+#: field:crm.lead.report,priority:0
+#: field:crm.phonecall,priority:0
+#: view:crm.phonecall.report:0
+#: field:crm.phonecall.report,priority:0
+msgid "Priority"
+msgstr "Priorita"
+
+#. module: crm
+#: field:crm.segmentation,sales_purchase_active:0
+msgid "Use The Sales Purchase Rules"
+msgstr ""
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_lead2opportunity_partner
+msgid "Lead To Opportunity Partner"
+msgstr ""
+
+#. module: crm
+#: field:crm.meeting,location:0
+msgid "Location"
+msgstr "Miesto"
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Reply"
+msgstr "Odpoveď"
+
+#. module: crm
+#: selection:crm.meeting,freq:0
+msgid "Weeks"
+msgstr "Týždne"
+
+#. module: crm
+#: model:process.node,note:crm.process_node_meeting0
+msgid "Schedule a normal or phone meeting"
+msgstr "Naplánovať normálne alebo telefonické stretnutie"
+
+#. module: crm
+#: code:addons/crm/crm.py:375
+#, python-format
+msgid "Error !"
+msgstr "Chyba !"
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_meeting_categ_action
+msgid ""
+"Create different meeting categories to better organize and classify your "
+"meetings."
+msgstr ""
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_segmentation_line
+msgid "Segmentation line"
+msgstr "Riadky segmentácie"
+
+#. module: crm
+#: view:crm.opportunity2phonecall:0
+#: view:crm.phonecall2phonecall:0
+msgid "Planned Date"
+msgstr "Plánovaný dátum"
+
+#. module: crm
+#: field:crm.meeting,base_calendar_url:0
+msgid "Caldav URL"
+msgstr "Caldav URL"
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Expected Revenues"
+msgstr "Očakávané príjmy"
+
+#. module: crm
+#: model:crm.case.resource.type,name:crm.type_lead6
+msgid "Google Adwords 2"
+msgstr "Google Adwords 2"
+
+#. module: crm
+#: help:crm.lead,type:0
+#: help:crm.lead.report,type:0
+msgid "Type is used to separate Leads and Opportunities"
+msgstr ""
+
+#. module: crm
+#: view:crm.phonecall2partner:0
+msgid "Are you sure you want to create a partner based on this Phonecall ?"
+msgstr ""
+"Ste si istí, že chcete vytvoriť partnera na základe tohto telefónneho hovoru?"
+
+#. module: crm
+#: selection:crm.lead.report,month:0
+#: selection:crm.meeting,month_list:0
+#: selection:crm.phonecall.report,month:0
+msgid "July"
+msgstr "Júl"
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_case_section_act
+msgid ""
+"Define a Sales Team to organize your different salesmen or sales departments "
+"into separate teams. Each team will work in its own list of opportunities, "
+"sales orders, etc. Each user can set a default team in his user preferences. "
+"The opportunities and sales order displayed, will automatically be filtered "
+"according to his team."
+msgstr ""
+
+#. module: crm
+#: help:crm.meeting,count:0
+msgid "Repeat x times"
+msgstr ""
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.crm_case_section_act
+#: model:ir.model,name:crm.model_crm_case_section
+#: model:ir.ui.menu,name:crm.menu_crm_case_section_act
+msgid "Sales Teams"
+msgstr ""
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_lead2partner
+msgid "Lead to Partner"
+msgstr "Iniciatíva na partnera"
+
+#. module: crm
+#: view:crm.segmentation:0
+#: field:crm.segmentation.line,segmentation_id:0
+#: model:ir.actions.act_window,name:crm.crm_segmentation-act
+msgid "Segmentation"
+msgstr "Segmentácia"
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Team"
+msgstr "Tím"
+
+#. module: crm
+#: field:crm.installer,outlook:0
+msgid "MS-Outlook"
+msgstr "MS-Outlook"
+
+#. module: crm
+#: view:crm.phonecall:0
+#: view:crm.phonecall.report:0
+#: view:res.partner:0
+msgid "Not Held"
+msgstr ""
+
+#. module: crm
+#: field:crm.lead.report,probability:0
+msgid "Probability"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead.report:0
+#: field:crm.lead.report,month:0
+#: field:crm.meeting,month_list:0
+#: view:crm.phonecall.report:0
+#: field:crm.phonecall.report,month:0
+msgid "Month"
+msgstr "Mesiac"
+
+#. module: crm
+#: view:crm.lead:0
+#: model:ir.actions.act_window,name:crm.crm_case_category_act_leads_all
+#: model:ir.ui.menu,name:crm.menu_crm_case_categ0_act_leads
+#: model:process.node,name:crm.process_node_leads0
+msgid "Leads"
+msgstr "Iniciatívy"
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_case_category_act_leads_all
+msgid ""
+"Leads allow you to manage and keep track of all initial contacts with a "
+"prospect or partner showing interest in your products or services. A lead is "
+"usually the first step in your sales cycle. Once qualified, a lead may be "
+"converted into a business opportunity, while creating the related partner "
+"for further detailed tracking of any linked activities. You can import a "
+"database of prospects, keep track of your business cards or integrate your "
+"website's contact form with the OpenERP Leads. Leads can be connected to the "
+"email gateway: new emails may create leads, each of them automatically gets "
+"the history of the conversation with the prospect."
+msgstr ""
+"Iniciatívy umožňujú spravovať a monitorovať všetky prvé kontakty so "
+"zákazníkom alebo partnerom, ktorý prejavuje záujem o Vaše produkty alebo "
+"služby. Iniciatíva je zvyčajne prvým krokom v predajnom cykle. Iniciatíva "
+"môže byť transformovaná na obchodnú príležitosť a pri vytváraní súvisiaceho "
+"partnera aj pre ďalšie podrobné monitorovanie všetkých súvisiacich činností. "
+"Môžete importovať databázu perspektív, sledovať vaše vizitky alebo "
+"integrovať na svoje webové stránky kontaktný formulár s OpenERP "
+"iniciatívami. K iniciatívam je možné pripojiť cez e-mailovú bránu: nové e-"
+"maily ktoré vytvárajú iniciatívy a každý z nich automaticky dostane históriu "
+"konverzácie s perspektívou uzatvorenia obchodu."
+
+#. module: crm
+#: selection:crm.lead2opportunity.partner,action:0
+#: selection:crm.lead2partner,action:0
+#: selection:crm.phonecall2partner,action:0
+msgid "Create a new partner"
+msgstr "Vytvoriť nového partnera"
+
+#. module: crm
+#: view:crm.meeting:0
+#: view:res.partner:0
+msgid "Start Date"
+msgstr "Počiatočný dátum"
+
+#. module: crm
+#: selection:crm.phonecall,state:0
+#: view:crm.phonecall.report:0
+msgid "Todo"
+msgstr ""
+
+#. module: crm
+#: view:crm.meeting:0
+msgid "Delegate"
+msgstr ""
+
+#. module: crm
+#: view:crm.meeting:0
+msgid "Decline"
+msgstr ""
+
+#. module: crm
+#: help:crm.lead,optin:0
+msgid "If opt-in is checked, this contact has accepted to receive emails."
+msgstr ""
+"Ak je vybrané zasielanie, tak tento kontakt prijal zasielanie e-mailov."
+
+#. module: crm
+#: view:crm.meeting:0
+msgid "Reset to Unconfirmed"
+msgstr ""
+
+#. module: crm
+#: code:addons/crm/wizard/crm_add_note.py:40
+#: view:crm.add.note:0
+#, python-format
+msgid "Note"
+msgstr "Poznámka"
+
+#. module: crm
+#: constraint:res.users:0
+msgid "The chosen company is not in the allowed companies for this user"
+msgstr ""
+
+#. module: crm
+#: selection:crm.lead,priority:0
+#: selection:crm.lead.report,priority:0
+#: selection:crm.phonecall,priority:0
+#: selection:crm.phonecall.report,priority:0
+msgid "Low"
+msgstr "Nízka"
+
+#. module: crm
+#: selection:crm.add.note,state:0
+#: field:crm.lead,date_closed:0
+#: selection:crm.lead,state:0
+#: view:crm.lead.report:0
+#: selection:crm.lead.report,state:0
+#: field:crm.meeting,date_closed:0
+#: selection:crm.merge.opportunity,state:0
+#: field:crm.phonecall,date_closed:0
+#: selection:crm.phonecall.report,state:0
+#: selection:crm.send.mail,state:0
+msgid "Closed"
+msgstr "Uzavreté"
+
+#. module: crm
+#: view:crm.installer:0
+msgid "Plug-In"
+msgstr ""
+
+#. module: crm
+#: model:crm.case.categ,name:crm.categ_meet2
+msgid "Internal Meeting"
+msgstr "Interné stretnutie"
+
+#. module: crm
+#: code:addons/crm/crm.py:411
+#: selection:crm.add.note,state:0
+#: view:crm.lead:0
+#: selection:crm.lead,state:0
+#: view:crm.lead.report:0
+#: selection:crm.lead.report,state:0
+#: selection:crm.merge.opportunity,state:0
+#: selection:crm.phonecall,state:0
+#: selection:crm.phonecall.report,state:0
+#: selection:crm.send.mail,state:0
+#, python-format
+msgid "Pending"
+msgstr "Čaká sa"
+
+#. module: crm
+#: model:crm.case.categ,name:crm.categ_meet1
+msgid "Customer Meeting"
+msgstr "Stretnutie so zákazníkom"
+
+#. module: crm
+#: view:crm.lead:0
+#: field:crm.lead,email_cc:0
+msgid "Global CC"
+msgstr ""
+
+#. module: crm
+#: view:crm.phonecall:0
+#: model:ir.actions.act_window,name:crm.crm_case_categ_phone0
+#: model:ir.ui.menu,name:crm.menu_crm_case_phone
+#: view:res.partner:0
+msgid "Phone Calls"
+msgstr "Telefónne hovory"
+
+#. module: crm
+#: help:crm.lead.report,delay_open:0
+#: help:crm.phonecall.report,delay_open:0
+msgid "Number of Days to open the case"
+msgstr "Počet dní na otvorenie prípadu"
+
+#. module: crm
+#: field:crm.lead,phone:0
+#: field:crm.phonecall,partner_phone:0
+msgid "Phone"
+msgstr "Telefón"
+
+#. module: crm
+#: field:crm.case.section,active:0
+#: field:crm.lead,active:0
+#: view:crm.lead.report:0
+#: field:crm.meeting,active:0
+#: field:crm.phonecall,active:0
+msgid "Active"
+msgstr "Aktívna"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:306
+#, python-format
+msgid "The stage of opportunity '%s' has been changed to '%s'."
+msgstr "Etapa príležitosti '%s' bola zmenená na '%s'."
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:282
+#, python-format
+msgid "Changed Stage to: %s"
+msgstr ""
+
+#. module: crm
+#: selection:crm.segmentation.line,operator:0
+msgid "Mandatory Expression"
+msgstr ""
+
+#. module: crm
+#: selection:crm.segmentation.line,expr_operator:0
+msgid ">"
+msgstr ">"
+
+#. module: crm
+#: view:crm.meeting:0
+msgid "Uncertain"
+msgstr ""
+
+#. module: crm
+#: field:crm.send.mail,email_cc:0
+msgid "CC"
+msgstr ""
+
+#. module: crm
+#: view:crm.send.mail:0
+#: model:ir.actions.act_window,name:crm.action_crm_send_mail
+msgid "Send Mail"
+msgstr "Poslať e-mail"
+
+#. module: crm
+#: selection:crm.meeting,freq:0
+msgid "Months"
+msgstr "Mesiace"
+
+#. module: crm
+#: help:crm.installer,wiki_sale_faq:0
+msgid ""
+"Helps you manage wiki pages for Frequently Asked Questions on Sales "
+"Application."
+msgstr ""
+
+#. module: crm
+#: help:crm.installer,crm_fundraising:0
+msgid "This may help associations in their fundraising process and tracking."
+msgstr ""
+
+#. module: crm
+#: field:crm.lead2opportunity.partner,action:0
+#: field:crm.lead2partner,action:0
+#: field:crm.phonecall2partner,action:0
+msgid "Action"
+msgstr "Akcia"
+
+#. module: crm
+#: field:crm.installer,crm_claim:0
+msgid "Claims"
+msgstr ""
+
+#. module: crm
+#: field:crm.segmentation,som_interval_decrease:0
+msgid "Decrease (0>1)"
+msgstr "Pokles (0>1)"
+
+#. module: crm
+#: view:crm.add.note:0
+#: view:crm.lead:0
+#: view:crm.send.mail:0
+msgid "Attachments"
+msgstr "Prílohy"
+
+#. module: crm
+#: selection:crm.meeting,rrule_type:0
+msgid "Weekly"
+msgstr "Týždenne"
+
+#. module: crm
+#: code:addons/crm/wizard/crm_send_email.py:72
+#: code:addons/crm/wizard/crm_send_email.py:169
+#: code:addons/crm/wizard/crm_send_email.py:270
+#, python-format
+msgid "Can not send mail!"
+msgstr "Nie je možné odoslať e-mail!"
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Misc"
+msgstr ""
+
+#. module: crm
+#: model:crm.case.categ,name:crm.categ_oppor8
+#: view:crm.meeting:0
+msgid "Other"
+msgstr ""
+
+#. module: crm
+#: view:crm.meeting:0
+#: selection:crm.meeting,state:0
+#: selection:crm.phonecall,state:0
+msgid "Done"
+msgstr "Dokončený"
+
+#. module: crm
+#: help:crm.meeting,interval:0
+msgid "Repeat every (Days/Week/Month/Year)"
+msgstr "Zopakovať každých (dní / týždeň / mesiac / rok)"
+
+#. module: crm
+#: field:crm.segmentation,som_interval_max:0
+msgid "Max Interval"
+msgstr "Max interval"
+
+#. module: crm
+#: view:crm.opportunity2phonecall:0
+msgid "_Schedule Call"
+msgstr "_Schedule Call"
+
+#. module: crm
+#: code:addons/crm/crm.py:326
+#: selection:crm.add.note,state:0
+#: view:crm.lead:0
+#: selection:crm.lead,state:0
+#: selection:crm.lead.report,state:0
+#: selection:crm.merge.opportunity,state:0
+#: view:crm.phonecall:0
+#: selection:crm.phonecall.report,state:0
+#: selection:crm.send.mail,state:0
+#: view:res.partner:0
+#, python-format
+msgid "Open"
+msgstr "Otvoriť"
+
+#. module: crm
+#: selection:crm.meeting,week_list:0
+msgid "Tuesday"
+msgstr ""
+
+#. module: crm
+#: field:crm.lead,city:0
+msgid "City"
+msgstr ""
+
+#. module: crm
+#: selection:crm.meeting,show_as:0
+msgid "Busy"
+msgstr "Zaneprázdnený"
+
+#. module: crm
+#: field:crm.meeting,interval:0
+msgid "Repeat every"
+msgstr "Opakovať každých"
+
+#. module: crm
+#: field:crm.installer,crm_helpdesk:0
+msgid "Helpdesk"
+msgstr ""
+
+#. module: crm
+#: field:crm.meeting,recurrency:0
+msgid "Recurrent"
+msgstr "Opakovať"
+
+#. module: crm
+#: code:addons/crm/crm.py:397
+#, python-format
+msgid "The case '%s' has been cancelled."
+msgstr "Udalosť '%s' bola zrušená."
+
+#. module: crm
+#: field:crm.installer,sale_crm:0
+msgid "Opportunity to Quotation"
+msgstr ""
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_send_mail
+msgid "Send new email"
+msgstr "Odoslať nový email"
+
+#. module: crm
+#: view:board.board:0
+#: model:ir.actions.act_window,name:crm.act_my_oppor
+msgid "My Open Opportunities"
+msgstr "Moje otvorené príležitosti"
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.open_board_statistical_dash
+msgid "CRM - Statistics Dashboard"
+msgstr "CRM - nástenka štatistík"
+
+#. module: crm
+#: help:crm.meeting,rrule:0
+msgid ""
+"Defines a rule or repeating pattern for recurring events\n"
+"e.g.: Every other month on the last Sunday of the month for 10 occurrences:  "
+"      FREQ=MONTHLY;INTERVAL=2;COUNT=10;BYDAY=-1SU"
+msgstr ""
+
+#. module: crm
+#: field:crm.lead,job_id:0
+msgid "Main Job"
+msgstr ""
+
+#. module: crm
+#: field:base.action.rule,trg_max_history:0
+msgid "Maximum Communication History"
+msgstr "Maximálna história komunikácie"
+
+#. module: crm
+#: view:crm.lead2opportunity.partner:0
+#: view:crm.lead2partner:0
+msgid "Are you sure you want to create a partner based on this lead ?"
+msgstr ""
+"Ste si istí, že chcete vytvoriť partnera založeného na tejto iniciatíve?"
+
+#. module: crm
+#: view:crm.meeting:0
+#: field:crm.meeting,categ_id:0
+msgid "Meeting Type"
+msgstr "Typ stretnutia"
+
+#. module: crm
+#: code:addons/crm/wizard/crm_lead_to_opportunity.py:312
+#, python-format
+msgid "Merge with Existing Opportunity"
+msgstr "Spojenie s existujúcou príležitosťou"
+
+#. module: crm
+#: help:crm.lead,state:0
+#: help:crm.phonecall,state:0
+msgid ""
+"The state is set to 'Draft', when a case is created.                         "
+"         \n"
+"If the case is in progress the state is set to 'Open'.                       "
+"           \n"
+"When the case is over, the state is set to 'Done'.                           "
+"       \n"
+"If the case needs to be reviewed then the state is set to 'Pending'."
+msgstr ""
+
+#. module: crm
+#: view:crm.meeting:0
+#: view:res.partner:0
+msgid "End Date"
+msgstr "Dátum ukončenia"
+
+#. module: crm
+#: selection:crm.meeting,byday:0
+msgid "Third"
+msgstr ""
+
+#. module: crm
+#: help:crm.segmentation,som_interval_max:0
+msgid ""
+"The computation is made on all events that occured during this interval, the "
+"past X periods."
+msgstr ""
+
+#. module: crm
+#: view:board.board:0
+msgid "My Win/Lost Ratio for the Last Year"
+msgstr "Moje získané/stratené za posledný rok"
+
+#. module: crm
+#: field:crm.installer,thunderbird:0
+msgid "Thunderbird"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead.report:0
+msgid "# of Emails"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Search Leads"
+msgstr "Vyhľadanie iniciatív"
+
+#. module: crm
+#: view:crm.lead.report:0
+#: view:crm.phonecall.report:0
+#: field:crm.phonecall.report,delay_open:0
+msgid "Delay to open"
+msgstr ""
+
+#. module: crm
+#: view:crm.meeting:0
+msgid "Recurrency period"
+msgstr "Obdobie opakovania"
+
+#. module: crm
+#: field:crm.meeting,week_list:0
+msgid "Weekday"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Referrer"
+msgstr ""
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_lead2opportunity
+msgid "Lead To Opportunity"
+msgstr ""
+
+#. module: crm
+#: model:ir.model,name:crm.model_calendar_attendee
+msgid "Attendee information"
+msgstr ""
+
+#. module: crm
+#: view:crm.segmentation:0
+msgid "Segmentation Test"
+msgstr ""
+
+#. module: crm
+#: view:crm.segmentation:0
+msgid "Continue Process"
+msgstr ""
+
+#. module: crm
+#: view:crm.installer:0
+msgid "Configure Your CRM Application"
+msgstr ""
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_phonecall2partner
+msgid "Phonecall to Partner"
+msgstr ""
+
+#. module: crm
+#: help:crm.lead,partner_name:0
+msgid ""
+"The name of the future partner that will be created while converting the "
+"into opportunity"
+msgstr ""
+"Meno budúceho partnera, ktorý bude vytvorený pri prevode na príležitosť"
+
+#. module: crm
+#: field:crm.opportunity2phonecall,user_id:0
+#: field:crm.phonecall2phonecall,user_id:0
+msgid "Assign To"
+msgstr ""
+
+#. module: crm
+#: field:crm.add.note,state:0
+#: field:crm.send.mail,state:0
+msgid "Set New State To"
+msgstr "Nastaviť nový stav pre"
+
+#. module: crm
+#: field:crm.lead,date_action_last:0
+#: field:crm.meeting,date_action_last:0
+#: field:crm.phonecall,date_action_last:0
+msgid "Last Action"
+msgstr "Posledná akcia"
+
+#. module: crm
+#: field:crm.meeting,duration:0
+#: field:crm.phonecall,duration:0
+#: field:crm.phonecall.report,duration:0
+msgid "Duration"
+msgstr "Trvanie"
+
+#. module: crm
+#: field:crm.send.mail,reply_to:0
+msgid "Reply To"
+msgstr ""
+
+#. module: crm
+#: view:board.board:0
+#: model:ir.actions.act_window,name:crm.open_board_crm
+#: model:ir.ui.menu,name:crm.menu_board_crm
+msgid "Sales Dashboard"
+msgstr "Nástenka obchodu"
+
+#. module: crm
+#: code:addons/crm/wizard/crm_lead_to_partner.py:56
+#, python-format
+msgid "A partner is already defined on this lead."
+msgstr ""
+
+#. module: crm
+#: field:crm.lead.report,nbr:0
+#: field:crm.phonecall.report,nbr:0
+msgid "# of Cases"
+msgstr ""
+
+#. module: crm
+#: help:crm.meeting,section_id:0
+#: help:crm.phonecall,section_id:0
+msgid "Sales team to which Case belongs to."
+msgstr ""
+
+#. module: crm
+#: selection:crm.meeting,week_list:0
+msgid "Sunday"
+msgstr ""
+
+#. module: crm
+#: selection:crm.meeting,byday:0
+msgid "Fourth"
+msgstr ""
+
+#. module: crm
+#: selection:crm.add.note,state:0
+#: selection:crm.merge.opportunity,state:0
+#: selection:crm.send.mail,state:0
+msgid "Unchanged"
+msgstr ""
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.crm_segmentation_tree-act
+#: model:ir.ui.menu,name:crm.menu_crm_segmentation-act
+msgid "Partners Segmentation"
+msgstr ""
+
+#. module: crm
+#: field:crm.lead,fax:0
+msgid "Fax"
+msgstr ""
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_case_category_act_oppor11
+msgid ""
+"With opportunities you can manage and keep track of your sales pipeline by "
+"creating specific customer- or prospect-related sales documents to follow up "
+"potential sales. Information such as expected revenue, opportunity stage, "
+"expected closing date, communication history and much more can be stored. "
+"Opportunities can be connected to the email gateway: new emails may create "
+"opportunities, each of them automatically gets the history of the "
+"conversation with the customer.\n"
+"\n"
+"You and your team(s) will be able to plan meetings and phone calls from "
+"opportunities, convert them into quotations, manage related documents, track "
+"all customer related activities, and much more."
+msgstr ""
+
+#. module: crm
+#: view:crm.meeting:0
+msgid "Assignment"
+msgstr "Priradenie"
+
+#. module: crm
+#: field:crm.lead,company_id:0
+#: view:crm.lead.report:0
+#: field:crm.lead.report,company_id:0
+#: field:crm.phonecall,company_id:0
+#: view:crm.phonecall.report:0
+#: field:crm.phonecall.report,company_id:0
+msgid "Company"
+msgstr "Spoločnosť"
+
+#. module: crm
+#: selection:crm.meeting,week_list:0
+msgid "Friday"
+msgstr ""
+
+#. module: crm
+#: field:crm.meeting,allday:0
+msgid "All Day"
+msgstr "Celý deň"
+
+#. module: crm
+#: field:crm.segmentation.line,operator:0
+msgid "Mandatory / Optional"
+msgstr "Povinné / voliteľné"
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.action_view_attendee_form
+#: model:ir.ui.menu,name:crm.menu_attendee_invitations
+msgid "Meeting Invitations"
+msgstr ""
+
+#. module: crm
+#: field:crm.case.categ,object_id:0
+msgid "Object Name"
+msgstr ""
+
+#. module: crm
+#: help:crm.lead,email_from:0
+msgid "E-mail address of the contact"
+msgstr ""
+
+#. module: crm
+#: field:crm.lead,referred:0
+msgid "Referred By"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+#: model:ir.model,name:crm.model_crm_add_note
+msgid "Add Internal Note"
+msgstr "Pridať internú poznámka"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:304
+#, python-format
+msgid "The stage of lead '%s' has been changed to '%s'."
+msgstr ""
+
+#. module: crm
+#: selection:crm.meeting,byday:0
+msgid "Last"
+msgstr ""
+
+#. module: crm
+#: field:crm.lead,message_ids:0
+#: field:crm.meeting,message_ids:0
+#: field:crm.phonecall,message_ids:0
+msgid "Messages"
+msgstr ""
+
+#. module: crm
+#: help:crm.case.stage,on_change:0
+msgid "Change Probability on next and previous stages."
+msgstr ""
+
+#. module: crm
+#: code:addons/crm/crm.py:455
+#: code:addons/crm/crm.py:457
+#: code:addons/crm/crm_action_rule.py:66
+#: code:addons/crm/wizard/crm_send_email.py:141
+#, python-format
+msgid "Error!"
+msgstr ""
+
+#. module: crm
+#: field:crm.opportunity2phonecall,name:0
+#: field:crm.phonecall2phonecall,name:0
+msgid "Call summary"
+msgstr "Súhrn hovoru"
+
+#. module: crm
+#: selection:crm.add.note,state:0
+#: selection:crm.lead,state:0
+#: selection:crm.lead.report,state:0
+#: selection:crm.meeting,state:0
+#: selection:crm.merge.opportunity,state:0
+#: selection:crm.phonecall,state:0
+#: selection:crm.phonecall.report,state:0
+#: selection:crm.send.mail,state:0
+msgid "Cancelled"
+msgstr "Zrušené"
+
+#. module: crm
+#: field:crm.add.note,body:0
+msgid "Note Body"
+msgstr ""
+
+#. module: crm
+#: view:board.board:0
+msgid "My Planned Revenues by Stage"
+msgstr ""
+
+#. module: crm
+#: field:crm.lead.report,date_closed:0
+#: field:crm.phonecall.report,date_closed:0
+msgid "Close Date"
+msgstr "Dátum uzavretia"
+
+#. module: crm
+#: view:crm.lead.report:0
+#: view:crm.phonecall.report:0
+msgid "   Month   "
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Links"
+msgstr "Odkazy"
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_lead_categ_action
+msgid ""
+"Create specific categories that fit your company's activities to better "
+"classify and analyse your leads and opportunities. Such categories could for "
+"instance reflect your product structure or the different types of sales you "
+"do."
+msgstr ""
+
+#. module: crm
+#: help:crm.segmentation,som_interval_decrease:0
+msgid ""
+"If the partner has not purchased (or bought) during a period, decrease the "
+"state of mind by this factor. It's a multiplication"
+msgstr ""
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.action_report_crm_phonecall
+msgid ""
+"From this report, you can analyse the performance of your sales team, based "
+"on their phone calls. You can group or filter the information according to "
+"several criteria and drill down the information, by adding more groups in "
+"the report."
+msgstr ""
+
+#. module: crm
+#: view:crm.case.section:0
+msgid "Mailgateway"
+msgstr ""
+
+#. module: crm
+#: help:crm.lead,user_id:0
+msgid "By Default Salesman is Administrator when create New User"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead.report:0
+msgid "# Mails"
+msgstr ""
+
+#. module: crm
+#: code:addons/crm/wizard/crm_phonecall_to_opportunity.py:57
+#, python-format
+msgid "Warning"
+msgstr ""
+
+#. module: crm
+#: field:crm.phonecall,name:0
+#: view:res.partner:0
+msgid "Call Summary"
+msgstr "Súhrn hovoru"
+
+#. module: crm
+#: field:crm.segmentation.line,expr_operator:0
+msgid "Operator"
+msgstr "Operátor"
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_phonecall2phonecall
+msgid "Phonecall To Phonecall"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Schedule/Log Call"
+msgstr "Rozpis / hovorov"
+
+#. module: crm
+#: field:crm.installer,fetchmail:0
+msgid "Fetch Emails"
+msgstr ""
+
+#. module: crm
+#: selection:crm.meeting,state:0
+msgid "Confirmed"
+msgstr "Potvrdené"
+
+#. module: crm
+#: help:crm.send.mail,email_cc:0
+msgid ""
+"These addresses will receive a copy of this email. To modify the permanent "
+"CC list, edit the global CC field of this case"
+msgstr ""
+
+#. module: crm
+#: view:crm.meeting:0
+msgid "Confirm"
+msgstr "Potvrdiť"
+
+#. module: crm
+#: field:crm.meeting,su:0
+msgid "Sun"
+msgstr ""
+
+#. module: crm
+#: field:crm.phonecall.report,section_id:0
+msgid "Section"
+msgstr "Sekcia"
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Total of Planned Revenue"
+msgstr ""
+
+#. module: crm
+#: code:addons/crm/crm.py:375
+#, python-format
+msgid ""
+"You can not escalate, You are already at the top level regarding your sales-"
+"team category."
+msgstr ""
+
+#. module: crm
+#: selection:crm.segmentation.line,operator:0
+msgid "Optional Expression"
+msgstr "Voliteľný výraz"
+
+#. module: crm
+#: selection:crm.meeting,select1:0
+msgid "Day of month"
+msgstr ""
+
+#. module: crm
+#: field:crm.lead2opportunity,probability:0
+msgid "Success Rate (%)"
+msgstr "Úspešnosť (%)"
+
+#. module: crm
+#: model:crm.case.stage,name:crm.stage_lead1
+#: model:crm.case.stage,name:crm.stage_opportunity1
+msgid "New"
+msgstr ""
+
+#. module: crm
+#: view:crm.meeting:0
+msgid "Mail TO"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+#: field:crm.lead,email_from:0
+#: field:crm.meeting,email_from:0
+#: field:crm.phonecall,email_from:0
+msgid "Email"
+msgstr "Email"
+
+#. module: crm
+#: view:crm.lead:0
+#: field:crm.lead,channel_id:0
+#: view:crm.lead.report:0
+#: field:crm.lead.report,channel_id:0
+#: field:crm.phonecall,canal_id:0
+msgid "Channel"
+msgstr "Kanál"
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.opportunity2phonecall_act
+msgid "Schedule Call"
+msgstr "Plán hovorov"
+
+#. module: crm
+#: code:addons/crm/wizard/crm_lead_to_opportunity.py:133
+#: code:addons/crm/wizard/crm_lead_to_opportunity.py:258
+#, python-format
+msgid "Closed/Cancelled Leads Could not convert into Opportunity"
+msgstr "Uzavretú / Zrušenú iniciatívu nie je možné zmeniť na príležitosť"
+
+#. module: crm
+#: view:crm.segmentation:0
+msgid "Profiling"
+msgstr "Profilovanie"
+
+#. module: crm
+#: help:crm.segmentation,exclusif:0
+msgid ""
+"Check if the category is limited to partners that match the segmentation "
+"criterions.                        \n"
+"If checked, remove the category from partners that doesn't match "
+"segmentation criterions"
+msgstr ""
+
+#. module: crm
+#: field:crm.meeting,exdate:0
+msgid "Exception Date/Times"
+msgstr ""
+
+#. module: crm
+#: selection:crm.meeting,class:0
+msgid "Confidential"
+msgstr ""
+
+#. module: crm
+#: help:crm.meeting,date_deadline:0
+msgid ""
+"Deadline Date is automatically                         computed from Start "
+"Date + Duration"
+msgstr ""
+
+#. module: crm
+#: field:crm.lead,state_id:0
+msgid "Fed. State"
+msgstr "Fed. štát"
+
+#. module: crm
+#: model:process.transition,note:crm.process_transition_leadopportunity0
+msgid "Creating business opportunities from Leads"
+msgstr "Vytváranie obchodných príležitostí z iniciatívy"
+
+#. module: crm
+#: help:crm.send.mail,html:0
+msgid "Select this if you want to send email with HTML formatting."
+msgstr "Vyberte túto možnosť ak chcete odoslať e-mail v HTML formáte."
+
+#. module: crm
+#: model:crm.case.categ,name:crm.categ_oppor4
+msgid "Need Information"
+msgstr ""
+
+#. module: crm
+#: model:process.transition,name:crm.process_transition_leadopportunity0
+msgid "Prospect Opportunity"
+msgstr ""
+
+#. module: crm
+#: view:crm.installer:0
+#: model:ir.actions.act_window,name:crm.action_crm_installer
+msgid "CRM Application Configuration"
+msgstr ""
+
+#. module: crm
+#: field:base.action.rule,act_categ_id:0
+msgid "Set Category to"
+msgstr ""
+
+#. module: crm
+#: view:crm.case.section:0
+msgid "Configuration"
+msgstr "Konfigurácia"
+
+#. module: crm
+#: field:crm.meeting,th:0
+msgid "Thu"
+msgstr ""
+
+#. module: crm
+#: view:crm.add.note:0
+#: view:crm.merge.opportunity:0
+#: view:crm.opportunity2phonecall:0
+#: view:crm.partner2opportunity:0
+#: view:crm.phonecall2opportunity:0
+#: view:crm.phonecall2phonecall:0
+#: view:crm.send.mail:0
+msgid "_Cancel"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead.report:0
+#: view:crm.phonecall.report:0
+msgid "    Month-1    "
+msgstr ""
+
+#. module: crm
+#: help:crm.installer,sale_crm:0
+msgid "This module relates sale from opportunity cases in the CRM."
+msgstr ""
+
+#. module: crm
+#: selection:crm.meeting,rrule_type:0
+msgid "Daily"
+msgstr "Denne"
+
+#. module: crm
+#: model:crm.case.stage,name:crm.stage_lead2
+#: model:crm.case.stage,name:crm.stage_opportunity2
+msgid "Qualification"
+msgstr ""
+
+#. module: crm
+#: view:crm.case.stage:0
+msgid "Stage Definition"
+msgstr "Definícia etapy"
+
+#. module: crm
+#: selection:crm.meeting,byday:0
+msgid "First"
+msgstr ""
+
+#. module: crm
+#: selection:crm.lead.report,month:0
+#: selection:crm.meeting,month_list:0
+#: selection:crm.phonecall.report,month:0
+msgid "December"
+msgstr ""
+
+#. module: crm
+#: field:crm.installer,config_logo:0
+msgid "Image"
+msgstr ""
+
+#. module: crm
+#: view:base.action.rule:0
+msgid "Condition on Communication History"
+msgstr ""
+
+#. module: crm
+#: help:crm.segmentation,som_interval:0
+msgid ""
+"A period is the average number of days between two cycle of sale or purchase "
+"for this segmentation.                 \n"
+"It's mainly used to detect if a partner has not purchased or buy for a too "
+"long time,                  \n"
+"so we suppose that his state of mind has decreased because he probably "
+"bought goods to another supplier.                  \n"
+"Use this functionality for recurring businesses."
+msgstr ""
+
+#. module: crm
+#: view:crm.send.mail:0
+msgid "_Send Reply"
+msgstr "_Send Reply"
+
+#. module: crm
+#: field:crm.meeting,vtimezone:0
+msgid "Timezone"
+msgstr ""
+
+#. module: crm
+#: field:crm.lead2opportunity.partner,msg:0
+#: field:crm.lead2partner,msg:0
+#: view:crm.send.mail:0
+msgid "Message"
+msgstr "Správa"
+
+#. module: crm
+#: field:crm.meeting,sa:0
+msgid "Sat"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+#: field:crm.lead,user_id:0
+#: view:crm.lead.report:0
+#: view:crm.phonecall.report:0
+msgid "Salesman"
+msgstr ""
+
+#. module: crm
+#: field:crm.lead,date_deadline:0
+msgid "Expected Closing"
+msgstr ""
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_opportunity2phonecall
+msgid "Opportunity to Phonecall"
+msgstr ""
+
+#. module: crm
+#: help:crm.case.section,allow_unlink:0
+msgid "Allows to delete non draft cases"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Schedule Meeting"
+msgstr "Naplánovať stretnutie"
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Partner Name"
+msgstr "Meno partnera"
+
+#. module: crm
+#: model:crm.case.categ,name:crm.categ_phone2
+#: model:ir.actions.act_window,name:crm.crm_case_categ_phone_outgoing0
+#: model:ir.ui.menu,name:crm.menu_crm_case_phone_outbound
+msgid "Outbound"
+msgstr "Odchádzajúce"
+
+#. module: crm
+#: field:crm.lead,date_open:0
+#: field:crm.phonecall,date_open:0
+msgid "Opened"
+msgstr "Otvorené"
+
+#. module: crm
+#: view:crm.case.section:0
+#: field:crm.case.section,member_ids:0
+msgid "Team Members"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+#: field:crm.lead,job_ids:0
+#: view:crm.meeting:0
+#: view:crm.phonecall:0
+#: view:res.partner:0
+msgid "Contacts"
+msgstr "Kontakty"
+
+#. module: crm
+#: model:crm.case.categ,name:crm.categ_oppor1
+msgid "Interest in Computer"
+msgstr ""
+
+#. module: crm
+#: view:crm.meeting:0
+msgid "Invitation Detail"
+msgstr "Detail pozvánky"
+
+#. module: crm
+#: field:crm.segmentation,som_interval_default:0
+msgid "Default (0=None)"
+msgstr "Predvolené (0=žiadne)"
+
+#. module: crm
+#: help:crm.lead,email_cc:0
+msgid ""
+"These email addresses will be added to the CC field of all inbound and "
+"outbound emails for this record before being sent. Separate multiple email "
+"addresses with a comma"
+msgstr ""
+
+#. module: crm
+#: constraint:res.partner:0
+msgid "Error ! You can not create recursive associated members."
+msgstr ""
+
+#. module: crm
+#: field:crm.partner2opportunity,probability:0
+#: field:crm.phonecall2opportunity,probability:0
+msgid "Success Probability"
+msgstr ""
+
+#. module: crm
+#: code:addons/crm/crm.py:426
+#: selection:crm.add.note,state:0
+#: selection:crm.lead,state:0
+#: selection:crm.lead.report,state:0
+#: selection:crm.merge.opportunity,state:0
+#: selection:crm.phonecall,state:0
+#: selection:crm.phonecall.report,state:0
+#: selection:crm.send.mail,state:0
+#, python-format
+msgid "Draft"
+msgstr "Návrh"
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.crm_case_section_act_tree
+msgid "Cases by Sales Team"
+msgstr ""
+
+#. module: crm
+#: field:crm.meeting,attendee_ids:0
+msgid "Attendees"
+msgstr ""
+
+#. module: crm
+#: view:crm.meeting:0
+#: view:crm.phonecall:0
+#: model:ir.model,name:crm.model_crm_meeting
+#: model:process.node,name:crm.process_node_meeting0
+#: model:res.request.link,name:crm.request_link_meeting
+msgid "Meeting"
+msgstr ""
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_case_categ
+msgid "Category of Case"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+#: view:crm.phonecall:0
+msgid "7 Days"
+msgstr "7 dní"
+
+#. module: crm
+#: view:board.board:0
+msgid "Planned Revenue by Stage and User"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Communication & History"
+msgstr "Komunikácia a história"
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_lead_report
+msgid "CRM Lead Report"
+msgstr ""
+
+#. module: crm
+#: field:crm.installer,progress:0
+msgid "Configuration Progress"
+msgstr ""
+
+#. module: crm
+#: selection:crm.lead,priority:0
+#: selection:crm.lead.report,priority:0
+#: selection:crm.phonecall,priority:0
+#: selection:crm.phonecall.report,priority:0
+msgid "Normal"
+msgstr "Bežná"
+
+#. module: crm
+#: field:crm.lead,street2:0
+msgid "Street2"
+msgstr ""
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.crm_meeting_categ_action
+#: model:ir.ui.menu,name:crm.menu_crm_case_meeting-act
+msgid "Meeting Categories"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead2opportunity.partner:0
+#: view:crm.lead2partner:0
+#: view:crm.phonecall2partner:0
+msgid "You may have to verify that this partner does not exist already."
+msgstr ""
+
+#. module: crm
+#: field:crm.lead.report,delay_open:0
+msgid "Delay to Open"
+msgstr ""
+
+#. module: crm
+#: field:crm.lead.report,user_id:0
+#: field:crm.phonecall.report,user_id:0
+msgid "User"
+msgstr ""
+
+#. module: crm
+#: selection:crm.lead.report,month:0
+#: selection:crm.meeting,month_list:0
+#: selection:crm.phonecall.report,month:0
+msgid "November"
+msgstr ""
+
+#. module: crm
+#: code:addons/crm/crm_action_rule.py:67
+#, python-format
+msgid "No E-Mail ID Found for your Company address!"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead.report:0
+msgid "Opportunities By Stage"
+msgstr "Príležitosti podľa etapy"
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.crm_case_categ_phone_create_partner
+msgid "Schedule Phone Call"
+msgstr "Naplánovať hovor"
+
+#. module: crm
+#: selection:crm.lead.report,month:0
+#: selection:crm.meeting,month_list:0
+#: selection:crm.phonecall.report,month:0
+msgid "January"
+msgstr ""
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_opportunity_stage_act
+msgid ""
+"Create specific stages that will help your sales better organise their sales "
+"pipeline by maintaining them to their sales opportunities. It will allow "
+"them to easily track how is positioned a specific opportunity in the sales "
+"cycle."
+msgstr ""
+
+#. module: crm
+#: model:process.process,name:crm.process_process_contractprocess0
+msgid "Contract"
+msgstr ""
+
+#. module: crm
+#: model:crm.case.resource.type,name:crm.type_lead4
+msgid "Twitter Ads"
+msgstr ""
+
+#. module: crm
+#: code:addons/crm/wizard/crm_add_note.py:26
+#: code:addons/crm/wizard/crm_send_email.py:72
+#: code:addons/crm/wizard/crm_send_email.py:169
+#: code:addons/crm/wizard/crm_send_email.py:270
+#, python-format
+msgid "Error"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead.report:0
+msgid "Planned Revenues"
+msgstr ""
+
+#. module: crm
+#: model:crm.case.categ,name:crm.categ_oppor7
+msgid "Need Consulting"
+msgstr ""
+
+#. module: crm
+#: constraint:crm.segmentation:0
+msgid "Error ! You can not create recursive profiles."
+msgstr "Chyba! Nemôžete vytvárať rekurzívne profily."
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:232
+#, python-format
+msgid "The case '%s' has been closed."
+msgstr "Udalosť '%s' bola uzavretá."
+
+#. module: crm
+#: field:crm.lead,partner_address_id:0
+#: field:crm.meeting,partner_address_id:0
+#: field:crm.phonecall,partner_address_id:0
+msgid "Partner Contact"
+msgstr "Kontakt partnera"
+
+#. module: crm
+#: field:crm.meeting,recurrent_id:0
+msgid "Recurrent ID date"
+msgstr ""
+
+#. module: crm
+#: sql_constraint:res.users:0
+msgid "You can not have two users with the same login !"
+msgstr ""
+
+#. module: crm
+#: code:addons/crm/wizard/crm_merge_opportunities.py:100
+#, python-format
+msgid "Merged into Opportunity: %s"
+msgstr ""
+
+#. module: crm
+#: code:addons/crm/crm.py:347
+#: view:crm.lead:0
+#: view:res.partner:0
+#, python-format
+msgid "Close"
+msgstr "Zatvorené"
+
+#. module: crm
+#: view:crm.lead:0
+#: view:crm.phonecall:0
+#: view:res.partner:0
+msgid "Categorization"
+msgstr "Kategorizácia"
+
+#. module: crm
+#: model:ir.model,name:crm.model_base_action_rule
+msgid "Action Rules"
+msgstr ""
+
+#. module: crm
+#: field:crm.meeting,rrule_type:0
+msgid "Recurrency"
+msgstr ""
+
+#. module: crm
+#: field:crm.meeting,phonecall_id:0
+msgid "Phonecall"
+msgstr "Telefónny hovor"
+
+#. module: crm
+#: selection:crm.meeting,week_list:0
+msgid "Thursday"
+msgstr ""
+
+#. module: crm
+#: view:crm.meeting:0
+#: field:crm.send.mail,email_to:0
+msgid "To"
+msgstr ""
+
+#. module: crm
+#: selection:crm.meeting,class:0
+msgid "Private"
+msgstr ""
+
+#. module: crm
+#: field:crm.lead,function:0
+msgid "Function"
+msgstr ""
+
+#. module: crm
+#: view:crm.add.note:0
+msgid "_Add"
+msgstr ""
+
+#. module: crm
+#: selection:crm.segmentation.line,expr_name:0
+msgid "State of Mind"
+msgstr ""
+
+#. module: crm
+#: field:crm.case.section,note:0
+#: view:crm.meeting:0
+#: field:crm.meeting,description:0
+#: view:crm.phonecall:0
+#: field:crm.phonecall,description:0
+#: field:crm.segmentation,description:0
+#: view:res.partner:0
+msgid "Description"
+msgstr "Opis"
+
+#. module: crm
+#: field:base.action.rule,trg_section_id:0
+#: field:crm.case.categ,section_id:0
+#: field:crm.case.resource.type,section_id:0
+#: view:crm.case.section:0
+#: field:crm.case.section,name:0
+#: field:crm.lead,section_id:0
+#: view:crm.lead.report:0
+#: field:crm.lead.report,section_id:0
+#: field:crm.meeting,section_id:0
+#: field:crm.opportunity2phonecall,section_id:0
+#: view:crm.phonecall:0
+#: field:crm.phonecall,section_id:0
+#: view:crm.phonecall.report:0
+#: field:crm.phonecall2phonecall,section_id:0
+#: field:res.partner,section_id:0
+#: field:res.users,context_section_id:0
+msgid "Sales Team"
+msgstr ""
+
+#. module: crm
+#: selection:crm.lead.report,month:0
+#: selection:crm.meeting,month_list:0
+#: selection:crm.phonecall.report,month:0
+msgid "May"
+msgstr ""
+
+#. module: crm
+#: model:crm.case.categ,name:crm.categ_oppor2
+msgid "Interest in Accessories"
+msgstr ""
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:211
+#, python-format
+msgid "The opportunity '%s' has been opened."
+msgstr ""
+
+#. module: crm
+#: field:crm.lead.report,email:0
+msgid "# Emails"
+msgstr ""
+
+#. module: crm
+#: field:crm.lead,street:0
+msgid "Street"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead.report:0
+msgid "Opportunities by User and Team"
+msgstr ""
+
+#. module: crm
+#: field:crm.case.section,working_hours:0
+msgid "Working Hours"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+#: field:crm.lead,is_customer_add:0
+msgid "Customer"
+msgstr "Zákazník"
+
+#. module: crm
+#: selection:crm.lead.report,month:0
+#: selection:crm.meeting,month_list:0
+#: selection:crm.phonecall.report,month:0
+msgid "February"
+msgstr ""
+
+#. module: crm
+#: view:crm.phonecall:0
+#: model:ir.actions.act_window,name:crm.crm_case_categ_meet_create_partner
+#: view:res.partner:0
+msgid "Schedule a Meeting"
+msgstr "Naplánovať stretnutie"
+
+#. module: crm
+#: model:crm.case.stage,name:crm.stage_lead6
+#: model:crm.case.stage,name:crm.stage_opportunity6
+#: view:crm.lead:0
+msgid "Lost"
+msgstr "Stratená"
+
+#. module: crm
+#: field:crm.lead,country_id:0
+#: view:crm.lead.report:0
+#: field:crm.lead.report,country_id:0
+msgid "Country"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+#: selection:crm.lead2opportunity.action,name:0
+#: view:crm.phonecall:0
+#: view:res.partner:0
+msgid "Convert to Opportunity"
+msgstr "Zmeniť na príležitosť"
+
+#. module: crm
+#: selection:crm.meeting,week_list:0
+msgid "Wednesday"
+msgstr ""
+
+#. module: crm
+#: selection:crm.lead.report,month:0
+#: selection:crm.meeting,month_list:0
+#: selection:crm.phonecall.report,month:0
+msgid "April"
+msgstr ""
+
+#. module: crm
+#: field:crm.case.resource.type,name:0
+msgid "Campaign Name"
+msgstr ""
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_phonecall_report
+msgid "Phone calls by user and section"
+msgstr "Telefónne hovory podľa užívateľa a sekcie"
+
+#. module: crm
+#: selection:crm.lead2opportunity.action,name:0
+msgid "Merge with existing Opportunity"
+msgstr "Spojiť s existujúcou príležitosťou"
+
+#. module: crm
+#: field:crm.meeting,select1:0
+msgid "Option"
+msgstr ""
+
+#. module: crm
+#: model:crm.case.stage,name:crm.stage_lead4
+#: model:crm.case.stage,name:crm.stage_opportunity4
+msgid "Negotiation"
+msgstr ""
+
+#. module: crm
+#: view:crm.lead:0
+msgid "Exp.Closing"
+msgstr ""
+
+#. module: crm
+#: field:crm.case.stage,sequence:0
+#: field:crm.meeting,sequence:0
+msgid "Sequence"
+msgstr "Poradie"
+
+#. module: crm
+#: field:crm.send.mail,body:0
+msgid "Message Body"
+msgstr ""
+
+#. module: crm
+#: view:crm.meeting:0
+msgid "Accept"
+msgstr ""
+
+#. module: crm
+#: field:crm.segmentation.line,expr_name:0
+msgid "Control Variable"
+msgstr "Variabilné ovládanie"
+
+#. module: crm
+#: selection:crm.meeting,byday:0
+msgid "Second"
+msgstr ""
+
+#. module: crm
+#: model:crm.case.stage,name:crm.stage_lead3
+#: model:crm.case.stage,name:crm.stage_opportunity3
+msgid "Proposition"
+msgstr ""
+
+#. module: crm
+#: field:res.partner,phonecall_ids:0
+msgid "Phonecalls"
+msgstr "Telefónne hovory"
+
+#. module: crm
+#: view:crm.lead.report:0
+#: field:crm.lead.report,name:0
+#: view:crm.phonecall.report:0
+#: field:crm.phonecall.report,name:0
+msgid "Year"
+msgstr ""
+
+#. module: crm
+#: model:crm.case.resource.type,name:crm.type_lead8
+msgid "Newsletter"
+msgstr ""
+
+#~ msgid "Base Information"
+#~ msgstr "Základné informácie"
+
+#~ msgid "All Cases"
+#~ msgstr "Všetky prípady"
+
+#~ msgid "Add Last Mail for Replying"
+#~ msgstr "Pridať posledný email pre odpoveď"
+
+#~ msgid "My Draft "
+#~ msgstr "Môj návrh "
+
+#~ msgid "this wizard will create all sub-menus, within the selected menu."
+#~ msgstr "tento sprievodca vytvorí všetky pod-ponuky, z vybranej ponuky."
+
+#~ msgid "Invalid model name in the action definition."
+#~ msgstr "Neplatný názov modelu v akcii definície."
+
+#~ msgid "All Open "
+#~ msgstr "Všetky otvoriť "
+
+#~ msgid "Planned costs"
+#~ msgstr "Plánované náklady"
+
+#~ msgid "My "
+#~ msgstr "Môj "
+
+#~ msgid "CRM & SRM"
+#~ msgstr "CRM & SRM"
+
+#~ msgid "%(case_user)s = Responsible name"
+#~ msgstr "%(case_user)s = Zodpovedný"
+
+#~ msgid "Cases"
+#~ msgstr "Prípady"
+
+#~ msgid "%(case_description)s = Case description"
+#~ msgstr "%(case_description)s = Opis prípadu"
+
+#~ msgid "Set state to"
+#~ msgstr "Nastavenie štátu"
+
+#~ msgid "Create menu Entries"
+#~ msgstr "Vytvorenie ponuky príspevkov"
+
+#~ msgid "Planned Costs"
+#~ msgstr "Plánované náklady"
+
+#~ msgid "Case Category Name"
+#~ msgstr "Názov kategórie prípadu"
+
+#~ msgid "None"
+#~ msgstr "Žiadny"
+
+#~ msgid "Maximim Priority"
+#~ msgstr "Maximum priority"
+
+#~ msgid "All Unclosed and Unassigned "
+#~ msgstr "Všetky neuzatvorené a nezaradené "
+
+#~ msgid "New "
+#~ msgstr "Nový "
+
+#~ msgid "Partner Events"
+#~ msgstr "Akcie partnera"
+
+#~ msgid "Estimates"
+#~ msgstr "Odhady"
+
+#~ msgid "Category of case"
+#~ msgstr "Kategória prípadu"
+
+#~ msgid "Invalid XML for View Architecture!"
+#~ msgstr "Neplatný súbor XML pre zobrazenie architektúry!"
+
+#~ msgid "My Open "
+#~ msgstr "Moje otvorené "
+
+#~ msgid "Select Views (empty for default)"
+#~ msgstr "Vyberte zobrazenie (ponechajte prázdne pre predvolené)"
+
+#~ msgid "Special Keywords to Be Used in The Body"
+#~ msgstr "Špeciálne kľúčové slová pre použitie v obsahu"
+
+#~ msgid "Your action"
+#~ msgstr "Vaše akcie"
+
+#~ msgid "My Histories"
+#~ msgstr "Moje histórie"
+
+#~ msgid "Case section"
+#~ msgstr "Sekcia prípadu"
+
+#~ msgid "All Draft "
+#~ msgstr "Všetky návrhy "
+
+#~ msgid "My cases"
+#~ msgstr "Moje prípady"
+
+#~ msgid "%(partner_email)s = Partner email"
+#~ msgstr "%(partner_email)s = Email partnera"
+
+#~ msgid "Fields to Change"
+#~ msgstr "Polia pre zmenu"
+
+#~ msgid "Last Action Date"
+#~ msgstr "Dátum poslednej akcia"
+
+#~ msgid "Remind with attachment"
+#~ msgstr "Pripomenúť s prílohou"
+
+#~ msgid "Open cases"
+#~ msgstr "Otvorené prípady"
+
+#~ msgid "All Late "
+#~ msgstr "Všetky posledné "
+
+#~ msgid "My Open Cases"
+#~ msgstr "Moje otvorené prípady"
+
+#~ msgid "My Unclosed "
+#~ msgstr "Moje neuzatvorené "
+
+#~ msgid "My Late "
+#~ msgstr "Moje posladné "
+
+#~ msgid "New Form"
+#~ msgstr "Nový formulár"
+
+#~ msgid "Delay type"
+#~ msgstr "Typ meškania"
+
+#~ msgid "My Pending "
+#~ msgstr "Moje čakajúce "
+
+#~ msgid "Call Object Method"
+#~ msgstr "Volanie metódy objektu"
+
+#~ msgid "Case Section"
+#~ msgstr "Sekcia prípadu"
+
+#~ msgid "%(email_from)s = Partner email"
+#~ msgstr "%(email_from)s = Email partnera"
+
+#~ msgid "Mail to responsible"
+#~ msgstr "Email pre zodpovednú osobu"
+
+#~ msgid "Rules"
+#~ msgstr "Pravidlá"
+
+#~ msgid "Log"
+#~ msgstr "Log"
+
+#~ msgid "Calendar"
+#~ msgstr "Kalendár"
+
+#~ msgid "%(partner)s = Partner name"
+#~ msgstr "%(partner)s = Názov partnera"
+
+#~ msgid "Calendar View"
+#~ msgstr "Zobraziť kalendár"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Open Cases"
+#~ msgstr "Otvorené prípady"
+
+#~ msgid "Conditions"
+#~ msgstr "Podmienky"
+
+#~ msgid "Minimum Priority"
+#~ msgstr "Minimálna priorita"
+
+#~ msgid "Case History"
+#~ msgstr "História prípadu"
+
+#~ msgid "All Unassigned "
+#~ msgstr "Všetky nezaradené "
+
+#~ msgid "Don't Create"
+#~ msgstr "Nevytvorené"
+
+#~ msgid "Base Menu Name"
+#~ msgstr "Názov základnej ponuky"
+
+#~ msgid "All Unclosed "
+#~ msgstr "Všetky neuzatvorené "
+
+#~ msgid "Created Menus"
+#~ msgstr "Vytvorenie ponúk"
+
+#~ msgid "Business Opportunities"
+#~ msgstr "Obchodné príležitosti"
+
+#~ msgid "Mail to partner"
+#~ msgstr "Email na partnera"
+
+#~ msgid "Partner Email"
+#~ msgstr "Email partnera"
+
+#~ msgid "Section Code"
+#~ msgstr "Kód sekcie"
+
+#~ msgid "General Description"
+#~ msgstr "Všeobecný opis"
+
+#~ msgid "Tree View"
+#~ msgstr "Stromové zobrazenie"
+
+#~ msgid ""
+#~ "The Object name must start with x_ and not contain any special character !"
+#~ msgstr ""
+#~ "Názov objektu musí začínať x_ a nesmie obsahovať žiadne špeciálne znaky!"
+
+#~ msgid "All Pending "
+#~ msgstr "Všetky čakajúce "
+
+#~ msgid "Set priority to"
+#~ msgstr "Nastavenie priority pre"
+
+#~ msgid "All Canceled "
+#~ msgstr "Všetky zrušené "
+
+#~ msgid "Mail body"
+#~ msgstr "Obsah správy"
+
+#~ msgid "Deadline Date is automatically computed from Start Date + Duration"
+#~ msgstr "Dátum ukončenia sa automaticky počíta od dátumu začatia + Dĺžka"
+
+#~ msgid "Case Rule"
+#~ msgstr "Pravidlo prípadu"
+
+#~ msgid "Segmentations"
+#~ msgstr "Segmentácie"
+
+#~ msgid "E-Mail Actions"
+#~ msgstr "E-Mail akcie"
+
+#~ msgid "All "
+#~ msgstr "Všetko "
+
+#~ msgid "List"
+#~ msgstr "Zoznam"
+
+#~ msgid "All Histories"
+#~ msgstr "Celá história"
+
+#~ msgid "Logs History"
+#~ msgstr "História logovania"
+
+#~ msgid "Form View"
+#~ msgstr "Zobrazenie formulára"
+
+#~ msgid "Planned revenue"
+#~ msgstr "Plánované príjmy"
+
+#~ msgid "My Canceled "
+#~ msgstr "Moje zrušené "
+
+#~ msgid "Latest E-Mail"
+#~ msgstr "Posledný E-Mail"
+
+#~ msgid "crm.case.section.open"
+#~ msgstr "crm.case.section.open"
+
+#~ msgid "Actions"
+#~ msgstr "Akcie"
+
+#~ msgid "%(case_subject)s = Case subject"
+#~ msgstr "%(case_subject)s = Predmet udalosti"
+
+#~ msgid "Parent Section"
+#~ msgstr "Nadradená sekcia"
+
+#~ msgid "Created"
+#~ msgstr "Vytvorené"
+
+#~ msgid "User Responsible"
+#~ msgstr "Zodpovedná osoba"
+
+#~ msgid "%(case_user_email)s = Responsible email"
+#~ msgstr "%(case_user_email)s = Email zodpovednej osoby"
+
+#~ msgid "Minutes"
+#~ msgstr "Minúty"
+
+#~ msgid "Action Information"
+#~ msgstr "Informácie o akcii"
+
+#~ msgid "Child Sections"
+#~ msgstr "Odvodené sekcie"
+
+#~ msgid "General"
+#~ msgstr "Všeobecné"
+
+#~ msgid "Conditions on Case Fields"
+#~ msgstr "Podmienky pre polia prípadu"
+
+#~ msgid "Case history"
+#~ msgstr "História prípadu"
+
+#~ msgid "Create menus for a case section"
+#~ msgstr "Vytvoriť menu pre sekciu prípadov"
+
+#~ msgid "Case Communication History"
+#~ msgstr "História komunikácie v prípadoch"
+
+#~ msgid "Cases Histories"
+#~ msgstr "História prípadov"
+
+#~ msgid "Case State"
+#~ msgstr "Status prípadu"
+
+#~ msgid "Create Menus For Cases"
+#~ msgstr "Vytvorenie menu pre prípad"
+
+#~ msgid "%(case_id)s = Case ID"
+#~ msgstr "%(case_id)s = ID prípadu"
+
+#, python-format
+#~ msgid "Case"
+#~ msgstr "Prípad"
+
+#~ msgid "Cases by section"
+#~ msgstr "Prípady podľa sekcie"
+
+#~ msgid "Case Description"
+#~ msgstr "Opis prípadu"
+
+#~ msgid "Case logs"
+#~ msgstr "Logy prípadov"
+
+#~ msgid "    7 Days    "
+#~ msgstr "    7 dní    "
+
+#~ msgid "Cases by section and category2"
+#~ msgstr "Prípady podľa sekcie a kategórie 2"
+
+#~ msgid "Send to"
+#~ msgstr "Poslať"
+
+#~ msgid "Amount"
+#~ msgstr "Suma"
+
+#~ msgid "Human Resources"
+#~ msgstr "Ľudské zdroje"
+
+#~ msgid "Cases by Opportunities, Category and Type"
+#~ msgstr "Prípady podľa príležitosti, kategórie a typu"
+
+#~ msgid "Fixed"
+#~ msgstr "Pevná"
+
+#~ msgid "Proposed Salary"
+#~ msgstr "Navrh mzdy"
+
+#, python-format
+#~ msgid "Please specify user's email address !"
+#~ msgstr "Prosím, zadajte e-mailovú adresu!"
+
+#~ msgid "Duration (Hours)"
+#~ msgstr "Trvanie (hodín)"
+
+#~ msgid "Cases by Section and Stage"
+#~ msgstr "Prípady podľa sekcie a etapy"
+
+#~ msgid "Mail to these emails"
+#~ msgstr "Mail na tieto e-maily"
+
+#~ msgid "Cases by section and stage"
+#~ msgstr "Prípady podľa sekcie a etapy"
+
+#~ msgid "Appreciation"
+#~ msgstr "Ocenenie"
+
+#~ msgid "Second Interview"
+#~ msgstr "Druhý rozhovor"
+
+#~ msgid "Subscribe to a Remote calendar"
+#~ msgstr "Prihlásiť sa do vzdialeného kalendára"
+
+#~ msgid "Description Information"
+#~ msgstr "Opis Informácie"
+
+#~ msgid "Next Interview"
+#~ msgstr "Ďalší rozhovor"
+
+#~ msgid "Email Add CC"
+#~ msgstr "Email pridať kópu"
+
+#~ msgid "Confirm Meeting"
+#~ msgstr "Potvrdiť stretnutie"
+
+#~ msgid "Existing Customer"
+#~ msgstr "Existujúci zákazník"
+
+#~ msgid "Home"
+#~ msgstr "Domov"
+
+#~ msgid "Cases by Section, Category and Stage"
+#~ msgstr "Udalosti podľa sekcie, kategórie a etapy"
+
+#~ msgid "Meetings Tree"
+#~ msgstr "Stromová štruktúra stretnutí"
+
+#~ msgid "Allows to show calendar"
+#~ msgstr "Umožňuje zobraziť kalendár"
+
+#~ msgid "New Business"
+#~ msgstr "Nový obchod/príležitosť"
+
+#~ msgid "Value Proposition"
+#~ msgstr "Navrhnutá hodnota"
+
+#~ msgid "Refused by Company"
+#~ msgstr "Zamietnuté podľa firmy"
+
+#~ msgid "Add CC"
+#~ msgstr "Pridať kópiu"
+
+#~ msgid "All Meetings"
+#~ msgstr "Všetky stretnutia"
+
+#~ msgid "Contract Proposed"
+#~ msgstr "Navrhovaná zmluva"
+
+#~ msgid "Related Cases"
+#~ msgstr "Relevantné prípady"
+
+#~ msgid "   Today   "
+#~ msgstr "   Dnes   "
+
+#~ msgid "Policy Claims"
+#~ msgstr "Politika/Pravidlá pohľadávok"
+
+#~ msgid "Phone Call Description"
+#~ msgstr "Opis telefonického hovoru"
+
+#~ msgid "Assigned to"
+#~ msgstr "Priradené k"
+
+#~ msgid "Contract Signed"
+#~ msgstr "Podpísaná zmluva"
+
+#~ msgid "Date of Claim"
+#~ msgstr "Dátum pohľadávky"
+
+#~ msgid "Cases by Opportunities and Stage"
+#~ msgstr "Udalosti podľa príležitosti a etapy"
+
+#~ msgid "All Leads"
+#~ msgstr "Všetky prvé kontakty"
+
+#~ msgid "Save in .ics format"
+#~ msgstr "Uložiť vo formáte .ics"
+
+#~ msgid "Factual Claims"
+#~ msgstr "Reálne pohľadávky"
+
+#~ msgid "Emails"
+#~ msgstr "Emaily"
+
+#, python-format
+#~ msgid "Email!"
+#~ msgstr "Email!"
+
+#~ msgid "Radio"
+#~ msgstr "Prepínač"
+
+#~ msgid "crm.opportunity.assign_wizard"
+#~ msgstr "crm.opportunity.assign_wizard"
+
+#~ msgid "Search Histories"
+#~ msgstr "Vyhľadanie histórie"

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<chart-of-accounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="RRIF-RP2011-ENG.XSD">
+  <account>
+    <key>5</key>
+    <name>COST CENTRES AND COST DRIVER (B. IN TRADE SECTOR)</name>
+    <naziv>MJESTA I NOSITELJI TROŠKOVA (B. u djelatnosti trgovine)</naziv>
+  </account>
+  <account>
+    <key>50</key>
+    <name>MANAGEMENT AND ADMINISTRATIVE OVERHEADS</name>
+    <naziv>TROŠKOVI UPRAVE I ADMINISTRACIJA</naziv>
+  </account>
+  <account>
+    <key>500</key>
+    <name>Material used in management and administrative overheads</name>
+    <naziv>Materijal u troškovima uprave i administracije</naziv>
+  </account>
+  <account>
+    <key>501</key>
+    <name>Wages and other costs of administration</name>
+    <naziv>Plaće u troškovima uprave i prodaje</naziv>
+  </account>
+  <account>
+    <key>502</key>
+    <name>Depreciation used in management and administrative overheads</name>
+    <naziv>Amortizacija u troškovima uprave i administracije</naziv>
+  </account>
+  <account>
+    <key>503</key>
+    <name>Other costs related to the administration and selling</name>
+    <naziv>Drugi troškovi uprave i prodaje (Razrada npr. dnevnica, osiguranje, bankovni troškovi, reprezentacija itd.)</naziv>
+  </account>
+  <account>
+    <key>51</key>
+    <name>SELLING COSTS</name>
+    <naziv>TROŠKOVI PRODAJE</naziv>
+  </account>
+  <account>
+    <key>510</key>
+    <name>Material used during selling process in total selling costs</name>
+    <naziv>Materijal u troškovima prodaje</naziv>
+  </account>
+  <account>
+    <key>511</key>
+    <name>Wages in selling costs</name>
+    <naziv>Plaće u troškovima prodaje</naziv>
+  </account>
+  <account>
+    <key>512</key>
+    <name>Depreciation in selling costs</name>
+    <naziv>Amortizacija u troškovima prodaje</naziv>
+  </account>
+  <account>
+    <key>513</key>
+    <name>Other costs related to the selling</name>
+    <naziv>Drugi troškovi prodaje (Razrada npr. otpreme pošiljaka, fakturiranje, propaganda, naplata ambalaža, omotni papir, troškovi izvoza, troškovi posredništva itd.)</naziv>
+  </account>
+  <account>
+    <key>59</key>
+    <name>ALLOCATION OF COSTS</name>
+    <naziv>RASPORED TROŠKOVA</naziv>
+  </account>
+  <account>
+    <key>590</key>
+    <name>Allocation of costs to cost of conversion (cost of production) - (on acc. 60, 62, 63)</name>
+    <naziv>Raspored troškova na zalihe proizvodnje i usluga</naziv>
+  </account>
+  <account>
+    <key>591</key>
+    <name>Allocation of costs to expenditures - to be shown in this year income statement - (on acc. 72)</name>
+    <naziv>Raspored troškova u rashode na teret prihoda</naziv>
+  </account>
+</chart-of-accounts>

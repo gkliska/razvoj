@@ -1,0 +1,314 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* training_multi_school
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-13 15:08+0000\n"
+"PO-Revision-Date: 2011-07-13 17:13+0100\n"
+"Last-Translator: Jesús Martín <jmartin@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. module: training_multi_school
+#: constraint:training.session:0
+msgid "You have a seance with a date inferior to the session's date."
+msgstr "Teniu una sessió amb una data anterior a la data de la sessió"
+
+#. module: training_multi_school
+#: model:ir.module.module,description:training_multi_school.module_meta_information
+msgid ""
+"\n"
+"Manage training multi schools\n"
+msgstr ""
+"\n"
+"Gestiona múltiples centres educatius\n"
+
+#. module: training_multi_school
+#: sql_constraint:training.holiday.year:0
+msgid "The year must be unique !"
+msgstr "L'any ha de ser únic!"
+
+#. module: training_multi_school
+#: constraint:training.seance:0
+msgid "The minimum limit is greater than the maximum limit"
+msgstr "El límit mínim és major que el límit màxim."
+
+#. module: training_multi_school
+#: model:ir.model,name:training_multi_school.model_res_users
+msgid "res.users"
+msgstr "res.usuaris"
+
+#. module: training_multi_school
+#: sql_constraint:training.group:0
+msgid "It already exists a group with this name"
+msgstr "Ja existeix un grup amb aquest nom."
+
+#. module: training_multi_school
+#: constraint:res.users:0
+msgid "The chosen company is not in the allowed companies for this user"
+msgstr "La companyia seleccionada no està en les companyies permeses per aquest usuari."
+
+#. module: training_multi_school
+#: view:training.calendar.school.year:0
+msgid "_Apply"
+msgstr "_Aplica"
+
+#. module: training_multi_school
+#: model:ir.model,name:training_multi_school.model_training_group
+msgid "Group"
+msgstr "Grup"
+
+#. module: training_multi_school
+#: help:training.session,school_id:0
+msgid "The school belongs to this session."
+msgstr "El centre educatiu a la que pertany aquesta edició."
+
+#. module: training_multi_school
+#: model:ir.model,name:training_multi_school.model_training_participation
+msgid "Participation"
+msgstr "Participation"
+
+#. module: training_multi_school
+#: help:training.school,partner_id:0
+msgid "Partner that is related to the current school."
+msgstr "L'empresa que està relacionada amb el centre educatiu actual."
+
+#. module: training_multi_school
+#: constraint:training.subscription.line:0
+msgid "Invalid Subscription"
+msgstr "Inscripció invàlida"
+
+#. module: training_multi_school
+#: view:training.school:0
+#: field:training.school,user_ids:0
+msgid "Users"
+msgstr "Usuaris"
+
+#. module: training_multi_school
+#: view:training.school:0
+#: field:training.school,session_ids:0
+msgid "Sessions"
+msgstr "Edicions"
+
+#. module: training_multi_school
+#: view:training.school:0
+#: field:training.school,holiday_ids:0
+msgid "Calendars"
+msgstr "Calendaris"
+
+#. module: training_multi_school
+#: help:training.calendar.school.year,year_id:0
+msgid "Base calendar school year to duplicate or update."
+msgstr "Calendari escolar anual base per duplicar o actualitzar."
+
+#. module: training_multi_school
+#: model:ir.actions.act_window,name:training_multi_school.training_calendar_school_year_action
+#: model:ir.ui.menu,name:training_multi_school.training_calendar_school_year_menu
+#: view:training.calendar.school.year:0
+msgid "School Calendar Year Generator"
+msgstr "Genera calendari escolar anual"
+
+#. module: training_multi_school
+#: constraint:training.group:0
+msgid "Error! You can not create recursive parent group."
+msgstr "Error! No podeu crear un pare recursiu de grup."
+
+#. module: training_multi_school
+#: view:training.school:0
+#: field:training.school,group_ids:0
+msgid "Groups"
+msgstr "Grups"
+
+#. module: training_multi_school
+#: view:res.users:0
+#: field:res.users,school_ids:0
+#: view:training.offer:0
+#: field:training.offer,school_ids:0
+msgid "Schools"
+msgstr "Centres educatius"
+
+#. module: training_multi_school
+#: model:ir.module.module,shortdesc:training_multi_school.module_meta_information
+msgid "Training Multi School Management"
+msgstr "Gestió de múltiples centres educatius"
+
+#. module: training_multi_school
+#: help:training.calendar.school.year,school_ids:0
+msgid "The schools that will be create or update theirs calendars."
+msgstr "Els centres educatius a on es crearan o s'actualitzaran els seus calendaris."
+
+#. module: training_multi_school
+#: model:ir.actions.act_window,name:training_multi_school.multi_school_action
+#: model:ir.ui.menu,name:training_multi_school.school_menu_mi
+#: view:training.school:0
+msgid "Educational school"
+msgstr "Centre educatiu"
+
+#. module: training_multi_school
+#: help:training.school,session_ids:0
+msgid "Sessions of this school."
+msgstr "Edicions d'aquest centre educatiu."
+
+#. module: training_multi_school
+#: field:training.calendar.school.year,year_id:0
+msgid "Calendar School Year"
+msgstr "Calendari escolar anual"
+
+#. module: training_multi_school
+#: field:res.partner,school_ids:0
+#: field:res.partner.contact,school_id:0
+#: field:res.users,school_id:0
+#: field:training.calendar.school.year,school_ids:0
+#: view:training.group:0
+#: field:training.group,school_id:0
+#: field:training.holiday.year,school_id:0
+#: view:training.offer:0
+#: view:training.participation:0
+#: field:training.participation,school_id:0
+#: view:training.seance:0
+#: field:training.seance,school_id:0
+#: field:training.session,school_id:0
+#: view:training.subscription:0
+#: field:training.subscription,school_id:0
+#: view:training.subscription.line:0
+#: field:training.subscription.line,school_id:0
+msgid "School"
+msgstr "Centre educatiu"
+
+#. module: training_multi_school
+#: field:training.school,name:0
+msgid "Name"
+msgstr "Nom"
+
+#. module: training_multi_school
+#: model:ir.model,name:training_multi_school.model_training_subscription_line
+msgid "training.subscription.line"
+msgstr "formacio.inscripcio.linia"
+
+#. module: training_multi_school
+#: model:ir.model,name:training_multi_school.model_training_seance
+msgid "training.seance"
+msgstr "formació.sessió"
+
+#. module: training_multi_school
+#: sql_constraint:training.holiday.year:0
+msgid "The year for the school must be unique!"
+msgstr "L'any pel centre educatiu ha de ser únic!"
+
+#. module: training_multi_school
+#: model:ir.model,name:training_multi_school.model_training_school
+msgid "Manage Training Multi Schools"
+msgstr "Permet gestionar múltiples centres educatius"
+
+#. module: training_multi_school
+#: sql_constraint:training.subscription:0
+msgid "The name of the subscription must be unique !"
+msgstr "El nom de la inscripció ha de ser única!"
+
+#. module: training_multi_school
+#: help:res.users,school_id:0
+msgid "The school related to the current user"
+msgstr "El centre educatiu relacionat amb aquest usuari"
+
+#. module: training_multi_school
+#: model:ir.model,name:training_multi_school.model_res_partner_contact
+msgid "Contact"
+msgstr "Contact"
+
+#. module: training_multi_school
+#: constraint:training.calendar.school.year:0
+msgid "Can you check the year, it's before than current year."
+msgstr "Podeu comprovar l'any, és anterior a l'any actual."
+
+#. module: training_multi_school
+#: constraint:training.session:0
+msgid "You have a seance with a later date to the session's end date."
+msgstr "Teniu una sessió amb una data posterior a la data de finalització de l'edició."
+
+#. module: training_multi_school
+#: model:ir.model,name:training_multi_school.model_training_offer
+msgid "training.offer"
+msgstr "formacio.curs"
+
+#. module: training_multi_school
+#: view:training.calendar.school.year:0
+msgid "Create or update the calendars of several schools from a base calendar."
+msgstr "Crea o actualitza els calendaris de varis centres educatius des d'un calendari base."
+
+#. module: training_multi_school
+#: constraint:training.seance:0
+msgid "You have a session with a date inferior to the seance's date"
+msgstr "Teniu una edició amb una data inferior a la data de la sessió."
+
+#. module: training_multi_school
+#: help:training.school,user_ids:0
+msgid "Users of this school."
+msgstr "Usuaris d'aquest centre eductiu."
+
+#. module: training_multi_school
+#: model:ir.model,name:training_multi_school.model_training_holiday_year
+msgid "training.holiday.year"
+msgstr "formació.vacances.any"
+
+#. module: training_multi_school
+#: sql_constraint:res.users:0
+msgid "You can not have two users with the same login !"
+msgstr "No podeu tenir dos usuaris amb el mateix identificador!"
+
+#. module: training_multi_school
+#: model:ir.model,name:training_multi_school.model_training_subscription
+msgid "training.subscription"
+msgstr "formacio.inscripcio"
+
+#. module: training_multi_school
+#: help:training.holiday.year,school_id:0
+msgid "The school related to this holiday period"
+msgstr "El centre educatiu relacionat amb aquest període de vacances."
+
+#. module: training_multi_school
+#: model:ir.model,name:training_multi_school.model_training_session
+msgid "training.session"
+msgstr "formació.edició"
+
+#. module: training_multi_school
+#: help:training.school,group_ids:0
+msgid "Groups of this school."
+msgstr "Grups d'aquest centre educatiu."
+
+#. module: training_multi_school
+#: view:training.calendar.school.year:0
+msgid "_Cancel"
+msgstr "_Cancela"
+
+#. module: training_multi_school
+#: help:training.school,holiday_ids:0
+msgid "Calendars of this school."
+msgstr "Calendaris d'aquest centre educatiu."
+
+#. module: training_multi_school
+#: model:ir.model,name:training_multi_school.model_res_partner
+#: field:training.school,partner_id:0
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: training_multi_school
+#: sql_constraint:training.participation:0
+msgid "The subscription and the seance must be unique !"
+msgstr "La inscripció i l'edició han de ser úniques!"
+
+#. module: training_multi_school
+#: model:ir.model,name:training_multi_school.model_training_calendar_school_year
+msgid "training.calendar.school.year"
+msgstr "formacio.vacances.any.assistent"
+
+#~ msgid "Weekend %02d"
+#~ msgstr "Cap de setmana %02d"
+#~ msgid "Can you check the year"
+#~ msgstr "Podeu comprovar l'any"
+

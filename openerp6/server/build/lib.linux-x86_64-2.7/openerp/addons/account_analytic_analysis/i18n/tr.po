@@ -1,0 +1,364 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* account_analytic_analysis
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-01-11 11:14+0000\n"
+"PO-Revision-Date: 2011-05-22 13:35+0000\n"
+"Last-Translator: Ayhan KIZILTAN <Unknown>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-05-23 04:37+0000\n"
+"X-Generator: Launchpad (build 12959)\n"
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,hours_qtt_invoiced:0
+msgid ""
+"Number of hours that can be invoiced plus those that already have been "
+"invoiced."
+msgstr "Faturalanabilecek saatler artı şimdiye kadar faturalanmış olanlar"
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,remaining_ca:0
+msgid "Computed using the formula: Max Invoice Price - Invoiced Amount."
+msgstr ""
+"Hesaplamada kullanılan formül: En Yüksek Fatura Fiyatı - Faturalanmış Tutar."
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,remaining_hours:0
+msgid "Computed using the formula: Maximum Quantity - Hours Tot."
+msgstr "Hesaplamada kullanılan formül: Enfazla Miktar -  Saatler Toplamı"
+
+#. module: account_analytic_analysis
+#: code:addons/account_analytic_analysis/account_analytic_analysis.py:532
+#: code:addons/account_analytic_analysis/account_analytic_analysis.py:703
+#, python-format
+msgid "AccessError"
+msgstr "Erişim Hatası"
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,last_invoice_date:0
+msgid "Date of the last invoice created for this analytic account."
+msgstr "Bu analitik hesap için oluşturulan son fatura tarihi."
+
+#. module: account_analytic_analysis
+#: model:ir.module.module,description:account_analytic_analysis.module_meta_information
+msgid ""
+"\n"
+"This module is for modifying account analytic view to show\n"
+"important data to project manager of services companies.\n"
+"Adds menu to show relevant information to each manager..\n"
+"\n"
+"You can also view the report of account analytic summary\n"
+"user-wise as well as month wise.\n"
+msgstr ""
+"\n"
+"Bu modül, servis şirketleri proje müdürlerinin önemli bilgileri\n"
+"görebilmeleri için analiz hesabı görünümünde değişiklikler yapmak\n"
+"için kullanılır. Her yöneticinin ilgili bilgiyi görmesi için menü eklenir..\n"
+"\n"
+"Hem kullanıcıya göre hem de aylara göre analiz hesabı özetini\n"
+"görebilirsiniz.\n"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,last_invoice_date:0
+msgid "Last Invoice Date"
+msgstr "Son Fatura Tarihi"
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,theorical_margin:0
+msgid "Computed using the formula: Theorial Revenue - Total Costs"
+msgstr "Hesaplamada kullanılan formül: Teorik Ciro - Toplam Maliyetler"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,real_margin_rate:0
+msgid "Real Margin Rate (%)"
+msgstr "Gerçek Kar Oranı (%)"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,ca_theorical:0
+msgid "Theoretical Revenue"
+msgstr "Teorik Gelir"
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,last_worked_invoiced_date:0
+msgid ""
+"If invoice from the costs, this is the date of the latest work or cost that "
+"have been invoiced."
+msgstr ""
+"Eğer fatura maliyetlerden çıkarılmışsa, bu en son işin yada faturalandırılan "
+"maliyetin tarihidir."
+
+#. module: account_analytic_analysis
+#: model:ir.ui.menu,name:account_analytic_analysis.menu_invoicing
+msgid "Billing"
+msgstr "Faturalandırma"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,last_worked_date:0
+msgid "Date of Last Cost/Work"
+msgstr "Son Maliyet/İş Tarihi"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,total_cost:0
+msgid "Total Costs"
+msgstr "Toplam Maliyetler"
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,hours_quantity:0
+msgid ""
+"Number of hours you spent on the analytic account (from timesheet). It "
+"computes on all journal of type 'general'."
+msgstr ""
+"Analiz hesabı üzerinde çalışarak harcadığınız süredir (zaman "
+"çizelgelerinden). 'Genel' tipteki bütün yevmiyeleri hesaplar."
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,remaining_hours:0
+msgid "Remaining Hours"
+msgstr "Kalan Saat"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,theorical_margin:0
+msgid "Theoretical Margin"
+msgstr "Kuramsal Sınır"
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,ca_theorical:0
+msgid ""
+"Based on the costs you had on the project, what would have been the revenue "
+"if all these costs have been invoiced at the normal sale price provided by "
+"the pricelist."
+msgstr ""
+"Bu maliyetlerden elde edilen gelir, fiyat listesindeki normal satış "
+"fiyatlarına göre faturalandırılmış ise projedeki maliyetleriniz temel "
+"alınmıştır."
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,user_ids:0
+#: field:account_analytic_analysis.summary.user,user:0
+msgid "User"
+msgstr "Kullanıcı"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,ca_to_invoice:0
+msgid "Uninvoiced Amount"
+msgstr "Faturasız Tutar"
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,real_margin:0
+msgid "Computed using the formula: Invoiced Amount - Total Costs."
+msgstr ""
+"Şu formül kullanılarak hesaplandı: Faturalanmış Tutar - Toplam Maliyet."
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,hours_qtt_non_invoiced:0
+msgid "Uninvoiced Hours"
+msgstr "Faturasız Saat"
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,last_worked_date:0
+msgid "Date of the latest work done on this account."
+msgstr "Bu hesapta yapılan son işlem tarihi"
+
+#. module: account_analytic_analysis
+#: model:ir.module.module,shortdesc:account_analytic_analysis.module_meta_information
+msgid "report_account_analytic"
+msgstr "analiz_hesabı_raporu"
+
+#. module: account_analytic_analysis
+#: model:ir.model,name:account_analytic_analysis.model_account_analytic_analysis_summary_user
+msgid "Hours Summary by User"
+msgstr "Kullanıcıya göre Saatlik Özet"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,ca_invoiced:0
+msgid "Invoiced Amount"
+msgstr "Fatura Tutarı"
+
+#. module: account_analytic_analysis
+#: code:addons/account_analytic_analysis/account_analytic_analysis.py:533
+#: code:addons/account_analytic_analysis/account_analytic_analysis.py:704
+#, python-format
+msgid "You try to bypass an access rule (Document type: %s)."
+msgstr "Bir giriş kuralını atlamayı deneyin (Döküman Türü: %s)."
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,last_worked_invoiced_date:0
+msgid "Date of Last Invoiced Cost"
+msgstr "Son Faturalanmış Maliyet Tarihi"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,hours_qtt_invoiced:0
+msgid "Invoiced Hours"
+msgstr "Faturalanan Saat"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,real_margin:0
+msgid "Real Margin"
+msgstr "Gerçek Teminat"
+
+#. module: account_analytic_analysis
+#: constraint:account.analytic.account:0
+msgid ""
+"Error! The currency has to be the same as the currency of the selected "
+"company"
+msgstr "Hata! Para birimi seçilen firmanın para birimiyle aynı olmalı"
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,ca_invoiced:0
+msgid "Total customer invoiced amount for this account."
+msgstr "Bu hesap için toplam müşteri faturası miktarı."
+
+#. module: account_analytic_analysis
+#: model:ir.model,name:account_analytic_analysis.model_account_analytic_analysis_summary_month
+msgid "Hours summary by month"
+msgstr "Aya göre saatlil özet"
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,real_margin_rate:0
+msgid "Computes using the formula: (Real Margin / Total Costs) * 100."
+msgstr ""
+"Şu formülü kullanarak hesaplar: (Gerçek Teminat / Toplam Maliyet) * 100."
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,hours_qtt_non_invoiced:0
+msgid ""
+"Number of hours (from journal of type 'general') that can be invoiced if you "
+"invoice based on analytic account."
+msgstr ""
+"Eğer analiz hesabı temel alınmışsa faturalandırılacak saat (türü 'genel' "
+"olan yevmiyelerden alınan) sayılarıdır."
+
+#. module: account_analytic_analysis
+#: view:account.analytic.account:0
+msgid "Analytic accounts"
+msgstr "Analiz hesapları"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,remaining_ca:0
+msgid "Remaining Revenue"
+msgstr "Kalan Ciro"
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,ca_to_invoice:0
+msgid ""
+"If invoice from analytic account, the remaining amount you can invoice to "
+"the customer based on the total costs."
+msgstr ""
+"Eğer analiz hesabından fatura edilecekse, müşteriye keseceğiniz fatura "
+"bakiye tutarı toplam maliyetlere dayanır."
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,revenue_per_hour:0
+msgid "Computed using the formula: Invoiced Amount / Hours Tot."
+msgstr "Şu formül kullanılarak hesaplandı: Fatura Tutarı / Toplam Saat."
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,revenue_per_hour:0
+msgid "Revenue per Hours (real)"
+msgstr "Saat başına ciro (gerçek)"
+
+#. module: account_analytic_analysis
+#: field:account_analytic_analysis.summary.month,unit_amount:0
+#: field:account_analytic_analysis.summary.user,unit_amount:0
+msgid "Total Time"
+msgstr "Toplam Süre"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,month_ids:0
+#: field:account_analytic_analysis.summary.month,month:0
+msgid "Month"
+msgstr "Ay"
+
+#. module: account_analytic_analysis
+#: field:account_analytic_analysis.summary.month,account_id:0
+#: field:account_analytic_analysis.summary.user,account_id:0
+#: model:ir.model,name:account_analytic_analysis.model_account_analytic_account
+msgid "Analytic Account"
+msgstr "Analitik Hesap"
+
+#. module: account_analytic_analysis
+#: model:ir.actions.act_window,name:account_analytic_analysis.action_account_analytic_managed_overpassed
+#: model:ir.ui.menu,name:account_analytic_analysis.menu_action_account_analytic_managed_overpassed
+msgid "Overpassed Accounts"
+msgstr "Görmezden Gelinen Hesaplar"
+
+#. module: account_analytic_analysis
+#: model:ir.actions.act_window,name:account_analytic_analysis.action_hr_tree_invoiced_all
+#: model:ir.ui.menu,name:account_analytic_analysis.menu_action_hr_tree_invoiced_all
+msgid "All Uninvoiced Entries"
+msgstr "Tüm Faturalanmayan Kayıtlar"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,hours_quantity:0
+msgid "Hours Tot"
+msgstr "Toplam Saat"
+
+#. module: account_analytic_analysis
+#: constraint:account.analytic.account:0
+msgid "Error! You can not create recursive analytic accounts."
+msgstr "Hata! Yinelenen çözümleme hesabı oluşturamazsınız."
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,total_cost:0
+msgid ""
+"Total of costs for this account. It includes real costs (from invoices) and "
+"indirect costs, like time spent on timesheets."
+msgstr ""
+"Bu hesap için toplam maliyetler. Gerçek maliyetleri (faturalardan) ve "
+"dolaylı maliyetleri, zaman çizelgelerindeki harcanan süreler gibi, içerir."
+
+#~ msgid "All Analytic Accounts"
+#~ msgstr "Tüm Analitik Hesaplar"
+
+#~ msgid "My Current Accounts"
+#~ msgstr "Güncel Hesaplarım"
+
+#~ msgid "New Analytic Account"
+#~ msgstr "Yeni Analiz Hesabı"
+
+#~ msgid "Current Analytic Accounts"
+#~ msgstr "Güncel Analiz Hesaplarım"
+
+#~ msgid "Invoicing"
+#~ msgstr "Faturalama"
+
+#~ msgid "My Pending Accounts"
+#~ msgstr "Bekleyen Hesaplarım"
+
+#~ msgid "My Uninvoiced Entries"
+#~ msgstr "Faturalanmamış Kayıtlarım"
+
+#~ msgid "My Accounts"
+#~ msgstr "Hesaplarım"
+
+#~ msgid "Analytic Accounts"
+#~ msgstr "Analiz Hesapları"
+
+#~ msgid "Financial Project Management"
+#~ msgstr "Finansal Proje Yönetimi"
+
+#~ msgid "Pending Analytic Accounts"
+#~ msgstr "Bekleyen Analiz Hesaplarım"
+
+#~ msgid "Error ! You can not create recursive Menu."
+#~ msgstr "Hata! Yinelenen Menü oluşturamazsınız."
+
+#~ msgid "Invalid model name in the action definition."
+#~ msgstr "Eylem tanımlamasında geçersiz model adı."
+
+#~ msgid ""
+#~ "The Object name must start with x_ and not contain any special character !"
+#~ msgstr "Nesne adı x_ ile başlamalı ve özel karakter içermemelidir!"
+
+#~ msgid "Theorical Margin"
+#~ msgstr "Teorik Teminat"
+
+#~ msgid "Invalid XML for View Architecture!"
+#~ msgstr "Görüntüleme Yapısı için Geçersiz XML!"

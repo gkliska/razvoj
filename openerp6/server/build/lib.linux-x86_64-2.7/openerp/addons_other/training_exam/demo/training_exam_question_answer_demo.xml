@@ -1,0 +1,275 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data noupdate="1">
+        <record id="question_1" model="training.exam.question">
+            <field eval="5.0" name="point"/>
+            <field eval="1" name="is_mandatory"/>
+            <field name="question">Dans l’ordinateur, le programme BIOS (Basic Input Output System) est chargé dans la mémoire</field>
+            <field name="type">qcm</field>
+            <field name="name">info_1</field>
+            <field eval="0" name="is_eliminatory"/>
+        </record>
+
+        <record id="question_2" model="training.exam.question">
+            <field eval="5.0" name="point"/>
+            <field eval="0" name="is_mandatory"/>
+            <field name="question">La mรฉmoire cache dโun ordinateur permet</field>
+            <field name="type">qcm</field>
+            <field name="name">info_2</field>
+            <field eval="1" name="is_eliminatory"/>
+        </record>
+
+        <record id="question_3" model="training.exam.question">
+            <field eval="5.0" name="point"/>
+            <field eval="0" name="is_mandatory"/>
+            <field name="question">La RS232C correspond ร </field>
+            <field name="type">qcm</field>
+            <field name="name">info_3</field>
+            <field eval="0" name="is_eliminatory"/>
+        </record>
+
+        <record id="question_4" model="training.exam.question">
+            <field eval="5.0" name="point"/>
+            <field eval="1" name="is_mandatory"/>
+            <field name="question">Le systรจme dโexploitation dโun ordinateur fait partie</field>
+            <field name="type">qcm</field>
+            <field name="name">info_4</field>
+            <field eval="0" name="is_eliminatory"/>
+        </record>
+
+        <record id="question_5" model="training.exam.question">
+            <field eval="5.0" name="point"/>
+            <field eval="0" name="is_mandatory"/>
+            <field name="question">La taille dโun octet de donnรฉes correspond ร </field>
+            <field name="type">qcm</field>
+            <field name="name">info_5</field>
+            <field eval="1" name="is_eliminatory"/>
+        </record>
+
+        <record id="question_6" model="training.exam.question">
+            <field eval="5.0" name="point"/>
+            <field eval="0" name="is_mandatory"/>
+            <field name="question">Dans un octet, le bit de paritรฉ permet</field>
+            <field name="type">qcm</field>
+            <field name="name">info_6</field>
+            <field eval="0" name="is_eliminatory"/>
+        </record>
+
+        <record id="question_7" model="training.exam.question">
+            <field eval="5.0" name="point"/>
+            <field eval="1" name="is_mandatory"/>
+            <field name="question">Le rรดle dโun modem est</field>
+            <field name="type">qcm</field>
+            <field name="name">info_7</field>
+            <field eval="0" name="is_eliminatory"/>
+        </record>
+
+        <record id="question_8" model="training.exam.question">
+            <field eval="5.0" name="point"/>
+            <field eval="0" name="is_mandatory"/>
+            <field name="question">Un caractรจre ASCII est codรฉ sur</field>
+            <field name="type">qcm</field>
+            <field name="name">info_8</field>
+            <field eval="1" name="is_eliminatory"/>
+        </record>
+
+        <record id="question_9" model="training.exam.question">
+            <field eval="5.0" name="point"/>
+            <field eval="0" name="is_mandatory"/>
+            <field name="question">Un protocole de communication est</field>
+            <field name="type">qcm</field>
+            <field name="name">info_9</field>
+            <field eval="0" name="is_eliminatory"/>
+        </record>
+
+        <record id="question_10" model="training.exam.question">
+            <field eval="5.0" name="point"/>
+            <field eval="1" name="is_mandatory"/>
+            <field name="question">Un processus est</field>
+            <field name="type">qcm</field>
+            <field name="name">info_10</field>
+            <field eval="0" name="is_eliminatory"/>
+        </record>
+
+        <record id="answer_1" model="training.exam.question.answer">
+            <field name="is_solution">no</field>
+            <field name="name">de masse  </field>
+            <field name="question_id" ref="training_exam.question_1"/>
+        </record>
+
+        <record id="answer_2" model="training.exam.question.answer">
+            <field name="is_solution">no</field>
+            <field name="name">la RAM (Random Access Memory)  </field>
+            <field name="question_id" ref="training_exam.question_1"/>
+        </record>
+
+        <record id="answer_3" model="training.exam.question.answer">
+            <field name="is_solution">yes</field>
+            <field name="name">la ROM (Read Only Memory)</field>
+            <field name="question_id" ref="training_exam.question_1"/>
+        </record>
+
+        <record id="answer_4" model="training.exam.question.answer">
+            <field name="is_solution">no</field>
+            <field name="name">une plus grande sécurité des données  </field>
+            <field name="question_id" ref="training_exam.question_2"/>
+        </record>
+
+        <record id="answer_5" model="training.exam.question.answer">
+            <field name="is_solution">yes</field>
+            <field name="name">un accès rapide aux données</field>
+            <field name="question_id" ref="training_exam.question_2"/>
+        </record>
+
+        <record id="answer_6" model="training.exam.question.answer">
+            <field name="is_solution">no</field>
+            <field name="name">une compression des données</field>
+            <field name="question_id" ref="training_exam.question_2"/>
+        </record>
+
+        <record id="answer_7" model="training.exam.question.answer">
+            <field name="is_solution">no</field>
+            <field name="name">une interface de programmation  </field>
+            <field name="question_id" ref="training_exam.question_3"/>
+        </record>
+
+        <record id="answer_8" model="training.exam.question.answer">
+            <field name="is_solution">yes</field>
+            <field name="name">une interface de communication</field>
+            <field name="question_id" ref="training_exam.question_3"/>
+        </record>
+
+        <record id="answer_9" model="training.exam.question.answer">
+            <field name="is_solution">no</field>
+            <field name="name">une application industrielle</field>
+            <field name="question_id" ref="training_exam.question_3"/>
+        </record>
+
+        <record id="answer_10" model="training.exam.question.answer">
+            <field name="is_solution">no</field>
+            <field name="name">du hardware  </field>
+            <field name="question_id" ref="training_exam.question_4"/>
+        </record>
+
+        <record id="answer_11" model="training.exam.question.answer">
+            <field name="is_solution">yes</field>
+            <field name="name">du software</field>
+            <field name="question_id" ref="training_exam.question_4"/>
+        </record>
+
+        <record id="answer_12" model="training.exam.question.answer">
+            <field name="is_solution">no</field>
+            <field name="name">des applications de bases de données</field>
+            <field name="question_id" ref="training_exam.question_4"/>
+        </record>
+
+        <record id="answer_13" model="training.exam.question.answer">
+            <field name="is_solution">no</field>
+            <field name="name">64 bits  </field>
+            <field name="question_id" ref="training_exam.question_5"/>
+        </record>
+
+        <record id="answer_14" model="training.exam.question.answer">
+            <field name="is_solution">no</field>
+            <field name="name">1024 bits  </field>
+            <field name="question_id" ref="training_exam.question_5"/>
+        </record>
+
+        <record id="answer_15" model="training.exam.question.answer">
+            <field name="is_solution">yes</field>
+            <field name="name">8 bits</field>
+            <field name="question_id" ref="training_exam.question_5"/>
+        </record>
+
+        <record id="answer_16" model="training.exam.question.answer">
+            <field name="is_solution">no</field>
+            <field name="name">de synchroniser l’horloge du récepteur  </field>
+            <field name="question_id" ref="training_exam.question_6"/>
+        </record>
+
+        <record id="answer_17" model="training.exam.question.answer">
+            <field name="is_solution">yes</field>
+            <field name="name">de détecter les erreurs de transmission</field>
+            <field name="question_id" ref="training_exam.question_6"/>
+        </record>
+
+        <record id="answer_18" model="training.exam.question.answer">
+            <field name="is_solution">no</field>
+            <field name="name">de gérer le tour de parole</field>
+            <field name="question_id" ref="training_exam.question_6"/>
+        </record>
+
+        <record id="answer_19" model="training.exam.question.answer">
+            <field name="is_solution">no</field>
+            <field name="name">d’amplifier le signal  </field>
+            <field name="question_id" ref="training_exam.question_7"/>
+        </record>
+
+        <record id="answer_20" model="training.exam.question.answer">
+            <field name="is_solution">no</field>
+            <field name="name">de protéger l’ordinateur des chutes de tension  </field>
+            <field name="question_id" ref="training_exam.question_7"/>
+        </record>
+
+        <record id="answer_21" model="training.exam.question.answer">
+            <field name="is_solution">yes</field>
+            <field name="name">de transformer le signal numérique en signal analogique</field>
+            <field name="question_id" ref="training_exam.question_7"/>
+        </record>
+
+        <record id="answer_22" model="training.exam.question.answer">
+            <field name="is_solution">no</field>
+            <field name="name">8 bits  </field>
+            <field name="question_id" ref="training_exam.question_8"/>
+        </record>
+
+        <record id="answer_23" model="training.exam.question.answer">
+            <field name="is_solution">yes</field>
+            <field name="name">7 bits</field>
+            <field name="question_id" ref="training_exam.question_8"/>
+        </record>
+
+        <record id="answer_24" model="training.exam.question.answer">
+            <field name="is_solution">no</field>
+            <field name="name">16 bits</field>
+            <field name="question_id" ref="training_exam.question_8"/>
+        </record>
+
+        <record id="answer_25" model="training.exam.question.answer">
+            <field name="is_solution">no</field>
+            <field name="name">une autoroute de l’information  </field>
+            <field name="question_id" ref="training_exam.question_9"/>
+        </record>
+
+        <record id="answer_26" model="training.exam.question.answer">
+            <field name="is_solution">no</field>
+            <field name="name">une technologie de traitement de l’information  </field>
+            <field name="question_id" ref="training_exam.question_9"/>
+        </record>
+
+        <record id="answer_27" model="training.exam.question.answer">
+            <field name="is_solution">yes</field>
+            <field name="name">un ensemble de règles et de structures</field>
+            <field name="question_id" ref="training_exam.question_9"/>
+        </record>
+
+        <record id="answer_28" model="training.exam.question.answer">
+            <field name="is_solution">no</field>
+            <field name="name">un processeur  </field>
+            <field name="question_id" ref="training_exam.question_10"/>
+        </record>
+
+        <record id="answer_29" model="training.exam.question.answer">
+            <field name="is_solution">yes</field>
+            <field name="name">une entité exécutable</field>
+            <field name="question_id" ref="training_exam.question_10"/>
+        </record>
+
+        <record id="answer_30" model="training.exam.question.answer">
+            <field name="is_solution">no</field>
+            <field name="name">un programme de gestion de files d’attentes</field>
+            <field name="question_id" ref="training_exam.question_10"/>
+        </record>
+
+    </data>
+</openerp>

@@ -1,0 +1,422 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* board
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-01-11 11:14+0000\n"
+"PO-Revision-Date: 2010-10-30 15:51+0000\n"
+"Last-Translator: Boris <boris.t.ivanov@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-04-29 05:29+0000\n"
+"X-Generator: Launchpad (build 12758)\n"
+
+#. module: board
+#: view:res.log.report:0
+msgid "  Year  "
+msgstr "  Година  "
+
+#. module: board
+#: model:ir.model,name:board.model_board_menu_create
+msgid "Menu Create"
+msgstr "Създай меню"
+
+#. module: board
+#: view:board.note:0
+#: field:board.note.type,name:0
+#: model:ir.model,name:board.model_board_note_type
+msgid "Note Type"
+msgstr "Тип бележка"
+
+#. module: board
+#: view:board.note:0
+#: field:board.note,user_id:0
+msgid "Author"
+msgstr "Автор"
+
+#. module: board
+#: model:ir.module.module,shortdesc:board.module_meta_information
+msgid "Dashboard main module"
+msgstr "Основен модул на таблото"
+
+#. module: board
+#: view:res.users:0
+msgid "Latest Connections"
+msgstr "Последни връзки"
+
+#. module: board
+#: code:addons/board/wizard/board_menu_create.py:45
+#, python-format
+msgid "User Error!"
+msgstr "Потребителска грешка !"
+
+#. module: board
+#: view:board.board:0
+#: model:ir.actions.act_window,name:board.open_board_administration_form
+#: model:ir.ui.menu,name:board.menu_board_admin
+msgid "Administration Dashboard"
+msgstr "Администраторски Панел"
+
+#. module: board
+#: view:board.note:0
+#: field:board.note,note:0
+#: model:ir.model,name:board.model_board_note
+msgid "Note"
+msgstr "Бележка"
+
+#. module: board
+#: view:board.note:0
+#: view:res.log.report:0
+msgid "Group By..."
+msgstr "Групирай по"
+
+#. module: board
+#: model:ir.model,name:board.model_board_board
+msgid "Board"
+msgstr "Табло"
+
+#. module: board
+#: view:board.board:0
+#: model:ir.actions.act_window,name:board.board_weekly_res_log_report_action
+#: view:res.log.report:0
+msgid "Weekly Global Activity"
+msgstr ""
+
+#. module: board
+#: field:board.board.line,name:0
+msgid "Title"
+msgstr "Заглавие"
+
+#. module: board
+#: field:res.log.report,nbr:0
+msgid "# of Entries"
+msgstr ""
+
+#. module: board
+#: view:res.log.report:0
+#: field:res.log.report,month:0
+msgid "Month"
+msgstr "Месец"
+
+#. module: board
+#: model:ir.actions.act_window,name:board.dashboard_open
+msgid "Open Dashboard"
+msgstr "Отваряне на табло"
+
+#. module: board
+#: view:board.board:0
+#: model:ir.actions.act_window,name:board.board_monthly_res_log_report_action
+#: view:res.log.report:0
+msgid "Monthly Activity per Document"
+msgstr ""
+
+#. module: board
+#: view:res.log.report:0
+msgid "Log Analysis"
+msgstr ""
+
+#. module: board
+#: model:ir.actions.act_window,name:board.action_view_board_list_form
+#: model:ir.ui.menu,name:board.menu_view_board_form
+msgid "Dashboard Definition"
+msgstr "Задаване на табло"
+
+#. module: board
+#: selection:res.log.report,month:0
+msgid "March"
+msgstr "Март"
+
+#. module: board
+#: selection:res.log.report,month:0
+msgid "August"
+msgstr "Август"
+
+#. module: board
+#: view:board.board:0
+#: model:ir.actions.act_window,name:board.action_user_connection_tree
+msgid "User Connections"
+msgstr ""
+
+#. module: board
+#: field:res.log.report,creation_date:0
+msgid "Creation Date"
+msgstr "Дата на създаване"
+
+#. module: board
+#: model:ir.actions.act_window,name:board.action_view_board_note_form
+#: model:ir.ui.menu,name:board.menu_view_board_note_form
+msgid "Publish a note"
+msgstr "Публикувай бележка"
+
+#. module: board
+#: view:board.menu.create:0
+msgid "Menu Information"
+msgstr "Информация за меню"
+
+#. module: board
+#: selection:res.log.report,month:0
+msgid "June"
+msgstr "Юни"
+
+#. module: board
+#: field:board.note,type:0
+msgid "Note type"
+msgstr "Тип бележка"
+
+#. module: board
+#: field:board.board,line_ids:0
+msgid "Action Views"
+msgstr "Изгледи на акция"
+
+#. module: board
+#: model:ir.model,name:board.model_res_log_report
+msgid "Log Report"
+msgstr ""
+
+#. module: board
+#: view:board.note:0
+#: field:board.note,date:0
+msgid "Date"
+msgstr "Дата"
+
+#. module: board
+#: selection:res.log.report,month:0
+msgid "July"
+msgstr "Юли"
+
+#. module: board
+#: view:res.log.report:0
+msgid "Extended Filters..."
+msgstr ""
+
+#. module: board
+#: view:res.log.report:0
+#: field:res.log.report,day:0
+msgid "Day"
+msgstr "Ден"
+
+#. module: board
+#: view:board.menu.create:0
+msgid "Create Menu For Dashboard"
+msgstr "Създаване на меню за табло"
+
+#. module: board
+#: selection:res.log.report,month:0
+msgid "February"
+msgstr "Февруари"
+
+#. module: board
+#: selection:res.log.report,month:0
+msgid "October"
+msgstr "Октомври"
+
+#. module: board
+#: model:ir.model,name:board.model_board_board_line
+msgid "Board Line"
+msgstr ""
+
+#. module: board
+#: field:board.menu.create,menu_parent_id:0
+msgid "Parent Menu"
+msgstr "Родителско меню"
+
+#. module: board
+#: view:res.log.report:0
+msgid "    Month-1    "
+msgstr ""
+
+#. module: board
+#: selection:res.log.report,month:0
+msgid "January"
+msgstr "Януари"
+
+#. module: board
+#: view:board.note:0
+msgid "Notes"
+msgstr "Бележки"
+
+#. module: board
+#: selection:res.log.report,month:0
+msgid "November"
+msgstr ""
+
+#. module: board
+#: help:board.board.line,sequence:0
+msgid ""
+"Gives the sequence order                         when displaying a list of "
+"board lines."
+msgstr ""
+
+#. module: board
+#: selection:res.log.report,month:0
+msgid "April"
+msgstr ""
+
+#. module: board
+#: view:board.board:0
+#: field:board.board,name:0
+#: field:board.board.line,board_id:0
+#: model:ir.ui.menu,name:board.admin_menu_dasboard
+#: model:ir.ui.menu,name:board.menu_dasboard
+msgid "Dashboard"
+msgstr "Табло"
+
+#. module: board
+#: model:ir.module.module,description:board.module_meta_information
+msgid "Base module for all dashboards."
+msgstr "Основен модул на всички табла"
+
+#. module: board
+#: field:board.board.line,action_id:0
+msgid "Action"
+msgstr "Действие"
+
+#. module: board
+#: field:board.board.line,position:0
+msgid "Position"
+msgstr "Позиция"
+
+#. module: board
+#: view:res.log.report:0
+msgid "Model"
+msgstr "Модел"
+
+#. module: board
+#: field:board.menu.create,menu_name:0
+msgid "Menu Name"
+msgstr "Име на меню"
+
+#. module: board
+#: view:board.board:0
+#: model:ir.actions.act_window,name:board.action_latest_activities_tree
+msgid "Latest Activities"
+msgstr ""
+
+#. module: board
+#: selection:board.board.line,position:0
+msgid "Left"
+msgstr "Отляво"
+
+#. module: board
+#: field:board.board,view_id:0
+msgid "Board View"
+msgstr "Изглед на табло"
+
+#. module: board
+#: selection:board.board.line,position:0
+msgid "Right"
+msgstr "Отдясно"
+
+#. module: board
+#: field:board.board.line,width:0
+msgid "Width"
+msgstr "Ширина"
+
+#. module: board
+#: view:res.log.report:0
+msgid "   Month   "
+msgstr "   Месец   "
+
+#. module: board
+#: field:board.board.line,sequence:0
+msgid "Sequence"
+msgstr "Последователност"
+
+#. module: board
+#: selection:res.log.report,month:0
+msgid "September"
+msgstr "Септември"
+
+#. module: board
+#: selection:res.log.report,month:0
+msgid "December"
+msgstr "Декември"
+
+#. module: board
+#: view:board.board:0
+#: view:board.menu.create:0
+msgid "Create Menu"
+msgstr "Съзсдаване на меню"
+
+#. module: board
+#: field:board.board.line,height:0
+msgid "Height"
+msgstr "Височина"
+
+#. module: board
+#: model:ir.actions.act_window,name:board.action_board_menu_create
+msgid "Create Board Menu"
+msgstr "Създаване на меню на табло"
+
+#. module: board
+#: selection:res.log.report,month:0
+msgid "May"
+msgstr "Май"
+
+#. module: board
+#: field:res.log.report,res_model:0
+msgid "Object"
+msgstr "Обект"
+
+#. module: board
+#: view:res.log.report:0
+#: field:res.log.report,name:0
+msgid "Year"
+msgstr "Година"
+
+#. module: board
+#: view:board.menu.create:0
+msgid "Cancel"
+msgstr "Отказ"
+
+#. module: board
+#: view:board.board:0
+msgid "Dashboard View"
+msgstr "Изглед на табло"
+
+#. module: board
+#: code:addons/board/wizard/board_menu_create.py:46
+#, python-format
+msgid "Please Insert Dashboard View(s) !"
+msgstr "Моля въведете изглед(и) на табло"
+
+#. module: board
+#: view:board.note:0
+#: field:board.note,name:0
+msgid "Subject"
+msgstr "Тема"
+
+#~ msgid ""
+#~ "The Object name must start with x_ and not contain any special character !"
+#~ msgstr ""
+#~ "Името на обекта трябва да започва с \"x_\" и да не съдържа никакви специални "
+#~ "символи!"
+
+#~ msgid "board.board"
+#~ msgstr "board.board"
+
+#~ msgid "board.note"
+#~ msgstr "board.note"
+
+#~ msgid "Configuration"
+#~ msgstr "Настройка"
+
+#~ msgid "Invalid XML for View Architecture!"
+#~ msgstr "Невалиден XML за преглед на архитектурата"
+
+#~ msgid "board.note.type"
+#~ msgstr "board.note.type"
+
+#~ msgid "Dashboards"
+#~ msgstr "Табла"
+
+#~ msgid "board.board.line"
+#~ msgstr "board.board.line"
+
+#~ msgid "Invalid model name in the action definition."
+#~ msgstr "Невалидно име на модел при задаването на действие."

@@ -1,0 +1,274 @@
+<?xml version="1.0" ?>
+<openerp>
+	<data noupdate="1">
+		
+
+		<!-- PRETPOREZI  /-->
+		<record id="account_tax_pp23" model="account.tax.template">
+			<field name="type_tax_use">purchase</field>
+  			<field name="name">Pretporez 23%</field>
+  			<field name="description">pp23</field>
+			<field eval="0.23" name="amount"/>
+			<field model="account.tax.code.template" name="base_code_id"     search="[('code', '=', u'oC3')]"/>
+			<field model="account.tax.code.template" name="ref_base_code_id" search="[('code', '=', u'oC3')]"/>
+			<field model="account.tax.code.template" name="ref_tax_code_id"  search="[('code', '=', u'pC3')]"/>
+			<field model="account.tax.code.template" name="tax_code_id"      search="[('code', '=', u'pC3')]"/>
+  			<field model="account.account.template" name="account_paid_id"      search="[('code', '=', u'140020')]"/>
+			<field model="account.account.template" name="account_collected_id" search="[('code', '=', u'140020')]"/>
+			<field ref="l10n_hr_rrif_account_chart_template" name="chart_template_id"/>
+  		</record>
+
+		<record id="account_tax_pp10" model="account.tax.template">
+			<field name="type_tax_use">purchase</field>
+  			<field name="name">Pretporez 10%</field>
+  			<field name="description">pp10</field>
+			<field eval="0.10" name="amount"/>
+			<field model="account.tax.code.template" name="base_code_id"     search="[('code', '=', u'oC1')]"/>
+			<field model="account.tax.code.template" name="ref_base_code_id" search="[('code', '=', u'oC1')]"/>
+			<field model="account.tax.code.template" name="ref_tax_code_id"  search="[('code', '=', u'pC1')]"/>
+			<field model="account.tax.code.template" name="tax_code_id"      search="[('code', '=', u'pC1')]"/>
+  			<field model="account.account.template" name="account_paid_id"      search="[('code', '=', u'140000')]"/>
+			<field model="account.account.template" name="account_collected_id" search="[('code', '=', u'140000')]"/>
+			<field ref="l10n_hr_rrif_account_chart_template" name="chart_template_id"/>
+  		</record>
+
+		<record id="account_tax_pp00" model="account.tax.template">
+			<field name="type_tax_use">purchase</field>
+  			<field name="name">Pretporez 0%</field>
+  			<field name="description">pp00</field>
+			<field eval="0.0" name="amount"/>
+			<field model="account.tax.code.template" name="base_code_id"     search="[('code', '=', u'oC0')]"/>
+			<field model="account.tax.code.template" name="ref_base_code_id" search="[('code', '=', u'oC0')]"/>
+			<field ref="l10n_hr_rrif_account_chart_template" name="chart_template_id"/>
+  		</record>
+
+		<record id="account_tax_pppred23" model="account.tax.template">
+			<field name="type_tax_use">purchase</field>
+  			<field name="name">Pretporez iz predujmova 23%</field>
+  			<field name="description">pp23</field>
+			<field eval="0.23" name="amount"/>
+			<field model="account.tax.code.template" name="base_code_id"     search="[('code', '=', u'oC3')]"/>
+			<field model="account.tax.code.template" name="ref_base_code_id" search="[('code', '=', u'oC3')]"/>
+			<field model="account.tax.code.template" name="ref_tax_code_id"  search="[('code', '=', u'pC3')]"/>
+			<field model="account.tax.code.template" name="tax_code_id"      search="[('code', '=', u'pC3')]"/>
+  			<field model="account.account.template" name="account_paid_id"      search="[('code', '=', u'140120')]"/>
+			<field model="account.account.template" name="account_collected_id" search="[('code', '=', u'140120')]"/>
+			<field ref="l10n_hr_rrif_account_chart_template" name="chart_template_id"/>
+  		</record>
+
+		<record id="account_tax_pppred10" model="account.tax.template">
+			<field name="type_tax_use">purchase</field>
+  			<field name="name">Pretporez iz predujmova 10%</field>
+  			<field name="description">pppred10</field>
+			<field eval="0.1" name="amount"/>
+			<field model="account.tax.code.template" name="base_code_id"     search="[('code', '=', u'oC1')]"/>
+			<field model="account.tax.code.template" name="ref_base_code_id" search="[('code', '=', u'oC1')]"/>
+			<field model="account.tax.code.template" name="ref_tax_code_id"  search="[('code', '=', u'pC1')]"/>
+			<field model="account.tax.code.template" name="tax_code_id"      search="[('code', '=', u'pC1')]"/>
+  			<field model="account.account.template" name="account_paid_id"      search="[('code', '=', u'140100')]"/>
+			<field model="account.account.template" name="account_collected_id" search="[('code', '=', u'140100')]"/>
+			<field ref="l10n_hr_rrif_account_chart_template" name="chart_template_id"/>
+  		</record>
+
+		<record id="account_tax_ppuvozdob23" model="account.tax.template">
+			<field name="type_tax_use">purchase</field>
+  			<field name="name">Pretporez pri uvozu dobara 23%</field>
+  			<field name="description">ppuvozdob23</field>
+			<field eval="0.23" name="amount"/>
+			<field model="account.tax.code.template" name="base_code_id"     search="[('code', '=', u'oC3')]"/>
+			<field model="account.tax.code.template" name="ref_base_code_id" search="[('code', '=', u'oC3')]"/>
+			<field model="account.tax.code.template" name="ref_tax_code_id"  search="[('code', '=', u'pC3')]"/>
+			<field model="account.tax.code.template" name="tax_code_id"      search="[('code', '=', u'pC3')]"/>
+  			<field model="account.account.template" name="account_paid_id"      search="[('code', '=', u'140220')]"/>
+			<field model="account.account.template" name="account_collected_id" search="[('code', '=', u'140220')]"/>
+			<field ref="l10n_hr_rrif_account_chart_template" name="chart_template_id"/>
+  		</record>
+
+		<record id="account_tax_pppred10" model="account.tax.template">
+			<field name="type_tax_use">purchase</field>
+  			<field name="name">Pretporez pri uvozu dobara 10%</field>
+  			<field name="description">ppuvozdob10</field>
+			<field eval="0.1" name="amount"/>
+			<field model="account.tax.code.template" name="base_code_id"     search="[('code', '=', u'oC1')]"/>
+			<field model="account.tax.code.template" name="ref_base_code_id" search="[('code', '=', u'oC1')]"/>
+			<field model="account.tax.code.template" name="ref_tax_code_id"  search="[('code', '=', u'pC1')]"/>
+			<field model="account.tax.code.template" name="tax_code_id"      search="[('code', '=', u'pC1')]"/>
+  			<field model="account.account.template" name="account_paid_id"      search="[('code', '=', u'140200')]"/>
+			<field model="account.account.template" name="account_collected_id" search="[('code', '=', u'140200')]"/>
+			<field ref="l10n_hr_rrif_account_chart_template" name="chart_template_id"/>
+  		</record>
+
+		<record id="account_tax_ppinousl23" model="account.tax.template">
+			<field name="type_tax_use">purchase</field>
+  			<field name="name">Pretporez ino. usluge 23%</field>
+  			<field name="description">ppinousl23</field>
+			<field eval="0.23" name="amount"/>
+			<field model="account.tax.code.template" name="base_code_id"     search="[('code', '=', u'oC3')]"/>
+			<field model="account.tax.code.template" name="ref_base_code_id" search="[('code', '=', u'oC3')]"/>
+			<field model="account.tax.code.template" name="ref_tax_code_id"  search="[('code', '=', u'pC3')]"/>
+			<field model="account.tax.code.template" name="tax_code_id"      search="[('code', '=', u'pC3')]"/>
+  			<field model="account.account.template" name="account_paid_id"      search="[('code', '=', u'140320')]"/>
+			<field model="account.account.template" name="account_collected_id" search="[('code', '=', u'140320')]"/>
+			<field ref="l10n_hr_rrif_account_chart_template" name="chart_template_id"/>
+  		</record>
+
+		<record id="account_tax_pppred10" model="account.tax.template">
+			<field name="type_tax_use">purchase</field>
+  			<field name="name">Pretporez ino. usluge 10%</field>
+  			<field name="description">ppinousl10</field>
+			<field eval="0.1" name="amount"/>
+			<field model="account.tax.code.template" name="base_code_id"     search="[('code', '=', u'oC1')]"/>
+			<field model="account.tax.code.template" name="ref_base_code_id" search="[('code', '=', u'oC1')]"/>
+			<field model="account.tax.code.template" name="ref_tax_code_id"  search="[('code', '=', u'pC1')]"/>
+			<field model="account.tax.code.template" name="tax_code_id"      search="[('code', '=', u'pC1')]"/>
+  			<field model="account.account.template" name="account_paid_id"      search="[('code', '=', u'140300')]"/>
+			<field model="account.account.template" name="account_collected_id" search="[('code', '=', u'140300')]"/>
+			<field ref="l10n_hr_rrif_account_chart_template" name="chart_template_id"/>
+  		</record>
+
+		<record id="account_tax_ppR2nep23" model="account.tax.template">
+			<field name="type_tax_use">purchase</field>
+  			<field name="name">Pretporez neplaćeni R2  23%</field>
+  			<field name="description">ppR2nep23</field>
+			<field eval="0.23" name="amount"/>
+			<field model="account.tax.code.template" name="base_code_id"     search="[('code', '=', u'oNPP3')]"/>
+			<field model="account.tax.code.template" name="ref_base_code_id" search="[('code', '=', u'oNPP3')]"/>
+			<field model="account.tax.code.template" name="ref_tax_code_id"  search="[('code', '=', u'pNPP3')]"/>
+			<field model="account.tax.code.template" name="tax_code_id"      search="[('code', '=', u'pNPP3')]"/>
+  			<field model="account.account.template" name="account_paid_id"      search="[('code', '=', u'140800')]"/>
+			<field model="account.account.template" name="account_collected_id" search="[('code', '=', u'140800')]"/>
+			<field ref="l10n_hr_rrif_account_chart_template" name="chart_template_id"/>
+  		</record>
+
+
+		<!-- PRETPOREZI ZRAKARINE I OSTALI NAMETNICI /-->
+
+
+
+		<!-- IZLAZNI POREZI /-->
+
+		<record id="account_tax_pdv23" model="account.tax.template">
+			<field name="type_tax_use">sale</field>
+  			<field name="name">PDV 23%</field>
+  			<field name="description">pdv23</field>
+			<field eval="0.23" name="amount"/>
+			<field model="account.tax.code.template" name="base_code_id"     search="[('code', '=', u'oB3')]"/>
+			<field model="account.tax.code.template" name="ref_base_code_id" search="[('code', '=', u'oB3')]"/>
+			<field model="account.tax.code.template" name="ref_tax_code_id"  search="[('code', '=', u'pB3')]"/>
+			<field model="account.tax.code.template" name="tax_code_id"      search="[('code', '=', u'pB3')]"/>
+  			<field model="account.account.template" name="account_paid_id"      search="[('code', '=', u'240020')]"/>
+			<field model="account.account.template" name="account_collected_id" search="[('code', '=', u'240020')]"/>
+			<field ref="l10n_hr_rrif_account_chart_template" name="chart_template_id"/>
+  		</record>
+
+		<record id="account_tax_pdv10" model="account.tax.template">
+			<field name="type_tax_use">sale</field>
+  			<field name="name">PDV 10%</field>
+  			<field name="description">pdv10</field>
+			<field eval="0.1" name="amount"/>
+			<field model="account.tax.code.template" name="base_code_id"     search="[('code', '=', u'oB1')]"/>
+			<field model="account.tax.code.template" name="ref_base_code_id" search="[('code', '=', u'oB1')]"/>
+			<field model="account.tax.code.template" name="ref_tax_code_id"  search="[('code', '=', u'pB1')]"/>
+			<field model="account.tax.code.template" name="tax_code_id"      search="[('code', '=', u'pB1')]"/>
+  			<field model="account.account.template" name="account_paid_id"      search="[('code', '=', u'240000')]"/>
+			<field model="account.account.template" name="account_collected_id" search="[('code', '=', u'240000')]"/>
+			<field ref="l10n_hr_rrif_account_chart_template" name="chart_template_id"/>
+  		</record>
+
+		<record id="account_tax_pdv00" model="account.tax.template">
+			<field name="type_tax_use">sale</field>
+  			<field name="name">PDV 0%</field>
+  			<field name="description">pdv00</field>
+			<field eval="0.0" name="amount"/>
+			<field model="account.tax.code.template" name="base_code_id"     search="[('code', '=', u'oA3')]"/>
+			<field model="account.tax.code.template" name="ref_base_code_id" search="[('code', '=', u'oA3')]"/>
+			<field ref="l10n_hr_rrif_account_chart_template" name="chart_template_id"/>
+  		</record>
+
+		<record id="account_tax_pdvpred23" model="account.tax.template">
+			<field name="type_tax_use">sale</field>
+  			<field name="name">PDV 23% za predujam</field>
+  			<field name="description">pdvpred23</field>
+			<field eval="0.23" name="amount"/>
+			<field model="account.tax.code.template" name="base_code_id"     search="[('code', '=', u'oB3')]"/>
+			<field model="account.tax.code.template" name="ref_base_code_id" search="[('code', '=', u'oB3')]"/>
+			<field model="account.tax.code.template" name="ref_tax_code_id"  search="[('code', '=', u'pB3')]"/>
+			<field model="account.tax.code.template" name="tax_code_id"      search="[('code', '=', u'pB3')]"/>
+  			<field model="account.account.template" name="account_paid_id"      search="[('code', '=', u'240120')]"/>
+			<field model="account.account.template" name="account_collected_id" search="[('code', '=', u'240120')]"/>
+			<field ref="l10n_hr_rrif_account_chart_template" name="chart_template_id"/>
+  		</record>
+
+		<record id="account_tax_pdvpred10" model="account.tax.template">
+			<field name="type_tax_use">sale</field>
+  			<field name="name">PDV 10% za predujam</field>
+  			<field name="description">pdvpred10</field>
+			<field eval="0.1" name="amount"/>
+			<field model="account.tax.code.template" name="base_code_id"     search="[('code', '=', u'oB1')]"/>
+			<field model="account.tax.code.template" name="ref_base_code_id" search="[('code', '=', u'oB1')]"/>
+			<field model="account.tax.code.template" name="ref_tax_code_id"  search="[('code', '=', u'pB1')]"/>
+			<field model="account.tax.code.template" name="tax_code_id"      search="[('code', '=', u'pB1')]"/>
+  			<field model="account.account.template" name="account_paid_id"      search="[('code', '=', u'240100')]"/>
+			<field model="account.account.template" name="account_collected_id" search="[('code', '=', u'240100')]"/>
+			<field ref="l10n_hr_rrif_account_chart_template" name="chart_template_id"/>
+  		</record>
+
+
+		<!-- OSLOBOĐENI IZLAZNI POREZI /-->
+		<record id="account_tax_pdvosli" model="account.tax.template">
+			<field name="type_tax_use">sale</field>
+  			<field name="name">Oslobođene izvozne</field>  <!-- veleposlanstva i sl. /--> 
+  			<field name="description">pdvosli</field>
+			<field eval="0.0" name="amount"/>
+			<field model="account.tax.code.template" name="base_code_id"     search="[('code', '=', u'oA21')]"/>
+			<field model="account.tax.code.template" name="ref_base_code_id" search="[('code', '=', u'oA21')]"/>
+			<field ref="l10n_hr_rrif_account_chart_template" name="chart_template_id"/>
+  		</record>
+
+		<record id="account_tax_pdvoslmp" model="account.tax.template">
+			<field name="type_tax_use">sale</field>
+  			<field name="name">Oslobođene m. prijevoz</field>  <!-- veleposlanstva i sl. /--> 
+  			<field name="description">pdvoslmp</field>
+			<field eval="0.0" name="amount"/>
+			<field model="account.tax.code.template" name="base_code_id"     search="[('code', '=', u'oA22')]"/>
+			<field model="account.tax.code.template" name="ref_base_code_id" search="[('code', '=', u'oA22')]"/>
+			<field ref="l10n_hr_rrif_account_chart_template" name="chart_template_id"/>
+  		</record>
+
+		<record id="account_tax_pdvosltuz" model="account.tax.template">
+			<field name="type_tax_use">sale</field>
+  			<field name="name">Oslobođene tuzemne</field>  <!-- veleposlanstva i sl. /--> 
+  			<field name="description">pdvosltuz</field>
+			<field eval="0.0" name="amount"/>
+			<field model="account.tax.code.template" name="base_code_id"     search="[('code', '=', u'oA23')]"/>
+			<field model="account.tax.code.template" name="ref_base_code_id" search="[('code', '=', u'oA23')]"/>
+			<field ref="l10n_hr_rrif_account_chart_template" name="chart_template_id"/>
+  		</record>
+
+		<record id="account_tax_pdvoslo" model="account.tax.template">
+			<field name="type_tax_use">sale</field>
+  			<field name="name">Oslobođene ostalo čl. 13. st. 1</field>  <!-- veleposlanstva i sl. /--> 
+  			<field name="description">pdvoslo</field>
+			<field eval="0.0" name="amount"/>
+			<field model="account.tax.code.template" name="base_code_id"     search="[('code', '=', u'oA24')]"/>
+			<field model="account.tax.code.template" name="ref_base_code_id" search="[('code', '=', u'oA24')]"/>
+			<field ref="l10n_hr_rrif_account_chart_template" name="chart_template_id"/>
+  		</record>
+
+		
+		<!-- RAZNI NE PDV POREZI PRIMJERA RADI/-->
+
+		<record id="account_tax_porpot03" model="account.tax.template">
+			<field name="type_tax_use">sale</field>
+  			<field name="name">Porez na potrošnju 3%</field>
+  			<field name="description">porpot03</field>
+			<field eval="0.03" name="amount"/>
+			<field model="account.tax.code.template" name="ref_tax_code_id"  search="[('code', '=', u'POTROSNJA')]"/>
+			<field model="account.tax.code.template" name="tax_code_id"      search="[('code', '=', u'POTROSNJA')]"/>
+  			<field model="account.account.template" name="account_paid_id"      search="[('code', '=', u'248400')]"/>
+			<field model="account.account.template" name="account_collected_id" search="[('code', '=', u'248400')]"/>
+			<field ref="l10n_hr_rrif_account_chart_template" name="chart_template_id"/>
+  		</record>
+		
+	</data>
+</openerp>

@@ -1,0 +1,352 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* account_analytic_analysis
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-01-11 11:14+0000\n"
+"PO-Revision-Date: 2011-02-27 10:47+0000\n"
+"Last-Translator: Dimitar Markov <dimitar.markov@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-04-29 05:20+0000\n"
+"X-Generator: Launchpad (build 12758)\n"
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,hours_qtt_invoiced:0
+msgid ""
+"Number of hours that can be invoiced plus those that already have been "
+"invoiced."
+msgstr ""
+"Брой на часовете които могат да бъдат фактурирани плюс тези които са вече "
+"фактурирани."
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,remaining_ca:0
+msgid "Computed using the formula: Max Invoice Price - Invoiced Amount."
+msgstr ""
+"Пресметнато по формулата: Максимална фактурна цена - фактурирани количества."
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,remaining_hours:0
+msgid "Computed using the formula: Maximum Quantity - Hours Tot."
+msgstr "Пресметнато по формулата: Максимално количество - часове общо"
+
+#. module: account_analytic_analysis
+#: code:addons/account_analytic_analysis/account_analytic_analysis.py:532
+#: code:addons/account_analytic_analysis/account_analytic_analysis.py:703
+#, python-format
+msgid "AccessError"
+msgstr "Грешка при достъп"
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,last_invoice_date:0
+msgid "Date of the last invoice created for this analytic account."
+msgstr "Дата на последната фактура създадена за тази аналитична сметка."
+
+#. module: account_analytic_analysis
+#: model:ir.module.module,description:account_analytic_analysis.module_meta_information
+msgid ""
+"\n"
+"This module is for modifying account analytic view to show\n"
+"important data to project manager of services companies.\n"
+"Adds menu to show relevant information to each manager..\n"
+"\n"
+"You can also view the report of account analytic summary\n"
+"user-wise as well as month wise.\n"
+msgstr ""
+"\n"
+"Този модул е за промяна изгледа на аналитична сметка с цел да показва\n"
+"важни данни за ръководителя на проекта на компании за услуги.\n"
+"Добавя меню, за да показва съответната информация на всеки мениджър ..\n"
+"\n"
+"Можете също да видите доклада на сметката аналитично обобщен\n"
+"по потребител или месечно.\n"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,last_invoice_date:0
+msgid "Last Invoice Date"
+msgstr "Дата на последната фактура"
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,theorical_margin:0
+msgid "Computed using the formula: Theorial Revenue - Total Costs"
+msgstr "Изчислено по формулата: Теоритична възвръщаемост - Всички разходи"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,real_margin_rate:0
+msgid "Real Margin Rate (%)"
+msgstr "Реална норма на Маржа (%)"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,ca_theorical:0
+msgid "Theoretical Revenue"
+msgstr "Теоритичен приход"
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,last_worked_invoiced_date:0
+msgid ""
+"If invoice from the costs, this is the date of the latest work or cost that "
+"have been invoiced."
+msgstr ""
+"Ако фактурата от разходите, това е датата на последната работа или разходи, "
+"които са били фактурирани."
+
+#. module: account_analytic_analysis
+#: model:ir.ui.menu,name:account_analytic_analysis.menu_invoicing
+msgid "Billing"
+msgstr "За плащане"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,last_worked_date:0
+msgid "Date of Last Cost/Work"
+msgstr "Дата на последния разход/труд"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,total_cost:0
+msgid "Total Costs"
+msgstr "Крайни разходи"
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,hours_quantity:0
+msgid ""
+"Number of hours you spent on the analytic account (from timesheet). It "
+"computes on all journal of type 'general'."
+msgstr ""
+"Брой часове които сте прекарали върху аналитичната сметка (по график). "
+"Пресмята по всички дневници от тип 'общ'."
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,remaining_hours:0
+msgid "Remaining Hours"
+msgstr "Оставащи часове"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,theorical_margin:0
+msgid "Theoretical Margin"
+msgstr "Теорeтичен Марж"
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,ca_theorical:0
+msgid ""
+"Based on the costs you had on the project, what would have been the revenue "
+"if all these costs have been invoiced at the normal sale price provided by "
+"the pricelist."
+msgstr ""
+"На основа на разходите които имате по проекта, какъв би бил прихода, ако "
+"всички тези разходи бяха фактурирани по нормална цена за продажба според "
+"ценовия списък."
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,user_ids:0
+#: field:account_analytic_analysis.summary.user,user:0
+msgid "User"
+msgstr "Потребител"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,ca_to_invoice:0
+msgid "Uninvoiced Amount"
+msgstr "Нефактурирана сума"
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,real_margin:0
+msgid "Computed using the formula: Invoiced Amount - Total Costs."
+msgstr "Изчислено по формулата: Фактурирано количество - всички разходи."
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,hours_qtt_non_invoiced:0
+msgid "Uninvoiced Hours"
+msgstr "Нефактурирани часове"
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,last_worked_date:0
+msgid "Date of the latest work done on this account."
+msgstr "Дата на последната работа по тази сметка."
+
+#. module: account_analytic_analysis
+#: model:ir.module.module,shortdesc:account_analytic_analysis.module_meta_information
+msgid "report_account_analytic"
+msgstr "report_account_analytic"
+
+#. module: account_analytic_analysis
+#: model:ir.model,name:account_analytic_analysis.model_account_analytic_analysis_summary_user
+msgid "Hours Summary by User"
+msgstr "Общо часове по потребител"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,ca_invoiced:0
+msgid "Invoiced Amount"
+msgstr "Сума по фактура"
+
+#. module: account_analytic_analysis
+#: code:addons/account_analytic_analysis/account_analytic_analysis.py:533
+#: code:addons/account_analytic_analysis/account_analytic_analysis.py:704
+#, python-format
+msgid "You try to bypass an access rule (Document type: %s)."
+msgstr "Опитвате се да прескочите правило за достъп (Документ тип: %s)."
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,last_worked_invoiced_date:0
+msgid "Date of Last Invoiced Cost"
+msgstr "Дата на Последно фактурирани разходи"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,hours_qtt_invoiced:0
+msgid "Invoiced Hours"
+msgstr "Часове по фактура"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,real_margin:0
+msgid "Real Margin"
+msgstr "Реален Марж"
+
+#. module: account_analytic_analysis
+#: constraint:account.analytic.account:0
+msgid ""
+"Error! The currency has to be the same as the currency of the selected "
+"company"
+msgstr ""
+"Грешка! Валутата трябва да бъде същата като валутата на избраната компания"
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,ca_invoiced:0
+msgid "Total customer invoiced amount for this account."
+msgstr "Тотална сума по фактури към клиент за тази сметка."
+
+#. module: account_analytic_analysis
+#: model:ir.model,name:account_analytic_analysis.model_account_analytic_analysis_summary_month
+msgid "Hours summary by month"
+msgstr "Общо часове за месец"
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,real_margin_rate:0
+msgid "Computes using the formula: (Real Margin / Total Costs) * 100."
+msgstr "Изчислява се по формулата: (Реален Марж / Всички Разходи) * 100."
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,hours_qtt_non_invoiced:0
+msgid ""
+"Number of hours (from journal of type 'general') that can be invoiced if you "
+"invoice based on analytic account."
+msgstr ""
+"Брой часове (от дневник от вид 'общ') които могат да бъдат фактурирани ако "
+"се фактурира на база на аналитична сметка."
+
+#. module: account_analytic_analysis
+#: view:account.analytic.account:0
+msgid "Analytic accounts"
+msgstr "Аналитични сметки"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,remaining_ca:0
+msgid "Remaining Revenue"
+msgstr "Оставащи приходи"
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,ca_to_invoice:0
+msgid ""
+"If invoice from analytic account, the remaining amount you can invoice to "
+"the customer based on the total costs."
+msgstr ""
+"Ако фактурирате от аналитична сметка, остатъкът от сумата, която можете да "
+"фактурирате към клиента на база крайна цена."
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,revenue_per_hour:0
+msgid "Computed using the formula: Invoiced Amount / Hours Tot."
+msgstr "Изчислено по формулата: Сума по фактура / Часове Тотал."
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,revenue_per_hour:0
+msgid "Revenue per Hours (real)"
+msgstr "Приходи по часове (реални)"
+
+#. module: account_analytic_analysis
+#: field:account_analytic_analysis.summary.month,unit_amount:0
+#: field:account_analytic_analysis.summary.user,unit_amount:0
+msgid "Total Time"
+msgstr "Общо време"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,month_ids:0
+#: field:account_analytic_analysis.summary.month,month:0
+msgid "Month"
+msgstr "Месец"
+
+#. module: account_analytic_analysis
+#: field:account_analytic_analysis.summary.month,account_id:0
+#: field:account_analytic_analysis.summary.user,account_id:0
+#: model:ir.model,name:account_analytic_analysis.model_account_analytic_account
+msgid "Analytic Account"
+msgstr "Аналитична сметка"
+
+#. module: account_analytic_analysis
+#: model:ir.actions.act_window,name:account_analytic_analysis.action_account_analytic_managed_overpassed
+#: model:ir.ui.menu,name:account_analytic_analysis.menu_action_account_analytic_managed_overpassed
+msgid "Overpassed Accounts"
+msgstr "Просрочени сметки"
+
+#. module: account_analytic_analysis
+#: model:ir.actions.act_window,name:account_analytic_analysis.action_hr_tree_invoiced_all
+#: model:ir.ui.menu,name:account_analytic_analysis.menu_action_hr_tree_invoiced_all
+msgid "All Uninvoiced Entries"
+msgstr "Всички нефактурирани записи"
+
+#. module: account_analytic_analysis
+#: field:account.analytic.account,hours_quantity:0
+msgid "Hours Tot"
+msgstr "Общо часове"
+
+#. module: account_analytic_analysis
+#: constraint:account.analytic.account:0
+msgid "Error! You can not create recursive analytic accounts."
+msgstr "Грешка! Не можете да създавате рекурсивни аналитични сметки."
+
+#. module: account_analytic_analysis
+#: help:account.analytic.account,total_cost:0
+msgid ""
+"Total of costs for this account. It includes real costs (from invoices) and "
+"indirect costs, like time spent on timesheets."
+msgstr ""
+"Общо разходи за тази сметка. Включва реални разходи (по фактури) и непреки "
+"разходи, като прекарано време по графици."
+
+#~ msgid "All Analytic Accounts"
+#~ msgstr "Всички аналитична сметки"
+
+#~ msgid "Invalid XML for View Architecture!"
+#~ msgstr "Невалиден XML за преглед на архитектурата"
+
+#~ msgid ""
+#~ "The Object name must start with x_ and not contain any special character !"
+#~ msgstr ""
+#~ "Името на обекта трябва да започва с \"x_\" и да не съдържа никакви специални "
+#~ "символи!"
+
+#~ msgid "New Analytic Account"
+#~ msgstr "Нова аналитична сметка"
+
+#~ msgid "Analytic Accounts"
+#~ msgstr "Аналитични сметки"
+
+#~ msgid "Pending Analytic Accounts"
+#~ msgstr "Предстоящи аналитични сметки"
+
+#~ msgid "My Current Accounts"
+#~ msgstr "Мои разплащателни сметки"
+
+#~ msgid "Hours summary by user"
+#~ msgstr "Общо часове по потребител"
+
+#~ msgid "Invoicing"
+#~ msgstr "Издаване на фактура"
+
+#~ msgid "My Accounts"
+#~ msgstr "Мои сметки"
+
+#~ msgid "My Uninvoiced Entries"
+#~ msgstr "Мои нефактурирани записи"

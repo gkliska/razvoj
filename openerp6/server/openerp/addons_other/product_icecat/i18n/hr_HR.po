@@ -1,0 +1,326 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* product_icecat
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_icecat
+#: code:addons/product_icecat/wizard/wizard_product_icecat.py:151
+#, python-format
+msgid "No"
+msgstr "Ne"
+
+#. module: product_icecat
+#: code:addons/product_icecat/product_icecat.py:71
+#, python-format
+msgid "Ok !"
+msgstr "Ok !"
+
+#. module: product_icecat
+#: field:product.icecat.wizard,description_sale:0
+msgid "Description Śale"
+msgstr "Prodajni opis"
+
+#. module: product_icecat
+#: field:product.icecat.wizard,state:0
+msgid "State"
+msgstr "Stanje"
+
+#. module: product_icecat
+#: code:addons/product_icecat/product_icecat.py:95
+#, python-format
+msgid "They are other icecat configuration with \"Active\" field checked. Only one configuration is avaible for active field."
+msgstr "They are other icecat configuration with \"Active\" field checked. Only one configuration is avaible for active field."
+
+#. module: product_icecat
+#: view:product.icecat:0
+msgid "icecat"
+msgstr "icecat"
+
+#. module: product_icecat
+#: view:product.icecat.wizard:0
+msgid "Are you sure to import from icecat values to product?"
+msgstr "Are you sure to import from icecat values to product?"
+
+#. module: product_icecat
+#: model:ir.model,name:product_icecat.model_product_icecat_wizard
+msgid "product.icecat.wizard"
+msgstr "product.icecat.wizard"
+
+#. module: product_icecat
+#: code:addons/product_icecat/wizard/wizard_product_icecat.py:330
+#, python-format
+msgid "EAN not avaible"
+msgstr "EAN not avaible"
+
+#. module: product_icecat
+#: field:product.icecat,name:0
+#: field:product.icecat.wizard,name:0
+msgid "Name"
+msgstr "Naziv"
+
+#. module: product_icecat
+#: field:product.icecat,ftpusername:0
+msgid "Username"
+msgstr "Korisničko ime"
+
+#. module: product_icecat
+#: field:product.icecat.wizard,html:0
+msgid "HTML Code"
+msgstr "HTML Code"
+
+#. module: product_icecat
+#: code:addons/product_icecat/product_icecat.py:64
+#: code:addons/product_icecat/product_icecat.py:68
+#, python-format
+msgid "Error !"
+msgstr "Greška !"
+
+#. module: product_icecat
+#: field:product.icecat.wizard,description:0
+msgid "Description"
+msgstr "Opis"
+
+#. module: product_icecat
+#: code:addons/product_icecat/product_icecat.py:68
+#, python-format
+msgid "Username/password FTP connection was not successfully!"
+msgstr "Username/password FTP connection was not successfully!"
+
+#. module: product_icecat
+#: field:product.icecat,username:0
+msgid "User Name"
+msgstr "Korisničko ime"
+
+#. module: product_icecat
+#: code:addons/product_icecat/product_icecat.py:71
+#, python-format
+msgid "FTP connection was successfully!"
+msgstr "FTP connection was successfully!"
+
+#. module: product_icecat
+#: help:product.icecat,ftpdirectory:0
+msgid "If not use directory, insert . (point). If use directory, path FTP dir"
+msgstr "If not use directory, insert . (point). If use directory, path FTP dir"
+
+#. module: product_icecat
+#: field:product.icecat.mapline,field_id:0
+msgid "OpenERP Field"
+msgstr "OpenERP Field"
+
+#. module: product_icecat
+#: model:ir.actions.act_window,name:product_icecat.act_product_icecat
+msgid "Import Icecat"
+msgstr "Uvoz Icecat"
+
+#. module: product_icecat
+#: field:product.icecat,active:0
+#: field:product.icecat,ftp:0
+msgid "Active"
+msgstr "Aktivan"
+
+#. module: product_icecat
+#: code:addons/product_icecat/wizard/wizard_product_icecat.py:222
+#, python-format
+msgid "Product %s XML Import successfully"
+msgstr "Product %s XML Import successfully"
+
+#. module: product_icecat
+#: selection:product.icecat.wizard,state:0
+msgid "First"
+msgstr "Prvi"
+
+#. module: product_icecat
+#: view:product.icecat:0
+msgid "Icecat to OpenERP fields"
+msgstr "Icecat to OpenERP fields"
+
+#. module: product_icecat
+#: field:product.icecat.wizard,result:0
+msgid "Result"
+msgstr "Result"
+
+#. module: product_icecat
+#: view:product.icecat:0
+msgid "FTP"
+msgstr "FTP"
+
+#. module: product_icecat
+#: field:product.icecat,mapline_ids:0
+msgid "Mapline"
+msgstr "Mapline"
+
+#. module: product_icecat
+#: model:ir.model,name:product_icecat.model_product_icecat_mapline
+msgid "Icecat Mapline Configuration"
+msgstr "Icecat Mapline Configuration"
+
+#. module: product_icecat
+#: field:product.icecat.wizard,language_id:0
+msgid "Language"
+msgstr "Jezik"
+
+#. module: product_icecat
+#: code:addons/product_icecat/wizard/wizard_product_icecat.py:271
+#, python-format
+msgid "Not exist %s image"
+msgstr "Not exist %s image"
+
+#. module: product_icecat
+#: field:product.icecat,ftpurl:0
+msgid "URL"
+msgstr "URL"
+
+#. module: product_icecat
+#: field:product.icecat,ftpip:0
+msgid "IP"
+msgstr "IP"
+
+#. module: product_icecat
+#: view:product.icecat.wizard:0
+msgid "update"
+msgstr "update"
+
+#. module: product_icecat
+#: code:addons/product_icecat/product_icecat.py:95
+#, python-format
+msgid "Error!"
+msgstr "Error!"
+
+#. module: product_icecat
+#: code:addons/product_icecat/product_icecat.py:64
+#, python-format
+msgid "IP FTP connection was not successfully!"
+msgstr "IP FTP connection was not successfully!"
+
+#. module: product_icecat
+#: field:product.icecat,ftpdirectory:0
+msgid "Directory"
+msgstr "Mapa"
+
+#. module: product_icecat
+#: model:ir.module.module,description:product_icecat.module_meta_information
+msgid "\n"
+"    Import information XML from icecat to OpenERP products.\n"
+"    This wizard download XML in openerp-server (addons/product_icecat/xml) and after process data mapping line to product import.\n"
+"    - Language import: User preference or force into wizard (option)\n"
+"    - HTML Category option: create list details\n"
+"    - FTP image\n"
+"    http://www.icecat.biz/\n"
+"    "
+msgstr "\n"
+"    Import information XML from icecat to OpenERP products.\n"
+"    This wizard download XML in openerp-server (addons/product_icecat/xml) and after process data mapping line to product import.\n"
+"    - Language import: User preference or force into wizard (option)\n"
+"    - HTML Category option: create list details\n"
+"    - FTP image\n"
+"    http://www.icecat.biz/\n"
+"    "
+
+#. module: product_icecat
+#: field:product.icecat.mapline,name:0
+msgid "XML Field"
+msgstr "XML Field"
+
+#. module: product_icecat
+#: model:ir.actions.act_window,name:product_icecat.action_product_icecat
+#: model:ir.ui.menu,name:product_icecat.product_icecat
+msgid "Icecat Configuration"
+msgstr "Icecat Configuration"
+
+#. module: product_icecat
+#: model:ir.model,name:product_icecat.model_product_icecat
+msgid "product.icecat"
+msgstr "product.icecat"
+
+#. module: product_icecat
+#: field:product.icecat.mapline,model_id:0
+msgid "OpenERP Model"
+msgstr "OpenERP Model"
+
+#. module: product_icecat
+#: code:addons/product_icecat/wizard/wizard_product_icecat.py:325
+#, python-format
+msgid "Import image not avaible"
+msgstr "Import image not avaible"
+
+#. module: product_icecat
+#: field:product.icecat,ftppassword:0
+#: field:product.icecat,password:0
+msgid "Password"
+msgstr "Lozinka"
+
+#. module: product_icecat
+#: field:product.icecat.wizard,image:0
+#: field:product.icecat.wizard,resimg:0
+msgid "Image"
+msgstr "Slika"
+
+#. module: product_icecat
+#: view:product.icecat:0
+msgid "Maping Lines"
+msgstr "Maping Lines"
+
+#. module: product_icecat
+#: view:product.icecat.wizard:0
+msgid "Import icecat XML"
+msgstr "Uvezi icecat XML datoteku"
+
+#. module: product_icecat
+#: model:ir.module.module,shortdesc:product_icecat.module_meta_information
+msgid "Product Information Import from icecat"
+msgstr "Product Information Import from icecat"
+
+#. module: product_icecat
+#: view:product.icecat:0
+msgid "Check FTP"
+msgstr "Check FTP"
+
+#. module: product_icecat
+#: selection:product.icecat.wizard,state:0
+msgid "Done"
+msgstr "Izvršeno"
+
+#. module: product_icecat
+#: view:product.icecat:0
+#: field:product.icecat.mapline,icecat_id:0
+msgid "Icecat"
+msgstr "Icecat"
+
+#. module: product_icecat
+#: view:product.icecat.wizard:0
+msgid "Cancel"
+msgstr "Odustani"
+
+#. module: product_icecat
+#: view:product.icecat.wizard:0
+msgid "Close"
+msgstr "Zatvori"
+
+#. module: product_icecat
+#: code:addons/product_icecat/wizard/wizard_product_icecat.py:149
+#, python-format
+msgid "Yes"
+msgstr "Da"
+
+#. module: product_icecat
+#: help:product.icecat,ftpurl:0
+msgid "URL FTP Dir: http://domain/directory/"
+msgstr "URL FTP Dir: http://domain/directory/"
+
+#. module: product_icecat
+#: help:product.icecat.mapline,name:0
+msgid "Insert ID Category from Icecat"
+msgstr "Umetni ID grupe iz Icecat-a"
+

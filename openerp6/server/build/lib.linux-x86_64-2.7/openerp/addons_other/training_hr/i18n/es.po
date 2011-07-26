@@ -1,0 +1,320 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* training_hr
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-04-15 13:47+0000\n"
+"PO-Revision-Date: 2011-04-15 15:51+0100\n"
+"Last-Translator: Jesús Martín <jmartin@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. module: training_hr
+#: view:training.hr.subscription.line:0
+#: selection:training.hr.subscription.line,state:0
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+#: view:training.hr.subscription.line:0
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: training_hr
+#: constraint:training.hr.subscription.line:0
+msgid ""
+"\n"
+"The subscription lines must be uniques for each employee!\n"
+"Has the employee another subscription with this subscription line?"
+msgstr ""
+"\n"
+"¡Las líneas de inscripción deben ser únicas para cada empleado!\n"
+"¿Tiene este empleado más inscripciones con esta línea de inscripción?"
+
+#. module: training_hr
+#: help:training.hr.subscription,state:0
+msgid "The state of the subscription."
+msgstr "El estado de la inscripción."
+
+#. module: training_hr
+#: view:training.hr.subscription.line:0
+msgid "Search Subscription Line"
+msgstr "Buscar línea de inscripción"
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+msgid "My Subscriptions"
+msgstr "Mis inscripciones"
+
+#. module: training_hr
+#: field:training.hr.subscription,state:0
+#: field:training.hr.subscription.line,state:0
+msgid "State"
+msgstr "Estado"
+
+#. module: training_hr
+#: selection:training.hr.subscription,state:0
+#: view:training.hr.subscription.line:0
+#: selection:training.hr.subscription.line,state:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: training_hr
+#: help:training.hr.subscription.line,session_id:0
+msgid "Select the session."
+msgstr "Seleccionar la edición"
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+msgid "Do you want to cancel this subscription?"
+msgstr "¿Quiere cancelar esta inscripción?"
+
+#. module: training_hr
+#: model:ir.model,name:training_hr.model_hr_employee
+#: view:training.hr.subscription:0
+#: field:training.hr.subscription,employee_id:0
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: training_hr
+#: view:hr.employee:0
+msgid "Personal Subscriptions"
+msgstr "Inscripciones personales"
+
+#. module: training_hr
+#: help:training.hr.subscription.line,subscription_id:0
+msgid "Select the subscription."
+msgstr "Seleccionar la inscripción"
+
+#. module: training_hr
+#: model:ir.actions.act_window,name:training_hr.training_hr_subscription_line_all_act
+#: model:ir.ui.menu,name:training_hr.training_hr_subscription_line
+msgid "Subscription Lines Human Resource"
+msgstr "Líneas de inscripción de recursos humanos"
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+msgid "Subscriptions"
+msgstr "Inscripciones"
+
+#. module: training_hr
+#: field:training.hr.subscription,create_date:0
+msgid "Creation Date"
+msgstr "Fecha de creación"
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+msgid "To Invoice"
+msgstr "A facturar"
+
+#. module: training_hr
+#: model:ir.actions.act_window,name:training_hr.act_window_subscription_line_related
+msgid "All Subscription Lines"
+msgstr "Todas las líneas de inscripción"
+
+#. module: training_hr
+#: model:ir.actions.act_window,name:training_hr.training_hr_subscription_act
+#: model:ir.ui.menu,name:training_hr.training_hr_subscription
+msgid "Subscriptions Human Resource"
+msgstr "Inscripciones de recursos humanos"
+
+#. module: training_hr
+#: view:training.hr.subscription.line:0
+msgid "Extended Filters..."
+msgstr "Filtros extendidos..."
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+msgid "To Validate"
+msgstr "Para validar"
+
+#. module: training_hr
+#: constraint:hr.employee:0
+msgid "Error ! You cannot create recursive Hierarchy of Employees."
+msgstr "¡Error! No puede crear una jerarquía recursiva de empleados."
+
+#. module: training_hr
+#: field:hr.employee,subscription_ids:0
+#: model:ir.model,name:training_hr.model_training_hr_subscription
+#: view:training.hr.subscription:0
+#: field:training.hr.subscription.line,subscription_id:0
+msgid "Subscription"
+msgstr "Inscripción"
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+#: field:training.hr.subscription,subscription_line_ids:0
+#: view:training.hr.subscription.line:0
+msgid "Subscription Lines"
+msgstr "Líneas de inscripción"
+
+#. module: training_hr
+#: selection:training.hr.subscription,state:0
+msgid "Request Sent"
+msgstr "Solicitud enviada"
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+msgid "Search Subscription"
+msgstr "Busca inscripción"
+
+#. module: training_hr
+#: view:training.hr.subscription.line:0
+msgid "Do you want to confirm this subscription line?"
+msgstr "¿Quiere confirmar esta línea de inscripción?"
+
+#. module: training_hr
+#: constraint:hr.employee:0
+msgid "Error ! You cannot select a department for which the employee is the manager."
+msgstr "¡Error! No puede seleccionar un departamento en el que el empleado es el director."
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+msgid "Subscription Description"
+msgstr "Descripción de la inscripción"
+
+#. module: training_hr
+#: sql_constraint:training.hr.subscription:0
+msgid "The name of the subscription must be unique !"
+msgstr "¡El nombre de la inscripción debe ser único!"
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+#: selection:training.hr.subscription,state:0
+#: view:training.hr.subscription.line:0
+#: selection:training.hr.subscription.line,state:0
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: training_hr
+#: model:ir.model,name:training_hr.model_training_hr_subscription_line
+#: view:training.hr.subscription:0
+#: view:training.hr.subscription.line:0
+msgid "Subscription Line"
+msgstr "Línea de inscripción"
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+msgid "Do you want to confirm the request for this subscription?"
+msgstr "¿Quiere confirmar la solicitud para esta inscripción?"
+
+#. module: training_hr
+#: help:training.hr.subscription,name:0
+msgid "The unique identifier is generated by the system (customizable)."
+msgstr "El identificador único es generado por el sistema (personalizable)."
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+msgid "subscription"
+msgstr "inscripción"
+
+#. module: training_hr
+#: help:training.hr.subscription,employee_id:0
+msgid "The subscription name."
+msgstr "El nombre de la inscripción."
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+#: field:training.hr.subscription,name:0
+#: view:training.hr.subscription.line:0
+#: field:training.hr.subscription.line,name:0
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: training_hr
+#: view:training.hr.subscription.line:0
+msgid "Do you want to cancel this subscription line?"
+msgstr "¿Quiere cancelar esta línea de inscripción?"
+
+#. module: training_hr
+#: help:training.hr.subscription.line,state:0
+msgid "The state of participant."
+msgstr "El estado del participante."
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+#: view:training.hr.subscription.line:0
+msgid "General"
+msgstr "General"
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+#: view:training.hr.subscription.line:0
+#: field:training.hr.subscription.line,session_id:0
+msgid "Session"
+msgstr "Edición"
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+#: selection:training.hr.subscription,state:0
+#: view:training.hr.subscription.line:0
+#: selection:training.hr.subscription.line,state:0
+msgid "Done"
+msgstr "Realizado"
+
+#. module: training_hr
+#: view:training.hr.subscription:0
+#: view:training.hr.subscription.line:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#~ msgid "Warning !"
+#~ msgstr "¡Atención!"
+#~ msgid "There are another subscription %s by this employee!"
+#~ msgstr "¡Hay otra inscripción %s para este empleado!"
+#~ msgid "Only draft subscriptions could be deleted !"
+#~ msgstr "Only draft subscriptions could be deleted !"
+#~ msgid "Participant"
+#~ msgstr "Participant"
+#~ msgid " and "
+#~ msgstr " and "
+#~ msgid "Cancel (Penalities)"
+#~ msgstr "Cancel (Penalities)"
+#~ msgid "Confirm Request"
+#~ msgstr "Confirm Request"
+#~ msgid "The following course has not a valid duration '%s' (%d)"
+#~ msgstr "The following course has not a valid duration '%s' (%d)"
+#~ msgid "This Subscription line was invoiced or price is 0"
+#~ msgstr "This Subscription line was invoiced or price is 0"
+#~ msgid "Postponement"
+#~ msgstr "Postponement"
+#~ msgid "Only draft subscription lines could be deleted !"
+#~ msgstr "Only draft subscription lines could be deleted !"
+#~ msgid "Invalid action !"
+#~ msgstr "Invalid action !"
+#~ msgid "Subscription line %s doesn't have any corresponding invoice line"
+#~ msgstr "Subscription line %s doesn't have any corresponding invoice line"
+#~ msgid "Select Analytic Journal from Financial Journals Configuration"
+#~ msgstr "Select Analytic Journal from Financial Journals Configuration"
+#~ msgid "%(participant)s is already following the session \"%(session)s\""
+#~ msgstr "%(participant)s is already following the session \"%(session)s\""
+#~ msgid "Error"
+#~ msgstr "Error"
+#~ msgid "Do you want to postpone this subscription line ?"
+#~ msgstr "Do you want to postpone this subscription line ?"
+#~ msgid "Cancel (Free)"
+#~ msgstr "Cancel (Free)"
+#~ msgid "Cancellation"
+#~ msgstr "Cancellation"
+#~ msgid "Please, Can you check the price list of the employee ?"
+#~ msgstr "Please, Can you check the price list of the employee ?"
+#~ msgid "Replacement"
+#~ msgstr "Replacement"
+#~ msgid "Do you want to do a replacement for this subscription line ?"
+#~ msgstr "Do you want to do a replacement for this subscription line ?"
+#~ msgid ""
+#~ "No notification mode (HR and/or Participant) for this employee \"%s\", "
+#~ "please choose at least one"
+#~ msgstr ""
+#~ "No notification mode (HR and/or Participant) for this employee \"%s\", "
+#~ "please choose at least one"
+#~ msgid "Please, Could you check the subscription of your contact(s)"
+#~ msgstr "Please, Could you check the subscription of your contact(s)"
+

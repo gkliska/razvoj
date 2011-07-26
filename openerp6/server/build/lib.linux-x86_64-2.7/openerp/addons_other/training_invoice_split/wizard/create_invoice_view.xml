@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_create_invoice_wizard" model="ir.ui.view">
+            <field name="name">create.invoice.wizard.form</field>
+            <field name="model">training.create.invoice.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Create Invoice">
+                    <label colspan="4" string="Are you sure to create an invoice?"/>
+                    <separator colspan="4"/>
+                    <group colspan="4" col="6">
+                        <button icon="gtk-cancel" special="cancel" string="Cancel"/>
+                        <button string='Create Invoice' icon="gtk-execute" name="create_invoice" type="object"/>
+                   </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_create_invoice" model="ir.actions.act_window">
+            <field name="name">Create Invoice</field>
+            <field name="res_model">training.create.invoice.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_create_invoice_wizard"/>
+            <field name="context">{'record_id':active_id}</field>
+           <field name="target">new</field>
+        </record>
+
+    </data>
+</openerp>

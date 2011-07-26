@@ -1,0 +1,117 @@
+﻿-- uredi csv: code, name(max.1035 znaka), note - puni nazivi koji su kraćeni
+-- snimi kao UTF-8, delimiter ',' , quote "
+
+/*  --učitaj iz csv-a
+DROP TABLE kp_rrif;
+
+CREATE TABLE kp_rrif
+(
+  tbl_id serial NOT NULL,
+  code          character varying(20),
+  id            character varying(64),
+  parent_id_id  character varying(64),
+  type          character varying(20),
+  user_type_id  character varying(64),
+  reconcile     character varying(10),
+  shortcut      character varying(10),
+  name          character varying(128),
+  note          character varying(500),
+  tbl_children  integer,
+  CONSTRAINT pk_kp_rrif PRIMARY KEY(tbl_id)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE kp_rrif OWNER TO openerp;
+
+COPY kp_rrif (code,name,note )   
+FROM '/home/goran/Preuzimanja/računovodstvo/rrif_kp2011/CSV/RRIF-RP2011_utf8.csv' 
+with header
+     delimiter ','
+     csv quote '"'
+;
+*/
+
+--select * from kp_rrif order by id,code
+update kp_rrif set id= 'kp_rrif'|| coalesce(code,'');
+update kp_rrif set parent_id_id= substr(id,1,length(id)-1) where code is not null;
+update kp_rrif set tbl_children= ( select count(*) from kp_rrif k2 where k2.parent_id_id = kp_rrif.id);
+
+-- dodaj 4zn analitiku na 3zn listove
+insert into kp_rrif ( code, id, parent_id_id, name, note)
+	select k.code		||'0'
+	      ,k.id		||'0'
+	      ,k.id as parent_id
+	      ,k.name		||'-a1'
+	      ,coalesce(k.note,'')||'-Analitika 1'
+	  from kp_rrif k
+	 where tbl_children=0
+	   and length(code)=3
+	 order by k.id
+;
+--popravi nove
+update kp_rrif set tbl_children= ( select count(*) from kp_rrif k2 where k2.parent_id_id = kp_rrif.id);
+
+update kp_rrif set type='view'  where tbl_children >0;
+update kp_rrif set type='other' where tbl_children =0; -- to do u excel-u
+
+update kp_rrif set type='liquidity' where tbl_children =0 and code like '10%'; -- to do u excel-u
+update kp_rrif set type='payable', reconcile ='True'   
+ where tbl_children =0 and code like '22%'; -- to do u excel-u
+update kp_rrif set type='receivable', reconcile ='True'   
+ where tbl_children =0 and code like '12%'; -- to do u excel-u
+
+/*
+ 'report_type'('none','/'),('income','P&L(Income Accounts)'),('expense','P&L(Expense Accounts)'),
+                           ('asset','Balance(Assets Accounts)'),('liability','Balance(Liability Accounts)')
+prema: http://www.rrif.hr/dok/preuzimanje/RDGV_obrazac_2011.pdf
+i      http://www.rrif.hr/dok/preuzimanje/BILANCA_obrazac2011.pdf  
+user_type:
+code					name		close_method	report_type	sign(1,-1)
+account.account_type_view 		Sintetika	none				1
+account.account_type_other		Opći		none				1
+
+account.account_type_prihodi		Prihodi		none		income		1
+account.account_type_fin_prihodi	Fin. prihodi	none		income		1
+account.account_type_ost_prihodi	Ostali prihodi	none		income		1
+
+account.account_type_rashodi		Rashodi		none		expense		1
+account.account_type_fin_rashodi	Fin. rashodi	none		expense		1
+account.account_type_ost_rashodi	Ostali rashodi	none		expense		1
+
+account.account_type_aktiva		Aktiva		none		asset		1
+
+account.account_type_pasiva		Pasiva		none		liability		1
+
+
+
+
+*/
+-- za početak
+update kp_rrif set user_type_id='account.account_type_view'  where type  ='view' --( 605 kom za rrif)
+update kp_rrif set user_type_id='account.account_type_other' where type !='view' --(1674 kom. za rrif)
+
+
+
+COPY (select * from kp_rrif order by id) --(code,name,note )  
+to '/home/goran/Preuzimanja/računovodstvo/rrif_kp2011/CSV/acc_templateRRIF_2011.csv' 
+with header
+     delimiter ','
+     csv quote '"'
+;
+
+/*
+select name,tbl_children,* 
+  from kp_rrif 
+  where 1=1
+    and code like '12%' and type !='view'
+    --and tbl_children> 9 --parent_id_id = 'kp_rrif020'
+  order by id,code
+*/
+
+
+select * from kp_rrif 
+
+
+
+     

@@ -1,0 +1,2848 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<chart-of-accounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="RRIF-RP2011-ENG.XSD">
+  <account>
+    <key>0</key>
+    <name>RECEIVABLES FOR  ISSUED CAPITAL AND NON-CURRENT ASSETS</name>
+    <naziv>POTRAŽIVANJA ZA UPISANI KAPITAL I DUGOTRAJNA IMOVINA</naziv>
+  </account>
+  <account>
+    <key>00</key>
+    <name>RECEIVABLES FOR RECORDED BUT NOT PAID IN CAPITAL AND NON-CURRENT FINANCIAL ASSETS</name>
+    <naziv>POTRAŽIVANJA ZA UPISANI A NEUPLAĆENI KAPITAL</naziv>
+  </account>
+  <account>
+    <key>000</key>
+    <name>Receivables for recoded but not paid in capital in joint-stock company (analytics by shareholders)</name>
+    <naziv>Potraživanja za upisani a neuplaćeni dionički kapital (analitika po upisnicima)</naziv>
+  </account>
+  <account>
+    <key>001</key>
+    <name>Receivables for repeated share issues for recoded but not paid capital (analytics by share issues)</name>
+    <naziv>Potraživanja iz ponovljene emisije dionica za upisane a neuplaćene svote kapitala (razrada po emisijama dionica) </naziv>
+  </account>
+  <account>
+    <key>002</key>
+    <name>Receivables for recoded but not paid in capital in private limited company (analytics by owners)</name>
+    <naziv>Potraživanja za upisani a neuplaćeni kapital u d.o.o. (analitika po članovima društva)</naziv>
+  </account>
+  <account>
+    <key>003</key>
+    <name>Receivables for stake in capital of limited partnership</name>
+    <naziv>Potraživanja za temeljni ulog komanditora</naziv>
+  </account>
+  <account>
+    <key>004</key>
+    <name>Receivables for other business stakes in capital</name>
+    <naziv>Potraživanje za ostale uloge u kapital</naziv>
+  </account>
+  <account>
+    <key>01</key>
+    <name>INTANGIBLE ASSET</name>
+    <naziv>NEMATERIJALNA IMOVINA</naziv>
+  </account>
+  <account>
+    <key>010</key>
+    <name>Research and development </name>
+    <naziv>Izdatci za razvoj</naziv>
+  </account>
+  <account>
+    <key>011</key>
+    <name>Concession rights, patents, commodity and service brands</name>
+    <naziv>Koncesije, patenti, licencije, robne i uslužne marke</naziv>
+  </account>
+  <account>
+    <key>012</key>
+    <name>Software and other rights</name>
+    <naziv>Softver i ostala prava</naziv>
+  </account>
+  <account>
+    <key>013</key>
+    <name>Goodwill</name>
+    <naziv>Goodwill</naziv>
+  </account>
+  <account>
+    <key>014</key>
+    <name>Other intangible assets</name>
+    <naziv>Ostala nematerijalna imovina</naziv>
+  </account>
+  <account>
+    <key>015</key>
+    <name>Advance payments for purchase of intangible assets</name>
+    <naziv>Predujmovi za nabavu nematerijalne imovine</naziv>
+  </account>
+  <account>
+    <key>016</key>
+    <name>Intangible assets in preparation</name>
+    <naziv>Nematerijalna imovina u pripremi (analitika prema vrsti računa skupine 01)</naziv>
+  </account>
+  <account>
+    <key>018</key>
+    <name>Value adjustment of intangible assets</name>
+    <naziv>Vrijednosno usklađenje nematerijalne imovine (analitika prema vrsti računa skupine 01)</naziv>
+  </account>
+  <account>
+    <key>019</key>
+    <name>Accumulated depreciation of intangible assets</name>
+    <naziv>Akumulirana amortizacija nematerijalne imovine</naziv>
+  </account>
+  <account>
+    <key>02</key>
+    <name>LAND AND BUILDINGS</name>
+    <naziv>MATERIJALNA IMOVINA – NEKRETNINE</naziv>
+  </account>
+  <account>
+    <key>020</key>
+    <name>Land</name>
+    <naziv>Zemljišta</naziv>
+  </account>
+  <account>
+    <key>021</key>
+    <name>Rights to use land </name>
+    <naziv>Zemljišna prava (višegodišnja)</naziv>
+  </account>
+  <account>
+    <key>023</key>
+    <name>Buildings</name>
+    <naziv>Građevinski objekti (za vlastite potrebe)</naziv>
+  </account>
+  <account>
+    <key>024</key>
+    <name>Flats for employees</name>
+    <naziv>Stanovi za vlastite zaposlenike</naziv>
+  </account>
+  <account>
+    <key>026</key>
+    <name>Advance payments for purchase of land and buildings</name>
+    <naziv>Predujmovi za nabavu nekretnina</naziv>
+  </account>
+  <account>
+    <key>027</key>
+    <name>Land and buildings under construction</name>
+    <naziv>Nekretnine u pripremi </naziv>
+  </account>
+  <account>
+    <key>028</key>
+    <name>Value adjustment of land and buildings</name>
+    <naziv>Vrijednosno usklađenje nekretnina</naziv>
+  </account>
+  <account>
+    <key>029</key>
+    <name>Accumulated depreciation of buildings</name>
+    <naziv>Akumulirana amortizacija građevina</naziv>
+  </account>
+  <account>
+    <key>03</key>
+    <name>PLANT, EQUIPMENT, TOOLS AND TRANSPORTATION VEHICLES</name>
+    <naziv>POSTROJENJA, OPREMA, ALATI, INVENTAR I TRANSPORTNA SREDSTVA</naziv>
+  </account>
+  <account>
+    <key>030</key>
+    <name>Plant</name>
+    <naziv>Postrojenja</naziv>
+  </account>
+  <account>
+    <key>031</key>
+    <name>Equipment</name>
+    <naziv>Oprema</naziv>
+  </account>
+  <account>
+    <key>032</key>
+    <name>Tools, transportation equipment and vehicle</name>
+    <naziv>Alati, pogonski inventar i transportna imovina</naziv>
+  </account>
+  <account>
+    <key>033</key>
+    <name>VAT prepayments which is not tax deductable</name>
+    <naziv>Pretporez koji se ne može odbiti (kao dio vrijed. os. aut.)</naziv>
+  </account>
+  <account>
+    <key>034</key>
+    <name>Agricultural equipment</name>
+    <naziv>Poljoprivredna oprema</naziv>
+  </account>
+  <account>
+    <key>035</key>
+    <name>Other property, plant and equipment</name>
+    <naziv>Ostala materijalna imovina</naziv>
+  </account>
+  <account>
+    <key>036</key>
+    <name>Advance payments for purchase of property, plant and equipment</name>
+    <naziv>Predujmovi za materijalnu imovinu</naziv>
+  </account>
+  <account>
+    <key>037</key>
+    <name>Plant and equipment under construction</name>
+    <naziv>Materijalna imovina u pripremi</naziv>
+  </account>
+  <account>
+    <key>038</key>
+    <name>Value adjustment of plant and equipment</name>
+    <naziv>Vrijednosno usklađenje postrojenja i opreme</naziv>
+  </account>
+  <account>
+    <key>039</key>
+    <name>Accumulated depreciation of plant and equipment</name>
+    <naziv>Akumulirana amortizacija postrojenja i opreme</naziv>
+  </account>
+  <account>
+    <key>04</key>
+    <name>BIOLOGICAL ASSETS</name>
+    <naziv>BIOLOŠKA IMOVINA</naziv>
+  </account>
+  <account>
+    <key>040</key>
+    <name>Biological assets- growing crops</name>
+    <naziv>Biološka imovina – bilje – višegodišnji nasadi</naziv>
+  </account>
+  <account>
+    <key>041</key>
+    <name>Biological assets- live stock</name>
+    <naziv>Biološka imovina – životinje – osnovno stado </naziv>
+  </account>
+  <account>
+    <key>046</key>
+    <name>Advance payments for purchase of biological assets</name>
+    <naziv>Predujmovi za biološku imovinu</naziv>
+  </account>
+  <account>
+    <key>047</key>
+    <name>Biological assets in preparation (not put in use)</name>
+    <naziv>Biološka imovina u pripremi</naziv>
+  </account>
+  <account>
+    <key>048</key>
+    <name>Value adjustment of biological assets</name>
+    <naziv>Vrijednosno usklađenje biološke imovine</naziv>
+  </account>
+  <account>
+    <key>049</key>
+    <name>Accumulated depreciation of biological assets</name>
+    <naziv>Akumulirana amortizacija biološke imovine</naziv>
+  </account>
+  <account>
+    <key>05</key>
+    <name>INVESTMENT PROPERTIES </name>
+    <naziv>ULAGANJA U NEKRETNINE</naziv>
+  </account>
+  <account>
+    <key>050</key>
+    <name>Investment property-land </name>
+    <naziv>Ulaganja u nekretnine – zemljišta</naziv>
+  </account>
+  <account>
+    <key>051</key>
+    <name>Investment property- buildings</name>
+    <naziv>Ulaganja u nekretnine – građevine</naziv>
+  </account>
+  <account>
+    <key>056</key>
+    <name>Advance payments for investment properties</name>
+    <naziv>Predujmovi za ulaganja u nekretnine</naziv>
+  </account>
+  <account>
+    <key>057</key>
+    <name>Investments property under construction</name>
+    <naziv>Ulaganja u nekretnine u pripremi</naziv>
+  </account>
+  <account>
+    <key>058</key>
+    <name>Value adjustment of investment properties</name>
+    <naziv>Vrijednosno usklađenje ulaganja u nekretnine</naziv>
+  </account>
+  <account>
+    <key>059</key>
+    <name>Accumulated depreciation of buildings</name>
+    <naziv>Akumulirana amortizacija ulaganja u građevine</naziv>
+  </account>
+  <account>
+    <key>06</key>
+    <name>NON-CURRENT FINANCIAL ASSETS </name>
+    <naziv>DUGOTRAJNA FINANCIJSKA IMOVINA (s povratom dužim od jedne godine) </naziv>
+  </account>
+  <account>
+    <key>060</key>
+    <name>Shares/stakes in related companies - ( more than 20% of share)</name>
+    <naziv>Udjeli (dionice) kod povezanih poduzetnika (s više od 20% udjela)</naziv>
+  </account>
+  <account>
+    <key>061</key>
+    <name>Loans given to related party</name>
+    <naziv>Dani zajmovi povezanim poduzetnicima (analitika po društvima u kojima se ima više od 20% udjela)</naziv>
+  </account>
+  <account>
+    <key>062</key>
+    <name>Participating interest (up to 20% of share)</name>
+    <naziv>Sudjelujući interesi (udjeli) </naziv>
+  </account>
+  <account>
+    <key>063</key>
+    <name>Loans given to companies in which we have participating interest (up to 20% of investment in shares)</name>
+    <naziv>Zajmovi dani poduzetnicima u kojima postoje sudjelujući interesi (do 20% udjela u T.K.)</naziv>
+  </account>
+  <account>
+    <key>064</key>
+    <name>Investments in a securities</name>
+    <naziv>Ulaganja u vrijednosne papire (dugotrajne)</naziv>
+  </account>
+  <account>
+    <key>065</key>
+    <name>Loans given to third party</name>
+    <naziv>Dani zajmovi, depoziti i sl.</naziv>
+  </account>
+  <account>
+    <key>066</key>
+    <name>Investments in associates accounted for using the equity method</name>
+    <naziv>Ulaganja koja se obračunavaju metodom udjela </naziv>
+  </account>
+  <account>
+    <key>067</key>
+    <name>Other long-term financial assets</name>
+    <naziv>Ostala dugotrajna financijska imovina</naziv>
+  </account>
+  <account>
+    <key>068</key>
+    <name>Value adjustment of long-term financial assets</name>
+    <naziv>Vrijednosno usklađenje financijske imovine – dugotrajne (analitika prema oblicima imovine u usklađenju)</naziv>
+  </account>
+  <account>
+    <key>069</key>
+    <name>Unrealized interests on loans etc.</name>
+    <naziv>Nezarađene kamate u kreditima i sl.</naziv>
+  </account>
+  <account>
+    <key>07</key>
+    <name>LONG TERM RECEIVABLES</name>
+    <naziv>POTRAŽIVANJA (dulja od jedne godine)</naziv>
+  </account>
+  <account>
+    <key>070</key>
+    <name>Receivables from related parties</name>
+    <naziv>Potraživanja od povezanih poduzetnika</naziv>
+  </account>
+  <account>
+    <key>071</key>
+    <name>Receivable on basis of credit sales</name>
+    <naziv>Potraživanja s osnove prodaje na kredit</naziv>
+  </account>
+  <account>
+    <key>072</key>
+    <name>Receivables from factoring</name>
+    <naziv>Potraživanja iz faktoringa</naziv>
+  </account>
+  <account>
+    <key>073</key>
+    <name>Receivables for a given guarantees</name>
+    <naziv>Potraživanja za jamčevine</naziv>
+  </account>
+  <account>
+    <key>074</key>
+    <name>Receivables for legal cases in company's favour and other risk receivables</name>
+    <naziv>Potraživanja u sporu i rizična potraživanja</naziv>
+  </account>
+  <account>
+    <key>075</key>
+    <name>Receivables for advance payments for services </name>
+    <naziv>Potraživanja za predujmove za usluge</naziv>
+  </account>
+  <account>
+    <key>076</key>
+    <name>Other long-term receivables</name>
+    <naziv>Ostala potraživanja – dugotrajna </naziv>
+  </account>
+  <account>
+    <key>078</key>
+    <name>Value adjustment of long-term receivables</name>
+    <naziv>Vrijednosno usklađivanje dugotrajnih potraživanja</naziv>
+  </account>
+  <account>
+    <key>079</key>
+    <name>Receivables for unrealized interests in loans </name>
+    <naziv>Potraživanja za nezarađenu kamatu</naziv>
+  </account>
+  <account>
+    <key>08</key>
+    <name>DEFERRED TAX ASSET</name>
+    <naziv>ODGOĐENA POREZNA IMOVINA</naziv>
+  </account>
+  <account>
+    <key>080</key>
+    <name>Deferred temporary tax difference on income tax</name>
+    <naziv>Odgođena privremena razlika poreza na dobitak (analitika po godinama)</naziv>
+  </account>
+  <account>
+    <key>1</key>
+    <name>CASH, CURRENT FINANCIAL ASSETS, CURRENT RECEIVABLES, PREPAID EXPENSES AND ACCRUED INCOME</name>
+    <naziv>NOVAC, KRATKOTRAJNA FINANCIJSKA IMOVINA, KRATKOTRAJNA POTRAŽIVANJA, TE TROŠKOVI I PRIHOD BUDUĆEG RAZDOBLJA</naziv>
+  </account>
+  <account>
+    <key>10</key>
+    <name>CASH IN BANK AND CASH ON HAND</name>
+    <naziv>NOVAC U BANKAMA I BLAGAJNAMA</naziv>
+  </account>
+  <account>
+    <key>100</key>
+    <name>Cash in bank</name>
+    <naziv>Novčani računi u bankama</naziv>
+  </account>
+  <account>
+    <key>101</key>
+    <name>Letter of credit issued in domestic bank</name>
+    <naziv>Otvoreni akreditiv u domaćoj banci</naziv>
+  </account>
+  <account>
+    <key>102</key>
+    <name>Cash on hand</name>
+    <naziv>Blagajne</naziv>
+  </account>
+  <account>
+    <key>103</key>
+    <name>Foreign currency accounts</name>
+    <naziv>Devizni računi</naziv>
+  </account>
+  <account>
+    <key>104</key>
+    <name>Letter of credit issued in foreign bank</name>
+    <naziv>Otvoreni akreditiv u stranim valutama</naziv>
+  </account>
+  <account>
+    <key>105</key>
+    <name>Foreign cash on hand</name>
+    <naziv>Devizna blagajna</naziv>
+  </account>
+  <account>
+    <key>106</key>
+    <name>Cash assigned to foreign currency purchases</name>
+    <naziv>Novac za kupnju deviza</naziv>
+  </account>
+  <account>
+    <key>108</key>
+    <name>Other cash </name>
+    <naziv>Ostala novčana sredstva</naziv>
+  </account>
+  <account>
+    <key>109</key>
+    <name>Value adjustment of bank deposits </name>
+    <naziv>Vrijednosno usklađenje depozita u bankama</naziv>
+  </account>
+  <account>
+    <key>11</key>
+    <name>CURRENT FINANCIAL ASSETS</name>
+    <naziv>KRATKOTRAJNA FINANCIJSKA IMOVINA (do jedne godine)</naziv>
+  </account>
+  <account>
+    <key>110</key>
+    <name>Investments in related parties</name>
+    <naziv>Udjeli (dionice) u povezanim poduzetnicima</naziv>
+  </account>
+  <account>
+    <key>111</key>
+    <name>Loans to related parties</name>
+    <naziv>Dani zajmovi povezanim poduzetnicima</naziv>
+  </account>
+  <account>
+    <key>112</key>
+    <name>Participating interest (up to 20% investment in business share/stake)</name>
+    <naziv>Sudjelujući interesi (udjeli)</naziv>
+  </account>
+  <account>
+    <key>113</key>
+    <name>Loans to companies in which we have participating interest </name>
+    <naziv>Zajmovi dani poduzetnicima u kojima postoje sudjelujući interesi (do 20% udjela)</naziv>
+  </account>
+  <account>
+    <key>114</key>
+    <name>Investments in securities</name>
+    <naziv>Ulaganja u vrijednosne papire</naziv>
+  </account>
+  <account>
+    <key>115</key>
+    <name>Leases given, deposits and other</name>
+    <naziv>Dani zajmovi, depoziti i sl.</naziv>
+  </account>
+  <account>
+    <key>116</key>
+    <name>Receivables from investments funds</name>
+    <naziv>Potraživanja iz ulaganja u investicijske fondove</naziv>
+  </account>
+  <account>
+    <key>117</key>
+    <name>Other financial assets</name>
+    <naziv>Ostala financijska imovina</naziv>
+  </account>
+  <account>
+    <key>118</key>
+    <name>Receivables in dispute (e.g.. disputed, in bankruptcy etc, from financial assets)</name>
+    <naziv>Potraživanja u sporu (npr. utužena, u stečaju i sl. iz fin. imovine)</naziv>
+  </account>
+  <account>
+    <key>119</key>
+    <name>Value adjustment of current financial assets ( value adjustment by analytics of this group of accounts)</name>
+    <naziv>Vrijednosno usklađivanje financijske imovine – kratkotrajne (analitika po otpisima iz ove skupine računa)</naziv>
+  </account>
+  <account>
+    <key>12</key>
+    <name>CURRENT RECEIVABLES</name>
+    <naziv>POTRAŽIVANJA (KRATKOTRAJNA)</naziv>
+  </account>
+  <account>
+    <key>120</key>
+    <name>Trade receivables </name>
+    <naziv>Potraživanja od kupaca</naziv>
+  </account>
+  <account>
+    <key>121</key>
+    <name>Foreign trade customers</name>
+    <naziv>Kupci u inozemstvu </naziv>
+  </account>
+  <account>
+    <key>122</key>
+    <name>Receivables from a related party</name>
+    <naziv>Potraživanja od povezanih poduzetnika (s više od 20% udjela – ovisni poduzet.)</naziv>
+  </account>
+  <account>
+    <key>123</key>
+    <name>Receivables from companies in which we have participating interest i.e. investment in business shares/stakes </name>
+    <naziv>Potraživanja od sudjelujućih poduzetnika (u kojima se drži manje od 20% udjela)</naziv>
+  </account>
+  <account>
+    <key>124</key>
+    <name>Interest receivables </name>
+    <naziv>Potraživanja za kamate</naziv>
+  </account>
+  <account>
+    <key>125</key>
+    <name>Receivables for advance payments for services</name>
+    <naziv>Potraživanja za predujmove za usluge (koje nisu u svezi sa zalihama i dugotr. imov.)</naziv>
+  </account>
+  <account>
+    <key>126</key>
+    <name>Foreign trade receivables </name>
+    <naziv>Potraživanja iz vanjskotrgovačkog poslovanja (s osnove uvoza odnosno izvoza za tuđi račun)</naziv>
+  </account>
+  <account>
+    <key>127</key>
+    <name>Receivables from other activities</name>
+    <naziv>Potraživanja s osnove ostalih aktivnosti</naziv>
+  </account>
+  <account>
+    <key>128</key>
+    <name>Other current receivables</name>
+    <naziv>Ostala kratkoročna potraživanja</naziv>
+  </account>
+  <account>
+    <key>129</key>
+    <name>Value adjustment of receivables</name>
+    <naziv>Vrijednosno usklađenje potraživanja</naziv>
+  </account>
+  <account>
+    <key>13</key>
+    <name>RECEIVABLES FROM EMPLOYEES AND OTHER RECEIVABLES</name>
+    <naziv>POTRAŽIVANJA OD ZAPOSLENIH I OSTALA POTRAŽIVANJA (kratkotrajna)</naziv>
+  </account>
+  <account>
+    <key>130</key>
+    <name>Receivables from employees</name>
+    <naziv>Potraživanja od zaposlenih</naziv>
+  </account>
+  <account>
+    <key>133</key>
+    <name>Receivables from equity owners</name>
+    <naziv>Potraživanja od članova poduzetnika</naziv>
+  </account>
+  <account>
+    <key>134</key>
+    <name>Receivables in dispute and risky receivables</name>
+    <naziv>Potraživanja u sporu i rizična potraživanja (iz skupine 12 i 13)</naziv>
+  </account>
+  <account>
+    <key>135</key>
+    <name>Receivables for assets held on free-trade zone</name>
+    <naziv>Potraživanja za sredstva u slobodnoj zoni</naziv>
+  </account>
+  <account>
+    <key>136</key>
+    <name>Receivables from banks based on customer's loans</name>
+    <naziv>Potraživanja od banaka za prodaju na potrošački kredit</naziv>
+  </account>
+  <account>
+    <key>137</key>
+    <name>Receivables from foreign business units</name>
+    <naziv>Potraživanja od poslovnih jedinica u inozemstvu</naziv>
+  </account>
+  <account>
+    <key>138</key>
+    <name>Other receivables from operating activities</name>
+    <naziv>Ostala poslovna potraživanja</naziv>
+  </account>
+  <account>
+    <key>139</key>
+    <name>Value adjustment of receivables from employees and other receivables</name>
+    <naziv>Vrijednosno usklađenje potraživanja od zaposlenih članova društva i ostalih potraživanja</naziv>
+  </account>
+  <account>
+    <key>14</key>
+    <name>RECEIVABLES FROM THE GOVERNMENT FOR TAXES, DUTIES AND CONTRIBUTIONS</name>
+    <naziv>POTRAŽIVANJA OD DRŽAVE ZA POREZE, CARINU I DOPRINOSE</naziv>
+  </account>
+  <account>
+    <key>140</key>
+    <name>Value added tax</name>
+    <naziv>Porez na dodanu vrijednost</naziv>
+  </account>
+  <account>
+    <key>141</key>
+    <name>Receivables from tax and surtax regarding salaries and other incomes</name>
+    <naziv>Potraživanja za porez i prirez na dohodak iz plaća i drugih primanja</naziv>
+  </account>
+  <account>
+    <key>142</key>
+    <name>Receivables for prepayments made regarding mandatory contributions on personal income tax</name>
+    <naziv>Potraživanja za više plaćene doprinose iz plaća i na plaće</naziv>
+  </account>
+  <account>
+    <key>143</key>
+    <name>Receivables for corporate income tax and withholding tax </name>
+    <naziv>Potraživanja za porez na dobitak i po odbitku</naziv>
+  </account>
+  <account>
+    <key>144</key>
+    <name>Receivables for excise duties and other taxes</name>
+    <naziv>Potraživanja za posebne poreze (akcize – trošarine) i dr. poreze od države</naziv>
+  </account>
+  <account>
+    <key>145</key>
+    <name>Receivables for National tourism office fee</name>
+    <naziv>Potraživanja za plaćenu članarinu turističkim zajed.</naziv>
+  </account>
+  <account>
+    <key>146</key>
+    <name>Receivables for chamber memberships</name>
+    <naziv>Potraživanja za članarine komori (HGK ili HOK)</naziv>
+  </account>
+  <account>
+    <key>147</key>
+    <name>Receivables for duties and prepayments to customs duty</name>
+    <naziv>Potraživanja za carinu i više plaćene carinske pristojbe</naziv>
+  </account>
+  <account>
+    <key>148</key>
+    <name>Receivables for County and municipal tax</name>
+    <naziv>Potraživanja za županijski i općinski (gradski) porez</naziv>
+  </account>
+  <account>
+    <key>149</key>
+    <name>Receivables for other not mentioned taxes, contributions and duties </name>
+    <naziv>Potraživanja za ostale nespomenute poreze, doprinose, takse i pristojbe</naziv>
+  </account>
+  <account>
+    <key>15</key>
+    <name>RECEIVABLES FROM GOVERNMENT INSTITUTIONS</name>
+    <naziv>POTRAŽIVANJA OD DRŽAVNIH INSTITUCIJA</naziv>
+  </account>
+  <account>
+    <key>150</key>
+    <name>Receivables from Croatian institute for health insurance regarding employee's sick leave payments </name>
+    <naziv>Potraživanje za nadoknade bolovanja od HZZO</naziv>
+  </account>
+  <account>
+    <key>151</key>
+    <name>Receivables for Pension insurance institute</name>
+    <naziv>Potraživanja od mirovinskog osiguranja</naziv>
+  </account>
+  <account>
+    <key>152</key>
+    <name>Receivables from local government</name>
+    <naziv>Potraživanja od lokalne samouprave</naziv>
+  </account>
+  <account>
+    <key>153</key>
+    <name>Receivables for bonuses, premiums and government grants</name>
+    <naziv>Potraživ. za regrese, premije, stimulac. i držav. potpore</naziv>
+  </account>
+  <account>
+    <key>154</key>
+    <name>Receivables for Fund for packaging repurchase </name>
+    <naziv>Potraživanje od Fonda za otkupljenu ambalažu</naziv>
+  </account>
+  <account>
+    <key>155</key>
+    <name>Other receivables from the Government </name>
+    <naziv>Ostala potraživanja od državnih institucija</naziv>
+  </account>
+  <account>
+    <key>159</key>
+    <name>Value adjustment of receivables from the Government and other institutions</name>
+    <naziv>Vrijednosno usklađenje potraživanja od države i drugih institucija</naziv>
+  </account>
+  <account>
+    <key>19</key>
+    <name>PREPAID EXPENSES AND ACCRUED INCOME</name>
+    <naziv>PLAĆENI TROŠKOVI BUDUĆEG RAZDOBLJA I OBRAČUNANI PRIHODI (unutar jedne godine od datuma bilance)</naziv>
+  </account>
+  <account>
+    <key>190</key>
+    <name>Prepaid expenses and accrued income</name>
+    <naziv>Unaprijed plaćeni troškovi</naziv>
+  </account>
+  <account>
+    <key>191</key>
+    <name>Accrued income</name>
+    <naziv>Obračunani prihodi (budućeg razdoblja)</naziv>
+  </account>
+  <account>
+    <key>192</key>
+    <name>PREPAID EXPENSES AND ACCRUED INCOME</name>
+    <naziv>Unaprijed plaćeni ovisni troškovi nabave (koji nisu na 651)</naziv>
+  </account>
+  <account>
+    <key>193</key>
+    <name>Accrued interest which relates to future periods</name>
+    <naziv>Troškovi kamata iz budućeg razdoblja</naziv>
+  </account>
+  <account>
+    <key>194</key>
+    <name>Prepaid expenses for concession rights</name>
+    <naziv>Unaprijed plaćeni troškovi koncesija (za razdoblje do 12 mj.)</naziv>
+  </account>
+  <account>
+    <key>195</key>
+    <name>Prepaid expenses for franchise fee</name>
+    <naziv>Unaprijed plaćene franšize, trgovačko znakovlje, prava i sl. (do 12 mj.)</naziv>
+  </account>
+  <account>
+    <key>196</key>
+    <name>Prepaid expenses for licences and patents</name>
+    <naziv>Unaprijed plaćene licencije i patenti (do 12 mj.)</naziv>
+  </account>
+  <account>
+    <key>199</key>
+    <name>Other prepaid expenses</name>
+    <naziv>Ostali plaćeni troškovi budućeg razdoblja</naziv>
+  </account>
+  <account>
+    <key>2</key>
+    <name>CURRENT AND NON-CURRENT LIABILITIES, LONG TERM PROVISIONS, ACCRUED EXPENSES AND DEFERRED INCOME</name>
+    <naziv>KRATKOROČNE I DUGOROČNE OBVEZE, DUGOROČNA REZERVIRANJA, ODGOĐENA PLAĆANJA I PRIHODI BUDUĆEG RAZDOBLJA</naziv>
+  </account>
+  <account>
+    <key>20</key>
+    <name>CURRENT LIABILITIES TOWARDS RELATED PARTIES AND BASED ON SHARE IN RESULT (UP TO ONE YEAR)</name>
+    <naziv>KRATKOROČNE OBVEZE PREMA POVEZANIM PODUZETNICIMA I S OSNOVE UDJELA U REZULTATU (do jedne godine)</naziv>
+  </account>
+  <account>
+    <key>200</key>
+    <name>Liabilities towards related parties</name>
+    <naziv>Obveze prema povezanim poduzetnicima</naziv>
+  </account>
+  <account>
+    <key>201</key>
+    <name>Liabilities due to share in results</name>
+    <naziv>Obveze s osnove udjela u rezultatu</naziv>
+  </account>
+  <account>
+    <key>21</key>
+    <name>CURRENT FINANCIAL LIABILITIES </name>
+    <naziv>KRATKOROČNE FINANCIJSKE OBVEZE </naziv>
+  </account>
+  <account>
+    <key>210</key>
+    <name>Liabilities due to issued cheques</name>
+    <naziv>Obveze za izdane čekove</naziv>
+  </account>
+  <account>
+    <key>211</key>
+    <name>Liabilities due to issued promissory notes</name>
+    <naziv>Obveze za izdane mjenice</naziv>
+  </account>
+  <account>
+    <key>212</key>
+    <name>Liabilities due to issued securities</name>
+    <naziv>Obveze po izdanim vrijednosnim papirima</naziv>
+  </account>
+  <account>
+    <key>213</key>
+    <name>Liabilities towards companies in which we have participating interest (up to 20% of share)</name>
+    <naziv>Obveze prema poduzetnicima u kojima postoje sudjelujući interesi (do 20% udjela)</naziv>
+  </account>
+  <account>
+    <key>214</key>
+    <name>Lease liabilities and deposits received</name>
+    <naziv>Obveze s osnove zajmova, depozita i sl.</naziv>
+  </account>
+  <account>
+    <key>215</key>
+    <name>Liabilities towards banks and other financial institutions</name>
+    <naziv>Obveze prema bankama i drugim financijskim institucijama</naziv>
+  </account>
+  <account>
+    <key>216</key>
+    <name>Liabilities towards credit card institutions</name>
+    <naziv>Obveze prema izdavateljima kreditnih kartica (analitika prema kartičarima)</naziv>
+  </account>
+  <account>
+    <key>217</key>
+    <name>Liabilities from discount services</name>
+    <naziv>Obveze iz eskontnih poslova</naziv>
+  </account>
+  <account>
+    <key>218</key>
+    <name>Liabilities due to non current assets held for sale</name>
+    <naziv>Obveze s osnove dugotrajne imovine namijenjene prodaji (analitika prema izvorima)</naziv>
+  </account>
+  <account>
+    <key>22</key>
+    <name>TRADE AND OTHER PAYABLES AND LIABILITIES FOR ADVANCES RECEIVED</name>
+    <naziv>OBVEZE PREMA DOBAVLJAČIMA, ZA PREDUJMOVE I OSTALE OBVEZE</naziv>
+  </account>
+  <account>
+    <key>220</key>
+    <name>Domestic trade payables</name>
+    <naziv>Obveze prema dobavljačima u zemlji (analitika prema dobavljačima)</naziv>
+  </account>
+  <account>
+    <key>221</key>
+    <name>Foreign trade payables </name>
+    <naziv>Dobavljači iz inozemstva (analitika prema dobavljačima)</naziv>
+  </account>
+  <account>
+    <key>222</key>
+    <name>Trade payables- private person</name>
+    <naziv>Dobavljači fizičke osobe</naziv>
+  </account>
+  <account>
+    <key>223</key>
+    <name>Trade payables for utility services</name>
+    <naziv>Dobavljači komunalnih usluga</naziv>
+  </account>
+  <account>
+    <key>224</key>
+    <name>Liabilities for not invoiced but received goods and services</name>
+    <naziv>Obveze za nefakturirane a preuzete isporuke robe i usluge</naziv>
+  </account>
+  <account>
+    <key>225</key>
+    <name>Liabilities for advances received </name>
+    <naziv>Obveze za predujmove</naziv>
+  </account>
+  <account>
+    <key>23</key>
+    <name>LIABILITIES TOWARDS EMPLOYEES AND OTHER LIABILITIES</name>
+    <naziv>OBVEZE PREMA ZAPOSLENIMA I OSTALE OBVEZE</naziv>
+  </account>
+  <account>
+    <key>230</key>
+    <name>Liabilities towards employees</name>
+    <naziv>Obveze prema zaposlenicima</naziv>
+  </account>
+  <account>
+    <key>231</key>
+    <name>Current liabilities from procurements and grants</name>
+    <naziv>Kratkoročne obveze iz nabava i potpora</naziv>
+  </account>
+  <account>
+    <key>232</key>
+    <name>Interests payable</name>
+    <naziv>Obveze za kamate (analitika prema dužnicima i vrstama obveza prema nepovezanim društvima)</naziv>
+  </account>
+  <account>
+    <key>233</key>
+    <name>Liabilities for commission or consignment sale of goods</name>
+    <naziv>Obveze po obračunu prodanih dobara primljenih u komisiju ili konsignaciju </naziv>
+  </account>
+  <account>
+    <key>234</key>
+    <name>Liabilities towards insurance companies</name>
+    <naziv>Obveze prema osiguravajućim društvima</naziv>
+  </account>
+  <account>
+    <key>235</key>
+    <name>Liabilities due to operations in free-trade zone</name>
+    <naziv>Obveze iz poslovanja u slobodnoj zoni</naziv>
+  </account>
+  <account>
+    <key>236</key>
+    <name>Liabilities due to operations in foreign trade</name>
+    <naziv>Obveze iz vanjskotrgovačkog poslovanja</naziv>
+  </account>
+  <account>
+    <key>237</key>
+    <name>Liabilities towards foreign business units</name>
+    <naziv>Obveze prema poslovnim jedinicama u inozemstvu</naziv>
+  </account>
+  <account>
+    <key>238</key>
+    <name>Liabilities due to acquisitions of shares/stakes</name>
+    <naziv>Obveze iz stjecanja udjela</naziv>
+  </account>
+  <account>
+    <key>239</key>
+    <name>Other current liabilities</name>
+    <naziv>Ostale kratkoročne obveze</naziv>
+  </account>
+  <account>
+    <key>24</key>
+    <name>CURRENT LIABILITIES FOR TAXES, CONTRIBUTIONS AND SIMILAR EXPENSES</name>
+    <naziv>KRATKOROČNE OBVEZE ZA POREZE, DOPRINOSE I slična davanja</naziv>
+  </account>
+  <account>
+    <key>240</key>
+    <name>Liabilities for value added taxes</name>
+    <naziv>Obveze za porez na dodanu vrijednost</naziv>
+  </account>
+  <account>
+    <key>241</key>
+    <name>Liabilities for personal income tax and surtax</name>
+    <naziv>Obveze za porez i prirez na dohodak</naziv>
+  </account>
+  <account>
+    <key>242</key>
+    <name>Liabilities for insurance contributions</name>
+    <naziv>Obveze za doprinose za osiguranja</naziv>
+  </account>
+  <account>
+    <key>243</key>
+    <name>Income tax payables, tax on investment income and withholding tax </name>
+    <naziv>Obveze za porez na dobitak, dohodak od kapitala i porez po odbitku</naziv>
+  </account>
+  <account>
+    <key>244</key>
+    <name>Liabilities for excise duties and other taxes</name>
+    <naziv>Obveze za posebne poreze (trošarine – akcize) i dr. poreze državi</naziv>
+  </account>
+  <account>
+    <key>245</key>
+    <name>Liabilities for fee to National tourism office </name>
+    <naziv>Obveze za članarinu turist. zajednicama</naziv>
+  </account>
+  <account>
+    <key>246</key>
+    <name>Liabilities for Chamber membership fee</name>
+    <naziv>Obveze za članarinu komori</naziv>
+  </account>
+  <account>
+    <key>247</key>
+    <name>Liabilities for duties and customs duty</name>
+    <naziv>Obveze za carinu i carinske pristojbe</naziv>
+  </account>
+  <account>
+    <key>248</key>
+    <name>Liabilities for a County's and municipal's taxes </name>
+    <naziv>Obveze za županijske (gradske) i općinske poreze</naziv>
+  </account>
+  <account>
+    <key>249</key>
+    <name>Liabilities for other not mentioned taxes, contributions and duties </name>
+    <naziv>Ostale obveze javnih davanja</naziv>
+  </account>
+  <account>
+    <key>25</key>
+    <name>LONG TERM LIABILITIES </name>
+    <naziv>DUGOROČNE OBVEZE (za duže od jedne godine)</naziv>
+  </account>
+  <account>
+    <key>250</key>
+    <name>Liabilities towards related parties</name>
+    <naziv>Obveze prema povezanim poduzetnicima</naziv>
+  </account>
+  <account>
+    <key>251</key>
+    <name>Leasing liabilities and liabilities for deposits received</name>
+    <naziv>Obveze za zajmove, depozite i sl.</naziv>
+  </account>
+  <account>
+    <key>252</key>
+    <name>Liabilities towards banks and other financial institutions</name>
+    <naziv>Obveze prema bankama i dr. financijskim institucijama</naziv>
+  </account>
+  <account>
+    <key>253</key>
+    <name>Long term financial leasing liabilities </name>
+    <naziv>Dugoročne obveze iz financijskog lizinga</naziv>
+  </account>
+  <account>
+    <key>254</key>
+    <name>Liabilities for advances received</name>
+    <naziv>Obveze za predujmove</naziv>
+  </account>
+  <account>
+    <key>255</key>
+    <name>Trade payables (unpaid long term trade payables) </name>
+    <naziv>Obveze prema dobavljačima (neisplaćene dugoročne obveze prema vjerovnicima s osnove poslovanja)</naziv>
+  </account>
+  <account>
+    <key>256</key>
+    <name>Liabilities for long term securities</name>
+    <naziv>Obveze po vrijednosnim papirima (dugoročnim)</naziv>
+  </account>
+  <account>
+    <key>257</key>
+    <name>Liabilities towards company's in which we have participating interest</name>
+    <naziv>Obveze prema poduzetnicima u kojima postoje sudjelujući interesi (do 20% udjela)</naziv>
+  </account>
+  <account>
+    <key>258</key>
+    <name>Liabilities towards government (related guarantees, loans)</name>
+    <naziv>Obveze prema Državi (realizirana jamstva, krediti)</naziv>
+  </account>
+  <account>
+    <key>259</key>
+    <name>Other long term liabilities</name>
+    <naziv>Ostale dugoročne obveze</naziv>
+  </account>
+  <account>
+    <key>26</key>
+    <name>DEFERRED TAXES</name>
+    <naziv>ODGOĐENI POREZI</naziv>
+  </account>
+  <account>
+    <key>260</key>
+    <name>Deferred tax liabilities</name>
+    <naziv>Odgođena porezna obveza</naziv>
+  </account>
+  <account>
+    <key>28</key>
+    <name>LONG TERM PROVISIONS FOR RISKS AND CHARGES</name>
+    <naziv>DUGOROČNA REZERVIRANJA ZA RIZIKE I TROŠKOVE</naziv>
+  </account>
+  <account>
+    <key>280</key>
+    <name>Provision for employee benefits</name>
+    <naziv>Rezerviranja za otpremnine i mirovine </naziv>
+  </account>
+  <account>
+    <key>281</key>
+    <name>Provision for tax liabilities</name>
+    <naziv>Rezerviranja za porezne obveze</naziv>
+  </account>
+  <account>
+    <key>282</key>
+    <name>Other provisions</name>
+    <naziv>Druga rezerviranja</naziv>
+  </account>
+  <account>
+    <key>29</key>
+    <name>ACCRUED EXPENSES AND DEFERRED INCOME</name>
+    <naziv>ODGOĐENO PLAĆANJE TROŠKOVA I PRIHOD BUDUĆEG RAZDOBLJA</naziv>
+  </account>
+  <account>
+    <key>290</key>
+    <name>Accrued expenses</name>
+    <naziv>Odgođeno plaćanje troškova</naziv>
+  </account>
+  <account>
+    <key>291</key>
+    <name>Accrued expenses for rights to use</name>
+    <naziv>Obračunani troškovi korištenih prava </naziv>
+  </account>
+  <account>
+    <key>292</key>
+    <name>Accrued expenses for goods purchases</name>
+    <naziv>Obračunani troškovi nabave dobara</naziv>
+  </account>
+  <account>
+    <key>293</key>
+    <name>Deferred income (income which relates to future period)</name>
+    <naziv>Obračunani prihodi budućeg razdoblja</naziv>
+  </account>
+  <account>
+    <key>294</key>
+    <name>Deferred income from government grants</name>
+    <naziv>Odgođeno priznavanje prihoda iz državnih potpora (HSFI t. 15.37 i MRS 20, t. 12. i 24.)</naziv>
+  </account>
+  <account>
+    <key>295</key>
+    <name>Deferred income</name>
+    <naziv>Odgođeno priznavanje prihoda</naziv>
+  </account>
+  <account>
+    <key>296</key>
+    <name>Deferred income relating to not invoiced but shipped goods and services</name>
+    <naziv>Odgođeni prihod s osnove nefakturiranih isporuka dobara i usluga</naziv>
+  </account>
+  <account>
+    <key>297</key>
+    <name>Unrealized gains on financial assets </name>
+    <naziv>Nerealizirani dobitci iz financijske imovine (HSFI 9 i MRS 39)</naziv>
+  </account>
+  <account>
+    <key>298</key>
+    <name>Provision for unused vacation days</name>
+    <naziv>Rezerviranje troška za neiskorištene godišnje odmore </naziv>
+  </account>
+  <account>
+    <key>299</key>
+    <name>Other accruals</name>
+    <naziv>Ostala pasivna vremenska razgraničenja</naziv>
+  </account>
+  <account>
+    <key>3</key>
+    <name>RAW MATERIALS, MATERIALS, SPARE PARTS AND SMALL INVENTORY</name>
+    <naziv>ZALIHE SIROVINA I MATERIJALA, REZERVNIH DIJELOVA I SITNOG INVENTARA</naziv>
+  </account>
+  <account>
+    <key>30</key>
+    <name>COST OF INVENTORY PURCHASING CALCULATION</name>
+    <naziv>OBRAČUN TROŠKOVA KUPNJE ZALIHA</naziv>
+  </account>
+  <account>
+    <key>300</key>
+    <name>Payables purchase price</name>
+    <naziv>Kupovna cijena dobavljača</naziv>
+  </account>
+  <account>
+    <key>301</key>
+    <name>Other inventory dependant costs </name>
+    <naziv>Ovisni troškovi nabave (u svezi s dovođenjem na zalihu)</naziv>
+  </account>
+  <account>
+    <key>302</key>
+    <name>Duties and other customs duty</name>
+    <naziv>Carina i druge uvozne pristojbe</naziv>
+  </account>
+  <account>
+    <key>303</key>
+    <name>Excise duties which can not be deducted</name>
+    <naziv>Posebni porezi (trošarine) koji se ne mogu odbiti</naziv>
+  </account>
+  <account>
+    <key>309</key>
+    <name>Cost of inventory purchasing calculation</name>
+    <naziv>Obračun troškova kupnje</naziv>
+  </account>
+  <account>
+    <key>31</key>
+    <name>RAW MATERIALS </name>
+    <naziv>SIROVINE I MATERIJAL NA ZALIHI</naziv>
+  </account>
+  <account>
+    <key>310</key>
+    <name>Raw material on stock</name>
+    <naziv>Sirovine i materijal u skladištu</naziv>
+  </account>
+  <account>
+    <key>311</key>
+    <name>Material in processing, finishing and manipulation phases</name>
+    <naziv>Materijal u doradi, obradi i manipulaciji</naziv>
+  </account>
+  <account>
+    <key>312</key>
+    <name>Material sent for finishing to partners </name>
+    <naziv>Materijal na doradi kod ortaka</naziv>
+  </account>
+  <account>
+    <key>313</key>
+    <name>Materials used in agriculture </name>
+    <naziv>Zalihe materijala za poljoprivredu</naziv>
+  </account>
+  <account>
+    <key>318</key>
+    <name>Inventory price adjustment</name>
+    <naziv>Odstupanje od cijene zaliha</naziv>
+  </account>
+  <account>
+    <key>319</key>
+    <name>Value adjustment of raw materials</name>
+    <naziv>Vrijednosno usklađenje zaliha sirovina i materijala</naziv>
+  </account>
+  <account>
+    <key>32</key>
+    <name>SPARE PARTS</name>
+    <naziv>ZALIHE REZERVNIH DIJELOVA</naziv>
+  </account>
+  <account>
+    <key>320</key>
+    <name>Spare parts on stock</name>
+    <naziv>Rezervni dijelovi na zalihi</naziv>
+  </account>
+  <account>
+    <key>328</key>
+    <name>Spare part price adjustment</name>
+    <naziv>Odstupanje od cijene dijelova na zalihi</naziv>
+  </account>
+  <account>
+    <key>329</key>
+    <name>Value adjustment of spare parts</name>
+    <naziv>Vrijednosno usklađenje zaliha rezervnih dijelova</naziv>
+  </account>
+  <account>
+    <key>35</key>
+    <name>SMALL INVENTORY ON STOCK</name>
+    <naziv>ZALIHE SITNOG INVENTARA</naziv>
+  </account>
+  <account>
+    <key>350</key>
+    <name>Small inventory on stock</name>
+    <naziv>Sitan inventar na zalihi</naziv>
+  </account>
+  <account>
+    <key>351</key>
+    <name>Packaging on stock</name>
+    <naziv>Ambalaža na zalihi (samo vlastita i višekratna, analitika prema vrstama)</naziv>
+  </account>
+  <account>
+    <key>352</key>
+    <name>Tires on stock</name>
+    <naziv>Autogume na zalihi</naziv>
+  </account>
+  <account>
+    <key>358</key>
+    <name>Small inventory's price adjustment</name>
+    <naziv>Odstupanje od cijene</naziv>
+  </account>
+  <account>
+    <key>359</key>
+    <name>Value adjustment of small inventory</name>
+    <naziv>Vrijednosno usklađenje zaliha</naziv>
+  </account>
+  <account>
+    <key>36</key>
+    <name>SMALL INVENTORY IN USE</name>
+    <naziv>ZALIHE SITNOG INVENTARA U UPORABI</naziv>
+  </account>
+  <account>
+    <key>360</key>
+    <name>Small inventory in use</name>
+    <naziv>Sitan inventar u uporabi</naziv>
+  </account>
+  <account>
+    <key>361</key>
+    <name>Packaging in use</name>
+    <naziv>Ambalaža u uporabi</naziv>
+  </account>
+  <account>
+    <key>362</key>
+    <name>Tires in use</name>
+    <naziv>Autogume u uporabi</naziv>
+  </account>
+  <account>
+    <key>363</key>
+    <name>Small inventory write off</name>
+    <naziv>Otpis sitnog inventara</naziv>
+  </account>
+  <account>
+    <key>364</key>
+    <name>Packaging write off</name>
+    <naziv>Otpis ambalaže</naziv>
+  </account>
+  <account>
+    <key>365</key>
+    <name>Tires write off</name>
+    <naziv>Otpis autoguma</naziv>
+  </account>
+  <account>
+    <key>369</key>
+    <name>Value adjustment of small inventory, packaging and tires</name>
+    <naziv>Vrijednosno usklađenje sitnog inventara, ambalaže i autoguma</naziv>
+  </account>
+  <account>
+    <key>37</key>
+    <name>ADVANCES PAYMENTS FOR RAW MATERIALS, SPARE PARTS, SMALL INVENTORY AND TIRES PURCHASES</name>
+    <naziv>PREDUJMOVI DOBAVLJAČIMA SIROVINA I MATERIJALA, REZERVNIH DIJELOVA, SITNOG INVENTARA I AUTOGUMA</naziv>
+  </account>
+  <account>
+    <key>370</key>
+    <name>Advance payments for material </name>
+    <naziv>Predujmovi dobavljačima materijala</naziv>
+  </account>
+  <account>
+    <key>371</key>
+    <name>Advance payments for spare parts</name>
+    <naziv>Predujmovi dobavljačima rezervnih dijelova</naziv>
+  </account>
+  <account>
+    <key>372</key>
+    <name>Advance payments for small inventory</name>
+    <naziv>Predujmovi dobavljačima sitnog inventara</naziv>
+  </account>
+  <account>
+    <key>373</key>
+    <name>Advance payments to importer for raw materials, spare parts and small inventory</name>
+    <naziv>Predujmovi dani uvozniku za nabavu sirovina i materijala, dijelova i inventara</naziv>
+  </account>
+  <account>
+    <key>374</key>
+    <name>Advance payments to foreign suppliers</name>
+    <naziv>Predujmovi inozemnim dobavljačima</naziv>
+  </account>
+  <account>
+    <key>379</key>
+    <name>Value adjustment of advance payments</name>
+    <naziv>Vrijednosno usklađenje danih predujmova</naziv>
+  </account>
+  <account>
+    <key>4</key>
+    <name>COSTS BY NATURE , FINANCIAL AND OTHER EXPENSES</name>
+    <naziv>TROŠKOVI PREMA VRSTAMA, FINANCIJSKI I OSTALI RASHODI</naziv>
+  </account>
+  <account>
+    <key>40</key>
+    <name>MATERIAL COST</name>
+    <naziv>MATERIJALNI TROŠKOVI</naziv>
+  </account>
+  <account>
+    <key>400</key>
+    <name>Cost of raw material</name>
+    <naziv>Troškovi sirovina i materijala (za proizvodnju dobara i usluga)</naziv>
+  </account>
+  <account>
+    <key>401</key>
+    <name>Cost of material used in administration and sale department </name>
+    <naziv>Materijalni troškovi administracije, uprave i prodaje</naziv>
+  </account>
+  <account>
+    <key>402</key>
+    <name>Research and development cost</name>
+    <naziv>Troškovi istraživanja i razvoja (Zak. o znan – Nn. br. 46/07.)</naziv>
+  </account>
+  <account>
+    <key>403</key>
+    <name>Packaging cost</name>
+    <naziv>Troškovi ambalaže</naziv>
+  </account>
+  <account>
+    <key>404</key>
+    <name>Cost of small inventory, packaging and tires</name>
+    <naziv>Trošak sitnog inventara, ambalaže i autoguma</naziv>
+  </account>
+  <account>
+    <key>405</key>
+    <name>Spare parts and material used on maintenance</name>
+    <naziv>Potrošeni rezervni dijelovi i materijal za održavanje</naziv>
+  </account>
+  <account>
+    <key>406</key>
+    <name>Energy used during production of goods and services</name>
+    <naziv>Potrošena energija u proizvodnji dobara i usluga</naziv>
+  </account>
+  <account>
+    <key>407</key>
+    <name>Energy - administration and sale department </name>
+    <naziv>Potrošena energija u administraciji, upravi i prodaji</naziv>
+  </account>
+  <account>
+    <key>408</key>
+    <name>Energy - secondary production processes</name>
+    <naziv>Troškovi energije na pomoćnim mjestima u proizvodnji</naziv>
+  </account>
+  <account>
+    <key>409</key>
+    <name>Standard cost adjustments</name>
+    <naziv>Odstupanja od standardnog troška</naziv>
+  </account>
+  <account>
+    <key>41</key>
+    <name>OTHER EXTERNAL COSTS (COST OF SERVICES)</name>
+    <naziv>OSTALI VANJSKI TROŠKOVI (TROŠKOVI USLUGA)</naziv>
+  </account>
+  <account>
+    <key>410</key>
+    <name>Telephone and transportation costs</name>
+    <naziv>Troškovi telefona, prijevoza i sl.</naziv>
+  </account>
+  <account>
+    <key>411</key>
+    <name>External service costs used in goods production and providing services</name>
+    <naziv>Troškovi vanjskih usluga pri izradi dobara i obavljanju usluga</naziv>
+  </account>
+  <account>
+    <key>412</key>
+    <name>Maintenance and securities services </name>
+    <naziv>Usluge održavanja i zaštite (servisne usluge)</naziv>
+  </account>
+  <account>
+    <key>413</key>
+    <name>Vehicle registration and permission costs</name>
+    <naziv>Usluge registracije prijevoznih sredstava i troškovi dozvola</naziv>
+  </account>
+  <account>
+    <key>414</key>
+    <name>Leasing costs</name>
+    <naziv>Usluge zakupa – lizinga</naziv>
+  </account>
+  <account>
+    <key>415</key>
+    <name>Promotion , sponsorship and fairs costs</name>
+    <naziv>Usluge promidžbe, sponzorstva i troškovi sajmova</naziv>
+  </account>
+  <account>
+    <key>416</key>
+    <name>Intellectual services</name>
+    <naziv>Intelektualne i osobne usluge</naziv>
+  </account>
+  <account>
+    <key>417</key>
+    <name>Utilities and similar costs</name>
+    <naziv>Troškovi komunalnih i sličnih usluga</naziv>
+  </account>
+  <account>
+    <key>418</key>
+    <name>Representation costs- hosting and mediation</name>
+    <naziv>Usluge reprezentacije – ugošćivanja i posredovanja</naziv>
+  </account>
+  <account>
+    <key>419</key>
+    <name>Other external costs</name>
+    <naziv>Troškovi ostalih vanjskih usluga</naziv>
+  </account>
+  <account>
+    <key>42</key>
+    <name>STAFF COSTS-SALARIES</name>
+    <naziv>TROŠKOVI OSOBLJA – PLAĆE</naziv>
+  </account>
+  <account>
+    <key>420</key>
+    <name>Wages and salaries</name>
+    <naziv>Neto plaće i nadoknade</naziv>
+  </account>
+  <account>
+    <key>421</key>
+    <name>Income tax and surtax costs</name>
+    <naziv>Troškovi poreza i prireza</naziv>
+  </account>
+  <account>
+    <key>422</key>
+    <name>Contributions from salaries costs</name>
+    <naziv>Troškovi doprinosa iz plaća</naziv>
+  </account>
+  <account>
+    <key>423</key>
+    <name>Contributions on salaries costs</name>
+    <naziv>Doprinosi na plaće</naziv>
+  </account>
+  <account>
+    <key>424</key>
+    <name>Gross salaries </name>
+    <naziv>Bruto plaće (privremeno v. napom. 2)</naziv>
+  </account>
+  <account>
+    <key>43</key>
+    <name>DEPRECIATION</name>
+    <naziv>AMORTIZACIJA</naziv>
+  </account>
+  <account>
+    <key>430</key>
+    <name>Amortisation of intangible assets</name>
+    <naziv>Amortizacija nematerijalne imovine</naziv>
+  </account>
+  <account>
+    <key>431</key>
+    <name>Depreciation of property, plant and equipment</name>
+    <naziv>Amortizacija materijalne imovine</naziv>
+  </account>
+  <account>
+    <key>432</key>
+    <name>Depreciation of cars and other vehicles for personal transportation </name>
+    <naziv>Amortizacija osobnih automobila i dr. sredstava za osobni prijevoz</naziv>
+  </account>
+  <account>
+    <key>433</key>
+    <name>Depreciation of property, plant and - management and selling department</name>
+    <naziv>Amortizacija objekata i opreme uprave i prodaje</naziv>
+  </account>
+  <account>
+    <key>434</key>
+    <name>Depreciation surplus due to revaluation of assets</name>
+    <naziv>Povećana amortizacija s temelja revalorizacije</naziv>
+  </account>
+  <account>
+    <key>435</key>
+    <name>Depreciation of biological assets (vineyards, orchards, live stock)</name>
+    <naziv>Amortizacija biološke imovine (vinogradi, voćnjaci, osnovno stado i sl.)</naziv>
+  </account>
+  <account>
+    <key>436</key>
+    <name>Tax not-deductable depreciation </name>
+    <naziv>Amortizacija iznad porezno dopuštene </naziv>
+  </account>
+  <account>
+    <key>44</key>
+    <name>VALUE ADJUSTMENT OF NON-CURRENT AND CURRENT ASSETS</name>
+    <naziv>VRIJEDNOSNO USKLAĐENJE DUGOTRAJNE I KRATKOTRAJNE IMOVINE</naziv>
+  </account>
+  <account>
+    <key>440</key>
+    <name>Value adjustment of non-current intangible assets (acc. 018)</name>
+    <naziv>Vrijednosno usklađenje dugotrajne nematerijalne imovine (018)</naziv>
+  </account>
+  <account>
+    <key>441</key>
+    <name>Value adjustment of property, plant and equipment</name>
+    <naziv>Vrijednosno usklađenje dugotrajne materijalne imovine </naziv>
+  </account>
+  <account>
+    <key>442</key>
+    <name>Value adjustment of non-current receivables (acc. 078)</name>
+    <naziv>Vrijednosno usklađenje dugotrajnih potraživanja (veza sa 078)</naziv>
+  </account>
+  <account>
+    <key>444</key>
+    <name>Value adjustment of deposit on banks, bills of exchange, cheques (acc. 109 and acc. 119)</name>
+    <naziv>Vrijednosno usklađenje depozita u bankama, mjenica, čekova i sl. (109 i dio 119)</naziv>
+  </account>
+  <account>
+    <key>445</key>
+    <name>Value adjustment of current receivables</name>
+    <naziv>Vrijednosno usklađenje kratkotrajnih potraživanja</naziv>
+  </account>
+  <account>
+    <key>446</key>
+    <name>Value adjustment of inventory</name>
+    <naziv>Vrijednosno usklađenje zaliha (veza s 319, 329, 359 i 369)</naziv>
+  </account>
+  <account>
+    <key>447</key>
+    <name>Value adjustment of advance payments</name>
+    <naziv>Vrijednosno usklađenje danih predujmova (veza s 379)</naziv>
+  </account>
+  <account>
+    <key>45</key>
+    <name>PROVISIONS</name>
+    <naziv>REZERVIRANJA (v. skupinu 28)</naziv>
+  </account>
+  <account>
+    <key>450</key>
+    <name>The cost of long term provision for risks within warranty period</name>
+    <naziv>Troškovi dugoročnog rezerviranja za rizike u jamstvenom (garancijskom) roku (čl. 11., st. 2. ZoPD)</naziv>
+  </account>
+  <account>
+    <key>451</key>
+    <name>The costs of long term provision arising from possible litigation losses </name>
+    <naziv>Troškovi dugoročnog rezerviranja za gubitke po započetim sudskim sporovima (čl. 11., st. 2. ZoPD)</naziv>
+  </account>
+  <account>
+    <key>452</key>
+    <name>The costs of long-term provision for renewal of natural resources</name>
+    <naziv>Troškovi dugoročnog rezerviranja za obnovu prirodnog bogatstva (čl. 11., st. 2. ZoPD)</naziv>
+  </account>
+  <account>
+    <key>453</key>
+    <name>The costs of long-term provision for severance payments</name>
+    <naziv>Troškovi dugoročnog rezerviranja za otpremnine (čl. 11., st. 2. ZoPD)</naziv>
+  </account>
+  <account>
+    <key>454</key>
+    <name>The costs of long-term provision for unused vacation days</name>
+    <naziv>Troškovi dugoroč. rez. za neiskorišteni godišnji odmor (čl. 11., st. 5. ZoPD i MRS 19) – vidi rač. 298</naziv>
+  </account>
+  <account>
+    <key>455</key>
+    <name>The costs of long-term provision for Company's restructuring</name>
+    <naziv>Troškovi dugoročnog rezerviranja za restrukturiranje poduzeća (MRS 37, t. 72. i HSFI t. 16.22)</naziv>
+  </account>
+  <account>
+    <key>456</key>
+    <name>The costs of long-term provision for pensions and other employment benefits</name>
+    <naziv>Troškovi dugoročnog rezerviranja za mirovine i slične troškove – obveze (MRS 19)</naziv>
+  </account>
+  <account>
+    <key>457</key>
+    <name>The costs of provision for onerous contracts</name>
+    <naziv>Troškovi rezerviranja po štetnim ugovorima (HSFI 16.21.)</naziv>
+  </account>
+  <account>
+    <key>459</key>
+    <name>The costs of other provision for other risk and charges</name>
+    <naziv>Troškovi ostalih dugoročnih rezerviranja i troškovi rizika</naziv>
+  </account>
+  <account>
+    <key>46</key>
+    <name>OTHER OPERATING COSTS</name>
+    <naziv> OSTALI TROŠKOVI POSLOVANJA</naziv>
+  </account>
+  <account>
+    <key>460</key>
+    <name>Daily allowances for business trips and other travel expenses</name>
+    <naziv>Dnevnice za službena putovanja i putni troškovi</naziv>
+  </account>
+  <account>
+    <key>461</key>
+    <name>Reimbursement of expenses , gifts and subsidies</name>
+    <naziv>Nadoknade troškova, darovi i potpore</naziv>
+  </account>
+  <account>
+    <key>462</key>
+    <name>Management board compensation</name>
+    <naziv>Troškovi članova uprave</naziv>
+  </account>
+  <account>
+    <key>463</key>
+    <name>Cost of internal representation and promotion</name>
+    <naziv>Troškovi reprezentacije i promidžbe (interne)</naziv>
+  </account>
+  <account>
+    <key>464</key>
+    <name>Insurance premiums</name>
+    <naziv>Premije osiguranja</naziv>
+  </account>
+  <account>
+    <key>465</key>
+    <name>Bank charges and costs of payment operations</name>
+    <naziv>Bankovne usluge i troškovi platnog prometa </naziv>
+  </account>
+  <account>
+    <key>466</key>
+    <name>Fees, compensations and other expenses</name>
+    <naziv>Članarine, nadoknade i slična davanja</naziv>
+  </account>
+  <account>
+    <key>467</key>
+    <name>Taxes which does not depend on results and charges</name>
+    <naziv>Porezi koji ne ovise o dobitku i pristojbe</naziv>
+  </account>
+  <account>
+    <key>468</key>
+    <name>Costs of rights to use</name>
+    <naziv>Troškovi prava korištenja (osim najmova)</naziv>
+  </account>
+  <account>
+    <key>469</key>
+    <name>Other operating costs- intangible</name>
+    <naziv>Ostali troškovi poslovanja – nematerijalni</naziv>
+  </account>
+  <account>
+    <key>47</key>
+    <name>FINANCIAL EXPENSES</name>
+    <naziv>FINANCIJSKI RASHODI</naziv>
+  </account>
+  <account>
+    <key>470</key>
+    <name>Interest expense from related parties</name>
+    <naziv>Kamate od povezanih društava</naziv>
+  </account>
+  <account>
+    <key>471</key>
+    <name>Exchange difference on translation of foreign operations with related party </name>
+    <naziv>Tečajne razlike iz odnosa s povezanim društvima</naziv>
+  </account>
+  <account>
+    <key>472</key>
+    <name>Other expense from operations with related party</name>
+    <naziv>Ostali troškovi iz odnosa s povezanim poduzetnicima </naziv>
+  </account>
+  <account>
+    <key>473</key>
+    <name>Interest expense from operations with third party</name>
+    <naziv>Kamate iz odnosa s nepovezanim društvima</naziv>
+  </account>
+  <account>
+    <key>474</key>
+    <name>Penalty interest</name>
+    <naziv>Zatezne kamate</naziv>
+  </account>
+  <account>
+    <key>475</key>
+    <name>Exchange difference on translation of foreign operations with third party</name>
+    <naziv>Tečajne razlike iz odnosa s nepovezanim društvima</naziv>
+  </account>
+  <account>
+    <key>476</key>
+    <name>Loss from sale of investments in shares, stakes, bonds and other securities (which are sold below cost)</name>
+    <naziv>Gubitci iz ulaganja u dionice, udjele, obveznice i dr. vrijednosne papire (koji su prodani ispod troška nabave – čl. 10. ZoPD</naziv>
+  </account>
+  <account>
+    <key>477</key>
+    <name>Cost of discounts given </name>
+    <naziv>Troškovi diskonta i nagodbi</naziv>
+  </account>
+  <account>
+    <key>478</key>
+    <name>Unrealized loss (expense) from financial assets</name>
+    <naziv>Nerealizirani gubitci (rashodi) od financ. imovine</naziv>
+  </account>
+  <account>
+    <key>479</key>
+    <name>Other financial expenses</name>
+    <naziv>Ostali financijski troškovi</naziv>
+  </account>
+  <account>
+    <key>48</key>
+    <name>OTHER EXPENSES</name>
+    <naziv>OSTALI POSLOVNI RASHODI</naziv>
+  </account>
+  <account>
+    <key>480</key>
+    <name>Additional rebates , discounts, claims and costs of samples</name>
+    <naziv>Trošak naknadnih popusta, sniženja, reklamacija i troškovi uzoraka</naziv>
+  </account>
+  <account>
+    <key>481</key>
+    <name>Bed debts and other assets write off </name>
+    <naziv>Otpisi vrijednosno neusklađenih potraživanja</naziv>
+  </account>
+  <account>
+    <key>482</key>
+    <name>Disposals of property, plant and equipment and intangible assets</name>
+    <naziv>Rashodi – otpisi nematerijalne i materijalne imovine</naziv>
+  </account>
+  <account>
+    <key>483</key>
+    <name>Inventory shortages and burglary costs</name>
+    <naziv>Manjkovi i provalne krađe na zalihama i drugim sredstvima</naziv>
+  </account>
+  <account>
+    <key>484</key>
+    <name>Penalties, compensation for damages occurred and contract related costs</name>
+    <naziv>Kazne, penali, nadoknade šteta i troškovi iz ugovora</naziv>
+  </account>
+  <account>
+    <key>485</key>
+    <name>Additionally found operating expenses </name>
+    <naziv>Naknadno utvrđeni troškovi poslovanja</naziv>
+  </account>
+  <account>
+    <key>486</key>
+    <name>Gifts/donations up to 2% of total income</name>
+    <naziv>Darovanje do 2% od ukupnog prihoda</naziv>
+  </account>
+  <account>
+    <key>487</key>
+    <name>Gifts/donations above 2% of total income and other donations</name>
+    <naziv>Darovanja iznad 2% od UP i dr. darovanja</naziv>
+  </account>
+  <account>
+    <key>488</key>
+    <name>Expenses from other activities</name>
+    <naziv>Troškovi iz drugih aktivnosti (izvan osnovne djelatnosti)</naziv>
+  </account>
+  <account>
+    <key>489</key>
+    <name>Other costs-expenses</name>
+    <naziv>Ostali troškovi – rashodi (čl. 7. ZoPD)</naziv>
+  </account>
+  <account>
+    <key>49</key>
+    <name>ALLOCATION OF COSTS</name>
+    <naziv>RASPORED TROŠKOVA</naziv>
+  </account>
+  <account>
+    <key>490</key>
+    <name>Allocation of costs to cost of conversion (cost of production) - (on acc. 60, 62, 63)</name>
+    <naziv>Raspored troškova za obračun proizvoda i usluga (prema HSFI 10 i MRS-u 2 i MRS-u 11) – uskladištivi troškovi (na račune 60, 62 i 63)</naziv>
+  </account>
+  <account>
+    <key>491</key>
+    <name>Allocation of management and administrative overheads to expenses for the year - (on acc. 72)</name>
+    <naziv>Raspored troškova za pokriće upravnih, administrativnih, prodajnih i drugih troškova (na račune 70 i 71)</naziv>
+  </account>
+  <account>
+    <key>6</key>
+    <name>WORK IN PROGRESS, FINISHED GOODS, MERCHANDISE GOODS AND NON-CURRENT ASSETS HELD FOR SALE</name>
+    <naziv>PROIZVODNJA, GOTOVI PROIZVODI, ROBA I DUGOTRAJNA IMOVINA NAMIJENJENA PRODAJI</naziv>
+  </account>
+  <account>
+    <key>60</key>
+    <name>WORK IN PROGRESS- CONVERSION COSTS</name>
+    <naziv>PROIZVODNJA – TROŠKOVI KONVERZIJE</naziv>
+  </account>
+  <account>
+    <key>600</key>
+    <name>Work in progress (allocation by cost driver, cost centres, working orders)</name>
+    <naziv>Proizvodnja u tijeku (razrada po serijama, nositeljima troškova, mjestima, pogonima, gradilištima, objektima, radnim nalozima i sl.)</naziv>
+  </account>
+  <account>
+    <key>601</key>
+    <name>Work in progress for services</name>
+    <naziv>Vrijednost usluga (u tijeku ili nedovršenih na datum bilance – MRS 2, t. 16.)</naziv>
+  </account>
+  <account>
+    <key>602</key>
+    <name>Production in cooperation </name>
+    <naziv>Vanjska proizvodnja (kooperacija i dr.)</naziv>
+  </account>
+  <account>
+    <key>605</key>
+    <name>Production process in free trade zone</name>
+    <naziv>Proizvodnja u slobodnoj zoni</naziv>
+  </account>
+  <account>
+    <key>606</key>
+    <name>Production in processing and manipulation phases</name>
+    <naziv>Proizvodnja u doradi i manipulaciji</naziv>
+  </account>
+  <account>
+    <key>607</key>
+    <name>Suspended production</name>
+    <naziv>Obustavljena proizvodnja</naziv>
+  </account>
+  <account>
+    <key>608</key>
+    <name>Work in progress under partnership agreement</name>
+    <naziv>Proizvodnja u tijeku iz ortačkog ugovora</naziv>
+  </account>
+  <account>
+    <key>609</key>
+    <name>Value adjustments of work in progress</name>
+    <naziv>Vrijednosno usklađivanje proizvodnje – usluga </naziv>
+  </account>
+  <account>
+    <key>61</key>
+    <name>UNFINISHED GOODS AND SEMI-MANUFACTURE GOODS</name>
+    <naziv>NEDOVRŠENI PROIZVODI I POLUPROIZVODI</naziv>
+  </account>
+  <account>
+    <key>610</key>
+    <name>Semi-manufacture goods on stock (analytics by the production stage)</name>
+    <naziv>Zalihe poluproizvoda (analitika prema osnovnim skupinama ili po stupnju dovršenosti)</naziv>
+  </account>
+  <account>
+    <key>611</key>
+    <name>Unfinished goods and semi-manufacture goods (analytics by products types)</name>
+    <naziv>Nedovršeni proizvodi i poluproizvodi (analitika po vrstama proizvoda)</naziv>
+  </account>
+  <account>
+    <key>619</key>
+    <name>Value adjustment of unfinished goods and semi-manufacture goods </name>
+    <naziv>Vrijednosno usklađivanje nedovršenih proizvoda i poluproizvoda</naziv>
+  </account>
+  <account>
+    <key>62</key>
+    <name>BIOLOGICAL ASSETS</name>
+    <naziv>BIOLOŠKA IMOVINA</naziv>
+  </account>
+  <account>
+    <key>620</key>
+    <name>Biological assets in progress</name>
+    <naziv>Zalihe biološke proizvodnje u toku</naziv>
+  </account>
+  <account>
+    <key>621</key>
+    <name>Biological assets for sale</name>
+    <naziv>Biloška imovina za prodaju</naziv>
+  </account>
+  <account>
+    <key>629</key>
+    <name>Value adjustment of biological assets</name>
+    <naziv>Vrijednosno usklađivanje biloške imovine</naziv>
+  </account>
+  <account>
+    <key>63</key>
+    <name>FINISHED GOODS</name>
+    <naziv>ZALIHE GOTOVIH PROIZVODA </naziv>
+  </account>
+  <account>
+    <key>630</key>
+    <name>Finished goods in warehouse</name>
+    <naziv>Gotovi proizvodi na skladištu (razrada za svako skladište a unutar toga po skupinama, tipovima, vrstama i sl.)</naziv>
+  </account>
+  <account>
+    <key>631</key>
+    <name>Finished goods in public warehouse</name>
+    <naziv>Gotovi proizvodi u javnom skladištu, silosu, i dr.</naziv>
+  </account>
+  <account>
+    <key>632</key>
+    <name>Finished goods given in commission sale</name>
+    <naziv>Gotovi proizvodi dani u komisijsku prodaju</naziv>
+  </account>
+  <account>
+    <key>633</key>
+    <name>Finished goods given in consignment sale</name>
+    <naziv>Gotovi proizvodi dani u konsignacijsku prodaju</naziv>
+  </account>
+  <account>
+    <key>634</key>
+    <name>Finished goods in processing, finishing and manipulation phases</name>
+    <naziv>Gotovi proizvodi u doradi, obradi i manipulaciji</naziv>
+  </account>
+  <account>
+    <key>635</key>
+    <name>Finished goods in free-trade zone</name>
+    <naziv>Gotovi proizvodi u slobodnoj zoni</naziv>
+  </account>
+  <account>
+    <key>636</key>
+    <name>Obsolete and slow moving inventory </name>
+    <naziv>Zalihe nekurentnih proizvoda i otpadaka</naziv>
+  </account>
+  <account>
+    <key>637</key>
+    <name>Finished goods in storefront</name>
+    <naziv>Gotovi proizvodi u izložbenim prostorima</naziv>
+  </account>
+  <account>
+    <key>638</key>
+    <name>Finished goods from partnership agreement</name>
+    <naziv>Gotovi proizvodi iz ortaštava</naziv>
+  </account>
+  <account>
+    <key>639</key>
+    <name>Value adjustment of finished goods </name>
+    <naziv>Vrijednosno usklađivanje zaliha gotovih proizvoda</naziv>
+  </account>
+  <account>
+    <key>64</key>
+    <name>FINISHED GOODS IN OWN STORES</name>
+    <naziv>GOTOVI PROIZVODI U VLASTITIM PRODAVAONICAMA</naziv>
+  </account>
+  <account>
+    <key>640</key>
+    <name>Finished goods in own stores</name>
+    <naziv>Gotovi proizvodi u prodaji u vlastitim prodavaonicama (analitika po prodavaonicama)</naziv>
+  </account>
+  <account>
+    <key>641</key>
+    <name>VAT included in value of goods</name>
+    <naziv>Uračunani PDV u vrijednosti proizvoda</naziv>
+  </account>
+  <account>
+    <key>642</key>
+    <name>Luxury tax included in value of goods</name>
+    <naziv>Uračunani porez na luksuz</naziv>
+  </account>
+  <account>
+    <key>648</key>
+    <name>Margin included in sale price of finished goods</name>
+    <naziv>Uračunana marža u prodajnoj cijeni gotovih proizvoda</naziv>
+  </account>
+  <account>
+    <key>649</key>
+    <name>Value adjustment of finished goods in own stores</name>
+    <naziv>Vrijednosno usklađivanje gotovih proizvoda u prodavaonicama</naziv>
+  </account>
+  <account>
+    <key>65</key>
+    <name>TOTAL COST OF MERCHANDISE GOODS - TOTAL PURCHASING COST</name>
+    <naziv>OBRAČUN TROŠKOVA NABAVE ROBE – TROŠKOVI KUPNJE</naziv>
+  </account>
+  <account>
+    <key>650</key>
+    <name>Payables purchase price</name>
+    <naziv>Kupovna cijena robe od dobavljača</naziv>
+  </account>
+  <account>
+    <key>651</key>
+    <name>Other dependant costs in relation with bringing merchandise goods on stock</name>
+    <naziv>Ostali troškovi nabave u svezi s dovođenjem robe na zalihu</naziv>
+  </account>
+  <account>
+    <key>652</key>
+    <name>Duties and other import duties</name>
+    <naziv>Carina i druge uvozne pristojbe za robu</naziv>
+  </account>
+  <account>
+    <key>653</key>
+    <name>Excise duties </name>
+    <naziv>Posebni porezi (trošarine)</naziv>
+  </account>
+  <account>
+    <key>659</key>
+    <name>Total cost of purchasing </name>
+    <naziv>Obračun nabave – trošak kupnje</naziv>
+  </account>
+  <account>
+    <key>66</key>
+    <name>MERCHANDISE GOODS</name>
+    <naziv>ROBA</naziv>
+  </account>
+  <account>
+    <key>660</key>
+    <name>Merchandise goods on stock</name>
+    <naziv>Roba u skladištu</naziv>
+  </account>
+  <account>
+    <key>661</key>
+    <name>Merchandise goods in others warehouse and in storefront</name>
+    <naziv>Roba u tuđem skladištu i izlozima</naziv>
+  </account>
+  <account>
+    <key>662</key>
+    <name>Merchandise goods given in commission and consignment sale</name>
+    <naziv>Roba dana u komisijsku ili konsignacijsku prodaju</naziv>
+  </account>
+  <account>
+    <key>663</key>
+    <name>Merchandise goods in stores</name>
+    <naziv>Roba u prodavaonicama</naziv>
+  </account>
+  <account>
+    <key>664</key>
+    <name>Tax included in value of merchandise goods</name>
+    <naziv>Uračunani porezi u robi</naziv>
+  </account>
+  <account>
+    <key>665</key>
+    <name>Merchandise goods in custom's warehouse "D" or in free-trade area</name>
+    <naziv>Roba u carinskom skladištu »D« ili u slobodnoj zoni</naziv>
+  </account>
+  <account>
+    <key>666</key>
+    <name>Finished goods in processing, finishing and manipulation phases</name>
+    <naziv>Roba u doradi, obradi i manipulaciji</naziv>
+  </account>
+  <account>
+    <key>667</key>
+    <name>Merchandise goods in transit</name>
+    <naziv>Roba na putu</naziv>
+  </account>
+  <account>
+    <key>668</key>
+    <name>Margin included in sale price of merchandise goods</name>
+    <naziv>Uračunana razlika u cijeni robe</naziv>
+  </account>
+  <account>
+    <key>669</key>
+    <name>Value adjustment of merchandise goods</name>
+    <naziv>Vrijednosno usklađivanje zaliha robe</naziv>
+  </account>
+  <account>
+    <key>67</key>
+    <name>ADVANCE PAYMENTS FOR MERCHANDISE GOODS </name>
+    <naziv>PREDUJMOVI ZA NABAVU ROBE</naziv>
+  </account>
+  <account>
+    <key>670</key>
+    <name>Advance payments for merchandise goods</name>
+    <naziv>Dani predujmovi za nabavu robe</naziv>
+  </account>
+  <account>
+    <key>671</key>
+    <name>Advance payments for merchandise goods import</name>
+    <naziv>Dani predujmovi uvozniku za nabavu robe</naziv>
+  </account>
+  <account>
+    <key>672</key>
+    <name>Advance payments to related party for merchandise goods</name>
+    <naziv>Dani predujmovi za robu povezanom društvu</naziv>
+  </account>
+  <account>
+    <key>679</key>
+    <name>Value adjustment of advance payments for merchandise goods</name>
+    <naziv>Vrijednosno usklađenje danih predujmova za robu</naziv>
+  </account>
+  <account>
+    <key>68</key>
+    <name>PROPERTIES AND ARTS HELD FOR SALE</name>
+    <naziv>NEKRETNINE I UMJETNINE za trgovanje</naziv>
+  </account>
+  <account>
+    <key>680</key>
+    <name>Property which is classified as held for sale- at cost</name>
+    <naziv>Nabavna vrijednost nekretnina za preprodaju (s porezom na promet)</naziv>
+  </account>
+  <account>
+    <key>681</key>
+    <name>Additions on the property held for sale</name>
+    <naziv>Troškovi dodatnog uređenja – dorade</naziv>
+  </account>
+  <account>
+    <key>682</key>
+    <name>Arts held for sale</name>
+    <naziv>Umjetnine u prodaji</naziv>
+  </account>
+  <account>
+    <key>683</key>
+    <name>Property which is classified as held for sale</name>
+    <naziv>Nekretnine za prodaju (uređene)</naziv>
+  </account>
+  <account>
+    <key>684</key>
+    <name>VAT included in value of arts</name>
+    <naziv>Uračunani PDV u umjetnine</naziv>
+  </account>
+  <account>
+    <key>687</key>
+    <name>Advance payments for the purchase of property which will be classified as held for sale</name>
+    <naziv>Predujmovi za kupnju nekretnina radi daljnje prodaje</naziv>
+  </account>
+  <account>
+    <key>688</key>
+    <name>Margin included in the sale price of property and arts held for sale</name>
+    <naziv>Uračunana razlika u cijeni nekretnina i umjetnina za daljnju prodaju</naziv>
+  </account>
+  <account>
+    <key>689</key>
+    <name>Impairment of property and arts held for sale</name>
+    <naziv>Vrijednosno usklađivanje nekretnina i umjetnina u prometu i predujmova</naziv>
+  </account>
+  <account>
+    <key>69</key>
+    <name>NON-CURRENT ASSETS HELD FOR SALE</name>
+    <naziv>DUGOTRAJNA IMOVINA NAMIJENJENA PRODAJI </naziv>
+  </account>
+  <account>
+    <key>690</key>
+    <name>Intangible assets held for sale</name>
+    <naziv>Nematerijalna imovina namijenjena prodaji</naziv>
+  </account>
+  <account>
+    <key>691</key>
+    <name>Other property, plant and equipment held for sale</name>
+    <naziv>Materijalna imovina namijenjena za prodaju</naziv>
+  </account>
+  <account>
+    <key>699</key>
+    <name>Impairment of property, plant and equipment held for sale</name>
+    <naziv>Vrijednosno usklađenje dugotrajne imovine namijenjena prodaji</naziv>
+  </account>
+  <account>
+    <key>7</key>
+    <name>EXPENSES AND INCOME FOR THE YEAR</name>
+    <naziv>POKRIĆE RASHODA I PRIHODI RAZDOBLJA</naziv>
+  </account>
+  <account>
+    <key>70</key>
+    <name>COST OF FINISHED GOODS SOLD AND COST OF SERVICES</name>
+    <naziv>TROŠKOVI PRODANIH ZALIHA PROIZVODA I USLUGA </naziv>
+  </account>
+  <account>
+    <key>700</key>
+    <name>Cost of goods sold</name>
+    <naziv>Trošak zaliha prodanih proizvoda (60, 62, 63 i 64)</naziv>
+  </account>
+  <account>
+    <key>701</key>
+    <name>Costs of rendering services</name>
+    <naziv>Troškovi realiziranih usluga (490 i 601)</naziv>
+  </account>
+  <account>
+    <key>702</key>
+    <name>Costs of unused capacity</name>
+    <naziv>Troškovi neiskorištenog kapaciteta (HSFI t. 10.18. i MRS 2 t. 13) </naziv>
+  </account>
+  <account>
+    <key>703</key>
+    <name>Cost of sale of material and obsolete inventory</name>
+    <naziv>Troškovi prodanih zaliha materijala i otpadaka (31, 32, 35 i 36)</naziv>
+  </account>
+  <account>
+    <key>704</key>
+    <name>Value adjustment of inventory</name>
+    <naziv>Rashodi zaliha proizvodnje (HSFI 10 i MRS 2)</naziv>
+  </account>
+  <account>
+    <key>705</key>
+    <name>Expenses which relates to previous periods- by mistake not show in previous periods</name>
+    <naziv>Greškom neiskazani rashodi proteklih razdoblja</naziv>
+  </account>
+  <account>
+    <key>706</key>
+    <name>Construction contracts losses</name>
+    <naziv>Gubitci iz ugovora o izgradnj (MRS 11, t. 36.)</naziv>
+  </account>
+  <account>
+    <key>707</key>
+    <name>Costs in relation with partnership agreement</name>
+    <naziv>Troškovi iz ugovora o ortaštvu</naziv>
+  </account>
+  <account>
+    <key>708</key>
+    <name>Cost of value adjustments of work in progress, semi-finished goods and finished goods</name>
+    <naziv>Troškovi vrijednosnog usklađenja proizvodnje u tijeku (609), poluproizvoda (629) i zaliha gotovih proizvoda (639 i 649)</naziv>
+  </account>
+  <account>
+    <key>71</key>
+    <name>COST OF GOODS SOLD</name>
+    <naziv>TROŠKOVI PRODANE ROBE</naziv>
+  </account>
+  <account>
+    <key>710</key>
+    <name>Costs of goods sold</name>
+    <naziv>Nabavna vrijednost prodane robe</naziv>
+  </account>
+  <account>
+    <key>711</key>
+    <name>Cost of property which is classified as held for sale</name>
+    <naziv>Nabavna vrijednost prodanih nekretnina i umjetnina</naziv>
+  </account>
+  <account>
+    <key>712</key>
+    <name>Costs which relates to property, plant and equipment held for sale</name>
+    <naziv>Troškovi dugotr. imov. namijenjeni prodaji</naziv>
+  </account>
+  <account>
+    <key>713</key>
+    <name>Costs of goods shortages ( due to evaporate), damages , breakage and goods write-off </name>
+    <naziv>Troškovi kala, rastepa, kvara i loma na robi i otpisi robe</naziv>
+  </account>
+  <account>
+    <key>714</key>
+    <name>Costs of replacement of goods within the warranty period</name>
+    <naziv>Troškovi zamjene robe u jamstvenom roku</naziv>
+  </account>
+  <account>
+    <key>715</key>
+    <name>Cost of good sold which relates to previous periods- by mistake not show in previous periods</name>
+    <naziv>Greškom neiskazani rashodi prodane robe u proteklim razdobljima u trgovini</naziv>
+  </account>
+  <account>
+    <key>718</key>
+    <name>Costs of value adjustments of merchandise goods and advance payments</name>
+    <naziv>Troškovi vrijednosnog usklađenja trgovačke robe i predujmova (669, 679, 689)</naziv>
+  </account>
+  <account>
+    <key>719</key>
+    <name>Impairment losses recognized on property, plant and equipment held for sale</name>
+    <naziv>Troškovi vrijednosnog usklađenja dugotrajne imovine namijenjene prodaji (699)</naziv>
+  </account>
+  <account>
+    <key>72</key>
+    <name>MANAGEMENT AND ADMINISTRATIVE OVERHEADS</name>
+    <naziv>TROŠKOVI ADMINISTRACIJE I OSTALI rashodi</naziv>
+  </account>
+  <account>
+    <key>720</key>
+    <name>Cost of management, selling costs and administrative overheads</name>
+    <naziv>Troškovi uprave, prodaje, administracije (491)</naziv>
+  </account>
+  <account>
+    <key>721</key>
+    <name>Other operational expenses</name>
+    <naziv>Ostali poslovni rashodi – nespomenuti</naziv>
+  </account>
+  <account>
+    <key>73</key>
+    <name>OTHER EXPENSES - FROM NOT-ORDINARY ACTIVITIES</name>
+    <naziv>IZVANREDNI – OSTALI RASHODI</naziv>
+  </account>
+  <account>
+    <key>730</key>
+    <name>Loss on sale of property, plant and equipment </name>
+    <naziv>Izvanredni rashodi od prodaje dugotrajne imovine (HSFI t. 8.35.)</naziv>
+  </account>
+  <account>
+    <key>731</key>
+    <name>Other expenses based on information which are material and which indicates than an asset was impaired at the balance sheet date</name>
+    <naziv>Izvanredni otpisi od otuđenja imovine koji su nastali neočekivano i u visokoj vrijednosti (HSFI t. 4.7. i MRS 10. t. 9.)</naziv>
+  </account>
+  <account>
+    <key>732</key>
+    <name>Losses due to dispossession or natural disasters on material assets</name>
+    <naziv>Gubitci zbog izvlaštenja ili zbog prirodnih katastrofa na važnom dijelu imovine</naziv>
+  </account>
+  <account>
+    <key>733</key>
+    <name>Other expenses due to uncommonly and rarely transactions</name>
+    <naziv>Izvanredni rashodi iz ostalih rijetkih i neobičnih događaja ili transakcija</naziv>
+  </account>
+  <account>
+    <key>734</key>
+    <name>Other expenses due to penalties, paid compensations and liabilities from subsequent events </name>
+    <naziv>Izvanredne kazne, penali, odštete, naknadno utvrđ. obveze i sl.</naziv>
+  </account>
+  <account>
+    <key>735</key>
+    <name>Unrealised losses</name>
+    <naziv>Nerealizirani gubitci</naziv>
+  </account>
+  <account>
+    <key>737</key>
+    <name>Losses from biological assets arising from valuation</name>
+    <naziv>Gubitci od procjene biološke imovine</naziv>
+  </account>
+  <account>
+    <key>74</key>
+    <name>SHARE IN PROFIT/LOSS OF ASSOCIATES</name>
+    <naziv>UDIO U GUBITKU I DOBITKU PRIDRUŽENIH PODUZETNIKA</naziv>
+  </account>
+  <account>
+    <key>740</key>
+    <name>Share in loss of an associates</name>
+    <naziv>Udio u gubitku pridruženih poduzetnika</naziv>
+  </account>
+  <account>
+    <key>745</key>
+    <name>Share in profit of an associates</name>
+    <naziv>Udio u dobitku od pridruženih poduzetnika</naziv>
+  </account>
+  <account>
+    <key>75</key>
+    <name>REVENUE FROM SALE OF GOODS AND RENDERING OF SERVICES</name>
+    <naziv>PRIHODI OD PRODAJE PROIZVODA I USLUGA</naziv>
+  </account>
+  <account>
+    <key>750</key>
+    <name>Sale of goods (analytics by goods or profit centres)</name>
+    <naziv>–Prihodi od prodaje proizvoda (analitika po proizvodima ili profitnim centrima)</naziv>
+  </account>
+  <account>
+    <key>751</key>
+    <name>Revenue from the rendering of services</name>
+    <naziv>Prihodi od prodaje usluga</naziv>
+  </account>
+  <account>
+    <key>752</key>
+    <name>Revenue from the rendering of construction services- construction contracts</name>
+    <naziv>Prihodi od graditeljskih usluga – iz ugovora o izgradnji (građevina, postrojenja, brodova i sl.)</naziv>
+  </account>
+  <account>
+    <key>753</key>
+    <name>Foreign sale of goods </name>
+    <naziv>Prihodi od prodaje dobara u inozemstvo (moguća analitika po vrstama proizvoda i zemljama)</naziv>
+  </account>
+  <account>
+    <key>754</key>
+    <name>Foreign revenue from the rendering of services </name>
+    <naziv>Prihodi od prodaje usluga u inozemstvo (moguća analitika po vrstama usluga i zemljama kupcima)</naziv>
+  </account>
+  <account>
+    <key>755</key>
+    <name>Sale of goods and rendering of services to companies in which we have participating interest</name>
+    <naziv>Prihodi od prodaje proizvoda i usluga poduzetnicima u kojima postoje sudjelujući interesi (do 20% udjela)</naziv>
+  </account>
+  <account>
+    <key>756</key>
+    <name>Sale of goods and rendering of services to related party</name>
+    <naziv>Prihodi od prodaje proizvoda i usluga ovisnim društvima (analitika po društvima)</naziv>
+  </account>
+  <account>
+    <key>757</key>
+    <name>Revenue from leases and rents</name>
+    <naziv>Prihodi od najmova i zakupa</naziv>
+  </account>
+  <account>
+    <key>758</key>
+    <name>Revenues form partnership agreement</name>
+    <naziv>Prihodi iz ortaštva</naziv>
+  </account>
+  <account>
+    <key>759</key>
+    <name>Other revenues from operations</name>
+    <naziv>Ostali prihodi od prodaje učinaka</naziv>
+  </account>
+  <account>
+    <key>76</key>
+    <name>REVENUE FROM SALE OF MERCHANDISE GOODS </name>
+    <naziv>PRIHODI OD PRODAJE TRGOVAČKE ROBE</naziv>
+  </account>
+  <account>
+    <key>760</key>
+    <name>Revenue from sale of goods</name>
+    <naziv>Prihodi od prodaje robe</naziv>
+  </account>
+  <account>
+    <key>761</key>
+    <name>Foreign sale of goods </name>
+    <naziv>Prihodi od prodaje robe na inozemnom tržištu</naziv>
+  </account>
+  <account>
+    <key>762</key>
+    <name>Revenue from the rendering of merchandise services</name>
+    <naziv>Prihodi od trgovačkih usluga</naziv>
+  </account>
+  <account>
+    <key>763</key>
+    <name>Income from sale of slow-moving inventory</name>
+    <naziv>Prihodi od prodaje nekurentne robe (robe u kvaru, ošte-ćenju, demodirana i sl.)</naziv>
+  </account>
+  <account>
+    <key>764</key>
+    <name>Income from sale of goods on loan granted</name>
+    <naziv>Prihodi od prodaje robe na kredit</naziv>
+  </account>
+  <account>
+    <key>765</key>
+    <name>Sale of goods and rendering of services to companies in which we have participating interest</name>
+    <naziv>Prihodi od prodaje robe poduzetnicima u kojima postoje sudjelujući interesi (do 20% udjela)</naziv>
+  </account>
+  <account>
+    <key>766</key>
+    <name>Sale of goods and rendering of services to related party</name>
+    <naziv>Prihodi od prodaje robe ovisnim društvima</naziv>
+  </account>
+  <account>
+    <key>767</key>
+    <name>Income from sale of goods on financial leasing</name>
+    <naziv>Prihodi od dane (prodane) robe u financijski lizing (najam)</naziv>
+  </account>
+  <account>
+    <key>768</key>
+    <name>Income from sale of property, plan and equipment and arts (held for sale)</name>
+    <naziv>Prihodi od preprodaje nekretnina i umjetnina</naziv>
+  </account>
+  <account>
+    <key>769</key>
+    <name>Other income from sale of goods and rendering of merchandise services</name>
+    <naziv>Ostali prihodi od prodaje roba i trgovačkih usluga</naziv>
+  </account>
+  <account>
+    <key>77</key>
+    <name>FINANCIAL INCOME</name>
+    <naziv>FINANCIJSKI PRIHODI</naziv>
+  </account>
+  <account>
+    <key>770</key>
+    <name>Interest income, foreign exchange difference, dividends to a related party </name>
+    <naziv>Kamate, tečajne razlike, dividende i sl. prihodi iz odnosa s povezanim poduzetnicima</naziv>
+  </account>
+  <account>
+    <key>771</key>
+    <name>Interest income </name>
+    <naziv>Prihodi od kamata</naziv>
+  </account>
+  <account>
+    <key>772</key>
+    <name>Income from exchange difference on translation of foreign operations</name>
+    <naziv>Prihodi od tečajnih razlika</naziv>
+  </account>
+  <account>
+    <key>773</key>
+    <name>Income from dividends and share in result</name>
+    <naziv>Prihodi od dividende i dobitaka iz udjela</naziv>
+  </account>
+  <account>
+    <key>774</key>
+    <name>Other financial income</name>
+    <naziv>Ostali financijski prihodi</naziv>
+  </account>
+  <account>
+    <key>775</key>
+    <name>Share of profit of an associate and income from participating interest (from investments in shares/stakes)</name>
+    <naziv>Dio prihoda od pridruženih poduzetnika i sudjelujućih interesa</naziv>
+  </account>
+  <account>
+    <key>776</key>
+    <name>Unrealized gains from financial assets</name>
+    <naziv>Nerealizirani dobitci (prihodi) od financijske imovine</naziv>
+  </account>
+  <account>
+    <key>777</key>
+    <name>Income from negative goodwill</name>
+    <naziv>Prihodi negativnog goodwilla</naziv>
+  </account>
+  <account>
+    <key>778</key>
+    <name>Other financial income</name>
+    <naziv>Ostali financijski prihodi</naziv>
+  </account>
+  <account>
+    <key>78</key>
+    <name>OTHER OPERATIONAL INCOME AND INCOME FROM NOT-ORDINARY ACTIVITIES</name>
+    <naziv>OSTALI POSLOVNI I IZVANREDNI PRIHODI</naziv>
+  </account>
+  <account>
+    <key>780</key>
+    <name>Income from liability write off and from discounts received</name>
+    <naziv>Prihodi od otpisa obveza i popusta</naziv>
+  </account>
+  <account>
+    <key>781</key>
+    <name>Net gain on disposal of assets, surpluses and evaluation</name>
+    <naziv>Prihodi od rezidualnih imovinskih stavki, viškova i procjena</naziv>
+  </account>
+  <account>
+    <key>782</key>
+    <name>Income from reversal of value adjustment and provisions and collected receivables written off</name>
+    <naziv>Prihodi od ukidanja rezerviranja i naknadno naplaćeni prihodi</naziv>
+  </account>
+  <account>
+    <key>783</key>
+    <name>Income from grants, subsidies and compensations</name>
+    <naziv>Prihodi od refundac., dotacija, subvencija i nadoknada</naziv>
+  </account>
+  <account>
+    <key>784</key>
+    <name>Income from revaluation surplus</name>
+    <naziv>Prihodi od revalorizacije – procjene</naziv>
+  </account>
+  <account>
+    <key>785</key>
+    <name>Other operational income</name>
+    <naziv>Ostali poslovni prihodi</naziv>
+  </account>
+  <account>
+    <key>786</key>
+    <name>Income from government grants</name>
+    <naziv>Prihodi od državnih potpora (HSFI 15 i MRS 20)</naziv>
+  </account>
+  <account>
+    <key>787</key>
+    <name>Gains from biological assets arising from valuation</name>
+    <naziv>Dobitci od procjene poljoprivrednih proizvoda i biološke imovine (HSFI, 17. t. 17.12 i MRS 41)</naziv>
+  </account>
+  <account>
+    <key>788</key>
+    <name>Proceeds from sale of property plant and equipment</name>
+    <naziv>Prihodi od izvanredne prodaje značajnog dijela imovine (zgrade, pogona, zemljišta)</naziv>
+  </account>
+  <account>
+    <key>789</key>
+    <name>Other income</name>
+    <naziv>Izvanredni – nepredviđeni prihodi (npr. veliki besplatni primitak, prihod koji nije proizašao iz redovitog poslovanja)</naziv>
+  </account>
+  <account>
+    <key>79</key>
+    <name>DIFFERENCE BETWEEN INCOME AND EXPENSES</name>
+    <naziv>RAZLIKA PRIHODA I RASHODA FINANCIJSKE GODINE</naziv>
+  </account>
+  <account>
+    <key>790</key>
+    <name>Difference between income and expenses</name>
+    <naziv>Razlika prihoda i rashoda (iz cjelokupnog poslovanja)</naziv>
+  </account>
+  <account>
+    <key>8</key>
+    <name>FINANCIAL RESULT AND OTHER COMPREHENSIVE INCOME</name>
+    <naziv>FINANCIJSKI REZULTAT POSLOVANJA I OSTALI SVEOBUHVATNI DOBITAK</naziv>
+  </account>
+  <account>
+    <key>80</key>
+    <name>PROFIT OR LOSS FOR THE YEAR</name>
+    <naziv>DOBITAK ILI GUBITAK razdoblja</naziv>
+  </account>
+  <account>
+    <key>800</key>
+    <name>Profit before tax</name>
+    <naziv>Dobitak prije oporezivanja</naziv>
+  </account>
+  <account>
+    <key>801</key>
+    <name>Loss before tax</name>
+    <naziv>Gubitak prije oporezivanja</naziv>
+  </account>
+  <account>
+    <key>803</key>
+    <name>Income tax expense</name>
+    <naziv>Porez na dobitak (gubitak)</naziv>
+  </account>
+  <account>
+    <key>804</key>
+    <name>Profit or loss for the year</name>
+    <naziv>Dobitak ili gubitak razdoblja</naziv>
+  </account>
+  <account>
+    <key>81</key>
+    <name>Profit or loss for the year attributable to others</name>
+    <naziv>dobitak ili gubitak razdoblja koji pripada drugima</naziv>
+  </account>
+  <account>
+    <key>810</key>
+    <name>Profit for the year attributable to ordinary equity holders of the parent</name>
+    <naziv>Dobitak pripisan imateljima kapitala matice</naziv>
+  </account>
+  <account>
+    <key>811</key>
+    <name>Loss for the year attributable to ordinary equity holders of the parent</name>
+    <naziv>Gubitak koji tereti imatelje kapitala matice</naziv>
+  </account>
+  <account>
+    <key>813</key>
+    <name>Profit for the year attributable to non- controlling interests</name>
+    <naziv>Dobitak pripisan manjinskom interesu</naziv>
+  </account>
+  <account>
+    <key>814</key>
+    <name>Loss for the year attributable to non- controlling interests</name>
+    <naziv>Gubitak koji tereti manjinski interes</naziv>
+  </account>
+  <account>
+    <key>88</key>
+    <name>OTHER COMPREHENSIVE INCOME</name>
+    <naziv>OSTALI SVEOBUHVATNI DOBITAK</naziv>
+  </account>
+  <account>
+    <key>880</key>
+    <name>Exchange differences on translation of foreign operations</name>
+    <naziv>Tečajne razlike iz preračuna inozemnog poslovanja</naziv>
+  </account>
+  <account>
+    <key>881</key>
+    <name>Changes in revaluation of property plant and equipment and intangible assets</name>
+    <naziv>Promjene revalorizacijskih rezervi dugotrajen materijalne i nematerijalne imovine</naziv>
+  </account>
+  <account>
+    <key>882</key>
+    <name>Net gain or loss on available-for- sale financial assets</name>
+    <naziv>Dobitak ili gubitak s osnove ponovnog vrednovanja financijske imovine raspoložive za prodaju</naziv>
+  </account>
+  <account>
+    <key>883</key>
+    <name>Net gain or loss on movement on cash flow hedges</name>
+    <naziv>Dobitak ili gubitak s osnove učinkovite zaštite novčanog toka</naziv>
+  </account>
+  <account>
+    <key>884</key>
+    <name>Net gain or loss from exchange differences on translation of foreign operations</name>
+    <naziv>Dobitak ili gubitak s osnove učinkovite zaštite neto ulaganja u inozemstvu</naziv>
+  </account>
+  <account>
+    <key>885</key>
+    <name>Share in comprehensive income/loss </name>
+    <naziv>Udio u ostalom sveobuhvatnom dobitku/gubitku pridruženih poduzetnika</naziv>
+  </account>
+  <account>
+    <key>886</key>
+    <name>Actuarial gains/losses on obligation</name>
+    <naziv>Aktuarski dobitci/gubitci po planovima definiranih primanja</naziv>
+  </account>
+  <account>
+    <key>887</key>
+    <name>Comprehensive income tax expense</name>
+    <naziv>Porez na ostali sveobuhvatni dobitak razdoblja</naziv>
+  </account>
+  <account>
+    <key>89</key>
+    <name>OTHER COMPREHENSIVE INCOME FOR THE YEAR, NET OF TAX</name>
+    <naziv>ostali ČISTI DOBITAK</naziv>
+  </account>
+  <account>
+    <key>890</key>
+    <name>Other comprehensive income for the year, net of tax</name>
+    <naziv>Neto ostali sveobuhvatni dobitak/gubitak razdoblja</naziv>
+  </account>
+  <account>
+    <key>891</key>
+    <name>Total comprehensive income or loss for the year, net of tax</name>
+    <naziv>Sveobuhvatni dobitak/gubitak razdoblja</naziv>
+  </account>
+  <account>
+    <key>892</key>
+    <name>Total comprehensive income/loss for the year, net of tax</name>
+    <naziv>Sveobuhvatna dobitak ili gubitak razdoblja</naziv>
+  </account>
+  <account>
+    <key>9</key>
+    <name>EQUITY AND RESERVES AND OF THE BALANCE SHEET ITEMS</name>
+    <naziv>KAPITAL I PRIČUVE TE IZVANBILANČNI ZAPISI</naziv>
+  </account>
+  <account>
+    <key>90</key>
+    <name>SHARE CAPITAL </name>
+    <naziv>TEMELJNI – (UPISANI) KAPITAL</naziv>
+  </account>
+  <account>
+    <key>900</key>
+    <name>Issued capital - paid in</name>
+    <naziv>Upisani temeljni kapital koji je plaćen</naziv>
+  </account>
+  <account>
+    <key>901</key>
+    <name>Issued capital - non controlling interests</name>
+    <naziv>Upisani temeljni kapital manjinskih članova</naziv>
+  </account>
+  <account>
+    <key>902</key>
+    <name>Issued capital- not paid in</name>
+    <naziv>Upisani kapital koji nije plaćen </naziv>
+  </account>
+  <account>
+    <key>903</key>
+    <name>Shareholders share in public limited company capital</name>
+    <naziv>Kapital (ulozi) članova javnog trgovačkog društva</naziv>
+  </account>
+  <account>
+    <key>904</key>
+    <name>Partners business stakes in limited partnership</name>
+    <naziv>Kapital (ulozi) komanditora komanditnog društva</naziv>
+  </account>
+  <account>
+    <key>905</key>
+    <name>Government capital in company</name>
+    <naziv>Državni kapital u udjelima</naziv>
+  </account>
+  <account>
+    <key>906</key>
+    <name>Members business stake in cooperative capital</name>
+    <naziv>Kapital članova zadruge</naziv>
+  </account>
+  <account>
+    <key>91</key>
+    <name>CAPITAL RESERVES</name>
+    <naziv>KAPITALNE PRIČUVE</naziv>
+  </account>
+  <account>
+    <key>910</key>
+    <name>Paid in stake/share above issued share capital</name>
+    <naziv>Uplaćeni udjeli – dionice iznad svote temeljnog kapitala</naziv>
+  </account>
+  <account>
+    <key>911</key>
+    <name>Capital reserves from additional payments in order to gain special rights in the Company (convertible bonds)</name>
+    <naziv>Kapitalne pričuve iz dodatnih uplata radi stjecanja posebnih prava u društvu (ili zamjenjivih obveznica)</naziv>
+  </account>
+  <account>
+    <key>912</key>
+    <name>Capital reserves from the additional payments of equity holders</name>
+    <naziv>Kapitalne pričuve iz uplata dodatnih činidbi</naziv>
+  </account>
+  <account>
+    <key>913</key>
+    <name>Decrease of share capital transferred to capital reserve </name>
+    <naziv>Kapitalne pričuve iz ostatka pri smanjenju temeljnog kapitala</naziv>
+  </account>
+  <account>
+    <key>914</key>
+    <name>Capital reserves from other sources</name>
+    <naziv>Kapitalne pričuve iz drugih izvora</naziv>
+  </account>
+  <account>
+    <key>915</key>
+    <name>Capital gain from sale of treasury shares - stakes</name>
+    <naziv>Kapitalni dobitak iz prodaje vlastitih udjela – dionica</naziv>
+  </account>
+  <account>
+    <key>916</key>
+    <name>Capital gains on the sale of shares issued</name>
+    <naziv>Kapitalni dobitak na prodane emitirane dionice</naziv>
+  </account>
+  <account>
+    <key>917</key>
+    <name>Investments in silent company transferred to capital reserves</name>
+    <naziv>Kapitalne pričuve iz ulaganja tajnog člana društva (čl. 148. ZTD-a)</naziv>
+  </account>
+  <account>
+    <key>919</key>
+    <name>Investments of entrepreneur transferred to capital reserves</name>
+    <naziv>Kapital iz ulaganja obrtnika dobitaša</naziv>
+  </account>
+  <account>
+    <key>92</key>
+    <name>RESERVES FROM RETAINED EARNINGS</name>
+    <naziv>PRIČUVE IZ DOBITKA</naziv>
+  </account>
+  <account>
+    <key>920</key>
+    <name>Legal reserves</name>
+    <naziv>Zakonske pričuve (u d.d.)</naziv>
+  </account>
+  <account>
+    <key>921</key>
+    <name>Reserves for treasury shares</name>
+    <naziv>Pričuve za vlastite dionice i udjele (čl. 233. i 406.a ZTD-a)</naziv>
+  </account>
+  <account>
+    <key>922</key>
+    <name>Treasury shares and stakes </name>
+    <naziv>Vlastite dionice i udjeli (odbitna- dugovna stavka)</naziv>
+  </account>
+  <account>
+    <key>923</key>
+    <name>Statutory reserves</name>
+    <naziv>Statutarne pričuve</naziv>
+  </account>
+  <account>
+    <key>924</key>
+    <name>Other reserves</name>
+    <naziv>Ostale pričuve</naziv>
+  </account>
+  <account>
+    <key>93</key>
+    <name>REVALUATION RESERVES</name>
+    <naziv>REVALORIZACIJSKE PRIČUVE</naziv>
+  </account>
+  <account>
+    <key>930</key>
+    <name>Revaluation reserves</name>
+    <naziv>Revalorizacijske pričuve</naziv>
+  </account>
+  <account>
+    <key>931</key>
+    <name>Revaluation reserves from previous periods</name>
+    <naziv>Revalorizacijske pričuve ranijih godina</naziv>
+  </account>
+  <account>
+    <key>932</key>
+    <name>Foreign currency translation reserves</name>
+    <naziv>Pričuve iz tečajnih razlika od ulaganja u inozemno poslovanje (MRS 21. t. 39.)</naziv>
+  </account>
+  <account>
+    <key>933</key>
+    <name>Available-for-sale reserves</name>
+    <naziv>Dobitci/gubitci od udjela u kapitalu do prestanka priznavanja (MRS 1. t. 95. i MRS 39. 55.b)</naziv>
+  </account>
+  <account>
+    <key>934</key>
+    <name>Cash-flow hedge reserves</name>
+    <naziv>Dobitci/gubitci iz zaštite novčanog toka do reklasifikacije (MRS 1. t. 95. i MRS 39. t. 100.)</naziv>
+  </account>
+  <account>
+    <key>935</key>
+    <name>Other accumulated comprehensive income / loss</name>
+    <naziv>Ostali akumulirani sveobuhvatni dobitci/gubitci – pričuve (MRS 1. t. 96.)</naziv>
+  </account>
+  <account>
+    <key>94</key>
+    <name>RETAINED EARNINGS OR ACCUMULATED LOSS</name>
+    <naziv>ZADRŽANI DOBITAK ILI PRENESENI GUBITAK</naziv>
+  </account>
+  <account>
+    <key>940</key>
+    <name>Retained earnings</name>
+    <naziv>Zadržani dobitak (iz prethodnih godina)</naziv>
+  </account>
+  <account>
+    <key>941</key>
+    <name>Accumulated loss</name>
+    <naziv>Preneseni gubitak (kumuliran u prethodnim godinama - analitika po članovima)</naziv>
+  </account>
+  <account>
+    <key>95</key>
+    <name>PROFIT OR LOSS FOR THE YEAR</name>
+    <naziv>DOBITAK ILI GUBITAK POSLOVNE GODINE</naziv>
+  </account>
+  <account>
+    <key>950</key>
+    <name>Profit or loss for the year</name>
+    <naziv>Dobitak poslovne godine</naziv>
+  </account>
+  <account>
+    <key>951</key>
+    <name>Loss for the year</name>
+    <naziv>Gubitak poslovne godine (analitika po članovima)</naziv>
+  </account>
+  <account>
+    <key>96</key>
+    <name>NON-CONTROLLING INTERESTS</name>
+    <naziv>MANJINSKI INTERES</naziv>
+  </account>
+  <account>
+    <key>960</key>
+    <name>Non-controlling interests</name>
+    <naziv>Manjinski interes</naziv>
+  </account>
+  <account>
+    <key>99</key>
+    <name>OFF- BALANCE SHEET BALANCE</name>
+    <naziv>IZVANBILANČNI ZAPISI</naziv>
+  </account>
+  <account>
+    <key>990</key>
+    <name>Property plant and equipment in use</name>
+    <naziv>Imovina - materijalna u optjecaju</naziv>
+  </account>
+  <account>
+    <key>991</key>
+    <name>Rights to use</name>
+    <naziv>Prava</naziv>
+  </account>
+  <account>
+    <key>992</key>
+    <name>Securities</name>
+    <naziv>Vrijednosni papiri</naziv>
+  </account>
+  <account>
+    <key>993</key>
+    <name>Securities in circulation</name>
+    <naziv>Vrijednosnice u manipulaciji</naziv>
+  </account>
+  <account>
+    <key>994</key>
+    <name>Calculation of profit from investment in securities</name>
+    <naziv>Obračun dobitka investicijskog pothvata</naziv>
+  </account>
+  <account>
+    <key>995</key>
+    <name>Source of property plant and equipment</name>
+    <naziv>Izvori materijalne imovine</naziv>
+  </account>
+  <account>
+    <key>996</key>
+    <name>Source of rights</name>
+    <naziv>Izvori prava</naziv>
+  </account>
+  <account>
+    <key>997</key>
+    <name>Liabilities for securities which are not in circulation</name>
+    <naziv>Obveze za vrijednosne papire koji nisu stavljeni u optjecaj</naziv>
+  </account>
+  <account>
+    <key>998</key>
+    <name>Liabilities for securities in circulation</name>
+    <naziv>Obveze za izdane vrijednosnice u manipulaciji</naziv>
+  </account>
+  <account>
+    <key>999</key>
+    <name>Liabilities due to investment project</name>
+    <naziv>Obveze s osnove investicijskog pothvata</naziv>
+  </account>
+</chart-of-accounts>

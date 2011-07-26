@@ -1,0 +1,174 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* training_room
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: training_room
+#: constraint:training.session:0
+msgid "You have a seance with a date inferior to the session's date."
+msgstr "You have a seance with a date inferior to the session's date."
+
+#. module: training_room
+#: field:res.partner,notify_location:0
+msgid "Notification for Location"
+msgstr "Notification for Location"
+
+#. module: training_room
+#: constraint:training.seance:0
+msgid "The minimum limit is greater than the maximum limit"
+msgstr "The minimum limit is greater than the maximum limit"
+
+#. module: training_room
+#: constraint:res.partner:0
+msgid "Error ! You can not create recursive associated members."
+msgstr "Greška ! Ne možete kreirati rekurzivne pridružene članove."
+
+#. module: training_room
+#: constraint:training.location:0
+msgid "This room has not seats !"
+msgstr "This room has not seats !"
+
+#. module: training_room
+#: model:ir.model,name:training_room.model_training_location
+#: view:training.location:0
+#: field:training.participation.stakeholder,seance_location_id:0
+#: view:training.seance:0
+#: field:training.seance,location_id:0
+#: view:training.session:0
+#: field:training.session,location_id:0
+msgid "Location"
+msgstr "Lokacija"
+
+#. module: training_room
+#: field:training.location,address_id:0
+msgid "Address"
+msgstr "Adresa"
+
+#. module: training_room
+#: help:training.seance,reserved:0
+msgid "Location is reserved "
+msgstr "Location is reserved "
+
+#. module: training_room
+#: help:training.seance,location_id:0
+#: help:training.session,location_id:0
+msgid "The location for seance"
+msgstr "The location for seance"
+
+#. module: training_room
+#: field:training.location,name:0
+msgid "Room"
+msgstr "Soba"
+
+#. module: training_room
+#: sql_constraint:training.participation.stakeholder:0
+msgid "The contact is already associated to the seance"
+msgstr "The contact is already associated to the seance"
+
+#. module: training_room
+#: model:ir.model,name:training_room.model_training_seance
+msgid "training.seance"
+msgstr "training.seance"
+
+#. module: training_room
+#: help:training.location,seats:0
+msgid "Total Seats"
+msgstr "Total Seats"
+
+#. module: training_room
+#: model:ir.model,name:training_room.model_training_participation_stakeholder
+msgid "training.participation.stakeholder"
+msgstr "training.participation.stakeholder"
+
+#. module: training_room
+#: model:ir.module.module,description:training_room.module_meta_information
+msgid "The module training_room helps the user to manage the training's location"
+msgstr "The module training_room helps the user to manage the training's location"
+
+#. module: training_room
+#: constraint:training.session:0
+msgid "You have a seance with a later date to the session's end date."
+msgstr "You have a seance with a later date to the session's end date."
+
+#. module: training_room
+#: model:ir.module.module,shortdesc:training_room.module_meta_information
+msgid "Training Room"
+msgstr "Training Room"
+
+#. module: training_room
+#: field:training.seance,reserved:0
+msgid "Reserved"
+msgstr "Reserved"
+
+#. module: training_room
+#: constraint:training.seance:0
+msgid "You have a session with a date inferior to the seance's date"
+msgstr "You have a session with a date inferior to the seance's date"
+
+#. module: training_room
+#: view:training.location:0
+msgid "Location Description"
+msgstr "Location Description"
+
+#. module: training_room
+#: help:training.seance,seats:0
+#: help:training.session,seats:0
+msgid "Maximum seats available in location"
+msgstr "Maximum seats available in location"
+
+#. module: training_room
+#: constraint:training.participation.stakeholder:0
+msgid "The request is not linked to a session of the seance"
+msgstr "The request is not linked to a session of the seance"
+
+#. module: training_room
+#: model:ir.actions.act_window,name:training_room.training_location_new_act
+#: model:ir.ui.menu,name:training_room.training_config_locations_new_mi
+msgid "New Room"
+msgstr "New Room"
+
+#. module: training_room
+#: view:training.location:0
+msgid "Locations"
+msgstr "Lokacije"
+
+#. module: training_room
+#: field:training.seance,seats:0
+#: field:training.session,seats:0
+msgid "Maximum Seats"
+msgstr "Maximum Seats"
+
+#. module: training_room
+#: model:ir.model,name:training_room.model_training_session
+msgid "training.session"
+msgstr "training.session"
+
+#. module: training_room
+#: model:ir.actions.act_window,name:training_room.training_location_all_act
+#: model:ir.ui.menu,name:training_room.training_config_locations_mi
+msgid "Rooms"
+msgstr "Sobe"
+
+#. module: training_room
+#: field:training.location,seats:0
+msgid "Seats"
+msgstr "Seats"
+
+#. module: training_room
+#: model:ir.model,name:training_room.model_res_partner
+#: field:training.location,partner_id:0
+msgid "Partner"
+msgstr "Partner"
+

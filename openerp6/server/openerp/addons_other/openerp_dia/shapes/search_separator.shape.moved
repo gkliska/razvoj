@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
+  <name>shape - search_separator</name>
+  <description>search_separator</description>
+  <icon>search_separator.png</icon>
+  <textbox x1="1" y1="-1" x2="90" y2="0.5"/> 
+  <svg:svg>
+  </svg:svg>
+</shape>

@@ -1,0 +1,82 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* sale_pricelist_recalculation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_pricelist_recalculation
+#: code:addons/sale_pricelist_recalculation/wizard/wizard_sale_pricelist_recalculation.py:41
+#, python-format
+msgid "The Pricelist is already applied to the sales order!"
+msgstr "The Pricelist is already applied to the sales order!"
+
+#. module: sale_pricelist_recalculation
+#: model:ir.module.module,description:sale_pricelist_recalculation.module_meta_information
+msgid "\n"
+"        This module adds a wizard on sales order which will let the user change the pricelist\n"
+"        and the concerned sale order lines will take an effect.\n"
+"     "
+msgstr "\n"
+"        This module adds a wizard on sales order which will let the user change the pricelist\n"
+"        and the concerned sale order lines will take an effect.\n"
+"     "
+
+#. module: sale_pricelist_recalculation
+#: model:ir.actions.act_window,name:sale_pricelist_recalculation.sale_pricelist_act_window
+msgid "Change Pricelist"
+msgstr "Change Pricelist"
+
+#. module: sale_pricelist_recalculation
+#: code:addons/sale_pricelist_recalculation/wizard/wizard_sale_pricelist_recalculation.py:51
+#, python-format
+msgid "PriceList cannot be changed! Make sure the Sales Order is in \"Quotation\" state!"
+msgstr "PriceList cannot be changed! Make sure the Sales Order is in \"Quotation\" state!"
+
+#. module: sale_pricelist_recalculation
+#: code:addons/sale_pricelist_recalculation/wizard/wizard_sale_pricelist_recalculation.py:41
+#: code:addons/sale_pricelist_recalculation/wizard/wizard_sale_pricelist_recalculation.py:51
+#, python-format
+msgid "Warning"
+msgstr "Upozorenje"
+
+#. module: sale_pricelist_recalculation
+#: model:ir.model,name:sale_pricelist_recalculation.model_sale_extended_wizard
+msgid "Sale Extended wizard"
+msgstr "Sale Extended wizard"
+
+#. module: sale_pricelist_recalculation
+#: view:sale.extended.wizard:0
+msgid "Close"
+msgstr "Zatvori"
+
+#. module: sale_pricelist_recalculation
+#: field:sale.extended.wizard,pricelist_id:0
+msgid "Pricelist"
+msgstr "Pricelist"
+
+#. module: sale_pricelist_recalculation
+#: model:ir.module.module,shortdesc:sale_pricelist_recalculation.module_meta_information
+msgid "Sale Pricelist Recalculation"
+msgstr "Sale Pricelist Recalculation"
+
+#. module: sale_pricelist_recalculation
+#: view:sale.extended.wizard:0
+msgid "Price Change"
+msgstr "Price Change"
+
+#. module: sale_pricelist_recalculation
+#: view:sale.extended.wizard:0
+msgid "Change"
+msgstr "Promjeni"
+

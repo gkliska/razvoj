@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+    <record id="act_report_xml_view_aeroo_ooo" model="ir.ui.view">
+        <field name="name">ir.actions.report.xml.aeroo.form1</field>
+        <field name="model">ir.actions.report.xml</field>
+        <field name="type">form</field>
+		<field name="inherit_id" ref="report_aeroo.act_report_xml_view1"/>
+        <field name="arch" type="xml">
+            <field name="active" position="before">
+                <field name="process_sep"/>
+            </field>
+        </field>
+    </record>
+
+    <wizard string="Configure OpenOffice.org connection" model="oo.config" name="aeroo.config_wizard" menu="False" id="wizard_oo_config" />
+    <menuitem name="Configure OpenOffice.org connection" action="wizard_oo_config" type="wizard" id="menu_oo_config_wizard" icon="STOCK_CONVERT" parent="report_aeroo.menu_ir_action_aeroo_reports_xml"/>
+
+    </data>
+</openerp>

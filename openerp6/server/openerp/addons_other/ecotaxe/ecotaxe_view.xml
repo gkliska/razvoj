@@ -1,0 +1,258 @@
+<terp>
+
+     <data>
+               <!-- ajout champ ecotaxe tree produit -->
+              <record model="ir.ui.view" id="product_product_tree_view">
+			<field name="name">product.product.tree</field>
+			<field name="model">product.product</field>
+			<field name="inherit_id" ref="product.product_product_tree_view" />
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Products" colors="red:virtual_available&lt;0;blue:state in ['draft', 'end', 'obsolete']">
+					<field name="ecotaxe"/>
+				</tree>
+			</field>
+		</record>
+            
+            <!-- ajout champ eco dans le tree product variant -->
+           <record model="ir.ui.view" id="product_variant_tree_view">
+                   <field name="name">product.variant.tree</field>
+                   <field name="model">product.product</field>
+		   <field name="inherit_id" ref="product.product_variant_tree_view" />
+		   <field name="type">tree</field>
+                   <field name="arch" type="xml">
+                   	<tree string="Product Variant">
+                    		<field name="ecotaxe"/>
+			</tree>
+		   </field>
+	   </record>
+
+	   <!-- ajout champ eco dans le form product variant -->
+           <record model="ir.ui.view" id="product_variant_form_view">
+			<field name="name">product.variant.form</field>
+			<field name="model">product.product</field>
+			<field name="inherit_id" ref="product.product_variant_form_view" />
+                        <field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Product Variant">
+					<field name="ecotaxe"/>
+				</form>
+			</field>
+		</record>
+
+           <!-- ajout champ eco detail commande -->
+   	   <record model="ir.ui.view" id="view_order_line_tree">
+		<field name="name">sale.order.line.tree</field>
+		<field name="model">sale.order.line</field>
+		<field name="inherit_id" ref="sale.view_order_line_tree" />
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+				<field name="price_unit" position="before" >
+					<field name="ecotaxe_order"/>
+				</field>
+		</field>
+	  </record>
+
+	<record model="ir.ui.view" id="product_supplierinfo_form_view">
+		<field name="name">product.supplierinfo.form.view</field>
+		<field name="model">product.supplierinfo</field>
+		<field name="inherit_id" ref="product.product_supplierinfo_form_view" />
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<field name="delay" position="after">
+				<field name="ecotaxe"/>
+			</field>
+		</field>
+	</record>
+		<record model="ir.ui.view" id="product_supplierinfo_tree_view">
+			<field name="name">product.supplierinfo.tree.view</field>
+			<field name="model">product.supplierinfo</field>
+			<field name="inherit_id" ref="product.product_supplierinfo_tree_view" />
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<field name="delay" position="after">
+					<field name="ecotaxe"/>
+				</field>
+			</field>
+		</record>
+
+
+	<record model="ir.ui.view" id="view_order_line_form2">
+		<field name="name">sale.order.line.form2</field>
+		<field name="model">sale.order.line</field>
+		<field name="inherit_id" ref="sale.view_order_line_form2" />
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+				<field position="before" name="discount">
+					<field name="ecotaxe_order"/>
+				</field>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="view_order_form">
+		<field name="name">sale.order.form</field>
+		<field name="model">sale.order</field>
+		<field name="inherit_id" ref="sale.view_order_form" />
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<field position="before" name="discount">
+				<field name="ecotaxe_order" />
+			</field>
+		</field>
+	</record>
+	<record model="ir.ui.view" id="view_order_form2">
+		<field name="name">sale.order.form</field>
+		<field name="model">sale.order</field>
+		<field name="inherit_id" ref="sale.view_order_form" />
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<field position="before" name="price_net">
+				<field name="ecotaxe_order" />
+			</field>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="view_order_form3">
+		<field name="name">sale.order.form</field>
+		<field name="model">sale.order</field>
+		<field name="inherit_id" ref="sale.view_order_form" />
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<field position="after" name="amount_total">
+				<field name="amount_ecotaxe" />
+			</field>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="view_invoice_line_tree1">
+		<field name="name">account.invoice.line.tree</field>
+		<field name="model">account.invoice.line</field>
+		<field name="inherit_id" ref="account.view_invoice_line_tree" />	
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+			<field name="price_unit" position="before" >
+				<field name="ecotaxe_invoice"/>
+			</field>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="view_invoice_line_form1">
+		<field name="name">account.invoice.line.form</field>
+		<field name="model">account.invoice.line</field>
+		<field name="inherit_id" ref="account.view_invoice_line_form" />	
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<field name="price_unit" position="before" >
+				<field name="ecotaxe_invoice"/>
+			</field>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="invoice_supplier_form">
+		<field name="name">account.invoice.supplier.form</field>
+		<field name="model">account.invoice</field>
+		<field name="inherit_id" ref="account.invoice_supplier_form" />
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<field name="price_unit" position="before" >
+				<field name="ecotaxe_invoice"/>
+			</field>
+
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="invoice_supplier_form2">
+		<field name="name">account.invoice.supplier.form</field>
+		<field name="model">account.invoice</field>
+		<field name="inherit_id" ref="account.invoice_supplier_form" />
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+				<button name="invoice_cancel" position="replace" >
+					<field name="amount_ecotaxe"/>
+					<button name="invoice_cancel" states="draft,proforma,sale,open" string="Cancel"/>
+				</button>
+		</field>
+	</record>
+	
+	<record model="ir.ui.view" id="invoice_form2">
+		<field name="name">account.invoice.form</field>
+		<field name="model">account.invoice</field>
+		<field name="inherit_id" ref="account.invoice_form" />
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+				<button name="invoice_cancel" position="replace" >
+					<field name="amount_ecotaxe"/>
+					<button name="invoice_cancel" states="draft,proforma,sale,open" string="Cancel"/>
+				</button>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="purchase_order_line_form2">
+		<field name="name">purchase.order.line.form</field>
+		<field name="model">purchase.order.line</field>
+		<field name="inherit_id" ref="purchase.purchase_order_line_form"/>  
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<field name="price_subtotal" position="before">
+				<field name="ecotaxe_purchase"/>
+			</field>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="purchase_order_line_tree2">
+		<field name="name">purchase.order.line.tree</field>
+		<field name="model">purchase.order.line</field>
+		<field name="inherit_id" ref="purchase.purchase_order_line_tree"/>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+			<field name="price_subtotal" position="before">
+				<field name="ecotaxe_purchase"/>
+			</field>	
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="purchase_order_form2">
+		<field name="name">purchase.order.form</field>
+		<field name="model">purchase.order</field>
+		<field name="inherit_id" ref="purchase.purchase_order_form"/>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+				<button name="purchase_confirm" position="replace" >
+					<field name="amount_ecotaxe"/>
+					<button name="purchase_confirm" states="draft" string="Confirm Purchase Order"/>
+				</button>
+			
+		</field>
+	</record>
+
+
+	<report id="account_invoices" 
+			string="Invoices (Ecot)" 
+			model="account.invoice" 
+			name="account.invoice.ecotaxe" 
+			rml="ecotaxe/report/invoice.rml"
+			sxw="ecotaxe/report/invoice.sxw"
+			auto="False"/>
+
+     	<report
+		id="report_sale_order"
+		string="Print Order (Ecot)"
+		model="sale.order"
+		name="sale.order.ecotaxe"
+		rml="ecotaxe/report/order.rml"
+		sxw="ecotaxe/report/order.sxw"
+		auto="False"/>
+
+	
+	     	<report
+		id="report_purchase_order"
+		string="Print Order (Ecot)"
+		model="purchase.order"
+		name="purchase.order.ecotaxe"
+		rml="ecotaxe/report/purchase.rml"
+		sxw="ecotaxe/report/purchase.sxw"
+		auto="False"/>
+
+	</data>
+
+</terp> 

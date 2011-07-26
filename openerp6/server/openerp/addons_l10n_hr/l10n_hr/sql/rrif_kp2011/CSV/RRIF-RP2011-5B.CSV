@@ -1,0 +1,17 @@
+kljuc;naziv
+5;MJESTA I NOSITELJI TROŠKOVA (B. u djelatnosti trgovine)
+50;TROŠKOVI UPRAVE I ADMINISTRACIJA
+500;Materijal u troškovima uprave i administracije
+501;Plaæe u troškovima uprave i prodaje
+502;Amortizacija u troškovima uprave i administracije
+503;Drugi troškovi uprave i prodaje (Razrada npr. dnevnica, osiguranje, bankovni troškovi, reprezentacija itd.)
+51;TROŠKOVI PRODAJE
+510;Materijal u troškovima prodaje
+511;Plaæe u troškovima prodaje
+512;Amortizacija u troškovima prodaje
+513;Drugi troškovi prodaje (Razrada npr. otpreme pošiljaka, fakturiranje, propaganda, naplata ambalaža, omotni papir, troškovi izvoza, troškovi posredništva itd.)
+59;RASPORED TROŠKOVA
+590;Raspored troškova na zalihe proizvodnje i usluga
+591;Raspored troškova u rashode na teret prihoda
+5910;Raspored troškova uprave i administracije
+5911;Raspored troškova uprave

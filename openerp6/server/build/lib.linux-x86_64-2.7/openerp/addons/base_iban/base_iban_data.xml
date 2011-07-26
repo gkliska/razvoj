@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!--
+        Default bank account description
+        -->
+        <record id="bank_iban" model="res.partner.bank.type">
+            <field name="name">IBAN Account</field>
+            <field name="code">iban</field>
+        </record>
+        <record id="bank_iban_field" model="res.partner.bank.type.field">
+            <field name="name">iban</field>
+            <field name="bank_type_id" ref="bank_iban"/>
+            <field eval="True" name="required"/>
+            <field eval="False" name="readonly"/>
+        </record>
+        <record id="bank_swift_field" model="res.partner.bank.type.field">
+            <field name="name">bic</field>
+            <field name="bank_type_id" ref="bank_iban"/>
+            <field eval="True" name="required"/>
+            <field eval="False" name="readonly"/>
+        </record>
+        <record id="bank_country_field" model="res.partner.bank.type.field">
+            <field name="name">country_id</field>
+            <field name="bank_type_id" ref="bank_iban"/>
+            <field eval="False" name="required"/>
+            <field eval="False" name="readonly"/>
+        </record>
+        <record id="bank_zip_field" model="res.partner.bank.type.field">
+            <field name="name">zip</field>
+            <field name="bank_type_id" ref="bank_iban"/>
+            <field eval="False" name="required"/>
+            <field eval="False" name="readonly"/>
+        </record>
+        <record id="bank_acc_number_field" model="res.partner.bank.type.field">
+            <field name="name">acc_number</field>
+            <field name="bank_type_id" ref="bank_iban"/>
+            <field eval="False" name="required"/>
+            <field eval="True" name="readonly"/>
+        </record>
+    </data>
+</openerp>

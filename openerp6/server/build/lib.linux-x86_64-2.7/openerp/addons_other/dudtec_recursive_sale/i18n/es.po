@@ -1,0 +1,258 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* dudtec_recursive_sale
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.0-rc1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-12-09 13:15:14+0000\n"
+"PO-Revision-Date: 2010-12-10 09:37+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Advance Invoice"
+msgstr "Avanzar factura"
+
+#. module: dudtec_recursive_sale
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "The Object name must start with x_ and not contain any special character !"
+
+#. module: dudtec_recursive_sale
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Invalid model name in the action definition."
+
+#. module: dudtec_recursive_sale
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "Invalid XML for View Architecture!"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Sale Order Lines"
+msgstr "Lineas de pedidos de venta"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Create Invoice"
+msgstr "Crear facturas"
+
+#. module: dudtec_recursive_sale
+#: constraint:ir.ui.menu:0
+msgid "Error ! You can not create recursive Menu."
+msgstr "Error ! You can not create recursive Menu."
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Make Invoices"
+msgstr "Hacer facturas"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Conditions"
+msgstr "Condiciones"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Invoice Lines"
+msgstr "Lineas de facturación"
+
+#. module: dudtec_recursive_sale
+#: model:ir.model,name:dudtec_recursive_sale.model_sale_order_line
+msgid "Sale Order Line"
+msgstr "Linea de pedido de venta"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Recreate Procurement"
+msgstr "Recreate Procurement"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Procurement Corrected"
+msgstr "Procurement Corrected"
+
+#. module: dudtec_recursive_sale
+#: model:ir.actions.act_window,name:dudtec_recursive_sale.sale_order_planned_action
+#: model:ir.ui.menu,name:dudtec_recursive_sale.sale_menu
+msgid "Rental contracts"
+msgstr "Contratos de alquiler"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Invoice Corrected"
+msgstr "Factura corregida"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Sales Order Lines"
+msgstr "Lineas de pedido de ventas"
+
+#. module: dudtec_recursive_sale
+#: selection:sale.order.line,frecuency:0
+msgid "Punctual"
+msgstr "Puntual"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Set to Draft"
+msgstr "Set to Draft"
+
+#. module: dudtec_recursive_sale
+#: selection:sale.order.line,frecuency:0
+msgid "Four-monthly planning"
+msgstr "Planificación cuatrimestral"
+
+#. module: dudtec_recursive_sale
+#: field:sale.order,plan_duration:0
+msgid "Duration (Months)"
+msgstr "Duración(meses)"
+
+#. module: dudtec_recursive_sale
+#: selection:sale.order.line,frecuency:0
+msgid "Biweekly planning"
+msgstr "Planificación quincenal"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Other Information"
+msgstr "Otra información"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Untaxed amount"
+msgstr "Cantidad sin impuestos"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Cancel Order"
+msgstr "Cancelar pedido"
+
+#. module: dudtec_recursive_sale
+#: selection:sale.order.line,frecuency:0
+msgid "Quarterly planning"
+msgstr "Planificación trimestral"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Dates"
+msgstr "Fechas"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Compute"
+msgstr "Calcular"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Related Invoices"
+msgstr "Related Invoices"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Create planning"
+msgstr "Crear planificación"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Notes"
+msgstr "Notas"
+
+#. module: dudtec_recursive_sale
+#: model:ir.model,name:dudtec_recursive_sale.model_sale_order
+msgid "Sale Order"
+msgstr "Pedido de venta"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Taxes"
+msgstr "Impuestos"
+
+#. module: dudtec_recursive_sale
+#: selection:sale.order.line,frecuency:0
+msgid "Annual planning"
+msgstr "Planificación anual"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Logistic"
+msgstr "Logistica"
+
+#. module: dudtec_recursive_sale
+#: selection:sale.order.line,frecuency:0
+msgid "Semiannual planning"
+msgstr "Planificación semestral"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "History"
+msgstr "Historial"
+
+#. module: dudtec_recursive_sale
+#: selection:sale.order.line,frecuency:0
+msgid "Monthly planning"
+msgstr "Planificación mensual"
+
+#. module: dudtec_recursive_sale
+#: field:sale.order.line,frecuency:0
+msgid "Planning frecuency"
+msgstr "Frecuencia de planificación"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Qty"
+msgstr "Qty"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "States"
+msgstr "States"
+
+#. module: dudtec_recursive_sale
+#: selection:sale.order.line,frecuency:0
+msgid "Bimonthly planning"
+msgstr "Planificación bimensual"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Extra Info"
+msgstr "Información extra"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "UoM"
+msgstr "UoM"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "References"
+msgstr "Referencias"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Recreate Invoice"
+msgstr "Recreate Invoice"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Sales Order"
+msgstr "Pedido de ventas"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Order Line"
+msgstr "Linea de pedido"
+
+#. module: dudtec_recursive_sale
+#: view:sale.order:0
+msgid "Stock Moves"
+msgstr "Movimientos de stock"
+

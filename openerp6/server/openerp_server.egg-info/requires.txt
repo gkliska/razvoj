@@ -1,0 +1,16 @@
+lxml>=2.1.5
+mako
+python-dateutil
+psycopg2
+pychart
+pydot
+pytz
+reportlab
+caldav
+pyyaml
+pywebdav
+feedparser
+simplejson >= 2.0
+
+[SSL]
+pyopenssl

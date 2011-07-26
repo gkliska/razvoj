@@ -1,0 +1,638 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* base_setup
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-01-11 11:14+0000\n"
+"PO-Revision-Date: 2011-01-25 11:19+0000\n"
+"Last-Translator: Treefeed Xavier <Unknown>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-04-29 05:03+0000\n"
+"X-Generator: Launchpad (build 12758)\n"
+
+#. module: base_setup
+#: field:base.setup.company,city:0
+msgid "City"
+msgstr "Город"
+
+#. module: base_setup
+#: view:base.setup.installer:0
+msgid "Install"
+msgstr "Установить"
+
+#. module: base_setup
+#: field:base.setup.installer,account_voucher:0
+msgid "Invoicing"
+msgstr "Выставление счетов"
+
+#. module: base_setup
+#: field:base.setup.installer,hr:0
+msgid "Human Resources"
+msgstr "Управление персоналом"
+
+#. module: base_setup
+#: field:base.setup.company,email:0
+msgid "E-mail"
+msgstr "Эл.почта"
+
+#. module: base_setup
+#: field:base.setup.company,account_no:0
+msgid "Bank Account No"
+msgstr "Банковский счет №"
+
+#. module: base_setup
+#: field:base.setup.installer,profile_tools:0
+msgid "Extra Tools"
+msgstr "Доп. инструменты"
+
+#. module: base_setup
+#: field:base.setup.company,rml_footer1:0
+msgid "Report Footer 1"
+msgstr "Нижний колонтитул отчета 1"
+
+#. module: base_setup
+#: help:base.setup.installer,mrp:0
+msgid ""
+"Helps you manage your manufacturing processes and generate reports on those "
+"processes."
+msgstr ""
+"Помагает вам управлять процессами производства и создавать отчеты об этих "
+"процессах."
+
+#. module: base_setup
+#: help:base.setup.installer,marketing:0
+msgid "Helps you manage your marketing campaigns step by step."
+msgstr ""
+"Помогает вам управлять вашими маркетинговыми кампаниями, шаг за шагом."
+
+#. module: base_setup
+#: view:base.setup.config:0
+msgid "Your database is now created."
+msgstr "Ваша база данных создана."
+
+#. module: base_setup
+#: field:base.setup.installer,point_of_sale:0
+msgid "Point of Sales"
+msgstr "Кассовый терминал"
+
+#. module: base_setup
+#: field:base.setup.installer,association:0
+msgid "Associations"
+msgstr "Ассоциации"
+
+#. module: base_setup
+#: help:base.setup.installer,account_accountant:0
+msgid ""
+"Helps you handle your accounting needs, if you are not an accountant, we "
+"suggest you to install only the Invoicing "
+msgstr ""
+"Помогает реализовать потребности в бухгалтерском учёте. Если вы не бухгалтер "
+"— советуем установить только модуль выставления счетов. "
+
+#. module: base_setup
+#: code:addons/base_setup/__init__.py:50
+#, python-format
+msgid "The following users have been installed : \n"
+msgstr "Были введены следующие пользователи: \n"
+
+#. module: base_setup
+#: field:base.setup.company,progress:0
+#: field:base.setup.installer,progress:0
+msgid "Configuration Progress"
+msgstr "Выполнение настройки"
+
+#. module: base_setup
+#: field:base.setup.company,rml_footer2:0
+msgid "Report Footer 2"
+msgstr "Нижний колонитул отчета 2"
+
+#. module: base_setup
+#: field:base.setup.company,currency:0
+#: model:ir.model,name:base_setup.model_res_currency
+msgid "Currency"
+msgstr "Валюта"
+
+#. module: base_setup
+#: field:base.setup.company,state_id:0
+msgid "Fed. State"
+msgstr "Штат"
+
+#. module: base_setup
+#: field:base.setup.installer,marketing:0
+msgid "Marketing"
+msgstr "Маркетинг"
+
+#. module: base_setup
+#: field:base.setup.company,company_id:0
+msgid "Company"
+msgstr "Организация"
+
+#. module: base_setup
+#: field:base.setup.installer,sale:0
+msgid "Sales Management"
+msgstr "Управление продажами"
+
+#. module: base_setup
+#: help:base.setup.installer,profile_tools:0
+msgid ""
+"Lets you install various interesting but non-essential tools like Survey, "
+"Lunch and Ideas box."
+msgstr ""
+"Позволяет устанавливать различные интересные, но не основные инструменты, "
+"например Обзор, Ланч и Коробка идей."
+
+#. module: base_setup
+#: view:base.setup.config:0
+msgid ""
+"You can start configuring the system or connect directly to the database as "
+"an administrator."
+msgstr ""
+"Вы можете начать настраивать систему или соединиться с базой данных напрямую "
+"в качестве администратора."
+
+#. module: base_setup
+#: field:base.setup.installer,report_designer:0
+msgid "Advanced Reporting"
+msgstr "Расширенные отчеты"
+
+#. module: base_setup
+#: field:base.setup.company,phone:0
+msgid "Phone"
+msgstr "Телефон"
+
+#. module: base_setup
+#: view:base.setup.company:0
+msgid "res_config_contents"
+msgstr "res_config_contents"
+
+#. module: base_setup
+#: view:base.setup.company:0
+msgid ""
+"Your company information will be used to personalize documents issued with "
+"OpenERP such as invoices, sales orders and much more."
+msgstr ""
+"Информация о вашей компании будет использована для персонализации "
+"документов, выводимых из OpenERP, таких как  счета, заказы на продажу и "
+"многое другое."
+
+#. module: base_setup
+#: view:base.setup.installer:0
+msgid "title"
+msgstr "название"
+
+#. module: base_setup
+#: field:base.setup.installer,knowledge:0
+msgid "Knowledge Management"
+msgstr "База знаний"
+
+#. module: base_setup
+#: model:ir.module.module,description:base_setup.module_meta_information
+msgid ""
+"\n"
+"    This module implements a configuration system that helps user\n"
+"    to configure the system at the installation of a new database.\n"
+"\n"
+"    It allows you to select between a list of profiles to install:\n"
+"    * Minimal profile\n"
+"    * Accounting only\n"
+"    * Services companies\n"
+"    * Manufacturing companies\n"
+"\n"
+"    It also asks screens to help easily configure your company, the header "
+"and\n"
+"    footer, the account chart to install and the language.\n"
+"    "
+msgstr ""
+"\n"
+"    Этот модуль реализует систему настройки, помогающую пользователю\n"
+"    настроить систему в момент установки новой базы данных.\n"
+"    Он позволяет вам выбирать между перечнями устанавливаемых профилей:\n"
+"    * Минимальный профиль\n"
+"    * Только бухгалтерия\n"
+"    * Компании сферы услуг\n"
+"    * Производящие компании\n"
+"\n"
+"    Он также предлагает заполнять данные, чтобы проще настроить организацию, "
+"колонтитулы\n"
+"    план счетов и язык.\n"
+"    "
+
+#. module: base_setup
+#: help:base.setup.installer,product_expiry:0
+msgid ""
+"Installs a preselected set of OpenERP applications which will help you "
+"manage your industry."
+msgstr ""
+"Устанавливает заданный набор приложений OpenERP, которые помогут вам "
+"управлять вашей отраслью."
+
+#. module: base_setup
+#: help:base.setup.installer,project:0
+msgid ""
+"Helps you manage your projects and tasks by tracking them, generating "
+"plannings, etc..."
+msgstr ""
+"Помогает вам управлять проектами и задачами, отслеживая их, осуществляя "
+"планирование, и т.д. …"
+
+#. module: base_setup
+#: field:base.setup.company,name:0
+msgid "Company Name"
+msgstr "Наименование организации"
+
+#. module: base_setup
+#: view:base.setup.config:0
+msgid "Skip Configuration Wizards"
+msgstr "Пропустить мастер настроек"
+
+#. module: base_setup
+#: help:base.setup.installer,hr:0
+msgid ""
+"Helps you manage your human resources by encoding your employees structure, "
+"generating work sheets, tracking attendance and more."
+msgstr ""
+"Помогает вам в управлении персоналом путём описания структуры подчинения, "
+"созданием рабочих графиков, отслеживанием времени присутствия на рабочем "
+"месте и т.д."
+
+#. module: base_setup
+#: help:base.setup.installer,account_voucher:0
+msgid ""
+"Allows you to create your invoices and track the payments. It is an easier "
+"version of the accounting module for managers who are not accountants."
+msgstr ""
+"Позволяет Вам выставлять счета и отслеживать платежи. Это упрощенная версия "
+"бухгалтерского модуля для менеджеров, не являющихся бухгалтерами."
+
+#. module: base_setup
+#: model:ir.model,name:base_setup.model_base_setup_company
+msgid "base.setup.company"
+msgstr "base.setup.company"
+
+#. module: base_setup
+#: help:base.setup.installer,purchase:0
+msgid ""
+"Helps you manage your purchase-related processes such as requests for "
+"quotations, supplier invoices, etc..."
+msgstr ""
+"Помогает Вам управлять процессами, связанными с закупками, такими как "
+"запросы котировок, счета от поставщиков, и т.д…"
+
+#. module: base_setup
+#: help:base.setup.company,rml_footer2:0
+msgid ""
+"This sentence will appear at the bottom of your reports.\n"
+"We suggest you to put bank information here:\n"
+"IBAN: BE74 1262 0121 6907 - SWIFT: CPDF BE71 - VAT: BE0477.472.701"
+msgstr ""
+"Это предложение появится внизу ваших отчетов.\n"
+"Рекомендуем поместить здесь информацию о вашем банке:\n"
+"IBAN: BE74 1262 0121 6907 - SWIFT: CPDF BE71 - VAT: BE0477.472.701"
+
+#. module: base_setup
+#: field:base.setup.company,street2:0
+msgid "Street 2"
+msgstr "Улица 2"
+
+#. module: base_setup
+#: model:ir.model,name:base_setup.model_base_setup_installer
+msgid "base.setup.installer"
+msgstr "base.setup.installer"
+
+#. module: base_setup
+#: field:base.setup.company,country_id:0
+msgid "Country"
+msgstr "Страна"
+
+#. module: base_setup
+#: model:ir.actions.act_window,name:base_setup.action_base_setup
+msgid "Setup"
+msgstr "Установка"
+
+#. module: base_setup
+#: field:base.setup.installer,account_accountant:0
+msgid "Accounting & Finance"
+msgstr "Бухгалтерия и Финансы"
+
+#. module: base_setup
+#: field:base.setup.installer,auction:0
+msgid "Auction Houses"
+msgstr "Площадки аукционов"
+
+#. module: base_setup
+#: field:base.setup.company,zip:0
+msgid "Zip Code"
+msgstr "Почтовый индекс"
+
+#. module: base_setup
+#: view:base.setup.config:0
+msgid "Start Configuration"
+msgstr "Начать настройку"
+
+#. module: base_setup
+#: help:base.setup.installer,knowledge:0
+msgid ""
+"Lets you install addons geared towards sharing knowledge with and between "
+"your employees."
+msgstr ""
+"Позволяет устанавливать дополнения, предназначенные для обмена знаниями с и "
+"между вашими сотрудниками."
+
+#. module: base_setup
+#: view:base.setup.installer:0
+msgid ""
+"Select the Applications you want your system to cover. If you are not sure "
+"about your exact needs at this stage, you can easily install them later."
+msgstr ""
+"Выберите приложения, которые вы хотите видеть в вашей системе. Если вы не "
+"уверены в ваших точных потребностях на этом этапе — вы сможете установить их "
+"позже."
+
+#. module: base_setup
+#: view:base.setup.company:0
+#: model:ir.actions.act_window,name:base_setup.action_base_setup_company
+msgid "Company Configuration"
+msgstr "Настройка организации"
+
+#. module: base_setup
+#: field:base.setup.company,logo:0
+msgid "Logo"
+msgstr "Логотип"
+
+#. module: base_setup
+#: help:base.setup.installer,point_of_sale:0
+msgid ""
+"Helps you get the most out of your points of sales with fast sale encoding, "
+"simplified payment mode encoding, automatic picking lists generation and "
+"more."
+msgstr ""
+"Помогает вам получить максимальную отдачу от своих торговых точек с помощью "
+"быстрого учета продаж, упрощенного способа регистрации платежей, "
+"автоматического создания комплектовочных ведомостей и т.д."
+
+#. module: base_setup
+#: field:base.setup.installer,purchase:0
+msgid "Purchase Management"
+msgstr "Управление закупками"
+
+#. module: base_setup
+#: help:base.setup.installer,sale:0
+msgid "Helps you handle your quotations, sale orders and invoicing."
+msgstr ""
+"Помогает вам обрабатывать запросы котировок, заказы на продажу и счета."
+
+#. module: base_setup
+#: field:base.setup.installer,stock:0
+msgid "Warehouse Management"
+msgstr "Управление складом"
+
+#. module: base_setup
+#: field:base.setup.installer,project:0
+msgid "Project Management"
+msgstr "Управление проектами"
+
+#. module: base_setup
+#: field:base.setup.config,installed_users:0
+msgid "Installed Users"
+msgstr "Установленные пользователи"
+
+#. module: base_setup
+#: view:base.setup.config:0
+msgid "New Database"
+msgstr "Новая база данных"
+
+#. module: base_setup
+#: field:base.setup.installer,crm:0
+msgid "Customer Relationship Management"
+msgstr "Управление отношениями с заказчиками"
+
+#. module: base_setup
+#: help:base.setup.installer,auction:0
+msgid ""
+"Installs a preselected set of OpenERP applications selected to help you "
+"manage your auctions as well as the business processes around them."
+msgstr ""
+"Устанавливает заранее выбранный набор приложений, отобранных для помощи в "
+"управлении площадками аукционов и сопутствующими бизнес-процессами."
+
+#. module: base_setup
+#: help:base.setup.company,rml_header1:0
+msgid ""
+"This sentence will appear at the top right corner of your reports.\n"
+"We suggest you to put a slogan here:\n"
+"\"Open Source Business Solutions\"."
+msgstr ""
+"Это предложение появится в правом верхнем углу ваших отчетов.\n"
+"Рекомендуем поместить здесь слоган:\n"
+"\"Решения для бизнеса с открытым исходным кодом\"."
+
+#. module: base_setup
+#: help:base.setup.installer,report_designer:0
+msgid ""
+"Lets you install various tools to simplify and enhance OpenERP's report "
+"creation."
+msgstr ""
+"Позволяет установить различные инструменты для упрощения и улучшения "
+"создания отчетов в OpenERP."
+
+#. module: base_setup
+#: field:base.setup.company,rml_header1:0
+msgid "Report Header"
+msgstr "Заголовок отчета"
+
+#. module: base_setup
+#: view:base.setup.config:0
+msgid "Information about your new database"
+msgstr "Информация о вашей новой базе данных"
+
+#. module: base_setup
+#: field:base.setup.company,config_logo:0
+#: field:base.setup.config,config_logo:0
+#: field:base.setup.installer,config_logo:0
+msgid "Image"
+msgstr "Изображение"
+
+#. module: base_setup
+#: field:base.setup.installer,product_expiry:0
+msgid "Food Industry"
+msgstr "Пищевая промышленность"
+
+#. module: base_setup
+#: field:base.setup.installer,mrp:0
+msgid "Manufacturing"
+msgstr "Производство"
+
+#. module: base_setup
+#: view:base.setup.company:0
+msgid "Your Logo - Use a size of about 450x150 pixels."
+msgstr "Ваш логотип - используйте размер примерно 450x150 пикселей"
+
+#. module: base_setup
+#: help:base.setup.company,rml_footer1:0
+msgid ""
+"This sentence will appear at the bottom of your reports.\n"
+"We suggest you to write legal sentences here:\n"
+"Web: http://openerp.com - Fax: +32.81.73.35.01 - Fortis Bank: 126-2013269-07"
+msgstr ""
+"Это предложение появится внизу ваших отчетов.\n"
+"Рекомендуем поместить здесь юридическую информацию:\n"
+"Web: http://openerp.com - Fax: +32.81.73.35.01 - Fortis Bank: 126-2013269-07"
+
+#. module: base_setup
+#: field:base.setup.company,website:0
+msgid "Company Website"
+msgstr "Интернет-сайт организации"
+
+#. module: base_setup
+#: view:base.setup.installer:0
+msgid "Install Specific Industry Applications"
+msgstr "Установить специальные приложения для отрасли"
+
+#. module: base_setup
+#: field:base.setup.company,street:0
+msgid "Street"
+msgstr "Улица"
+
+#. module: base_setup
+#: view:base.setup.company:0
+msgid "Configure Your Company Information"
+msgstr "Настройте информацию о вашей организации"
+
+#. module: base_setup
+#: help:base.setup.company,website:0
+msgid "Example: http://openerp.com"
+msgstr "Пример: http://openerp.com"
+
+#. module: base_setup
+#: view:base.setup.installer:0
+#: model:ir.actions.act_window,name:base_setup.action_base_setup_installer
+msgid "Install Applications"
+msgstr "Установить приложения"
+
+#. module: base_setup
+#: help:base.setup.installer,crm:0
+msgid ""
+"Helps you track and manage relations with customers such as leads, requests "
+"or issues. Can automatically send reminders, escalate requests or trigger "
+"business-specific actions based on standard events."
+msgstr ""
+"Позволяет вам отслеживать и управлять отношениями с заказчиками, такими как "
+"сделки, запросы, инциденты. Может автоматически направлять напоминания, "
+"выставлять запросы или инициировать специальные действия на основе "
+"стандартных событий."
+
+#. module: base_setup
+#: help:base.setup.installer,stock:0
+msgid ""
+"Helps you manage your inventory and main stock operations: delivery orders, "
+"receptions, etc."
+msgstr ""
+"Позволяет вам управлять складским учётом и совершать основные складские "
+"операции: формировать заказы на доставку, отчеты о получении и т.д…"
+
+#. module: base_setup
+#: model:ir.module.module,shortdesc:base_setup.module_meta_information
+msgid "Base Setup"
+msgstr "Базовая настройка"
+
+#. module: base_setup
+#: help:base.setup.installer,association:0
+msgid ""
+"Installs a preselected set of OpenERP applications which will help you "
+"manage your association more efficiently."
+msgstr ""
+"Устанавливает заранее выбранный набор приложений OpenERP, который поможет "
+"вам управлять вашей ассоциацией  более эффективно."
+
+#. module: base_setup
+#: model:ir.model,name:base_setup.model_base_setup_config
+msgid "base.setup.config"
+msgstr "base.setup.config"
+
+#~ msgid ""
+#~ "You can start configuring the system or connect directly to the database "
+#~ "using the default setup."
+#~ msgstr ""
+#~ "Вы можете начать настройку системы или соединиться непосредственно с базой "
+#~ "данных, используя настройки по умолчанию."
+
+#~ msgid "Zip code"
+#~ msgstr "Почтовый индекс"
+
+#~ msgid "Select a Profile"
+#~ msgstr "Выберите профайл."
+
+#~ msgid "Report header"
+#~ msgstr "Заголовок отчета"
+
+#~ msgid ""
+#~ "You'll be able to install more modules later through the Administration menu."
+#~ msgstr ""
+#~ "Вы можете установить больше модулей позднее при помощи меню "
+#~ "Администрирования."
+
+#~ msgid ""
+#~ "A profile sets a pre-selection of modules for specific needs. These profiles "
+#~ "have been setup to help you discover the different aspects of OpenERP. This "
+#~ "is just an overview, we have 300+ available modules."
+#~ msgstr ""
+#~ "Профайл устанавливает заранее выбранные модули для определенных целей. Эти "
+#~ "профайлы были настроены, чтобы помочь вам ознакомиться с различными "
+#~ "аспектами OpenERP. Это просто обзор, имеется  более 300 доступных модулей."
+
+#~ msgid "Next"
+#~ msgstr "Далее"
+
+#~ msgid "Your new database is now fully installed."
+#~ msgstr "Теперь новая база данных полностью установлена."
+
+#~ msgid "Profile"
+#~ msgstr "Профайл"
+
+#~ msgid "Street2"
+#~ msgstr "Улица (2-я строка)"
+
+#~ msgid "Define Main Company"
+#~ msgstr "Задать головную компанию"
+
+#~ msgid "Summary"
+#~ msgstr "Обзор"
+
+#~ msgid "Installation Done"
+#~ msgstr "Установка завершена"
+
+#~ msgid "Use Directly"
+#~ msgstr "Использовать непосредственно"
+
+#~ msgid "Cancel"
+#~ msgstr "Отмена"
+
+#~ msgid "Previous"
+#~ msgstr "Назад"
+
+#~ msgid "General Information"
+#~ msgstr "Общая информация"
+
+#~ msgid "Report Information"
+#~ msgstr "Информация об отчетах"
+
+#~ msgid "State"
+#~ msgstr "Область/штат"
+
+#~ msgid "Invalid model name in the action definition."
+#~ msgstr "Недопустимое имя модели в определении действия."
+
+#~ msgid ""
+#~ "The Object name must start with x_ and not contain any special character !"
+#~ msgstr ""
+#~ "Название объекта должно начинаться с x_ и не должно содержать специальных "
+#~ "символов !"
+
+#~ msgid "Invalid XML for View Architecture!"
+#~ msgstr "Неправильный XML для просмотра архитектуры!"

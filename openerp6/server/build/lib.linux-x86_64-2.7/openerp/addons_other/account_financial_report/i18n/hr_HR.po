@@ -1,0 +1,990 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* account_financial_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_financial_report
+#: wizard_field:account.invoice.list.report,init,in_invoice:0
+msgid "Supplier invoices"
+msgstr "Ulazni računi"
+
+#. module: account_financial_report
+#: wizard_field:account.balance.full.report,init,display_account:0
+#: wizard_field:account.general.ledger.cumulative.report,checktype,display_account:0
+msgid "Display accounts "
+msgstr "Display accounts "
+
+#. module: account_financial_report
+#: report:account.account.chart.report:0
+msgid "Account number"
+msgstr "Account number"
+
+#. module: account_financial_report
+#: report:account.invoice.list.report:0
+msgid "Customer Refund Invoices"
+msgstr "Računi odobrenja kupcu"
+
+#. module: account_financial_report
+#: wizard_field:account.general.ledger.cumulative.report,checktype,initial_balance:0
+msgid "Show initial balances"
+msgstr "Show initial balances"
+
+#. module: account_financial_report
+#: model:ir.actions.report.xml,name:account_financial_report.report_account_move_line
+msgid "**Entry lines"
+msgstr "**Stavke"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/wizard/wizard_account_balance_report.py:114
+#: code:addons/account_financial_report/wizard/wizard_general_ledger_report.py:134
+#, python-format
+msgid "Date to must be set between %s and %s"
+msgstr "Datum mora biti između %s i %s"
+
+#. module: account_financial_report
+#: report:account.invoice.list.report:0
+msgid "Vat"
+msgstr "Vat"
+
+#. module: account_financial_report
+#: report:account.general.ledger.cumulative.landscape:0
+msgid "Entry Label"
+msgstr "Oznaka stavke"
+
+#. module: account_financial_report
+#: model:ir.actions.wizard,name:account_financial_report.wizard_account_general_ledger_cumulative_report
+msgid "**Cum. general ledger"
+msgstr "**Kum. glavna knjiga"
+
+#. module: account_financial_report
+#: wizard_field:account.balance.full.report,init,company_id:0
+#: wizard_field:account.general.ledger.cumulative.report,checktype,company_id:0
+#: wizard_field:account.invoice.list.report,init,company_id:0
+msgid "Company"
+msgstr "Organizacija"
+
+#. module: account_financial_report
+#: report:account.account.chart.report:0
+#: report:account.move.report:0
+#: report:account.move.report.h:0
+#: report:account.print.journal.entries:0
+#: report:account.print.journal.entriesh:0
+msgid "Account name"
+msgstr "Naziv konta"
+
+#. module: account_financial_report
+#: model:ir.actions.report.xml,name:account_financial_report.report_account_move_line_record
+msgid "**Entry"
+msgstr "**Temeljnica"
+
+#. module: account_financial_report
+#: wizard_field:account.invoice.list.report,init,order_by:0
+msgid "Order by"
+msgstr "Order by"
+
+#. module: account_financial_report
+#: report:account.move.line.report:0
+msgid "Analitic account"
+msgstr "Analitički konto"
+
+#. module: account_financial_report
+#: wizard_field:account.account.chart.report,init,account:0
+#: report:account.balance.full:0
+#: wizard_field:account.general.ledger.cumulative.report,account_selection,account_list:0
+#: report:account.move.line.report:0
+#: report:account.move.report:0
+#: report:account.move.report.h:0
+#: report:account.print.journal.entries:0
+#: report:account.print.journal.entriesh:0
+msgid "Account"
+msgstr "Konto"
+
+#. module: account_financial_report
+#: model:ir.actions.report.xml,name:account_financial_report.account_balance_full
+#: model:ir.actions.wizard,name:account_financial_report.wizard_account_balance_full_report
+#: model:ir.actions.wizard,name:account_financial_report.wizard_account_balance_full_report_menu
+#: model:ir.ui.menu,name:account_financial_report.menu_account_balance_full_report
+msgid "**Full account balance"
+msgstr "**Puni saldo konti"
+
+#. module: account_financial_report
+#: report:account.invoice.list.report:0
+msgid "Supplier Refund Invoices"
+msgstr "Odobrenja dobavljača"
+
+#. module: account_financial_report
+#: selection:account.balance.full.report,init,state:0
+#: selection:account.general.ledger.cumulative.report,checktype,state:0
+#: selection:account.invoice.list.report,init,state:0
+msgid "By Date and Period"
+msgstr "By Date and Period"
+
+#. module: account_financial_report
+#: constraint:account.move.line:0
+msgid "You can not create move line on closed account."
+msgstr "You can not create move line on closed account."
+
+#. module: account_financial_report
+#: wizard_field:account.balance.full.report,init,account_list:0
+msgid "Root accounts"
+msgstr "Root accounts"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger.py:287
+#: code:addons/account_financial_report/report/general_ledger_landscape.py:287
+#, python-format
+msgid "CI: "
+msgstr "CI: "
+
+#. module: account_financial_report
+#: report:account.move.line.report:0
+msgid "Ref."
+msgstr "Veza"
+
+#. module: account_financial_report
+#: constraint:account.move:0
+msgid "You cannot create more than one move per period on centralized journal"
+msgstr "You cannot create more than one move per period on centralized journal"
+
+#. module: account_financial_report
+#: report:account.invoice.list.report:0
+msgid "Taxes"
+msgstr "Porezi"
+
+#. module: account_financial_report
+#: sql_constraint:account.move.line:0
+msgid "Wrong credit or debit value in accounting entry !"
+msgstr "Wrong credit or debit value in accounting entry !"
+
+#. module: account_financial_report
+#: report:account.general.ledger.cumulative:0
+msgid "Ref - Entry Label"
+msgstr "Oznaka"
+
+#. module: account_financial_report
+#: selection:account.balance.full.report,init,state:0
+#: selection:account.general.ledger.cumulative.report,checktype,state:0
+#: selection:account.invoice.list.report,init,state:0
+msgid "By Date"
+msgstr "By Date"
+
+#. module: account_financial_report
+#: report:account.invoice.list.report:0
+#: wizard_field:account.invoice.list.report,init,cancel:0
+msgid "Cancelled"
+msgstr "Otkazani"
+
+#. module: account_financial_report
+#: report:account.move.line.report:0
+msgid "Entry Lines  -"
+msgstr "Stavke  -"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/wizard/wizard_account_balance_report.py:114
+#: code:addons/account_financial_report/wizard/wizard_account_balance_report.py:118
+#: code:addons/account_financial_report/wizard/wizard_general_ledger_report.py:134
+#: code:addons/account_financial_report/wizard/wizard_general_ledger_report.py:138
+#, python-format
+msgid "UserError"
+msgstr "KorisničkaGreška"
+
+#. module: account_financial_report
+#: report:account.account.chart.report:0
+#: report:account.balance.full:0
+#: report:account.general.ledger.cumulative:0
+#: report:account.general.ledger.cumulative.landscape:0
+#: report:account.invoice.list.report:0
+#: report:account.move.line.report:0
+#: report:account.move.report:0
+#: report:account.move.report.h:0
+#: report:account.print.journal.entries:0
+#: report:account.print.journal.entriesh:0
+msgid "End of report"
+msgstr "Kraj izvještaja"
+
+#. module: account_financial_report
+#: report:account.move.report:0
+#: report:account.move.report.h:0
+#: report:account.print.journal.entries:0
+#: report:account.print.journal.entriesh:0
+msgid "Reference"
+msgstr "Vezna oznaka"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/wizard/wizard_account_balance_report.py:118
+#: code:addons/account_financial_report/wizard/wizard_general_ledger_report.py:138
+#, python-format
+msgid "Date not in a defined fiscal year"
+msgstr "Datum izvan fiskalne godine"
+
+#. module: account_financial_report
+#: wizard_view:account.balance.full.report,init:0
+#: wizard_view:account.general.ledger.cumulative.report,checktype:0
+#: wizard_view:account.invoice.list.report,init:0
+msgid "Date Filter"
+msgstr "Filter po datumu"
+
+#. module: account_financial_report
+#: report:account.account.chart.report:0
+msgid "Account Chart"
+msgstr "Account Chart"
+
+#. module: account_financial_report
+#: report:account.invoice.list.report:0
+msgid "Untaxed"
+msgstr "Osnovica"
+
+#. module: account_financial_report
+#: report:account.move.report.h:0
+#: report:account.print.journal.entriesh:0
+msgid "To check"
+msgstr "Za provjeru"
+
+#. module: account_financial_report
+#: report:account.invoice.list.report:0
+msgid "Fiscal position"
+msgstr "Fiscal position"
+
+#. module: account_financial_report
+#: report:account.move.report.h:0
+#: report:account.print.journal.entriesh:0
+msgid "YES"
+msgstr "DA"
+
+#. module: account_financial_report
+#: selection:account.journal.entries.report,init,sort_selection:0
+msgid "By reference number"
+msgstr "By reference number"
+
+#. module: account_financial_report
+#: report:account.balance.full:0
+#: report:account.general.ledger.cumulative:0
+#: report:account.general.ledger.cumulative.landscape:0
+msgid "Periods/Date range:"
+msgstr "Periods/Date range:"
+
+#. module: account_financial_report
+#: wizard_view:account.account.chart.report,init:0
+#: wizard_view:account.general.ledger.cumulative.report,account_selection:0
+msgid "Select parent account"
+msgstr "Select parent account"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger.py:349
+#: code:addons/account_financial_report/report/general_ledger_landscape.py:349
+#, python-format
+msgid "Initial balance"
+msgstr "Početni saldo"
+
+#. module: account_financial_report
+#: report:account.invoice.list.report:0
+#: report:account.move.line.report:0
+#: report:account.move.report.h:0
+#: report:account.print.journal.entriesh:0
+msgid "State"
+msgstr "Stanje"
+
+#. module: account_financial_report
+#: report:account.move.line.report:0
+msgid "Valid"
+msgstr "Potvrđeno"
+
+#. module: account_financial_report
+#: report:account.balance.full:0
+#: report:account.general.ledger.cumulative:0
+#: report:account.general.ledger.cumulative.landscape:0
+#: report:account.move.line.report:0
+#: report:account.move.report:0
+#: report:account.move.report.h:0
+#: report:account.print.journal.entries:0
+#: report:account.print.journal.entriesh:0
+msgid "Debit"
+msgstr "Duguje"
+
+#. module: account_financial_report
+#: wizard_button:account.account.chart.report,init,report:0
+#: wizard_button:account.balance.full.report,init,report:0
+#: wizard_button:account.general.ledger.cumulative.report,checktype,checkreport:0
+#: wizard_button:account.invoice.list.report,init,report:0
+#: wizard_button:account.journal.entries.report,init,print:0
+msgid "Print"
+msgstr "Ispis"
+
+#. module: account_financial_report
+#: wizard_field:account.balance.full.report,init,date_from:0
+#: wizard_field:account.general.ledger.cumulative.report,checktype,date_from:0
+#: wizard_field:account.invoice.list.report,init,date_from:0
+msgid "Start date"
+msgstr "Start date"
+
+#. module: account_financial_report
+#: wizard_button:account.general.ledger.cumulative.report,account_selection,checktype:0
+msgid "Next"
+msgstr "Next"
+
+#. module: account_financial_report
+#: report:account.balance.full:0
+#: report:account.general.ledger.cumulative:0
+#: report:account.general.ledger.cumulative.landscape:0
+msgid "Fiscal year:"
+msgstr "Fiscal year:"
+
+#. module: account_financial_report
+#: wizard_view:account.balance.full.report,init:0
+#: wizard_view:account.general.ledger.cumulative.report,checktype:0
+#: wizard_view:account.invoice.list.report,init:0
+msgid "Filter on Periods"
+msgstr "Filter on Periods"
+
+#. module: account_financial_report
+#: wizard_view:account.balance.full.report,init:0
+msgid "Full Account Balance"
+msgstr "Full Account Balance"
+
+#. module: account_financial_report
+#: selection:account.balance.full.report,init,state:0
+#: selection:account.general.ledger.cumulative.report,checktype,state:0
+#: selection:account.invoice.list.report,init,state:0
+msgid "No Filter"
+msgstr "Bez filtra"
+
+#. module: account_financial_report
+#: selection:account.general.ledger.cumulative.report,checktype,display_account:0
+msgid "With balance is not equal to 0"
+msgstr "Sa saldom različitim od 0"
+
+#. module: account_financial_report
+#: report:account.balance.full:0
+msgid "Account Balance -"
+msgstr "Saldo konta -"
+
+#. module: account_financial_report
+#: constraint:account.move.line:0
+msgid "You can not create move line on view account."
+msgstr "Ne može se knjižiti na sintetički konto."
+
+#. module: account_financial_report
+#: wizard_view:account.balance.full.report,init:0
+msgid "Accounts to include"
+msgstr "Accounts to include"
+
+#. module: account_financial_report
+#: report:account.general.ledger.cumulative:0
+#: report:account.general.ledger.cumulative.landscape:0
+msgid "Mvt"
+msgstr "Mvt"
+
+#. module: account_financial_report
+#: wizard_view:account.general.ledger.cumulative.report,checktype:0
+msgid "Select Date-Period"
+msgstr "Select Date-Period"
+
+#. module: account_financial_report
+#: report:account.account.chart.report:0
+msgid "1cm 27.9cm 20cm 27.9cm"
+msgstr "1cm 27.9cm 20cm 27.9cm"
+
+#. module: account_financial_report
+#: selection:account.journal.entries.report,init,sort_selection:0
+msgid "By entry number"
+msgstr "Po broju temeljnice"
+
+#. module: account_financial_report
+#: report:account.general.ledger.cumulative:0
+#: report:account.general.ledger.cumulative.landscape:0
+#: report:account.invoice.list.report:0
+#: selection:account.invoice.list.report,init,order_by:0
+#: report:account.move.line.report:0
+#: report:account.move.report:0
+#: report:account.move.report.h:0
+#: report:account.print.journal.entries:0
+#: report:account.print.journal.entriesh:0
+msgid "Partner"
+msgstr "Partner"
+
+#. module: account_financial_report
+#: wizard_view:account.invoice.list.report,init:0
+msgid "Options"
+msgstr "Options"
+
+#. module: account_financial_report
+#: selection:account.balance.full.report,init,display_account:0
+#: selection:account.general.ledger.cumulative.report,checktype,display_account:0
+msgid "With movements"
+msgstr "Sa stavkama"
+
+#. module: account_financial_report
+#: report:account.general.ledger.cumulative.landscape:0
+msgid "Counterpart"
+msgstr "Protustavka"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/wizard/wizard_print_journal_entries.py:76
+#, python-format
+msgid "No Data Available"
+msgstr "No Data Available"
+
+#. module: account_financial_report
+#: wizard_view:account.invoice.list.report,init:0
+msgid "Filter by state"
+msgstr "Filter by state"
+
+#. module: account_financial_report
+#: report:account.invoice.list.report:0
+msgid "Due date"
+msgstr "Datum dospijeća"
+
+#. module: account_financial_report
+#: report:account.invoice.list.report:0
+msgid "Currency :"
+msgstr "Currency :"
+
+#. module: account_financial_report
+#: report:account.invoice.list.report:0
+#: wizard_field:account.invoice.list.report,init,proforma:0
+msgid "Pro-forma"
+msgstr "Pro-forma"
+
+#. module: account_financial_report
+#: report:account.general.ledger.cumulative:0
+#: report:account.general.ledger.cumulative.landscape:0
+msgid "Currency"
+msgstr "Valuta"
+
+#. module: account_financial_report
+#: model:ir.actions.report.xml,name:account_financial_report.account_print_journal_entriesh
+msgid "**Print journal by entries landscape"
+msgstr "**Ispis dnevnika po stavkama - položeno"
+
+#. module: account_financial_report
+#: selection:account.journal.entries.report,init,sort_selection:0
+msgid "By date"
+msgstr "By date"
+
+#. module: account_financial_report
+#: wizard_field:account.balance.full.report,init,display_account_level:0
+msgid "Up to level"
+msgstr "Up to level"
+
+#. module: account_financial_report
+#: report:account.invoice.list.report:0
+msgid "Partner code"
+msgstr "Partner code"
+
+#. module: account_financial_report
+#: wizard_view:account.general.ledger.cumulative.report,checktype:0
+msgid "(Keep empty for all open fiscal years)"
+msgstr "(prazno - sve fiskalne godine)"
+
+#. module: account_financial_report
+#: model:ir.actions.wizard,name:account_financial_report.wizard_invoice_list_report
+#: model:ir.ui.menu,name:account_financial_report.menu_invoice_list_report
+msgid "**Print invoice list"
+msgstr "**Ispis računa"
+
+#. module: account_financial_report
+#: report:account.invoice.list.report:0
+msgid "External ref."
+msgstr "External ref."
+
+#. module: account_financial_report
+#: report:account.invoice.list.report:0
+#: wizard_field:account.invoice.list.report,init,draft:0
+#: report:account.move.line.report:0
+#: report:account.move.report.h:0
+#: report:account.print.journal.entriesh:0
+msgid "Draft"
+msgstr "Nacrt"
+
+#. module: account_financial_report
+#: selection:account.general.ledger.cumulative.report,checktype,sortbydate:0
+msgid "Movement"
+msgstr "Movement"
+
+#. module: account_financial_report
+#: report:account.move.report.h:0
+#: report:account.print.journal.entriesh:0
+msgid "NO"
+msgstr "NE"
+
+#. module: account_financial_report
+#: selection:account.balance.full.report,init,state:0
+#: selection:account.general.ledger.cumulative.report,checktype,state:0
+#: selection:account.invoice.list.report,init,state:0
+msgid "By Period"
+msgstr "By Period"
+
+#. module: account_financial_report
+#: report:account.invoice.list.report:0
+msgid "Paid"
+msgstr "Plaćeno"
+
+#. module: account_financial_report
+#: help:account.general.ledger.cumulative.report,checktype,periods:0
+#: help:account.invoice.list.report,init,periods:0
+msgid "All periods if empty"
+msgstr "All periods if empty"
+
+#. module: account_financial_report
+#: report:account.general.ledger.cumulative:0
+#: report:account.general.ledger.cumulative.landscape:0
+#: selection:account.general.ledger.cumulative.report,checktype,sortbydate:0
+#: selection:account.invoice.list.report,init,order_by:0
+#: report:account.move.line.report:0
+#: report:account.move.report:0
+#: report:account.move.report.h:0
+#: report:account.print.journal.entries:0
+#: report:account.print.journal.entriesh:0
+msgid "Date"
+msgstr "Datum"
+
+#. module: account_financial_report
+#: constraint:account.move.line:0
+msgid "Company must be same for its related account and period."
+msgstr "Company must be same for its related account and period."
+
+#. module: account_financial_report
+#: report:account.general.ledger.cumulative.landscape:0
+msgid "1.3cm 24.9cm 38.3cm 24.9cm"
+msgstr "1.3cm 24.9cm 38.3cm 24.9cm"
+
+#. module: account_financial_report
+#: help:account.balance.full.report,init,display_account_level:0
+msgid "Display accounts up to this level (0 to show all)"
+msgstr "Display accounts up to this level (0 to show all)"
+
+#. module: account_financial_report
+#: wizard_view:account.journal.entries.report,init:0
+msgid "Print Journal"
+msgstr "Print Journal"
+
+#. module: account_financial_report
+#: wizard_field:account.invoice.list.report,init,in_refund:0
+msgid "Supplier refunds"
+msgstr "Supplier refunds"
+
+#. module: account_financial_report
+#: model:ir.actions.report.xml,name:account_financial_report.account_account_chart_report
+#: model:ir.actions.wizard,name:account_financial_report.wizard_account_chart_report
+#: model:ir.ui.menu,name:account_financial_report.menu_account_chart_report
+msgid "**Chart of accounts"
+msgstr "**Kontni plan"
+
+#. module: account_financial_report
+#: help:account.general.ledger.cumulative.report,checktype,fiscalyear:0
+msgid "Keep empty for all open fiscal year"
+msgstr "Ostavite prazno za sve otvorene fiskalne godine"
+
+#. module: account_financial_report
+#: report:account.balance.full:0
+#: report:account.general.ledger.cumulative:0
+#: report:account.general.ledger.cumulative.landscape:0
+#: report:account.move.line.report:0
+#: report:account.move.report:0
+#: report:account.move.report.h:0
+#: report:account.print.journal.entries:0
+#: report:account.print.journal.entriesh:0
+msgid "Credit"
+msgstr "Potražuje"
+
+#. module: account_financial_report
+#: report:account.balance.full:0
+#: report:account.general.ledger.cumulative:0
+#: report:account.general.ledger.cumulative.landscape:0
+msgid "Balance"
+msgstr "Saldo"
+
+#. module: account_financial_report
+#: wizard_field:account.balance.full.report,init,date_to:0
+#: wizard_field:account.general.ledger.cumulative.report,checktype,date_to:0
+#: wizard_field:account.invoice.list.report,init,date_to:0
+msgid "End date"
+msgstr "End date"
+
+#. module: account_financial_report
+#: report:account.balance.full:0
+msgid "Code"
+msgstr "Šifra"
+
+#. module: account_financial_report
+#: report:account.invoice.list.report:0
+msgid "Entry num."
+msgstr "Broj retka"
+
+#. module: account_financial_report
+#: report:account.invoice.list.report:0
+msgid "Customer Invoices"
+msgstr "Izlazni računi"
+
+#. module: account_financial_report
+#: wizard_field:account.balance.full.report,init,state:0
+#: wizard_field:account.general.ledger.cumulative.report,checktype,state:0
+#: wizard_field:account.invoice.list.report,init,state:0
+msgid "Date/Period Filter"
+msgstr "Date/Period Filter"
+
+#. module: account_financial_report
+#: report:account.balance.full:0
+msgid "Init. balance"
+msgstr "Init. balance"
+
+#. module: account_financial_report
+#: report:account.balance.full:0
+#: wizard_field:account.balance.full.report,init,fiscalyear:0
+#: wizard_field:account.general.ledger.cumulative.report,checktype,fiscalyear:0
+msgid "Fiscal year"
+msgstr "Fiskalna godina"
+
+#. module: account_financial_report
+#: wizard_field:account.invoice.list.report,init,paid:0
+msgid "Done"
+msgstr "Izvršeno"
+
+#. module: account_financial_report
+#: wizard_field:account.balance.full.report,init,periods:0
+#: wizard_field:account.general.ledger.cumulative.report,checktype,periods:0
+#: wizard_field:account.invoice.list.report,init,periods:0
+msgid "Periods"
+msgstr "Razdoblja"
+
+#. module: account_financial_report
+#: wizard_field:account.general.ledger.cumulative.report,checktype,landscape:0
+#: wizard_field:account.journal.entries.report,init,landscape:0
+msgid "Landscape Mode"
+msgstr "Položeno (Landscape)"
+
+#. module: account_financial_report
+#: wizard_button:account.account.chart.report,init,end:0
+#: wizard_button:account.balance.full.report,init,end:0
+#: wizard_button:account.general.ledger.cumulative.report,account_selection,end:0
+#: wizard_button:account.general.ledger.cumulative.report,checktype,end:0
+#: wizard_button:account.invoice.list.report,init,end:0
+#: wizard_button:account.journal.entries.report,init,end:0
+msgid "Cancel"
+msgstr "Odustani"
+
+#. module: account_financial_report
+#: report:account.invoice.list.report:0
+#: wizard_field:account.invoice.list.report,init,open:0
+msgid "Open"
+msgstr "Otvoreno"
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_account_move_line
+msgid "Journal Items"
+msgstr "Stavke glavne knjige"
+
+#. module: account_financial_report
+#: model:ir.actions.report.xml,name:account_financial_report.account_invoice_list_report
+msgid "**Invoice list"
+msgstr "**Popis računa"
+
+#. module: account_financial_report
+#: constraint:account.move:0
+msgid "You cannot create entries on different periods/journals in the same move"
+msgstr "Sva knjiženja na jednoj temeljnici moraju imati isti period i dnevnik."
+
+#. module: account_financial_report
+#: model:ir.module.module,shortdesc:account_financial_report.module_meta_information
+msgid "Common financial reports"
+msgstr "Common financial reports"
+
+#. module: account_financial_report
+#: model:ir.actions.report.xml,name:account_financial_report.account_print_journal_entries
+#: model:ir.actions.wizard,name:account_financial_report.wizard_journal_entries_report
+#: model:ir.ui.menu,name:account_financial_report.menu_journal_entries_report
+msgid "**Print journal by entries"
+msgstr "**Print journal by entries"
+
+#. module: account_financial_report
+#: report:account.general.ledger.cumulative.landscape:0
+msgid "Ref"
+msgstr "Vezna oznaka"
+
+#. module: account_financial_report
+#: report:account.balance.full:0
+#: wizard_view:account.balance.full.report,init:0
+#: wizard_field:account.journal.entries.report,init,period_ids:0
+#: report:account.move.report:0
+#: report:account.move.report.h:0
+#: report:account.print.journal.entries:0
+#: report:account.print.journal.entriesh:0
+msgid "Period"
+msgstr "Period"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger.py:288
+#: code:addons/account_financial_report/report/general_ledger_landscape.py:288
+#, python-format
+msgid "SI: "
+msgstr "SI: "
+
+#. module: account_financial_report
+#: help:account.move,name_split:0
+#: help:account.move.line,name_split:0
+msgid "inserts space for wrap in longer numbers"
+msgstr "inserts space for wrap in longer numbers"
+
+#. module: account_financial_report
+#: report:account.invoice.list.report:0
+msgid "Supplier Invoices"
+msgstr "Ulazni računi"
+
+#. module: account_financial_report
+#: report:account.move.line.report:0
+#: report:account.move.report:0
+#: report:account.move.report.h:0
+#: report:account.print.journal.entries:0
+#: report:account.print.journal.entriesh:0
+msgid "Description"
+msgstr "Opis"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger.py:289
+#: code:addons/account_financial_report/report/general_ledger_landscape.py:289
+#, python-format
+msgid "OR: "
+msgstr "OR: "
+
+#. module: account_financial_report
+#: wizard_view:account.invoice.list.report,init:0
+msgid "Filter by type"
+msgstr "Filter by type"
+
+#. module: account_financial_report
+#: wizard_field:account.journal.entries.report,init,journal_ids:0
+#: report:account.move.report:0
+#: report:account.move.report.h:0
+#: report:account.print.journal.entries:0
+#: report:account.print.journal.entriesh:0
+msgid "Journal"
+msgstr "Dnevnik"
+
+#. module: account_financial_report
+#: report:account.invoice.list.report:0
+#: wizard_view:account.invoice.list.report,init:0
+msgid "Invoice List"
+msgstr "Popis računa"
+
+#. module: account_financial_report
+#: wizard_field:account.general.ledger.cumulative.report,checktype,amount_currency:0
+msgid "With Currency"
+msgstr "S valutom"
+
+#. module: account_financial_report
+#: wizard_field:account.invoice.list.report,init,detailed_taxes:0
+msgid "Detailed taxes"
+msgstr "Porezi detaljno"
+
+#. module: account_financial_report
+#: model:ir.actions.report.xml,name:account_financial_report.report_account_move_line_record_h
+msgid "**Entry landscape"
+msgstr "**Temeljnica položeno"
+
+#. module: account_financial_report
+#: report:account.invoice.list.report:0
+#: selection:account.invoice.list.report,init,order_by:0
+#: field:account.move,name_split:0
+#: field:account.move.line,name_split:0
+msgid "Number"
+msgstr "Broj"
+
+#. module: account_financial_report
+#: wizard_view:account.invoice.list.report,init:0
+msgid "Filter by date (default current year)"
+msgstr "Filtriraj po datumu (uobičajeno trenutna godina)"
+
+#. module: account_financial_report
+#: report:account.move.report.h:0
+#: report:account.print.journal.entriesh:0
+msgid "Posted"
+msgstr "Proknjiženo"
+
+#. module: account_financial_report
+#: report:account.move.report:0
+#: report:account.move.report.h:0
+#: report:account.print.journal.entries:0
+#: report:account.print.journal.entriesh:0
+msgid "Journal Ledger  -"
+msgstr "Knjiga dnevnika  -"
+
+#. module: account_financial_report
+#: model:ir.actions.report.xml,name:account_financial_report.account_general_ledger_cumulative_landscape
+msgid "**Cumulative general ledger landscape"
+msgstr "**Glavna knjiga kumulativno - položeno"
+
+#. module: account_financial_report
+#: report:account.general.ledger.cumulative:0
+#: report:account.general.ledger.cumulative.landscape:0
+msgid "General Ledger -"
+msgstr "General Ledger -"
+
+#. module: account_financial_report
+#: wizard_field:account.journal.entries.report,init,sort_selection:0
+msgid "Entries Sorted By"
+msgstr "Entries Sorted By"
+
+#. module: account_financial_report
+#: wizard_field:account.invoice.list.report,init,out_invoice:0
+msgid "Customer invoices"
+msgstr "Izlazni računi"
+
+#. module: account_financial_report
+#: report:account.invoice.list.report:0
+msgid "Invoice date"
+msgstr "Datum računa"
+
+#. module: account_financial_report
+#: model:ir.module.module,description:account_financial_report.module_meta_information
+msgid "\n"
+"Add some common financial/accounting reports and some wizards to quickly compute them:\n"
+"  * Account chart list\n"
+"  * Invoice list\n"
+"  * Account move (journal ledger)\n"
+"  * Account move line\n"
+"  * Account balance compared period-fiscal year\n"
+"  * Cumulative general ledger\n"
+"\n"
+"They can be found in the \"Financial Management/Legal Statements/Generic Reports\" menu or in the tree/form views of accounts, journals, invoices, account entries and account move lines.\n"
+"\n"
+"Some reports are based on previous work by Pexego and others on the c2c_finance_report module for TinyERP 4.2 by Camptocamp SA.\n"
+"201101 ported to v6 by Camptocamp Austria\n"
+""
+msgstr "\n"
+"Add some common financial/accounting reports and some wizards to quickly compute them:\n"
+"  * Account chart list\n"
+"  * Invoice list\n"
+"  * Account move (journal ledger)\n"
+"  * Account move line\n"
+"  * Account balance compared period-fiscal year\n"
+"  * Cumulative general ledger\n"
+"\n"
+"They can be found in the \"Financial Management/Legal Statements/Generic Reports\" menu or in the tree/form views of accounts, journals, invoices, account entries and account move lines.\n"
+"\n"
+"Some reports are based on previous work by Pexego and others on the c2c_finance_report module for TinyERP 4.2 by Camptocamp SA.\n"
+"201101 ported to v6 by Camptocamp Austria\n"
+""
+
+#. module: account_financial_report
+#: report:account.invoice.list.report:0
+msgid "0.8cm 19.8cm 28.8cm 19.8cm"
+msgstr "0.8cm 19.8cm 28.8cm 19.8cm"
+
+#. module: account_financial_report
+#: help:account.balance.full.report,init,periods:0
+msgid "All periods in the fiscal year if empty"
+msgstr "All periods in the fiscal year if empty"
+
+#. module: account_financial_report
+#: selection:account.balance.full.report,init,display_account:0
+msgid "With balance"
+msgstr "With balance"
+
+#. module: account_financial_report
+#: report:account.move.line.report:0
+#: report:account.move.report:0
+#: report:account.move.report.h:0
+#: report:account.print.journal.entries:0
+#: report:account.print.journal.entriesh:0
+msgid "Entry"
+msgstr "Stavka"
+
+#. module: account_financial_report
+#: report:account.general.ledger.cumulative:0
+msgid "0.9cm 27.7cm 20.1cm 27.7cm"
+msgstr "0.9cm 27.7cm 20.1cm 27.7cm"
+
+#. module: account_financial_report
+#: report:account.account.chart.report:0
+#: report:account.balance.full:0
+#: report:account.general.ledger.cumulative:0
+#: report:account.general.ledger.cumulative.landscape:0
+#: report:account.invoice.list.report:0
+#: report:account.move.line.report:0
+#: report:account.move.report:0
+#: report:account.move.report.h:0
+#: report:account.print.journal.entries:0
+#: report:account.print.journal.entriesh:0
+msgid "Page"
+msgstr "Page"
+
+#. module: account_financial_report
+#: selection:account.balance.full.report,init,display_account:0
+#: selection:account.general.ledger.cumulative.report,checktype,display_account:0
+msgid "All"
+msgstr "Sve"
+
+#. module: account_financial_report
+#: model:ir.model,name:account_financial_report.model_account_move
+msgid "Account Entry"
+msgstr "Temeljnica"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/wizard/wizard_print_journal_entries.py:76
+#, python-format
+msgid "No records found for your selection!"
+msgstr "No records found for your selection!"
+
+#. module: account_financial_report
+#: model:ir.actions.report.xml,name:account_financial_report.account_general_ledger_cumulative
+#: model:ir.actions.wizard,name:account_financial_report.wizard_account_general_ledger_cumulative_report_menu
+#: model:ir.ui.menu,name:account_financial_report.menu_account_general_ledger_cumulative_report
+msgid "**Cumulative general ledger"
+msgstr "**Glavna knjiga kumulativno"
+
+#. module: account_financial_report
+#: wizard_field:account.general.ledger.cumulative.report,checktype,sortbydate:0
+msgid "Sort by"
+msgstr "Sort by"
+
+#. module: account_financial_report
+#: report:account.general.ledger.cumulative.landscape:0
+msgid "JNRL"
+msgstr "JNRL"
+
+#. module: account_financial_report
+#: report:account.balance.full:0
+msgid "1cm 19.2cm 28.7cm 19.2cm"
+msgstr "1cm 19.2cm 28.7cm 19.2cm"
+
+#. module: account_financial_report
+#: wizard_view:account.general.ledger.cumulative.report,checktype:0
+msgid "Filters"
+msgstr "Filtri"
+
+#. module: account_financial_report
+#: wizard_field:account.invoice.list.report,init,out_refund:0
+msgid "Customer refunds"
+msgstr "Odobrenja kupcima"
+
+#. module: account_financial_report
+#: help:account.balance.full.report,init,fiscalyear:0
+msgid "Keep empty to use all open fiscal years to compute the balance"
+msgstr "Prazno za sve otvorene fiskalne godine"
+
+#. module: account_financial_report
+#: report:account.general.ledger.cumulative:0
+#: report:account.general.ledger.cumulative.landscape:0
+#: report:account.invoice.list.report:0
+msgid "Total"
+msgstr "Ukupno"
+
+#. module: account_financial_report
+#: code:addons/account_financial_report/report/general_ledger.py:290
+#: code:addons/account_financial_report/report/general_ledger_landscape.py:290
+#, python-format
+msgid "SR: "
+msgstr "SR: "
+

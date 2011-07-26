@@ -1,0 +1,89 @@
+<openerp>
+    <data>
+        <record id="view_account_configuration_installer" model="ir.ui.view">
+            <field name="name">account.installer.form</field>
+            <field name="model">account.installer</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="base.res_config_installer"/>
+            <field name="arch" type="xml">
+            <data>
+                <form position="attributes">
+                    <attribute name="string">Accounting Application Configuration</attribute>
+                </form>
+                <separator string="title" position="attributes">
+                    <attribute name="string">Configure Your Accounting Chart</attribute>
+                </separator>
+                <xpath expr="//label[@string='description']" position="attributes">
+                    <attribute name="string">The default Chart of Accounts is matching your country selection. If no certified Chart of Accounts exists for your specified country, a generic one can be installed and will be selected by default.</attribute>
+                </xpath>
+                <xpath expr="//button[@string='Install Modules']" position="attributes">
+                    <attribute name="string">Configure</attribute>
+                </xpath>
+                <xpath expr='//separator[@string="vsep"]' position='attributes'>
+                    <attribute name='rowspan'>23</attribute>
+                    <attribute name='string'></attribute>
+                </xpath>
+                <group colspan="8">
+                    <group colspan="4" width="600">
+                        <field name="charts"/>
+                            <group colspan="4" groups="base.group_extended">
+                                <separator col="4" colspan="4" string="Configure Fiscal Year"/>
+                                <field name="company_id" colspan="4" widget="selection"/><!-- we assume that this wizard will be run only by administrators and as this field may cause problem if hidden (because of the default company of the user removed from the selection because already configured), we simply choosed to remove the group "multi company" of it -->
+                                <field name="date_start" on_change="on_change_start_date(date_start)"/>
+                                <field name="date_stop"/>
+                                <field name="period" colspan="4"/>
+                            </group>
+                            <group colspan="4" attrs="{'invisible':[('charts','!=','configurable')]}">
+                                <field name="sale_tax" on_change="on_change_tax(sale_tax)" attrs="{'required':[('charts','=','configurable')]}"/>
+                                <field name="purchase_tax" groups="base.group_extended"/>
+                            </group>
+                        </group>
+                    </group>
+                </data>
+            </field>
+        </record>
+
+        <record id="view_account_modules_installer" model="ir.ui.view">
+            <field name="name">account.installer.modules.form</field>
+            <field name="model">base.setup.installer</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="base_setup.view_base_setup_installer"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//group[@name='account_accountant']" position="replace">
+                    <newline/>
+                    <separator  string="Accounting &amp; Finance Features" colspan="4" />
+                    <field name="account_followup"/>
+                    <field name="account_payment"/>
+                    <field name="account_analytic_plans"/>
+                    <field name="account_anglo_saxon"/>
+                    <field name="account_asset"/>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+
+        <record id="action_account_configuration_installer" model="ir.actions.act_window">
+            <field name="name">Accounting Chart Configuration</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">account.installer</field>
+            <field name="view_id" ref="view_account_configuration_installer"/>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <record id="category_accounting_configuration" model="ir.actions.todo.category">
+            <field name="name">Accounting</field>
+            <field name="sequence">5</field>
+        </record>    
+
+        <record id="account_configuration_installer_todo" model="ir.actions.todo">
+            <field name="action_id" ref="action_account_configuration_installer"/>
+            <field name="category_id" ref="category_accounting_configuration"/>
+            <field name="sequence">3</field>
+            <field name="type">special</field>
+        </record>
+
+    </data>
+</openerp>

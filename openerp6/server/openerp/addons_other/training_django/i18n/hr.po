@@ -1,0 +1,364 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* training_django
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: training_django
+#: constraint:res.partner.contact:0
+msgid "Error! You can not create two contacts with the same vat."
+msgstr "Error! You can not create two contacts with the same vat."
+
+#. module: training_django
+#: view:training.course:0
+msgid "History"
+msgstr "Povijest"
+
+#. module: training_django
+#: help:training.school,django_ssh_key:0
+msgid "Path ssh key localhost"
+msgstr "Path ssh key localhost"
+
+#. module: training_django
+#: view:training.school:0
+msgid "SSH Connection"
+msgstr "SSH Connection"
+
+#. module: training_django
+#: field:training.create.user.wizard,email:0
+#: field:training.reset.user.wizard,email:0
+msgid "e-Mail"
+msgstr "e-Mail"
+
+#. module: training_django
+#: view:training.create.user.wizard:0
+msgid "Create"
+msgstr "Stvori"
+
+#. module: training_django
+#: field:training.create.user.wizard,first_name:0
+msgid "First Name"
+msgstr "Ime osobe"
+
+#. module: training_django
+#: field:training.create.user.wizard,state:0
+#: field:training.reset.user.wizard,state:0
+msgid "State"
+msgstr "Stanje"
+
+#. module: training_django
+#: view:training.course:0
+#: view:training.offer:0
+#: view:training.session:0
+msgid "Metakey"
+msgstr "Metakey"
+
+#. module: training_django
+#: help:training.reset.user.wizard,email_reset_user:0
+msgid "Template Email Reset User"
+msgstr "Template Email Reset User"
+
+#. module: training_django
+#: field:res.partner.contact,dj_username:0
+msgid "Username ID"
+msgstr "Username ID"
+
+#. module: training_django
+#: view:res.partner.contact:0
+msgid "e-learning"
+msgstr "e-learning"
+
+#. module: training_django
+#: field:training.create.user.wizard,username:0
+#: field:training.reset.user.wizard,username:0
+#: field:training.school,django_username:0
+msgid "Username"
+msgstr "Korisničko ime"
+
+#. module: training_django
+#: view:training.offer:0
+msgid "Notification Note"
+msgstr "Notification Note"
+
+#. module: training_django
+#: view:training.school:0
+msgid "Sessions"
+msgstr "Sessions"
+
+#. module: training_django
+#: help:training.school,django_basepath:0
+msgid "Path of Django App. Ex: /var/www/django"
+msgstr "Path of Django App. Ex: /var/www/django"
+
+#. module: training_django
+#: model:ir.model,name:training_django.model_training_course
+msgid "training.course"
+msgstr "training.course"
+
+#. module: training_django
+#: model:ir.model,name:training_django.model_training_create_user_wizard
+msgid "training.create.user.wizard"
+msgstr "training.create.user.wizard"
+
+#. module: training_django
+#: view:training.create.user.wizard:0
+#: view:training.reset.user.wizard:0
+msgid "Cancel"
+msgstr "Odustani"
+
+#. module: training_django
+#: view:res.partner.contact:0
+msgid "Reset User (new password create)"
+msgstr "Reset User (new password create)"
+
+#. module: training_django
+#: view:training.session:0
+msgid "Groups"
+msgstr "Grupe"
+
+#. module: training_django
+#: field:training.school,django_ssh_key:0
+msgid "Ssh Key"
+msgstr "Ssh Key"
+
+#. module: training_django
+#: field:training.offer,active:0
+msgid "Active"
+msgstr "Aktivan"
+
+#. module: training_django
+#: model:ir.model,name:training_django.model_training_session
+msgid "training.session"
+msgstr "training.session"
+
+#. module: training_django
+#: field:res.partner.contact,dj_email:0
+msgid "Email ID"
+msgstr "Email ID"
+
+#. module: training_django
+#: view:training.course:0
+#: view:training.offer:0
+#: view:training.session:0
+msgid "MetaDescription"
+msgstr "MetaDescription"
+
+#. module: training_django
+#: code:addons/training_django/wizard/wizard_create_user.py:100
+#: code:addons/training_django/wizard/wizard_reset_user.py:67
+#, python-format
+msgid "Error: Multi School not active"
+msgstr "Greška: Multi School nije aktivan"
+
+#. module: training_django
+#: view:training.reset.user.wizard:0
+msgid "Reset"
+msgstr "Reset"
+
+#. module: training_django
+#: field:training.school,django_basepath:0
+msgid "Base path"
+msgstr "Base path"
+
+#. module: training_django
+#: model:ir.actions.act_window,name:training_django.action_training_reset_user_django
+#: view:training.reset.user.wizard:0
+msgid "Reset User"
+msgstr "Reset User"
+
+#. module: training_django
+#: view:training.create.user.wizard:0
+msgid "Are you sure to create a new user?"
+msgstr "Are you sure to create a new user?"
+
+#. module: training_django
+#: code:addons/training_django/training_multi_school.py:71
+#, python-format
+msgid "Error connection to server."
+msgstr "Error connection to server."
+
+#. module: training_django
+#: field:training.create.user.wizard,email_create_user:0
+#: field:training.reset.user.wizard,email_reset_user:0
+msgid "Email Template"
+msgstr "Email Template"
+
+#. module: training_django
+#: field:training.school,django_ip:0
+msgid "IP"
+msgstr "IP"
+
+#. module: training_django
+#: code:addons/training_django/training_multi_school.py:67
+#, python-format
+msgid "Connection to server are successfully."
+msgstr "Connection to server are successfully."
+
+#. module: training_django
+#: model:ir.model,name:training_django.model_training_school
+msgid "Manage Training Multi Schools"
+msgstr "Manage Training Multi Schools"
+
+#. module: training_django
+#: view:training.school:0
+msgid "Django"
+msgstr "Django"
+
+#. module: training_django
+#: code:addons/training_django/wizard/wizard_create_user.py:71
+#, python-format
+msgid "This Django user exist."
+msgstr "This Django user exist."
+
+#. module: training_django
+#: code:addons/training_django/training_multi_school.py:71
+#, python-format
+msgid "Error!"
+msgstr "Error!"
+
+#. module: training_django
+#: model:ir.model,name:training_django.model_res_partner_contact
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: training_django
+#: constraint:training.course:0
+msgid "Please, Can you check the duration ?"
+msgstr "Please, Can you check the duration ?"
+
+#. module: training_django
+#: constraint:training.session:0
+msgid "You have a seance with a later date to the session's end date."
+msgstr "You have a seance with a later date to the session's end date."
+
+#. module: training_django
+#: field:training.school,django_key:0
+msgid "Ssh key"
+msgstr "Ssh key"
+
+#. module: training_django
+#: field:training.school,django:0
+msgid "Django App"
+msgstr "Django App"
+
+#. module: training_django
+#: view:training.school:0
+msgid "Test Connection"
+msgstr "Test Connection"
+
+#. module: training_django
+#: model:ir.model,name:training_django.model_training_offer
+msgid "training.offer"
+msgstr "training.offer"
+
+#. module: training_django
+#: model:ir.actions.act_window,name:training_django.action_training_create_user_django
+#: view:res.partner.contact:0
+#: view:training.create.user.wizard:0
+msgid "Create User"
+msgstr "Kreiraj korisnika"
+
+#. module: training_django
+#: selection:training.create.user.wizard,state:0
+#: selection:training.reset.user.wizard,state:0
+msgid "First"
+msgstr "Prvi"
+
+#. module: training_django
+#: field:training.create.user.wizard,password:0
+#: field:training.reset.user.wizard,password:0
+#: field:training.school,django_password:0
+msgid "Password"
+msgstr "Lozinka"
+
+#. module: training_django
+#: code:addons/training_django/wizard/wizard_create_user.py:74
+#, python-format
+msgid "This contact there are not email. Please add new email for this contact"
+msgstr "This contact there are not email. Please add new email for this contact"
+
+#. module: training_django
+#: help:training.create.user.wizard,email_create_user:0
+msgid "Template Email Create User"
+msgstr "Template Email Create User"
+
+#. module: training_django
+#: field:training.create.user.wizard,last_name:0
+msgid "Last Name"
+msgstr "Prezime osobe"
+
+#. module: training_django
+#: code:addons/training_django/wizard/wizard_create_user.py:114
+#: code:addons/training_django/wizard/wizard_reset_user.py:81
+#, python-format
+msgid "School: %s Username: %s. %s"
+msgstr "School: %s Username: %s. %s"
+
+#. module: training_django
+#: model:ir.model,name:training_django.model_training_reset_user_wizard
+msgid "training.reset.user.wizard"
+msgstr "training.reset.user.wizard"
+
+#. module: training_django
+#: view:training.course:0
+#: view:training.offer:0
+#: view:training.session:0
+msgid "SEO"
+msgstr "SEO"
+
+#. module: training_django
+#: code:addons/training_django/training_multi_school.py:67
+#, python-format
+msgid "Ok!"
+msgstr "Ok!"
+
+#. module: training_django
+#: view:res.partner.contact:0
+#: field:res.partner.contact,offer_ids:0
+msgid "Offers"
+msgstr "Offers"
+
+#. module: training_django
+#: selection:training.create.user.wizard,state:0
+#: selection:training.reset.user.wizard,state:0
+msgid "Done"
+msgstr "Izvršeno"
+
+#. module: training_django
+#: field:training.create.user.wizard,result:0
+#: field:training.reset.user.wizard,result:0
+msgid "Result"
+msgstr "Result"
+
+#. module: training_django
+#: view:training.reset.user.wizard:0
+msgid "Are you sure to reset this user?"
+msgstr "Are you sure to reset this user?"
+
+#. module: training_django
+#: view:training.create.user.wizard:0
+#: view:training.reset.user.wizard:0
+msgid "Close"
+msgstr "Zatvori"
+
+#. module: training_django
+#: field:training.school,django_port:0
+msgid "Port"
+msgstr "Port"
+
+#. module: training_django
+#: constraint:training.session:0
+msgid "You have a seance with a date inferior to the session's date."
+msgstr "You have a seance with a date inferior to the session's date."
+

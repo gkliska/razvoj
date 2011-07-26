@@ -143,6 +143,10 @@ class many2many(interface.widget_interface):
         domain = self._view.modelfield.domain_get(self._view.model)
         context = self._view.modelfield.context_get(self._view.model)
 
+        # exclude the ids that are already present
+        if self.model.pager_cache.get(self.name):
+            domain.append(('id', 'not in', self.model.pager_cache.get(self.name)))
+
         records = rpc.session.rpc_exec_auth('/object', 'execute',
                                         self.attrs['relation'], 'name_search',
                                         self.wid_text.get_text(), domain, 'ilike', context)
@@ -151,13 +155,12 @@ class many2many(interface.widget_interface):
         win = win_search(self.attrs['relation'], sel_multi=True, ids=ids, context=context, domain=domain, parent=self._window)
         ids = win.go()
 
-        if ids == None:
-            ids = []
-        if self.name in self.model.pager_cache:
-            self.model.pager_cache[self.name] = list(set(self.model.pager_cache[self.name] + ids))
-        else:
-            self.model.pager_cache[self.name] = ids
-        self.model.is_m2m_modified = True
+        if ids != None:
+            if self.name in self.model.pager_cache:
+                self.model.pager_cache[self.name] = list(set(self.model.pager_cache[self.name] + ids))
+            else:
+                self.model.pager_cache[self.name] = ids
+            self.model.is_m2m_modified = True
         self._focus_out()
         self.pager.reset_pager()
         self.pager.search_count()

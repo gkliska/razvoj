@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <!-- "Training" Group -->
+        <record id="res_groups_multi_school_group" model="res.groups">
+            <field name="name">Training / School Administrator group</field>
+        </record>
+
+         <record id="school_useability_multi_school" model="res.groups">
+            <field name="name">Useability / Multi School</field>
+        </record>
+
+		<record id="ir_rule_training_seance0" model="ir.rule">
+			<field name="model_id" ref="training.model_training_seance"/>
+			<field name="domain_force">['|',('school_id','=',False),('school_id','in',[x.id for x in user.school_ids])]</field>
+			<field name="name">Training Seance</field>
+			<field eval="1" name="global"/>
+			<field eval="1" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="1" name="perm_create"/>
+		</record>
+
+		<record id="ir_rule_training_session0" model="ir.rule">
+			<field name="model_id" ref="training.model_training_session"/>
+			<field name="domain_force">['|',('school_id','=',False),('school_id','in',[x.id for x in user.school_ids])]</field>
+			<field name="name">Training Session</field>
+			<field eval="1" name="global"/>
+			<field eval="1" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="1" name="perm_create"/>
+		</record>
+
+		<record id="ir_rule_res_partner_contact0" model="ir.rule">
+			<field name="model_id" ref="base_contact.model_res_partner_contact"/>
+			<field name="domain_force">['|',('school_id','=',False),('school_id','in',[x.id for x in user.school_ids])]</field>
+			<field name="name">Contact for Training Multi School</field>
+			<field eval="1" name="global"/>
+			<field eval="1" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="1" name="perm_create"/>
+		</record>
+
+		<record id="ir_rule_res_partner0" model="ir.rule">
+			<field name="model_id" ref="base.model_res_partner"/>
+			<field name="domain_force">['|',('school_ids','=',False),('school_ids','in',[x.id for x in user.school_ids])]</field>
+			<field name="name">Partner for Training Multi School</field>
+			<field eval="1" name="global"/>
+			<field eval="1" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="1" name="perm_create"/>
+		</record>
+
+		<record id="ir_rule_training_group0" model="ir.rule">
+			<field name="model_id" ref="training.model_training_group"/>
+			<field name="domain_force">['|',('school_id','=',False),('school_id','in',[x.id for x in user.school_ids])]</field>
+			<field name="name">Training Group</field>
+			<field eval="1" name="global"/>
+			<field eval="1" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="1" name="perm_create"/>
+		</record>
+
+		<record id="ir_rule_training_participation0" model="ir.rule">
+			<field name="model_id" ref="training.model_training_participation"/>
+			<field name="domain_force">['|',('school_id','=',False),('school_id','in',[x.id for x in user.school_ids])]</field>
+			<field name="name">Training Participation</field>
+			<field eval="1" name="global"/>
+			<field eval="1" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="1" name="perm_create"/>
+		</record>
+
+		<record id="ir_rule_training_subscription_line0" model="ir.rule">
+			<field name="model_id" ref="training.model_training_subscription_line"/>
+			<field name="domain_force">['|',('school_id','=',False),('school_id','in',[x.id for x in user.school_ids])]</field>
+			<field name="name">Training Subscription Line</field>
+			<field eval="1" name="global"/>
+			<field eval="1" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="1" name="perm_create"/>
+		</record>
+
+		<record id="ir_rule_training_subscription0" model="ir.rule">
+			<field name="model_id" ref="training.model_training_subscription"/>
+			<field name="domain_force">['|',('school_id','=',False),('school_id','in',[x.id for x in user.school_ids])]</field>
+			<field name="name">Training Subscription</field>
+			<field eval="1" name="global"/>
+			<field eval="1" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="1" name="perm_create"/>
+		</record>
+
+		<record id="ir_rule_training_holiday_year0" model="ir.rule">
+			<field name="model_id" ref="training.model_training_holiday_year"/>
+			<field name="domain_force">['|',('school_id','=',False),('school_id','in',[x.id for x in user.school_ids])]</field>
+			<field name="name">Training Holiday Year</field>
+			<field eval="1" name="global"/>
+			<field eval="1" name="perm_unlink"/>
+			<field eval="1" name="perm_write"/>
+			<field eval="1" name="perm_read"/>
+			<field eval="1" name="perm_create"/>
+		</record>
+
+    </data>
+</openerp>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
+        <name>shape - process_view_simple_node</name>
+        <icon>process_view_simple_node.png</icon>
+        <connections>
+        <point x="0" y="5"/>
+       <point x="20" y="5"/>
+       </connections>
+        <aspectratio type="fixed"/>
+         <textbox x1="16" y1="0" x2="8.79" y2="1.47"/> 
+        <svg:svg>
+            <svg:image x="0" y="0" width="20" height="10" href="process_view_simple_node.png"/>
+        </svg:svg>
+    </shape>

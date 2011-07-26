@@ -1,0 +1,570 @@
+#;account;raèun
+0;RECEIVABLES FOR  ISSUED CAPITAL AND NON-CURRENT ASSETS;POTRAŽIVANJA ZA UPISANI KAPITAL I DUGOTRAJNA IMOVINA
+00;RECEIVABLES FOR RECORDED BUT NOT PAID IN CAPITAL AND NON-CURRENT FINANCIAL ASSETS ;POTRAŽIVANJA ZA UPISANI A NEUPLAÆENI KAPITAL
+000;Receivables for recoded but not paid in capital in joint-stock company (analytics by shareholders);Potraživanja za upisani a neuplaæeni dionièki kapital (analitika po upisnicima)
+001;Receivables for repeated share issues for recoded but not paid capital (analytics by share issues);Potraživanja iz ponovljene emisije dionica za upisane a neuplaæene svote kapitala (razrada po emisijama dionica)
+002;Receivables for recoded but not paid in capital in private limited company (analytics by owners);Potraživanja za upisani a neuplaæeni kapital u d.o.o. (analitika po èlanovima društva)
+003;Receivables for stake in capital of limited partnership;Potraživanja za temeljni ulog komanditora
+004;Receivables for other business stakes in capital;Potraživanje za ostale uloge u kapital
+01;INTANGIBLE ASSET;NEMATERIJALNA IMOVINA
+010;Research and development ;Izdatci za razvoj
+011;Concession rights, patents, commodity and service brands;Koncesije, patenti, licencije, robne i uslužne marke
+012;Software and other rights;Softver i ostala prava
+013;Goodwill;Goodwill
+014;Other intangible assets;Ostala nematerijalna imovina
+015;Advance payments for purchase of intangible assets;Predujmovi za nabavu nematerijalne imovine
+016;Intangible assets in preparation;Nematerijalna imovina u pripremi (analitika prema vrsti raèuna skupine 01)
+018;Value adjustment of intangible assets;Vrijednosno usklaðenje nematerijalne imovine (analitika prema vrsti raèuna skupine 01)
+019;Accumulated depreciation of intangible assets;Akumulirana amortizacija nematerijalne imovine
+02;LAND AND BUILDINGS;MATERIJALNA IMOVINA – NEKRETNINE
+020;Land;Zemljišta
+021;Rights to use land ;Zemljišna prava (višegodišnja)
+023;Buildings;Graðevinski objekti (za vlastite potrebe)
+024;Flats for employees;Stanovi za vlastite zaposlenike
+026;Advance payments for purchase of land and buildings;Predujmovi za nabavu nekretnina
+027;Land and buildings under construction;Nekretnine u pripremi
+028;Value adjustment of land and buildings;Vrijednosno usklaðenje nekretnina
+029;Accumulated depreciation of buildings;Akumulirana amortizacija graðevina
+03;PLANT, EQUIPMENT, TOOLS AND TRANSPORTATION VEHICLES;POSTROJENJA, OPREMA, ALATI, INVENTAR I TRANSPORTNA SREDSTVA
+030;Plant;Postrojenja
+031;Equipment;Oprema
+032;Tools, transportation equipment and vehicle;Alati, pogonski inventar i transportna imovina
+033;VAT prepayments which is not tax deductable;Pretporez koji se ne može odbiti (kao dio vrijed. os. aut.)
+034;Agricultural equipment;Poljoprivredna oprema
+035;Other property, plant and equipment;Ostala materijalna imovina
+036;Advance payments for purchase of property, plant and equipment;Predujmovi za materijalnu imovinu
+037;Plant and equipment under construction;Materijalna imovina u pripremi
+038;Value adjustment of plant and equipment;Vrijednosno usklaðenje postrojenja i opreme
+039;Accumulated depreciation of plant and equipment;Akumulirana amortizacija postrojenja i opreme
+04;BIOLOGICAL ASSETS;BIOLOŠKA IMOVINA
+040;Biological assets- growing crops;Biološka imovina – bilje – višegodišnji nasadi
+041;Biological assets- live stock;Biološka imovina – životinje – osnovno stado
+046;Advance payments for purchase of biological assets;Predujmovi za biološku imovinu
+047;Biological assets in preparation (not put in use);Biološka imovina u pripremi
+048;Value adjustment of biological assets;Vrijednosno usklaðenje biološke imovine
+049;Accumulated depreciation of biological assets;Akumulirana amortizacija biološke imovine
+05;INVESTMENT PROPERTIES ;ULAGANJA U NEKRETNINE
+050;Investment property-land ;Ulaganja u nekretnine – zemljišta
+051;Investment property- buildings;Ulaganja u nekretnine – graðevine
+056;Advance payments for investment properties;Predujmovi za ulaganja u nekretnine
+057;Investments property under construction;Ulaganja u nekretnine u pripremi
+058;Value adjustment of investment properties;Vrijednosno usklaðenje ulaganja u nekretnine
+059;Accumulated depreciation of buildings;Akumulirana amortizacija ulaganja u graðevine
+06;NON-CURRENT FINANCIAL ASSETS ;DUGOTRAJNA FINANCIJSKA IMOVINA (s povratom dužim od jedne godine)
+060;Shares/stakes in related companies - ( more than 20% of share);Udjeli (dionice) kod povezanih poduzetnika (s više od 20% udjela)
+061;Loans given to related party;Dani zajmovi povezanim poduzetnicima (analitika po društvima u kojima se ima više od 20% udjela)
+062;Participating interest (up to 20% of share);Sudjelujuæi interesi (udjeli)
+063;Loans given to companies in which we have participating interest (up to 20% of investment in shares);Zajmovi dani poduzetnicima u kojima postoje sudjelujuæi interesi (do 20% udjela u T.K.)
+064;Investments in a securities;Ulaganja u vrijednosne papire (dugotrajne)
+065;Loans given to third party;Dani zajmovi, depoziti i sl.
+066;Investments in associates accounted for using the equity method;Ulaganja koja se obraèunavaju metodom udjela
+067;Other long-term financial assets;Ostala dugotrajna financijska imovina
+068;Value adjustment of long-term financial assets;Vrijednosno usklaðenje financijske imovine – dugotrajne (analitika prema oblicima imovine u usklaðenju)
+069;Unrealized interests on loans etc.;Nezaraðene kamate u kreditima i sl.
+07;LONG TERM RECEIVABLES;POTRAŽIVANJA (dulja od jedne godine)
+070;Receivables from related parties;Potraživanja od povezanih poduzetnika
+071;Receivable on basis of credit sales;Potraživanja s osnove prodaje na kredit
+072;Receivables from factoring;Potraživanja iz faktoringa
+073;Receivables for a given guarantees;Potraživanja za jamèevine
+074;Receivables for legal cases in company's favour and other risk receivables;Potraživanja u sporu i rizièna potraživanja
+075;Receivables for advance payments for services ;Potraživanja za predujmove za usluge
+076;Other long-term receivables;Ostala potraživanja – dugotrajna
+078;Value adjustment of long-term receivables;Vrijednosno usklaðivanje dugotrajnih potraživanja
+079;Receivables for unrealized interests in loans ;Potraživanja za nezaraðenu kamatu
+08;DEFERRED TAX ASSET;ODGOÐENA POREZNA IMOVINA
+080;Deferred temporary tax difference on income tax;Odgoðena privremena razlika poreza na dobitak (analitika po godinama)
+1;CASH, CURRENT FINANCIAL ASSETS, CURRENT RECEIVABLES, PREPAID EXPENSES AND ACCRUED INCOME;NOVAC, KRATKOTRAJNA FINANCIJSKA IMOVINA, KRATKOTRAJNA POTRAŽIVANJA, TE TROŠKOVI I PRIHOD BUDUÆEG RAZDOBLJA
+10;CASH IN BANK AND CASH ON HAND;NOVAC U BANKAMA I BLAGAJNAMA
+100;Cash in bank;Novèani raèuni u bankama
+101;Letter of credit issued in domestic bank;Otvoreni akreditiv u domaæoj banci
+102;Cash on hand;Blagajne
+103;Foreign currency accounts;Devizni raèuni
+104;Letter of credit issued in foreign bank;Otvoreni akreditiv u stranim valutama
+105;Foreign cash on hand;Devizna blagajna
+106;Cash assigned to foreign currency purchases;Novac za kupnju deviza
+108;Other cash ;Ostala novèana sredstva
+109;Value adjustment of bank deposits ;Vrijednosno usklaðenje depozita u bankama
+11;CURRENT FINANCIAL ASSETS;KRATKOTRAJNA FINANCIJSKA IMOVINA (do jedne godine)
+110;Investments in related parties;Udjeli (dionice) u povezanim poduzetnicima
+111;Loans to related parties;Dani zajmovi povezanim poduzetnicima
+112;Participating interest (up to 20% investment in business share/stake);Sudjelujuæi interesi (udjeli)
+113;Loans to companies in which we have participating interest ;Zajmovi dani poduzetnicima u kojima postoje sudjelujuæi interesi (do 20% udjela)
+114;Investments in securities;Ulaganja u vrijednosne papire
+115;Leases given, deposits and other;Dani zajmovi, depoziti i sl.
+116;Receivables from investments funds;Potraživanja iz ulaganja u investicijske fondove
+117;Other financial assets;Ostala financijska imovina
+118;Receivables in dispute (e.g.. disputed, in bankruptcy etc, from financial assets);Potraživanja u sporu (npr. utužena, u steèaju i sl. iz fin. imovine)
+119;Value adjustment of current financial assets ( value adjustment by analytics of this group of accounts);Vrijednosno usklaðivanje financijske imovine – kratkotrajne (analitika po otpisima iz ove skupine raèuna)
+12;CURRENT RECEIVABLES;POTRAŽIVANJA (KRATKOTRAJNA)
+120;Trade receivables ;Potraživanja od kupaca
+121;Foreign trade customers;Kupci u inozemstvu
+122;Receivables from a related party;Potraživanja od povezanih poduzetnika (s više od 20% udjela – ovisni poduzet.)
+123;Receivables from companies in which we have participating interest i.e. investment in business shares/stakes ;Potraživanja od sudjelujuæih poduzetnika (u kojima se drži manje od 20% udjela)
+124;Interest receivables ;Potraživanja za kamate
+125;Receivables for advance payments for services;Potraživanja za predujmove za usluge (koje nisu u svezi sa zalihama i dugotr. imov.)
+126;Foreign trade receivables ;Potraživanja iz vanjskotrgovaèkog poslovanja (s osnove uvoza odnosno izvoza za tuði raèun)
+127;Receivables from other activities;Potraživanja s osnove ostalih aktivnosti
+128;Other current receivables;Ostala kratkoroèna potraživanja
+129;Value adjustment of receivables;Vrijednosno usklaðenje potraživanja
+13;RECEIVABLES FROM EMPLOYEES AND OTHER RECEIVABLES;POTRAŽIVANJA OD ZAPOSLENIH I OSTALA POTRAŽIVANJA (kratkotrajna)
+130;Receivables from employees;Potraživanja od zaposlenih
+133;Receivables from equity owners;Potraživanja od èlanova poduzetnika
+134;Receivables in dispute and risky receivables;Potraživanja u sporu i rizièna potraživanja (iz skupine 12 i 13)
+135;Receivables for assets held on free-trade zone;Potraživanja za sredstva u slobodnoj zoni
+136;Receivables from banks based on customer's loans;Potraživanja od banaka za prodaju na potrošaèki kredit
+137;Receivables from foreign business units;Potraživanja od poslovnih jedinica u inozemstvu
+138;Other receivables from operating activities;Ostala poslovna potraživanja
+139;Value adjustment of receivables from employees and other receivables;Vrijednosno usklaðenje potraživanja od zaposlenih èlanova društva i ostalih potraživanja
+14;RECEIVABLES FROM THE GOVERNMENT FOR TAXES, DUTIES AND CONTRIBUTIONS;POTRAŽIVANJA OD DRŽAVE ZA POREZE, CARINU I DOPRINOSE
+140;Value added tax;Porez na dodanu vrijednost
+141;Receivables from tax and surtax regarding salaries and other incomes;Potraživanja za porez i prirez na dohodak iz plaæa i drugih primanja
+142;Receivables for prepayments made regarding mandatory contributions on personal income tax;Potraživanja za više plaæene doprinose iz plaæa i na plaæe
+143;Receivables for corporate income tax and withholding tax ;Potraživanja za porez na dobitak i po odbitku
+144;Receivables for excise duties and other taxes;Potraživanja za posebne poreze (akcize – trošarine) i dr. poreze od države
+145;Receivables for National tourism office fee;Potraživanja za plaæenu èlanarinu turistièkim zajed.
+146;Receivables for chamber memberships;Potraživanja za èlanarine komori (HGK ili HOK)
+147;Receivables for duties and prepayments to customs duty;Potraživanja za carinu i više plaæene carinske pristojbe
+148;Receivables for County and municipal tax;Potraživanja za županijski i opæinski (gradski) porez
+149;Receivables for other not mentioned taxes, contributions and duties ;Potraživanja za ostale nespomenute poreze, doprinose, takse i pristojbe
+15;RECEIVABLES FROM GOVERNMENT INSTITUTIONS;POTRAŽIVANJA OD DRŽAVNIH INSTITUCIJA
+150;Receivables from Croatian institute for health insurance regarding employee's sick leave payments ;Potraživanje za nadoknade bolovanja od HZZO
+151;Receivables for Pension insurance institute;Potraživanja od mirovinskog osiguranja
+152;Receivables from local government;Potraživanja od lokalne samouprave
+153;Receivables for bonuses, premiums and government grants;Potraživ. za regrese, premije, stimulac. i držav. potpore
+154;Receivables for Fund for packaging repurchase ;Potraživanje od Fonda za otkupljenu ambalažu
+155;Other receivables from the Government ;Ostala potraživanja od državnih institucija
+159;Value adjustment of receivables from the Government and other institutions;Vrijednosno usklaðenje potraživanja od države i drugih institucija
+19;PREPAID EXPENSES AND ACCRUED INCOME;PLAÆENI TROŠKOVI BUDUÆEG RAZDOBLJA I OBRAÈUNANI PRIHODI (unutar jedne godine od datuma bilance)
+190;Prepaid expenses and accrued income;Unaprijed plaæeni troškovi
+191;Accrued income;Obraèunani prihodi (buduæeg razdoblja)
+192;PREPAID EXPENSES AND ACCRUED INCOME;Unaprijed plaæeni ovisni troškovi nabave (koji nisu na 651)
+193;Accrued interest which relates to future periods;Troškovi kamata iz buduæeg razdoblja
+194;Prepaid expenses for concession rights;Unaprijed plaæeni troškovi koncesija (za razdoblje do 12 mj.)
+195;Prepaid expenses for franchise fee;Unaprijed plaæene franšize, trgovaèko znakovlje, prava i sl. (do 12 mj.)
+196;Prepaid expenses for licences and patents;Unaprijed plaæene licencije i patenti (do 12 mj.)
+199;Other prepaid expenses;Ostali plaæeni troškovi buduæeg razdoblja
+2;CURRENT AND NON-CURRENT LIABILITIES, LONG TERM PROVISIONS, ACCRUED EXPENSES AND DEFERRED INCOME;KRATKOROÈNE I DUGOROÈNE OBVEZE, DUGOROÈNA REZERVIRANJA, ODGOÐENA PLAÆANJA I PRIHODI BUDUÆEG RAZDOBLJA
+20;CURRENT LIABILITIES TOWARDS RELATED PARTIES AND BASED ON SHARE IN RESULT (UP TO ONE YEAR);KRATKOROÈNE OBVEZE PREMA POVEZANIM PODUZETNICIMA I S OSNOVE UDJELA U REZULTATU (do jedne godine)
+200;Liabilities towards related parties;Obveze prema povezanim poduzetnicima
+201;Liabilities due to share in results;Obveze s osnove udjela u rezultatu
+21;CURRENT FINANCIAL LIABILITIES ;KRATKOROÈNE FINANCIJSKE OBVEZE
+210;Liabilities due to issued cheques;Obveze za izdane èekove
+211;Liabilities due to issued promissory notes;Obveze za izdane mjenice
+212;Liabilities due to issued securities;Obveze po izdanim vrijednosnim papirima
+213;Liabilities towards companies in which we have participating interest (up to 20% of share);Obveze prema poduzetnicima u kojima postoje sudjelujuæi interesi (do 20% udjela)
+214;Lease liabilities and deposits received;Obveze s osnove zajmova, depozita i sl.
+215;Liabilities towards banks and other financial institutions;Obveze prema bankama i drugim financijskim institucijama
+216;Liabilities towards credit card institutions;Obveze prema izdavateljima kreditnih kartica (analitika prema kartièarima)
+217;Liabilities from discount services;Obveze iz eskontnih poslova
+218;Liabilities due to non current assets held for sale;Obveze s osnove dugotrajne imovine namijenjene prodaji (analitika prema izvorima)
+22;TRADE AND OTHER PAYABLES AND LIABILITIES FOR ADVANCES RECEIVED;OBVEZE PREMA DOBAVLJAÈIMA, ZA PREDUJMOVE I OSTALE OBVEZE
+220;Domestic trade payables;Obveze prema dobavljaèima u zemlji (analitika prema dobavljaèima)
+221;Foreign trade payables ;Dobavljaèi iz inozemstva (analitika prema dobavljaèima)
+222;Trade payables- private person;Dobavljaèi fizièke osobe
+223;Trade payables for utility services;Dobavljaèi komunalnih usluga
+224;Liabilities for not invoiced but received goods and services;Obveze za nefakturirane a preuzete isporuke robe i usluge
+225;Liabilities for advances received ;Obveze za predujmove
+23;LIABILITIES TOWARDS EMPLOYEES AND OTHER LIABILITIES;OBVEZE PREMA ZAPOSLENIMA I OSTALE OBVEZE
+230;Liabilities towards employees;Obveze prema zaposlenicima
+231;Current liabilities from procurements and grants;Kratkoroène obveze iz nabava i potpora
+232;Interests payable;Obveze za kamate (analitika prema dužnicima i vrstama obveza prema nepovezanim društvima)
+233;Liabilities for commission or consignment sale of goods;Obveze po obraèunu prodanih dobara primljenih u komisiju ili konsignaciju
+234;Liabilities towards insurance companies;Obveze prema osiguravajuæim društvima
+235;Liabilities due to operations in free-trade zone;Obveze iz poslovanja u slobodnoj zoni
+236;Liabilities due to operations in foreign trade;Obveze iz vanjskotrgovaèkog poslovanja
+237;Liabilities towards foreign business units;Obveze prema poslovnim jedinicama u inozemstvu
+238;Liabilities due to acquisitions of shares/stakes;Obveze iz stjecanja udjela
+239;Other current liabilities;Ostale kratkoroène obveze
+24;CURRENT LIABILITIES FOR TAXES, CONTRIBUTIONS AND SIMILAR EXPENSES;KRATKOROÈNE OBVEZE ZA POREZE, DOPRINOSE I slièna davanja
+240;Liabilities for value added taxes;Obveze za porez na dodanu vrijednost
+241;Liabilities for personal income tax and surtax;Obveze za porez i prirez na dohodak
+242;Liabilities for insurance contributions;Obveze za doprinose za osiguranja
+243;Income tax payables, tax on investment income and withholding tax ;Obveze za porez na dobitak, dohodak od kapitala i porez po odbitku
+244;Liabilities for excise duties and other taxes;Obveze za posebne poreze (trošarine – akcize) i dr. poreze državi
+245;Liabilities for fee to National tourism office ;Obveze za èlanarinu turist. zajednicama
+246;Liabilities for Chamber membership fee;Obveze za èlanarinu komori
+247;Liabilities for duties and customs duty;Obveze za carinu i carinske pristojbe
+248;Liabilities for a County's and municipal's taxes ;Obveze za županijske (gradske) i opæinske poreze
+249;Liabilities for other not mentioned taxes, contributions and duties ;Ostale obveze javnih davanja
+25;LONG TERM LIABILITIES ;DUGOROÈNE OBVEZE (za duže od jedne godine)
+250;Liabilities towards related parties;Obveze prema povezanim poduzetnicima
+251;Leasing liabilities and liabilities for deposits received;Obveze za zajmove, depozite i sl.
+252;Liabilities towards banks and other financial institutions;Obveze prema bankama i dr. financijskim institucijama
+253;Long term financial leasing liabilities ;Dugoroène obveze iz financijskog lizinga
+254;Liabilities for advances received;Obveze za predujmove
+255;Trade payables (unpaid long term trade payables) ;Obveze prema dobavljaèima (neisplaæene dugoroène obveze prema vjerovnicima s osnove poslovanja)
+256;Liabilities for long term securities;Obveze po vrijednosnim papirima (dugoroènim)
+257;Liabilities towards company's in which we have participating interest;Obveze prema poduzetnicima u kojima postoje sudjelujuæi interesi (do 20% udjela)
+258;Liabilities towards government (related guarantees, loans);Obveze prema Državi (realizirana jamstva, krediti)
+259;Other long term liabilities;Ostale dugoroène obveze
+26;DEFERRED TAXES;ODGOÐENI POREZI
+260;Deferred tax liabilities;Odgoðena porezna obveza
+28;LONG TERM PROVISIONS FOR RISKS AND CHARGES;DUGOROÈNA REZERVIRANJA ZA RIZIKE I TROŠKOVE
+280;Provision for employee benefits;Rezerviranja za otpremnine i mirovine
+281;Provision for tax liabilities;Rezerviranja za porezne obveze
+282;Other provisions;Druga rezerviranja
+29;ACCRUED EXPENSES AND DEFERRED INCOME;ODGOÐENO PLAÆANJE TROŠKOVA I PRIHOD BUDUÆEG RAZDOBLJA
+290;Accrued expenses;Odgoðeno plaæanje troškova
+291;Accrued expenses for rights to use;Obraèunani troškovi korištenih prava
+292;Accrued expenses for goods purchases;Obraèunani troškovi nabave dobara
+293;Deferred income (income which relates to future period);Obraèunani prihodi buduæeg razdoblja
+294;Deferred income from government grants;Odgoðeno priznavanje prihoda iz državnih potpora (HSFI t. 15.37 i MRS 20, t. 12. i 24.)
+295;Deferred income;Odgoðeno priznavanje prihoda
+296;Deferred income relating to not invoiced but shipped goods and services;Odgoðeni prihod s osnove nefakturiranih isporuka dobara i usluga
+297;Unrealized gains on financial assets ;Nerealizirani dobitci iz financijske imovine (HSFI 9 i MRS 39)
+298;Provision for unused vacation days;Rezerviranje troška za neiskorištene godišnje odmore
+299;Other accruals;Ostala pasivna vremenska razgranièenja
+3;RAW MATERIALS, MATERIALS, SPARE PARTS AND SMALL INVENTORY;ZALIHE SIROVINA I MATERIJALA, REZERVNIH DIJELOVA I SITNOG INVENTARA
+30;COST OF INVENTORY PURCHASING CALCULATION;OBRAÈUN TROŠKOVA KUPNJE ZALIHA
+300;Payables purchase price;Kupovna cijena dobavljaèa
+301;Other inventory dependant costs ;Ovisni troškovi nabave (u svezi s dovoðenjem na zalihu)
+302;Duties and other customs duty;Carina i druge uvozne pristojbe
+303;Excise duties which can not be deducted;Posebni porezi (trošarine) koji se ne mogu odbiti
+309;Cost of inventory purchasing calculation;Obraèun troškova kupnje
+31;RAW MATERIALS ;SIROVINE I MATERIJAL NA ZALIHI
+310;Raw material on stock;Sirovine i materijal u skladištu
+311;Material in processing, finishing and manipulation phases;Materijal u doradi, obradi i manipulaciji
+312;Material sent for finishing to partners ;Materijal na doradi kod ortaka
+313;Materials used in agriculture ;Zalihe materijala za poljoprivredu
+318;Inventory price adjustment;Odstupanje od cijene zaliha
+319;Value adjustment of raw materials;Vrijednosno usklaðenje zaliha sirovina i materijala
+32;SPARE PARTS;ZALIHE REZERVNIH DIJELOVA
+320;Spare parts on stock;Rezervni dijelovi na zalihi
+328;Spare part price adjustment;Odstupanje od cijene dijelova na zalihi
+329;Value adjustment of spare parts;Vrijednosno usklaðenje zaliha rezervnih dijelova
+35;SMALL INVENTORY ON STOCK;ZALIHE SITNOG INVENTARA
+350;Small inventory on stock;Sitan inventar na zalihi
+351;Packaging on stock;Ambalaža na zalihi (samo vlastita i višekratna, analitika prema vrstama)
+352;Tires on stock;Autogume na zalihi
+358;Small inventory's price adjustment;Odstupanje od cijene
+359;Value adjustment of small inventory;Vrijednosno usklaðenje zaliha
+36;SMALL INVENTORY IN USE;ZALIHE SITNOG INVENTARA U UPORABI
+360;Small inventory in use;Sitan inventar u uporabi
+361;Packaging in use;Ambalaža u uporabi
+362;Tires in use;Autogume u uporabi
+363;Small inventory write off;Otpis sitnog inventara
+364;Packaging write off;Otpis ambalaže
+365;Tires write off;Otpis autoguma
+369;Value adjustment of small inventory, packaging and tires;Vrijednosno usklaðenje sitnog inventara, ambalaže i autoguma
+37;ADVANCES PAYMENTS FOR RAW MATERIALS, SPARE PARTS, SMALL INVENTORY AND TIRES PURCHASES;PREDUJMOVI DOBAVLJAÈIMA SIROVINA I MATERIJALA, REZERVNIH DIJELOVA, SITNOG INVENTARA I AUTOGUMA
+370;Advance payments for material ;Predujmovi dobavljaèima materijala
+371;Advance payments for spare parts;Predujmovi dobavljaèima rezervnih dijelova
+372;Advance payments for small inventory;Predujmovi dobavljaèima sitnog inventara
+373;Advance payments to importer for raw materials, spare parts and small inventory;Predujmovi dani uvozniku za nabavu sirovina i materijala, dijelova i inventara
+374;Advance payments to foreign suppliers;Predujmovi inozemnim dobavljaèima
+379;Value adjustment of advance payments;Vrijednosno usklaðenje danih predujmova
+4;COSTS BY NATURE , FINANCIAL AND OTHER EXPENSES;TROŠKOVI PREMA VRSTAMA, FINANCIJSKI I OSTALI RASHODI
+40;MATERIAL COST;MATERIJALNI TROŠKOVI
+400;Cost of raw material;Troškovi sirovina i materijala (za proizvodnju dobara i usluga)
+401;Cost of material used in administration and sale department ;Materijalni troškovi administracije, uprave i prodaje
+402;Research and development cost;Troškovi istraživanja i razvoja (Zak. o znan – Nn. br. 46/07.)
+403;Packaging cost;Troškovi ambalaže
+404;Cost of small inventory, packaging and tires;Trošak sitnog inventara, ambalaže i autoguma
+405;Spare parts and material used on maintenance;Potrošeni rezervni dijelovi i materijal za održavanje
+406;Energy used during production of goods and services;Potrošena energija u proizvodnji dobara i usluga
+407;Energy - administration and sale department ;Potrošena energija u administraciji, upravi i prodaji
+408;Energy - secondary production processes;Troškovi energije na pomoænim mjestima u proizvodnji
+409;Standard cost adjustments;Odstupanja od standardnog troška
+41;OTHER EXTERNAL COSTS (COST OF SERVICES);OSTALI VANJSKI TROŠKOVI (TROŠKOVI USLUGA)
+410;Telephone and transportation costs;Troškovi telefona, prijevoza i sl.
+411;External service costs used in goods production and providing services;Troškovi vanjskih usluga pri izradi dobara i obavljanju usluga
+412;Maintenance and securities services ;Usluge održavanja i zaštite (servisne usluge)
+413;Vehicle registration and permission costs;Usluge registracije prijevoznih sredstava i troškovi dozvola
+414;Leasing costs;Usluge zakupa – lizinga
+415;Promotion , sponsorship and fairs costs;Usluge promidžbe, sponzorstva i troškovi sajmova
+416;Intellectual services;Intelektualne i osobne usluge
+417;Utilities and similar costs;Troškovi komunalnih i sliènih usluga
+418;Representation costs- hosting and mediation;Usluge reprezentacije – ugošæivanja i posredovanja
+419;Other external costs;Troškovi ostalih vanjskih usluga
+42;STAFF COSTS-SALARIES;TROŠKOVI OSOBLJA – PLAÆE
+420;Wages and salaries;Neto plaæe i nadoknade
+421;Income tax and surtax costs;Troškovi poreza i prireza
+422;Contributions from salaries costs;Troškovi doprinosa iz plaæa
+423;Contributions on salaries costs;Doprinosi na plaæe
+424;Gross salaries ;Bruto plaæe (privremeno v. napom. 2)
+43;DEPRECIATION;AMORTIZACIJA
+430;Amortisation of intangible assets;Amortizacija nematerijalne imovine
+431;Depreciation of property, plant and equipment;Amortizacija materijalne imovine
+432;Depreciation of cars and other vehicles for personal transportation ;Amortizacija osobnih automobila i dr. sredstava za osobni prijevoz
+433;Depreciation of property, plant and - management and selling department;Amortizacija objekata i opreme uprave i prodaje
+434;Depreciation surplus due to revaluation of assets;Poveæana amortizacija s temelja revalorizacije
+435;Depreciation of biological assets (vineyards, orchards, live stock);Amortizacija biološke imovine (vinogradi, voænjaci, osnovno stado i sl.)
+436;Tax not-deductable depreciation ;Amortizacija iznad porezno dopuštene
+44;VALUE ADJUSTMENT OF NON-CURRENT AND CURRENT ASSETS;VRIJEDNOSNO USKLAÐENJE DUGOTRAJNE I KRATKOTRAJNE IMOVINE
+440;Value adjustment of non-current intangible assets (acc. 018);Vrijednosno usklaðenje dugotrajne nematerijalne imovine (018)
+441;Value adjustment of property, plant and equipment;Vrijednosno usklaðenje dugotrajne materijalne imovine
+442;Value adjustment of non-current receivables (acc. 078);Vrijednosno usklaðenje dugotrajnih potraživanja (veza sa 078)
+444;Value adjustment of deposit on banks, bills of exchange, cheques (acc. 109 and acc. 119);Vrijednosno usklaðenje depozita u bankama, mjenica, èekova i sl. (109 i dio 119)
+445;Value adjustment of current receivables;Vrijednosno usklaðenje kratkotrajnih potraživanja
+446;Value adjustment of inventory;Vrijednosno usklaðenje zaliha (veza s 319, 329, 359 i 369)
+447;Value adjustment of advance payments;Vrijednosno usklaðenje danih predujmova (veza s 379)
+45;PROVISIONS;REZERVIRANJA (v. skupinu 28)
+450;The cost of long term provision for risks within warranty period;Troškovi dugoroènog rezerviranja za rizike u jamstvenom (garancijskom) roku (èl. 11., st. 2. ZoPD)
+451;The costs of long term provision arising from possible litigation losses ;Troškovi dugoroènog rezerviranja za gubitke po zapoèetim sudskim sporovima (èl. 11., st. 2. ZoPD)
+452;The costs of long-term provision for renewal of natural resources;Troškovi dugoroènog rezerviranja za obnovu prirodnog bogatstva (èl. 11., st. 2. ZoPD)
+453;The costs of long-term provision for severance payments;Troškovi dugoroènog rezerviranja za otpremnine (èl. 11., st. 2. ZoPD)
+454;The costs of long-term provision for unused vacation days;Troškovi dugoroè. rez. za neiskorišteni godišnji odmor (èl. 11., st. 5. ZoPD i MRS 19) – vidi raè. 298
+455;The costs of long-term provision for Company's restructuring;Troškovi dugoroènog rezerviranja za restrukturiranje poduzeæa (MRS 37, t. 72. i HSFI t. 16.22)
+456;The costs of long-term provision for pensions and other employment benefits;Troškovi dugoroènog rezerviranja za mirovine i sliène troškove – obveze (MRS 19)
+457;The costs of provision for onerous contracts;Troškovi rezerviranja po štetnim ugovorima (HSFI 16.21.)
+459;The costs of other provision for other risk and charges;Troškovi ostalih dugoroènih rezerviranja i troškovi rizika
+46;OTHER OPERATING COSTS; OSTALI TROŠKOVI POSLOVANJA
+460;Daily allowances for business trips and other travel expenses;Dnevnice za službena putovanja i putni troškovi
+461;Reimbursement of expenses , gifts and subsidies;Nadoknade troškova, darovi i potpore
+462;Management board compensation;Troškovi èlanova uprave
+463;Cost of internal representation and promotion;Troškovi reprezentacije i promidžbe (interne)
+464;Insurance premiums;Premije osiguranja
+465;Bank charges and costs of payment operations;Bankovne usluge i troškovi platnog prometa
+466;Fees, compensations and other expenses;Èlanarine, nadoknade i slièna davanja
+467;Taxes which does not depend on results and charges;Porezi koji ne ovise o dobitku i pristojbe
+468;Costs of rights to use;Troškovi prava korištenja (osim najmova)
+469;Other operating costs- intangible;Ostali troškovi poslovanja – nematerijalni
+47;FINANCIAL EXPENSES;FINANCIJSKI RASHODI
+470;Interest expense from related parties;Kamate od povezanih društava
+471;Exchange difference on translation of foreign operations with related party ;Teèajne razlike iz odnosa s povezanim društvima
+472;Other expense from operations with related party;Ostali troškovi iz odnosa s povezanim poduzetnicima
+473;Interest expense from operations with third party;Kamate iz odnosa s nepovezanim društvima
+474;Penalty interest;Zatezne kamate
+475;Exchange difference on translation of foreign operations with third party;Teèajne razlike iz odnosa s nepovezanim društvima
+476;Loss from sale of investments in shares, stakes, bonds and other securities (which are sold below cost);Gubitci iz ulaganja u dionice, udjele, obveznice i dr. vrijednosne papire (koji su prodani ispod troška nabave – èl. 10. ZoPD
+477;Cost of discounts given ;Troškovi diskonta i nagodbi
+478;Unrealized loss (expense) from financial assets;Nerealizirani gubitci (rashodi) od financ. imovine
+479;Other financial expenses;Ostali financijski troškovi
+48;OTHER EXPENSES;OSTALI POSLOVNI RASHODI
+480;Additional rebates , discounts, claims and costs of samples;Trošak naknadnih popusta, sniženja, reklamacija i troškovi uzoraka
+481;Bed debts and other assets write off ;Otpisi vrijednosno neusklaðenih potraživanja
+482;Disposals of property, plant and equipment and intangible assets;Rashodi – otpisi nematerijalne i materijalne imovine
+483;Inventory shortages and burglary costs;Manjkovi i provalne kraðe na zalihama i drugim sredstvima
+484;Penalties, compensation for damages occurred and contract related costs;Kazne, penali, nadoknade šteta i troškovi iz ugovora
+485;Additionally found operating expenses ;Naknadno utvrðeni troškovi poslovanja
+486;Gifts/donations up to 2% of total income;Darovanje do 2% od ukupnog prihoda
+487;Gifts/donations above 2% of total income and other donations;Darovanja iznad 2% od UP i dr. darovanja
+488;Expenses from other activities;Troškovi iz drugih aktivnosti (izvan osnovne djelatnosti)
+489;Other costs-expenses;Ostali troškovi – rashodi (èl. 7. ZoPD)
+49;ALLOCATION OF COSTS;RASPORED TROŠKOVA
+490;Allocation of costs to cost of conversion (cost of production) - (on acc. 60, 62, 63);Raspored troškova za obraèun proizvoda i usluga (prema HSFI 10 i MRS-u 2 i MRS-u 11) – uskladištivi troškovi (na raèune 60, 62 i 63)
+491;Allocation of management and administrative overheads to expenses for the year - (on acc. 72);Raspored troškova za pokriæe upravnih, administrativnih, prodajnih i drugih troškova (na raèune 70 i 71)
+6;WORK IN PROGRESS, FINISHED GOODS, MERCHANDISE GOODS AND NON-CURRENT ASSETS HELD FOR SALE;PROIZVODNJA, GOTOVI PROIZVODI, ROBA I DUGOTRAJNA IMOVINA NAMIJENJENA PRODAJI
+60;WORK IN PROGRESS- CONVERSION COSTS;PROIZVODNJA – TROŠKOVI KONVERZIJE
+600;Work in progress (allocation by cost driver, cost centres, working orders);Proizvodnja u tijeku (razrada po serijama, nositeljima troškova, mjestima, pogonima, gradilištima, objektima, radnim nalozima i sl.)
+601;Work in progress for services;Vrijednost usluga (u tijeku ili nedovršenih na datum bilance – MRS 2, t. 16.)
+602;Production in cooperation ;Vanjska proizvodnja (kooperacija i dr.)
+605;Production process in free trade zone;Proizvodnja u slobodnoj zoni
+606;Production in processing and manipulation phases;Proizvodnja u doradi i manipulaciji
+607;Suspended production;Obustavljena proizvodnja
+608;Work in progress under partnership agreement;Proizvodnja u tijeku iz ortaèkog ugovora
+609;Value adjustments of work in progress;Vrijednosno usklaðivanje proizvodnje – usluga
+61;UNFINISHED GOODS AND SEMI-MANUFACTURE GOODS;NEDOVRŠENI PROIZVODI I POLUPROIZVODI
+610;Semi-manufacture goods on stock (analytics by the production stage);Zalihe poluproizvoda (analitika prema osnovnim skupinama ili po stupnju dovršenosti)
+611;Unfinished goods and semi-manufacture goods (analytics by products types);Nedovršeni proizvodi i poluproizvodi (analitika po vrstama proizvoda)
+619;Value adjustment of unfinished goods and semi-manufacture goods ;Vrijednosno usklaðivanje nedovršenih proizvoda i poluproizvoda
+62;BIOLOGICAL ASSETS;BIOLOŠKA IMOVINA
+620;Biological assets in progress;Zalihe biološke proizvodnje u toku
+621;Biological assets for sale;Biloška imovina za prodaju
+629;Value adjustment of biological assets;Vrijednosno usklaðivanje biloške imovine
+63;FINISHED GOODS;ZALIHE GOTOVIH PROIZVODA
+630;Finished goods in warehouse;Gotovi proizvodi na skladištu (razrada za svako skladište a unutar toga po skupinama, tipovima, vrstama i sl.)
+631;Finished goods in public warehouse;Gotovi proizvodi u javnom skladištu, silosu, i dr.
+632;Finished goods given in commission sale;Gotovi proizvodi dani u komisijsku prodaju
+633;Finished goods given in consignment sale;Gotovi proizvodi dani u konsignacijsku prodaju
+634;Finished goods in processing, finishing and manipulation phases;Gotovi proizvodi u doradi, obradi i manipulaciji
+635;Finished goods in free-trade zone;Gotovi proizvodi u slobodnoj zoni
+636;Obsolete and slow moving inventory ;Zalihe nekurentnih proizvoda i otpadaka
+637;Finished goods in storefront;Gotovi proizvodi u izložbenim prostorima
+638;Finished goods from partnership agreement;Gotovi proizvodi iz ortaštava
+639;Value adjustment of finished goods ;Vrijednosno usklaðivanje zaliha gotovih proizvoda
+64;FINISHED GOODS IN OWN STORES;GOTOVI PROIZVODI U VLASTITIM PRODAVAONICAMA
+640;Finished goods in own stores;Gotovi proizvodi u prodaji u vlastitim prodavaonicama (analitika po prodavaonicama)
+641;VAT included in value of goods;Uraèunani PDV u vrijednosti proizvoda
+642;Luxury tax included in value of goods;Uraèunani porez na luksuz
+648;Margin included in sale price of finished goods;Uraèunana marža u prodajnoj cijeni gotovih proizvoda
+649;Value adjustment of finished goods in own stores;Vrijednosno usklaðivanje gotovih proizvoda u prodavaonicama
+65;TOTAL COST OF MERCHANDISE GOODS - TOTAL PURCHASING COST;OBRAÈUN TROŠKOVA NABAVE ROBE – TROŠKOVI KUPNJE
+650;Payables purchase price;Kupovna cijena robe od dobavljaèa
+651;Other dependant costs in relation with bringing merchandise goods on stock;Ostali troškovi nabave u svezi s dovoðenjem robe na zalihu
+652;Duties and other import duties;Carina i druge uvozne pristojbe za robu
+653;Excise duties ;Posebni porezi (trošarine)
+659;Total cost of purchasing ;Obraèun nabave – trošak kupnje
+66;MERCHANDISE GOODS;ROBA
+660;Merchandise goods on stock;Roba u skladištu
+661;Merchandise goods in others warehouse and in storefront;Roba u tuðem skladištu i izlozima
+662;Merchandise goods given in commission and consignment sale;Roba dana u komisijsku ili konsignacijsku prodaju
+663;Merchandise goods in stores;Roba u prodavaonicama
+664;Tax included in value of merchandise goods;Uraèunani porezi u robi
+665;Merchandise goods in custom's warehouse "D" or in free-trade area;Roba u carinskom skladištu »D« ili u slobodnoj zoni
+666;Finished goods in processing, finishing and manipulation phases;Roba u doradi, obradi i manipulaciji
+667;Merchandise goods in transit;Roba na putu
+668;Margin included in sale price of merchandise goods;Uraèunana razlika u cijeni robe
+669;Value adjustment of merchandise goods;Vrijednosno usklaðivanje zaliha robe
+67;ADVANCE PAYMENTS FOR MERCHANDISE GOODS ;PREDUJMOVI ZA NABAVU ROBE
+670;Advance payments for merchandise goods;Dani predujmovi za nabavu robe
+671;Advance payments for merchandise goods import;Dani predujmovi uvozniku za nabavu robe
+672;Advance payments to related party for merchandise goods;Dani predujmovi za robu povezanom društvu
+679;Value adjustment of advance payments for merchandise goods;Vrijednosno usklaðenje danih predujmova za robu
+68;PROPERTIES AND ARTS HELD FOR SALE;NEKRETNINE I UMJETNINE za trgovanje
+680;Property which is classified as held for sale- at cost;Nabavna vrijednost nekretnina za preprodaju (s porezom na promet)
+681;Additions on the property held for sale;Troškovi dodatnog ureðenja – dorade
+682;Arts held for sale;Umjetnine u prodaji
+683;Property which is classified as held for sale;Nekretnine za prodaju (ureðene)
+684;VAT included in value of arts;Uraèunani PDV u umjetnine
+687;Advance payments for the purchase of property which will be classified as held for sale;Predujmovi za kupnju nekretnina radi daljnje prodaje
+688;Margin included in the sale price of property and arts held for sale;Uraèunana razlika u cijeni nekretnina i umjetnina za daljnju prodaju
+689;Impairment of property and arts held for sale;Vrijednosno usklaðivanje nekretnina i umjetnina u prometu i predujmova
+69;NON-CURRENT ASSETS HELD FOR SALE;DUGOTRAJNA IMOVINA NAMIJENJENA PRODAJI
+690;Intangible assets held for sale;Nematerijalna imovina namijenjena prodaji
+691;Other property, plant and equipment held for sale;Materijalna imovina namijenjena za prodaju
+699;Impairment of property, plant and equipment held for sale;Vrijednosno usklaðenje dugotrajne imovine namijenjena prodaji
+7;EXPENSES AND INCOME FOR THE YEAR;POKRIÆE RASHODA I PRIHODI RAZDOBLJA
+70;COST OF FINISHED GOODS SOLD AND COST OF SERVICES;TROŠKOVI PRODANIH ZALIHA PROIZVODA I USLUGA
+700;Cost of goods sold;Trošak zaliha prodanih proizvoda (60, 62, 63 i 64)
+701;Costs of rendering services;Troškovi realiziranih usluga (490 i 601)
+702;Costs of unused capacity;Troškovi neiskorištenog kapaciteta (HSFI t. 10.18. i MRS 2 t. 13)
+703;Cost of sale of material and obsolete inventory;Troškovi prodanih zaliha materijala i otpadaka (31, 32, 35 i 36)
+704;Value adjustment of inventory;Rashodi zaliha proizvodnje (HSFI 10 i MRS 2)
+705;Expenses which relates to previous periods- by mistake not show in previous periods;Greškom neiskazani rashodi proteklih razdoblja
+706;Construction contracts losses;Gubitci iz ugovora o izgradnj (MRS 11, t. 36.)
+707;Costs in relation with partnership agreement;Troškovi iz ugovora o ortaštvu
+708;Cost of value adjustments of work in progress, semi-finished goods and finished goods;Troškovi vrijednosnog usklaðenja proizvodnje u tijeku (609), poluproizvoda (629) i zaliha gotovih proizvoda (639 i 649)
+71;COST OF GOODS SOLD;TROŠKOVI PRODANE ROBE
+710;Costs of goods sold;Nabavna vrijednost prodane robe
+711;Cost of property which is classified as held for sale;Nabavna vrijednost prodanih nekretnina i umjetnina
+712;Costs which relates to property, plant and equipment held for sale;Troškovi dugotr. imov. namijenjeni prodaji
+713;Costs of goods shortages ( due to evaporate), damages , breakage and goods write-off ;Troškovi kala, rastepa, kvara i loma na robi i otpisi robe
+714;Costs of replacement of goods within the warranty period;Troškovi zamjene robe u jamstvenom roku
+715;Cost of good sold which relates to previous periods- by mistake not show in previous periods;Greškom neiskazani rashodi prodane robe u proteklim razdobljima u trgovini
+718;Costs of value adjustments of merchandise goods and advance payments;Troškovi vrijednosnog usklaðenja trgovaèke robe i predujmova (669, 679, 689)
+719;Impairment losses recognized on property, plant and equipment held for sale;Troškovi vrijednosnog usklaðenja dugotrajne imovine namijenjene prodaji (699)
+72;MANAGEMENT AND ADMINISTRATIVE OVERHEADS;TROŠKOVI ADMINISTRACIJE I OSTALI rashodi
+720;Cost of management, selling costs and administrative overheads;Troškovi uprave, prodaje, administracije (491)
+721;Other operational expenses;Ostali poslovni rashodi – nespomenuti
+73;OTHER EXPENSES - FROM NOT-ORDINARY ACTIVITIES;IZVANREDNI – OSTALI RASHODI
+730;Loss on sale of property, plant and equipment ;Izvanredni rashodi od prodaje dugotrajne imovine (HSFI t. 8.35.)
+731;Other expenses based on information which are material and which indicates than an asset was impaired at the balance sheet date;Izvanredni otpisi od otuðenja imovine koji su nastali neoèekivano i u visokoj vrijednosti (HSFI t. 4.7. i MRS 10. t. 9.)
+732;Losses due to dispossession or natural disasters on material assets;Gubitci zbog izvlaštenja ili zbog prirodnih katastrofa na važnom dijelu imovine
+733;Other expenses due to uncommonly and rarely transactions;Izvanredni rashodi iz ostalih rijetkih i neobiènih dogaðaja ili transakcija
+734;Other expenses due to penalties, paid compensations and liabilities from subsequent events ;Izvanredne kazne, penali, odštete, naknadno utvrð. obveze i sl.
+735;Unrealised losses;Nerealizirani gubitci
+737;Losses from biological assets arising from valuation;Gubitci od procjene biološke imovine
+74;SHARE IN PROFIT/LOSS OF ASSOCIATES;UDIO U GUBITKU I DOBITKU PRIDRUŽENIH PODUZETNIKA
+740;Share in loss of an associates;Udio u gubitku pridruženih poduzetnika
+745;Share in profit of an associates;Udio u dobitku od pridruženih poduzetnika
+75;REVENUE FROM SALE OF GOODS AND RENDERING OF SERVICES;PRIHODI OD PRODAJE PROIZVODA I USLUGA
+750;Sale of goods (analytics by goods or profit centres);–Prihodi od prodaje proizvoda (analitika po proizvodima ili profitnim centrima)
+751;Revenue from the rendering of services;Prihodi od prodaje usluga
+752;Revenue from the rendering of construction services- construction contracts;Prihodi od graditeljskih usluga – iz ugovora o izgradnji (graðevina, postrojenja, brodova i sl.)
+753;Foreign sale of goods ;Prihodi od prodaje dobara u inozemstvo (moguæa analitika po vrstama proizvoda i zemljama)
+754;Foreign revenue from the rendering of services ;Prihodi od prodaje usluga u inozemstvo (moguæa analitika po vrstama usluga i zemljama kupcima)
+755;Sale of goods and rendering of services to companies in which we have participating interest;Prihodi od prodaje proizvoda i usluga poduzetnicima u kojima postoje sudjelujuæi interesi (do 20% udjela)
+756;Sale of goods and rendering of services to related party;Prihodi od prodaje proizvoda i usluga ovisnim društvima (analitika po društvima)
+757;Revenue from leases and rents;Prihodi od najmova i zakupa
+758;Revenues form partnership agreement;Prihodi iz ortaštva
+759;Other revenues from operations;Ostali prihodi od prodaje uèinaka
+76;REVENUE FROM SALE OF MERCHANDISE GOODS ;PRIHODI OD PRODAJE TRGOVAÈKE ROBE
+760;Revenue from sale of goods;Prihodi od prodaje robe
+761;Foreign sale of goods ;Prihodi od prodaje robe na inozemnom tržištu
+762;Revenue from the rendering of merchandise services;Prihodi od trgovaèkih usluga
+763;Income from sale of slow-moving inventory;Prihodi od prodaje nekurentne robe (robe u kvaru, ošte-æenju, demodirana i sl.)
+764;Income from sale of goods on loan granted;Prihodi od prodaje robe na kredit
+765;Sale of goods and rendering of services to companies in which we have participating interest;Prihodi od prodaje robe poduzetnicima u kojima postoje sudjelujuæi interesi (do 20% udjela)
+766;Sale of goods and rendering of services to related party;Prihodi od prodaje robe ovisnim društvima
+767;Income from sale of goods on financial leasing;Prihodi od dane (prodane) robe u financijski lizing (najam)
+768;Income from sale of property, plan and equipment and arts (held for sale);Prihodi od preprodaje nekretnina i umjetnina
+769;Other income from sale of goods and rendering of merchandise services;Ostali prihodi od prodaje roba i trgovaèkih usluga
+77;FINANCIAL INCOME;FINANCIJSKI PRIHODI
+770;Interest income, foreign exchange difference, dividends to a related party ;Kamate, teèajne razlike, dividende i sl. prihodi iz odnosa s povezanim poduzetnicima
+771;Interest income ;Prihodi od kamata
+772;Income from exchange difference on translation of foreign operations;Prihodi od teèajnih razlika
+773;Income from dividends and share in result;Prihodi od dividende i dobitaka iz udjela
+774;Other financial income;Ostali financijski prihodi
+775;Share of profit of an associate and income from participating interest (from investments in shares/stakes);Dio prihoda od pridruženih poduzetnika i sudjelujuæih interesa
+776;Unrealized gains from financial assets;Nerealizirani dobitci (prihodi) od financijske imovine
+777;Income from negative goodwill;Prihodi negativnog goodwilla
+778;Other financial income;Ostali financijski prihodi
+78;OTHER OPERATIONAL INCOME AND INCOME FROM NOT-ORDINARY ACTIVITIES;OSTALI POSLOVNI I IZVANREDNI PRIHODI
+780;Income from liability write off and from discounts received;Prihodi od otpisa obveza i popusta
+781;Net gain on disposal of assets, surpluses and evaluation;Prihodi od rezidualnih imovinskih stavki, viškova i procjena
+782;Income from reversal of value adjustment and provisions and collected receivables written off;Prihodi od ukidanja rezerviranja i naknadno naplaæeni prihodi
+783;Income from grants, subsidies and compensations;Prihodi od refundac., dotacija, subvencija i nadoknada
+784;Income from revaluation surplus;Prihodi od revalorizacije – procjene
+785;Other operational income;Ostali poslovni prihodi
+786;Income from government grants;Prihodi od državnih potpora (HSFI 15 i MRS 20)
+787;Gains from biological assets arising from valuation;Dobitci od procjene poljoprivrednih proizvoda i biološke imovine (HSFI, 17. t. 17.12 i MRS 41)
+788;Proceeds from sale of property plant and equipment;Prihodi od izvanredne prodaje znaèajnog dijela imovine (zgrade, pogona, zemljišta)
+789;Other income;Izvanredni – nepredviðeni prihodi (npr. veliki besplatni primitak, prihod koji nije proizašao iz redovitog poslovanja)
+79;DIFFERENCE BETWEEN INCOME AND EXPENSES;RAZLIKA PRIHODA I RASHODA FINANCIJSKE GODINE
+790;Difference between income and expenses;Razlika prihoda i rashoda (iz cjelokupnog poslovanja)
+8;FINANCIAL RESULT AND OTHER COMPREHENSIVE INCOME;FINANCIJSKI REZULTAT POSLOVANJA I OSTALI SVEOBUHVATNI DOBITAK
+80;PROFIT OR LOSS FOR THE YEAR;DOBITAK ILI GUBITAK razdoblja
+800;Profit before tax;Dobitak prije oporezivanja
+801;Loss before tax;Gubitak prije oporezivanja
+803;Income tax expense;Porez na dobitak (gubitak)
+804;Profit or loss for the year;Dobitak ili gubitak razdoblja
+81;Profit or loss for the year attributable to others;dobitak ili gubitak razdoblja koji pripada drugima
+810;Profit for the year attributable to ordinary equity holders of the parent;Dobitak pripisan imateljima kapitala matice
+811;Loss for the year attributable to ordinary equity holders of the parent;Gubitak koji tereti imatelje kapitala matice
+813;Profit for the year attributable to non- controlling interests;Dobitak pripisan manjinskom interesu
+814;Loss for the year attributable to non- controlling interests;Gubitak koji tereti manjinski interes
+88;OTHER COMPREHENSIVE INCOME;OSTALI SVEOBUHVATNI DOBITAK
+880;Exchange differences on translation of foreign operations;Teèajne razlike iz preraèuna inozemnog poslovanja
+881;Changes in revaluation of property plant and equipment and intangible assets;Promjene revalorizacijskih rezervi dugotrajen materijalne i nematerijalne imovine
+882;Net gain or loss on available-for- sale financial assets;Dobitak ili gubitak s osnove ponovnog vrednovanja financijske imovine raspoložive za prodaju
+883;Net gain or loss on movement on cash flow hedges;Dobitak ili gubitak s osnove uèinkovite zaštite novèanog toka
+884;Net gain or loss from exchange differences on translation of foreign operations;Dobitak ili gubitak s osnove uèinkovite zaštite neto ulaganja u inozemstvu
+885;Share in comprehensive income/loss ;Udio u ostalom sveobuhvatnom dobitku/gubitku pridruženih poduzetnika
+886;Actuarial gains/losses on obligation;Aktuarski dobitci/gubitci po planovima definiranih primanja
+887;Comprehensive income tax expense;Porez na ostali sveobuhvatni dobitak razdoblja
+89;OTHER COMPREHENSIVE INCOME FOR THE YEAR, NET OF TAX;ostali ÈISTI DOBITAK
+890;Other comprehensive income for the year, net of tax;Neto ostali sveobuhvatni dobitak/gubitak razdoblja
+891;Total comprehensive income or loss for the year, net of tax;Sveobuhvatni dobitak/gubitak razdoblja
+892;Total comprehensive income/loss for the year, net of tax;Sveobuhvatna dobitak ili gubitak razdoblja
+9;EQUITY AND RESERVES AND OF THE BALANCE SHEET ITEMS;KAPITAL I PRIÈUVE TE IZVANBILANÈNI ZAPISI
+90;SHARE CAPITAL ;TEMELJNI – (UPISANI) KAPITAL
+900;Issued capital - paid in;Upisani temeljni kapital koji je plaæen
+901;Issued capital - non controlling interests;Upisani temeljni kapital manjinskih èlanova
+902;Issued capital- not paid in;Upisani kapital koji nije plaæen
+903;Shareholders share in public limited company capital;Kapital (ulozi) èlanova javnog trgovaèkog društva
+904;Partners business stakes in limited partnership;Kapital (ulozi) komanditora komanditnog društva
+905;Government capital in company;Državni kapital u udjelima
+906;Members business stake in cooperative capital;Kapital èlanova zadruge
+91;CAPITAL RESERVES;KAPITALNE PRIÈUVE
+910;Paid in stake/share above issued share capital;Uplaæeni udjeli – dionice iznad svote temeljnog kapitala
+911;Capital reserves from additional payments in order to gain special rights in the Company (convertible bonds);Kapitalne prièuve iz dodatnih uplata radi stjecanja posebnih prava u društvu (ili zamjenjivih obveznica)
+912;Capital reserves from the additional payments of equity holders;Kapitalne prièuve iz uplata dodatnih èinidbi
+913;Decrease of share capital transferred to capital reserve ;Kapitalne prièuve iz ostatka pri smanjenju temeljnog kapitala
+914;Capital reserves from other sources;Kapitalne prièuve iz drugih izvora
+915;Capital gain from sale of treasury shares - stakes;Kapitalni dobitak iz prodaje vlastitih udjela – dionica
+916;Capital gains on the sale of shares issued;Kapitalni dobitak na prodane emitirane dionice
+917;Investments in silent company transferred to capital reserves;Kapitalne prièuve iz ulaganja tajnog èlana društva (èl. 148. ZTD-a)
+919;Investments of entrepreneur transferred to capital reserves;Kapital iz ulaganja obrtnika dobitaša
+92;RESERVES FROM RETAINED EARNINGS;PRIÈUVE IZ DOBITKA
+920;Legal reserves;Zakonske prièuve (u d.d.)
+921;Reserves for treasury shares;Prièuve za vlastite dionice i udjele (èl. 233. i 406.a ZTD-a)
+922;Treasury shares and stakes ;Vlastite dionice i udjeli (odbitna- dugovna stavka)
+923;Statutory reserves;Statutarne prièuve
+924;Other reserves;Ostale prièuve
+93;REVALUATION RESERVES;REVALORIZACIJSKE PRIÈUVE
+930;Revaluation reserves;Revalorizacijske prièuve
+931;Revaluation reserves from previous periods;Revalorizacijske prièuve ranijih godina
+932;Foreign currency translation reserves;Prièuve iz teèajnih razlika od ulaganja u inozemno poslovanje (MRS 21. t. 39.)
+933;Available-for-sale reserves;Dobitci/gubitci od udjela u kapitalu do prestanka priznavanja (MRS 1. t. 95. i MRS 39. 55.b)
+934;Cash-flow hedge reserves;Dobitci/gubitci iz zaštite novèanog toka do reklasifikacije (MRS 1. t. 95. i MRS 39. t. 100.)
+935;Other accumulated comprehensive income / loss;Ostali akumulirani sveobuhvatni dobitci/gubitci – prièuve (MRS 1. t. 96.)
+94;RETAINED EARNINGS OR ACCUMULATED LOSS;ZADRŽANI DOBITAK ILI PRENESENI GUBITAK
+940;Retained earnings;Zadržani dobitak (iz prethodnih godina)
+941;Accumulated loss;Preneseni gubitak (kumuliran u prethodnim godinama - analitika po èlanovima)
+95;PROFIT OR LOSS FOR THE YEAR;DOBITAK ILI GUBITAK POSLOVNE GODINE
+950;Profit or loss for the year;Dobitak poslovne godine
+951;Loss for the year;Gubitak poslovne godine (analitika po èlanovima)
+96;NON-CONTROLLING INTERESTS;MANJINSKI INTERES
+960;Non-controlling interests;Manjinski interes
+99;OFF- BALANCE SHEET BALANCE;IZVANBILANÈNI ZAPISI
+990;Property plant and equipment in use;Imovina - materijalna u optjecaju
+991;Rights to use;Prava
+992;Securities;Vrijednosni papiri
+993;Securities in circulation;Vrijednosnice u manipulaciji
+994;Calculation of profit from investment in securities;Obraèun dobitka investicijskog pothvata
+995;Source of property plant and equipment;Izvori materijalne imovine
+996;Source of rights;Izvori prava
+997;Liabilities for securities which are not in circulation;Obveze za vrijednosne papire koji nisu stavljeni u optjecaj
+998;Liabilities for securities in circulation;Obveze za izdane vrijednosnice u manipulaciji
+999;Liabilities due to investment project;Obveze s osnove investicijskog pothvata

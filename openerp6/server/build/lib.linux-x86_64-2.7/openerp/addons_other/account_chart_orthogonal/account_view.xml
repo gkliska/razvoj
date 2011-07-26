@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+	
+		<!-- The form -->
+		<record id="view_wizard_chart_orthogonal" model="ir.ui.view">
+            <field name="name">Orthogonal Chart of Accounts</field>
+            <field name="model">account.chart.orthogonal.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Chart of Accounts (orthogonal)">
+        			<field name="fiscalyear" colspan="6"/>
+        			<label align="0.7" colspan="6" string="(If you do not select Fiscal year it will take all open fiscal years)"/>
+        			<field name="target_move" colspan="6"/>
+        			<field name="analytic_id" colspan="6"/>
+        			<separator string="" colspan="4"/>
+                    <label string="" colspan="2"/>
+                    <group col="2" colspan="2">
+                        <button icon="gtk-cancel" special="cancel" type="object" name="action_cancel" string="Cancel"/>
+                        <button icon="gtk-ok" name="action_open" string="Open" type="object"/>
+                    </group>
+        			
+    			</form>
+            </field>
+        </record>
+
+		<!-- The menu item -->
+		<record id="action_wizard_chart_orthogonal" model="ir.actions.act_window">
+            <field name="name">Chart of Accounts (filter by analytic account)</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">account.chart.orthogonal.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+        <menuitem icon="STOCK_INDENT" parent="account.menu_finance_charts" action="action_wizard_chart_orthogonal" id="menu_wizard_chart_orthogonal"/>
+        
+		
+		
+	</data>
+</openerp>

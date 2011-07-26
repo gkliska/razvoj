@@ -1,0 +1,5 @@
+<KrossScripting>
+  <collection comment="Alati" name="tools" text="Alati">
+    <script icon="text-x-python" comment="Generiraj prevedenu verziju ODF dokumenta" name="xliff2odf" file="xliff2odf.py" interpreter="python" text="Spoji u ODF"/>
+  </collection>
+</KrossScripting>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <shape xmlns="http://www.daa.com.au/~james/dia-shape-ns" xmlns:svg="http://www.w3.org/2000/svg">
+        <name>shape - search_view_botton</name>
+        <icon>search_view_botton.png</icon>
+        <connections/>
+        <aspectratio type="fixed"/>
+        <svg:svg>
+            <svg:image x="0" y="0" width="65" height="2.5" href="search_view_botton.png"/>
+        </svg:svg>
+    </shape>

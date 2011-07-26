@@ -1,0 +1,7 @@
+"id","description","chart_template_id:id","name","amount","parent_id:id","child_depend","type","account_collected_id:id","account_paid_id:id","type_tax_use","base_code_id:id","tax_code_id:id","ref_base_code_id:id","ref_tax_code_id:id"
+"PDV 23%","PDV 23%","l10n_hr_chart_template_rrif","PDV 23%","0.23",,"False","percent","kp_rrif24002","kp_rrif24002","sale","pdv_code_o23","pdv_code_p23","pdv_code_o23","pdv_code_p23"
+"PDV 10%","PDV 10%","l10n_hr_chart_template_rrif","PDV 10%","0.10",,"False","percent","kp_rrif24000","kp_rrif24000","sale","pdv_code_o21","pdv_code_p21","pdv_code_o21","pdv_code_p21"
+"PDV  0%","PDV  0%","l10n_hr_chart_template_rrif","PDV  0%","0.00",,"False","percent",,,"sale","pdv_code_o13",,"pdv_code_o13",
+"PDV pu23%","PDV pu23%","l10n_hr_chart_template_rrif","PDV pu23%","0.23",,"False","percent","kp_rrif24002","kp_rrif24012","sale","pdv_code_o23","pdv_code_p23","pdv_code_o23","pdv_code_p23"
+"PDV pu10%","PDV pu10%","l10n_hr_chart_template_rrif","PDV pu10%","0.10",,"False","percent","kp_rrif24000","kp_rrif24010","sale","pdv_code_o21","pdv_code_p21","pdv_code_o21","pdv_code_p21"
+"20b","20b","l10n_it_chart_template_generic","Iva al 20% (credito)","0.2",,"False","percent","1601","1601","purchase","template_impcode_pagata_20","template_ivacode_pagata_20","template_impcode_pagata_20","template_ivacode_pagata_20"

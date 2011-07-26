@@ -1,0 +1,55 @@
+Metadata-Version: 1.0
+Name: lxml
+Version: 2.1.5
+Summary: Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API.
+Home-page: http://codespeak.net/lxml
+Author: lxml dev team
+Author-email: lxml-dev@codespeak.net
+License: UNKNOWN
+Download-URL: http://cheeseshop.python.org/packages/source/l/lxml/lxml-2.1.5.tar.gz
+Description: lxml is a Pythonic, mature binding for the libxml2 and libxslt libraries.  It
+        provides safe and convenient access to these libraries using the ElementTree
+        API.
+        
+        It extends the ElementTree API significantly to offer support for XPath,
+        RelaxNG, XML Schema, XSLT, C14N and much more.
+        
+        To contact the project, go to the `project home page
+        <http://codespeak.net>`_ or see our bug tracker at
+        https://launchpad.net/lxml
+        
+        In case you want to use the current in-development version of lxml, you can
+        get it from the subversion repository at http://codespeak.net/svn/lxml/trunk .
+        Running ``easy_install lxml==dev`` will install it from
+        http://codespeak.net/svn/lxml/trunk#egg=lxml-dev
+        
+        
+        After an official release of a new stable series, current bug fixes become
+        available at http://codespeak.net/svn/lxml/branch/lxml-2.1 .
+        Running ``easy_install lxml==2.1bugfix`` will install this
+        version from
+        http://codespeak.net/svn/lxml/branch/lxml-2.1#egg=lxml-2.1bugfix
+        
+        2.1.5 (2009-01-06)
+        ==================
+        
+        Bugs fixed
+        ----------
+        
+        * Potential memory leak on exception handling.  This was due to a
+        problem in Cython, not lxml itself.
+        
+        * Failing import on systems that have an ``io`` module.
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: C
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing :: Markup :: XML
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

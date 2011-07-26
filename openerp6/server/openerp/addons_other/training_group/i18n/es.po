@@ -1,0 +1,149 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* training_group
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-05-17 10:40+0000\n"
+"PO-Revision-Date: 2011-06-20 21:33+0100\n"
+"Last-Translator: Jesús Martín <jmartin@zikzakmedia.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. module: training_group
+#: model:ir.model,name:training_group.model_training_group
+msgid "Group"
+msgstr "Grupo"
+
+#. module: training_group
+#: field:training.create.groups.wizard,level3:0
+#: selection:training.create.groups.wizard,level_generate_seances:0
+msgid "Level 3"
+msgstr "Nivel 3"
+
+#. module: training_group
+#: view:training.create.groups.wizard:0
+msgid "If level 1 is SchoolName, level 2 is 1,2 and level 3 is A,B the groups generated will be: SchoolName, SchoolName-1, SchoolName-2, SchoolName-1-A, SchoolName-1-B, SchoolName-2-A, SchoolName-2-B."
+msgstr "Si el nivel 1 es 'NombreCentro', nivel 2 es '1,2', y nivel 3 es 'A,B', se generarán los siguientes grupos: NombreCentro, NombreCentro-1, NombreCentro-2, NombreCentro-1-A, NombreCentro-1-B, NombreCentro-2-A, NombreCentro-2-B."
+
+#. module: training_group
+#: model:ir.module.module,shortdesc:training_group.module_meta_information
+msgid "Training Expanded Group Management"
+msgstr "Gestión de grupos de formación ampliado"
+
+#. module: training_group
+#: sql_constraint:training.group:0
+msgid "It already exists a group with this name"
+msgstr "Ya existe un grupo con este nombre."
+
+#. module: training_group
+#: selection:training.create.groups.wizard,state:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: training_group
+#: model:ir.model,name:training_group.model_training_create_groups_wizard
+msgid "training.create.groups.wizard"
+msgstr "formación.crea.grupos.asistente"
+
+#. module: training_group
+#: field:training.create.groups.wizard,level1:0
+#: selection:training.create.groups.wizard,level_generate_seances:0
+msgid "Level 1"
+msgstr "Nivel 1"
+
+#. module: training_group
+#: view:training.create.groups.wizard:0
+#: field:training.create.groups.wizard,session_ids:0
+msgid "Sessions"
+msgstr "Ediciones"
+
+#. module: training_group
+#: field:training.create.groups.wizard,level2:0
+#: selection:training.create.groups.wizard,level_generate_seances:0
+msgid "Level 2"
+msgstr "Nivel 2"
+
+#. module: training_group
+#: model:ir.actions.act_window,name:training_group.training_create_groups_act
+msgid "Groups Generator"
+msgstr "Genera grupos"
+
+#. module: training_group
+#: constraint:training.group:0
+msgid "Error! You can not create recursive parent group."
+msgstr "¡Error! No puede crear un padre de grupo recursivo."
+
+#. module: training_group
+#: view:training.create.groups.wizard:0
+msgid "Generate"
+msgstr "Genera"
+
+#. module: training_group
+#: help:training.create.groups.wizard,level3:0
+msgid "Enter the level 3 values separated with commas to construct the group name."
+msgstr "Introduzca los valores de nivel 3 separados por comas para construir los nombres de los grupos."
+
+#. module: training_group
+#: field:training.group,parent_id:0
+msgid "Parent Group"
+msgstr "Grupo padre"
+
+#. module: training_group
+#: model:ir.actions.act_window,name:training_group.training_create_groups_wizard_action
+#: model:ir.ui.menu,name:training_group.training_create_groups_groups_wizard_menu
+#: view:training.create.groups.wizard:0
+msgid "Groups Generator Wizard"
+msgstr "Asistente de generación de grupos"
+
+#. module: training_group
+#: help:training.create.groups.wizard,level1:0
+msgid "You must enter the level 1 group name. Values separated with commas to construct the group name."
+msgstr "Debe introducir el nombre del grupo de nivel 1. Valores separados por comas para construir los nombres de los grupos."
+
+#. module: training_group
+#: help:training.create.groups.wizard,level2:0
+msgid "Enter the level 2 values separated with commas to construct the group name."
+msgstr "Introduzca los valores de nivel 2 separados por comas para construir los nombres de los grupos."
+
+#. module: training_group
+#: help:training.create.groups.wizard,session_ids:0
+msgid "The session related with the groups."
+msgstr "La edición relacionada con los grupos."
+
+#. module: training_group
+#: field:training.create.groups.wizard,state:0
+msgid "State"
+msgstr "Estado"
+
+#. module: training_group
+#: model:ir.module.module,description:training_group.module_meta_information
+msgid "Expand group features of the training module"
+msgstr "Amplia las características de grupo del módulo de formación"
+
+#. module: training_group
+#: selection:training.create.groups.wizard,state:0
+msgid "Done"
+msgstr "Realizado"
+
+#. module: training_group
+#: field:training.create.groups.wizard,level_generate_seances:0
+#: field:training.group,generate_seances:0
+msgid "Generate Seances"
+msgstr "Generar sesiones"
+
+#. module: training_group
+#: view:training.create.groups.wizard:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: training_group
+#: view:training.create.groups.wizard:0
+msgid "Close"
+msgstr "Cerrar"
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+    <report
+            id="trml2pdf_partner_example_report"
+            model="res.partner"
+            name="res.partner.example.report"
+            string="Example Extra Tags"
+            rml="base_rml2pdf_extra_tags/report_example/partner_example.rml"
+            header="False"/>
+
+
+</data>
+</openerp>

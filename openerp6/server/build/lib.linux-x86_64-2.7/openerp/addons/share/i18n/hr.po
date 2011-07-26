@@ -1,0 +1,499 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* share
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: share
+#: code:addons/share/web/editors.py:65
+#, python-format
+msgid "Sharing"
+msgstr "Sharing"
+
+#. module: share
+#: model:ir.model,name:share.model_ir_model_access
+msgid "ir.model.access"
+msgstr "ir.model.access"
+
+#. module: share
+#: sql_constraint:res.users:0
+msgid "You can not have two users with the same login !"
+msgstr "Ne možete imati dva korisnika sa istim korisničkim imenom !"
+
+#. module: share
+#: help:res.groups,share:0
+msgid "Group created to set access rights for sharing data with some users."
+msgstr "Group created to set access rights for sharing data with some users."
+
+#. module: share
+#: constraint:res.users:0
+msgid "The chosen company is not in the allowed companies for this user"
+msgstr "Odabrana organizacija nije među dozvoljenim organizacijama za ovog korisnika"
+
+#. module: share
+#: code:addons/share/web/editors.py:68
+#: view:share.wizard:0
+#, python-format
+msgid "Share"
+msgstr "Share"
+
+#. module: share
+#: view:share.wizard:0
+msgid "Access granted!"
+msgstr "Access granted!"
+
+#. module: share
+#: model:ir.model,name:share.model_res_users
+msgid "res.users"
+msgstr "res.users"
+
+#. module: share
+#: view:share.wizard:0
+msgid "An e-mail notification with instructions has been sent to the following people:"
+msgstr "An e-mail notification with instructions has been sent to the following people:"
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:576
+#, python-format
+msgid "You must be a member of the Share/User group to use the share wizard"
+msgstr "You must be a member of the Share/User group to use the share wizard"
+
+#. module: share
+#: help:share.wizard,action_id:0
+msgid "The action that opens the screen containing the data you wish to share."
+msgstr "The action that opens the screen containing the data you wish to share."
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:139
+#, python-format
+msgid "Please specify \"share_root_url\" in context"
+msgstr "Please specify \"share_root_url\" in context"
+
+#. module: share
+#: field:share.wizard,name:0
+msgid "Share Title"
+msgstr "Share Title"
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:445
+#, python-format
+msgid "(Copy for sharing)"
+msgstr "(Kopiraj za dijeljenje)"
+
+#. module: share
+#: field:share.wizard.result.line,newly_created:0
+msgid "Newly created"
+msgstr "Newly created"
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:107
+#, python-format
+msgid "No e-mail address configured"
+msgstr "No e-mail address configured"
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:721
+#, python-format
+msgid "You may use your current login (%s) and password to view them.\n"
+""
+msgstr "You may use your current login (%s) and password to view them.\n"
+""
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:682
+#, python-format
+msgid "Shared access created!"
+msgstr "Shared access created!"
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:108
+#, python-format
+msgid "You must configure your e-mail address in the user preferences before using the Share button."
+msgstr "You must configure your e-mail address in the user preferences before using the Share button."
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:716
+#, python-format
+msgid "Username"
+msgstr "Korisničko ime"
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:704
+#, python-format
+msgid "Hello,"
+msgstr "Hello,"
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:535
+#, python-format
+msgid "Indirect sharing filter created by user %s (%s) for group %s"
+msgstr "Indirect sharing filter created by user %s (%s) for group %s"
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:706
+#, python-format
+msgid "I've shared %s with you!"
+msgstr "I've shared %s with you!"
+
+#. module: share
+#: view:share.wizard:0
+msgid "Extra Options"
+msgstr "Extra Options"
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:718
+#, python-format
+msgid "Database"
+msgstr "Baza podataka"
+
+#. module: share
+#: field:share.wizard.result.line,user_id:0
+msgid "unknown"
+msgstr "nepoznato"
+
+#. module: share
+#: view:res.groups:0
+msgid "Regular groups only (no share groups"
+msgstr "Regular groups only (no share groups"
+
+#. module: share
+#: sql_constraint:res.groups:0
+msgid "The name of the group must be unique !"
+msgstr "Naziv grupe mora biti jedinstven!"
+
+#. module: share
+#: model:ir.module.module,shortdesc:share.module_meta_information
+msgid "Sharing Tools"
+msgstr "Alati dijeljenja"
+
+#. module: share
+#: field:share.wizard,share_root_url:0
+msgid "Share Access URL"
+msgstr "Share Access URL"
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:147
+#: view:share.wizard:0
+#, python-format
+msgid "Grant instant access to your documents"
+msgstr "Grant instant access to your documents"
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:498
+#, python-format
+msgid "Sharing filter created by user %s (%s) for group %s"
+msgstr "Sharing filter created by user %s (%s) for group %s"
+
+#. module: share
+#: view:res.groups:0
+msgid "Groups"
+msgstr "Grupe"
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:708
+#, python-format
+msgid "The documents are not attached, you can view them online directly on my OpenERP server at:"
+msgstr "The documents are not attached, you can view them online directly on my OpenERP server at:"
+
+#. module: share
+#: code:addons/share/web/editors.py:20
+#, python-format
+msgid "Share this in 2 clicks..."
+msgstr "Share this in 2 clicks..."
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:573
+#, python-format
+msgid "Action and Access Mode are required to create a shared access"
+msgstr "Action and Access Mode are required to create a shared access"
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:717
+#: field:share.wizard.result.line,password:0
+#, python-format
+msgid "Password"
+msgstr "Lozinka"
+
+#. module: share
+#: field:share.wizard,new_users:0
+msgid "Emails"
+msgstr "E-pošta"
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:580
+#, python-format
+msgid "Please indicate the emails of the persons to share with, one per line"
+msgstr "Please indicate the emails of the persons to share with, one per line"
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:520
+#, python-format
+msgid "(Modified)"
+msgstr "(Modified)"
+
+#. module: share
+#: model:ir.model,name:share.model_res_groups
+msgid "Access Groups"
+msgstr "Access Groups"
+
+#. module: share
+#: view:share.wizard:0
+msgid "Please select the action that opens the screen containing the data you want to share."
+msgstr "Please select the action that opens the screen containing the data you want to share."
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:720
+#, python-format
+msgid "The documents have been automatically added to your current OpenERP documents.\n"
+""
+msgstr "Dokumenti su automatski dodani trenutnim dokumentima OpenERP-a.\n"
+""
+
+#. module: share
+#: field:share.wizard,message:0
+msgid "Personal Message"
+msgstr "Personal Message"
+
+#. module: share
+#: view:share.wizard:0
+#: field:share.wizard,result_line_ids:0
+msgid "Summary"
+msgstr "Sažetak"
+
+#. module: share
+#: view:share.wizard:0
+msgid "Share with these people (one e-mail per line)"
+msgstr "Share with these people (one e-mail per line)"
+
+#. module: share
+#: help:share.wizard,message:0
+msgid "An optional personal message, to be included in the e-mail notification."
+msgstr "An optional personal message, to be included in the e-mail notification."
+
+#. module: share
+#: field:res.groups,share:0
+msgid "Share Group"
+msgstr "Grupa dijeljenja"
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:697
+#, python-format
+msgid "Email required"
+msgstr "Email required"
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:412
+#, python-format
+msgid "Copied access for sharing"
+msgstr "Copied access for sharing"
+
+#. module: share
+#: view:share.wizard:0
+msgid "Optionally, you may specify an additional domain restriction that will be applied to the shared data."
+msgstr "Optionally, you may specify an additional domain restriction that will be applied to the shared data."
+
+#. module: share
+#: help:share.wizard,name:0
+msgid "Title for the share (displayed to users as menu and shortcut name)"
+msgstr "Title for the share (displayed to users as menu and shortcut name)"
+
+#. module: share
+#: field:share.wizard.result.line,login:0
+msgid "Login"
+msgstr "Prijava"
+
+#. module: share
+#: view:share.wizard:0
+msgid "Next"
+msgstr "Next"
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:715
+#, python-format
+msgid "These are your credentials to access this protected area:\n"
+""
+msgstr "These are your credentials to access this protected area:\n"
+""
+
+#. module: share
+#: view:res.users:0
+msgid "Regular users only (no share user)"
+msgstr "Regular users only (no share user)"
+
+#. module: share
+#: field:share.wizard.result.line,share_url:0
+msgid "Share URL"
+msgstr "Share URL"
+
+#. module: share
+#: field:share.wizard,domain:0
+msgid "Domain"
+msgstr "Domena"
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:556
+#, python-format
+msgid "Sorry, the current screen and filter you are trying to share are not supported at the moment.\n"
+"You may want to try a simpler filter."
+msgstr "Sorry, the current screen and filter you are trying to share are not supported at the moment.\n"
+"You may want to try a simpler filter."
+
+#. module: share
+#: field:share.wizard,access_mode:0
+msgid "Access Mode"
+msgstr "Access Mode"
+
+#. module: share
+#: view:share.wizard:0
+msgid "Sharing: preparation"
+msgstr "Sharing: preparation"
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:726
+#, python-format
+msgid "OpenERP is a powerful and user-friendly suite of Business Applications (CRM, Sales, HR, etc.)\n"
+"It is open source and can be found on http://www.openerp.com."
+msgstr "OpenERP is a powerful and user-friendly suite of Business Applications (CRM, Sales, HR, etc.)\n"
+"It is open source and can be found on http://www.openerp.com."
+
+#. module: share
+#: view:share.wizard:0
+msgid "Access info"
+msgstr "Access info"
+
+#. module: share
+#: field:share.wizard,action_id:0
+msgid "Action to share"
+msgstr "Action to share"
+
+#. module: share
+#: view:share.wizard:0
+msgid "Optional: include a personal message"
+msgstr "Optional: include a personal message"
+
+#. module: share
+#: field:share.wizard,user_type:0
+msgid "Users to share with"
+msgstr "Users to share with"
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:697
+#, python-format
+msgid "The current user must have an email address configured in User Preferences to be able to send outgoing emails."
+msgstr "Trenutni korisnik mora imati upisanu email adresu u Korisničkim postavkama kako bi mogao slati poruke e-pošte."
+
+#. module: share
+#: field:res.users,share:0
+msgid "Share User"
+msgstr "Share User"
+
+#. module: share
+#: model:ir.model,name:share.model_share_wizard_result_line
+msgid "share.wizard.result.line"
+msgstr "share.wizard.result.line"
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:470
+#, python-format
+msgid "(Duplicated for modified sharing permissions)"
+msgstr "(Duplicated for modified sharing permissions)"
+
+#. module: share
+#: model:ir.module.module,description:share.module_meta_information
+msgid "\n"
+"This module adds generic sharing tools to your current OpenERP database.\n"
+"========================================================================\n"
+"\n"
+"It specifically adds a 'share' button that is available in the Web client to\n"
+"share any kind of OpenERP data with colleagues, customers, friends, etc.\n"
+"\n"
+"The system will work by creating new users and groups on the fly, and by\n"
+"combining the appropriate access rights and ir.rules to ensure that the\n"
+"shared users only have access to the data that has been shared with them.\n"
+"\n"
+"This is extremely useful for collaborative work, knowledge sharing,\n"
+"synchronization with other companies, etc.\n"
+"\n"
+"    "
+msgstr "\n"
+"This module adds generic sharing tools to your current OpenERP database.\n"
+"========================================================================\n"
+"\n"
+"It specifically adds a 'share' button that is available in the Web client to\n"
+"share any kind of OpenERP data with colleagues, customers, friends, etc.\n"
+"\n"
+"The system will work by creating new users and groups on the fly, and by\n"
+"combining the appropriate access rights and ir.rules to ensure that the\n"
+"shared users only have access to the data that has been shared with them.\n"
+"\n"
+"This is extremely useful for collaborative work, knowledge sharing,\n"
+"synchronization with other companies, etc.\n"
+"\n"
+"    "
+
+#. module: share
+#: selection:share.wizard,access_mode:0
+msgid "Can view"
+msgstr "Can view"
+
+#. module: share
+#: selection:share.wizard,access_mode:0
+msgid "Can edit"
+msgstr "Can edit"
+
+#. module: share
+#: help:share.wizard,access_mode:0
+msgid "Access rights to be granted on the shared documents."
+msgstr "Access rights to be granted on the shared documents."
+
+#. module: share
+#: view:share.wizard:0
+msgid "Cancel"
+msgstr "Odustani"
+
+#. module: share
+#: view:share.wizard:0
+msgid "Close"
+msgstr "Zatvori"
+
+#. module: share
+#: code:addons/share/wizard/share_wizard.py:88
+#: code:addons/share/wizard/share_wizard.py:555
+#, python-format
+msgid "Sharing access could not be created"
+msgstr "Sharing access could not be created"
+
+#. module: share
+#: help:res.users,share:0
+msgid "External user with limited access, created only for the purpose of sharing data."
+msgstr "External user with limited access, created only for the purpose of sharing data."
+
+#. module: share
+#: help:share.wizard,domain:0
+msgid "Optional domain for further data filtering"
+msgstr "Optional domain for further data filtering"
+
+#. module: share
+#: model:ir.actions.act_window,name:share.action_share_wizard
+#: model:ir.actions.act_window,name:share.action_share_wizard_step1
+#: model:ir.model,name:share.model_share_wizard
+#: field:share.wizard.result.line,share_wizard_id:0
+msgid "Share Wizard"
+msgstr "Asistent dijeljenja"
+
+#. module: share
+#: help:share.wizard,user_type:0
+msgid "Select the type of user(s) you would like to share data with."
+msgstr "Select the type of user(s) you would like to share data with."
+

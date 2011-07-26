@@ -1,0 +1,860 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* crm_partner_assign
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: crm_partner_assign
+#: field:crm.lead.forward.to.partner,name:0
+#: field:crm.lead.mass.forward.to.partner,name:0
+msgid "Send to"
+msgstr "Send to"
+
+#. module: crm_partner_assign
+#: field:crm.lead.report.assign,delay_close:0
+msgid "Delay to Close"
+msgstr "Delay to Close"
+
+#. module: crm_partner_assign
+#: field:crm.lead.report.assign,planned_revenue:0
+msgid "Planned Revenue"
+msgstr "Planirani prihod"
+
+#. module: crm_partner_assign
+#: field:crm.lead.report.assign,nbr:0
+msgid "# of Cases"
+msgstr "# Slučaja"
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+#: view:crm.partner.report.assign:0
+msgid "Group By..."
+msgstr "Grupiraj po..."
+
+#. module: crm_partner_assign
+#: view:crm.lead:0
+#: view:crm.lead.forward.to.partner:0
+msgid "Forward"
+msgstr "Forward"
+
+#. module: crm_partner_assign
+#: help:crm.lead.forward.to.partner,reply_to:0
+#: help:crm.lead.mass.forward.to.partner,reply_to:0
+msgid "Reply-to of the Sales team defined on this case"
+msgstr "Odgovori prodajnom timu ovog slučaja"
+
+#. module: crm_partner_assign
+#: view:res.partner:0
+msgid "Geo Localize"
+msgstr "Geo Localize"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.report.assign,month:0
+msgid "March"
+msgstr "Ožujak"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.report.assign,type:0
+msgid "Lead"
+msgstr "Pot. kontakt"
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+msgid "Delay to close"
+msgstr "Delay to close"
+
+#. module: crm_partner_assign
+#: view:crm.partner.report.assign:0
+msgid "#Partner"
+msgstr "#Partner"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.forward.to.partner,history:0
+#: selection:crm.lead.mass.forward.to.partner,history:0
+msgid "Whole Story"
+msgstr "Whole Story"
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+#: field:crm.lead.report.assign,company_id:0
+msgid "Company"
+msgstr "Organizacija"
+
+#. module: crm_partner_assign
+#: code:addons/crm_partner_assign/partner_geo_assign.py:41
+#, python-format
+msgid "Could not contact geolocation servers, please make sure you have a working internet connection (%s)"
+msgstr "Could not contact geolocation servers, please make sure you have a working internet connection (%s)"
+
+#. module: crm_partner_assign
+#: field:crm.lead.report.assign,date_assign:0
+msgid "Partner Date"
+msgstr "Partner Date"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.report.assign,priority:0
+msgid "Highest"
+msgstr "Najviši"
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+#: field:crm.lead.report.assign,day:0
+msgid "Day"
+msgstr "Dan"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.forward.to.partner,history:0
+#: selection:crm.lead.mass.forward.to.partner,history:0
+msgid "Latest email"
+msgstr "Zadnji mail"
+
+#. module: crm_partner_assign
+#: field:crm.lead,partner_latitude:0
+#: field:res.partner,partner_latitude:0
+msgid "Geo Latitude"
+msgstr "Geo Latitude"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.forward.to.partner,state:0
+#: selection:crm.lead.mass.forward.to.partner,state:0
+#: selection:crm.lead.report.assign,state:0
+msgid "Cancelled"
+msgstr "Otkazani"
+
+#. module: crm_partner_assign
+#: view:crm.lead:0
+msgid "Geo Assignation"
+msgstr "Geo Assignation"
+
+#. module: crm_partner_assign
+#: field:crm.lead.report.assign,date_closed:0
+msgid "Close Date"
+msgstr "Close Date"
+
+#. module: crm_partner_assign
+#: help:res.partner,partner_weight:0
+msgid "Gives the probability to assign a lead to this partner. (0 means no assignation.)"
+msgstr "Gives the probability to assign a lead to this partner. (0 means no assignation.)"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.forward.to.partner,state:0
+#: selection:crm.lead.mass.forward.to.partner,state:0
+#: selection:crm.lead.report.assign,state:0
+msgid "Pending"
+msgstr "Na čekanju"
+
+#. module: crm_partner_assign
+#: view:crm.lead.mass.forward.to.partner:0
+msgid "_Cancel"
+msgstr "_Cancel"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.forward.to.partner,name:0
+#: field:crm.lead.forward.to.partner,partner_id:0
+#: selection:crm.lead.mass.forward.to.partner,name:0
+#: field:crm.lead.mass.forward.to.partner,partner_id:0
+#: view:crm.lead.report.assign:0
+#: field:crm.lead.report.assign,partner_assigned_id:0
+#: model:ir.model,name:crm_partner_assign.model_res_partner
+msgid "Partner"
+msgstr "Partner"
+
+#. module: crm_partner_assign
+#: field:crm.lead.report.assign,probability:0
+msgid "Avg Probability"
+msgstr "Avg Probability"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.report.assign,priority:0
+msgid "Low"
+msgstr "Niski"
+
+#. module: crm_partner_assign
+#: code:addons/crm_partner_assign/partner_geo_assign.py:40
+#, python-format
+msgid "Network error"
+msgstr "Network error"
+
+#. module: crm_partner_assign
+#: help:crm.lead.forward.to.partner,email_cc:0
+#: help:crm.lead.mass.forward.to.partner,email_cc:0
+msgid "These addresses will receive a copy of this email. To modify the permanent CC list, edit the global CC field of this case"
+msgstr "These addresses will receive a copy of this email. To modify the permanent CC list, edit the global CC field of this case"
+
+#. module: crm_partner_assign
+#: field:crm.lead.forward.to.partner,email_from:0
+#: field:crm.lead.mass.forward.to.partner,email_from:0
+msgid "From"
+msgstr "Od"
+
+#. module: crm_partner_assign
+#: model:ir.actions.act_window,name:crm_partner_assign.res_partner_grade_action
+#: model:ir.ui.menu,name:crm_partner_assign.menu_res_partner_grade_action
+#: field:res.partner,grade_id:0
+#: view:res.partner.grade:0
+msgid "Partner Grade"
+msgstr "Partner Grade"
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+#: view:crm.partner.report.assign:0
+msgid "Section"
+msgstr "Grupa"
+
+#. module: crm_partner_assign
+#: view:res.partner:0
+msgid "Next"
+msgstr "Next"
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+#: field:crm.lead.report.assign,priority:0
+msgid "Priority"
+msgstr "Prioritet"
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+#: field:crm.lead.report.assign,state:0
+msgid "State"
+msgstr "Stanje"
+
+#. module: crm_partner_assign
+#: field:crm.lead.report.assign,delay_expected:0
+msgid "Overpassed Deadline"
+msgstr "Prekoračen rok"
+
+#. module: crm_partner_assign
+#: field:crm.lead.forward.to.partner,html:0
+#: field:crm.lead.mass.forward.to.partner,html:0
+msgid "HTML formatting?"
+msgstr "HTML formatting?"
+
+#. module: crm_partner_assign
+#: field:crm.lead.report.assign,type:0
+msgid "Type"
+msgstr "Vrsta"
+
+#. module: crm_partner_assign
+#: view:crm.partner.report.assign:0
+msgid "Name"
+msgstr "Naziv"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.report.assign,priority:0
+msgid "Lowest"
+msgstr "Najniži"
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+msgid "Assign Date"
+msgstr "Assign Date"
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+msgid "Leads Analysis"
+msgstr "Analiza prodajnih tragova"
+
+#. module: crm_partner_assign
+#: field:crm.lead.report.assign,creation_date:0
+msgid "Creation Date"
+msgstr "Datum kreiranja"
+
+#. module: crm_partner_assign
+#: help:crm.lead.forward.to.partner,html:0
+#: help:crm.lead.mass.forward.to.partner,html:0
+msgid "Select this if you want to send email with HTML formatting."
+msgstr "Select this if you want to send email with HTML formatting."
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+msgid "7 Days"
+msgstr "7 Dana"
+
+#. module: crm_partner_assign
+#: view:crm.lead:0
+msgid "Partner Assignation"
+msgstr "Partner Assignation"
+
+#. module: crm_partner_assign
+#: help:crm.lead.report.assign,type:0
+msgid "Type is used to separate Leads and Opportunities"
+msgstr "Tip se koristi za razlikovanje potencijalnih kontakta i prilika."
+
+#. module: crm_partner_assign
+#: selection:crm.lead.report.assign,month:0
+msgid "July"
+msgstr "Srpanj"
+
+#. module: crm_partner_assign
+#: field:crm.lead.forward.to.partner,subject:0
+#: field:crm.lead.mass.forward.to.partner,subject:0
+msgid "Subject"
+msgstr "Predmet"
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+#: field:crm.lead.report.assign,stage_id:0
+msgid "Stage"
+msgstr "Stupanj"
+
+#. module: crm_partner_assign
+#: code:addons/crm_partner_assign/wizard/crm_forward_to_partner.py:287
+#, python-format
+msgid "Fwd"
+msgstr "Fwd"
+
+#. module: crm_partner_assign
+#: view:res.partner:0
+msgid "Geo Localization"
+msgstr "Geo Localization"
+
+#. module: crm_partner_assign
+#: view:res.partner:0
+msgid "Convert to Opportunity"
+msgstr "Pretvori u priliku"
+
+#. module: crm_partner_assign
+#: view:res.partner:0
+msgid "Cancel"
+msgstr "Odustani"
+
+#. module: crm_partner_assign
+#: field:crm.lead.forward.to.partner,history:0
+#: field:crm.lead.mass.forward.to.partner,history:0
+msgid "Send history"
+msgstr "Povijest slanja"
+
+#. module: crm_partner_assign
+#: view:crm.lead.forward.to.partner:0
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: crm_partner_assign
+#: view:res.partner:0
+msgid "Close"
+msgstr "Zatvori"
+
+#. module: crm_partner_assign
+#: model:ir.actions.act_window,name:crm_partner_assign.action_report_crm_opportunity_assign
+#: model:ir.ui.menu,name:crm_partner_assign.menu_report_crm_opportunities_assign_tree
+msgid "Opp. Assignment Analysis"
+msgstr "Opp. Assignment Analysis"
+
+#. module: crm_partner_assign
+#: help:crm.lead.report.assign,delay_close:0
+msgid "Number of Days to close the case"
+msgstr "Broj dana za zatvaranje slučaja"
+
+#. module: crm_partner_assign
+#: field:res.partner,partner_weight:0
+msgid "Weight"
+msgstr "Težina"
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+msgid "Delay to open"
+msgstr "Delay to open"
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+#: field:crm.lead.report.assign,grade_id:0
+#: view:crm.partner.report.assign:0
+#: field:crm.partner.report.assign,grade_id:0
+msgid "Grade"
+msgstr "Grade"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.report.assign,month:0
+msgid "December"
+msgstr "Prosinac"
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+#: field:crm.lead.report.assign,month:0
+msgid "Month"
+msgstr "Mjesec"
+
+#. module: crm_partner_assign
+#: field:crm.lead.report.assign,opening_date:0
+msgid "Opening Date"
+msgstr "Opening Date"
+
+#. module: crm_partner_assign
+#: view:crm.lead.mass.forward.to.partner:0
+msgid "Message"
+msgstr "Message"
+
+#. module: crm_partner_assign
+#: view:res.partner:0
+msgid "Previous"
+msgstr "Previous"
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+#: view:crm.partner.report.assign:0
+msgid "Salesman"
+msgstr "Prodavač"
+
+#. module: crm_partner_assign
+#: field:crm.lead.forward.to.partner,reply_to:0
+#: field:crm.lead.mass.forward.to.partner,reply_to:0
+msgid "Reply To"
+msgstr "Reply To"
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+#: field:crm.lead.report.assign,categ_id:0
+msgid "Category"
+msgstr "Grupa"
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+msgid "#Opportunities"
+msgstr "#Prilika"
+
+#. module: crm_partner_assign
+#: field:crm.lead,job_ids:0
+msgid "Contacts"
+msgstr "Kontakti"
+
+#. module: crm_partner_assign
+#: view:crm.lead:0
+msgid "Team"
+msgstr "Team"
+
+#. module: crm_partner_assign
+#: view:crm.lead:0
+msgid "Referred Partner"
+msgstr "Referred Partner"
+
+#. module: crm_partner_assign
+#: constraint:res.partner:0
+msgid "Error ! You can not create recursive associated members."
+msgstr "Greška ! Ne možete kreirati rekurzivne pridružene članove."
+
+#. module: crm_partner_assign
+#: selection:crm.lead.forward.to.partner,state:0
+#: selection:crm.lead.mass.forward.to.partner,state:0
+#: selection:crm.lead.report.assign,state:0
+msgid "Draft"
+msgstr "Nacrt"
+
+#. module: crm_partner_assign
+#: field:crm.lead.forward.to.partner,attachment_ids:0
+#: view:crm.lead.mass.forward.to.partner:0
+#: field:crm.lead.mass.forward.to.partner,attachment_ids:0
+msgid "Attachment"
+msgstr "Privitak"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.forward.to.partner,state:0
+#: selection:crm.lead.mass.forward.to.partner,state:0
+#: view:crm.lead.report.assign:0
+#: selection:crm.lead.report.assign,state:0
+msgid "Closed"
+msgstr "Zatvoren"
+
+#. module: crm_partner_assign
+#: model:ir.actions.act_window,name:crm_partner_assign.action_crm_send_mass_forward
+msgid "Mass forward to partner"
+msgstr "Mass forward to partner"
+
+#. module: crm_partner_assign
+#: view:res.partner:0
+#: field:res.partner,opportunity_assigned_ids:0
+msgid "Assigned Opportunities"
+msgstr "Assigned Opportunities"
+
+#. module: crm_partner_assign
+#: field:crm.lead,date_assign:0
+msgid "Assignation Date"
+msgstr "Assignation Date"
+
+#. module: crm_partner_assign
+#: field:crm.lead.report.assign,probability_max:0
+msgid "Max Probability"
+msgstr "Max Probability"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.report.assign,month:0
+msgid "August"
+msgstr "Kolovoz"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.report.assign,priority:0
+msgid "Normal"
+msgstr "Normalan"
+
+#. module: crm_partner_assign
+#: view:res.partner:0
+msgid "Escalate"
+msgstr "Eskalirati"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.report.assign,month:0
+msgid "June"
+msgstr "Lipanj"
+
+#. module: crm_partner_assign
+#: help:crm.lead.report.assign,delay_open:0
+msgid "Number of Days to open the case"
+msgstr "Number of Days to open the case"
+
+#. module: crm_partner_assign
+#: field:crm.lead.report.assign,delay_open:0
+msgid "Delay to Open"
+msgstr "Delay to Open"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.forward.to.partner,name:0
+#: field:crm.lead.forward.to.partner,user_id:0
+#: selection:crm.lead.mass.forward.to.partner,name:0
+#: field:crm.lead.mass.forward.to.partner,user_id:0
+#: field:crm.lead.report.assign,user_id:0
+#: field:crm.partner.report.assign,user_id:0
+msgid "User"
+msgstr "Korisnik"
+
+#. module: crm_partner_assign
+#: field:res.partner.grade,active:0
+msgid "Active"
+msgstr "Aktivan"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.report.assign,month:0
+msgid "November"
+msgstr "Studeni"
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+msgid "Extended Filters..."
+msgstr "Prošireni filtri..."
+
+#. module: crm_partner_assign
+#: field:crm.lead,partner_longitude:0
+#: field:res.partner,partner_longitude:0
+msgid "Geo Longitude"
+msgstr "Geo Longitude"
+
+#. module: crm_partner_assign
+#: field:crm.partner.report.assign,opp:0
+msgid "# of Opportunity"
+msgstr "# of Opportunity"
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+msgid "Lead Assign"
+msgstr "Lead Assign"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.report.assign,month:0
+msgid "October"
+msgstr "Listopad"
+
+#. module: crm_partner_assign
+#: view:crm.lead:0
+msgid "Assignation"
+msgstr "Assignation"
+
+#. module: crm_partner_assign
+#: field:crm.lead.forward.to.partner,email_cc:0
+#: field:crm.lead.mass.forward.to.partner,email_cc:0
+msgid "CC"
+msgstr "CC"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.report.assign,month:0
+msgid "January"
+msgstr "Siječanj"
+
+#. module: crm_partner_assign
+#: help:crm.lead,partner_assigned_id:0
+msgid "Partner this case has been forwarded/assigned to."
+msgstr "Partner this case has been forwarded/assigned to."
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+msgid "Planned Revenues"
+msgstr "Planned Revenues"
+
+#. module: crm_partner_assign
+#: model:ir.model,name:crm_partner_assign.model_res_partner_grade
+msgid "res.partner.grade"
+msgstr "res.partner.grade"
+
+#. module: crm_partner_assign
+#: view:crm.lead.mass.forward.to.partner:0
+msgid "Attachments"
+msgstr "Privitci"
+
+#. module: crm_partner_assign
+#: field:crm.lead.forward.to.partner,email_to:0
+#: field:crm.lead.mass.forward.to.partner,email_to:0
+msgid "To"
+msgstr "Do"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.forward.to.partner,state:0
+#: selection:crm.lead.mass.forward.to.partner,state:0
+msgid "Unchanged"
+msgstr "Nepromijenjen"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.report.assign,month:0
+msgid "September"
+msgstr "Rujan"
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+msgid "Last 30 Days"
+msgstr "Zadnjih 30 dana"
+
+#. module: crm_partner_assign
+#: field:res.partner.grade,name:0
+msgid "Grade Name"
+msgstr "Grade Name"
+
+#. module: crm_partner_assign
+#: help:crm.lead,date_assign:0
+msgid "Last date this case was forwarded/assigned to a partner"
+msgstr "Last date this case was forwarded/assigned to a partner"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.forward.to.partner,state:0
+#: selection:crm.lead.mass.forward.to.partner,state:0
+#: selection:crm.lead.report.assign,state:0
+#: view:res.partner:0
+msgid "Open"
+msgstr "Otvoreno"
+
+#. module: crm_partner_assign
+#: view:crm.lead.mass.forward.to.partner:0
+msgid "_Mass forward"
+msgstr "_Mass forward"
+
+#. module: crm_partner_assign
+#: model:ir.model,name:crm_partner_assign.model_crm_merge_opportunity
+msgid "Merge two Opportunities"
+msgstr "Spoji dvije prilike"
+
+#. module: crm_partner_assign
+#: model:ir.module.module,shortdesc:crm_partner_assign.module_meta_information
+msgid "Partner Geo-Localization"
+msgstr "Partner Geo-Localization"
+
+#. module: crm_partner_assign
+#: field:res.partner,date_localization:0
+msgid "Geo Localization Date"
+msgstr "Geo Localization Date"
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+msgid "Current"
+msgstr "Trenutno"
+
+#. module: crm_partner_assign
+#: model:ir.module.module,description:crm_partner_assign.module_meta_information
+msgid "\n"
+"This is the module used by OpenERP SA to redirect customers to its partners, based on geolocalization.\n"
+"======================================================================================================\n"
+"\n"
+"You can geolocalize your opportunities by using this module.\n"
+"\n"
+"Use geolocalization when assigning opportunities to partners.\n"
+"Determine the GPS coordinates according to the address of the partner.\n"
+"The most appropriate partner can be assigned.\n"
+"You can also use the geolocalization without using the GPS coordinates.\n"
+"    "
+msgstr "\n"
+"This is the module used by OpenERP SA to redirect customers to its partners, based on geolocalization.\n"
+"======================================================================================================\n"
+"\n"
+"You can geolocalize your opportunities by using this module.\n"
+"\n"
+"Use geolocalization when assigning opportunities to partners.\n"
+"Determine the GPS coordinates according to the address of the partner.\n"
+"The most appropriate partner can be assigned.\n"
+"You can also use the geolocalization without using the GPS coordinates.\n"
+"    "
+
+#. module: crm_partner_assign
+#: model:ir.model,name:crm_partner_assign.model_crm_lead_forward_to_partner
+#: model:ir.model,name:crm_partner_assign.model_crm_lead_mass_forward_to_partner
+msgid "Send new email"
+msgstr "Send new email"
+
+#. module: crm_partner_assign
+#: field:crm.partner.report.assign,nbr:0
+msgid "# of Partner"
+msgstr "# of Partner"
+
+#. module: crm_partner_assign
+#: field:crm.lead,job_id:0
+msgid "Main Job"
+msgstr "Glavni posao"
+
+#. module: crm_partner_assign
+#: field:crm.partner.report.assign,name:0
+msgid "Partner name"
+msgstr "Partner name"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.report.assign,month:0
+msgid "May"
+msgstr "Svibanj"
+
+#. module: crm_partner_assign
+#: field:crm.lead.report.assign,probable_revenue:0
+msgid "Probable Revenue"
+msgstr "Probable Revenue"
+
+#. module: crm_partner_assign
+#: field:crm.lead,partner_assigned_id:0
+msgid "Assigned Partner"
+msgstr "Assigned Partner"
+
+#. module: crm_partner_assign
+#: field:crm.lead.forward.to.partner,address_id:0
+#: field:crm.lead.mass.forward.to.partner,address_id:0
+msgid "Address"
+msgstr "Adresa"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.report.assign,type:0
+msgid "Opportunity"
+msgstr "Prilika"
+
+#. module: crm_partner_assign
+#: view:crm.lead.mass.forward.to.partner:0
+msgid "Send Mail"
+msgstr "Pošalji mail"
+
+#. module: crm_partner_assign
+#: field:crm.lead.report.assign,partner_id:0
+msgid "Customer"
+msgstr "Kupac"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.report.assign,month:0
+msgid "February"
+msgstr "Veljača"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.forward.to.partner,name:0
+#: selection:crm.lead.mass.forward.to.partner,name:0
+msgid "Email Address"
+msgstr "Adresa e-pošte"
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+#: field:crm.lead.report.assign,country_id:0
+#: view:crm.partner.report.assign:0
+#: field:crm.partner.report.assign,country_id:0
+msgid "Country"
+msgstr "Država"
+
+#. module: crm_partner_assign
+#: view:crm.lead.forward.to.partner:0
+#: view:crm.lead.mass.forward.to.partner:0
+#: model:ir.actions.act_window,name:crm_partner_assign.crm_lead_forward_to_partner_act
+msgid "Forward to Partner"
+msgstr "Forward to Partner"
+
+#. module: crm_partner_assign
+#: view:crm.lead:0
+msgid "Geo Assign"
+msgstr "Geo Assign"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.report.assign,month:0
+msgid "April"
+msgstr "Travanj"
+
+#. module: crm_partner_assign
+#: model:ir.actions.act_window,name:crm_partner_assign.action_report_crm_partner_assign
+#: model:ir.ui.menu,name:crm_partner_assign.menu_report_crm_partner_assign_tree
+msgid "Partnership Analysis"
+msgstr "Analiza partnerstva"
+
+#. module: crm_partner_assign
+#: model:ir.model,name:crm_partner_assign.model_crm_lead
+msgid "crm.lead"
+msgstr "crm.lead"
+
+#. module: crm_partner_assign
+#: view:crm.partner.report.assign:0
+msgid "Partner assigned Analysis"
+msgstr "Partner assigned Analysis"
+
+#. module: crm_partner_assign
+#: model:ir.model,name:crm_partner_assign.model_crm_lead_report_assign
+msgid "CRM Lead Report"
+msgstr "CRM Izvještaj o potencijalnim kontaktima"
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+#: view:crm.partner.report.assign:0
+msgid "Opportunities Assignment Analysis"
+msgstr "Opportunities Assignment Analysis"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.forward.to.partner,history:0
+#: selection:crm.lead.mass.forward.to.partner,history:0
+msgid "Case Information"
+msgstr "Case Information"
+
+#. module: crm_partner_assign
+#: field:res.partner.grade,sequence:0
+msgid "Sequence"
+msgstr "Sekvenca"
+
+#. module: crm_partner_assign
+#: model:ir.model,name:crm_partner_assign.model_crm_partner_report_assign
+msgid "CRM Partner Report"
+msgstr "CRM Partner Report"
+
+#. module: crm_partner_assign
+#: field:crm.lead.forward.to.partner,body:0
+#: field:crm.lead.mass.forward.to.partner,body:0
+msgid "Message Body"
+msgstr "Message Body"
+
+#. module: crm_partner_assign
+#: selection:crm.lead.report.assign,priority:0
+msgid "High"
+msgstr "Visok"
+
+#. module: crm_partner_assign
+#: field:crm.lead.report.assign,section_id:0
+#: field:crm.partner.report.assign,section_id:0
+msgid "Sales Team"
+msgstr "Prodajni tim"
+
+#. module: crm_partner_assign
+#: field:crm.lead.report.assign,create_date:0
+msgid "Create Date"
+msgstr "Kreiraj datum"
+
+#. module: crm_partner_assign
+#: field:crm.lead.forward.to.partner,state:0
+#: field:crm.lead.mass.forward.to.partner,state:0
+msgid "Set New State To"
+msgstr "Set New State To"
+
+#. module: crm_partner_assign
+#: view:crm.lead.report.assign:0
+#: field:crm.lead.report.assign,year:0
+msgid "Year"
+msgstr "Godina"
+

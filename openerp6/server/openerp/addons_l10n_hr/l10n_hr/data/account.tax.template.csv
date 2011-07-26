@@ -1,0 +1,21 @@
+"id","description","chart_template_id:id","name","amount","parent_id:id","child_depend","type","account_collected_id:id","account_paid_id:id","type_tax_use","base_code_id:id","tax_code_id:id","ref_base_code_id:id","ref_tax_code_id:id"
+"rrif_pdv_23","PDV 23%","l10n_hr_chart_template_rrif","23% PDV","0.23",,"False","percent","kp_rrif24002","kp_rrif24002","sale","pdv_code_o23","pdv_code_p23","pdv_code_o23","pdv_code_p23"
+"rrif_pdv_10","PDV 10%","l10n_hr_chart_template_rrif","10% PDV","0.10",,"False","percent","kp_rrif24000","kp_rrif24000","sale","pdv_code_o21","pdv_code_p21","pdv_code_o21","pdv_code_p21"
+"rrif_pdv_0","PDV  0%","l10n_hr_chart_template_rrif","0% PDV","0.00",,"False","percent",,,"sale","pdv_code_o13",,"pdv_code_o13",
+"rrif_pdv_avans_23","PDV za predujam 23%","l10n_hr_chart_template_rrif","23% PDV (za predujam)","0.23",,"False","percent","kp_rrif24012","kp_rrif24012","sale","pdv_code_o23","pdv_code_p23","pdv_code_o23","pdv_code_p23"
+"rrif_pdv_avans_10","PDV za predujam 10%","l10n_hr_chart_template_rrif","10% PDV (za predujam)","0.10",,"False","percent","kp_rrif24010","kp_rrif24010","sale","pdv_code_o21","pdv_code_p21","pdv_code_o21","pdv_code_p21"
+"rrif_pdv_avans_0","PDV za predujam 0%","l10n_hr_chart_template_rrif","0% PDV (za predujam)","0.00",,"False","percent",,,"sale","pdv_code_o13",,"pdv_code_o13",
+"rrif_pdv_nezar_isp_23","PDV po nezaračunanim isporukama 23%","l10n_hr_chart_template_rrif","23% PDV za nezaračunane isp.","0.23",,"False","percent","kp_rrif24032","kp_rrif24032","sale","pdv_code_o23","pdv_code_p23","pdv_code_o23","pdv_code_p23"
+"rrif_pdv_nezar_isp_10","PDV po nezaračunanim isporukama 10%","l10n_hr_chart_template_rrif","10% PDV za nezaračunane isp.","0.10",,"False","percent","kp_rrif24030","kp_rrif24030","sale","pdv_code_o21","pdv_code_p21","pdv_code_o21","pdv_code_p21"
+"rrif_pdv_nezar_isp_0","PDV po nezaračunanim isporukama 0%","l10n_hr_chart_template_rrif","0% PDV za nezaračunane isp.","0.00",,"False","percent",,,"sale","pdv_code_o13",,"pdv_code_o13",
+"rrif_pp_23","Pretporez 23% PDV","l10n_hr_chart_template_rrif","23% PDV pretporez","0.23",,"False","percent","kp_rrif14002","kp_rrif14002","purchase","pdv_code_o33","pdv_code_p33","pdv_code_o33","pdv_code_p33"
+"rrif_pp_10","Pretporez 10% PDV","l10n_hr_chart_template_rrif","10% PDV pretporez","0.10",,"False","percent","kp_rrif14000","kp_rrif14000","purchase","pdv_code_o31","pdv_code_p31","pdv_code_o31","pdv_code_p31"
+"rrif_pp_0","Pretporez 0% PDV","l10n_hr_chart_template_rrif","0% PDV pretporez","0.00",,"False","percent",,,"purchase","pdv_code_o30",,"pdv_code_o30",
+"rrif_pp_avans_23","Pretporez za predujam 23% PDV","l10n_hr_chart_template_rrif","23% PDV pretporez za predujam","0.23",,"False","percent","kp_rrif14012","kp_rrif14012","purchase","pdv_code_o33","pdv_code_p33","pdv_code_o33","pdv_code_p33"
+"rrif_pp_avans_10","Pretporez za predujam 10% PDV","l10n_hr_chart_template_rrif","10% PDV pretporez za predujam","0.10",,"False","percent","kp_rrif14010","kp_rrif14010","purchase","pdv_code_o31","pdv_code_p31","pdv_code_o31","pdv_code_p31"
+"rrif_pp_avans_0","Pretporez za predujam 0% PDV","l10n_hr_chart_template_rrif","0% PDV pretporez za predujam","0.00",,"False","percent",,,"purchase","pdv_code_o30",,"pdv_code_o30",
+"rrif_pp_uvoz_23","Plaćeni PDV 23% pri uvozu dobara","l10n_hr_chart_template_rrif","23% uvoz dobara","0.23",,"False","percent","kp_rrif14022","kp_rrif14022","purchase","pdv_code_o34","pdv_code_p34","pdv_code_o34","pdv_code_p34"
+"rrif_pp_uvoz_10","Plaćeni PDV 10% pri uvozu dobara","l10n_hr_chart_template_rrif","10% uvoz dobara","0.10",,"False","percent","kp_rrif14020","kp_rrif14020","purchase","pdv_code_o34","pdv_code_p34","pdv_code_o34","pdv_code_p34"
+"rrif_pp_uvoz_0","Plaćeni PDV 0% pri uvozu dobara","l10n_hr_chart_template_rrif","0% uvoz dobara","0.00",,"False","percent",,,"purchase","pdv_code_o34",,"pdv_code_o34",
+"rrif_pp_ino_23","Plaćeni PDV 23% na usluge inozemnih poduzetnika","l10n_hr_chart_template_rrif","23% ino. usluge","0.23",,"False","percent","kp_rrif14032","kp_rrif14032","purchase","pdv_code_o37","pdv_code_p37","pdv_code_o34","pdv_code_o37"
+"rrif_pp_ino_10","Plaćeni PDV 10% na usluge inozemnih poduzetnika","l10n_hr_chart_template_rrif","10% ino. usluge","0.10",,"False","percent","kp_rrif14030","kp_rrif14030","purchase","pdv_code_o35","pdv_code_p35","pdv_code_o34","pdv_code_o35"

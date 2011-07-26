@@ -1,0 +1,52 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* crm_caldav
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-21 13:02+0000\n"
+"PO-Revision-Date: 2011-07-21 13:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: crm_caldav
+#: model:ir.actions.act_window,name:crm_caldav.action_caldav_browse
+msgid "Caldav Browse"
+msgstr "Caldav Browse"
+
+#. module: crm_caldav
+#: model:ir.model,name:crm_caldav.model_crm_meeting
+msgid "Meeting"
+msgstr "Sastanak"
+
+#. module: crm_caldav
+#: model:ir.module.module,shortdesc:crm_caldav.module_meta_information
+msgid "Extended Module to Add CalDav feature on Meeting"
+msgstr "Extended Module to Add CalDav feature on Meeting"
+
+#. module: crm_caldav
+#: model:ir.module.module,description:crm_caldav.module_meta_information
+msgid "\n"
+"Caldav features in Meeting.\n"
+"===========================\n"
+"\n"
+"    *  Share meeting with other calendar clients like sunbird\n"
+""
+msgstr "\n"
+"Caldav features in Meeting.\n"
+"===========================\n"
+"\n"
+"    *  Share meeting with other calendar clients like sunbird\n"
+""
+
+#. module: crm_caldav
+#: model:ir.ui.menu,name:crm_caldav.menu_caldav_browse
+msgid "Synchronize This Calendar"
+msgstr "Synchronize This Calendar"
+
