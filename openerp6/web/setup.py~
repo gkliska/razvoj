@@ -60,10 +60,6 @@ setup(
         'openobject.admin.i18n',
         'openobject.controllers',
         'openobject.i18n',
-######################
-## Add,,, this if MISSING...
-        'openobject.rpc',
-######################        
         'openobject.test',
         'openobject.tools',
         'openobject.widgets'

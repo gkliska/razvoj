@@ -147,7 +147,7 @@ setup(name             = name,
       dependency_links = ['http://download.gna.org/pychart/'],
       install_requires = [
        # We require the same version as caldav for lxml.
-          'lxml>=2.1.5',
+          'lxml==2.1.5',
           'mako',
           'python-dateutil',
           'psycopg2',

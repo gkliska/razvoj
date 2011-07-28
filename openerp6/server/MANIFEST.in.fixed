@@ -1,0 +1,18 @@
+include rpminstall_sh.txt
+include README
+include LICENSE
+include MANIFEST.in
+include setup.nsi
+include setup.cfg
+include openerp/import_xml.rng
+include openerp/server.cert
+include openerp/server.pkey
+include openerp/gpl.txt
+include man/openerp-server.1
+include man/openerp_serverrc.5
+recursive-include pixmaps *
+recursive-include win32 *
+recursive-include doc *
+recursive-include openerp *xml *xsl *sql *rml *sxw *csv *rng
+graft openerp/addons
+global-exclude *pyc *~

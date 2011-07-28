@@ -1,8 +1,10 @@
 # -*- encoding: utf-8 -*-
 ##############################################################################
 #
-#    Author: Nicolas Bessi. Copyright Camptocamp SA
-#    Donors: Hasa Sàrl, Open Net Sàrl and Prisme Solutions Informatique SA
+#    Author: Goran Kliska
+#    mail:   gkliskaATgmail.com
+#    Copyright: Slobodni programi d.o.o., Zagreb
+#    Contributions: 
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -20,87 +22,49 @@
 ##############################################################################
 
 {
-    "name" : "Switzerland - localization with 2011 taxes",
+    "name" : "Croatia - localization with RRIF's 2011 chat of accounts",
     "description" : """
-Swiss localisation.
-===================
+Croatian localisation.
+======================
 
- - DTA generation for a lot of payment types
- - BVR management (number generation, report, etc..)
- - Import account move from the bank file (like v11 etc..)
- - Simplify the way you handle the bank statement for reconciliation
+Author: Goran Kliska @ Slobodni programi d.o.o.
+Contributions: 
 
-You can also add ZIP and bank completion with:
- - l10n_ch_zip
- - l10n_ch_bank
+Description:
 
-Author: Camptocamp SA
-Donors: Hasa Sàrl, Open Net Sàrl and Prisme Solutions Informatique SA
+RRIF-ov računski plan za poduzetnike za 2011.
+Vrste konta
+Kontni plan prema RRIF-u, dorađen u smislu kraćenja naziva i dodavanja analitika
+Porezne grupe prema poreznoj prijavi
+Porezi PDV-a
+Ostali porezi (samo češće korišteni) povezani s kontima kontnog plana
 
-Module incluant la localisation Suisse de TinyERP revu et corrigé par Camptocamp. Cette nouvelle version
-comprend la gestion et l'émissionde BVR, le paiement électronique via DTA (pour les banques, le système postal est en développement)
-et l'import du relevé de compte depuis la banque de manière automatisée.
-De plus, nous avons intégré la définition de toutes les banques Suisses(adresse, swift et clearing).
-
-Par ailleurs, conjointement à ce module, nous proposons la complétion NPA:
-
-Vous pouvez ajouter la completion des banques et des NPA avec with:
- - l10n_ch_zip
- - l10n_ch_bank
-
- Auteur: Camptocamp SA
- Donateurs: Hasa Sàrl, Open Net Sàrl and Prisme Solutions Informatique SA
+Izvori podataka:
+ http://www.rrif.hr/dok/preuzimanje/rrif-rp2011.rar
 
 TODO :
-- Implement bvr import partial reconciliation
-- Replace wizard by osv_memory when possible
-- Add mising HELP
-- Finish code comment
-- Improve demo data
+- Unaprijediti vrste konta
+- Dodati i ostale poreze i trošarine
 
 
 """,
-    "version" : "6.0",
-    "author" : "Camptocamp SA",
-    "category" : "Finance",
-    "website": "http://www.camptocamp.com",
+    "version" : "2011.1",
+    "author" : "Slobodni programi d.o.o.",
+    "category" : "Localisation/Account Charts",
+    "website": "http://www.slobodni-programi.hr",
 
-    "depends" : [
-        "account_cancel",
-        "base_iban",
-        "account_payment",
-        "account_voucher",
-        "report_webkit",
-    ],
-    "init_xml" : [
-        "dta_data.xml",
-        "journal_data.xml",
-        #FR sterchi chart data
-        'sterchi_chart/account.xml',
-        'sterchi_chart/vat.xml', #JUST REMOVE THIS FILE WHEN OBSOLETE. ALL REQUIERED DATA IN VAT2011.XML
-        'sterchi_chart/vat2011.xml',
-        'sterchi_chart/fiscal_position.xml',
-    ],
-    "demo_xml" : [
-        "demo/demo.xml",
-    ],
-    "update_xml" : [
-        "wizard.xml",
-        "dta_view.xml",
-        "wizard/bvr_import_view.xml",
-        "wizard/create_dta_view.xml",
-        "company_view.xml",
-        "account_invoice.xml",
-        "bank_view.xml",
-        "security/ir.model.access.csv",
-        "report/report_webkit_html_view.xml",
-    ],
-    'test' : [
-        'test/l10n_ch_report.yml',
-    ],
+    "depends" : ["account",],
+    'init_xml': [],
+    'update_xml': [
+                'data/account.account.type.csv',
+                'data/account.tax.code.template.csv',
+                'data/account.account.template.csv',
+                'data/account.tax.template.csv',
+                'l10n_hr_wizard.xml',
+                   ],
+    "demo_xml" : [],
+    'test' : [],
     "active": False,
     "installable": True,
-    "certificate" : "001103836064567088989",
-    'images': ['images/config_chart_l10n_ch.jpeg','images/l10n_ch_chart.jpeg'],
 }
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

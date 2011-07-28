@@ -49,7 +49,7 @@ TODO :
 
 """,
     "version" : "2011.1",
-    "author" : "Slobodni programi",
+    "author" : "Slobodni programi d.o.o.",
     "category" : "Localisation/Account Charts",
     "website": "http://www.slobodni-programi.hr",
 
@@ -60,10 +60,9 @@ TODO :
                 'data/account.tax.code.template.csv',
                 'data/account.account.template.csv',
                 'l10n_hr_wizard.xml',
-                'data/account.tax.template.xml',
+                'data/account.tax.template.csv',
                    ],
     "demo_xml" : [],
-    "update_xml" : [],
     'test' : [],
     "active": False,
     "installable": True,

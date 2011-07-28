@@ -63,7 +63,7 @@ setup(
 ######################
 ## Add,,, this if MISSING...
         'openobject.rpc',
-######################        
+######################
         'openobject.test',
         'openobject.tools',
         'openobject.widgets'
