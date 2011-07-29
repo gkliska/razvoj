@@ -1,5 +1,5 @@
 "id","code","name","parent_id:id","info"
-"pdv_code_porezi",,"rrif",,
+"pdv_code_porezi",,"POREZI",,
 "pdv_code_nepdv","NEPDV","Ostali porezi, carine, trošarine i sl.","pdv_code_porezi",
 "pdv_code_pdv","PDV","PDV","pdv_code_porezi",
 "pdv_code_pdvob","PDVOB","OBRAZAC PDV","pdv_code_pdv",

@@ -1,0 +1,4 @@
+vobject
+lxml
+nose
+coverage

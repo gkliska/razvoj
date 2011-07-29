@@ -88,8 +88,8 @@ account.account_type_pasiva		Pasiva		none		liability		1
 
 */
 -- za početak
-update kp_rrif set user_type_id='account.account_type_view'  where type  ='view' --( 605 kom za rrif)
-update kp_rrif set user_type_id='account.account_type_other' where type !='view' --(1674 kom. za rrif)
+update kp_rrif set user_type_id='account_type_view'  where type  ='view' --( 605 kom za rrif)
+update kp_rrif set user_type_id='account_type_other' where type !='view' --(1674 kom. za rrif)
 
 
 
@@ -104,7 +104,8 @@ with header
 select name,tbl_children,* 
   from kp_rrif 
   where 1=1
-    and code like '12%' and type !='view'
+    --and name like '%23%' and type !='view'
+    and code like '14%' and type !='view'
     --and tbl_children> 9 --parent_id_id = 'kp_rrif020'
   order by id,code
 */
