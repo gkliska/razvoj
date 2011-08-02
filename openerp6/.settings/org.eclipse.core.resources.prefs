@@ -1,7 +1,16 @@
-#Fri Jul 29 10:55:28 CEST 2011
+#Tue Aug 02 11:31:41 CEST 2011
 eclipse.preferences.version=1
 encoding//server/openerp/addons/account/account.py=utf-8
+encoding//server/openerp/addons/account_chart/__openerp__.py=utf-8
+encoding//server/openerp/addons/account_coda/__openerp__.py=utf-8
+encoding//server/openerp/addons/account_coda/account_coda.py=utf-8
+encoding//server/openerp/addons/account_coda/wizard/account_coda_import.py=utf-8
+encoding//server/openerp/addons/base_iban/__openerp__.py=utf-8
+encoding//server/openerp/addons/base_iban/base_iban.py=utf-8
+encoding//server/openerp/addons/base_vat/base_vat.py=utf-8
 encoding//server/openerp/addons/caldav/calendar.py=utf-8
 encoding//server/openerp/addons/fetchmail/fetchmail.py=utf-8
+encoding//server/openerp/addons/l10n_be/__openerp__.py=utf-8
 encoding//server/openerp/addons/report_webkit/__init__.py=utf-8
 encoding//server/openerp/addons/report_webkit/webkit_report.py=utf-8
+encoding//server/openerp/addons_l10n_hr/l10n_hr/__openerp__.py=utf-8
