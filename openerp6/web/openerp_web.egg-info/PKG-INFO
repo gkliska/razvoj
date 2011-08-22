@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: openerp-web
+Version: 6.1-dev
+Summary: Web Client of OpenERP, the Enterprise Management Software
+Home-page: http://www.openerp.com/
+Author: OpenERP S.A.
+Author-email: info@openerp.com
+License: OEPL
+Description: OpenERP Web is the web client of the OpenERP, a free enterprise management software
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Environment :: Web Environment
+Classifier: Topic :: Office/Business :: Financial

@@ -1,0 +1,7 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_backup","backup","model_backup","group_backup",1,1,1,1
+"access_backup_task","backup.task","model_backup_task","group_backup",1,1,1,1
+"access_backup_target","backup.target","model_backup_target","group_backup",1,1,1,1
+"access_backup_storage","backup.storage","model_backup_storage","group_backup",1,1,1,1
+"access_backup_param","backup.param","model_backup_param","group_backup",1,1,1,1
+"access_backup_job","backup.job","model_backup_job","group_backup",1,1,1,1

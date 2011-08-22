@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+<!--        Backup run wizard-->
+
+        <record id="view_backup_run_form" model="ir.ui.view">
+            <field name="name">backup.run.form</field>
+            <field name="model">backup.run</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            	<form>
+                	<field name="backup_id" invisible="True"/>
+                	<field name="task_ids" nolabel="1"/>
+                	<field name="target_id"/>
+                	<group col="2" colspan="2">
+                        <button icon="gtk-cancel" special="cancel" string="Cancel"/>
+                        <button icon="gtk-ok" name="action_run" string="Run" type="object"/>
+                    </group>
+				</form>
+            </field>
+        </record>
+        <record id="action_backup_run_form" model="ir.actions.act_window">
+            <field name="name">Run Backup</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">backup.run</field>
+            <field name="src_model">backup</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+<!--        Backup main view-->
+
+        <record id="view_backup_form" model="ir.ui.view">
+            <field name="name">backup.form</field>
+            <field name="model">backup</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            	<form>
+                	<field name="name"/>
+                	<newline/>
+                	<field name="task_ids" nolabel="1"/>
+                	<field name="target_ids" nolabel="1"/>
+                	<newline/>
+                	<field name="param_ids" nolabel="1"/>
+                    <button name="%(action_backup_run_form)d" string="Run" type="action"/>
+				</form>
+            </field>
+        </record>
+        <record id="action_backup_form" model="ir.actions.act_window">
+            <field name="name">Backup Configurations</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">backup</field>
+            <field name="view_type">form</field>
+        </record>
+        <menuitem action="action_backup_form" id="menu_backup_form" parent="base.menu_administration"/>
+
+        <act_window
+            domain="[('backup_id','=',active_id)]"
+            id="act_job_backup_open"
+            name="Jobs"
+            res_model="backup.job"
+            src_model="backup"/>
+        <record id="ir_act_job_backup_open" model="ir.values">
+            <field name="key2">tree_but_open</field>
+            <field name="model">stock.transport</field>
+            <field name="name">Jobs</field>
+            <field eval="'ir.actions.act_window,%d'%act_job_backup_open" name="value"/>
+            <field eval="True" name="object"/>
+        </record>
+
+<!--Task-->
+
+        <record id="view_backup_task_form" model="ir.ui.view">
+            <field name="name">backup.task.form</field>
+            <field name="model">backup.task</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            	<form>
+            		<notebook colspan="4">
+            			<page string="Basic">
+		                	<field name="name"/>
+		                	<field name="type"/>
+		                	<field name="from_path" colspan="4"/>
+		                	<field name="delete_archived" attrs="{'readonly': [('type','=','sync')]}"/>
+            			</page>
+            			<page string="Code">
+		                	<field name="code" colspan="4" nolabel="1"/>
+	                	</page>
+	                	<page string="Latest Log">
+	                		<field name="log" nolabel="1"/>
+	                	</page>
+	                </notebook>
+				</form>
+            </field>
+        </record>
+
+<!--Target-->
+
+        <record id="view_backup_target_tree" model="ir.ui.view">
+            <field name="name">backup.target.tree</field>
+            <field name="model">backup.target</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+            	<tree string="Targets">
+		        	<field name="name"/>
+		        	<field name="storage_id"/>
+					<field name="freespace"/>
+				</tree>
+            </field>
+        </record>
+
+        <record id="view_backup_target_form" model="ir.ui.view">
+            <field name="name">backup.target.form</field>
+            <field name="model">backup.target</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            	<form>
+            		<notebook colspan="4">
+            			<page string="Basic">
+		                	<field name="name"/>
+		                	<field name="storage_id" attrs="{'required': [('type','=','hdd')]}"/>
+		                	<field name="type"/>
+		                	<field name="path" colspan="4"/>
+		                	<group col="2" colspan="2">
+		                        <button icon="gtk-connect" name="connect" string="Connect" type="object"/>
+		                        <button icon="gtk-disconnect" name="disconnect" string="Disconnect" type="object"/>
+		                    </group>
+	                	</page>
+	                	<page string="Code">
+		                	<field name="connect_code" colspan="4"/>
+		                	<field name="disconnect_code" colspan="4"/>
+		                	<field name="freespace_code" colspan="4"/>
+	                	</page>
+	                	<page string="Latest Log">
+	                		<field name="log" nolabel="1"/>
+	                	</page>
+                	</notebook>
+				</form>
+            </field>
+        </record>
+
+<!--Storage-->
+
+        <record id="view_backup_storage_form" model="ir.ui.view">
+            <field name="name">backup.storage.form</field>
+            <field name="model">backup.storage</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            	<form>
+                	<field name="name"/>
+                	<field name="uuid"/>
+                    <button icon="gtk-ok" name="action_enable" string="Enable" type="object"/>
+				</form>
+            </field>
+        </record>
+
+<!--Parameter-->
+
+        <record id="view_backup_param_form" model="ir.ui.view">
+            <field name="name">backup.param.form</field>
+            <field name="model">backup.param</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            	<form>
+                	<field name="name"/>
+                	<field name="value"/>
+				</form>
+            </field>
+        </record>
+
+<!--Job-->
+
+        <record id="view_backup_job_tree" model="ir.ui.view">
+            <field name="name">backup.job.tree</field>
+            <field name="model">backup.job</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+            	<tree colors="blue:type=='immutable'">
+                	<field name="task_id"/>
+                	<field name="date"/>
+                	<field name="storage_id"/>
+				</tree>
+            </field>
+        </record>
+
+        <record id="view_backup_job_form" model="ir.ui.view">
+            <field name="name">backup.job.form</field>
+            <field name="model">backup.job</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            	<form>
+                	<field name="name"/>
+                	<field name="date"/>
+                	<field name="task_id"/>
+                	<field name="storage_id"/>
+                	<field name="type"/>
+                	<field name="contents" colspan="4"/>
+				</form>
+            </field>
+        </record>
+
+    </data>
+</openerp>

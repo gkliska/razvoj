@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data noupdate="0">
+
+    <record id="group_backup" model="res.groups">
+        <field name="name">Administrator / Backup</field>
+    </record>
+
+	<!-- Set accesses to menu -->
+	<record model="ir.ui.menu" id="base.menu_administration">
+		<field name="groups_id" eval="[(6,0, [ref('base.group_system'), ref('base.group_erp_manager'), ref('group_backup')])]"/>
+	</record>
+
+</data>
+</openerp>

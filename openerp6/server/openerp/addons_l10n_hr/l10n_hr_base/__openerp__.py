@@ -1,9 +1,11 @@
 # -*- encoding: utf-8 -*-
 ##############################################################################
 #
+#    OpenERP, Open Source Management Solution
+#    Module: l10n_hr
 #    Author: Goran Kliska
 #    mail:   gkliskaATgmail.com
-#    Copyright: Slobodni programi d.o.o., Zagreb
+#    Copyright (C) 2011- Slobodni programi d.o.o., Zagreb
 #    Contributions: 
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -21,8 +23,17 @@
 #
 ##############################################################################
 
+#import 
+
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+
+#    additional libs:
+#	python-stdnum
+#	vatnumber
+#		suds
+
 {
-    "name" : "Croatia - localization with RRIF's 2011 chat of accounts",
+    "name" : "Croatian localization - base module",
     "description" : """
 Croatian localisation.
 ======================
@@ -32,41 +43,24 @@ Contributions:
 
 Description:
 
-RRIF-ov računski plan za poduzetnike za 2011.
-Vrste konta
-Kontni plan prema RRIF-u, dorađen u smislu kraćenja naziva i dodavanja analitika
-Porezne grupe prema poreznoj prijavi
-Porezi PDV-a
-Ostali porezi (samo češće korišteni) povezani s kontima kontnog plana
-
-Izvori podataka:
- http://www.rrif.hr/dok/preuzimanje/rrif-rp2011.rar
+Croatian VAT number (OIB) check
 
 TODO :
-- Unaprijediti vrste konta
-- Dodati i ostale poreze i trošarine
 
 
 """,
-    "version" : "2011.1",
+    "version" : "11.1",
     "author" : "Slobodni programi d.o.o.",
-    "category" : "Localisation/Account Charts",
+    "category" : "Localisation/Croatia",
     "website": "http://www.slobodni-programi.hr",
 
     'depends': [
-                'account',
-                'base_vat',
-                'base_iban',
-                'account_chart',
-#               'account_coda',
+               'base_vat',
                 ],
     'init_xml': [],
     'update_xml': [
-                'data/account.account.type.csv',
-                'data/account.tax.code.template.csv',
-                'data/account.account.template.csv',
-                'l10n_hr_wizard.xml',
-                'data/account.tax.template.csv',
+                   'data/res.bank.csv'
+                   'data/l10n_hr_base.nkd.csv'
                    ],
     "demo_xml" : [],
     'test' : [],

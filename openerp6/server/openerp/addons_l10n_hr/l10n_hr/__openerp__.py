@@ -1,6 +1,8 @@
 # -*- encoding: utf-8 -*-
 ##############################################################################
 #
+#    OpenERP, Open Source Management Solution
+#    Module: l10n_hr
 #    Author: Goran Kliska
 #    mail:   gkliskaATgmail.com
 #    Copyright: Slobodni programi d.o.o., Zagreb

@@ -1,0 +1,11 @@
+#!/usr/bin/python
+import sys
+
+from openobject.commands import start, ConfigurationError
+
+if __name__ == "__main__":
+    try:
+        start()
+    except ConfigurationError, exc:
+        sys.stderr.write(str(exc)+"\n")
+        sys.exit(1)

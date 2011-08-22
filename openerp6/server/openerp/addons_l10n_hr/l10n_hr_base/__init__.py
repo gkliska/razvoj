@@ -1,8 +1,12 @@
-# -*- coding: utf-8 -*-
+# -*- encoding: utf-8 -*-
 ##############################################################################
 #
 #    OpenERP, Open Source Management Solution
-#    Copyright (C) 2004-2010 Tiny SPRL (<http://tiny.be>).
+#    Module: l10n_hr_base
+#    Author: Goran Kliska
+#    mail:   gkliskaATgmail.com
+#    Copyright (C) 2011- Slobodni programi d.o.o., Zagreb
+#    Contributions: 
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -19,7 +23,9 @@
 #
 ##############################################################################
 
-#import company
-#import wizard
+import base_vat 
+import l10n_hr_base
+import partner
+import company
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
