@@ -3,8 +3,7 @@
 #
 #    OpenERP, Open Source Management Solution
 #    Module: account_storno
-#    Author: Goran Kliska
-#    mail:   gkliskaATgmail.com
+#    Author: Goran Kliska,  gkliskaATgmail.com
 #    Copyright (C) 2011- Slobodni programi d.o.o., Zagreb
 #    Contributions: 
 #
@@ -32,7 +31,23 @@ from tools.translate import _
 
 class account_account(osv.osv):
     _inherit = "account.account"
+    
+    #unchanged
+    def _get_child_ids(self, cr, uid, ids, field_name, arg, context=None):
+        result = {}
+        for record in self.browse(cr, uid, ids, context=context):
+            if record.child_parent_ids:
+                result[record.id] = [x.id for x in record.child_parent_ids]
+            else:
+                result[record.id] = []
 
+            if record.child_consol_ids:
+                for acc in record.child_consol_ids:
+                    if acc.id not in result[record.id]:
+                        result[record.id].append(acc.id)
+        return result
+
+    #unchanged
     def _get_children_and_consol(self, cr, uid, ids, context=None):
         #this function search for all the children and all consolidated children (recursively) of the given account ids
         ids2 = self.search(cr, uid, [('parent_id', 'child_of', ids)], context=context)
@@ -46,8 +61,7 @@ class account_account(osv.osv):
 
     def __compute_sign(self, cr, uid, ids, field_names, arg=None, context=None,
                   query='', query_params=()):
-        """ compute the balance, debit and/or credit for the provided
-        account ids
+        """ compute the balance, debit and/or credit for the provided account ids
         Arguments:
         `ids`: account ids
         `field_names`: the fields to compute (a list of any of
@@ -64,15 +78,19 @@ class account_account(osv.osv):
             'debit': "COALESCE(SUM(l.debit), 0) as debit",
             'credit': "COALESCE(SUM(l.credit), 0) as credit"
         }
-        field_names=['debit', 'credit', 'balance'] # for balance we need debit and credit
+        field_names=['debit', 'credit'] # for balance we need debit and credit
+
         #get all the necessary accounts
         children_and_consolidated = self._get_children_and_consol(cr, uid, ids, context=context)
-        #compute for each account the balance/debit/credit from the move lines
+        #compute for each account the debit/credit from the move lines
         accounts = {}
         res = {}
         if children_and_consolidated:
             aml_query = self.pool.get('account.move.line')._query_get(cr, uid, context=context)
-
+            #TODO OPTIMIZE
+            #l.state <> 'draft' 
+            # AND l.period_id IN (SELECT id FROM account_period WHERE fiscalyear_id IN (1))   
+            # AND l.move_id IN (SELECT id FROM account_move WHERE account_move.state = 'posted') => l.state="posted"
             wheres = [""]
             if query.strip():
                 wheres.append(query.strip())
@@ -81,9 +99,9 @@ class account_account(osv.osv):
             filters = " AND ".join(wheres)
             self.logger.notifyChannel('addons.'+self._name, netsvc.LOG_DEBUG,
                                       'Filters: %s'%filters)
+            # TO DO OPTIMIZE--log-level=debug_sql
             # IN might not work ideally in case there are too many
-            # children_and_consolidated, in that case join on a
-            # values() e.g.:
+            # children_and_consolidated, in that case join on a values() e.g.:
             # SELECT l.account_id as id FROM account_move_line l
             # INNER JOIN (VALUES (id1), (id2), (id3), ...) AS tmp (id)
             # ON l.account_id = tmp.id
@@ -99,54 +117,45 @@ class account_account(osv.osv):
             self.logger.notifyChannel('addons.'+self._name, netsvc.LOG_DEBUG,
                                       'Status: %s'%cr.statusmessage)
 
-            for res in cr.dictfetchall():
-                accounts[res['id']] = res
+
+            for res in cr.dictfetchall(): 
+                accounts[res['id']] = res 
 
             # consolidate accounts with direct children
+            # TODO: check currency
             children_and_consolidated.reverse()
             brs = list(self.browse(cr, uid, children_and_consolidated, context=context))
-            sums = {}
-            currency_obj = self.pool.get('res.currency')
+            sums = dict([(id, {'debit': accounts.get(id, {}).get('debit', 0.0),
+                               'credit': accounts.get(id, {}).get('credit', 0.0),
+                              }) for id in children_and_consolidated])
             while brs:
                 current = brs[0]
-#                can_compute = True
-#                for child in current.child_id:
-#                    if child.id not in sums:
-#                        can_compute = False
-#                        try:
-#                            brs.insert(0, brs.pop(brs.index(child)))
-#                        except ValueError:
-#                            brs.insert(0, child)
-#                if can_compute:
                 brs.pop(0)
-                for fn in field_names:
-                    sums.setdefault(current.id, {})[fn] = accounts.get(current.id, {}).get(fn, 0.0)
-                for child in current.child_id:
-                    if child.company_id.currency_id.id == current.company_id.currency_id.id:
-                        sums[current.id]['debit']  += sums[child.id]['debit'] * child.parent_sign_debit
-                        sums[current.id]['credit'] += sums[child.id]['credit']* child.parent_sign_credit
-                    else:
-                        sums[current.id]['debit'] += currency_obj.compute(cr, uid, child.company_id.currency_id.id, current.company_id.currency_id.id, sums[child.id]['debit'] * child.parent_sign_debit , context=context)
-                        sums[current.id]['credit']+= currency_obj.compute(cr, uid, child.company_id.currency_id.id, current.company_id.currency_id.id, sums[child.id]['credit']* child.parent_sign_credit, context=context)
-                    sums[current.id]['balance']+= sums[child.id]['debit'] * child.parent_sign_debit - sums[child.id]['credit']* child.parent_sign_credit
-                        
+                if current.child_id:
+                    sums[current.id]['debit']  += sum(sums[c.id]['debit'] 
+                                                      * c.parent_sign_debit for c in current.child_id)
+                    sums[current.id]['credit'] += sum(sums[c.id]['credit']
+                                                      * c.parent_sign_credit for c in current.child_id)
 
-            null_result = dict((fn, 0.0) for fn in field_names)
-            for id in ids:
-                res[id] = sums.get(id, null_result)
+            res = dict([(id, {'debit'  : sums.get(id,{}).get('debit' , 0.0),
+                              'credit' : sums.get(id,{}).get('credit', 0.0),
+                              'balance': sums.get(id,{}).get('debit', 0.0)
+                                        - sums.get(id,{}).get('credit', 0.0),
+                              }) for id in ids])
+
         else:
             for id in ids:
                 res[id] = 0.0
         return res
 
     _columns = {
+        #new fields         
         'parent_sign_debit' : fields.float('Debit Coefficent for parent', required=True, help='You can specify here the coefficient that will be used when consolidating the debit amount of this account into its parent. For example, set 1/-1 if you want to add/substract it.'),
         'parent_sign_credit': fields.float('Credit Coefficent for parent', required=True, help='You can specify here the coefficient that will be used when consolidating the credit amount of this account into its parent. For example, set 1/-1 if you want to add/substract it.'),
         # redeclaration of fields because of private __compute() func  
         'balance': fields.function(__compute_sign, digits_compute=dp.get_precision('Account'), string='Balance', multi='balance'),
         'credit': fields.function(__compute_sign, digits_compute=dp.get_precision('Account'), string='Credit', multi='balance'),
         'debit': fields.function(__compute_sign, digits_compute=dp.get_precision('Account'), string='Debit', multi='balance'),
-
     }
 
     _defaults = {

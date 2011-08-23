@@ -1,6 +1,8 @@
-#Sat Aug 20 18:56:03 CEST 2011
+#Tue Aug 23 16:04:11 CEST 2011
 eclipse.preferences.version=1
 encoding//client/bin/modules/gui/main.py=utf-8
+encoding//server/doc/migrate/3.3.0-3.4.0/post.py=utf-8
+encoding//server/openerp-server.py=utf-8
 encoding//server/openerp/addons/account/account.py=utf-8
 encoding//server/openerp/addons/account/account_bank_statement.py=utf-8
 encoding//server/openerp/addons/account/account_move_line.py=utf-8
@@ -81,6 +83,7 @@ encoding//server/openerp/addons_other/account_fstr/reports/account_fstr_report.p
 encoding//server/openerp/addons_other/account_fstr/wizard/account_fstr_wizard.py=utf-8
 encoding//server/openerp/addons_other/account_payment_extension/payment.py=utf-8
 encoding//server/openerp/addons_other/account_regularization/account.py=utf-8
+encoding//server/openerp/addons_other/account_reporting/report/account_report_bs.py=utf-8
 encoding//server/openerp/addons_other/base_xml_simple/osv_xml.py=utf-8
 encoding//server/openerp/addons_other/gt_product_category_taxes/product.py=utf-8
 encoding//server/openerp/addons_other/hotel/hotel.py=utf-8
