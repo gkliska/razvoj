@@ -4,28 +4,32 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Project-Id-Version: OpenERP Server 6.0dev\n"
 "Report-Msgid-Bugs-To: support@openerp.com\n"
-"POT-Creation-Date: 2011-07-21 13:02+0000\n"
-"PO-Revision-Date: 2011-07-21 13:02+0000\n"
-"Last-Translator: <>\n"
+"POT-Creation-Date: 2011-01-11 11:14+0000\n"
+"PO-Revision-Date: 2010-10-30 12:22+0000\n"
+"Last-Translator: goranc <goranc@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-04-29 05:30+0000\n"
+"X-Generator: Launchpad (build 12758)\n"
 
 #. module: base_report_creator
 #: help:base_report_creator.report.filter,expression:0
-msgid "Provide an expression for the field based on which you want to filter the records.\n"
+msgid ""
+"Provide an expression for the field based on which you want to filter the "
+"records.\n"
 " e.g. res_partner.id=3"
-msgstr "Provide an expression for the field based on which you want to filter the records.\n"
-" e.g. res_partner.id=3"
+msgstr ""
+"Unesite izraz za polje po kojem želite filtrirati zapise.\n"
+"npr. res_partner.id=3"
 
 #. module: base_report_creator
 #: model:ir.model,name:base_report_creator.model_report_menu_create
 msgid "Menu Create"
-msgstr "Kreiraj izbornik"
+msgstr ""
 
 #. module: base_report_creator
 #: field:base_report_creator.report,view_graph_type:0
@@ -48,15 +52,19 @@ msgid "Graph Mode"
 msgstr "Grafički"
 
 #. module: base_report_creator
-#: code:addons/base_report_creator/base_report_creator.py:310
+#: code:addons/base_report_creator/base_report_creator.py:320
 #, python-format
-msgid "These is/are model(s) (%s) in selection which is/are not related to any other model"
-msgstr "Ovo je(su) odabrani model(i) (%s) koji nije(su) povezan(i) s niti jednim drugim modelom"
+msgid ""
+"These is/are model(s) (%s) in selection which is/are not related to any "
+"other model"
+msgstr ""
+"Ovo je(su) odabrani model(i) (%s) koji nije(su) povezan(i) s niti jednim "
+"drugim modelom"
 
 #. module: base_report_creator
 #: view:base_report_creator.report:0
 msgid "Legend"
-msgstr "Legenda"
+msgstr ""
 
 #. module: base_report_creator
 #: view:base_report_creator.report:0
@@ -76,7 +84,7 @@ msgstr "Postavi filterska polja"
 #. module: base_report_creator
 #: selection:base_report_creator.report.fields,calendar_mode:0
 msgid "Ending Date"
-msgstr "Do datuma"
+msgstr "Završni datum"
 
 #. module: base_report_creator
 #: model:ir.model,name:base_report_creator.model_base_report_creator_report_filter
@@ -93,7 +101,7 @@ msgstr "SQL upit"
 #: view:base_report_creator.report:0
 #: view:report.menu.create:0
 msgid "Create Menu"
-msgstr "Stvori izbornik"
+msgstr "Kreiraj izbornik"
 
 #. module: base_report_creator
 #: selection:base_report_creator.report.fields,group_method:0
@@ -114,10 +122,10 @@ msgstr "ILI"
 #. module: base_report_creator
 #: model:ir.actions.act_window,name:base_report_creator.base_report_creator_action
 msgid "Custom Reports"
-msgstr "Prilagođena izvješća"
+msgstr "Prilagođeni izvještaji"
 
 #. module: base_report_creator
-#: code:addons/base_report_creator/base_report_creator.py:310
+#: code:addons/base_report_creator/base_report_creator.py:320
 #, python-format
 msgid "No Related Models!!"
 msgstr "Nema srodnih modela!!"
@@ -135,7 +143,7 @@ msgstr "Suma"
 #. module: base_report_creator
 #: constraint:base_report_creator.report:0
 msgid "You must have to give calendar view's color,start date and delay."
-msgstr "You must have to give calendar view's color,start date and delay."
+msgstr ""
 
 #. module: base_report_creator
 #: field:base_report_creator.report,model_ids:0
@@ -182,7 +190,6 @@ msgstr "/"
 #: field:base_report_creator.report.fields,report_id:0
 #: field:base_report_creator.report.filter,report_id:0
 #: model:ir.model,name:base_report_creator.model_base_report_creator_report
-#: model:ir.model,name:base_report_creator.model_base_report_creator_report_result
 msgid "Report"
 msgstr "Izvještaj"
 
@@ -237,7 +244,7 @@ msgstr "AND"
 #. module: base_report_creator
 #: constraint:base_report_creator.report:0
 msgid "You can not display field which are not stored in Database."
-msgstr "You can not display field which are not stored in Database."
+msgstr ""
 
 #. module: base_report_creator
 #: field:base_report_creator.report.fields,calendar_mode:0
@@ -266,7 +273,7 @@ msgstr "Kalendar"
 #: selection:base_report_creator.report,view_type2:0
 #: selection:base_report_creator.report,view_type3:0
 msgid "Graph"
-msgstr "Dijagram"
+msgstr "Grafikon"
 
 #. module: base_report_creator
 #: wizard_field:base_report_creator.report_filter.fields,set_value_select_field,field_id:0
@@ -296,7 +303,7 @@ msgstr "Opće postavke"
 #. module: base_report_creator
 #: help:base_report_creator.report.fields,sequence:0
 msgid "Gives the sequence order when displaying a list of fields."
-msgstr "Gives the sequence order when displaying a list of fields."
+msgstr ""
 
 #. module: base_report_creator
 #: wizard_view:base_report_creator.report_filter.fields,init:0
@@ -327,7 +334,7 @@ msgstr "Uvjet"
 #. module: base_report_creator
 #: selection:base_report_creator.report.fields,group_method:0
 msgid "Count"
-msgstr "Broj"
+msgstr "Brojanje"
 
 #. module: base_report_creator
 #: selection:base_report_creator.report.fields,graph_mode:0
@@ -361,6 +368,7 @@ msgstr "Grupirano"
 
 #. module: base_report_creator
 #: view:base_report_creator.report:0
+#: model:ir.module.module,shortdesc:base_report_creator.module_meta_information
 msgid "Report Creator"
 msgstr "Kreator izvještaja"
 
@@ -369,40 +377,17 @@ msgstr "Kreator izvještaja"
 #: wizard_button:base_report_creator.report_filter.fields,set_value_select_field,end:0
 #: view:report.menu.create:0
 msgid "Cancel"
-msgstr "Odustani"
+msgstr "Poništi"
 
 #. module: base_report_creator
 #: constraint:base_report_creator.report:0
 msgid "You can apply aggregate function to the non calculated field."
-msgstr "You can apply aggregate function to the non calculated field."
+msgstr ""
 
 #. module: base_report_creator
 #: field:base_report_creator.report,menu_id:0
 msgid "Menu"
-msgstr "Izbornik"
-
-#. module: base_report_creator
-#: model:ir.module.module,description:base_report_creator.module_meta_information
-msgid "\n"
-"This module allows you to create any statistic report on several objects.\n"
-"=========================================================================\n"
-"\n"
-"It's an SQL query builder and browser\n"
-"for end-users.\n"
-"\n"
-"After installing the module, it adds a menu to define a custom report in\n"
-"the Administration / Customization / Reporting menu.\n"
-""
-msgstr "\n"
-"This module allows you to create any statistic report on several objects.\n"
-"=========================================================================\n"
-"\n"
-"It's an SQL query builder and browser\n"
-"for end-users.\n"
-"\n"
-"After installing the module, it adds a menu to define a custom report in\n"
-"the Administration / Customization / Reporting menu.\n"
-""
+msgstr ""
 
 #. module: base_report_creator
 #: field:base_report_creator.report,view_type1:0
@@ -422,12 +407,14 @@ msgstr "Polje"
 #. module: base_report_creator
 #: selection:base_report_creator.report.fields,calendar_mode:0
 msgid "Unique Colors"
-msgstr "Unique Colors"
+msgstr ""
 
 #. module: base_report_creator
 #: help:base_report_creator.report,active:0
-msgid "If the active field is set to False, it will allow you to hide the report without removing it."
-msgstr "If the active field is set to False, it will allow you to hide the report without removing it."
+msgid ""
+"If the active field is set to False, it will allow you to hide the report "
+"without removing it."
+msgstr ""
 
 #. module: base_report_creator
 #: selection:base_report_creator.report,view_graph_type:0
@@ -440,14 +427,9 @@ msgid "Third View"
 msgstr "Treći pogled"
 
 #. module: base_report_creator
-#: model:ir.module.module,shortdesc:base_report_creator.module_meta_information
-msgid "Statistical Report Creator"
-msgstr "Statistical Report Creator"
-
-#. module: base_report_creator
 #: selection:base_report_creator.report.fields,calendar_mode:0
 msgid "End Date"
-msgstr "Završni Datum"
+msgstr ""
 
 #. module: base_report_creator
 #: field:base_report_creator.report,name:0
@@ -467,7 +449,7 @@ msgstr "Prosjek"
 #. module: base_report_creator
 #: view:base_report_creator.report:0
 msgid "Use %(uid)s to filter by the connected user"
-msgstr "Use %(uid)s to filter by the connected user"
+msgstr ""
 
 #. module: base_report_creator
 #: selection:base_report_creator.report.fields,group_method:0
@@ -477,7 +459,7 @@ msgstr "Maksimalno"
 #. module: base_report_creator
 #: wizard_button:base_report_creator.report_filter.fields,init,set_value_select_field:0
 msgid "Continue"
-msgstr "Continue"
+msgstr "Nastavi"
 
 #. module: base_report_creator
 #: wizard_field:base_report_creator.report_filter.fields,set_value_select_field,value:0
@@ -524,5 +506,60 @@ msgstr "Polja za prikazati"
 #: view:base_report_creator.report:0
 #: field:base_report_creator.report,filter_ids:0
 msgid "Filters"
-msgstr "Filtri"
+msgstr "Filteri"
 
+#. module: base_report_creator
+#: model:ir.module.module,description:base_report_creator.module_meta_information
+msgid ""
+"This module allows you to create any statistic\n"
+"report on several objects. It's a SQL query builder and browser\n"
+"for and users.\n"
+"\n"
+"After installing the module, it adds a menu to define custom report in\n"
+"the \"Dashboard\" menu.\n"
+msgstr ""
+
+#~ msgid "Invalid XML for View Architecture!"
+#~ msgstr "Neispravan XML za arhitekturu prikaza!"
+
+#~ msgid "Reports"
+#~ msgstr "Izvještaji"
+
+#~ msgid "Uniq Colors"
+#~ msgstr "Jedinstvene boje"
+
+#~ msgid "Valid"
+#~ msgstr "Valjan"
+
+#~ msgid "State"
+#~ msgstr "Status"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Draft"
+#~ msgstr "Skica"
+
+#~ msgid ""
+#~ "The Object name must start with x_ and not contain any special character !"
+#~ msgstr ""
+#~ "Naziv objekta mora početi sa x_ i ne smije sadržavati specijalne znakove !"
+
+#~ msgid ""
+#~ "This modules allows you to create any statistic\n"
+#~ "report on several object. It's a SQL query builder and browser\n"
+#~ "for and users.\n"
+#~ "\n"
+#~ "After installing the module, it adds a menu to define custom report in\n"
+#~ "the \"Dashboard\" menu.\n"
+#~ msgstr ""
+#~ "Ovi moduli vam dozvoljavaju kreiranje bilo kojeg statističkog\n"
+#~ "izvještaj iz više objekata. To je graditelj SQL upita i preglednik\n"
+#~ "za krajnje korisnike.\n"
+#~ "\n"
+#~ "Nakon instalacije, modul dodaje izbornik za kreiranje prilagođenog "
+#~ "izvještaja\n"
+#~ "na izborniku nadzorne ploče.\n"
+
+#~ msgid "Invalid model name in the action definition."
+#~ msgstr "Pogrešno ime modela u definiciji akcije."

@@ -4,21 +4,30 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenERP Server 6.1-dev\n"
+"Project-Id-Version: OpenERP Server 6.0dev\n"
 "Report-Msgid-Bugs-To: support@openerp.com\n"
-"POT-Creation-Date: 2011-07-21 13:02+0000\n"
-"PO-Revision-Date: 2011-07-21 13:02+0000\n"
-"Last-Translator: <>\n"
+"POT-Creation-Date: 2011-01-11 11:14+0000\n"
+"PO-Revision-Date: 2010-08-02 20:44+0000\n"
+"Last-Translator: Mantavya Gajjar (Open ERP) <Unknown>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-04-29 05:24+0000\n"
+"X-Generator: Launchpad (build 12758)\n"
+
+#. module: account_analytic_default
+#: model:ir.module.module,shortdesc:account_analytic_default.module_meta_information
+msgid "Account Analytic Default"
+msgstr "Uobičajene postavke analize računa"
 
 #. module: account_analytic_default
 #: help:account.analytic.default,partner_id:0
-msgid "select a partner which will use analytical account specified in analytic default (eg. create new cutomer invoice or Sale order if we select this partner, it will automatically take this as an analytical account)"
-msgstr "select a partner which will use analytical account specified in analytic default (eg. create new cutomer invoice or Sale order if we select this partner, it will automatically take this as an analytical account)"
+msgid ""
+"select a partner which will use analytical account specified in analytic "
+"default (eg. create new cutomer invoice or Sale order if we select this "
+"partner, it will automatically take this as an analytical account)"
+msgstr ""
 
 #. module: account_analytic_default
 #: model:ir.actions.act_window,name:account_analytic_default.analytic_rule_action_partner
@@ -30,32 +39,27 @@ msgstr "Pravila analitike"
 #. module: account_analytic_default
 #: help:account.analytic.default,analytic_id:0
 msgid "Analytical Account"
-msgstr "Analitički konto"
+msgstr ""
 
 #. module: account_analytic_default
 #: view:account.analytic.default:0
 msgid "Current"
-msgstr "Trenutno"
+msgstr ""
 
 #. module: account_analytic_default
 #: view:account.analytic.default:0
 msgid "Group By..."
-msgstr "Grupiraj po..."
+msgstr ""
 
 #. module: account_analytic_default
 #: help:account.analytic.default,date_stop:0
 msgid "Default end date for this Analytical Account"
-msgstr "Zadani krajnji datum za ovaj analitički konto"
+msgstr ""
 
 #. module: account_analytic_default
 #: model:ir.model,name:account_analytic_default.model_stock_picking
 msgid "Picking List"
-msgstr "Skladišni dokument"
-
-#. module: account_analytic_default
-#: view:account.analytic.default:0
-msgid "Comapny"
-msgstr "Comapny"
+msgstr ""
 
 #. module: account_analytic_default
 #: view:account.analytic.default:0
@@ -64,13 +68,16 @@ msgstr "Uvjeti"
 
 #. module: account_analytic_default
 #: help:account.analytic.default,company_id:0
-msgid "select a company which will use analytical account specified in analytic default (eg. create new cutomer invoice or Sale order if we select this company, it will automatically take this as an analytical account)"
-msgstr "select a company which will use analytical account specified in analytic default (eg. create new cutomer invoice or Sale order if we select this company, it will automatically take this as an analytical account)"
+msgid ""
+"select a company which will use analytical account specified in analytic "
+"default (eg. create new cutomer invoice or Sale order if we select this "
+"company, it will automatically take this as an analytical account)"
+msgstr ""
 
 #. module: account_analytic_default
 #: help:account.analytic.default,date_start:0
 msgid "Default start date for this Analytical Account"
-msgstr "Zadani početni datum za ovaj analitički konto"
+msgstr ""
 
 #. module: account_analytic_default
 #: view:account.analytic.default:0
@@ -81,13 +88,13 @@ msgstr "Proizvod"
 #. module: account_analytic_default
 #: model:ir.model,name:account_analytic_default.model_account_analytic_default
 msgid "Analytic Distribution"
-msgstr "Analytic Distribution"
+msgstr ""
 
 #. module: account_analytic_default
 #: view:account.analytic.default:0
 #: field:account.analytic.default,company_id:0
 msgid "Company"
-msgstr "Organizacija"
+msgstr "Tvrtka"
 
 #. module: account_analytic_default
 #: view:account.analytic.default:0
@@ -103,12 +110,13 @@ msgstr "Stavke"
 #. module: account_analytic_default
 #: field:account.analytic.default,date_stop:0
 msgid "End Date"
-msgstr "Završni Datum"
+msgstr "Završni datum"
 
 #. module: account_analytic_default
 #: help:account.analytic.default,user_id:0
-msgid "select a user which will use analytical account specified in analytic default"
-msgstr "select a user which will use analytical account specified in analytic default"
+msgid ""
+"select a user which will use analytical account specified in analytic default"
+msgstr ""
 
 #. module: account_analytic_default
 #: view:account.analytic.default:0
@@ -118,69 +126,52 @@ msgid "Analytic Defaults"
 msgstr "Uobičajene postavke analitike"
 
 #. module: account_analytic_default
-#: view:account.analytic.default:0
-msgid "Analytical defaults whose end date is greater than today or None"
-msgstr "Analytical defaults whose end date is greater than today or None"
-
-#. module: account_analytic_default
-#: model:ir.module.module,shortdesc:account_analytic_default.module_meta_information
-msgid "Account Analytic Defaults"
-msgstr "Account Analytic Defaults"
-
-#. module: account_analytic_default
-#: help:account.analytic.default,product_id:0
-msgid "select a product which will use analytical account specified in analytic default (eg. create new cutomer invoice or Sale order if we select this product, it will automatically take this as an analytical account)"
-msgstr "select a product which will use analytical account specified in analytic default (eg. create new cutomer invoice or Sale order if we select this product, it will automatically take this as an analytical account)"
-
-#. module: account_analytic_default
 #: model:ir.module.module,description:account_analytic_default.module_meta_information
-msgid "Set default values for your analytic accounts\n"
-"Allows to automatically select analytic accounts based on criterions:\n"
-"=====================================================================\n"
+msgid ""
 "\n"
+"Allows to automatically select analytic accounts based on criterions:\n"
 "* Product\n"
 "* Partner\n"
 "* User\n"
 "* Company\n"
 "* Date\n"
 "    "
-msgstr "Set default values for your analytic accounts\n"
-"Allows to automatically select analytic accounts based on criterions:\n"
-"=====================================================================\n"
-"\n"
-"* Proizvod\n"
-"* Partner\n"
-"* Korisnik\n"
-"* Organizacija\n"
-"* Datum\n"
-"    "
+msgstr ""
+
+#. module: account_analytic_default
+#: help:account.analytic.default,product_id:0
+msgid ""
+"select a product which will use analytical account specified in analytic "
+"default (eg. create new cutomer invoice or Sale order if we select this "
+"product, it will automatically take this as an analytical account)"
+msgstr ""
 
 #. module: account_analytic_default
 #: field:account.analytic.default,sequence:0
 msgid "Sequence"
-msgstr "Sekvenca"
+msgstr "Redoslijed"
 
 #. module: account_analytic_default
 #: model:ir.model,name:account_analytic_default.model_account_invoice_line
 msgid "Invoice Line"
-msgstr "Stavka računa"
+msgstr ""
 
 #. module: account_analytic_default
 #: view:account.analytic.default:0
 #: field:account.analytic.default,analytic_id:0
 msgid "Analytic Account"
-msgstr "Konto analitike"
+msgstr "Analitički račun"
 
 #. module: account_analytic_default
 #: view:account.analytic.default:0
 msgid "Accounts"
-msgstr "Konta"
+msgstr ""
 
 #. module: account_analytic_default
 #: view:account.analytic.default:0
 #: field:account.analytic.default,partner_id:0
 msgid "Partner"
-msgstr "Partner"
+msgstr "Stranka"
 
 #. module: account_analytic_default
 #: field:account.analytic.default,date_start:0
@@ -189,11 +180,28 @@ msgstr "Početni datum"
 
 #. module: account_analytic_default
 #: help:account.analytic.default,sequence:0
-msgid "Gives the sequence order when displaying a list of analytic distribution"
-msgstr "Gives the sequence order when displaying a list of analytic distribution"
+msgid ""
+"Gives the sequence order when displaying a list of analytic distribution"
+msgstr ""
 
 #. module: account_analytic_default
 #: model:ir.model,name:account_analytic_default.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Stavka prodajnog naloga"
+msgstr ""
 
+#~ msgid "Invalid XML for View Architecture!"
+#~ msgstr "Neispravan XML za arhitekturu prikaza!"
+
+#~ msgid "Seq"
+#~ msgstr "Redoslijed"
+
+#~ msgid "Analytic Distributions"
+#~ msgstr "Raspodjele analitike"
+
+#~ msgid ""
+#~ "The Object name must start with x_ and not contain any special character !"
+#~ msgstr ""
+#~ "Naziv objekta mora početi sa x_ i ne smije sadržavati specijalne znakove !"
+
+#~ msgid "Invalid model name in the action definition."
+#~ msgstr "Nevažeće ime modela u definiciji akcije."

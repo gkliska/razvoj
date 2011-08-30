@@ -1,92 +1,375 @@
 <?xml version="1.0" ?>
 <openerp>
-<data>
+  <data>
 
-    <record model="ir.ui.view" id="view_account_coda_form">
-        <field name="name">account.coda.form</field>
-        <field name="model">account.coda</field>
-        <field name="type">form</field>
-        <field name="arch" type="xml">
-            <form string="Coda import">
-                <field name="name" />
-                <field name="journal_id" widget="selection"/>
-                <field name="date" />
-                <field name="user_id" />
-                <field name="company_id" widget="selection" groups="base.group_multi_company"/>
-                <notebook colspan="4">
-                    <page string="Log">
-                       <field name="note" colspan="4" nolabel="1"/>
-                    </page>
-                    <page string="Statements">
-                       <field name="statement_ids" colspan="4" nolabel="1"/>
-                    </page>
-                </notebook>
-            </form>
+    <!-- add fields for CODA Import processing -->
+    <record id="view_account_journal_coda" model="ir.ui.view">
+      <field name="name">account.journal.form.coda</field>
+      <field name="model">account.journal</field>
+      <field name="inherit_id" ref="account.view_account_journal_form"/>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+        <field name="entry_posted" position="after">
+          <group colspan="4" attrs="{'invisible':[('type','!=','bank')]}">
+            <separator colspan="4" string="CODA Import Processing parameters"/>
+            <field name="coda_bank_acc"/>
+            <newline/>
+            <field name="coda_st_naming"/>
+          </group>
         </field>
+      </field>
     </record>
 
+    <!-- CODA Configuration -->
+    <menuitem id="menu_manage_coda" name="CODA Configuration" parent="account.menu_finance_accounting" sequence="30" groups="base.group_no_one"/>
+
+    <!-- CODA Transaction Types -->
+    <record id="view_account_coda_trans_type_tree" model="ir.ui.view">
+      <field name="name">account.coda.trans.type.tree</field>
+      <field name="model">account.coda.trans.type</field>
+      <field name="type">tree</field>
+      <field name="arch" type="xml">
+        <tree string="CODA Transaction Types">
+          <field name="type"/>
+          <field name="parent_id"/>
+          <field name="description"/>
+        </tree>
+      </field>
+    </record>
+    <record id="view_account_coda_trans_type_form" model="ir.ui.view">
+      <field name="name">account.coda.trans.type.form</field>
+      <field name="model">account.coda.trans.type</field>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+        <form string="CODA Transaction Type">
+          <field name="type"/>
+          <field name="parent_id"/>
+          <field name="description" colspan="4"/>
+        </form>
+      </field>
+    </record>
+    <record id="action_account_coda_trans_type_form" model="ir.actions.act_window">
+      <field name="name">CODA Transaction Types</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">account.coda.trans.type</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem action="action_account_coda_trans_type_form" id="menu_action_account_coda_trans_type_form" parent="menu_manage_coda" sequence="1"/>
+
+    <!-- CODA Transaction Codes -->
+    <record id="view_account_coda_trans_code_tree" model="ir.ui.view">
+      <field name="name">account.coda.trans.code.tree</field>
+      <field name="model">account.coda.trans.code</field>
+      <field name="type">tree</field>
+      <field name="arch" type="xml">
+        <tree string="CODA Transaction Codes">
+          <field name="code"/>
+          <field name="type"/>
+          <field name="parent_id"/>
+          <field name="description"/>
+        </tree>
+      </field>
+    </record>
+    <record id="view_account_coda_trans_code_form" model="ir.ui.view">
+      <field name="name">account.coda.trans.code.form</field>
+      <field name="model">account.coda.trans.code</field>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+        <form string="CODA Transaction Code">
+          <field name="code"/>
+          <field name="type"/>
+          <field name="parent_id"/>
+          <field name="description"/>
+          <field name="comment" colspan="4"/>
+        </form>
+      </field>
+    </record>
+    <record id="action_account_coda_trans_code_form" model="ir.actions.act_window">
+      <field name="name">CODA Transaction Codes</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">account.coda.trans.code</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem action="action_account_coda_trans_code_form" id="menu_action_account_coda_trans_code_form" parent="menu_manage_coda"  sequence="2"/>
+
+    <!-- CODA Transaction Categories -->
+    <record id="view_account_coda_trans_category_tree" model="ir.ui.view">
+      <field name="name">account.coda.trans.category.tree</field>
+      <field name="model">account.coda.trans.category</field>
+      <field name="type">tree</field>
+      <field name="arch" type="xml">
+        <tree string="CODA Transaction Categories">
+          <field name="category"/>
+          <field name="description"/>
+        </tree>
+      </field>
+    </record>
+    <record id="view_account_coda_trans_category_form" model="ir.ui.view">
+      <field name="name">account.coda.trans.category.form</field>
+      <field name="model">account.coda.trans.category</field>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+        <form string="CODA Transaction Category">
+          <field name="category"/>
+          <field name="description"/>
+        </form>
+      </field>
+    </record>
+    <record id="action_account_coda_trans_category_form" model="ir.actions.act_window">
+      <field name="name">CODA Transaction Categories</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">account.coda.trans.category</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem action="action_account_coda_trans_category_form" id="menu_action_account_coda_trans_category_form" parent="menu_manage_coda"  sequence="3"/>
+
+    <!-- CODA Structured Communication Types -->
+    <record id="view_account_coda_comm_type_tree" model="ir.ui.view">
+      <field name="name">account.coda.comm.type.tree</field>
+      <field name="model">account.coda.comm.type</field>
+      <field name="type">tree</field>
+      <field name="arch" type="xml">
+        <tree string="CODA Structured Communication Types">
+          <field name="code"/>
+          <field name="description"/>
+        </tree>
+      </field>
+    </record>
+    <record id="view_account_coda_comm_type_form" model="ir.ui.view">
+      <field name="name">account.coda.comm.type.form</field>
+      <field name="model">account.coda.comm.type</field>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+        <form string="CODA Structured Communication Type">
+          <field name="code"/>
+          <field name="description"/>
+        </form>
+      </field>
+    </record>
+    <record id="action_account_coda_comm_type_form" model="ir.actions.act_window">
+      <field name="name">CODA Structured Communication Types</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">account.coda.comm.type</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem action="action_account_coda_comm_type_form" id="menu_action_account_coda_comm_type_form" parent="menu_manage_coda"  sequence="4"/>
+
+    <!-- CODA Processing -->
+    <menuitem name="CODA Processing" parent="account.menu_finance_bank_and_cash" id="menu_account_coda" groups="base.group_no_one" sequence="40"/>
+    <menuitem name="Import CODA Files" parent="account.menu_account_pp_statements" id="menu_account_coda_import" action="action_account_coda_import" sequence="41"/>
+
+    <!-- CODA Files -->
     <record model="ir.ui.view" id="view_account_coda_tree">
-        <field name="name">account.coda.tree</field>
-        <field name="model">account.coda</field>
-        <field name="type">tree</field>
-        <field name="arch" type="xml">
-            <tree string="Coda Import">
-                <field name="journal_id" widget="selection"/>
-                <field name="date" />
-                <field name="user_id" />
-                <field name="company_id" widget="selection" groups="base.group_multi_company"/>
-            </tree>
-        </field>
+      <field name="name">account.coda.tree</field>
+      <field name="model">account.coda</field>
+      <field name="type">tree</field>
+      <field name="arch" type="xml">
+        <tree string="CODA Files">
+          <field name="coda_creation_date"/>
+          <field name="name"/>
+          <field name="date"/>
+          <field name="user_id"/>
+          <field name="company_id" widget="selection" groups="base.group_multi_company"/>          
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="view_account_coda_form">
+      <field name="name">account.coda.form</field>
+      <field name="model">account.coda</field>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+        <form string="CODA File">
+          <group colspan="4" col="6">
+            <field name="coda_creation_date"/>
+            <field name="name"/>
+            <field name="coda_data" fieldname="name"/>
+            <field name="date"/>
+            <field name="user_id"/>
+            <field name="company_id" widget="selection" groups="base.group_multi_company"/>
+          </group>
+          <separator colspan="4" string="Additional Information"/>
+          <field name="note" nolabel="1" colspan="4" />
+          <field name="statement_ids" nolabel="1" colspan="4"/>
+        </form>
+      </field>
+    </record>
+    
+    <record id="view_account_coda_filter" model="ir.ui.view">
+      <field name="name">account.coda.search</field>
+      <field name="model">account.coda</field>
+      <field name="type">search</field>
+      <field name="arch" type="xml">
+        <search string="Search CODA Files">
+          <group col="10" colspan="4">
+            <field name="coda_creation_date"/>
+            <field name="date"/>
+            <field name="user_id" widget='selection'/>
+            <field name="company_id" widget="selection" groups="base.group_multi_company"/>
+          </group>
+          <newline/>
+          <group expand="0" string="Group By...">
+            <filter string="CODA Creation Date" icon="terp-go-month" domain="[]" context="{'group_by':'coda_creation_date'}"/>
+            <separator orientation="vertical"/>
+            <filter string="User" icon="terp-personal" domain="[]"  context="{'group_by':'user_id'}"/>
+            <separator orientation="vertical"/>
+            <filter string="Company" icon="terp-go-home" domain="[]" groups="base.group_multi_company" context="{'group_by':'company_id'}"/>
+          </group>
+        </search>
+      </field>
+    </record>
+    
+    <record model="ir.actions.act_window" id="action_imported_coda_files">
+      <field name="name">Imported CODA Files</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">account.coda</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_id" ref="view_account_coda_tree"/>
+      <field name="search_view_id" ref="view_account_coda_filter"/>
     </record>
 
-      <record id="view_aaccount_coda_filter" model="ir.ui.view">
-            <field name="name">account.coda.select</field>
-            <field name="model">account.coda</field>
-            <field name="type">search</field>
-            <field name="arch" type="xml">
-                <search string="Search Coda">
-                   <group col="10" colspan="4">
-                        <field name="journal_id" widget='selection'/>
-                        <field name="date"/>
-                        <field name="user_id" widget='selection'/>
-                        <field name="company_id" widget="selection" groups="base.group_multi_company"/>
-                    </group>
-                    <newline/>
-                    <group expand="0" string="Group By...">
-                        <filter string="User" icon="terp-personal" domain="[]"  context="{'group_by':'user_id'}"/>
-                        <separator orientation="vertical"/>
-                        <filter string="Journal" icon="terp-folder-orange" domain="[]" context="{'group_by':'journal_id'}"/>
-                        <filter string="Date" icon="terp-go-month" domain="[]" context="{'group_by':'date'}"/>
-                        <separator orientation="vertical"/>
-                        <filter string="Company" icon="terp-go-home" domain="[]" groups="base.group_multi_company" context="{'group_by':'company_id'}"/>
-                    </group>
-               </search>
-            </field>
-        </record>
+    <menuitem name="Imported CODA Files" parent="menu_account_coda" id="menu_imported_coda_files" action="action_imported_coda_files"  sequence="42"/>
 
-    <record model="ir.actions.act_window" id="action_account_coda">
-        <field name="name">Coda Logs</field>
-        <field name="type">ir.actions.act_window</field>
-        <field name="res_model">account.coda</field>
-        <field name="view_type">form</field>
-        <field name="view_mode">tree,form</field>
-        <field name="context">{}</field>
-        <field name="search_view_id" ref="view_aaccount_coda_filter"/>
+    <!-- CODA Bank Statements -->
+    <record id="view_coda_bank_statement_tree" model="ir.ui.view">
+      <field name="name">coda.bank.statement.tree</field>
+      <field name="model">coda.bank.statement</field>
+      <field name="type">tree</field>
+      <field name="arch" type="xml">
+        <tree colors="red:balance_end_real!=balance_end;blue:state=='draft' and (balance_end_real==balance_end)" string="CODA Bank Statements">
+          <field name="name"/>
+          <field name="date"/>
+          <field name="period_id"/>
+          <field name="journal_id"/>
+          <field name="balance_start"/>
+          <field name="balance_end_real"/>
+          <field name="balance_end"/>
+          <field name="state"/>
+        </tree>
+      </field>
+    </record>
+    
+    <record id="view_coda_bank_statement_form" model="ir.ui.view">
+      <field name="name">coda.bank.statement.form</field>
+      <field name="model">coda.bank.statement</field>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+        <form string="CODA Bank Statement">
+          <field name="name" select="1"/>
+          <field name="date" select="1"/>
+          <field name="journal_id" select="1"/>
+          <field name="currency"/>
+          <field name="period_id" select="2"/>
+          <newline/>
+          <field name="balance_start"/>
+          <field name="balance_end_real"/>
+          <notebook colspan="4">
+            <page string="Transactions">
+              <field colspan="4" name="line_ids" nolabel="1">
+                <tree string="CODA Statement Lines">
+                  <field name="sequence" string="Seq"/>
+                  <field name="date"/>
+                  <field name="ref"/>
+                  <field name="name"/>
+                  <field name="type"/>
+                  <field name="partner_id"/>
+                  <field name="account_id"/>
+                  <field name="amount"/>
+                  <field name="globalisation_amount" string="Glob. Amount"/>
+                  <field name="globalisation_level"  string="Glob. Lvl"/>
+                </tree>
+                <form string="CODA Statement Lines">
+                  <field name="sequence" string="Seq"/>
+                  <field name="date"/>
+                  <field name="name"/>
+                  <field name="type"/>
+                  <field name="partner_id"/>
+                  <field domain="[('type', '&lt;&gt;', 'view')]" name="account_id"/>
+                  <field name="amount"/>
+                  <field name="ref"/>
+                  <field name="globalisation_amount"/>
+                  <field name="globalisation_level"/>
+                  <separator colspan="4" string="Notes"/>
+                  <field colspan="4" name="note" nolabel="1"/>
+                </form>
+              </field>
+            </page>
+          </notebook>
+          <group col="7" colspan="4">
+            <field name="state" select="2"/>
+            <field name="balance_end"/>
+          </group>
+        </form>
+      </field>
     </record>
 
-    <menuitem name="Coda Import Logs" parent="account.menu_finance_bank_and_cash" id="menu_account_coda_statement" action="action_account_coda" groups="base.group_extended" sequence="32"/>
+    <record id="view_coda_bank_statement_search" model="ir.ui.view">
+      <field name="name">coda.bank.statement.search</field>
+      <field name="model">coda.bank.statement</field>
+      <field name="type">search</field>
+      <field name="arch" type="xml">
+        <search string="Search CODA Bank Statements">
+          <group col="8" colspan="4">
+            <filter string="Draft" domain="[('state','=','draft')]" icon="terp-document-new"/>
+            <filter string="Done" domain="[('state','=','done')]" icon="terp-camera_test"/>
+            <separator orientation="vertical"/>
+            <field name="name"/>
+            <field name="date"/>
+            <field name="period_id"/>
+            <field name="journal_id" widget="selection" domain="[('type', '=', 'bank')]" />
+          </group>
+          <newline/>
+          <group expand="0" string="Group By...">
+            <filter string="Journal" context="{'group_by': 'journal_id'}" icon="terp-folder-orange"/>
+            <filter string="State" context="{'group_by': 'state'}" icon="terp-stock_effects-object-colorize"/>
+            <filter string="Period" context="{'group_by': 'period_id'}" icon="terp-go-month"/>
+          </group>
+        </search>
+      </field>
+    </record>
 
-    <menuitem name="Import Coda Statements" action="action_account_coda_import" parent="account.menu_account_pp_statements"
-     id="menu_account_coda_import" sequence="20"/>
+    <record model="ir.actions.act_window" id="action_coda_bank_statements">
+      <field name="name">CODA Bank Statements</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">coda.bank.statement</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_id" ref="view_coda_bank_statement_tree"/>
+      <field name="search_view_id" ref="view_coda_bank_statement_search"/>
+      <field name="help">The CODA Bank Statements contain the information encoded in their originating CODA file in a human readable format. The Bank Statements associated with a CODA contain the subset of the CODA Bank Statement data that is required for the creation of the Accounting Entries.</field>
+    </record>
 
-    <act_window name="Coda File"
-		domain="[('statement_ids', 'in', [active_id])]"
-		context="{'bank_statement': 1}"
-		res_model="account.coda"
-		src_model="account.bank.statement"
-		view_type="form"
-		view_mode="tree,form"
-		id="act_account_payment_account_bank_statement"/>
+    <menuitem name="CODA Bank Statements" parent="menu_account_coda" id="menu_coda_bank_statements" action="action_coda_bank_statements"  sequence="43"/>
 
-    </data>
+    <act_window name="CODA Data File"
+      domain="[('statement_ids', '=', active_id)]"
+      res_model="account.coda"
+      src_model="coda.bank.statement"
+      view_type="form"
+      view_mode="tree,form"
+      id="act_coda_bank_statement_goto_account_coda"/>
+
+    <act_window name="Bank Statement"
+      domain="[('coda_statement_id', '=', active_id)]"
+      res_model="account.bank.statement"
+      src_model="coda.bank.statement"
+      view_type="form"
+      view_mode="tree,form"
+      id="act_coda_bank_statement_goto_account_bank_statement"/>
+
+    <act_window name="CODA Bank Statement"
+      domain="[('statement_id', '=', active_id)]"
+      context="{'bank_statement': 1}"
+      res_model="coda.bank.statement"
+      src_model="account.bank.statement"
+      view_type="form"
+      view_mode="tree,form"
+      id="act_account_bank_statement_goto_coda_bank_statement"/>
+    
+  </data>
 </openerp>

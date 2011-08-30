@@ -53,58 +53,17 @@ class account_statement_from_invoice_lines(osv.osv_memory):
         voucher_line_obj = self.pool.get('account.voucher.line')
         line_date = time.strftime('%Y-%m-%d')
         statement = statement_obj.browse(cr, uid, statement_id, context=context)
+        journal_id = statement.journal_id.id
 
         # for each selected move lines
         for line in line_obj.browse(cr, uid, line_ids, context=context):
-            voucher_res = {}
-            ctx = context.copy()
-            #  take the date for computation of currency => use payment date
-            ctx['date'] = line_date
-            amount = 0.0
-
-            if line.debit > 0:
-                amount = line.debit
-            elif line.credit > 0:
-                amount = -line.credit
-
-            if line.amount_currency:
-                amount = currency_obj.compute(cr, uid, line.currency_id.id,
-                    statement.currency.id, line.amount_currency, context=ctx)
-            elif (line.invoice and line.invoice.currency_id.id <> statement.currency.id):
-                amount = currency_obj.compute(cr, uid, line.invoice.currency_id.id,
-                    statement.currency.id, amount, context=ctx)
-
-            context.update({'move_line_ids': [line.id]})
-            result = voucher_obj.onchange_partner_id(cr, uid, [], partner_id=line.partner_id.id, journal_id=statement.journal_id.id, price=abs(amount), currency_id= statement.currency.id, ttype=(amount < 0 and 'payment' or 'receipt'), date=line_date, context=context)
-            voucher_res = { 'type':(amount < 0 and 'payment' or 'receipt'),
-                            'name': line.name,
-                            'partner_id': line.partner_id.id,
-                            'journal_id': statement.journal_id.id,
-                            'account_id': result.get('account_id', statement.journal_id.default_credit_account_id.id), # improve me: statement.journal_id.default_credit_account_id.id
-                            'company_id':statement.company_id.id,
-                            'currency_id':statement.currency.id,
-                            'date':line.date,
-                            'amount':abs(amount),
-                            'period_id':statement.period_id.id}
-            voucher_id = voucher_obj.create(cr, uid, voucher_res, context=context)
-
-            voucher_line_dict =  {}
-            if result['value']['line_ids']:
-                for line_dict in result['value']['line_ids']:
-                    move_line = line_obj.browse(cr, uid, line_dict['move_line_id'], context)
-                    if line.move_id.id == move_line.move_id.id:
-                        voucher_line_dict = line_dict
-
-            if voucher_line_dict:
-                voucher_line_dict.update({'voucher_id': voucher_id})
-                voucher_line_obj.create(cr, uid, voucher_line_dict, context=context)
             if line.journal_id.type == 'sale':
                 type = 'customer'
             elif line.journal_id.type == 'purchase':
                 type = 'supplier'
             else:
                 type = 'general'
-            statement_line_obj.create(cr, uid, {
+            st_line_id = statement_line_obj.create(cr, uid, {
                 'name': line.name or '?',
                 'amount': amount,
                 'type': type,
@@ -112,9 +71,11 @@ class account_statement_from_invoice_lines(osv.osv_memory):
                 'account_id': line.account_id.id,
                 'statement_id': statement_id,
                 'ref': line.ref,
-                'voucher_id': voucher_id,
-                'date': time.strftime('%Y-%m-%d'), #time.strftime('%Y-%m-%d'), #line.date_maturity or,
+                'date': time.strftime('%Y-%m-%d'),
             }, context=context)
+
+            statement_line_obj.create_voucher(cr, uid, [st_line_id], line.id, journal_id, context=context)
+
         return {'type': 'ir.actions.act_window_close'}
 
 account_statement_from_invoice_lines()
