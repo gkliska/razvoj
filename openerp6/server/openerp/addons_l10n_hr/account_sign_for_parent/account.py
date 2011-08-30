@@ -29,6 +29,8 @@ import decimal_precision as dp
 from tools.translate import _
 
 
+from tools.misc import profile
+@profile('output.data')
 class account_account(osv.osv):
     _inherit = "account.account"
     
