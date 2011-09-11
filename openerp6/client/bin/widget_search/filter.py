@@ -35,6 +35,7 @@ class filter(wid_int.wid_int):
             self.butt = gtk.ToggleButton()
             self.butt.set_relief(gtk.RELIEF_NONE)
         icon = gtk.Image()
+        self.name = name or attrs.get('string')
         icon_to_set = attrs.get('icon','gtk-home')
         if icon_to_set.startswith('STOCK'):
             icon_to_set = getattr(gtk, icon_to_set)
@@ -60,10 +61,11 @@ class filter(wid_int.wid_int):
             ctx = tools.expr_eval(self.context, {'context':self.screen_context})
             group = ctx.get('group_by',False)
             if group:
-                return {'context': {'remove_group':group}}
+                return {'context': {'remove_group':True}, 'name':self.name}
             return {}
         return {'domain': tools.expr_eval(self.domain, {'context':self.screen_context}),
-            'context': tools.expr_eval(self.context, {'context':self.screen_context})}
+                'context': tools.expr_eval(self.context, {'context':self.screen_context}),
+                'name':self.name }
 
     def sig_exec(self, widget):
         pass

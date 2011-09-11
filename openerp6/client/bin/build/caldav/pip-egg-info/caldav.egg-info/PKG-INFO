@@ -1,0 +1,18 @@
+Metadata-Version: 1.0
+Name: caldav
+Version: 0.1.10
+Summary: CalDAV (RFC4791) client library
+Home-page: http://bitbucket.org/cyrilrbt/caldav
+Author: Cyril Robert
+Author-email: cyril@pantherific.com
+License: GPL
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Office/Business :: Scheduling
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

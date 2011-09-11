@@ -34,6 +34,5 @@ class res_company(osv.osv):
         'br_obveze_mirovinsko': fields.char('Br. obveze mirovinsko', size=32, help='Broj obveze mirovinskog osiguranja'),
         'br_obveze_zdravstveno': fields.char('Br. obveze zdravstveno', size=32, help='Broj obveze zdravstvenog osiguranja'),
         'maticni_broj': fields.char('Matični broj', size=16),
-        'nkd_id': fields.many2one('l10n_hr_base.nkd', 'NKD Klasifikacija'),
     }
 res_company()

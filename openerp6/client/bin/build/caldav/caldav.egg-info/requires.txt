@@ -1,0 +1,4 @@
+vobject
+lxml==2.1.5
+nose
+coverage

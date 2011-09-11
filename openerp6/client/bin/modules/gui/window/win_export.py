@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
-#    
+#
 #    OpenERP, Open Source Management Solution
 #    Copyright (C) 2004-2010 Tiny SPRL (<http://tiny.be>).
 #
@@ -15,7 +15,7 @@
 #    GNU Affero General Public License for more details.
 #
 #    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.     
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
 
@@ -105,7 +105,7 @@ def open_excel(fields, result):
             common.error(_('Error Opening Excel !'),'')
 
 def datas_read(ids, model, fields, fields_view, prefix='', context=None):
-    ctx = context.copy()    
+    ctx = context.copy()
     ctx.update(rpc.session.context)
     datas = rpc.session.rpc_exec_auth('/object', 'execute', model, 'export_data', ids, fields, ctx)
     return datas
@@ -161,11 +161,17 @@ class win_export(object):
         self.view1.show_all()
         self.view2.show_all()
 
+        hbox = self.glade.get_widget('hbox55')
+        self.wid_action = gtk.combo_box_new_text()
+        self.wid_action.append_text(_('Open in Excel'))
+        self.wid_action.append_text(_('Save as CSV'))
+        hbox.pack_start(self.wid_action)
+        hbox.reorder_child(self.wid_action, 0)
+        hbox.show_all()
+        action = self.wid_action.set_active(os.name != 'nt')
 
-        self.wid_action = self.glade.get_widget('win_saveas_combo')
         self.wid_write_field_names = self.glade.get_widget('add_field_names_cb')
-        action = self.wid_action.set_active(os.name!='nt')
-        
+
         if os.name != 'nt':
             self.wid_action.remove_text(0)
         else:
@@ -205,7 +211,7 @@ class win_export(object):
         import_comp = self.wid_import_compatible.get_active()
         fields = fields.copy()
         fields.update({'id':{'string':_('ID')}})
-        fields.update({'.id':{'string':_('Database ID')}}) 
+        fields.update({'.id':{'string':_('Database ID')}})
 
         fields_order = fields.keys()
         fields_order.sort(lambda x,y: -cmp(fields[x].get('string', ''), fields[y].get('string', '')))
@@ -219,7 +225,7 @@ class win_export(object):
             self.fields_data[prefix_node+field] = fields[field]
             if prefix_node:
                 self.fields_data[prefix_node + field]['string'] = '%s%s' % (prefix_value, self.fields_data[prefix_node + field]['string'])
-            st_name = fields[field]['string'] or field 
+            st_name = fields[field]['string'] or field
             node = self.model1.insert(prefix, 0, [st_name, prefix_node+field, (fields[field].get('required', False) and '#ddddff') or 'white'])
             self.fields[prefix_node+field] = (st_name, fields[field].get('relation', False))
             if fields[field].get('relation', False) and level>0:
@@ -235,7 +241,7 @@ class win_export(object):
     def del_export_list_key(self,widget, event, *args):
         if event.keyval==gtk.keysyms.Delete:
             self.del_selected_export_list()
-    
+
     def del_export_list_btn(self, widget=None):
         self.del_selected_export_list()
 
@@ -293,7 +299,7 @@ class win_export(object):
 
     def sig_unsel_all(self, widget=None):
         self.model2.clear()
-    
+
     def fill_predefwin(self):
         self.predef_model = gtk.ListStore(gobject.TYPE_PYOBJECT, gobject.TYPE_STRING, gobject.TYPE_STRING)
         ir_export = rpc.RPCProxy('ir.exports')
@@ -310,7 +316,7 @@ class win_export(object):
     def add_predef(self, button):
         name = common.ask(_('What is the name of this export ?'))
         if not name:
-            return 
+            return
         ir_export = rpc.RPCProxy('ir.exports')
         iter = self.model2.get_iter_root()
         fields = []
@@ -320,7 +326,7 @@ class win_export(object):
             iter = self.model2.iter_next(iter)
         ir_export.create({'name' : name, 'resource' : self.model, 'export_fields' : [(0, 0, {'name' : f}) for f in fields]})
         self.predef_model.append((fields, name, ','.join([self.fields_data[f]['string'] for f in fields])))
-    
+
     def sel_predef(self, treeview, path, column):
         self.model2.clear()
         for field in self.predef_model[path[0]][0]:
@@ -336,7 +342,7 @@ class win_export(object):
                 fields.append(self.model2.get_value(iter, 1).replace('/.id','.id'))
                 fields2.append(self.model2.get_value(iter, 0))
                 iter = self.model2.iter_next(iter)
-            action = self.wid_action.get_active()
+            action = self.wid_action.get_active_text()
             self.parent.present()
             self.win.destroy()
             import_comp = self.wid_import_compatible.get_active()
@@ -347,7 +353,7 @@ class win_export(object):
             result = result.get('datas',[])
             if import_comp:
                 fields2 = fields
-            if self.wid_action.get_active_text() == "Open in Excel":
+            if action == _('Open in Excel'):
                 open_excel(fields2, result)
             else:
                 fname = common.file_selection(_('Save As...'),

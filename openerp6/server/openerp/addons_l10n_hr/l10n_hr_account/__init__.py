@@ -24,5 +24,6 @@
 ##############################################################################
 
 import account
+import poziv_na_broj
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

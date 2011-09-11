@@ -716,7 +716,7 @@ class ViewList(parser_view):
             group_col = []
             for x in groupby:
                 group_col += [col for col in self.columns if col.name == x]
-                group_col = group_col + filter(lambda x:x.name not in groupby, self.columns)
+            group_col = group_col + filter(lambda x:x.name not in groupby, self.columns)
             for col in group_col:
                 if col.name in groupby:
                     if not col in self.changed_col:

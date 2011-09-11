@@ -205,12 +205,17 @@ class tree(object):
             common.message(_('No resource selected!'))
         return False
 
-    def sig_open(self, widget, iter, path):
+    def sig_open(self, widget, path, column):
+        for name, attr in self.tree_res.fields.iteritems():
+            if attr['string'] == column.get_title():
+                column_name = name
+                break
+        self.context.update({'tree_but_open_column':column_name})
         if not self.sig_action(widget, 'tree_but_open', warning=False):
-            if self.tree_res.view.row_expanded(iter):
-                self.tree_res.view.collapse_row(iter)
+            if self.tree_res.view.row_expanded(path):
+                self.tree_res.view.collapse_row(path)
             else:
-                self.tree_res.view.expand_row(iter, False)
+                self.tree_res.view.expand_row(path, False)
 
 
     def sig_remove(self, widget=None):

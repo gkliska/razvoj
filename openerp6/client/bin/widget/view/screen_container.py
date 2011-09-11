@@ -86,7 +86,7 @@ class screen_container(object):
         limits = []
         if default_limit and default_limit not in [100, 200, 500]:
             limits = [[int(default_limit), str(default_limit)]]
-        limits += [[100,'100'],[200,'200'],[500,'500'],[False,'Unlimited']]
+        limits += [[100,_('100')],[200,_('200')],[500,_('500')],[False,_('Unlimited')]]
         index = 0
         for lim in limits:
             if lim[0] == default_limit:

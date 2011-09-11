@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
-#    
+#
 #    OpenERP, Open Source Management Solution
 #    Copyright (C) 2004-2010 Tiny SPRL (<http://tiny.be>).
 #
@@ -15,7 +15,7 @@
 #    GNU Affero General Public License for more details.
 #
 #    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.     
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
 
@@ -178,9 +178,9 @@ def setlang(lang=None):
         lang_enc = str(lang2 + '.' + encoding)
         try:
             locale.setlocale(locale.LC_ALL, lang_enc)
-        except Exception,e:
+        except Exception,exception:
             logging.getLogger('translate').warning(
-                    _('Unable to set locale %s: %s') % (lang_enc,e))
+                    _('Unable to set locale %(lang_enc)s: %(exception)s') % {'lang_enc':lang_enc,'exception':exception})
 
         lang = gettext.translation(APP, DIR, languages=[lang], fallback=True)
         lang.install(unicode=1)

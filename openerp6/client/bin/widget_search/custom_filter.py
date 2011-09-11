@@ -112,9 +112,10 @@ class custom_filter(wid_int.wid_int):
         self.widget_obj.field_left  = self.field_selection[field_string][0]
         self.widget_obj.selected_oper_text = self.operators_lst[self.combo_op.get_active()]
         self.widget_obj.selected_oper = self.op_selection[self.widget_obj.selected_oper_text]
-        wid_domain = self.widget_obj._value_get()
-        condition = self.condition_next.get_active() == 0 and '&' or '|'
-        domain = [condition] + wid_domain
+        domain = self.widget_obj._value_get()
+        condition = self.condition_next.get_active() == 1 and  '|' or False
+        if condition:
+            domain = [condition] + domain
         return {'domain':domain}
 
     def sig_exec(self, widget):

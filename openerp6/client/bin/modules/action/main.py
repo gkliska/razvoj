@@ -177,17 +177,21 @@ class main(service.Service):
 
     def exec_keyword(self, keyword, data={}, adds={}, context={}, warning=True):
         actions = None
+        context.update(rpc.session.context)
         if 'id' in data:
             try:
                 id = data.get('id', False)
                 actions = rpc.session.rpc_exec_auth('/object', 'execute',
                         'ir.values', 'get', 'action', keyword,
-                        [(data['model'], id)], False, rpc.session.context)
+                        [(data['model'], id)], False, context)
                 actions = map(lambda x: x[2], actions)
             except rpc.rpc_exception, e:
 #               common.error(_('Error: ')+str(e.type), e.message, e.data)
                 return False
         keyact = {}
+        #remove the key from the context as it is just needed in ir.values call
+        if 'tree_but_open_column' in context:
+            del context['tree_but_open_column']
         for action in actions:
             action_name = action.get('name') or ''
             keyact[action_name.encode('utf8')] = action
@@ -195,7 +199,6 @@ class main(service.Service):
         res = common.selection(_('Select your action'), keyact)
         if res:
             (name,action) = res
-            context.update(rpc.session.context)
             self._exec_action(action, data, context=context)
             return (name, action)
         return False

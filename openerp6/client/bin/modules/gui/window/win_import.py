@@ -62,10 +62,13 @@ def import_csv(csv_data, f, model, fields, context=None, parent=None):
         else:
             common.message(_('Imported %d objects !') % (result,))
     else:
-        d = ''
+        err_import_record = ''
         for key,val in res[1].items():
-            d+= ('\t%s: %s\n' % (str(key),str(val)))
-        error = _(u'Error trying to import this record:\n%s\nError Message:\n%s\n\n%s') % (d,res[2],res[3])
+            err_import_record += ('\t%s: %s\n' % (str(key),str(val)))
+        err_type = res[2]
+        err_msg = res[3]
+        error = _(u'Error trying to import this record:\n%(err_import_record)s\nError Message:\n%(err_type)s\n\n%(err_msg)s') \
+                % {'err_import_record':err_import_record,'err_type':err_type,'err_msg':err_msg}
         common.message_box(_('Importation Error !'), unicode(error))
     return True
 
@@ -154,14 +157,14 @@ class win_import(object):
         self.glade.signal_connect('on_but_select_clicked', self.sig_sel)
         self.glade.signal_connect('on_but_unselect_clicked', self.sig_unsel)
         self.glade.signal_connect('on_but_autodetect_clicked', self.sig_autodetect)
-        
+
     def file_changed(self, widget=None):
         fname= self.filechooser.get_filename()
         if not fname:
             self.autodetect_btn.set_sensitive(False)
         else:
             self.autodetect_btn.set_sensitive(True)
-          
+
     def sig_autodetect(self, widget=None):
         fname= self.filechooser.get_filename()
         if not fname:
